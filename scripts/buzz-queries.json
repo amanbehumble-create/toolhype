@@ -52,5 +52,9 @@
  "magic-patterns": "(\"magic patterns\" OR magicpatterns OR MagicOS OR url:magicpatterns.com) -is:retweet",
  "codex": "(\"openai codex\" OR \"codex cli\" OR \"codex app\" OR @OpenAIDevs codex OR url:chatgpt.com/codex) -is:retweet",
  "mirror-mirror-ai": "(\"mirror mirror ai\" OR mirrormirrorai OR @mirrormirror_ai OR url:mirrormirrorai.com) -is:retweet",
- "1in8b": "(\"80億分の1\" OR \"1 in 8 billion\" OR 1in8b OR url:1in8b.life) -is:retweet"
+ "1in8b": "(\"80億分の1\" OR \"1 in 8 billion\" OR 1in8b OR url:1in8b.life) -is:retweet",
+ "rea": "(\"morluto/rea\" OR morluto OR url:\"github.com/morluto/rea\") -is:retweet",
+ "nemotron": "nemotron -is:retweet",
+ "krea": "(\"krea 3\" OR krea3 OR @krea_ai) -is:retweet",
+ "muse-spark": "(\"muse spark\") -is:retweet"
 }

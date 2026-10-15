@@ -1451,5 +1451,116 @@
       "updatedAt": null
     },
     "logo": "/logos/1in8b.png"
+  },
+  {
+    "slug": "rea",
+    "name": "REA",
+    "url": "https://rea.tools",
+    "affiliateUrl": null,
+    "category": "coding",
+    "useCases": [
+      "coding",
+      "agents"
+    ],
+    "pricing": "open-source",
+    "verdict": "Open-source toolkit that lets your coding agent reverse engineer apps, browser behavior and native binaries. #1 on GitHub trending with 264K+ stars.",
+    "useThisIf": "you want Claude Code, Codex or similar agents to dig into how an app or binary works instead of doing it by hand in a disassembler.",
+    "alternatives": [
+      "claude-code",
+      "codex"
+    ],
+    "source": "x",
+    "addedAt": "2026-10-16",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/rea.png"
+  },
+  {
+    "slug": "nemotron",
+    "name": "NVIDIA Nemotron 3.5",
+    "url": "https://www.nvidia.com/en-us/ai-data-science/foundation-models/nemotron/",
+    "affiliateUrl": null,
+    "category": "agents",
+    "useCases": [
+      "agents",
+      "coding"
+    ],
+    "pricing": "open-source",
+    "verdict": "NVIDIA open model family. The new 3.5 wave adds Nemotron 3.5 Super VL (120B MoE, 12B active, image + video input) and Bolt models built for local agents.",
+    "useThisIf": "you want open-weight models you can fine-tune or run on your own NVIDIA hardware for agent workloads.",
+    "alternatives": [
+      "muse-spark"
+    ],
+    "source": "x",
+    "addedAt": "2026-10-16",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/nemotron.png"
+  },
+  {
+    "slug": "krea",
+    "name": "Krea 3",
+    "url": "https://www.krea.ai/krea-3",
+    "affiliateUrl": null,
+    "category": "design",
+    "useCases": [
+      "design",
+      "marketing"
+    ],
+    "pricing": "freemium",
+    "verdict": "Krea new image model, pitched as 4x faster than Nano Banana Pro. Built for production image editing that keeps your product intact, priced for volume.",
+    "useThisIf": "you generate or edit lots of product and marketing images and care about speed and cost per image.",
+    "alternatives": [
+      "midjourney",
+      "ideogram"
+    ],
+    "source": "x",
+    "addedAt": "2026-10-16",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/krea.png"
+  },
+  {
+    "slug": "muse-spark",
+    "name": "Muse Spark Open",
+    "url": "https://research.meta.ai/blog/muse-spark-open",
+    "affiliateUrl": null,
+    "category": "chat",
+    "useCases": [
+      "chat",
+      "agents"
+    ],
+    "pricing": "open-source",
+    "verdict": "Meta open-weight release of its Muse Spark model: an 816B mixture-of-experts with 42B active params, billed as the most capable US open-weight model to date.",
+    "useThisIf": "you want a frontier-class open model to self-host for agentic work, for example on an M5 Ultra Mac Studio.",
+    "alternatives": [
+      "nemotron",
+      "chatgpt"
+    ],
+    "source": "x",
+    "addedAt": "2026-10-16",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/muse-spark.png"
   }
 ]

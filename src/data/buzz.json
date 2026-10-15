@@ -3889,6 +3889,294 @@
     }
    ],
    "computedAt": "2026-10-15T17:16:37.269Z"
+  },
+  "rea": {
+   "status": "live",
+   "query": "(\"morluto/rea\" OR morluto OR url:\"github.com/morluto/rea\") -is:retweet",
+   "mentions24h": 459,
+   "mentions7d": 2838,
+   "priorDailyAvg": 396.5,
+   "velocity": 1.16,
+   "daily": [
+    248,
+    210,
+    277,
+    592,
+    659,
+    393,
+    459
+   ],
+   "peakDay": 659,
+   "peakDaysAgo": 2,
+   "sample": {
+    "posts": 25,
+    "likes": 121,
+    "reposts": 34,
+    "replies": 13
+   },
+   "parts": {
+    "volume": 34.5,
+    "velocity": 2.7,
+    "engagement": 12
+   },
+   "score": 49,
+   "label": "steady",
+   "viral": false,
+   "topPosts": [
+    {
+     "id": "2108891697560392095",
+     "url": "https://x.com/UniverseB1020/status/2108891697560392095",
+     "author": "UniverseB1020",
+     "text": "오늘 GitHub 트렌딩, 코딩 에이전트 도구가 싹쓸이했네요\n\n1. morluto/rea\n에이전트로 앱 동작부터 네이티브 바이너리까지 리버스 엔지니어링해주는 도구. 하루 만에 별 2.5만 개 붙어서 압도적 1등\nhttps://t.co/U6xxoOLXNI\n\n2. mksglu/context-mode\n툴 출력을 샌드박스에 따로 담아서 컨텍스트를",
+     "created_at": "2026-10-10T12:05:36.000Z",
+     "likes": 106,
+     "reposts": 29,
+     "replies": 1,
+     "views": 7385,
+     "quotes": 1
+    },
+    {
+     "id": "2108866327423398059",
+     "url": "https://x.com/digimaga/status/2108866327423398059",
+     "author": "digimaga",
+     "text": "「なんでもリバースエンジニアリングツール」とか出ててワロタｗ\n\nmorluto/rea: Reverse engineer anything with agents, from app behavior down to native binaries.\nhttps://t.co/LLLeGzXRds",
+     "created_at": "2026-10-10T10:24:47.000Z",
+     "likes": 4,
+     "reposts": 2,
+     "replies": 0,
+     "views": 1188,
+     "quotes": 0
+    },
+    {
+     "id": "2109189782643310817",
+     "url": "https://x.com/yug1224/status/2109189782643310817",
+     "author": "yug1224",
+     "text": "AIエージェントにバイナリやアプリの解析を任せられるリバースエンジニアリングツールっぽい\nローカル環境でのコード調査や仕組みの解明に使えそうかも\n\nyug1224 starred morluto/rea\nhttps://t.co/UFi4WO4ABm",
+     "created_at": "2026-10-11T07:50:05.000Z",
+     "likes": 4,
+     "reposts": 2,
+     "replies": 0,
+     "views": 435,
+     "quotes": 0
+    }
+   ],
+   "computedAt": "2026-10-15T17:43:00.492Z"
+  },
+  "nemotron": {
+   "status": "live",
+   "query": "nemotron -is:retweet",
+   "mentions24h": 1106,
+   "mentions7d": 2008,
+   "priorDailyAvg": 150.3,
+   "velocity": 7.36,
+   "daily": [
+    160,
+    139,
+    168,
+    120,
+    142,
+    173,
+    1106
+   ],
+   "peakDay": 1106,
+   "peakDaysAgo": 0,
+   "sample": {
+    "posts": 25,
+    "likes": 788,
+    "reposts": 39,
+    "replies": 59
+   },
+   "parts": {
+    "volume": 33,
+    "velocity": 25,
+    "engagement": 15.1
+   },
+   "score": 73,
+   "label": "hype",
+   "viral": false,
+   "topPosts": [
+    {
+     "id": "2110046114820890809",
+     "url": "https://x.com/MiaAI_lab/status/2110046114820890809",
+     "author": "MiaAI_lab",
+     "text": "Nemotron 3.5 Bolt 74B drops Oct 15! 🔥\n\nIt's a 9B active params MoE specifically built for local agents on the RTX Spark.\n\nA second model smaller model, the Nemotron 3.5 Bolt E4B, will be released on October 23rd.\n\nLet's",
+     "created_at": "2026-10-13T16:32:51.000Z",
+     "likes": 383,
+     "reposts": 18,
+     "replies": 26,
+     "views": 15300,
+     "quotes": 6
+    },
+    {
+     "id": "2109712471254761741",
+     "url": "https://x.com/NVIDIAAI/status/2109712471254761741",
+     "author": "NVIDIAAI",
+     "text": "Great to see what the Fin team has built with NVIDIA Nemotron 🙌\n\nThey fine-tuned Nemotron 3 Super and Nano for their new Fin Apex customer service models.\n\nCongrats on the launch! https://t.co/XxVuc3TzqJ",
+     "created_at": "2026-10-12T18:27:04.000Z",
+     "likes": 169,
+     "reposts": 9,
+     "replies": 16,
+     "views": 14867,
+     "quotes": 2
+    },
+    {
+     "id": "2108663814388384204",
+     "url": "https://x.com/aitrackerbot/status/2108663814388384204",
+     "author": "aitrackerbot",
+     "text": "NVIDIA's next Nemotron showed up in its own docs: Nemotron 3.5 Super VL.\n\n• 120B total, 12B active (hybrid Mamba-Transformer MoE)\n• Image and video input\n• Text-only version too\n\nNVIDIA started pulling the pages today, t",
+     "created_at": "2026-10-09T21:00:05.000Z",
+     "likes": 142,
+     "reposts": 9,
+     "replies": 4,
+     "views": 28309,
+     "quotes": 4
+    }
+   ],
+   "computedAt": "2026-10-15T17:43:00.492Z"
+  },
+  "krea": {
+   "status": "live",
+   "query": "(\"krea 3\" OR krea3 OR @krea_ai) -is:retweet",
+   "mentions24h": 917,
+   "mentions7d": 3063,
+   "priorDailyAvg": 357.7,
+   "velocity": 2.56,
+   "daily": [
+    76,
+    184,
+    60,
+    252,
+    786,
+    788,
+    917
+   ],
+   "peakDay": 917,
+   "peakDaysAgo": 0,
+   "sample": {
+    "posts": 25,
+    "likes": 361,
+    "reposts": 42,
+    "replies": 105
+   },
+   "parts": {
+    "volume": 34.9,
+    "velocity": 17,
+    "engagement": 14.2
+   },
+   "score": 66,
+   "label": "hype",
+   "viral": false,
+   "topPosts": [
+    {
+     "id": "2110138570740543839",
+     "url": "https://x.com/WolfRiccardo/status/2110138570740543839",
+     "author": "WolfRiccardo",
+     "text": "KREA 3 - Absolute Cinema!🔥🔥🔥\n\nMade these four images with Krea 3, and I’m loving the retro vibe and realism. They feel like stills from a ’90s movie—natural light, believable textures, and that nostalgic atmosphere. h",
+     "created_at": "2026-10-13T22:40:14.000Z",
+     "likes": 220,
+     "reposts": 8,
+     "replies": 20,
+     "views": 11245,
+     "quotes": 1
+    },
+    {
+     "id": "2110123808313254130",
+     "url": "https://x.com/realrebelai/status/2110123808313254130",
+     "author": "realrebelai",
+     "text": "The Krea Gods have blessed us with yet ANOTHER round of KREA 3 EARLY ACCESS codes for you guys!\n\nretweet this tweet, then comment \"KREA 3\" below for a chance to win a spot!\n\ni only have 25 spots available 👀\n\nKrea 3 btw ",
+     "created_at": "2026-10-13T21:41:34.000Z",
+     "likes": 42,
+     "reposts": 23,
+     "replies": 66,
+     "views": 3360,
+     "quotes": 1
+    },
+    {
+     "id": "2110709589230457339",
+     "url": "https://x.com/hile_oxs/status/2110709589230457339",
+     "author": "hile_oxs",
+     "text": "The theme is 𝑭𝒂𝒏𝒕𝒂𝒔𝒚 𝒄𝒉𝒂𝒓𝒂𝒄𝒕𝒆𝒓𝒔\n\nI was opportuned to get early access to Krea 3 thanks to @viccpoes 🫶🏼\n\nI was reading a manwha and thought, why not make some characters of my own?🤭\n\nConnecting the Kre",
+     "created_at": "2026-10-15T12:29:15.000Z",
+     "likes": 14,
+     "reposts": 7,
+     "replies": 7,
+     "views": 399,
+     "quotes": 0
+    }
+   ],
+   "computedAt": "2026-10-15T17:43:00.492Z"
+  },
+  "muse-spark": {
+   "status": "live",
+   "query": "(\"muse spark\") -is:retweet",
+   "mentions24h": 550,
+   "mentions7d": 2044,
+   "priorDailyAvg": 249,
+   "velocity": 2.21,
+   "daily": [
+    117,
+    86,
+    81,
+    154,
+    826,
+    230,
+    550
+   ],
+   "peakDay": 826,
+   "peakDaysAgo": 2,
+   "sample": {
+    "posts": 24,
+    "likes": 181,
+    "reposts": 8,
+    "replies": 14
+   },
+   "parts": {
+    "volume": 33.1,
+    "velocity": 14.3,
+    "engagement": 11.9
+   },
+   "score": 59,
+   "label": "hype",
+   "viral": false,
+   "topPosts": [
+    {
+     "id": "2109698823065112756",
+     "url": "https://x.com/JackK/status/2109698823065112756",
+     "author": "JackK",
+     "text": "When you consider Muse Spark was April, Muse Spark 1.1 was July, 1.2 was August, 1.3 was September... it leaves you full of Wonder. \n\nget the full experience: curl -fsSL https://t.co/eWUGmRw2zG | bash https://t.co/sItuGL",
+     "created_at": "2026-10-12T17:32:50.000Z",
+     "likes": 72,
+     "reposts": 4,
+     "replies": 2,
+     "views": 7378,
+     "quotes": 1
+    },
+    {
+     "id": "2109697089123102867",
+     "url": "https://x.com/ArtificialAnlys/status/2109697089123102867",
+     "author": "ArtificialAnlys",
+     "text": "Muse Wonder (max) costs $4.52 per Artificial Analysis Intelligence Index task, 2.8x Muse Spark 1.3 (max, $1.60), driven by higher per-token prices and higher input token use\n\n➤ Token pricing: $4 per 1M input tokens, $0.2",
+     "created_at": "2026-10-12T17:25:56.000Z",
+     "likes": 65,
+     "reposts": 2,
+     "replies": 2,
+     "views": 8498,
+     "quotes": 0
+    },
+    {
+     "id": "2110784994675220502",
+     "url": "https://x.com/testingcatalog/status/2110784994675220502",
+     "author": "testingcatalog",
+     "text": "META 🔥: Muse Spark Open (Muse-Spark-Open-816B-A42B) is now available on HuggingFace!\n\n&gt; \"Muse Spark Open is a mixture-of-experts model with 42B active parameters, 816B total parameters, and a 1M-token context window.",
+     "created_at": "2026-10-15T17:28:53.000Z",
+     "likes": 26,
+     "reposts": 2,
+     "replies": 3,
+     "views": 2086,
+     "quotes": 0
+    }
+   ],
+   "computedAt": "2026-10-15T17:43:00.492Z"
   }
  }
 }

@@ -15,3 +15,9 @@ Tool pages only showcase **high-engagement, on-topic X posts**.
 4. `node scripts/top-posts.mjs [rawDir]` rewrites `topPosts` in `src/data/buzz.json`. `scripts/buzz.mjs` applies the same rule.
 
 Limitation: with 25 posts per search, very high-volume names (ChatGPT, Grok, Cursor, Canva) often return only small recent posts, so they may show none.
+
+## Official accounts & list posts (added 2026-10-16)
+- Original posts from a tool's **official product account** (`OFFICIAL` in `scripts/top-posts-lib.mjs`, e.g. @cursor_ai, @midjourney, @runwayml) count as relevant even without the name in the text. Founder/parent-company posts (e.g. @elonmusk, @OpenAIDevs, @antonosika) must still name the product.
+- Official searches go in `<rawDir>/top/_official*.txt` (e.g. `from:cursor_ai OR (from:mntruell cursor)`); that pool is checked for every tool.
+- Generic "N AI tools / useful links" list posts are only shown when no better post qualifies (`LISTICLE`).
+- Generic query words (code, editor, vibe, song, meeting…) are never used as relevance keywords.

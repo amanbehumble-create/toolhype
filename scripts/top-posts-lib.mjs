@@ -10,7 +10,24 @@ export const EXCLUDE = {
   claude: /claude monet|van damme/i,
   make: /^/, // generic word; only accept posts that say make.com / "make.com"
 };
-export function keywords(query) {
+// Official product accounts: their original posts count as relevant even without the name in the text.
+// (Founders/parent companies are NOT listed here; their posts must still name the product.)
+export const OFFICIAL = {
+  chatgpt: ['chatgptapp'], grok: ['grok', 'xai'], cursor: ['cursor_ai'], canva: ['canva'], midjourney: ['midjourney'],
+  elevenlabs: ['elevenlabsio', 'elevenlabs'], n8n: ['n8n_io'], lovable: ['lovable_dev', 'lovable'], v0: ['v0'], windsurf: ['windsurf'],
+  bolt: ['boltdotnew'], zapier: ['zapier'], make: ['make_hq'], crewai: ['crewaiinc'], runway: ['runwayml'], pika: ['pika_labs'],
+  capcut: ['capcutapp'], gamma: ['meetgamma'], jasper: ['heyjasperai'], 'copy-ai': ['copy_ai'], figma: ['figma'], notion: ['notionhq'],
+  claude: ['claudeai'], gemini: ['geminiapp'], perplexity: ['perplexity_ai'], replit: ['replit'], suno: ['suno'], heygen: ['heygen_official'],
+};
+// Generic "N AI tools you should know" list posts: only used when nothing better qualifies.
+export const LISTICLE = /^\W*\d+\s+(?:\S+\s+){0,3}(?:ai\s+)?(?:tools|links|websites|apps|courses)\b|\b\d+\s+(?:useful|must-use|free)\s+(?:ai\s+)?(?:tools|links|websites)\b|tools (?:you should know|nobody told you)/i;
+const STOP = new Set(['code', 'editor', 'coding', 'vibe', 'song', 'meeting', 'motion', 'dashboards', 'artifacts', 'url:', '@grok is this true']);
+const KW_OVERRIDE = { 'claude-motion': ['claude motion', 'claude dashboards'] };
+export function keywords(query, slug) {
+  if (KW_OVERRIDE[slug]) return KW_OVERRIDE[slug];
+  return rawKeywords(query).filter((k) => !STOP.has(k));
+}
+function rawKeywords(query) {
   const k = new Set();
   for (const m of query.matchAll(/"([^"]+)"/g)) k.add(m[1].toLowerCase());
   for (const m of query.matchAll(/url:([\w.\-\/]+)/g)) k.add(m[1].toLowerCase());
@@ -20,7 +37,7 @@ export function keywords(query) {
   return [...k];
 }
 export function selectTop(slug, query, posts) {
-  const kw = keywords(query), ex = EXCLUDE[slug];
+  const kw = keywords(query, slug), ex = EXCLUDE[slug];
   const seen = new Set();
   return posts.filter((p) => {
     if (!p || seen.has(p.id)) return false; seen.add(p.id);
@@ -28,11 +45,12 @@ export function selectTop(slug, query, posts) {
     if (p.isReply || /^@\w+/.test(p.text || '') || /^rt @/i.test(p.text || '')) return false;
     if (!(p.likes >= MIN_LIKES || ((p.views || 0) >= MIN_VIEWS && p.likes >= MIN_LIKES_WITH_VIEWS))) return false;
     if (ex && slug !== 'make' && ex.test(p.text || '')) return false;
+    if ((OFFICIAL[slug] || []).includes((p.author || '').toLowerCase())) return true;
     // relevance: the tool must be named in the post text itself (a bare link to e.g. a notion.so page doesn't count)
     const key = t.replace(/https?:\/\/\S+/g, '').slice(0, 80);
     if (seen.has(key)) return false; seen.add(key);
     return kw.some((k) => t.replace(/https?:\/\/\S+/g, ' ').includes(k.replace(/^url:/, '')));
-  }).sort((a, b) => engagement(b) - engagement(a)).slice(0, SHOW);
+  }).sort((a, b) => engagement(b) - engagement(a)).filter((p, _, all) => !LISTICLE.test(p.text || '') || all.every((q) => LISTICLE.test(q.text || ''))).slice(0, SHOW);
 }
 // Normalize an X API v2 search/lookup payload.
 export function normalize(j) {

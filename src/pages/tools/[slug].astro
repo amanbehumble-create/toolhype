@@ -42,6 +42,7 @@ const faq: [string, string][] = [
       <span class="m">♥ {fmt(p.likes)} · ⟲ {fmt(p.reposts)} · 💬 {fmt(p.replies)}{p.views ? ` · 👁 ${fmt(p.views)}` : ''}</span></a>)}</>}
   </> : <p class="muted">Score pending: this tool hasn't been through the daily X scan yet.</p>}
   {alts.length > 0 && <><h2>Alternatives</h2><ul>{alts.map((a) => <li><a href={`/tools/${a.slug}`}>{a.name}</a>: {a.verdict}</li>)}</ul></>}
+  <p class="share" style="display:flex;gap:.5rem;flex-wrap:wrap;margin:1.25rem 0"><a class="btn" target="_blank" rel="noopener" href={`https://x.com/intent/post?text=${encodeURIComponent(`${t.name} on toolhype`)}&url=${encodeURIComponent(`https://toolhype.dev/tools/${t.slug}`)}`}>Share on X</a><button class="btn" type="button" data-copy={`https://toolhype.dev/tools/${t.slug}`} onclick="navigator.clipboard.writeText(this.dataset.copy).then(()=>{this.textContent='Copied!'})">Copy link</button></p>
   {related.length > 0 && <><h2>Similar AI tools</h2><ul>{related.map((a) => <li><a href={`/tools/${a.slug}`}>{a.name}</a>: {a.verdict}</li>)}</ul></>}
   {cat && <p>See all: <a href={`/best/${cat.slug}`}>best AI tools for {cat.name.toLowerCase()}</a> · <a href="/trending">trending AI tools today</a></p>}
   <h2>FAQ</h2>{faq.map(([q, a]) => <><h3>{q}</h3><p>{a}</p></>)}

@@ -6,6 +6,7 @@
 //                                   post.fields=public_metrics,created_at, expansions=author_id, user.fields=username)
 // Output: src/data/buzz.json  (raw inputs + computed score). Usage: node scripts/buzz.mjs [rawDir]
 import fs from 'node:fs';
+import { selectTop } from './top-posts-lib.mjs';
 const rawDir = process.argv[2] || '/workspace/buzzraw';
 const queries = JSON.parse(fs.readFileSync(new URL('./buzz-queries.json', import.meta.url)));
 const outFile = new URL('../src/data/buzz.json', import.meta.url);
@@ -42,7 +43,7 @@ for (const [slug, query] of Object.entries(queries)) {
       reposts: x.public_metrics?.retweet_count || 0, replies: x.public_metrics?.reply_count || 0, views: x.public_metrics?.impression_count ?? null, quotes: x.public_metrics?.quote_count || 0 }));
     sample = posts.length;
     for (const x of posts) { likes += x.likes; reposts += x.reposts; replies += x.replies; }
-    top = posts.sort((a, b) => (b.likes + 3 * b.reposts + 2 * b.replies) - (a.likes + 3 * a.reposts + 2 * a.replies)).slice(0, 3);
+    top = selectTop(slug, query, [...posts, ...((prev.tools[slug] || {}).topPosts || [])]); // high-engagement + relevant only (docs/buzz-top-posts.md)
   }
   const eng = likes + 3 * reposts + 2 * replies + top.reduce((a, b) => a + b.quotes, 0) * 2;
   // Score: volume (0-50) + velocity spike (0-25) + engagement (0-25)

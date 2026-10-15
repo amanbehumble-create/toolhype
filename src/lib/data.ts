@@ -6,7 +6,7 @@ export interface Buzz { score: number | null; status: 'pending' | 'live'; mentio
 export interface Tool {
   slug: string; name: string; url: string; affiliateUrl: string | null; category: string; useCases: string[];
   pricing: string; verdict: string; useThisIf: string; alternatives: string[]; source: string; addedAt: string;
-  featured: boolean; buzz: Buzz;
+  featured: boolean; buzz: Buzz; logo?: string | null;
 }
 export interface Community { slug: string; name: string; description: string }
 

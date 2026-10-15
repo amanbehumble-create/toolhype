@@ -8,7 +8,7 @@ const alts = t.alternatives.map(getTool).filter(Boolean) as Tool[];
 <Base title={`${t.name}: review, use cases & alternatives`} description={`${t.name} — ${t.verdict}`} jsonld={[appLd(t)]}>
 <Shell><article class="card prose">
   <div style="display:flex;gap:1rem;align-items:center"><div class="vote" data-vote={t.slug}><button aria-label="Upvote">▲</button><span class="n">0</span></div>
-  <div class="avatar">{t.name[0]}</div><h1 style="margin:0">{t.name}</h1></div>
+  {t.logo ? <img class="avatar logo" src={t.logo} alt={`${t.name} logo`} width="56" height="56" /> : <div class="avatar">{t.name[0]}</div>}<h1 style="margin:0">{t.name}</h1></div>
   <p><b>Verdict:</b> {t.verdict}</p><p><b>Use this if</b> {t.useThisIf}</p>
   <div class="meta">{t.useCases.map((c) => <a class="chip c" href={`/c/${c}`}>c/{c}</a>)}<span class="chip">{t.pricing}</span></div>
   <p><a class="btn primary" href={outUrl(t)} rel={t.affiliateUrl ? 'sponsored noopener' : 'noopener'} target="_blank">Visit {t.name} →</a></p>

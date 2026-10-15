@@ -1,5 +1,338 @@
 [
   {
+    "slug": "pancake",
+    "name": "Pancake",
+    "url": "https://pancake.ai",
+    "affiliateUrl": null,
+    "category": "marketing",
+    "useCases": [
+      "marketing",
+      "agents"
+    ],
+    "pricing": "paid",
+    "verdict": "GTM building blocks (data, enrichment, sending) your AI agent drives over one MCP connection.",
+    "useThisIf": "you run outbound from Claude or Codex and want data plus sending in one place.",
+    "alternatives": [
+      "copy-ai"
+    ],
+    "source": "producthunt",
+    "addedAt": "2026-10-14",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/pancake.png"
+  },
+  {
+    "slug": "inferock",
+    "name": "Inferock",
+    "url": "https://github.com/inferock/inferock-bench",
+    "affiliateUrl": null,
+    "category": "coding",
+    "useCases": [
+      "coding"
+    ],
+    "pricing": "open-source",
+    "verdict": "Local proxy that logs per-call LLM token usage and failures so you can audit what you were billed.",
+    "useThisIf": "you suspect your LLM API bill includes failed or retried calls.",
+    "alternatives": [],
+    "source": "producthunt",
+    "addedAt": "2026-10-14",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/inferock.png"
+  },
+  {
+    "slug": "retriever-ai",
+    "name": "Retriever AI",
+    "url": "https://rtrvr.ai",
+    "affiliateUrl": null,
+    "category": "agents",
+    "useCases": [
+      "agents",
+      "productivity"
+    ],
+    "pricing": "free",
+    "verdict": "Ad-supported browser agent for lead finding, outreach and form filling, no API key needed.",
+    "useThisIf": "you want to try a browser agent without paying for inference.",
+    "alternatives": [],
+    "source": "producthunt",
+    "addedAt": "2026-10-14",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/retriever-ai.png"
+  },
+  {
+    "slug": "articos",
+    "name": "Articos MCP",
+    "url": "https://www.articos.com",
+    "affiliateUrl": null,
+    "category": "marketing",
+    "useCases": [
+      "marketing",
+      "agents"
+    ],
+    "pricing": "paid",
+    "verdict": "Tests messaging and landing pages against simulated buyer personas from inside your agent.",
+    "useThisIf": "you want quick directional feedback on positioning before real user tests.",
+    "alternatives": [],
+    "source": "producthunt",
+    "addedAt": "2026-10-13",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": null
+  },
+  {
+    "slug": "opencode",
+    "name": "OpenCode 2.0",
+    "url": "https://opencode.ai",
+    "affiliateUrl": null,
+    "category": "coding",
+    "useCases": [
+      "coding",
+      "agents"
+    ],
+    "pricing": "open-source",
+    "verdict": "Open-source, model-agnostic terminal coding agent with a native TUI and multi-session support.",
+    "useThisIf": "you want a Claude Code-style agent that works with any model.",
+    "alternatives": [
+      "claude-code",
+      "aider"
+    ],
+    "source": "producthunt",
+    "addedAt": "2026-10-13",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/opencode.png"
+  },
+  {
+    "slug": "indra",
+    "name": "Indra",
+    "url": "https://github.com/datalab-to/indra",
+    "affiliateUrl": null,
+    "category": "productivity",
+    "useCases": [
+      "productivity",
+      "coding"
+    ],
+    "pricing": "open-source",
+    "verdict": "Fast CPU-only OCR from Datalab that outputs reading-ordered markdown.",
+    "useThisIf": "you need to turn scans or PDFs into markdown without a GPU.",
+    "alternatives": [],
+    "source": "github",
+    "addedAt": "2026-10-13",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/indra.png"
+  },
+  {
+    "slug": "solid-glass",
+    "name": "Solid Glass",
+    "url": "https://deeplethe.github.io/solid-glass",
+    "affiliateUrl": null,
+    "category": "design",
+    "useCases": [
+      "design",
+      "coding"
+    ],
+    "pricing": "open-source",
+    "verdict": "Open-source design system aimed at AI app interfaces; trending on GitHub this week.",
+    "useThisIf": "you are vibe-coding an AI app and want a ready-made visual language.",
+    "alternatives": [],
+    "source": "github",
+    "addedAt": "2026-10-12",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/solid-glass.png"
+  },
+  {
+    "slug": "reso-ai",
+    "name": "ReSO AI",
+    "url": "https://www.resollm.ai",
+    "affiliateUrl": null,
+    "category": "marketing",
+    "useCases": [
+      "marketing"
+    ],
+    "pricing": "paid",
+    "verdict": "Generative engine optimization: tracks and improves how ChatGPT, Perplexity and Google AI recommend you.",
+    "useThisIf": "you care about showing up in AI answers, not just Google.",
+    "alternatives": [],
+    "source": "producthunt",
+    "addedAt": "2026-10-10",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/reso-ai.png"
+  },
+  {
+    "slug": "onepin",
+    "name": "Onepin",
+    "url": "https://onepin.ai",
+    "affiliateUrl": null,
+    "category": "audio",
+    "useCases": [
+      "audio",
+      "video"
+    ],
+    "pricing": "freemium",
+    "verdict": "Quality layer over ElevenLabs and other TTS voices that fixes names, prices and dates in AI voiceover.",
+    "useThisIf": "you ship multilingual AI voiceover and keep catching mispronunciations.",
+    "alternatives": [
+      "elevenlabs"
+    ],
+    "source": "producthunt",
+    "addedAt": "2026-10-10",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/onepin.png"
+  },
+  {
+    "slug": "claude-motion",
+    "name": "Claude Dashboards & Motion",
+    "url": "https://claude.com/resources/articles/dashboards-and-motion",
+    "affiliateUrl": null,
+    "category": "productivity",
+    "useCases": [
+      "productivity",
+      "video"
+    ],
+    "pricing": "paid",
+    "verdict": "Claude artifacts that build live data dashboards and code-animated explainer videos (beta).",
+    "useThisIf": "you already pay for Claude and want charts or animated walkthroughs without new tools.",
+    "alternatives": [
+      "claude"
+    ],
+    "source": "producthunt + x",
+    "addedAt": "2026-10-10",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/claude-motion.png"
+  },
+  {
+    "slug": "openseo",
+    "name": "OpenSEO",
+    "url": "https://openseo.so",
+    "affiliateUrl": null,
+    "category": "marketing",
+    "useCases": [
+      "marketing"
+    ],
+    "pricing": "paid",
+    "verdict": "Open-source Semrush alternative with keyword, backlink and audit data your agent can use via MCP.",
+    "useThisIf": "you want SEO data for your agent without a $100+/mo suite.",
+    "alternatives": [],
+    "source": "producthunt",
+    "addedAt": "2026-10-08",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/openseo.png"
+  },
+  {
+    "slug": "claude-haiku-5-5",
+    "name": "Claude Haiku 5.5",
+    "url": "https://www.anthropic.com/claude-haiku-5-5",
+    "affiliateUrl": null,
+    "category": "chat",
+    "useCases": [
+      "chat",
+      "coding"
+    ],
+    "pricing": "paid",
+    "verdict": "Anthropic's fastest small model, pitched for high-volume tasks and coding subagents.",
+    "useThisIf": "you need cheap, fast calls for classification, support or subagents.",
+    "alternatives": [
+      "claude"
+    ],
+    "source": "producthunt",
+    "addedAt": "2026-10-08",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/claude-haiku-5-5.png"
+  },
+  {
+    "slug": "openswarm",
+    "name": "OpenSwarm",
+    "url": "https://openswarm.info",
+    "affiliateUrl": null,
+    "category": "agents",
+    "useCases": [
+      "agents",
+      "productivity"
+    ],
+    "pricing": "freemium",
+    "verdict": "Agent-first desktop environment where swarms of agents run apps and browsers in parallel.",
+    "useThisIf": "you want to orchestrate many agents at once and like experimental setups.",
+    "alternatives": [],
+    "source": "producthunt",
+    "addedAt": "2026-10-08",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/openswarm.png"
+  },
+  {
     "slug": "chatgpt",
     "name": "ChatGPT",
     "url": "https://chatgpt.com",
@@ -19,14 +352,15 @@
       "grok"
     ],
     "source": "seed",
-    "addedAt": "2026-10-15",
+    "addedAt": "2022-11-30",
     "featured": false,
     "buzz": {
       "score": null,
       "status": "pending",
       "mentions7d": null,
       "updatedAt": null
-    }
+    },
+    "logo": "/logos/chatgpt.png"
   },
   {
     "slug": "claude",
@@ -47,14 +381,15 @@
       "gemini"
     ],
     "source": "seed",
-    "addedAt": "2026-10-14",
+    "addedAt": "2023-03-14",
     "featured": false,
     "buzz": {
       "score": null,
       "status": "pending",
       "mentions7d": null,
       "updatedAt": null
-    }
+    },
+    "logo": "/logos/claude.png"
   },
   {
     "slug": "gemini",
@@ -74,14 +409,15 @@
       "claude"
     ],
     "source": "seed",
-    "addedAt": "2026-10-13",
+    "addedAt": "2023-12-06",
     "featured": false,
     "buzz": {
       "score": null,
       "status": "pending",
       "mentions7d": null,
       "updatedAt": null
-    }
+    },
+    "logo": "/logos/gemini.png"
   },
   {
     "slug": "grok",
@@ -101,14 +437,15 @@
       "chatgpt"
     ],
     "source": "seed",
-    "addedAt": "2026-10-12",
+    "addedAt": "2023-11-04",
     "featured": false,
     "buzz": {
       "score": null,
       "status": "pending",
       "mentions7d": null,
       "updatedAt": null
-    }
+    },
+    "logo": "/logos/grok.png"
   },
   {
     "slug": "perplexity",
@@ -128,14 +465,15 @@
       "chatgpt"
     ],
     "source": "seed",
-    "addedAt": "2026-10-11",
+    "addedAt": "2022-12-07",
     "featured": false,
     "buzz": {
       "score": null,
       "status": "pending",
       "mentions7d": null,
       "updatedAt": null
-    }
+    },
+    "logo": "/logos/perplexity.png"
   },
   {
     "slug": "cursor",
@@ -156,14 +494,15 @@
       "claude-code"
     ],
     "source": "seed",
-    "addedAt": "2026-10-10",
+    "addedAt": "2023-03-14",
     "featured": false,
     "buzz": {
       "score": null,
       "status": "pending",
       "mentions7d": null,
       "updatedAt": null
-    }
+    },
+    "logo": "/logos/cursor.png"
   },
   {
     "slug": "github-copilot",
@@ -182,14 +521,15 @@
       "windsurf"
     ],
     "source": "seed",
-    "addedAt": "2026-10-09",
+    "addedAt": "2021-06-29",
     "featured": false,
     "buzz": {
       "score": null,
       "status": "pending",
       "mentions7d": null,
       "updatedAt": null
-    }
+    },
+    "logo": "/logos/github-copilot.png"
   },
   {
     "slug": "windsurf",
@@ -209,14 +549,15 @@
       "github-copilot"
     ],
     "source": "seed",
-    "addedAt": "2026-10-08",
+    "addedAt": "2024-11-13",
     "featured": false,
     "buzz": {
       "score": null,
       "status": "pending",
       "mentions7d": null,
       "updatedAt": null
-    }
+    },
+    "logo": "/logos/windsurf.png"
   },
   {
     "slug": "claude-code",
@@ -236,14 +577,15 @@
       "aider"
     ],
     "source": "seed",
-    "addedAt": "2026-09-09",
+    "addedAt": "2025-02-24",
     "featured": false,
     "buzz": {
       "score": null,
       "status": "pending",
       "mentions7d": null,
       "updatedAt": null
-    }
+    },
+    "logo": "/logos/claude-code.png"
   },
   {
     "slug": "aider",
@@ -263,14 +605,15 @@
       "cursor"
     ],
     "source": "seed",
-    "addedAt": "2026-09-10",
+    "addedAt": "2023-05-09",
     "featured": false,
     "buzz": {
       "score": null,
       "status": "pending",
       "mentions7d": null,
       "updatedAt": null
-    }
+    },
+    "logo": "/logos/aider.png"
   },
   {
     "slug": "v0",
@@ -290,14 +633,15 @@
       "lovable"
     ],
     "source": "seed",
-    "addedAt": "2026-09-11",
+    "addedAt": "2023-10-11",
     "featured": false,
     "buzz": {
       "score": null,
       "status": "pending",
       "mentions7d": null,
       "updatedAt": null
-    }
+    },
+    "logo": "/logos/v0.png"
   },
   {
     "slug": "bolt",
@@ -317,14 +661,15 @@
       "v0"
     ],
     "source": "seed",
-    "addedAt": "2026-09-12",
+    "addedAt": "2024-10-03",
     "featured": false,
     "buzz": {
       "score": null,
       "status": "pending",
       "mentions7d": null,
       "updatedAt": null
-    }
+    },
+    "logo": "/logos/bolt.png"
   },
   {
     "slug": "lovable",
@@ -343,14 +688,15 @@
       "replit"
     ],
     "source": "seed",
-    "addedAt": "2026-09-13",
+    "addedAt": "2024-11-21",
     "featured": false,
     "buzz": {
       "score": null,
       "status": "pending",
       "mentions7d": null,
       "updatedAt": null
-    }
+    },
+    "logo": "/logos/lovable.png"
   },
   {
     "slug": "replit",
@@ -370,14 +716,15 @@
       "lovable"
     ],
     "source": "seed",
-    "addedAt": "2026-09-14",
+    "addedAt": "2016-01-01",
     "featured": false,
     "buzz": {
       "score": null,
       "status": "pending",
       "mentions7d": null,
       "updatedAt": null
-    }
+    },
+    "logo": "/logos/replit.png"
   },
   {
     "slug": "n8n",
@@ -397,14 +744,15 @@
       "make"
     ],
     "source": "seed",
-    "addedAt": "2026-09-15",
+    "addedAt": "2019-10-08",
     "featured": false,
     "buzz": {
       "score": null,
       "status": "pending",
       "mentions7d": null,
       "updatedAt": null
-    }
+    },
+    "logo": "/logos/n8n.png"
   },
   {
     "slug": "zapier",
@@ -424,14 +772,15 @@
       "make"
     ],
     "source": "seed",
-    "addedAt": "2026-09-16",
+    "addedAt": "2012-10-01",
     "featured": false,
     "buzz": {
       "score": null,
       "status": "pending",
       "mentions7d": null,
       "updatedAt": null
-    }
+    },
+    "logo": "/logos/zapier.png"
   },
   {
     "slug": "make",
@@ -451,14 +800,15 @@
       "n8n"
     ],
     "source": "seed",
-    "addedAt": "2026-09-17",
+    "addedAt": "2022-02-01",
     "featured": false,
     "buzz": {
       "score": null,
       "status": "pending",
       "mentions7d": null,
       "updatedAt": null
-    }
+    },
+    "logo": "/logos/make.png"
   },
   {
     "slug": "langchain",
@@ -477,14 +827,15 @@
       "crewai"
     ],
     "source": "seed",
-    "addedAt": "2026-09-18",
+    "addedAt": "2022-10-24",
     "featured": false,
     "buzz": {
       "score": null,
       "status": "pending",
       "mentions7d": null,
       "updatedAt": null
-    }
+    },
+    "logo": "/logos/langchain.png"
   },
   {
     "slug": "crewai",
@@ -503,14 +854,15 @@
       "langchain"
     ],
     "source": "seed",
-    "addedAt": "2026-09-19",
+    "addedAt": "2023-12-01",
     "featured": false,
     "buzz": {
       "score": null,
       "status": "pending",
       "mentions7d": null,
       "updatedAt": null
-    }
+    },
+    "logo": "/logos/crewai.png"
   },
   {
     "slug": "midjourney",
@@ -529,14 +881,15 @@
       "canva"
     ],
     "source": "seed",
-    "addedAt": "2026-09-20",
+    "addedAt": "2022-07-12",
     "featured": false,
     "buzz": {
       "score": null,
       "status": "pending",
       "mentions7d": null,
       "updatedAt": null
-    }
+    },
+    "logo": "/logos/midjourney.png"
   },
   {
     "slug": "ideogram",
@@ -555,14 +908,15 @@
       "midjourney"
     ],
     "source": "seed",
-    "addedAt": "2026-09-21",
+    "addedAt": "2023-08-22",
     "featured": false,
     "buzz": {
       "score": null,
       "status": "pending",
       "mentions7d": null,
       "updatedAt": null
-    }
+    },
+    "logo": "/logos/ideogram.png"
   },
   {
     "slug": "canva",
@@ -581,14 +935,15 @@
       "figma"
     ],
     "source": "seed",
-    "addedAt": "2026-09-22",
+    "addedAt": "2013-08-26",
     "featured": false,
     "buzz": {
       "score": null,
       "status": "pending",
       "mentions7d": null,
       "updatedAt": null
-    }
+    },
+    "logo": "/logos/canva.png"
   },
   {
     "slug": "figma",
@@ -607,14 +962,15 @@
       "v0"
     ],
     "source": "seed",
-    "addedAt": "2026-09-23",
+    "addedAt": "2016-09-27",
     "featured": false,
     "buzz": {
       "score": null,
       "status": "pending",
       "mentions7d": null,
       "updatedAt": null
-    }
+    },
+    "logo": "/logos/figma.png"
   },
   {
     "slug": "runway",
@@ -633,14 +989,15 @@
       "heygen"
     ],
     "source": "seed",
-    "addedAt": "2026-09-24",
+    "addedAt": "2018-06-01",
     "featured": false,
     "buzz": {
       "score": null,
       "status": "pending",
       "mentions7d": null,
       "updatedAt": null
-    }
+    },
+    "logo": "/logos/runway.png"
   },
   {
     "slug": "pika",
@@ -658,14 +1015,15 @@
       "runway"
     ],
     "source": "seed",
-    "addedAt": "2026-09-25",
+    "addedAt": "2023-11-28",
     "featured": false,
     "buzz": {
       "score": null,
       "status": "pending",
       "mentions7d": null,
       "updatedAt": null
-    }
+    },
+    "logo": "/logos/pika.png"
   },
   {
     "slug": "heygen",
@@ -684,14 +1042,15 @@
       "synthesia"
     ],
     "source": "seed",
-    "addedAt": "2026-09-26",
+    "addedAt": "2020-12-01",
     "featured": false,
     "buzz": {
       "score": null,
       "status": "pending",
       "mentions7d": null,
       "updatedAt": null
-    }
+    },
+    "logo": "/logos/heygen.png"
   },
   {
     "slug": "synthesia",
@@ -710,14 +1069,15 @@
       "heygen"
     ],
     "source": "seed",
-    "addedAt": "2026-09-27",
+    "addedAt": "2017-06-01",
     "featured": false,
     "buzz": {
       "score": null,
       "status": "pending",
       "mentions7d": null,
       "updatedAt": null
-    }
+    },
+    "logo": "/logos/synthesia.png"
   },
   {
     "slug": "descript",
@@ -736,14 +1096,15 @@
       "capcut"
     ],
     "source": "seed",
-    "addedAt": "2026-09-28",
+    "addedAt": "2017-12-01",
     "featured": false,
     "buzz": {
       "score": null,
       "status": "pending",
       "mentions7d": null,
       "updatedAt": null
-    }
+    },
+    "logo": "/logos/descript.png"
   },
   {
     "slug": "capcut",
@@ -762,14 +1123,15 @@
       "descript"
     ],
     "source": "seed",
-    "addedAt": "2026-09-01",
+    "addedAt": "2020-04-01",
     "featured": false,
     "buzz": {
       "score": null,
       "status": "pending",
       "mentions7d": null,
       "updatedAt": null
-    }
+    },
+    "logo": "/logos/capcut.png"
   },
   {
     "slug": "elevenlabs",
@@ -788,14 +1150,15 @@
       "descript"
     ],
     "source": "seed",
-    "addedAt": "2026-09-02",
+    "addedAt": "2023-01-23",
     "featured": false,
     "buzz": {
       "score": null,
       "status": "pending",
       "mentions7d": null,
       "updatedAt": null
-    }
+    },
+    "logo": "/logos/elevenlabs.png"
   },
   {
     "slug": "suno",
@@ -813,14 +1176,15 @@
       "elevenlabs"
     ],
     "source": "seed",
-    "addedAt": "2026-09-03",
+    "addedAt": "2023-12-20",
     "featured": false,
     "buzz": {
       "score": null,
       "status": "pending",
       "mentions7d": null,
       "updatedAt": null
-    }
+    },
+    "logo": "/logos/suno.png"
   },
   {
     "slug": "notion",
@@ -836,14 +1200,15 @@
     "useThisIf": "your team's docs and wikis live in one place.",
     "alternatives": [],
     "source": "seed",
-    "addedAt": "2026-09-04",
+    "addedAt": "2016-03-01",
     "featured": false,
     "buzz": {
       "score": null,
       "status": "pending",
       "mentions7d": null,
       "updatedAt": null
-    }
+    },
+    "logo": "/logos/notion.png"
   },
   {
     "slug": "granola",
@@ -861,14 +1226,15 @@
       "notion"
     ],
     "source": "seed",
-    "addedAt": "2026-09-05",
+    "addedAt": "2024-05-22",
     "featured": false,
     "buzz": {
       "score": null,
       "status": "pending",
       "mentions7d": null,
       "updatedAt": null
-    }
+    },
+    "logo": "/logos/granola.png"
   },
   {
     "slug": "jasper",
@@ -887,14 +1253,15 @@
       "chatgpt"
     ],
     "source": "seed",
-    "addedAt": "2026-09-06",
+    "addedAt": "2021-02-01",
     "featured": false,
     "buzz": {
       "score": null,
       "status": "pending",
       "mentions7d": null,
       "updatedAt": null
-    }
+    },
+    "logo": "/logos/jasper.png"
   },
   {
     "slug": "copy-ai",
@@ -913,14 +1280,15 @@
       "jasper"
     ],
     "source": "seed",
-    "addedAt": "2026-09-07",
+    "addedAt": "2020-10-01",
     "featured": false,
     "buzz": {
       "score": null,
       "status": "pending",
       "mentions7d": null,
       "updatedAt": null
-    }
+    },
+    "logo": "/logos/copy-ai.png"
   },
   {
     "slug": "gamma",
@@ -939,13 +1307,14 @@
       "canva"
     ],
     "source": "seed",
-    "addedAt": "2026-09-08",
+    "addedAt": "2022-11-01",
     "featured": false,
     "buzz": {
       "score": null,
       "status": "pending",
       "mentions7d": null,
       "updatedAt": null
-    }
+    },
+    "logo": "/logos/gamma.png"
   }
 ]

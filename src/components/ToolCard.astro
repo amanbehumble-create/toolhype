@@ -1,8 +1,10 @@
 ---
 import type { Tool } from '../lib/data';
+import { LABEL } from '../lib/data';
 const { tool: t, isNew = false } = Astro.props as { tool: Tool; isNew?: boolean };
+const b = t.buzz;
 ---
-<article class:list={['post', { featured: t.featured }]} data-slug={t.slug} data-added={t.addedAt} data-buzz={t.buzz.score ?? 0} data-search={`${t.name} ${t.verdict} ${t.useCases.join(' ')}`.toLowerCase()}>
+<article class:list={['post', { featured: t.featured }]} data-slug={t.slug} data-added={t.addedAt} data-buzz={t.buzz.score ?? 0} data-label={t.buzz.label ?? ''} data-search={`${t.name} ${t.verdict} ${t.useCases.join(' ')}`.toLowerCase()}>
   <div class="vote" data-vote={t.slug}><button aria-label={`Upvote ${t.name}`}>▲</button><span class="n">0</span></div>
   {t.logo ? <img class="avatar logo" src={t.logo} alt="" width="40" height="40" loading="lazy" decoding="async" /> : <div class="avatar" aria-hidden="true">{t.name[0]}</div>}
   <div style="min-width:0">
@@ -11,7 +13,9 @@ const { tool: t, isNew = false } = Astro.props as { tool: Tool; isNew?: boolean 
     <div class="meta">
       {t.useCases.map((c) => <a class="chip c" href={`/c/${c}`}>c/{c}</a>)}
       <span class="chip">{t.pricing}</span>
-      <span class="chip" title="X buzz score (pending)">X buzz: {t.buzz.score ?? 'pending'}</span>
+      {b.status === 'live'
+        ? <a class:list={['buzz', b.label]} href={`/tools/${t.slug}#buzz`} title={`X Buzz Score ${b.score}/100 · ${b.mentions24h} posts in 24h · ${b.mentions7d} in 7d · ${b.velocity}× velocity`}>{b.label === 'hype' ? '🔥' : 'X'} {b.score}<span class="lbl">{LABEL[b.label!]}</span></a>
+        : <span class="chip" title="X Buzz Score not computed yet">X buzz: pending</span>}
       <span>added {t.addedAt}</span>
     </div>
   </div>

@@ -1,0 +1,3738 @@
+{
+ "computedAt": "2026-10-15T07:13:39.998Z",
+ "method": "v1",
+ "tools": {
+  "wispr-flow": {
+   "status": "live",
+   "query": "(\"wispr flow\" OR wisprflow OR @WisprFlow OR url:wisprflow.ai) -is:retweet",
+   "mentions24h": 280,
+   "mentions7d": 2300,
+   "priorDailyAvg": 336.7,
+   "velocity": 0.83,
+   "daily": [
+    274,
+    282,
+    372,
+    352,
+    424,
+    316,
+    280
+   ],
+   "peakDay": 424,
+   "peakDaysAgo": 2,
+   "sample": {
+    "posts": 25,
+    "likes": 7357,
+    "reposts": 323,
+    "replies": 231
+   },
+   "parts": {
+    "volume": 33.6,
+    "velocity": 0,
+    "engagement": 19.8
+   },
+   "score": 53,
+   "label": "hype",
+   "viral": true,
+   "topPosts": [
+    {
+     "id": "2108260769603486100",
+     "url": "https://x.com/hectorserrranoo/status/2108260769603486100",
+     "author": "hectorserrranoo",
+     "text": "i built @WisprFlow’s paid ads program\n\nhere’s how i’d rebuild it in 30 days",
+     "created_at": "2026-10-08T18:18:31.000Z",
+     "likes": 7290,
+     "reposts": 310,
+     "replies": 219,
+     "views": 1966872,
+     "quotes": 265
+    },
+    {
+     "id": "2109568139658698872",
+     "url": "https://x.com/rhysclipping/status/2109568139658698872",
+     "author": "rhysclipping",
+     "text": "Wispr Flow CMO Blew up on X last week! 👀\n\nWe were the clipping partner behind Wispr Flow. \n\nHow did we make them viral? \n\nSimple. \nTanay the founder of Wispr Flow had loads of interviews/content. \n\nIn all of this conten",
+     "created_at": "2026-10-12T08:53:33.000Z",
+     "likes": 27,
+     "reposts": 3,
+     "replies": 4,
+     "views": 2848,
+     "quotes": 0
+    },
+    {
+     "id": "2109562546613330320",
+     "url": "https://x.com/BaibhavAjmera/status/2109562546613330320",
+     "author": "BaibhavAjmera",
+     "text": "I wanted to improve my grammar.\n\nSometimes I type, and sometimes I dictate with Wispr Flow. @WisprFlow  fixed my grammar as I spoke, so I never saw my mistakes. And when I typed, nobody pointed them out.\n\nI said, “How yo",
+     "created_at": "2026-10-12T08:31:19.000Z",
+     "likes": 3,
+     "reposts": 2,
+     "replies": 2,
+     "views": 222,
+     "quotes": 0
+    }
+   ],
+   "computedAt": "2026-10-15T07:13:39.998Z"
+  },
+  "pancake": {
+   "status": "live",
+   "query": "(\"pancake.ai\" OR url:pancake.ai) -is:retweet",
+   "mentions24h": 5,
+   "mentions7d": 11,
+   "priorDailyAvg": 1,
+   "velocity": 5,
+   "daily": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    6,
+    5
+   ],
+   "peakDay": 6,
+   "peakDaysAgo": 1,
+   "sample": {
+    "posts": 6,
+    "likes": 526,
+    "reposts": 54,
+    "replies": 173
+   },
+   "parts": {
+    "volume": 10.8,
+    "velocity": 9.7,
+    "engagement": 15.4
+   },
+   "score": 36,
+   "label": "rising",
+   "viral": false,
+   "topPosts": [
+    {
+     "id": "2110055111116652917",
+     "url": "https://x.com/will_marq/status/2110055111116652917",
+     "author": "will_marq",
+     "text": "Meet Pancake, the Vercel for GTM.\n\nTry it at https://t.co/j0zlJIgE92\n\nYour agent ships your product. Now it ships your go-to-market.\n\nHow? A GTM brain that knows your business, 50+ data providers to find the right custom",
+     "created_at": "2026-10-13T17:08:36.000Z",
+     "likes": 511,
+     "reposts": 54,
+     "replies": 169,
+     "views": 530335,
+     "quotes": 86
+    },
+    {
+     "id": "2110176960056094817",
+     "url": "https://x.com/0xalptoksoz/status/2110176960056094817",
+     "author": "0xalptoksoz",
+     "text": "Saw @Tocelot's @speedrun video today and thought: I need to build an engine that can make edits like this.\n\nSo I started building.\n\nHalfway through, I saw @will_marq's https://t.co/lEY0IC3QZT launch video, where he jumpe",
+     "created_at": "2026-10-14T01:12:47.000Z",
+     "likes": 5,
+     "reposts": 0,
+     "replies": 1,
+     "views": 381,
+     "quotes": 0
+    },
+    {
+     "id": "2110297401835528245",
+     "url": "https://x.com/HCJMartin/status/2110297401835528245",
+     "author": "HCJMartin",
+     "text": "These guys have style! Agent GTM - support https://t.co/LFNwTJaGq9's launch today 🤙 https://t.co/NQ8QGCGQc4",
+     "created_at": "2026-10-14T09:11:22.000Z",
+     "likes": 3,
+     "reposts": 0,
+     "replies": 2,
+     "views": 71,
+     "quotes": 0
+    }
+   ],
+   "computedAt": "2026-10-15T07:13:39.998Z"
+  },
+  "inferock": {
+   "status": "live",
+   "query": "(inferock OR \"inferock-bench\") -is:retweet",
+   "mentions24h": 20,
+   "mentions7d": 22,
+   "priorDailyAvg": 0.3,
+   "velocity": 20,
+   "daily": [
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    20
+   ],
+   "peakDay": 20,
+   "peakDaysAgo": 0,
+   "sample": {
+    "posts": 19,
+    "likes": 29,
+    "reposts": 1,
+    "replies": 13
+   },
+   "parts": {
+    "volume": 13.6,
+    "velocity": 16.5,
+    "engagement": 8.9
+   },
+   "score": 39,
+   "label": "hype",
+   "viral": false,
+   "topPosts": [
+    {
+     "id": "2110399505044848815",
+     "url": "https://x.com/inferockai/status/2110399505044848815",
+     "author": "inferockai",
+     "text": "We launched Inferock today, and we're currently #2 Product of the Day on Product Hunt!\n\nThanks to everyone who's checked it out and sent feedback!\n\nFailed model calls can still cost you. Inferock shows what happened and ",
+     "created_at": "2026-10-14T15:57:05.000Z",
+     "likes": 7,
+     "reposts": 1,
+     "replies": 3,
+     "views": 166,
+     "quotes": 0
+    },
+    {
+     "id": "2110372198041243670",
+     "url": "https://x.com/ssbengale/status/2110372198041243670",
+     "author": "ssbengale",
+     "text": "We launched @inferockai  on Product Hunt today, and we’re currently #1 Product of the Day.\n\nThanks for the votes and thoughtful feedback 🙌\n\nYour LLM bill tells you what you spent. It may not tell you which call returned",
+     "created_at": "2026-10-14T14:08:35.000Z",
+     "likes": 8,
+     "reposts": 0,
+     "replies": 4,
+     "views": 115,
+     "quotes": 0
+    },
+    {
+     "id": "2110390063565861336",
+     "url": "https://x.com/himashwetha12/status/2110390063565861336",
+     "author": "himashwetha12",
+     "text": "We spoke to more than a thousand developers, product leaders, founders in San Francisco and all of them surfaced the same two issues with AI inference: \n\n- I don’t know if my data is secure. \n- I know I’m overpaying for ",
+     "created_at": "2026-10-14T15:19:34.000Z",
+     "likes": 4,
+     "reposts": 0,
+     "replies": 1,
+     "views": 48,
+     "quotes": 0
+    }
+   ],
+   "computedAt": "2026-10-15T07:13:39.998Z"
+  },
+  "retriever-ai": {
+   "status": "live",
+   "query": "(rtrvr OR \"rtrvr.ai\" OR url:rtrvr.ai) -is:retweet",
+   "mentions24h": 11,
+   "mentions7d": 13,
+   "priorDailyAvg": 0.3,
+   "velocity": 11,
+   "daily": [
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    11
+   ],
+   "peakDay": 11,
+   "peakDaysAgo": 0,
+   "sample": {
+    "posts": 2,
+    "likes": 0,
+    "reposts": 0,
+    "replies": 0
+   },
+   "parts": {
+    "volume": 11.5,
+    "velocity": 13.5,
+    "engagement": 0
+   },
+   "score": 25,
+   "label": "rising",
+   "viral": false,
+   "topPosts": [
+    {
+     "id": "2108218805222596760",
+     "url": "https://x.com/wowwowai/status/2108218805222596760",
+     "author": "wowwowai",
+     "text": "やばすぎｗｗｗ\nブラウザ操作AI「rtrvr」が、開いたタブを残して次のAI呼び出しに引き継げるように。調べたページを、あとから同じタブで読み直したり、作業を続けたりできる🗂️\n\n📌 タブ保持を指定すると、開いたタブのIDを返す\n📋 抽出データは、指定した項目名・型に合わせて返す\n📊 https://t.co/ERrBDCeSoe",
+     "created_at": "2026-10-08T15:31:46.000Z",
+     "likes": 0,
+     "reposts": 0,
+     "replies": 0,
+     "views": 38,
+     "quotes": 0
+    },
+    {
+     "id": "2110396959777501416",
+     "url": "https://x.com/daisuke/status/2110396959777501416",
+     "author": "daisuke",
+     "text": "https://t.co/Ef469qlO17",
+     "created_at": "2026-10-14T15:46:59.000Z",
+     "likes": 0,
+     "reposts": 0,
+     "replies": 0,
+     "views": 35,
+     "quotes": 0
+    }
+   ],
+   "computedAt": "2026-10-15T07:13:39.998Z"
+  },
+  "articos": {
+   "status": "live",
+   "query": "(articos OR url:articos.com) -is:retweet",
+   "mentions24h": 18,
+   "mentions7d": 86,
+   "priorDailyAvg": 11.3,
+   "velocity": 1.59,
+   "daily": [
+    7,
+    6,
+    4,
+    6,
+    4,
+    41,
+    18
+   ],
+   "peakDay": 41,
+   "peakDaysAgo": 1,
+   "sample": {
+    "posts": 25,
+    "likes": 42,
+    "reposts": 14,
+    "replies": 21
+   },
+   "parts": {
+    "volume": 19.4,
+    "velocity": 5.3,
+    "engagement": 10.5
+   },
+   "score": 35,
+   "label": "rising",
+   "viral": false,
+   "topPosts": [
+    {
+     "id": "2109588973643260409",
+     "url": "https://x.com/AIBuzzNews/status/2109588973643260409",
+     "author": "AIBuzzNews",
+     "text": "These 10 new AI tools could save you hours of work every week.\n\nFrom AI browsers and coding agents to automated workflows, model testing, and identity verification, these tools cover some seriously useful use cases.\n\n1. ",
+     "created_at": "2026-10-12T10:16:20.000Z",
+     "likes": 28,
+     "reposts": 13,
+     "replies": 16,
+     "views": 12251,
+     "quotes": 0
+    },
+    {
+     "id": "2109294454729277695",
+     "url": "https://x.com/monitossarticos/status/2109294454729277695",
+     "author": "monitossarticos",
+     "text": "monitos articos presente https://t.co/Qws0hxyNMC",
+     "created_at": "2026-10-11T14:46:01.000Z",
+     "likes": 8,
+     "reposts": 0,
+     "replies": 1,
+     "views": 185,
+     "quotes": 0
+    },
+    {
+     "id": "2108647329456668985",
+     "url": "https://x.com/xddddd_05/status/2108647329456668985",
+     "author": "xddddd_05",
+     "text": "Ayer Lenin andaba tocando una canción de los monos árticos con su saxofón y uff, desde entonces es todo lo que he estado escuchando 🫪",
+     "created_at": "2026-10-09T19:54:34.000Z",
+     "likes": 0,
+     "reposts": 0,
+     "replies": 2,
+     "views": 90,
+     "quotes": 0
+    }
+   ],
+   "computedAt": "2026-10-15T07:13:39.998Z"
+  },
+  "opencode": {
+   "status": "live",
+   "query": "(opencode OR \"open code\" sst OR url:opencode.ai) -is:retweet",
+   "mentions24h": 1894,
+   "mentions7d": 10493,
+   "priorDailyAvg": 1433.2,
+   "velocity": 1.32,
+   "daily": [
+    1470,
+    982,
+    820,
+    923,
+    2440,
+    1964,
+    1894
+   ],
+   "peakDay": 2440,
+   "peakDaysAgo": 2,
+   "sample": {
+    "posts": 24,
+    "likes": 477,
+    "reposts": 32,
+    "replies": 47
+   },
+   "parts": {
+    "volume": 40.2,
+    "velocity": 5,
+    "engagement": 14.1
+   },
+   "score": 59,
+   "label": "rising",
+   "viral": false,
+   "topPosts": [
+    {
+     "id": "2109003402684285168",
+     "url": "https://x.com/sekizonyedi_/status/2109003402684285168",
+     "author": "sekizonyedi_",
+     "text": "Ücretsiz ve sınırsız, ve gerçekten iyi modelleri kullanmak mümkün. Opencode, değişen ama sürekli yeni ücretsiz modeller sunuyor. biri bitiyor başka bir modeli ücretsiz sunuyorlar. ve bu modellerin bazıları gerçekten çok ",
+     "created_at": "2026-10-10T19:29:29.000Z",
+     "likes": 155,
+     "reposts": 14,
+     "replies": 10,
+     "views": 12373,
+     "quotes": 1
+    },
+    {
+     "id": "2108208113035940293",
+     "url": "https://x.com/k2sbhai/status/2108208113035940293",
+     "author": "k2sbhai",
+     "text": "Step 5 Preview is FREE on OpenCode 😳\n\nanother new model just dropped for free\n\n- 1M context\n- text + image + video\n- built for agentic work\n- up to 131K output\n\ntry it here: https://t.co/3xCkp7NzMD\n\nfree access is live ",
+     "created_at": "2026-10-08T14:49:17.000Z",
+     "likes": 155,
+     "reposts": 3,
+     "replies": 9,
+     "views": 9003,
+     "quotes": 0
+    },
+    {
+     "id": "2108795280497717611",
+     "url": "https://x.com/punchw45k/status/2108795280497717611",
+     "author": "punchw45k",
+     "text": "11 free AI models live on OpenCode right now 😳\n\nExo Free, Step 5 Preview Free, Space Bunny Free, MiMo Flash Free + more.\n\nNo API key. No card. $0.\n\n→ https://t.co/jbyk8xEKE9 → type /models → pick any free one\n\nGo grab i",
+     "created_at": "2026-10-10T05:42:29.000Z",
+     "likes": 59,
+     "reposts": 1,
+     "replies": 8,
+     "views": 9597,
+     "quotes": 1
+    }
+   ],
+   "computedAt": "2026-10-15T07:13:39.998Z"
+  },
+  "indra": {
+   "status": "live",
+   "query": "(\"datalab-to/indra\" OR (indra datalab)) -is:retweet",
+   "mentions24h": 11,
+   "mentions7d": 22,
+   "priorDailyAvg": 1.8,
+   "velocity": 6,
+   "daily": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    11,
+    11
+   ],
+   "peakDay": 11,
+   "peakDaysAgo": 1,
+   "sample": {
+    "posts": 13,
+    "likes": 10,
+    "reposts": 2,
+    "replies": 3
+   },
+   "parts": {
+    "volume": 13.6,
+    "velocity": 13.5,
+    "engagement": 6.8
+   },
+   "score": 34,
+   "label": "rising",
+   "viral": false,
+   "topPosts": [
+    {
+     "id": "2110159950559527289",
+     "url": "https://x.com/superdoccimo/status/2110159950559527289",
+     "author": "superdoccimo",
+     "text": "100万パラメータのOCRが、CPUだけで毎秒49ページ読む。GPUなしの文書処理パイプラインが一段安くなるかもしれない話\n\nMarker（GitHub約4.0万スター）、Surya（約2.1万）、Chandra（約1.2万）で文書AIの定番OSSを出してきたDatalabが、10月13日に新しいOCRパッケージ「Indra",
+     "created_at": "2026-10-14T00:05:11.000Z",
+     "likes": 1,
+     "reposts": 1,
+     "replies": 0,
+     "views": 582,
+     "quotes": 0
+    },
+    {
+     "id": "2110074110512386536",
+     "url": "https://x.com/OrgVio/status/2110074110512386536",
+     "author": "OrgVio",
+     "text": "Datalab introduced Indra, a 1M-parameter OCR model that processes 49 pages per second on a 32-core CPU, delivering 11-17x speedup over PaddleOCR and Tesseract while achieving higher text extraction scores on OmniParseBen",
+     "created_at": "2026-10-13T18:24:05.000Z",
+     "likes": 0,
+     "reposts": 0,
+     "replies": 2,
+     "views": 48,
+     "quotes": 0
+    },
+    {
+     "id": "2110447639724540263",
+     "url": "https://x.com/TechFollowrazzi/status/2110447639724540263",
+     "author": "TechFollowrazzi",
+     "text": "🗞️ @soumithchintala followed @VikParuchuri\n\n@VikParuchuri released Indra OCR, built around a 1M-parameter recognition model. Datalab reports 49 pages per second on 32 CPU cores, with no GPU. https://t.co/SPbTlyPf7X http",
+     "created_at": "2026-10-14T19:08:22.000Z",
+     "likes": 4,
+     "reposts": 0,
+     "replies": 0,
+     "views": 121,
+     "quotes": 0
+    }
+   ],
+   "computedAt": "2026-10-15T07:13:39.998Z"
+  },
+  "solid-glass": {
+   "status": "live",
+   "query": "(\"solid glass\" OR \"solid-glass\") -is:retweet",
+   "mentions24h": 9,
+   "mentions7d": 49,
+   "priorDailyAvg": 6.7,
+   "velocity": 1.35,
+   "daily": [
+    3,
+    8,
+    8,
+    8,
+    5,
+    8,
+    9
+   ],
+   "peakDay": 9,
+   "peakDaysAgo": 0,
+   "sample": {
+    "posts": 19,
+    "likes": 160,
+    "reposts": 20,
+    "replies": 22
+   },
+   "parts": {
+    "volume": 17,
+    "velocity": 2.7,
+    "engagement": 12.3
+   },
+   "score": 32,
+   "label": "rising",
+   "viral": false,
+   "topPosts": [
+    {
+     "id": "2108480757601845562",
+     "url": "https://x.com/AIXyu1v/status/2108480757601845562",
+     "author": "AIXyu1v",
+     "text": "🌧️💎 プロンプト配布｜雨音メイド \n#ゆきプロンプト\n灰青×白、雨粒クリスタルと透けるエプロンが輝く幻想メイド☔✨\nアレンジはお好きにどうぞ\n男性用はリプ欄へ\n【プロンプト】\nRain Melody Maid, beautiful high-quality anime fantasy illustration featuring exactly one adult woman.\n\nSTYLE: https://t.co/bkSrX",
+     "created_at": "2026-10-09T08:52:40.000Z",
+     "likes": 66,
+     "reposts": 9,
+     "replies": 3,
+     "views": 4357,
+     "quotes": 11
+    },
+    {
+     "id": "2109473630287749386",
+     "url": "https://x.com/ammolab1/status/2109473630287749386",
+     "author": "ammolab1",
+     "text": "When form, ergonomics, and recoil mitigation align perfectly. The Kriss Vector platform never gets old—that Super V system remains one of the cleanest engineering solutions out there for keeping flat under rapid fire. Pa",
+     "created_at": "2026-10-12T02:38:00.000Z",
+     "likes": 58,
+     "reposts": 5,
+     "replies": 2,
+     "views": 1310,
+     "quotes": 0
+    },
+    {
+     "id": "2108171738068439420",
+     "url": "https://x.com/moreisdifferent/status/2108171738068439420",
+     "author": "moreisdifferent",
+     "text": "Here's how I prompted the two Nobel Prize explainers I made: \n\nFor the Chemistry one (https://t.co/EzcBXfXGQn):\n\n\"I want to make a video to explain the 2026 chemistry nobel in technical detail in the style of 3blue1brown",
+     "created_at": "2026-10-08T12:24:44.000Z",
+     "likes": 20,
+     "reposts": 5,
+     "replies": 7,
+     "views": 4943,
+     "quotes": 2
+    }
+   ],
+   "computedAt": "2026-10-15T07:13:39.998Z"
+  },
+  "reso-ai": {
+   "status": "live",
+   "query": "(\"reso ai\" OR resollm OR url:resollm.ai) -is:retweet",
+   "mentions24h": 2,
+   "mentions7d": 29,
+   "priorDailyAvg": 4.5,
+   "velocity": 0.44,
+   "daily": [
+    0,
+    0,
+    12,
+    9,
+    5,
+    1,
+    2
+   ],
+   "peakDay": 12,
+   "peakDaysAgo": 4,
+   "sample": {
+    "posts": 17,
+    "likes": 70,
+    "reposts": 11,
+    "replies": 18
+   },
+   "parts": {
+    "volume": 14.8,
+    "velocity": 0,
+    "engagement": 10.8
+   },
+   "score": 26,
+   "label": "quiet",
+   "viral": false,
+   "topPosts": [
+    {
+     "id": "2109305523975634976",
+     "url": "https://x.com/firefoxxx79/status/2109305523975634976",
+     "author": "firefoxxx79",
+     "text": "𝟏𝟓:𝟑𝟒: 𝐩𝐫𝐨𝐟𝐢𝐥𝐨 𝐩𝐚𝐫𝐳𝐢𝐚𝐥𝐞. 𝟏𝟖:𝟑𝟕: 𝐦𝐚𝐭𝐜𝐡 𝐩𝐞𝐫𝐟𝐞𝐭𝐭𝐨 𝐜𝐨𝐧 𝐂𝐡𝐢𝐚𝐫𝐚. 𝐂𝐨𝐬𝐚 𝐞̀ 𝐬𝐮𝐜𝐜𝐞𝐬𝐬𝐨 𝐢𝐧 𝐥𝐚𝐛𝐨𝐫𝐚𝐭𝐨𝐫𝐢𝐨 𝐢𝐧 𝐪𝐮𝐞𝐥𝐥𝐞 𝐭𝐫𝐞 𝐨𝐫𝐞?\n\nIl 19 settembre 2007, ne",
+     "created_at": "2026-10-11T15:30:00.000Z",
+     "likes": 55,
+     "reposts": 10,
+     "replies": 0,
+     "views": 2736,
+     "quotes": 1
+    },
+    {
+     "id": "2108859539588296919",
+     "url": "https://x.com/dpkpandey9/status/2108859539588296919",
+     "author": "dpkpandey9",
+     "text": "ReSO AI is officially LIVE on Product Hunt today. It’s an agentic employee that helps brands show up in AI search results.\n\nsupport us \n\nhttps://t.co/ociUhMjTMc",
+     "created_at": "2026-10-10T09:57:49.000Z",
+     "likes": 11,
+     "reposts": 0,
+     "replies": 9,
+     "views": 111,
+     "quotes": 0
+    },
+    {
+     "id": "2109283904985182540",
+     "url": "https://x.com/ProductHungml/status/2109283904985182540",
+     "author": "ProductHungml",
+     "text": "🏆 Product Hunt top 5 — October 10\n\n1. 🔍 ReSO AI — get cited when customers ask AI assistants\n2. 🎙️ Onepin — AI voiceover that pronounces every name right\n3. 📊 Claude Dashboards &amp; Motion — live dashboards and anim",
+     "created_at": "2026-10-11T14:04:06.000Z",
+     "likes": 0,
+     "reposts": 0,
+     "replies": 5,
+     "views": 46,
+     "quotes": 0
+    }
+   ],
+   "computedAt": "2026-10-15T07:13:39.998Z"
+  },
+  "onepin": {
+   "status": "live",
+   "query": "(onepin OR url:onepin.ai) -is:retweet",
+   "mentions24h": 4,
+   "mentions7d": 47,
+   "priorDailyAvg": 7.2,
+   "velocity": 0.56,
+   "daily": [
+    0,
+    2,
+    20,
+    19,
+    2,
+    0,
+    4
+   ],
+   "peakDay": 20,
+   "peakDaysAgo": 4,
+   "sample": {
+    "posts": 20,
+    "likes": 56,
+    "reposts": 12,
+    "replies": 35
+   },
+   "parts": {
+    "volume": 16.8,
+    "velocity": 0,
+    "engagement": 11.1
+   },
+   "score": 28,
+   "label": "quiet",
+   "viral": false,
+   "topPosts": [
+    {
+     "id": "2108815644565377277",
+     "url": "https://x.com/RealSoohyunBae/status/2108815644565377277",
+     "author": "RealSoohyunBae",
+     "text": "Onepin is launched on ProductHunt. Also sharing the 20% discount code for ProductHunt users. Take a look. https://t.co/AWvm5OCQrX",
+     "created_at": "2026-10-10T07:03:24.000Z",
+     "likes": 24,
+     "reposts": 4,
+     "replies": 13,
+     "views": 984,
+     "quotes": 1
+    },
+    {
+     "id": "2110372347282964895",
+     "url": "https://x.com/testdriveso/status/2110372347282964895",
+     "author": "testdriveso",
+     "text": "Tricky line. Clean take?\n\nGive Onepin a try for free: write one line full of hard names, prices and dates. Share what it said right or wrong.\n\n$100 rewards · Ends Oct 15, 23:59 UTC · 1 post/account\n\nJoin 👉 https://t.co/",
+     "created_at": "2026-10-14T14:09:11.000Z",
+     "likes": 12,
+     "reposts": 6,
+     "replies": 3,
+     "views": 321,
+     "quotes": 0
+    },
+    {
+     "id": "2108818745829572673",
+     "url": "https://x.com/OnepinAI/status/2108818745829572673",
+     "author": "OnepinAI",
+     "text": "Onepin is launched on ProductHunt. Also sharing the 20% discount code for ProductHunt users. Take a look. https://t.co/795HtkeiNp",
+     "created_at": "2026-10-10T07:15:43.000Z",
+     "likes": 15,
+     "reposts": 0,
+     "replies": 10,
+     "views": 909,
+     "quotes": 1
+    }
+   ],
+   "computedAt": "2026-10-15T07:13:39.998Z"
+  },
+  "claude-motion": {
+   "status": "live",
+   "query": "(claude (dashboards OR \"motion\") artifacts) -is:retweet",
+   "mentions24h": 11,
+   "mentions7d": 169,
+   "priorDailyAvg": 26.3,
+   "velocity": 0.42,
+   "daily": [
+    43,
+    41,
+    24,
+    20,
+    15,
+    15,
+    11
+   ],
+   "peakDay": 43,
+   "peakDaysAgo": 6,
+   "sample": {
+    "posts": 25,
+    "likes": 207,
+    "reposts": 123,
+    "replies": 13
+   },
+   "parts": {
+    "volume": 22.3,
+    "velocity": 0,
+    "engagement": 13.9
+   },
+   "score": 36,
+   "label": "steady",
+   "viral": false,
+   "topPosts": [
+    {
+     "id": "2108448987267420199",
+     "url": "https://x.com/peesamac/status/2108448987267420199",
+     "author": "peesamac",
+     "text": "Claude Dashboards กับ Claude Motion สองฟีเจอร์ใหม่ที่เพิ่งเปิดเบต้า ตัวแรกเปลี่ยนข้อมูลบริษัทเป็นแดชบอร์ดที่อัปเดตตัวเองได้ ตัวที่สองเปลี่ยนไอเดียหรือรายงานเป็นแอนิเมชันอธิบายสั้นๆ ทั้งคู่แค่พิมพ์สั่งในแชท\n\nเริ่มที่ Dash",
+     "created_at": "2026-10-09T06:46:26.000Z",
+     "likes": 158,
+     "reposts": 116,
+     "replies": 0,
+     "views": 5477,
+     "quotes": 3
+    },
+    {
+     "id": "2109674416850468930",
+     "url": "https://x.com/Pal81K/status/2109674416850468930",
+     "author": "Pal81K",
+     "text": "Docs, Slides, Design, Dashboards, Motion… so I built the 3D one.\n\nSpatial Artifacts: ask Claude Code for a room, comment on the chair, and Claude rebuilds it in your open tab.\n\nAn open-source community plugin, built on @",
+     "created_at": "2026-10-12T15:55:51.000Z",
+     "likes": 11,
+     "reposts": 4,
+     "replies": 6,
+     "views": 747,
+     "quotes": 0
+    },
+    {
+     "id": "2108411204993769938",
+     "url": "https://x.com/CurieuxExplorer/status/2108411204993769938",
+     "author": "CurieuxExplorer",
+     "text": "Two betas, one pattern. \n\nDashboards turn data into something you can open again. Motion turns an idea into an explainer. \n\nThis is Claude moving from chat into the artifacts people actually share. https://t.co/oqmsk2khJ",
+     "created_at": "2026-10-09T04:16:18.000Z",
+     "likes": 8,
+     "reposts": 3,
+     "replies": 2,
+     "views": 373,
+     "quotes": 0
+    }
+   ],
+   "computedAt": "2026-10-15T07:13:39.998Z"
+  },
+  "openseo": {
+   "status": "live",
+   "query": "(openseo OR url:openseo.so) -is:retweet",
+   "mentions24h": 17,
+   "mentions7d": 142,
+   "priorDailyAvg": 20.8,
+   "velocity": 0.82,
+   "daily": [
+    44,
+    23,
+    9,
+    9,
+    29,
+    11,
+    17
+   ],
+   "peakDay": 44,
+   "peakDaysAgo": 6,
+   "sample": {
+    "posts": 25,
+    "likes": 117,
+    "reposts": 14,
+    "replies": 34
+   },
+   "parts": {
+    "volume": 21.6,
+    "velocity": 0,
+    "engagement": 11.8
+   },
+   "score": 33,
+   "label": "steady",
+   "viral": false,
+   "topPosts": [
+    {
+     "id": "2109842321252716800",
+     "url": "https://x.com/indie_maker_fox/status/2109842321252716800",
+     "author": "indie_maker_fox",
+     "text": "今天分享的开源项目是 OpenSEO\n\nhttps://t.co/SR3YZdMazO\n\nOpenSEO 是 Semrush / Ahrefs 的开源替代，支持关键词研究、排名追踪、竞品分析、反向链接和网站审计。还提供 MCP 和 Agent Skills，让 AI 助手直接参与 SEO 工作流。支持自托管，数据 API 按量付费。\n\nOpenSEO 是 DataForSEO https://t.co/L537YsSiHM",
+     "created_at": "2026-10-13T03:03:03.000Z",
+     "likes": 90,
+     "reposts": 14,
+     "replies": 18,
+     "views": 7670,
+     "quotes": 0
+    },
+    {
+     "id": "2109591270981074963",
+     "url": "https://x.com/filippkowalski/status/2109591270981074963",
+     "author": "filippkowalski",
+     "text": "Ok, I took the OpenSEO pill and i like it",
+     "created_at": "2026-10-12T10:25:27.000Z",
+     "likes": 9,
+     "reposts": 0,
+     "replies": 2,
+     "views": 2571,
+     "quotes": 0
+    },
+    {
+     "id": "2109872629343834249",
+     "url": "https://x.com/jarradgrigg/status/2109872629343834249",
+     "author": "jarradgrigg",
+     "text": "Thinking of building an 'OpenCFO' like OpenSEO but for personal finances. Self hosted. Plugin a Redbark API key or external connection and LLM API key, get all the reporting tools you need.\n\nTired of using tools like Fro",
+     "created_at": "2026-10-13T05:03:29.000Z",
+     "likes": 3,
+     "reposts": 0,
+     "replies": 3,
+     "views": 176,
+     "quotes": 0
+    }
+   ],
+   "computedAt": "2026-10-15T07:13:39.998Z"
+  },
+  "claude-haiku-5-5": {
+   "status": "live",
+   "query": "(\"haiku 5.5\" OR \"claude-haiku-5-5\") -is:retweet",
+   "mentions24h": 563,
+   "mentions7d": 9946,
+   "priorDailyAvg": 1563.8,
+   "velocity": 0.36,
+   "daily": [
+    4106,
+    1600,
+    1098,
+    854,
+    934,
+    791,
+    563
+   ],
+   "peakDay": 4106,
+   "peakDaysAgo": 6,
+   "sample": {
+    "posts": 25,
+    "likes": 52,
+    "reposts": 4,
+    "replies": 34
+   },
+   "parts": {
+    "volume": 40,
+    "velocity": 0,
+    "engagement": 10.6
+   },
+   "score": 51,
+   "label": "steady",
+   "viral": false,
+   "topPosts": [
+    {
+     "id": "2109113027366674593",
+     "url": "https://x.com/Xyz_Tox/status/2109113027366674593",
+     "author": "Xyz_Tox",
+     "text": "Claude Haiku 5.5 just dropped and it's dirt cheap 👀\n\nAnthropic's new small model is also selectable for free users on https://t.co/uXYebdcpGn.\n\n- API: $0.10 per 1M input, $0.50 per 1M output (prompts up to 100K)\n- aroun",
+     "created_at": "2026-10-11T02:45:05.000Z",
+     "likes": 33,
+     "reposts": 3,
+     "replies": 20,
+     "views": 145,
+     "quotes": 0
+    },
+    {
+     "id": "2109834044141969846",
+     "url": "https://x.com/simond_dev/status/2109834044141969846",
+     "author": "simond_dev",
+     "text": "Claude Code 2.1.296 藏了个省钱开关：\nCLAUDE_CODE_WORKFLOW_SUBAGENT_MODEL\n设一次，所有 workflow subagent 跑同一个模型，其他 subagent 各跑各的。\n我的用法：设成 claude-haiku-5-5。\nHaiku 5.5 现在 1M 上下文，短 prompt $0.10/$0.50——搜索、grep、读文件这种体力活，不值得上 Sonnet。",
+     "created_at": "2026-10-13T02:30:09.000Z",
+     "likes": 6,
+     "reposts": 0,
+     "replies": 6,
+     "views": 103,
+     "quotes": 0
+    },
+    {
+     "id": "2110470092991635756",
+     "url": "https://x.com/quietoraclex/status/2110470092991635756",
+     "author": "quietoraclex",
+     "text": "holy sh*t, Claude Code can run on a model 40x cheaper than Opus now...\n\nHaiku 5.5 does the work. Opus 5.5 only wakes up for the hard calls: before a plan locks, when the same error hits twice, before it says \"done\"\n\none ",
+     "created_at": "2026-10-14T20:37:35.000Z",
+     "likes": 9,
+     "reposts": 0,
+     "replies": 2,
+     "views": 310,
+     "quotes": 0
+    }
+   ],
+   "computedAt": "2026-10-15T07:13:39.998Z"
+  },
+  "openswarm": {
+   "status": "live",
+   "query": "(openswarm OR url:openswarm.info) -is:retweet",
+   "mentions24h": 11,
+   "mentions7d": 207,
+   "priorDailyAvg": 32.7,
+   "velocity": 0.34,
+   "daily": [
+    129,
+    26,
+    2,
+    4,
+    2,
+    33,
+    11
+   ],
+   "peakDay": 129,
+   "peakDaysAgo": 6,
+   "sample": {
+    "posts": 25,
+    "likes": 81,
+    "reposts": 4,
+    "replies": 22
+   },
+   "parts": {
+    "volume": 23.2,
+    "velocity": 0,
+    "engagement": 10.7
+   },
+   "score": 34,
+   "label": "steady",
+   "viral": false,
+   "topPosts": [
+    {
+     "id": "2108270531204264153",
+     "url": "https://x.com/trevorhaz/status/2108270531204264153",
+     "author": "trevorhaz",
+     "text": "Nothing like beating Haiku @openswarm https://t.co/055w5hyrFD",
+     "created_at": "2026-10-08T18:57:19.000Z",
+     "likes": 15,
+     "reposts": 2,
+     "replies": 5,
+     "views": 457,
+     "quotes": 1
+    },
+    {
+     "id": "2108180503732117864",
+     "url": "https://x.com/Aleskanderai/status/2108180503732117864",
+     "author": "Aleskanderai",
+     "text": "Let's beat Claude on producthunt today\n\nMade by: @openswarm \n\nHEHEHE https://t.co/XBSUdYATi1",
+     "created_at": "2026-10-08T12:59:34.000Z",
+     "likes": 17,
+     "reposts": 0,
+     "replies": 5,
+     "views": 21645,
+     "quotes": 0
+    },
+    {
+     "id": "2108282607200841806",
+     "url": "https://x.com/Fondocom/status/2108282607200841806",
+     "author": "Fondocom",
+     "text": "Congrats on the launch Haylli Weintraub, Alex Dakhli, Eric F Zeng &amp; team OpenSwarm! 🚨 Live on @ProductHunt 👇 https://t.co/Vb7qlskR1Y https://t.co/4o5fHg3DAw",
+     "created_at": "2026-10-08T19:45:18.000Z",
+     "likes": 18,
+     "reposts": 0,
+     "replies": 0,
+     "views": 332,
+     "quotes": 0
+    }
+   ],
+   "computedAt": "2026-10-15T07:13:39.998Z"
+  },
+  "chatgpt": {
+   "status": "live",
+   "query": "(chatgpt OR url:chatgpt.com) -is:retweet",
+   "mentions24h": 36379,
+   "mentions7d": 239599,
+   "priorDailyAvg": 33870,
+   "velocity": 1.07,
+   "daily": [
+    36587,
+    35167,
+    30992,
+    31766,
+    34502,
+    34206,
+    36379
+   ],
+   "peakDay": 36587,
+   "peakDaysAgo": 6,
+   "sample": {
+    "posts": 25,
+    "likes": 24,
+    "reposts": 6,
+    "replies": 4
+   },
+   "parts": {
+    "volume": 50,
+    "velocity": 1.2,
+    "engagement": 8.8
+   },
+   "score": 60,
+   "label": "steady",
+   "viral": false,
+   "topPosts": [
+    {
+     "id": "2110077037817774104",
+     "url": "https://x.com/orbitx_wrld/status/2110077037817774104",
+     "author": "orbitx_wrld",
+     "text": "🚀 Connect OrbitX MCP to ChatGPT in minutes! 🤖\n\nHere's how to get access to our tools directly inside ChatGPT 👇\n\n1️⃣ Open ChatGPT Web: https://t.co/YUr2kmjOUd\n\n2️⃣ Go to Settings → Apps/Connectors and find the option t",
+     "created_at": "2026-10-13T18:35:43.000Z",
+     "likes": 17,
+     "reposts": 4,
+     "replies": 3,
+     "views": 507,
+     "quotes": 3
+    },
+    {
+     "id": "2108901107858653587",
+     "url": "https://x.com/xMezbah/status/2108901107858653587",
+     "author": "xMezbah",
+     "text": "Want to try an iPhone app idea without opening Xcode?\n\n@vibecodeapp, co-founded by @anshnanda, can build and edit native iPhone apps through ChatGPT, with a live simulator you can tap through.\n\nhttps://t.co/pH1NENsFvj",
+     "created_at": "2026-10-10T12:43:00.000Z",
+     "likes": 3,
+     "reposts": 1,
+     "replies": 0,
+     "views": 752,
+     "quotes": 0
+    },
+    {
+     "id": "2108947161266204795",
+     "url": "https://x.com/xMezbah/status/2108947161266204795",
+     "author": "xMezbah",
+     "text": "Ever found the answer buried between docs, tickets and GitHub?\n\n@kapa_ai, co-founded by @emilsnotes, has a ChatGPT plugin to pull source-backed answers from your team’s knowledge.\n\n14-day trial, then paid.\n\nhttps://t.co/",
+     "created_at": "2026-10-10T15:46:00.000Z",
+     "likes": 1,
+     "reposts": 1,
+     "replies": 0,
+     "views": 76,
+     "quotes": 0
+    }
+   ],
+   "computedAt": "2026-10-15T07:13:39.998Z"
+  },
+  "claude": {
+   "status": "live",
+   "query": "(\"claude ai\" OR \"claude.ai\" OR @claudeai OR (claude anthropic)) -is:retweet",
+   "mentions24h": 7119,
+   "mentions7d": 59285,
+   "priorDailyAvg": 8694.3,
+   "velocity": 0.82,
+   "daily": [
+    12042,
+    10364,
+    8114,
+    6133,
+    7286,
+    8227,
+    7119
+   ],
+   "peakDay": 12042,
+   "peakDaysAgo": 6,
+   "sample": {
+    "posts": 25,
+    "likes": 394,
+    "reposts": 138,
+    "replies": 35
+   },
+   "parts": {
+    "volume": 47.7,
+    "velocity": 0,
+    "engagement": 14.7
+   },
+   "score": 62,
+   "label": "steady",
+   "viral": false,
+   "topPosts": [
+    {
+     "id": "2109565074042159117",
+     "url": "https://x.com/PromptLuckyAi/status/2109565074042159117",
+     "author": "PromptLuckyAi",
+     "text": "Best FREE COURSES to learn CLAUDE\n\n1. Mastering Claude Code: From Setup to Real Projects\nhttps://t.co/sQ9BCSAHfz\n\n2. Anthropic: AI Fundamentals with Claude\nhttps://t.co/RDL2wyeOOC\n\n3. Claude Code in Action\nhttps://t.co/U",
+     "created_at": "2026-10-12T08:41:22.000Z",
+     "likes": 194,
+     "reposts": 68,
+     "replies": 10,
+     "views": 5906,
+     "quotes": 0
+    },
+    {
+     "id": "2108939684714049830",
+     "url": "https://x.com/PromptLuckyAi/status/2108939684714049830",
+     "author": "PromptLuckyAi",
+     "text": "Best FREE COURSES to learn CLAUDE\n\n1. Mastering Claude Code: From Setup to Real Projects\nhttps://t.co/sQ9BCSAHfz\n\n2. Anthropic: AI Fundamentals with Claude\nhttps://t.co/RDL2wyeOOC\n\n3. Claude Code in Action\nhttps://t.co/U",
+     "created_at": "2026-10-10T15:16:17.000Z",
+     "likes": 134,
+     "reposts": 50,
+     "replies": 2,
+     "views": 4498,
+     "quotes": 0
+    },
+    {
+     "id": "2108782076539588891",
+     "url": "https://x.com/Survi235918/status/2108782076539588891",
+     "author": "Survi235918",
+     "text": "Best FREE COURSES to learn CLAUDE\n\n1. Mastering Claude Code: From Setup to Real Projects\nhttps://t.co/D5VoiP8H7Q\n\n2. Anthropic: AI Fundamentals with Claude\nhttps://t.co/XPfBwji3Js\n\n3. Claude Code in Action\nhttps://t.co/f",
+     "created_at": "2026-10-10T04:50:00.000Z",
+     "likes": 49,
+     "reposts": 15,
+     "replies": 18,
+     "views": 675,
+     "quotes": 1
+    }
+   ],
+   "computedAt": "2026-10-15T07:13:39.998Z"
+  },
+  "gemini": {
+   "status": "live",
+   "query": "(\"google gemini\" OR \"gemini app\" OR @GeminiApp OR url:gemini.google.com) -is:retweet",
+   "mentions24h": 4008,
+   "mentions7d": 17972,
+   "priorDailyAvg": 2327.3,
+   "velocity": 1.72,
+   "daily": [
+    1988,
+    1778,
+    1515,
+    1391,
+    1560,
+    5732,
+    4008
+   ],
+   "peakDay": 5732,
+   "peakDaysAgo": 1,
+   "sample": {
+    "posts": 25,
+    "likes": 1368,
+    "reposts": 73,
+    "replies": 177
+   },
+   "parts": {
+    "volume": 42.5,
+    "velocity": 9.8,
+    "engagement": 16.5
+   },
+   "score": 69,
+   "label": "rising",
+   "viral": false,
+   "topPosts": [
+    {
+     "id": "2110042279880884565",
+     "url": "https://x.com/ash_twtz/status/2110042279880884565",
+     "author": "ash_twtz",
+     "text": "This is highly disappointing from Google.\n\nGemini 4 Argon is exclusive to Ultra users in Antigravity, while Pro users can access it in the Gemini app.\n\nSo Google expects developers on the $20 Pro plan to use a chatbot fo",
+     "created_at": "2026-10-13T16:17:36.000Z",
+     "likes": 1332,
+     "reposts": 70,
+     "replies": 163,
+     "views": 72585,
+     "quotes": 15
+    },
+    {
+     "id": "2110165518808187247",
+     "url": "https://x.com/annanidev/status/2110165518808187247",
+     "author": "annanidev",
+     "text": "This is a really bad look for Google.\n\nGemini 4 Argon works in Antigravity only if you pay for Ultra. On the $20 Pro plan, you get it in a chat window in the Gemini app.\n\nSo a developer pays for Pro, then has to copy and",
+     "created_at": "2026-10-14T00:27:19.000Z",
+     "likes": 14,
+     "reposts": 1,
+     "replies": 6,
+     "views": 338,
+     "quotes": 0
+    },
+    {
+     "id": "2110063621682466887",
+     "url": "https://x.com/financialjuice/status/2110063621682466887",
+     "author": "financialjuice",
+     "text": "Google: Gemini 4 Argon comes to Gemini app. $GOOGL",
+     "created_at": "2026-10-13T17:42:25.000Z",
+     "likes": 8,
+     "reposts": 0,
+     "replies": 1,
+     "views": 37729,
+     "quotes": 0
+    }
+   ],
+   "computedAt": "2026-10-15T07:13:39.998Z"
+  },
+  "grok": {
+   "status": "live",
+   "query": "(grok OR url:grok.com) -is:retweet -\"@grok is this true\" -is:reply",
+   "mentions24h": 46240,
+   "mentions7d": 318981,
+   "priorDailyAvg": 45456.8,
+   "velocity": 1.02,
+   "daily": [
+    46592,
+    48465,
+    39914,
+    42643,
+    48078,
+    47049,
+    46240
+   ],
+   "peakDay": 48465,
+   "peakDaysAgo": 5,
+   "sample": {
+    "posts": 24,
+    "likes": 82,
+    "reposts": 4,
+    "replies": 42
+   },
+   "parts": {
+    "volume": 50,
+    "velocity": 0.4,
+    "engagement": 11.4
+   },
+   "score": 62,
+   "label": "steady",
+   "viral": false,
+   "topPosts": [
+    {
+     "id": "2110425931445838230",
+     "url": "https://x.com/rajuvamsi007/status/2110425931445838230",
+     "author": "rajuvamsi007",
+     "text": "I had Grok rate me on the Tesla Fanboy scale (0–100) 🚗⚡\n\nMy score: 78/100 😔\nI lost points for calling out HW3 fails 😅\n\nThe top 5:\n1. @Teslaconomics: 95\n2. @teslaownersSV: 93\n3. @wholemars: 88\n4. @SawyerMerritt: 86\n5. ",
+     "created_at": "2026-10-14T17:42:06.000Z",
+     "likes": 23,
+     "reposts": 0,
+     "replies": 30,
+     "views": 3645,
+     "quotes": 4
+    },
+    {
+     "id": "2108778263330128340",
+     "url": "https://x.com/blankspeaker/status/2108778263330128340",
+     "author": "blankspeaker",
+     "text": "SpaceXAI is developing and testing checkout forms inside Grok chats. Here's a mockup of how it could work, based on what's already in https://t.co/810TEa6LL1's code:\n\n- When a Grok shopping task reaches a store's checkou",
+     "created_at": "2026-10-10T04:34:51.000Z",
+     "likes": 48,
+     "reposts": 0,
+     "replies": 2,
+     "views": 3923,
+     "quotes": 0
+    },
+    {
+     "id": "2108512231604543728",
+     "url": "https://x.com/7shi/status/2108512231604543728",
+     "author": "7shi",
+     "text": "XのGrokを勧められるがままに https://t.co/guID9MWAyk に紐付けたのですが、投稿の説明を求めると英語で回答するようになってしまいました。以前はXのGrokもそうだったのですが、最近は日本語になっていたのですよね。無課金だと回答をカスタマイズできないみたいです。",
+     "created_at": "2026-10-09T10:57:44.000Z",
+     "likes": 5,
+     "reposts": 1,
+     "replies": 1,
+     "views": 529,
+     "quotes": 0
+    }
+   ],
+   "computedAt": "2026-10-15T07:13:39.998Z"
+  },
+  "perplexity": {
+   "status": "live",
+   "query": "(perplexity OR @perplexity_ai OR url:perplexity.ai) -is:retweet",
+   "mentions24h": 1324,
+   "mentions7d": 8108,
+   "priorDailyAvg": 1130.7,
+   "velocity": 1.17,
+   "daily": [
+    1238,
+    1169,
+    1106,
+    918,
+    1154,
+    1199,
+    1324
+   ],
+   "peakDay": 1324,
+   "peakDaysAgo": 0,
+   "sample": {
+    "posts": 24,
+    "likes": 891,
+    "reposts": 133,
+    "replies": 66
+   },
+   "parts": {
+    "volume": 39.1,
+    "velocity": 2.8,
+    "engagement": 15.8
+   },
+   "score": 58,
+   "label": "steady",
+   "viral": false,
+   "topPosts": [
+    {
+     "id": "2109645765958132083",
+     "url": "https://x.com/MollySOShea/status/2109645765958132083",
+     "author": "MollySOShea",
+     "text": "NEW: I sat down w/ Perplexity Founder &amp; CEO Aravind Srinivas (@AravSrinivas) on why AI-native SMBs could drive the next American millionaire economic boom.\n\n@perplexity_ai, valued at ~$20B with ~$2B in reported fundi",
+     "created_at": "2026-10-12T14:02:00.000Z",
+     "likes": 720,
+     "reposts": 48,
+     "replies": 23,
+     "views": 1843696,
+     "quotes": 21
+    },
+    {
+     "id": "2110340578751791414",
+     "url": "https://x.com/abir35627/status/2110340578751791414",
+     "author": "abir35627",
+     "text": "13 of the most powerful AI tools worth knowing in 2026 🔥\n\n1. ChatGPT\n   https://t.co/mUQ9IBXFq1\n\n2. Claude\n   https://t.co/lReHriytPw\n\n3. Google Gemini\n   https://t.co/F1sd3dy936\n\n4. Perplexity\n   https://t.co/TLee9pO6m",
+     "created_at": "2026-10-14T12:02:56.000Z",
+     "likes": 74,
+     "reposts": 54,
+     "replies": 14,
+     "views": 1114,
+     "quotes": 0
+    },
+    {
+     "id": "2108349567297343544",
+     "url": "https://x.com/Alaina_Ai03/status/2108349567297343544",
+     "author": "Alaina_Ai03",
+     "text": "AI TOOLS \nGPT-6 Astra ⇨ https://t.co/oK2M5ygMcq\nManus ⇨ https://t.co/6agkAjBElV\nDevin ⇨ https://t.co/q2PYrYPdto\nGenspark ⇨ https://t.co/bhY0QzSjEe\nPerplexity Computer ⇨ https://t.co/ckxp9PwAqk\nBrowser Use ⇨ https://t.co/",
+     "created_at": "2026-10-09T00:11:22.000Z",
+     "likes": 46,
+     "reposts": 23,
+     "replies": 18,
+     "views": 901,
+     "quotes": 0
+    }
+   ],
+   "computedAt": "2026-10-15T07:13:39.998Z"
+  },
+  "cursor": {
+   "status": "live",
+   "query": "(\"cursor ai\" OR @cursor_ai OR url:cursor.com OR \"cursor ide\" OR \"cursor agent\") -is:retweet",
+   "mentions24h": 1392,
+   "mentions7d": 8201,
+   "priorDailyAvg": 1134.8,
+   "velocity": 1.23,
+   "daily": [
+    590,
+    514,
+    431,
+    405,
+    2220,
+    2649,
+    1392
+   ],
+   "peakDay": 2649,
+   "peakDaysAgo": 1,
+   "sample": {
+    "posts": 18,
+    "likes": 25,
+    "reposts": 0,
+    "replies": 7
+   },
+   "parts": {
+    "volume": 39.1,
+    "velocity": 3.7,
+    "engagement": 8.1
+   },
+   "score": 51,
+   "label": "steady",
+   "viral": false,
+   "topPosts": [
+    {
+     "id": "2109957050348564965",
+     "url": "https://x.com/anioutkajarkova/status/2109957050348564965",
+     "author": "anioutkajarkova",
+     "text": "Хитрый Илоний соблазнил покупкой нового плана Курсора. Теперь у меня появилась возможность редактировать посты в течение часа в акке Х, но окончательно отвалилась работа с Cursor IDE",
+     "created_at": "2026-10-13T10:38:56.000Z",
+     "likes": 11,
+     "reposts": 0,
+     "replies": 1,
+     "views": 373,
+     "quotes": 0
+    },
+    {
+     "id": "2108377145160720471",
+     "url": "https://x.com/jamieconnor/status/2108377145160720471",
+     "author": "jamieconnor",
+     "text": "We're getting way better results out of Cursor Agent than Cursor IDE.\nUsing an orchestrator to create separate tickets for each repository.",
+     "created_at": "2026-10-09T02:00:57.000Z",
+     "likes": 1,
+     "reposts": 0,
+     "replies": 2,
+     "views": 42,
+     "quotes": 0
+    },
+    {
+     "id": "2109700578574225803",
+     "url": "https://x.com/anomit/status/2109700578574225803",
+     "author": "anomit",
+     "text": "Connected @CleanSlop MCP live on call with @SwaroopH in Cursor IDE. \n\nFrictionless application of changes in-editor.\n\nComplete agentic support dropping this week for select beta users! DM us for early access. https://t.c",
+     "created_at": "2026-10-12T17:39:48.000Z",
+     "likes": 5,
+     "reposts": 0,
+     "replies": 0,
+     "views": 291,
+     "quotes": 1
+    }
+   ],
+   "computedAt": "2026-10-15T07:13:39.998Z"
+  },
+  "github-copilot": {
+   "status": "live",
+   "query": "(\"github copilot\" OR @GitHubCopilot) -is:retweet",
+   "mentions24h": 354,
+   "mentions7d": 2365,
+   "priorDailyAvg": 335.2,
+   "velocity": 1.06,
+   "daily": [
+    458,
+    323,
+    288,
+    250,
+    372,
+    320,
+    354
+   ],
+   "peakDay": 458,
+   "peakDaysAgo": 6,
+   "sample": {
+    "posts": 25,
+    "likes": 165,
+    "reposts": 15,
+    "replies": 15
+   },
+   "parts": {
+    "volume": 33.7,
+    "velocity": 1.1,
+    "engagement": 11.9
+   },
+   "score": 47,
+   "label": "steady",
+   "viral": false,
+   "topPosts": [
+    {
+     "id": "2108623917644419352",
+     "url": "https://x.com/windowsdev/status/2108623917644419352",
+     "author": "windowsdev",
+     "text": "GitHub Copilot HydraFusion is extending intelligent routing to Windows, tapping into models running locally on your device.  💻☁️\n\nComing to GitHub Copilot app, Copilot CLI + VS Code in experimental preview later this mo",
+     "created_at": "2026-10-09T18:21:32.000Z",
+     "likes": 144,
+     "reposts": 12,
+     "replies": 3,
+     "views": 18006,
+     "quotes": 1
+    },
+    {
+     "id": "2109640927799353527",
+     "url": "https://x.com/tsubakimoto_s/status/2109640927799353527",
+     "author": "tsubakimoto_s",
+     "text": "福岡でGitHub Copilotのハンズオンが受けられるイベントは10月17日ですよ～まだ参加できますよ～ #github #copilot\nhttps://t.co/e31JxLwr44 https://t.co/ODVZ9qb8Tg",
+     "created_at": "2026-10-12T13:42:47.000Z",
+     "likes": 7,
+     "reposts": 3,
+     "replies": 1,
+     "views": 500,
+     "quotes": 0
+    },
+    {
+     "id": "2109013856638861727",
+     "url": "https://x.com/awakecoding/status/2109013856638861727",
+     "author": "awakecoding",
+     "text": "Weird, the OpenRouter docs cover most coding agents, including those that don't officially support BYOK, but there's nothing about the GitHub Copilot app or Copilot CLI. I've used OpenRouter with the GitHub Copilot app a",
+     "created_at": "2026-10-10T20:11:01.000Z",
+     "likes": 8,
+     "reposts": 0,
+     "replies": 4,
+     "views": 1158,
+     "quotes": 0
+    }
+   ],
+   "computedAt": "2026-10-15T07:13:39.998Z"
+  },
+  "windsurf": {
+   "status": "live",
+   "query": "(windsurf (ai OR ide OR code OR editor) OR @windsurf OR url:windsurf.com) -is:retweet",
+   "mentions24h": 42,
+   "mentions7d": 354,
+   "priorDailyAvg": 52,
+   "velocity": 0.81,
+   "daily": [
+    72,
+    57,
+    57,
+    29,
+    52,
+    45,
+    42
+   ],
+   "peakDay": 72,
+   "peakDaysAgo": 6,
+   "sample": {
+    "posts": 25,
+    "likes": 242,
+    "reposts": 168,
+    "replies": 47
+   },
+   "parts": {
+    "volume": 25.5,
+    "velocity": 0,
+    "engagement": 14.6
+   },
+   "score": 40,
+   "label": "steady",
+   "viral": false,
+   "topPosts": [
+    {
+     "id": "2109194262222971172",
+     "url": "https://x.com/CamtoIke/status/2109194262222971172",
+     "author": "CamtoIke",
+     "text": "https://t.co/L1C0iW6oAg",
+     "created_at": "2026-10-11T08:07:53.000Z",
+     "likes": 153,
+     "reposts": 146,
+     "replies": 5,
+     "views": 5052,
+     "quotes": 1
+    },
+    {
+     "id": "2109699080490250662",
+     "url": "https://x.com/CamtoIke/status/2109699080490250662",
+     "author": "CamtoIke",
+     "text": "bro, this is unreal\n\nCline can read your codebase, track down bugs, suggest fixes, run tests, and go through the errors when something breaks. You stay in control and approve each step.\n\nWhat Cline actually is\n\nCline is ",
+     "created_at": "2026-10-12T17:33:51.000Z",
+     "likes": 23,
+     "reposts": 15,
+     "replies": 2,
+     "views": 235,
+     "quotes": 0
+    },
+    {
+     "id": "2108777346970857698",
+     "url": "https://x.com/e_opore/status/2108777346970857698",
+     "author": "e_opore",
+     "text": "80+ Free Sites and Tools to Become a Vibe Coder\n\nBuild websites, apps, and AI-powered products without mastering every line of code.\n\n1. AI App Builders\n\n- Lovable\n- Bolt .new\n- Replit\n- v0\n- Base44\n\n2. AI Coding Assista",
+     "created_at": "2026-10-10T04:31:13.000Z",
+     "likes": 27,
+     "reposts": 4,
+     "replies": 8,
+     "views": 2680,
+     "quotes": 1
+    }
+   ],
+   "computedAt": "2026-10-15T07:13:39.998Z"
+  },
+  "claude-code": {
+   "status": "live",
+   "query": "(\"claude code\" OR claudecode) -is:retweet",
+   "mentions24h": 10891,
+   "mentions7d": 62925,
+   "priorDailyAvg": 8672.3,
+   "velocity": 1.26,
+   "daily": [
+    8839,
+    8450,
+    7710,
+    8177,
+    9410,
+    9448,
+    10891
+   ],
+   "peakDay": 10891,
+   "peakDaysAgo": 0,
+   "sample": {
+    "posts": 25,
+    "likes": 495,
+    "reposts": 87,
+    "replies": 16
+   },
+   "parts": {
+    "volume": 48,
+    "velocity": 4.2,
+    "engagement": 14.5
+   },
+   "score": 67,
+   "label": "steady",
+   "viral": false,
+   "topPosts": [
+    {
+     "id": "2108887840075473016",
+     "url": "https://x.com/Abdullah_Ops1/status/2108887840075473016",
+     "author": "Abdullah_Ops1",
+     "text": "تقدر تسوي فيديوهات موشن جرافيك بدون اشتراكات برامج مونتاج أو أدوات توليد فيديو\n\nكل اللي تحتاجه Claude Code أو Codex\n\nافتح أي واحد منهم واكتب له:\n\n\"أبغى تسوي لي فيديو موشن جرافيك احترافي مدته 20 ثانية عن [فكرتك]، باستخدام",
+     "created_at": "2026-10-10T11:50:16.000Z",
+     "likes": 387,
+     "reposts": 43,
+     "replies": 6,
+     "views": 19329,
+     "quotes": 0
+    },
+    {
+     "id": "2109101826247459297",
+     "url": "https://x.com/peesamac/status/2109101826247459297",
+     "author": "peesamac",
+     "text": "claude-mem คือปลั๊กอินที่ทำให้ AI agent จำได้ว่าเมื่อวานเราทำอะไรกันไป ปิด session แล้วเปิดใหม่ก็ไม่ต้องเล่าโปรเจกต์ให้ฟังใหม่ทุกรอบ ตอนนี้ repo พุ่งไปเกือบ 99k stars แล้ว\n\nปัญหาที่คนใช้ Claude Code ทุกคนเจอคือพอขึ้น ses",
+     "created_at": "2026-10-11T02:00:35.000Z",
+     "likes": 57,
+     "reposts": 39,
+     "replies": 1,
+     "views": 2322,
+     "quotes": 1
+    },
+    {
+     "id": "2109922588625453121",
+     "url": "https://x.com/tecmint/status/2109922588625453121",
+     "author": "tecmint",
+     "text": "Looking to add AI agent skills to Claude Code on Linux?\n\nMakerSkills is an AI agent skills collection that lets you extend Claude Code with reusable skills for research, decision-making, content creation, and more.\n\nThis",
+     "created_at": "2026-10-13T08:22:00.000Z",
+     "likes": 23,
+     "reposts": 3,
+     "replies": 3,
+     "views": 2809,
+     "quotes": 0
+    }
+   ],
+   "computedAt": "2026-10-15T07:13:39.998Z"
+  },
+  "aider": {
+   "status": "live",
+   "query": "(\"aider chat\" OR url:aider.chat OR (aider coding)) -is:retweet",
+   "mentions24h": 19,
+   "mentions7d": 110,
+   "priorDailyAvg": 15.2,
+   "velocity": 1.25,
+   "daily": [
+    13,
+    11,
+    12,
+    14,
+    23,
+    18,
+    19
+   ],
+   "peakDay": 23,
+   "peakDaysAgo": 2,
+   "sample": {
+    "posts": 25,
+    "likes": 221,
+    "reposts": 61,
+    "replies": 125
+   },
+   "parts": {
+    "volume": 20.5,
+    "velocity": 2.6,
+    "engagement": 14.1
+   },
+   "score": 37,
+   "label": "steady",
+   "viral": false,
+   "topPosts": [
+    {
+     "id": "2109141457579934108",
+     "url": "https://x.com/Ziven_Coder/status/2109141457579934108",
+     "author": "Ziven_Coder",
+     "text": "50 Useful GitHub Repositories for Developers &amp; AI Builders 🚀\n\nWant to learn coding, build AI apps, and automate tasks? Save these useful GitHub repos! 👇\n\n💻 Coding &amp; Learning\n\n1. Build Your Own X\n2. Free Progra",
+     "created_at": "2026-10-11T04:38:04.000Z",
+     "likes": 82,
+     "reposts": 50,
+     "replies": 30,
+     "views": 2164,
+     "quotes": 1
+    },
+    {
+     "id": "2108671574413123953",
+     "url": "https://x.com/sorenxet/status/2108671574413123953",
+     "author": "sorenxet",
+     "text": "This paper takes eleven coding agents apart and finds the same skeleton in every one of them.\n\n-&gt; Claude Code (Opus 5.5), Codex, Gemini CLI, Aider, OpenHands and more, all reduced to one line:\n\nModel + Harness = Agent",
+     "created_at": "2026-10-09T21:30:55.000Z",
+     "likes": 68,
+     "reposts": 0,
+     "replies": 16,
+     "views": 1784,
+     "quotes": 0
+    },
+    {
+     "id": "2109585066279981310",
+     "url": "https://x.com/44errrr/status/2109585066279981310",
+     "author": "44errrr",
+     "text": "Your AI coding agent keeps a plain-text copy of every API key you’ve ever pasted into it.\n\nClaude Code, Codex, Gemini CLI, Cursor, Cline: they all save full sessions to disk. Every .env the agent read. Every key you past",
+     "created_at": "2026-10-12T10:00:48.000Z",
+     "likes": 18,
+     "reposts": 1,
+     "replies": 37,
+     "views": 606,
+     "quotes": 0
+    }
+   ],
+   "computedAt": "2026-10-15T07:13:39.998Z"
+  },
+  "v0": {
+   "status": "live",
+   "query": "(\"v0.dev\" OR \"v0 by vercel\" OR url:v0.dev OR url:v0.app OR @v0) -is:retweet",
+   "mentions24h": 34,
+   "mentions7d": 176,
+   "priorDailyAvg": 23.7,
+   "velocity": 1.44,
+   "daily": [
+    13,
+    40,
+    16,
+    15,
+    10,
+    48,
+    34
+   ],
+   "peakDay": 48,
+   "peakDaysAgo": 1,
+   "sample": {
+    "posts": 24,
+    "likes": 116,
+    "reposts": 17,
+    "replies": 27
+   },
+   "parts": {
+    "volume": 22.5,
+    "velocity": 5.1,
+    "engagement": 11.8
+   },
+   "score": 39,
+   "label": "rising",
+   "viral": false,
+   "topPosts": [
+    {
+     "id": "2108243855313412252",
+     "url": "https://x.com/MetaVRDevs/status/2108243855313412252",
+     "author": "MetaVRDevs",
+     "text": "If you build for the web, you can build for Meta VR.\n\nWith the Meta template for v0 by @vercel, describe an idea, deploy it, and open it on Meta Quest today. It's ready for Meta VR Glasses too, with gaze and hand input b",
+     "created_at": "2026-10-08T17:11:19.000Z",
+     "likes": 38,
+     "reposts": 6,
+     "replies": 19,
+     "views": 5465,
+     "quotes": 2
+    },
+    {
+     "id": "2108267599696154856",
+     "url": "https://x.com/MetaforDevs/status/2108267599696154856",
+     "author": "MetaforDevs",
+     "text": "If you build for the web, you can build for Meta VR.\n\nWith the Meta template for v0 by @Vercel, describe an idea, deploy it, and open it on Meta Quest today. It's ready for Meta VR Glasses too, with gaze and hand input b",
+     "created_at": "2026-10-08T18:45:40.000Z",
+     "likes": 62,
+     "reposts": 7,
+     "replies": 3,
+     "views": 5595,
+     "quotes": 0
+    },
+    {
+     "id": "2110295880783835385",
+     "url": "https://x.com/kall_me_Isaiah/status/2110295880783835385",
+     "author": "kall_me_Isaiah",
+     "text": "50 AI tools that will save you hundreds of hours in 2026. \n\n1. Claude ➠ Writing, coding &amp; reasoning\n\n2. Perplexity ➠ Research anything\n\n3. PortfolioTab ➠ Create your portfolio\n\n4. Kling AI ➠ Create AI videos\n\n5. Trip",
+     "created_at": "2026-10-14T09:05:20.000Z",
+     "likes": 5,
+     "reposts": 1,
+     "replies": 3,
+     "views": 120,
+     "quotes": 0
+    }
+   ],
+   "computedAt": "2026-10-15T07:13:39.998Z"
+  },
+  "bolt": {
+   "status": "live",
+   "query": "(\"bolt.new\" OR url:bolt.new OR @boltdotnew) -is:retweet",
+   "mentions24h": 126,
+   "mentions7d": 388,
+   "priorDailyAvg": 43.7,
+   "velocity": 2.89,
+   "daily": [
+    38,
+    21,
+    10,
+    10,
+    8,
+    175,
+    126
+   ],
+   "peakDay": 175,
+   "peakDaysAgo": 1,
+   "sample": {
+    "posts": 25,
+    "likes": 129,
+    "reposts": 15,
+    "replies": 24
+   },
+   "parts": {
+    "volume": 25.9,
+    "velocity": 19.1,
+    "engagement": 11.7
+   },
+   "score": 57,
+   "label": "hype",
+   "viral": false,
+   "topPosts": [
+    {
+     "id": "2108242327449813193",
+     "url": "https://x.com/boltdotnew/status/2108242327449813193",
+     "author": "boltdotnew",
+     "text": "One prompt. A full podcast clip player built in https://t.co/UH6gFfHvbp\n\nScrubbable waveform, chapter markers you can click to jump around, and a visual editor to restyle it after. https://t.co/F3KkxJ27fe",
+     "created_at": "2026-10-08T17:05:14.000Z",
+     "likes": 48,
+     "reposts": 1,
+     "replies": 9,
+     "views": 4207,
+     "quotes": 0
+    },
+    {
+     "id": "2108160239522414924",
+     "url": "https://x.com/codecloude/status/2108160239522414924",
+     "author": "codecloude",
+     "text": "تو گیت هاب می‌تونید فقط با اضافه‌کردن https://t.co/JWZfONCGJf قبل از آدرس هر ریپوی GitHub، پروژه رو مستقیماً داخل محیط برنامه‌نویسی آنلاین و هوشمند Bolt باز کنید!\n\nمثلاً:\n\n🔹 آدرس معمولی:\nhttps://t.co/sECQY0kjAI\n\n🔹 آدرس",
+     "created_at": "2026-10-08T11:39:03.000Z",
+     "likes": 39,
+     "reposts": 6,
+     "replies": 0,
+     "views": 1938,
+     "quotes": 0
+    },
+    {
+     "id": "2109760704471277660",
+     "url": "https://x.com/DexXonAI/status/2109760704471277660",
+     "author": "DexXonAI",
+     "text": "(1/4)\n\nStop treating https://t.co/WZRSDRXAUe as just another AI landing page generator.\n\nIts real advantage isn't the UI generation. It's the browser-based development environment running underneath.\n\nWebContainers can r",
+     "created_at": "2026-10-12T21:38:44.000Z",
+     "likes": 9,
+     "reposts": 8,
+     "replies": 10,
+     "views": 759,
+     "quotes": 0
+    }
+   ],
+   "computedAt": "2026-10-15T07:13:39.998Z"
+  },
+  "lovable": {
+   "status": "live",
+   "query": "(\"lovable.dev\" OR @lovable_dev OR url:lovable.dev OR url:lovable.app OR (lovable vibe)) -is:retweet",
+   "mentions24h": 146,
+   "mentions7d": 741,
+   "priorDailyAvg": 99.2,
+   "velocity": 1.47,
+   "daily": [
+    93,
+    93,
+    84,
+    100,
+    131,
+    94,
+    146
+   ],
+   "peakDay": 146,
+   "peakDaysAgo": 0,
+   "sample": {
+    "posts": 25,
+    "likes": 59,
+    "reposts": 5,
+    "replies": 19
+   },
+   "parts": {
+    "volume": 28.7,
+    "velocity": 6.9,
+    "engagement": 10.3
+   },
+   "score": 46,
+   "label": "rising",
+   "viral": false,
+   "topPosts": [
+    {
+     "id": "2109171932570734988",
+     "url": "https://x.com/shubh19/status/2109171932570734988",
+     "author": "shubh19",
+     "text": "Rank the top 3 vibe coding tools right now:\n\n- Cursor\n- Claude Code\n- Antigravity\n- Windsurf\n- OpenAI Codex\n- GitHub Copilot\n- Replit Agent\n- Lovable\n- Bolt .new\n\nWhat order would you put them in? (1st, 2nd, 3rd) https:/",
+     "created_at": "2026-10-11T06:39:09.000Z",
+     "likes": 9,
+     "reposts": 2,
+     "replies": 10,
+     "views": 530,
+     "quotes": 0
+    },
+    {
+     "id": "2108240697614799076",
+     "url": "https://x.com/Techweek_/status/2108240697614799076",
+     "author": "Techweek_",
+     "text": "Philip Braddock, head of @Atlassian for Startups, on how there's never been a better time to \"build, build, build\". Their vibe coding demo event last night with @Lovable was 🔥  #SFTechWeek\n\n@philipbraddock https://t.co/",
+     "created_at": "2026-10-08T16:58:46.000Z",
+     "likes": 13,
+     "reposts": 1,
+     "replies": 2,
+     "views": 885,
+     "quotes": 0
+    },
+    {
+     "id": "2110429348792520704",
+     "url": "https://x.com/techboo_/status/2110429348792520704",
+     "author": "techboo_",
+     "text": "The hard part of launching was never the build, it is getting everyone to see it. Lovable now builds the ads too, vibe coding is turning into vibe founding 💀 https://t.co/OtP1F0Zx3d",
+     "created_at": "2026-10-14T17:55:41.000Z",
+     "likes": 15,
+     "reposts": 1,
+     "replies": 0,
+     "views": 357,
+     "quotes": 0
+    }
+   ],
+   "computedAt": "2026-10-15T07:13:39.998Z"
+  },
+  "replit": {
+   "status": "live",
+   "query": "(replit OR url:replit.com) -is:retweet",
+   "mentions24h": 346,
+   "mentions7d": 2072,
+   "priorDailyAvg": 287.7,
+   "velocity": 1.2,
+   "daily": [
+    386,
+    301,
+    227,
+    174,
+    273,
+    365,
+    346
+   ],
+   "peakDay": 386,
+   "peakDaysAgo": 6,
+   "sample": {
+    "posts": 25,
+    "likes": 146,
+    "reposts": 16,
+    "replies": 43
+   },
+   "parts": {
+    "volume": 33.2,
+    "velocity": 3.3,
+    "engagement": 12.4
+   },
+   "score": 49,
+   "label": "steady",
+   "viral": false,
+   "topPosts": [
+    {
+     "id": "2108705386886742349",
+     "url": "https://x.com/Replit/status/2108705386886742349",
+     "author": "Replit",
+     "text": "This Week in Replit\n\n1) Replit Desktop for Windows is now in private preview, with Microsoft and NVIDIA. Replit can build and run apps right on your PC, each in its own isolated sandbox. Join the waitlist for early acces",
+     "created_at": "2026-10-09T23:45:16.000Z",
+     "likes": 50,
+     "reposts": 8,
+     "replies": 31,
+     "views": 10745,
+     "quotes": 9
+    },
+    {
+     "id": "2109268529232978291",
+     "url": "https://x.com/LaunchAnything/status/2109268529232978291",
+     "author": "LaunchAnything",
+     "text": "Product video for @Replit \n\nConnectors let you plug the tools your team already uses straight into whatever you build on Replit\n\nThere isn't a single screen of UI in this video. We just showed everything you can connect,",
+     "created_at": "2026-10-11T13:03:00.000Z",
+     "likes": 66,
+     "reposts": 2,
+     "replies": 4,
+     "views": 2066,
+     "quotes": 0
+    },
+    {
+     "id": "2109663448011358533",
+     "url": "https://x.com/NIftek/status/2109663448011358533",
+     "author": "NIftek",
+     "text": "Chicago! Come build cool things with AI! Me, @MannyBernabe and @Replit are hosting our first IRL event on October 29th. If you have an idea for an app, whether you're building for fun or business, this is an event you wo",
+     "created_at": "2026-10-12T15:12:16.000Z",
+     "likes": 13,
+     "reposts": 5,
+     "replies": 0,
+     "views": 397,
+     "quotes": 0
+    }
+   ],
+   "computedAt": "2026-10-15T07:13:39.998Z"
+  },
+  "n8n": {
+   "status": "live",
+   "query": "(n8n OR url:n8n.io) -is:retweet",
+   "mentions24h": 621,
+   "mentions7d": 3938,
+   "priorDailyAvg": 552.8,
+   "velocity": 1.12,
+   "daily": [
+    680,
+    500,
+    429,
+    486,
+    624,
+    598,
+    621
+   ],
+   "peakDay": 680,
+   "peakDaysAgo": 6,
+   "sample": {
+    "posts": 25,
+    "likes": 27,
+    "reposts": 3,
+    "replies": 9
+   },
+   "parts": {
+    "volume": 36,
+    "velocity": 2,
+    "engagement": 8.7
+   },
+   "score": 47,
+   "label": "steady",
+   "viral": false,
+   "topPosts": [
+    {
+     "id": "2108849772438114551",
+     "url": "https://x.com/AutomatedbyPam/status/2108849772438114551",
+     "author": "AutomatedbyPam",
+     "text": "🚨 ENUGU, ARE YOU READY? ⚡\n\nJoin us on November 7, 2026, at 11 AM for\nShip It: A Hands-On n8n Build Session\n\nWe will explore how n8n, APIs, webhooks, and AI can work together to solve real business problems.\n\nRegister he",
+     "created_at": "2026-10-10T09:19:00.000Z",
+     "likes": 7,
+     "reposts": 2,
+     "replies": 2,
+     "views": 173,
+     "quotes": 0
+    },
+    {
+     "id": "2109251384050881002",
+     "url": "https://x.com/drahfa/status/2109251384050881002",
+     "author": "drahfa",
+     "text": "I don’t know, man. Will Jev be the next OpenClaw and n8n?\n\nI even struggle to remember n8n or hearing anyone talks about it. https://t.co/T05D4axHvp",
+     "created_at": "2026-10-11T11:54:52.000Z",
+     "likes": 8,
+     "reposts": 0,
+     "replies": 1,
+     "views": 567,
+     "quotes": 0
+    },
+    {
+     "id": "2109109734645142004",
+     "url": "https://x.com/KelisShekhaliya/status/2109109734645142004",
+     "author": "KelisShekhaliya",
+     "text": "Building an n8n node for your API usually means days of TypeScript, credential setup, and testing.\n\nNativeShip turns your API spec into a ready-to-publish n8n node.\n\nBuilt for SaaS teams who want to show up inside n8n wi",
+     "created_at": "2026-10-11T02:32:00.000Z",
+     "likes": 2,
+     "reposts": 1,
+     "replies": 1,
+     "views": 130,
+     "quotes": 0
+    }
+   ],
+   "computedAt": "2026-10-15T07:13:39.998Z"
+  },
+  "zapier": {
+   "status": "live",
+   "query": "(zapier OR url:zapier.com) -is:retweet",
+   "mentions24h": 300,
+   "mentions7d": 1443,
+   "priorDailyAvg": 190.5,
+   "velocity": 1.57,
+   "daily": [
+    172,
+    172,
+    141,
+    134,
+    277,
+    247,
+    300
+   ],
+   "peakDay": 300,
+   "peakDaysAgo": 0,
+   "sample": {
+    "posts": 24,
+    "likes": 23,
+    "reposts": 7,
+    "replies": 7
+   },
+   "parts": {
+    "volume": 31.6,
+    "velocity": 8.1,
+    "engagement": 8.9
+   },
+   "score": 49,
+   "label": "rising",
+   "viral": false,
+   "topPosts": [
+    {
+     "id": "2109264296043860249",
+     "url": "https://x.com/Feup_MRB/status/2109264296043860249",
+     "author": "Feup_MRB",
+     "text": "What if you could connect 20 powerful tools to Claude and manage everything from one place? 🤯\n\nFrom Google Drive, Gmail, and Notion to Slack, Canva, Zapier, and more — these connectors can supercharge your workflow! ⚡ h",
+     "created_at": "2026-10-11T12:46:11.000Z",
+     "likes": 10,
+     "reposts": 7,
+     "replies": 2,
+     "views": 396,
+     "quotes": 0
+    },
+    {
+     "id": "2109661242541719654",
+     "url": "https://x.com/de2pressed/status/2109661242541719654",
+     "author": "de2pressed",
+     "text": "Zapier's Next Gen Zaps are in early access behind a waitlist.\n\nDescribe the job in Claude, ChatGPT or Cursor via Zapier MCP. Zapier runs it on a trigger and keeps it going when steps break. Free on paid plans during Earl",
+     "created_at": "2026-10-12T15:03:30.000Z",
+     "likes": 2,
+     "reposts": 0,
+     "replies": 2,
+     "views": 82,
+     "quotes": 0
+    },
+    {
+     "id": "2109231272673632628",
+     "url": "https://x.com/konig0000/status/2109231272673632628",
+     "author": "konig0000",
+     "text": "AI Tools by Job\nWhat if you built your AI stack around your job?\n👨‍💻 Developer → Cursor\n 🎨 Designer → Figma + AI\n 📈 Marketer → Jasper\n 🧑‍💼 Researcher → Perplexity\n 🎥 Creator → Runway\n 👩‍💻 Founder → Manus\n ⚙️ Ope",
+     "created_at": "2026-10-11T10:34:57.000Z",
+     "likes": 2,
+     "reposts": 0,
+     "replies": 0,
+     "views": 248,
+     "quotes": 0
+    }
+   ],
+   "computedAt": "2026-10-15T07:13:39.998Z"
+  },
+  "make": {
+   "status": "live",
+   "query": "(\"make.com\" OR url:make.com OR @make_hq) -is:retweet",
+   "mentions24h": 42,
+   "mentions7d": 232,
+   "priorDailyAvg": 31.7,
+   "velocity": 1.33,
+   "daily": [
+    38,
+    23,
+    32,
+    37,
+    30,
+    30,
+    42
+   ],
+   "peakDay": 42,
+   "peakDaysAgo": 0,
+   "sample": {
+    "posts": 25,
+    "likes": 17,
+    "reposts": 2,
+    "replies": 26
+   },
+   "parts": {
+    "volume": 23.7,
+    "velocity": 4.2,
+    "engagement": 9.4
+   },
+   "score": 37,
+   "label": "rising",
+   "viral": false,
+   "topPosts": [
+    {
+     "id": "2109670523252699545",
+     "url": "https://x.com/MartinSzreter/status/2109670523252699545",
+     "author": "MartinSzreter",
+     "text": "A retry in https://t.co/bQQ2p0g8AP or n8n can publish the same post twice.\n\nHere is how. The scenario calls the X API. The post goes live. Then the response times out on the way back.\n\nFrom the automation's point of view",
+     "created_at": "2026-10-12T15:40:23.000Z",
+     "likes": 3,
+     "reposts": 0,
+     "replies": 6,
+     "views": 74,
+     "quotes": 0
+    },
+    {
+     "id": "2110309909573365996",
+     "url": "https://x.com/TraceJie/status/2110309909573365996",
+     "author": "TraceJie",
+     "text": "所有人都在教你用AI写毫无营养的废话，却没人告诉你，AI最可怕的商业价值是“监听”。我用一套极简的AI自动化工作流，把Reddit变成了私人财富雷达。不要再被几万赞的爽文骗了，真正的搞钱信号，全藏在评论区。深度万字长文，扒底裤级实操，建议点赞收藏，反复咀嚼。👇 https://t.co/khw7VcBo6f",
+     "created_at": "2026-10-14T10:01:04.000Z",
+     "likes": 3,
+     "reposts": 1,
+     "replies": 4,
+     "views": 3502,
+     "quotes": 0
+    },
+    {
+     "id": "2108567726423744809",
+     "url": "https://x.com/GreatMikie/status/2108567726423744809",
+     "author": "GreatMikie",
+     "text": "Everyone wants to build AI agents and advanced automations.\n\nBut many workflows fail because the builder skips the most important part:\n\nDesigning the process.\n\nLet's break down how to build a useful AI automation workfl",
+     "created_at": "2026-10-09T14:38:15.000Z",
+     "likes": 4,
+     "reposts": 1,
+     "replies": 3,
+     "views": 77,
+     "quotes": 0
+    }
+   ],
+   "computedAt": "2026-10-15T07:13:39.998Z"
+  },
+  "langchain": {
+   "status": "live",
+   "query": "(langchain OR langgraph OR url:langchain.com) -is:retweet",
+   "mentions24h": 363,
+   "mentions7d": 2238,
+   "priorDailyAvg": 312.5,
+   "velocity": 1.16,
+   "daily": [
+    346,
+    305,
+    300,
+    231,
+    283,
+    410,
+    363
+   ],
+   "peakDay": 410,
+   "peakDaysAgo": 1,
+   "sample": {
+    "posts": 25,
+    "likes": 143,
+    "reposts": 33,
+    "replies": 27
+   },
+   "parts": {
+    "volume": 33.5,
+    "velocity": 2.7,
+    "engagement": 12.4
+   },
+   "score": 49,
+   "label": "steady",
+   "viral": false,
+   "topPosts": [
+    {
+     "id": "2110037086179127728",
+     "url": "https://x.com/siddhantgarg33/status/2110037086179127728",
+     "author": "siddhantgarg33",
+     "text": "Steal these 21 BEST FREE CERTIFICATION COURSES from me right now: \n\n1. The Complete AI Guide: Learn ChatGPT, Claude &amp; Generative AI:\nhttps://t.co/PbN0FoC9nt\n\n2. The Complete Prompt Engineering for AI Bootcamp (2026):",
+     "created_at": "2026-10-13T15:56:58.000Z",
+     "likes": 43,
+     "reposts": 20,
+     "replies": 7,
+     "views": 584,
+     "quotes": 0
+    },
+    {
+     "id": "2109556639372316793",
+     "url": "https://x.com/omoalhajaabiola/status/2109556639372316793",
+     "author": "omoalhajaabiola",
+     "text": "AI Agent Engineer\nBuild, evaluate, and deploy production-ready AI agents using LangChain, LangGraph, RAG, and LangSmith\n\nCoupon code is CE8714DAE74B3FBAE755\n\nhttps://t.co/ezjX2apAkT",
+     "created_at": "2026-10-12T08:07:51.000Z",
+     "likes": 46,
+     "reposts": 8,
+     "replies": 9,
+     "views": 14826,
+     "quotes": 0
+    },
+    {
+     "id": "2108159904666255821",
+     "url": "https://x.com/IITHyderabad/status/2108159904666255821",
+     "author": "IITHyderabad",
+     "text": "Who can apply for the Applied AI Professional Certification Program at IIT Hyderabad?\n\nDesigned for Software Engineers, Full-Stack Developers, Data Scientists, AI Engineers and AI builders who want to move from AI concep",
+     "created_at": "2026-10-08T11:37:43.000Z",
+     "likes": 20,
+     "reposts": 2,
+     "replies": 0,
+     "views": 1891,
+     "quotes": 0
+    }
+   ],
+   "computedAt": "2026-10-15T07:13:39.998Z"
+  },
+  "crewai": {
+   "status": "live",
+   "query": "(crewai OR \"crew ai\" OR url:crewai.com) -is:retweet",
+   "mentions24h": 49,
+   "mentions7d": 344,
+   "priorDailyAvg": 49.2,
+   "velocity": 1,
+   "daily": [
+    57,
+    39,
+    38,
+    50,
+    67,
+    44,
+    49
+   ],
+   "peakDay": 67,
+   "peakDaysAgo": 2,
+   "sample": {
+    "posts": 25,
+    "likes": 62,
+    "reposts": 7,
+    "replies": 20
+   },
+   "parts": {
+    "volume": 25.4,
+    "velocity": 0,
+    "engagement": 10.5
+   },
+   "score": 36,
+   "label": "steady",
+   "viral": false,
+   "topPosts": [
+    {
+     "id": "2109702890877010353",
+     "url": "https://x.com/leonabboud/status/2109702890877010353",
+     "author": "leonabboud",
+     "text": "Marketing is splitting in two directions:\n\n1- Real humans people rally around.\n\n2- Artificial people who look exactly like the customer.\n\nEverything in between is going to struggle. Let me explain:\n\nThe ad I’m quoting be",
+     "created_at": "2026-10-12T17:49:00.000Z",
+     "likes": 28,
+     "reposts": 3,
+     "replies": 12,
+     "views": 1803,
+     "quotes": 0
+    },
+    {
+     "id": "2108169262875513117",
+     "url": "https://x.com/catinsneakers/status/2108169262875513117",
+     "author": "catinsneakers",
+     "text": "A backdoor sat on PyPI for three hours in March 2026.\n\nThe package - LiteLLM, the gateway for CrewAI, DSPy, Microsoft GraphRAG.\n\nEveryone who updated in that window deployed an attack bot into their agent infrastructure.",
+     "created_at": "2026-10-08T12:14:54.000Z",
+     "likes": 11,
+     "reposts": 0,
+     "replies": 4,
+     "views": 169,
+     "quotes": 0
+    },
+    {
+     "id": "2109738793557524977",
+     "url": "https://x.com/BharatBlock_spc/status/2109738793557524977",
+     "author": "BharatBlock_spc",
+     "text": "Coming to Mumbai for @EFDevcon @IBWofficial @ETHGlobal ? 🇮🇳\n\n⤷ Need a hacking partner\n⤷ Community builder\n⤷ Explore Mumbai crew\n⤷ AI × blockchain nerd\n⤷ Just wanna brainstorm\n\nWe'll connect you to the right\n people.\n\nF",
+     "created_at": "2026-10-12T20:11:40.000Z",
+     "likes": 5,
+     "reposts": 2,
+     "replies": 0,
+     "views": 162,
+     "quotes": 0
+    }
+   ],
+   "computedAt": "2026-10-15T07:13:39.998Z"
+  },
+  "midjourney": {
+   "status": "live",
+   "query": "(midjourney OR url:midjourney.com) -is:retweet",
+   "mentions24h": 1104,
+   "mentions7d": 7915,
+   "priorDailyAvg": 1135.2,
+   "velocity": 0.97,
+   "daily": [
+    1120,
+    1368,
+    1254,
+    970,
+    1072,
+    1027,
+    1104
+   ],
+   "peakDay": 1368,
+   "peakDaysAgo": 5,
+   "sample": {
+    "posts": 25,
+    "likes": 81,
+    "reposts": 4,
+    "replies": 14
+   },
+   "parts": {
+    "volume": 39,
+    "velocity": 0,
+    "engagement": 10.5
+   },
+   "score": 49,
+   "label": "steady",
+   "viral": false,
+   "topPosts": [
+    {
+     "id": "2109330686465229264",
+     "url": "https://x.com/Artedeingenio/status/2109330686465229264",
+     "author": "Artedeingenio",
+     "text": "I honestly can't imagine these past four years without Midjourney.\n\nIt's brought so much creativity, inspiration, and joy into my life.\n\nIf Midjourney didn't exist, someone would have to invent it.",
+     "created_at": "2026-10-11T17:09:59.000Z",
+     "likes": 28,
+     "reposts": 1,
+     "replies": 4,
+     "views": 3065,
+     "quotes": 0
+    },
+    {
+     "id": "2110128668408266752",
+     "url": "https://x.com/promptsref/status/2110128668408266752",
+     "author": "promptsref",
+     "text": "Daily Midjourney style reference --v 6.1 --sv4\n\nFull prompt and examples are in the reply.\n\n--sref 2233419312\n#midjourney #sref https://t.co/SrDX7vse94",
+     "created_at": "2026-10-13T22:00:53.000Z",
+     "likes": 9,
+     "reposts": 1,
+     "replies": 3,
+     "views": 485,
+     "quotes": 0
+    },
+    {
+     "id": "2109334326932340840",
+     "url": "https://x.com/JasonHeatony7/status/2109334326932340840",
+     "author": "JasonHeatony7",
+     "text": "QT\nMetal Singer\nMade with @midjourney and @suno \nMusic made by me and Midjourney prompt to video https://t.co/BwYD6wKikQ https://t.co/wUGXFlREZM",
+     "created_at": "2026-10-11T17:24:27.000Z",
+     "likes": 8,
+     "reposts": 1,
+     "replies": 2,
+     "views": 692,
+     "quotes": 2
+    }
+   ],
+   "computedAt": "2026-10-15T07:13:39.998Z"
+  },
+  "ideogram": {
+   "status": "live",
+   "query": "(ideogram OR url:ideogram.ai) -is:retweet",
+   "mentions24h": 53,
+   "mentions7d": 494,
+   "priorDailyAvg": 73.5,
+   "velocity": 0.72,
+   "daily": [
+    68,
+    87,
+    68,
+    59,
+    73,
+    86,
+    53
+   ],
+   "peakDay": 87,
+   "peakDaysAgo": 5,
+   "sample": {
+    "posts": 24,
+    "likes": 379,
+    "reposts": 144,
+    "replies": 72
+   },
+   "parts": {
+    "volume": 26.9,
+    "velocity": 0,
+    "engagement": 14.9
+   },
+   "score": 42,
+   "label": "steady",
+   "viral": false,
+   "topPosts": [
+    {
+     "id": "2109782835171389589",
+     "url": "https://x.com/abir35627/status/2109782835171389589",
+     "author": "abir35627",
+     "text": "15 AI tools you should know in 2026 ⚡️\n\n1. Kagi\nhttps://t.co/PAEi3EQFJk\n\n2. Recraft\nhttps://t.co/H40Z4xSmtJ\n\n3. Ideogram\nhttps://t.co/7k5LZPrhaI\n\n4. Pika\nhttps://t.co/VwV2F7jcRU\n\n5. Viggle\nhttps://t.co/mJQulRLioP\n\n6. Won",
+     "created_at": "2026-10-12T23:06:40.000Z",
+     "likes": 196,
+     "reposts": 113,
+     "replies": 25,
+     "views": 6362,
+     "quotes": 0
+    },
+    {
+     "id": "2108606828661870895",
+     "url": "https://x.com/openart_ai/status/2108606828661870895",
+     "author": "openart_ai",
+     "text": "Ideogram 4.5 is now live on OpenArt ✨\n\nCreate from a prompt, then keep refining. Change colors, adjust lighting, or update text, with more consistent details across edits.\n\nTry it now: https://t.co/eo5jGrCuJd https://t.c",
+     "created_at": "2026-10-09T17:13:38.000Z",
+     "likes": 102,
+     "reposts": 21,
+     "replies": 24,
+     "views": 7295,
+     "quotes": 3
+    },
+    {
+     "id": "2109343328877658227",
+     "url": "https://x.com/yohakujpn/status/2109343328877658227",
+     "author": "yohakujpn",
+     "text": "10 free AI models for design, no subscription\n\nOpen weights, run it yourself:\n\nFLUX.1 schnell :\n\nhttps://t.co/Cy3YwuSC4L\n\nStable Diffusion 3.5 :\n\nhttps://t.co/JOjMQPqPf6\n\nQwen-Image :\n\nhttps://t.co/ZgzY6WtbOj\n\nHiDream-I1",
+     "created_at": "2026-10-11T18:00:13.000Z",
+     "likes": 43,
+     "reposts": 3,
+     "replies": 14,
+     "views": 3255,
+     "quotes": 1
+    }
+   ],
+   "computedAt": "2026-10-15T07:13:39.998Z"
+  },
+  "canva": {
+   "status": "live",
+   "query": "(canva OR url:canva.com) -is:retweet",
+   "mentions24h": 11084,
+   "mentions7d": 74946,
+   "priorDailyAvg": 10643.7,
+   "velocity": 1.04,
+   "daily": [
+    10069,
+    9688,
+    9596,
+    10445,
+    11824,
+    12240,
+    11084
+   ],
+   "peakDay": 12240,
+   "peakDaysAgo": 1,
+   "sample": {
+    "posts": 25,
+    "likes": 592,
+    "reposts": 256,
+    "replies": 86
+   },
+   "parts": {
+    "volume": 48.7,
+    "velocity": 0.7,
+    "engagement": 15.9
+   },
+   "score": 65,
+   "label": "steady",
+   "viral": false,
+   "topPosts": [
+    {
+     "id": "2108334308125778416",
+     "url": "https://x.com/abir35627/status/2108334308125778416",
+     "author": "abir35627",
+     "text": "Paid vs Free AI Tools ⚡\n\n1. Design\nPaid: https://t.co/JA8MKN9do5\nFree: https://t.co/gutwQdiQop\n\n2. Research\nPaid: https://t.co/EZfoolpAbH\nFree: https://t.co/jOmoWvYBNb\n\n3. Images\nPaid: https://t.co/1EezqcTuRN\nFree: https",
+     "created_at": "2026-10-08T23:10:44.000Z",
+     "likes": 384,
+     "reposts": 153,
+     "replies": 35,
+     "views": 18039,
+     "quotes": 0
+    },
+    {
+     "id": "2109262908043788579",
+     "url": "https://x.com/hey_Jessicaai/status/2109262908043788579",
+     "author": "hey_Jessicaai",
+     "text": "12 paid AI tools vs FREE \n\n🔖Bookmark this for later.\n\n1. Research\nPaid: https://t.co/qP1AIejAbf\nFree: https://t.co/KM6xU5tKsV\n\n2. Video\nPaid: https://t.co/O98jRwJ7iR\nFree: https://t.co/flsdzbl7jk\n\n3. Design\nPaid: https:",
+     "created_at": "2026-10-11T12:40:40.000Z",
+     "likes": 80,
+     "reposts": 39,
+     "replies": 30,
+     "views": 2237,
+     "quotes": 0
+    },
+    {
+     "id": "2110174344584593525",
+     "url": "https://x.com/I_am_Aiabir/status/2110174344584593525",
+     "author": "I_am_Aiabir",
+     "text": "Seriously upgrade your photo Editing.\nPhotoroom https://t.co/Urd66dcD1w\nPicsart AI https://t.co/n8QeL33dLp\nCanva AI https://t.co/RzGp2JBVu7\nFotor AI https://t.co/PtnGi57PO5\nCleanup pictures https://t.co/1vYL48PSLE\ninsMin",
+     "created_at": "2026-10-14T01:02:23.000Z",
+     "likes": 65,
+     "reposts": 38,
+     "replies": 14,
+     "views": 1124,
+     "quotes": 1
+    }
+   ],
+   "computedAt": "2026-10-15T07:13:39.998Z"
+  },
+  "figma": {
+   "status": "live",
+   "query": "(figma OR url:figma.com) -is:retweet",
+   "mentions24h": 2525,
+   "mentions7d": 11649,
+   "priorDailyAvg": 1520.7,
+   "velocity": 1.66,
+   "daily": [
+    1641,
+    1658,
+    1313,
+    1196,
+    1491,
+    1825,
+    2525
+   ],
+   "peakDay": 2525,
+   "peakDaysAgo": 0,
+   "sample": {
+    "posts": 25,
+    "likes": 371,
+    "reposts": 38,
+    "replies": 39
+   },
+   "parts": {
+    "volume": 40.7,
+    "velocity": 9.1,
+    "engagement": 13.8
+   },
+   "score": 64,
+   "label": "rising",
+   "viral": false,
+   "topPosts": [
+    {
+     "id": "2108940667854663758",
+     "url": "https://x.com/cnyzgkc/status/2108940667854663758",
+     "author": "cnyzgkc",
+     "text": "卧槽！Figma 里面可以免费用Claude？？？\n\n而且免费版直接就可以用Claude Sonnet 5.5，太牛逼了~\n\n如果要用Opus.5.5，上某鱼搜索Figma专业版，几十块就搞定了~\n\n升级后每个月有3000的credit，太香了~\n\n使用方法如下：\n1. 打开 https://t.co/wkMyeNmWHB\n2. https://t.co/jzU7w4ATXh",
+     "created_at": "2026-10-10T15:20:12.000Z",
+     "likes": 227,
+     "reposts": 19,
+     "replies": 30,
+     "views": 203171,
+     "quotes": 5
+    },
+    {
+     "id": "2109576660924371137",
+     "url": "https://x.com/MillieMarconnni/status/2109576660924371137",
+     "author": "MillieMarconnni",
+     "text": "If you design apps and websites, bookmark this.\n\n- https://t.co/eod23vPmU0 Real screens from real apps\n- https://t.co/XteIWgGEvs See how top products build their pages\n- https://t.co/nd48mJnCN3 Where most designers work\n",
+     "created_at": "2026-10-12T09:27:24.000Z",
+     "likes": 33,
+     "reposts": 14,
+     "replies": 2,
+     "views": 2482,
+     "quotes": 0
+    },
+    {
+     "id": "2109048452638216307",
+     "url": "https://x.com/kasperdesign/status/2109048452638216307",
+     "author": "kasperdesign",
+     "text": "Free to use Invoice Templates! 🧾\nhttps://t.co/FdGMlMZKwJ https://t.co/KLz4cBzmrp",
+     "created_at": "2026-10-10T22:28:29.000Z",
+     "likes": 51,
+     "reposts": 1,
+     "replies": 0,
+     "views": 2663,
+     "quotes": 0
+    }
+   ],
+   "computedAt": "2026-10-15T07:13:39.998Z"
+  },
+  "runway": {
+   "status": "live",
+   "query": "(runwayml OR \"runway gen\" OR \"runway aleph\" OR @runwayml OR url:runwayml.com) -is:retweet",
+   "mentions24h": 259,
+   "mentions7d": 1116,
+   "priorDailyAvg": 142.8,
+   "velocity": 1.81,
+   "daily": [
+    143,
+    188,
+    107,
+    117,
+    93,
+    209,
+    259
+   ],
+   "peakDay": 259,
+   "peakDaysAgo": 0,
+   "sample": {
+    "posts": 24,
+    "likes": 58,
+    "reposts": 20,
+    "replies": 11
+   },
+   "parts": {
+    "volume": 30.5,
+    "velocity": 10.7,
+    "engagement": 11
+   },
+   "score": 52,
+   "label": "rising",
+   "viral": false,
+   "topPosts": [
+    {
+     "id": "2110402987310882819",
+     "url": "https://x.com/vickylarose_/status/2110402987310882819",
+     "author": "vickylarose_",
+     "text": "📍Join our community of talents to get the support you need for your career.\n\nFri. 16 Oct. 2026\n\nThe best AI video apps depend entirely on what you want to create.\n\n🎥 Google Veo\n📷 Runway Gen-3\n🤳 Adobe Firefly\n🧑‍💻Inv",
+     "created_at": "2026-10-14T16:10:56.000Z",
+     "likes": 18,
+     "reposts": 17,
+     "replies": 1,
+     "views": 1133,
+     "quotes": 4
+    },
+    {
+     "id": "2108604957444149323",
+     "url": "https://x.com/plusxbt/status/2108604957444149323",
+     "author": "plusxbt",
+     "text": "HOLLYWOOD IS OFFICIALLY OBSOLETE.\n\nThis clip reached 60M views with zero budget spent on traditional VFX.\n\nMyth: You need a 30-person crew and a massive green screen stage to film a giant scene.\nReality: One laptop, calc",
+     "created_at": "2026-10-09T17:06:12.000Z",
+     "likes": 27,
+     "reposts": 0,
+     "replies": 3,
+     "views": 2906,
+     "quotes": 3
+    },
+    {
+     "id": "2110403440442851795",
+     "url": "https://x.com/CreatorsC07/status/2110403440442851795",
+     "author": "CreatorsC07",
+     "text": "📍Join our community of talents to get the support you need for your career.  Fri. 16 Oct. 2026  \n\nThe best AI video apps depend entirely on what you want to create.  \n\n🎥 Google Veo \n📷 Runway Gen-3 \n🤳 Adobe Firefly \n\ud83e",
+     "created_at": "2026-10-14T16:12:44.000Z",
+     "likes": 3,
+     "reposts": 2,
+     "replies": 0,
+     "views": 92,
+     "quotes": 0
+    }
+   ],
+   "computedAt": "2026-10-15T07:13:39.998Z"
+  },
+  "pika": {
+   "status": "live",
+   "query": "(\"pika labs\" OR \"pika art\" OR @pika_labs OR url:pika.art) -is:retweet",
+   "mentions24h": 82,
+   "mentions7d": 399,
+   "priorDailyAvg": 52.8,
+   "velocity": 1.55,
+   "daily": [
+    48,
+    46,
+    55,
+    61,
+    84,
+    23,
+    82
+   ],
+   "peakDay": 84,
+   "peakDaysAgo": 2,
+   "sample": {
+    "posts": 25,
+    "likes": 394,
+    "reposts": 214,
+    "replies": 71
+   },
+   "parts": {
+    "volume": 26,
+    "velocity": 7.6,
+    "engagement": 15.4
+   },
+   "score": 49,
+   "label": "rising",
+   "viral": false,
+   "topPosts": [
+    {
+     "id": "2109782835171389589",
+     "url": "https://x.com/abir35627/status/2109782835171389589",
+     "author": "abir35627",
+     "text": "15 AI tools you should know in 2026 ⚡️\n\n1. Kagi\nhttps://t.co/PAEi3EQFJk\n\n2. Recraft\nhttps://t.co/H40Z4xSmtJ\n\n3. Ideogram\nhttps://t.co/7k5LZPrhaI\n\n4. Pika\nhttps://t.co/VwV2F7jcRU\n\n5. Viggle\nhttps://t.co/mJQulRLioP\n\n6. Won",
+     "created_at": "2026-10-12T23:06:40.000Z",
+     "likes": 196,
+     "reposts": 113,
+     "replies": 25,
+     "views": 6362,
+     "quotes": 0
+    },
+    {
+     "id": "2108749853161664569",
+     "url": "https://x.com/maxpostingx/status/2108749853161664569",
+     "author": "maxpostingx",
+     "text": "Amateurs debate the monthly cost of software subscriptions. Sovereign operators view enterprise technology strictly as a mechanism to buy back their time and multiply their output.\n\nRelying purely on basic consumer AI mo",
+     "created_at": "2026-10-10T02:41:58.000Z",
+     "likes": 65,
+     "reposts": 45,
+     "replies": 23,
+     "views": 2016,
+     "quotes": 0
+    },
+    {
+     "id": "2109916072354963728",
+     "url": "https://x.com/Jara2426/status/2109916072354963728",
+     "author": "Jara2426",
+     "text": "🚀 Paid vs Free AI Tools: Stop Overpaying for AI!\n\nYou don't need expensive subscriptions to work smarter, create faster, and achieve more. 🔥\n\n💎 PAID AI TOOLS vs FREE ALTERNATIVES 👇\n\n🔹 RESEARCH &amp; AI ASSISTANTS ✅ ",
+     "created_at": "2026-10-13T07:56:06.000Z",
+     "likes": 42,
+     "reposts": 28,
+     "replies": 9,
+     "views": 949,
+     "quotes": 0
+    }
+   ],
+   "computedAt": "2026-10-15T07:13:39.998Z"
+  },
+  "heygen": {
+   "status": "live",
+   "query": "(heygen OR url:heygen.com) -is:retweet",
+   "mentions24h": 1436,
+   "mentions7d": 8380,
+   "priorDailyAvg": 1157.3,
+   "velocity": 1.24,
+   "daily": [
+    2612,
+    1914,
+    444,
+    257,
+    1358,
+    359,
+    1436
+   ],
+   "peakDay": 2612,
+   "peakDaysAgo": 6,
+   "sample": {
+    "posts": 25,
+    "likes": 882,
+    "reposts": 64,
+    "replies": 44
+   },
+   "parts": {
+    "volume": 39.2,
+    "velocity": 3.9,
+    "engagement": 15.3
+   },
+   "score": 58,
+   "label": "steady",
+   "viral": false,
+   "topPosts": [
+    {
+     "id": "2109203601902174297",
+     "url": "https://x.com/RoundtableSpace/status/2109203601902174297",
+     "author": "RoundtableSpace",
+     "text": "Paste this into Claude Code and your website turns into a 30-second launch video.\n\nIt runs on HyperFrames, the open-source tool HeyGen uses to turn HTML into video.\n\n\"Install HyperFrames (npx skills add heygen-com/hyperf",
+     "created_at": "2026-10-11T08:45:00.000Z",
+     "likes": 800,
+     "reposts": 54,
+     "replies": 27,
+     "views": 118945,
+     "quotes": 5
+    },
+    {
+     "id": "2109176424212934673",
+     "url": "https://x.com/ozansihay/status/2109176424212934673",
+     "author": "ozansihay",
+     "text": "HeyGen kendi ses modelini çıkardı. HeyGen Voice, Artificial Analysis'in klonlanmış seslerle yapılan kör testinde Eleven v4 Turbo'yu da geçip 1. sıraya oturdu. Ama şöyle bir şey var; test sadece 8 İngilizce sesle yapılmış",
+     "created_at": "2026-10-11T06:57:00.000Z",
+     "likes": 51,
+     "reposts": 3,
+     "replies": 3,
+     "views": 10765,
+     "quotes": 0
+    },
+    {
+     "id": "2109415790198059361",
+     "url": "https://x.com/HeyGen_AI/status/2109415790198059361",
+     "author": "HeyGen_AI",
+     "text": "Here’s how to use HeyGen MCP to turn your Peloton rides into a successful YouTube playlist, so the views keep stacking and the channel keeps growing. https://t.co/Cx141txTk0",
+     "created_at": "2026-10-11T22:48:10.000Z",
+     "likes": 9,
+     "reposts": 3,
+     "replies": 4,
+     "views": 2074,
+     "quotes": 0
+    }
+   ],
+   "computedAt": "2026-10-15T07:13:39.998Z"
+  },
+  "synthesia": {
+   "status": "live",
+   "query": "(synthesia OR url:synthesia.io) -is:retweet",
+   "mentions24h": 31,
+   "mentions7d": 364,
+   "priorDailyAvg": 55.5,
+   "velocity": 0.56,
+   "daily": [
+    45,
+    127,
+    66,
+    30,
+    35,
+    30,
+    31
+   ],
+   "peakDay": 127,
+   "peakDaysAgo": 5,
+   "sample": {
+    "posts": 25,
+    "likes": 144,
+    "reposts": 23,
+    "replies": 28
+   },
+   "parts": {
+    "volume": 25.6,
+    "velocity": 0,
+    "engagement": 12.2
+   },
+   "score": 38,
+   "label": "steady",
+   "viral": false,
+   "topPosts": [
+    {
+     "id": "2110005467866959904",
+     "url": "https://x.com/synthesiaIO/status/2110005467866959904",
+     "author": "synthesiaIO",
+     "text": "You wouldn’t trauma dump on your first date.\n\nSo why do it on a discovery call?\n\nAsk questions. Listen. Save the life story for later.\n\nYou can’t practice dating on Synthesia, but you can practice discovery calls.\n\nGive ",
+     "created_at": "2026-10-13T13:51:20.000Z",
+     "likes": 50,
+     "reposts": 16,
+     "replies": 12,
+     "views": 3595,
+     "quotes": 0
+    },
+    {
+     "id": "2109919812646322203",
+     "url": "https://x.com/RoryStewartUK/status/2109919812646322203",
+     "author": "RoryStewartUK",
+     "text": "I’ll be speaking at The Times &amp; Sunday Times Tech Summit 2026.\nI'm looking forward to hosting senior leaders from OpenAI and Nscale, alongside the CEO of British unicorn Synthesia. \nWe'll assess where Britain stands ",
+     "created_at": "2026-10-13T08:10:58.000Z",
+     "likes": 83,
+     "reposts": 5,
+     "replies": 9,
+     "views": 23833,
+     "quotes": 2
+    },
+    {
+     "id": "2108461977198526773",
+     "url": "https://x.com/GoSailGlobal/status/2108461977198526773",
+     "author": "GoSailGlobal",
+     "text": "今日投放top3\n\n1/ Synthesia Syren（https://t.co/bjYgtBODBD）\n\n2/ Teamily AI（https://t.co/56Ch2v7x4I）\n\n3/ Underdog Saluki 27B（https://t.co/viIqqsbUIb） https://t.co/WM3lrKNRM7",
+     "created_at": "2026-10-09T07:38:03.000Z",
+     "likes": 4,
+     "reposts": 1,
+     "replies": 2,
+     "views": 2051,
+     "quotes": 0
+    }
+   ],
+   "computedAt": "2026-10-15T07:13:39.998Z"
+  },
+  "descript": {
+   "status": "live",
+   "query": "(descript OR url:descript.com) -is:retweet",
+   "mentions24h": 107,
+   "mentions7d": 646,
+   "priorDailyAvg": 89.8,
+   "velocity": 1.19,
+   "daily": [
+    116,
+    95,
+    75,
+    88,
+    84,
+    81,
+    107
+   ],
+   "peakDay": 116,
+   "peakDaysAgo": 6,
+   "sample": {
+    "posts": 25,
+    "likes": 103,
+    "reposts": 10,
+    "replies": 21
+   },
+   "parts": {
+    "volume": 28.1,
+    "velocity": 3.1,
+    "engagement": 11.3
+   },
+   "score": 43,
+   "label": "steady",
+   "viral": false,
+   "topPosts": [
+    {
+     "id": "2108931810247987655",
+     "url": "https://x.com/RoundtableSpace/status/2108931810247987655",
+     "author": "RoundtableSpace",
+     "text": "5 USEFUL LINKS TO BUILD AN AI CONTENT ENGINE:\n\n1. Descript\n    https://t.co/pAnSKDwYlF\n    → edits video, audio and podcasts with AI\n2. OpusClip\n    https://t.co/9XYN9TqAdu\n    → turns long videos into short-form clips\n3",
+     "created_at": "2026-10-10T14:45:00.000Z",
+     "likes": 57,
+     "reposts": 6,
+     "replies": 7,
+     "views": 49531,
+     "quotes": 1
+    },
+    {
+     "id": "2109049629790867485",
+     "url": "https://x.com/wenyanhh/status/2109049629790867485",
+     "author": "wenyanhh",
+     "text": "@frevana_ai is officially live 🎉\n\nlaunched at Stanford today with 100+ builders, @conniechan (board partner @a16z) and Sandy Diao(formerly growth at Meta, Pinterest &amp; Descript). \n\nthe room was packed and people star",
+     "created_at": "2026-10-10T22:33:10.000Z",
+     "likes": 12,
+     "reposts": 1,
+     "replies": 4,
+     "views": 412,
+     "quotes": 1
+    },
+    {
+     "id": "2108935115724447863",
+     "url": "https://x.com/3CLIPS3D/status/2108935115724447863",
+     "author": "3CLIPS3D",
+     "text": "non descript entity\nheh tity https://t.co/m6WmlDKDEg",
+     "created_at": "2026-10-10T14:58:08.000Z",
+     "likes": 7,
+     "reposts": 1,
+     "replies": 2,
+     "views": 183,
+     "quotes": 0
+    }
+   ],
+   "computedAt": "2026-10-15T07:13:39.998Z"
+  },
+  "capcut": {
+   "status": "live",
+   "query": "(capcut OR url:capcut.com) -is:retweet",
+   "mentions24h": 6981,
+   "mentions7d": 51450,
+   "priorDailyAvg": 7411.5,
+   "velocity": 0.94,
+   "daily": [
+    7630,
+    7089,
+    7393,
+    7543,
+    7312,
+    7502,
+    6981
+   ],
+   "peakDay": 7630,
+   "peakDaysAgo": 6,
+   "sample": {
+    "posts": 14,
+    "likes": 394,
+    "reposts": 156,
+    "replies": 147
+   },
+   "parts": {
+    "volume": 47.1,
+    "velocity": 0,
+    "engagement": 15.3
+   },
+   "score": 62,
+   "label": "steady",
+   "viral": false,
+   "topPosts": [
+    {
+     "id": "2110291829547516054",
+     "url": "https://x.com/Mapemaofweb3/status/2110291829547516054",
+     "author": "Mapemaofweb3",
+     "text": "𝐕𝐢𝐝𝐞𝐨 𝐜𝐫𝐞𝐚𝐭𝐨𝐫𝐬, 𝐲𝐨𝐮 𝐧𝐞𝐞𝐝 𝐭𝐡𝐞𝐬𝐞 𝟐𝟎 𝐰𝐞𝐛𝐬𝐢𝐭𝐞𝐬 🎬\n\nYou don’t always need expensive equipment or software to create good videos.\n\nSometimes, you just need the right tools 👇\n\nEditing &amp; A",
+     "created_at": "2026-10-14T08:49:14.000Z",
+     "likes": 149,
+     "reposts": 56,
+     "replies": 84,
+     "views": 2055,
+     "quotes": 1
+    },
+    {
+     "id": "2108112124799340916",
+     "url": "https://x.com/Ziven_Coder/status/2108112124799340916",
+     "author": "Ziven_Coder",
+     "text": "Paid VS Free alternatives.\n\n1. Premiere Pro → https://t.co/Uwvh2X5xJ7\n2. Photoshop → https://t.co/tdNxcleRbX\n3. Notion AI → https://t.co/9QtEM1dHsC\n4. Grammarly Pro → https://t.co/ZBH1hABYn9\n5. Figma → https://t.co/I1Imh",
+     "created_at": "2026-10-08T08:27:52.000Z",
+     "likes": 89,
+     "reposts": 47,
+     "replies": 39,
+     "views": 1841,
+     "quotes": 0
+    },
+    {
+     "id": "2108331613310587056",
+     "url": "https://x.com/Chupico_nora/status/2108331613310587056",
+     "author": "Chupico_nora",
+     "text": "おはようございます🐺ハロウィンバージョン🎃レゾダンスです✨CapCut のAIで作成しました✨\n@capcutapp_jp\n#capcut \n#capcutcpp \n#capcutハロウィン祭り https://t.co/dQ4qoNPWdm",
+     "created_at": "2026-10-08T23:00:02.000Z",
+     "likes": 84,
+     "reposts": 30,
+     "replies": 8,
+     "views": 818,
+     "quotes": 0
+    }
+   ],
+   "computedAt": "2026-10-15T07:13:39.998Z"
+  },
+  "elevenlabs": {
+   "status": "live",
+   "query": "(elevenlabs OR \"eleven labs\" OR url:elevenlabs.io) -is:retweet",
+   "mentions24h": 1281,
+   "mentions7d": 8570,
+   "priorDailyAvg": 1214.8,
+   "velocity": 1.05,
+   "daily": [
+    1061,
+    1122,
+    966,
+    966,
+    1795,
+    1379,
+    1281
+   ],
+   "peakDay": 1795,
+   "peakDaysAgo": 2,
+   "sample": {
+    "posts": 25,
+    "likes": 250,
+    "reposts": 50,
+    "replies": 94
+   },
+   "parts": {
+    "volume": 39.3,
+    "velocity": 0.9,
+    "engagement": 13.9
+   },
+   "score": 54,
+   "label": "steady",
+   "viral": false,
+   "topPosts": [
+    {
+     "id": "2110025956375367802",
+     "url": "https://x.com/CMOMaharashtra/status/2110025956375367802",
+     "author": "CMOMaharashtra",
+     "text": "CM Devendra Fadnavis chaired a UK-Maharashtra Clean Growth and Industrial Transformation Roundtable on 'Mobilising Capital, Technology and Expertise: Advancing UK-Maharashtra Strategic Business Partnerships'.\n\nMinister J",
+     "created_at": "2026-10-13T15:12:45.000Z",
+     "likes": 83,
+     "reposts": 37,
+     "replies": 5,
+     "views": 5933,
+     "quotes": 0
+    },
+    {
+     "id": "2110226002605719775",
+     "url": "https://x.com/Leo100x/status/2110226002605719775",
+     "author": "Leo100x",
+     "text": "THIS IS LITERALLY AMAZING \n\nbro gave a 1 minute workflow on how to build a YouTube faceless channel with claude and eleven labs \n\n- Claude for scripts\n- Eleven labs for the voice over \n\nImagine spending just 3 hours per ",
+     "created_at": "2026-10-14T04:27:39.000Z",
+     "likes": 77,
+     "reposts": 6,
+     "replies": 45,
+     "views": 1735,
+     "quotes": 0
+    },
+    {
+     "id": "2109899596222591413",
+     "url": "https://x.com/MahaveerESV/status/2109899596222591413",
+     "author": "MahaveerESV",
+     "text": "This is going crazy viral, 19000 stars on github and its been less then a couple days.\n\nSomeone just open sourced and mogged eleven labs *THE BIGGEST AI VOICE/SCRIPT MAKER*\n\nGoing viral on x and we have git repo etc.\n\nth",
+     "created_at": "2026-10-13T06:50:38.000Z",
+     "likes": 38,
+     "reposts": 4,
+     "replies": 35,
+     "views": 4384,
+     "quotes": 2
+    }
+   ],
+   "computedAt": "2026-10-15T07:13:39.998Z"
+  },
+  "suno": {
+   "status": "live",
+   "query": "(\"suno ai\" OR @suno OR url:suno.com OR (suno song)) -is:retweet",
+   "mentions24h": 2972,
+   "mentions7d": 21503,
+   "priorDailyAvg": 3088.5,
+   "velocity": 0.96,
+   "daily": [
+    3150,
+    2972,
+    3179,
+    3219,
+    2905,
+    3106,
+    2972
+   ],
+   "peakDay": 3219,
+   "peakDaysAgo": 3,
+   "sample": {
+    "posts": 25,
+    "likes": 292,
+    "reposts": 28,
+    "replies": 11
+   },
+   "parts": {
+    "volume": 43.3,
+    "velocity": 0,
+    "engagement": 13.1
+   },
+   "score": 56,
+   "label": "steady",
+   "viral": false,
+   "topPosts": [
+    {
+     "id": "2109551431770685538",
+     "url": "https://x.com/fudgy0_0brownie/status/2109551431770685538",
+     "author": "fudgy0_0brownie",
+     "text": "Magale except that sela katti part sounds like a song made by Suno AI or something bro😭😭😭",
+     "created_at": "2026-10-12T07:47:09.000Z",
+     "likes": 223,
+     "reposts": 12,
+     "replies": 9,
+     "views": 15599,
+     "quotes": 9
+    },
+    {
+     "id": "2109625732913844225",
+     "url": "https://x.com/piyofluffy_jp/status/2109625732913844225",
+     "author": "piyofluffy_jp",
+     "text": "With all the love in my heart, I dedicate this song to you, my one and only. Generated with Suno AI.\n\n#OriginalMusic\n#NewMusic\n#IndieMusic\n#SunoAI\n#AIMusic\r\n\nPiyoFluffy©YokoAoi     October 12, 2026\n\n🎶🎧【THE WORDS I COUL",
+     "created_at": "2026-10-12T12:42:24.000Z",
+     "likes": 10,
+     "reposts": 2,
+     "replies": 0,
+     "views": 380,
+     "quotes": 2
+    },
+    {
+     "id": "2108542914032963658",
+     "url": "https://x.com/piyofluffy_jp/status/2108542914032963658",
+     "author": "piyofluffy_jp",
+     "text": "I made this song with Suno AI. It turned out to be a bright, upbeat, and positive pop track. \n\nGive it a listen!\n\n#SunoAI\n#AIart️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️\n#AIcharacter\n\n  https://t.co/Vitrv01Sa0 ",
+     "created_at": "2026-10-09T12:59:40.000Z",
+     "likes": 7,
+     "reposts": 3,
+     "replies": 0,
+     "views": 366,
+     "quotes": 2
+    }
+   ],
+   "computedAt": "2026-10-15T07:13:39.998Z"
+  },
+  "notion": {
+   "status": "live",
+   "query": "(notion OR url:notion.com OR url:notion.so) -is:retweet",
+   "mentions24h": 4406,
+   "mentions7d": 30257,
+   "priorDailyAvg": 4308.5,
+   "velocity": 1.02,
+   "daily": [
+    4479,
+    4361,
+    3975,
+    3939,
+    4827,
+    4270,
+    4406
+   ],
+   "peakDay": 4827,
+   "peakDaysAgo": 2,
+   "sample": {
+    "posts": 24,
+    "likes": 545,
+    "reposts": 71,
+    "replies": 34
+   },
+   "parts": {
+    "volume": 44.8,
+    "velocity": 0.4,
+    "engagement": 14.6
+   },
+   "score": 60,
+   "label": "steady",
+   "viral": false,
+   "topPosts": [
+    {
+     "id": "2108536199493345738",
+     "url": "https://x.com/FLEE__ON/status/2108536199493345738",
+     "author": "FLEE__ON",
+     "text": "크레페 || https://t.co/zAfXaurc4l \n오픈채팅 || https://t.co/rogvIb9OEy\n스핀스핀 || https://t.co/ZQO62EJyy5 \n연성교환 || https://t.co/72CnAiEcEl\n연교 신청 폼 || https://t.co/cV3QbHSsim https://t.co/ogVm5zDLua",
+     "created_at": "2026-10-09T12:32:59.000Z",
+     "likes": 380,
+     "reposts": 34,
+     "replies": 0,
+     "views": 14698,
+     "quotes": 5
+    },
+    {
+     "id": "2110312873717330325",
+     "url": "https://x.com/NexaVerse_/status/2110312873717330325",
+     "author": "NexaVerse_",
+     "text": "AI Tools That Feel Like Superpowers ⚡\n\nhttps://t.co/vUOjJiMyzz – AI assistant\n\nhttps://t.co/Y0MmoV27kX – AI images\n\nhttps://t.co/0rKaYpmYi7 – Design &amp; AI\n\nhttps://t.co/GAoFniKr9c – Better writing\n\nhttps://t.co/1vS99W",
+     "created_at": "2026-10-14T10:12:51.000Z",
+     "likes": 39,
+     "reposts": 28,
+     "replies": 13,
+     "views": 611,
+     "quotes": 0
+    },
+    {
+     "id": "2108979199541116984",
+     "url": "https://x.com/urieli17/status/2108979199541116984",
+     "author": "urieli17",
+     "text": "הנה זה קורה עם Notion.\n\nאני יכול להשתמש במנוי שיש לי ב-ChatGPT ולכסות את העלויות של השימוש ב-AI של Notion. זו הדרך הנכונה לפעול וגם חוסך לרכוש עוד קרדיטים לא ברורים ב-AI של Notion. https://t.co/DTkzAc29Xz https://t.co/ag",
+     "created_at": "2026-10-10T17:53:18.000Z",
+     "likes": 73,
+     "reposts": 0,
+     "replies": 8,
+     "views": 7572,
+     "quotes": 0
+    }
+   ],
+   "computedAt": "2026-10-15T07:13:39.998Z"
+  },
+  "granola": {
+   "status": "live",
+   "query": "(\"granola ai\" OR @meetgranola OR url:granola.ai OR (granola meeting)) -is:retweet",
+   "mentions24h": 82,
+   "mentions7d": 379,
+   "priorDailyAvg": 49.5,
+   "velocity": 1.66,
+   "daily": [
+    66,
+    93,
+    34,
+    26,
+    29,
+    49,
+    82
+   ],
+   "peakDay": 93,
+   "peakDaysAgo": 5,
+   "sample": {
+    "posts": 23,
+    "likes": 1849,
+    "reposts": 415,
+    "replies": 150
+   },
+   "parts": {
+    "volume": 25.8,
+    "velocity": 8.8,
+    "engagement": 17.7
+   },
+   "score": 52,
+   "label": "rising",
+   "viral": false,
+   "topPosts": [
+    {
+     "id": "2108222137412854244",
+     "url": "https://x.com/allen_lattimer/status/2108222137412854244",
+     "author": "allen_lattimer",
+     "text": "50 AI tools that will save you hundreds of hours in 2026. 🤯\n\n1. Claude — Solve any problem\n2. Perplexity — Research anything\n3. PortfolioTab — Create your portfolio\n4. Kling AI — Create AI videos\n5. Tripo AI — Create 3D",
+     "created_at": "2026-10-08T15:45:01.000Z",
+     "likes": 1040,
+     "reposts": 298,
+     "replies": 31,
+     "views": 97194,
+     "quotes": 7
+    },
+    {
+     "id": "2108569515256664304",
+     "url": "https://x.com/Richwong95/status/2108569515256664304",
+     "author": "Richwong95",
+     "text": "50 个 AI 工具，将在 2026 年为你节省数百小时。🤯\n\n1. Claude — 解决任何问题\n2. Perplexity — 研究任何事物\n3. PortfolioTab — 创建你的作品集\n4. Kling AI — 创建 AI 视频\n5. Tripo AI — 创建 3D 模型\n6. Gemini — 完美写作\n7. CapCut — 编辑视频\n8. The AI Library — 发现有用的 AI 工具\n9.",
+     "created_at": "2026-10-09T14:45:22.000Z",
+     "likes": 240,
+     "reposts": 62,
+     "replies": 3,
+     "views": 19626,
+     "quotes": 2
+    },
+    {
+     "id": "2110226592442044919",
+     "url": "https://x.com/suraj_sharma14/status/2110226592442044919",
+     "author": "suraj_sharma14",
+     "text": "10 AI tools nobody told you about:\n\n1.) Napkin AI (https://t.co/NYVoWuqVGW): paste any text and it turns it into clean diagrams and visuals\n\n2.) Granola (https://t.co/prk3xWSWiK): takes meeting notes without a bot joinin",
+     "created_at": "2026-10-14T04:30:00.000Z",
+     "likes": 281,
+     "reposts": 38,
+     "replies": 18,
+     "views": 19283,
+     "quotes": 4
+    }
+   ],
+   "computedAt": "2026-10-15T07:13:39.998Z"
+  },
+  "jasper": {
+   "status": "live",
+   "query": "(\"jasper ai\" OR url:jasper.ai) -is:retweet",
+   "mentions24h": 4,
+   "mentions7d": 36,
+   "priorDailyAvg": 5.3,
+   "velocity": 0.75,
+   "daily": [
+    5,
+    9,
+    3,
+    5,
+    5,
+    5,
+    4
+   ],
+   "peakDay": 9,
+   "peakDaysAgo": 5,
+   "sample": {
+    "posts": 25,
+    "likes": 584,
+    "reposts": 339,
+    "replies": 169
+   },
+   "parts": {
+    "volume": 15.7,
+    "velocity": 0,
+    "engagement": 16.4
+   },
+   "score": 32,
+   "label": "quiet",
+   "viral": false,
+   "topPosts": [
+    {
+     "id": "2108187473260253332",
+     "url": "https://x.com/ethan_x_ai/status/2108187473260253332",
+     "author": "ethan_x_ai",
+     "text": "20 AI TOOLS THAT CAN HELP YOU MAKE MONEY\n\n  SMART TOOLS \n• REAL SKILLS \n• REAL INCOME\n\n━━━━━━━━━━━━━━━━━━━━\n💡 CONTENT CREATION\n━━━━━━━━━━━━━━━━━━━━\n1. ChatGPT\n🔗 https://t.co/KPVWAJ5bsj\n2. Jasper AI\n🔗 https://t.co/gQqz",
+     "created_at": "2026-10-08T13:27:16.000Z",
+     "likes": 99,
+     "reposts": 51,
+     "replies": 35,
+     "views": 1361,
+     "quotes": 1
+    },
+    {
+     "id": "2108749853161664569",
+     "url": "https://x.com/maxpostingx/status/2108749853161664569",
+     "author": "maxpostingx",
+     "text": "Amateurs debate the monthly cost of software subscriptions. Sovereign operators view enterprise technology strictly as a mechanism to buy back their time and multiply their output.\n\nRelying purely on basic consumer AI mo",
+     "created_at": "2026-10-10T02:41:58.000Z",
+     "likes": 65,
+     "reposts": 45,
+     "replies": 23,
+     "views": 2016,
+     "quotes": 0
+    },
+    {
+     "id": "2109175736649265399",
+     "url": "https://x.com/Jara2426/status/2109175736649265399",
+     "author": "Jara2426",
+     "text": "🚀 30 AI WEBSITES THAT FEEL ILLEGAL TO KNOW 🤯🔥\n\nThese AI tools can help you create stunning images, generate videos, build websites, write code, make music, and boost your productivity like never before! ⚡\n\n💎 30 POWER",
+     "created_at": "2026-10-11T06:54:16.000Z",
+     "likes": 61,
+     "reposts": 46,
+     "replies": 22,
+     "views": 1757,
+     "quotes": 0
+    }
+   ],
+   "computedAt": "2026-10-15T07:13:39.998Z"
+  },
+  "copy-ai": {
+   "status": "live",
+   "query": "(\"copy.ai\" OR url:copy.ai) -is:retweet",
+   "mentions24h": 4,
+   "mentions7d": 23,
+   "priorDailyAvg": 3.2,
+   "velocity": 1.26,
+   "daily": [
+    6,
+    4,
+    2,
+    2,
+    4,
+    1,
+    4
+   ],
+   "peakDay": 6,
+   "peakDaysAgo": 6,
+   "sample": {
+    "posts": 18,
+    "likes": 84,
+    "reposts": 39,
+    "replies": 31
+   },
+   "parts": {
+    "volume": 13.8,
+    "velocity": 1.5,
+    "engagement": 12.1
+   },
+   "score": 27,
+   "label": "quiet",
+   "viral": false,
+   "topPosts": [
+    {
+     "id": "2108925705241412031",
+     "url": "https://x.com/bytecarter_x/status/2108925705241412031",
+     "author": "bytecarter_x",
+     "text": "Stop paying for expensive tools when strong free alternatives exist.\n\nHere’s the Paid vs Free breakdown from the graphic:\n\n- Presentations: PowerPoint → Simplified https://t.co/8lYpPoT5Uj\n\n- Writing: Jasper → https://t.c",
+     "created_at": "2026-10-10T14:20:44.000Z",
+     "likes": 45,
+     "reposts": 35,
+     "replies": 9,
+     "views": 668,
+     "quotes": 0
+    },
+    {
+     "id": "2109375239914496122",
+     "url": "https://x.com/leo_guinan/status/2109375239914496122",
+     "author": "leo_guinan",
+     "text": "I became a software engineer because it felt like a dream to get paid to solve puzzles.\n\nTurns out, the puzzles were never the job. https://t.co/xvviwwOBJk",
+     "created_at": "2026-10-11T20:07:02.000Z",
+     "likes": 18,
+     "reposts": 1,
+     "replies": 14,
+     "views": 1370,
+     "quotes": 1
+    },
+    {
+     "id": "2110609328029794322",
+     "url": "https://x.com/FarazAnisAi/status/2110609328029794322",
+     "author": "FarazAnisAi",
+     "text": "🤖 80 AI TOOLS YOU’LL WANT IN YOUR DAILY LIFE\n\n🧠 Everyday AI\n\nChatGPT\nClaude\nGemini\nPerplexity\nGrok\nCopilot\nPoe\nNotebookLM\n\n✍️ Writing\n9. Grammarly\n10. QuillBot\n11. Jasper\n12. https://t.co/HkMOBsp2G4\n13. Writesonic\n14. ",
+     "created_at": "2026-10-15T05:50:51.000Z",
+     "likes": 9,
+     "reposts": 3,
+     "replies": 6,
+     "views": 315,
+     "quotes": 0
+    }
+   ],
+   "computedAt": "2026-10-15T07:13:39.998Z"
+  },
+  "gamma": {
+   "status": "live",
+   "query": "(\"gamma app\" OR \"gamma ai\" OR url:gamma.app OR @MeetGamma) -is:retweet",
+   "mentions24h": 70,
+   "mentions7d": 294,
+   "priorDailyAvg": 37.3,
+   "velocity": 1.87,
+   "daily": [
+    27,
+    32,
+    35,
+    34,
+    49,
+    47,
+    70
+   ],
+   "peakDay": 70,
+   "peakDaysAgo": 0,
+   "sample": {
+    "posts": 25,
+    "likes": 91,
+    "reposts": 4,
+    "replies": 15
+   },
+   "parts": {
+    "volume": 24.7,
+    "velocity": 10.4,
+    "engagement": 10.6
+   },
+   "score": 46,
+   "label": "rising",
+   "viral": false,
+   "topPosts": [
+    {
+     "id": "2108580907879637313",
+     "url": "https://x.com/Mahmoud12242301/status/2108580907879637313",
+     "author": "Mahmoud12242301",
+     "text": "كثير محللين بيانات يعتقدون إن تجهيز بريزنتيشن أو تقرير للـ Portfolio يحتاج ساعات تصميم وبناء سلايدات! 🤦‍♂️\n\nأداة Gamma App بتغير هالمفهوم تمامًا..\nوش تسوي لك كمحلل؟\n\n1️⃣ تدخل البيانات أو التلخيص اللي طلعته من Power BI.\n",
+     "created_at": "2026-10-09T15:30:38.000Z",
+     "likes": 79,
+     "reposts": 3,
+     "replies": 1,
+     "views": 2942,
+     "quotes": 0
+    },
+    {
+     "id": "2108776030379057171",
+     "url": "https://x.com/malvinfdnsh/status/2108776030379057171",
+     "author": "malvinfdnsh",
+     "text": "wtb Gamma AI Plus \n\n#zonauang #gammaai",
+     "created_at": "2026-10-10T04:25:59.000Z",
+     "likes": 1,
+     "reposts": 0,
+     "replies": 3,
+     "views": 275,
+     "quotes": 0
+    },
+    {
+     "id": "2109140801813147809",
+     "url": "https://x.com/KMswgf/status/2109140801813147809",
+     "author": "KMswgf",
+     "text": "Gamma AI (ทำสไลด์ได้หลายรูปแบบ pptx ไม่เคลื่อน)\n\n- สามารถนำข้อความที่จะทำสไลด์มาใส่ได้เลย \n- 10 สไลด์บันทีกฟรี \n- prompt ได้ว่าต้องการสีไหนแบบไหน,รูปแบงการจัดหน้าแบบไหน \n- ดึง Export ได้ลายรูปแบบและไม่เคลื่อนด้วย*ขึ้นอยู",
+     "created_at": "2026-10-11T04:35:27.000Z",
+     "likes": 1,
+     "reposts": 1,
+     "replies": 1,
+     "views": 249,
+     "quotes": 0
+    }
+   ],
+   "computedAt": "2026-10-15T07:13:39.998Z"
+  },
+  "magic-patterns": {
+   "status": "live",
+   "query": "(\"magic patterns\" OR magicpatterns OR MagicOS OR url:magicpatterns.com) -is:retweet",
+   "mentions24h": 471,
+   "mentions7d": 2900,
+   "priorDailyAvg": 404.8,
+   "velocity": 1.16,
+   "daily": [
+    349,
+    378,
+    359,
+    393,
+    426,
+    524,
+    471
+   ],
+   "peakDay": 524,
+   "peakDaysAgo": 1,
+   "sample": {
+    "posts": 25,
+    "likes": 1174,
+    "reposts": 250,
+    "replies": 167
+   },
+   "parts": {
+    "volume": 34.6,
+    "velocity": 2.7,
+    "engagement": 17
+   },
+   "score": 54,
+   "label": "steady",
+   "viral": false,
+   "topPosts": [
+    {
+     "id": "2110030443466940671",
+     "url": "https://x.com/alexdanilowicz/status/2110030443466940671",
+     "author": "alexdanilowicz",
+     "text": "Today we're launching MagicOS. And we've come to the conclusion that designers are NOT getting replaced.\n\nmost of the industry moved to the same answer this year: give the agent its own canvas, let it run, hand you the o",
+     "created_at": "2026-10-13T15:30:34.000Z",
+     "likes": 1121,
+     "reposts": 247,
+     "replies": 155,
+     "views": 440785,
+     "quotes": 109
+    },
+    {
+     "id": "2110039090322428412",
+     "url": "https://x.com/sambrownai/status/2110039090322428412",
+     "author": "sambrownai",
+     "text": "One prompt can give you a screen. Exploring the right idea takes a lot more. Interesting direction from Magic Patterns. https://t.co/YBaUDREZnw",
+     "created_at": "2026-10-13T16:04:56.000Z",
+     "likes": 11,
+     "reposts": 1,
+     "replies": 5,
+     "views": 7511,
+     "quotes": 0
+    },
+    {
+     "id": "2110035694982963518",
+     "url": "https://x.com/magicpatterns/status/2110035694982963518",
+     "author": "magicpatterns",
+     "text": "We completely reimagined how you design in Magic Patterns.\n\nEverything. Everywhere. All at once.\n\nMagicOS is out today. https://t.co/4jqQSyGAah",
+     "created_at": "2026-10-13T15:51:26.000Z",
+     "likes": 17,
+     "reposts": 0,
+     "replies": 2,
+     "views": 1941,
+     "quotes": 1
+    }
+   ],
+   "computedAt": "2026-10-15T07:13:39.998Z"
+  },
+  "codex": {
+   "status": "live",
+   "query": "(\"openai codex\" OR \"codex cli\" OR \"codex app\" OR @OpenAIDevs codex OR url:chatgpt.com/codex) -is:retweet",
+   "mentions24h": 501,
+   "mentions7d": 3822,
+   "priorDailyAvg": 553.5,
+   "velocity": 0.91,
+   "daily": [
+    596,
+    586,
+    451,
+    425,
+    661,
+    602,
+    501
+   ],
+   "peakDay": 661,
+   "peakDaysAgo": 2,
+   "sample": {
+    "posts": 25,
+    "likes": 47,
+    "reposts": 4,
+    "replies": 12
+   },
+   "parts": {
+    "volume": 35.8,
+    "velocity": 0,
+    "engagement": 9.6
+   },
+   "score": 45,
+   "label": "steady",
+   "viral": false,
+   "topPosts": [
+    {
+     "id": "2109125382989373889",
+     "url": "https://x.com/KirkDBorne/status/2109125382989373889",
+     "author": "KirkDBorne",
+     "text": "Agentic Coding with OpenAI Codex CLI — Build intelligent agent workflows using Agentic Engineering, MCP, hooks, and delivery automation: https://t.co/SlVj3MlYPF via @PacktPublishing @PacktDataML \n\n𝙏𝙖𝙗𝙡𝙚 𝙤𝙛 𝘾𝙤𝙣\ud835",
+     "created_at": "2026-10-11T03:34:11.000Z",
+     "likes": 18,
+     "reposts": 3,
+     "replies": 3,
+     "views": 2748,
+     "quotes": 0
+    },
+    {
+     "id": "2109811387212218605",
+     "url": "https://x.com/keitaro_aigc/status/2109811387212218605",
+     "author": "keitaro_aigc",
+     "text": "Codex CLIを閉じたあとも、裏で何かが動き続けているかもしれません。利用者の報告が話題になっています。\n\nopenai/codexのGitHubに9月25日に立てられた要望（Issue）が、10月12日にHacker Newsで話題になりました。利用者の報告で、OpenAIの公式な説明ではありません。\n\n報告されていること。",
+     "created_at": "2026-10-13T01:00:07.000Z",
+     "likes": 9,
+     "reposts": 0,
+     "replies": 1,
+     "views": 1248,
+     "quotes": 0
+    },
+    {
+     "id": "2110232173139648975",
+     "url": "https://x.com/KirkDBorne/status/2110232173139648975",
+     "author": "KirkDBorne",
+     "text": "Agentic Coding with OpenAI Codex CLI — Build intelligent agent workflows using Agentic Engineering, MCP, hooks, and delivery automation: https://t.co/SlVj3MlYPF via @PacktPublishing @PacktDataML \n\n𝙏𝙖𝙗𝙡𝙚 𝙤𝙛 𝘾𝙤𝙣\ud835",
+     "created_at": "2026-10-14T04:52:10.000Z",
+     "likes": 4,
+     "reposts": 1,
+     "replies": 1,
+     "views": 1574,
+     "quotes": 0
+    }
+   ],
+   "computedAt": "2026-10-15T07:13:39.998Z"
+  }
+ }
+}

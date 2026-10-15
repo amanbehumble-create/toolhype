@@ -1316,5 +1316,89 @@
       "updatedAt": null
     },
     "logo": "/logos/gamma.png"
+  },
+  {
+    "slug": "wispr-flow",
+    "name": "Wispr Flow",
+    "url": "https://wisprflow.ai",
+    "affiliateUrl": null,
+    "category": "productivity",
+    "useCases": [
+      "audio",
+      "productivity"
+    ],
+    "pricing": "freemium",
+    "verdict": "Voice dictation that works in every app and cleans up your words as you speak.",
+    "useThisIf": "you'd rather talk than type emails, prompts and docs.",
+    "alternatives": [
+      "granola"
+    ],
+    "source": "x",
+    "addedAt": "2026-10-15",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/wispr-flow.png"
+  },
+  {
+    "slug": "magic-patterns",
+    "name": "Magic Patterns",
+    "url": "https://www.magicpatterns.com",
+    "affiliateUrl": null,
+    "category": "design",
+    "useCases": [
+      "design",
+      "coding"
+    ],
+    "pricing": "freemium",
+    "verdict": "AI design canvas (MagicOS) that turns prompts and PRDs into editable UI prototypes.",
+    "useThisIf": "you want AI-generated UI you can still steer as a designer.",
+    "alternatives": [
+      "v0",
+      "figma"
+    ],
+    "source": "x",
+    "addedAt": "2026-10-14",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/magic-patterns.png"
+  },
+  {
+    "slug": "codex",
+    "name": "OpenAI Codex",
+    "url": "https://chatgpt.com/codex",
+    "affiliateUrl": null,
+    "category": "coding",
+    "useCases": [
+      "coding",
+      "agents"
+    ],
+    "pricing": "paid (in ChatGPT plans)",
+    "verdict": "OpenAI's coding agent: runs tasks in the cloud, CLI or IDE and opens PRs.",
+    "useThisIf": "you're on ChatGPT and want an agent to take whole coding tasks.",
+    "alternatives": [
+      "claude-code",
+      "cursor",
+      "opencode"
+    ],
+    "source": "x",
+    "addedAt": "2026-10-15",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/codex.png"
   }
 ]

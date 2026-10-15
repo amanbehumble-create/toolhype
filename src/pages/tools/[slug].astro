@@ -1,8 +1,13 @@
 ---
 import Base from '../../layouts/Base.astro'; import Shell from '../../components/Shell.astro';
-import { getTools, getTool, outUrl, type Tool } from '../../lib/data'; import { appLd } from '../../lib/ld';
+import { getTools, getTool, outUrl, hkt, LABEL, type Tool } from '../../lib/data'; import { appLd } from '../../lib/ld';
 export const getStaticPaths = () => getTools().map((t) => ({ params: { slug: t.slug }, props: { t } }));
 const { t } = Astro.props as { t: Tool };
+const b = t.buzz;
+const d = b.daily ?? []; const mx = Math.max(1, ...d);
+const pts = d.map((v, i) => [(i / Math.max(1, d.length - 1)) * 300, 76 - (v / mx) * 70]);
+const line = pts.map((p, i) => `${i ? 'L' : 'M'}${p[0].toFixed(1)},${p[1].toFixed(1)}`).join(' ');
+const fmt = (n: number) => n >= 1e6 ? (n / 1e6).toFixed(1) + 'M' : n >= 1e4 ? Math.round(n / 1e3) + 'k' : n.toLocaleString('en-US');
 const alts = t.alternatives.map(getTool).filter(Boolean) as Tool[];
 ---
 <Base title={`${t.name}: review, use cases & alternatives`} description={`${t.name} — ${t.verdict}`} jsonld={[appLd(t)]}>
@@ -12,7 +17,21 @@ const alts = t.alternatives.map(getTool).filter(Boolean) as Tool[];
   <p><b>Verdict:</b> {t.verdict}</p><p><b>Use this if</b> {t.useThisIf}</p>
   <div class="meta">{t.useCases.map((c) => <a class="chip c" href={`/c/${c}`}>c/{c}</a>)}<span class="chip">{t.pricing}</span></div>
   <p><a class="btn primary" href={outUrl(t)} rel={t.affiliateUrl ? 'sponsored noopener' : 'noopener'} target="_blank">Visit {t.name} →</a></p>
-  <h2>X buzz</h2><p class="muted">Score: <span class="chip">{t.buzz.score ?? 'pending'}</span> Our daily X scan will show mention volume, engagement and top posts here.</p>
+  <h2 id="buzz">Live X Buzz Score</h2>
+  {b.status === 'live' ? <>
+    <p><span class:list={['buzz', b.label]} style="font-size:1rem">{b.label === 'hype' ? '🔥' : 'X'} {b.score}/100 <span class="lbl">{LABEL[b.label!]}</span></span> <span class="muted">updated {hkt(b.updatedAt!)}</span></p>
+    <div class="stats">
+      <div class="stat"><b>{fmt(b.mentions24h!)}</b><span>posts, last 24h</span></div>
+      <div class="stat"><b>{fmt(b.mentions7d!)}</b><span>posts, last 7 days</span></div>
+      <div class="stat"><b>{b.velocity}×</b><span>24h vs prior daily avg ({fmt(Math.round(b.priorDailyAvg!))})</span></div>
+      <div class="stat"><b>{fmt(b.sample!.likes)}</b><span>likes in top {b.sample!.posts} sampled posts</span></div>
+    </div>
+    <svg class="spark" viewBox="0 0 300 80" preserveAspectRatio="none" role="img" aria-label={`Daily X mentions over 7 days: ${d.join(', ')}`}><path class="a" d={`${line} L300,80 L0,80 Z`}/><path class="l" d={line}/></svg>
+    <p class="muted" style="font-size:.75rem;margin-top:0">Daily X posts, last 7 days (oldest → today): {d.join(' · ')}. Score parts: volume {b.parts!.volume}/50, spike {b.parts!.velocity}/25, engagement {b.parts!.engagement}/25. <a href="/buzz" style="color:var(--accent-ink)">Method</a></p>
+    {b.topPosts && b.topPosts.length > 0 && <><h3>Why it's buzzing</h3>{b.topPosts.map((p) =>
+      <a class="xpost" href={p.url} target="_blank" rel="noopener nofollow"><span class="m">@{p.author ?? 'x'} · {p.created_at.slice(0, 10)}</span><p>{p.text}</p>
+      <span class="m">♥ {fmt(p.likes)} · ⟲ {fmt(p.reposts)} · 💬 {fmt(p.replies)}{p.views ? ` · 👁 ${fmt(p.views)}` : ''}</span></a>)}</>}
+  </> : <p class="muted">Score pending: this tool hasn't been through the daily X scan yet.</p>}
   {alts.length > 0 && <><h2>Alternatives</h2><ul>{alts.map((a) => <li><a href={`/tools/${a.slug}`}>{a.name}</a>: {a.verdict}</li>)}</ul></>}
   <h2>Discussion</h2><p class="muted">Comments are coming with sign-in.</p>
 </article></Shell></Base>

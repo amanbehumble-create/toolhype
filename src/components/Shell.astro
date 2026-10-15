@@ -1,5 +1,5 @@
 ---
-import { getCommunities, getTools } from '../lib/data';
+import { getCommunities, getTools, trendingOnX, BUZZ_AT, hkt, LABEL } from '../lib/data';
 import Votes from './Votes.astro';
 const { active = '' } = Astro.props;
 const featured = getTools().filter((t) => t.featured);
@@ -9,6 +9,7 @@ const stripe = import.meta.env.PUBLIC_STRIPE_FEATURED_LINK;
   <aside class="left"><nav>
     <a href="/" class:list={{ on: active === 'home' }}>🏠 Home</a>
     <a href="/new" class:list={{ on: active === 'new' }}>✨ New this week</a>
+    <a href="/buzz" class:list={{ on: active === "buzz" }}>🔥 X Buzz Score</a>
     <a href="/newsletter">✉️ Newsletter</a>
     <div class="label">Communities</div>
     {getCommunities().map((c) => <a href={`/c/${c.slug}`} class:list={{ on: active === c.slug }}>c/{c.slug}</a>)}
@@ -22,7 +23,9 @@ const stripe = import.meta.env.PUBLIC_STRIPE_FEATURED_LINK;
       {featured.length ? featured.map((t) => <p><a href={`/tools/${t.slug}`}>{t.name}</a></p>) :
         <p class="muted">This slot is open. Featured spots are clearly labelled and never change ranking.</p>}
       <a class="btn" href={stripe || '/submit'}>Get featured →</a></div>
-    <div class="card"><h3>Trending on X</h3><p class="muted">Live X buzz scores are coming soon. We're wiring up the daily X scan.</p></div>
+    <div class="card"><h3>Trending on X</h3>
+      <ol class="trend">{trendingOnX(5).map((t, i) => <li><span class="rk">{i + 1}</span>{t.logo && <img src={t.logo} alt="" width="20" height="20" loading="lazy"/>}<a href={`/tools/${t.slug}`}>{t.name}</a><span class:list={['buzz', 'sm', t.buzz.label]}>{t.buzz.label === 'hype' ? '🔥' : ''}{t.buzz.score}</span></li>)}</ol>
+      <p class="muted" style="font-size:.75rem;margin:.5rem 0 0">Updated {hkt(BUZZ_AT)} · <a href="/buzz" style="color:var(--accent-ink)">How the score works</a> · <a href="/?sort=buzz" style="color:var(--accent-ink)">All</a></p></div>
   </aside>
 </div>
 <Votes/>

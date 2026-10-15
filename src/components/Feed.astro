@@ -5,7 +5,7 @@ const { tools } = Astro.props as { tools: Tool[] };
 const weekAgo = Date.now() - 7 * 864e5;
 ---
 <div class="tabs" role="tablist">
-  {['hot', 'new', 'top', 'rising'].map((s, i) => <button class:list={['tab', { on: i === 0 }]} data-sort={s}>{s[0].toUpperCase() + s.slice(1)}</button>)}
+  {[['hot','Hot'],['buzz','🔥 Hype on X'],['new','New'],['top','Top'],['rising','Rising']].map(([s, l], i) => <button class:list={['tab', { on: i === 0 }]} data-sort={s}>{l}</button>)}
 </div>
 <div class="feed" id="feed">{tools.map((t) => <ToolCard tool={t} isNew={new Date(t.addedAt).getTime() > weekAgo} />)}</div>
 <script>
@@ -15,7 +15,8 @@ const age = (el: HTMLElement) => (Date.now() - new Date(el.dataset.added!).getTi
 const votes = (el: HTMLElement) => (hasVoted(el.dataset.slug!) ? 1 : 0);
 const buzz = (el: HTMLElement) => Number(el.dataset.buzz || 0);
 const score: Record<string, (el: HTMLElement) => number> = {
-  hot: (el) => Math.log10(Math.max(votes(el), 1)) + Math.log10(1 + buzz(el)) * 0.6 - age(el) / 12.5,
+  hot: (el) => Math.log10(Math.max(votes(el), 1)) * 2 + buzz(el) / 20 + 3 * Math.exp(-age(el) / 72),
+  buzz: (el) => buzz(el) + (el.dataset.label === 'hype' ? 100 : 0),
   new: (el) => -age(el),
   top: (el) => votes(el) * 1000 + buzz(el),
   rising: (el) => (votes(el) + buzz(el) + 1) / Math.pow(age(el) + 2, 1.5),
@@ -26,6 +27,7 @@ function sort(s: string) {
   document.querySelectorAll('.tab').forEach((t) => t.classList.toggle('on', (t as HTMLElement).dataset.sort === s));
 }
 document.querySelectorAll<HTMLElement>('.tab').forEach((t) => t.addEventListener('click', () => sort(t.dataset.sort!)));
+const st = new URLSearchParams(location.search).get('sort'); if (st && score[st]) sort(st);
 const q = new URLSearchParams(location.search).get('q');
 if (q) { const i = document.getElementById('q') as HTMLInputElement; i.value = q; i.dispatchEvent(new Event('input')); }
 </script>

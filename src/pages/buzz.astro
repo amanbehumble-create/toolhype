@@ -1,0 +1,28 @@
+---
+import Base from '../layouts/Base.astro'; import Shell from '../components/Shell.astro';
+import { getTools, byBuzz, BUZZ_AT, hkt, LABEL } from '../lib/data';
+const live = getTools().filter((t) => t.buzz.status === 'live').sort(byBuzz);
+const pending = getTools().filter((t) => t.buzz.status !== 'live');
+---
+<Base title="Live X Buzz Score: how we rank hype on X" description="How toolhype's 0-100 X Buzz Score is calculated from real X post counts, velocity and engagement, plus the full leaderboard.">
+<Shell><article class="card prose">
+<h1>Live X Buzz Score</h1>
+<p class="muted">Updated {hkt(BUZZ_AT)}. Every number here comes from public X data. Nothing is estimated, and paid placements never change it.</p>
+<h2>How it works</h2>
+<ol>
+<li><b>One precise query per tool.</b> Brand names, the official handle and the domain (<code>url:</code>), with retweets removed and ambiguous words avoided. Each query is listed below.</li>
+<li><b>Mentions.</b> X's post-count endpoint gives hourly counts for the last 7 days. From that we take posts in the last 24h, posts in 7 days, and <b>velocity</b> = last 24h ÷ the average day in the 6 days before.</li>
+<li><b>Engagement.</b> A sample of up to 25 of the most relevant original posts from the last 7 days (no replies, no retweets). We sum likes + 3×reposts + 2×replies + 2×quotes of the top posts and keep the top 3 posts as "why it's buzzing".</li>
+<li><b>Score (0-100)</b> = volume (0-50: log of 7-day posts; 100k+ = 50) + spike (0-25: log₂ of velocity, 4× = 25, damped when fewer than ~100 posts in 24h) + engagement (0-25: log of weighted engagement; 100k = 25).</li>
+<li><b>Labels.</b> 🔥 <b>Hype</b>: velocity ≥ 2× with 20+ posts in 24h, or a sampled post with 5,000+ likes this week. <b>Rising</b>: velocity ≥ 1.3×. <b>Steady</b>: 50+ posts a week. <b>Quiet</b>: everything else.</li>
+</ol>
+<p>Scores refresh with our daily scan. <b>Hot</b> in the feed blends upvotes, the Buzz Score and how new a tool is; <b>Hype on X</b> sorts purely by the score with 🔥 tools first.</p>
+<h2>Leaderboard</h2>
+<table class="bz"><thead><tr><th>#</th><th>Tool</th><th>Score</th><th>Label</th><th>24h</th><th>7d</th><th>Velocity</th></tr></thead><tbody>
+{live.map((t, i) => <tr><td class="n">{i + 1}</td><td><a href={`/tools/${t.slug}#buzz`}>{t.name}</a></td><td class="n">{t.buzz.score}</td><td>{LABEL[t.buzz.label!]}</td><td class="n">{t.buzz.mentions24h}</td><td class="n">{t.buzz.mentions7d}</td><td class="n">{t.buzz.velocity}×</td></tr>)}
+</tbody></table>
+{pending.length > 0 && <p class="muted">Pending: {pending.map((t) => t.name).join(', ')}</p>}
+<h2>Queries</h2>
+<ul>{live.map((t) => <li><b>{t.name}</b>: <code style="font-size:.75rem">{t.buzz.query}</code></li>)}</ul>
+<p class="muted">Limits: X search matches text, so a tool whose name is a common word can pick up unrelated posts. We tighten queries when we spot this. Found a bad number? <a href="/submit">Tell us</a>.</p>
+</article></Shell></Base>

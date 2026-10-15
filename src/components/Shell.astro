@@ -1,5 +1,6 @@
 ---
 import Subscribe from './Subscribe.astro';
+import XCard from './XCard.astro';
 import { getCommunities, getTools, trendingOnX, BUZZ_AT, hkt, LABEL } from '../lib/data';
 import Votes from './Votes.astro';
 const { active = '' } = Astro.props;
@@ -16,9 +17,10 @@ const stripe = import.meta.env.PUBLIC_STRIPE_FEATURED_LINK;
     <div class="label">Communities</div>
     {getCommunities().map((c) => <a href={`/c/${c.slug}`} class:list={{ on: active === c.slug }}>c/{c.slug}</a>)}
   </nav></aside>
-  <main><slot/></main>
+  <main><slot/><div class="foot-x"><XCard compact/></div></main>
   <aside class="right">
     <slot name="about"/>
+    <XCard/>
     <div class="card"><h3>The weekly drop</h3><p style="margin:.4rem 0"><a href="/prompts/issue-1" style="color:var(--accent-ink)">📋 Read Prompt Drop #1 →</a></p>
       <Subscribe label="Subscribe" /></div>
     <div class="card"><h3>Featured</h3>

@@ -1,4 +1,5 @@
 ---
+import SubStrip from '../../components/SubStrip.astro';
 import Base from '../../layouts/Base.astro'; import Shell from '../../components/Shell.astro';
 import { getTools, getTool, outUrl, goUrl, hkt, LABEL, getCommunity, toolsIn, byBuzz, type Tool } from '../../lib/data'; import { appLd, faqLd, crumbsLd } from '../../lib/ld';
 export const getStaticPaths = () => getTools().map((t) => ({ params: { slug: t.slug }, props: { t } }));
@@ -46,5 +47,6 @@ const faq: [string, string][] = [
   {related.length > 0 && <><h2>Similar AI tools</h2><ul>{related.map((a) => <li><a href={`/tools/${a.slug}`}>{a.name}</a>: {a.verdict}</li>)}</ul></>}
   {cat && <p>See all: <a href={`/best/${cat.slug}`}>best AI tools for {cat.name.toLowerCase()}</a> · <a href="/trending">trending AI tools today</a></p>}
   <h2>FAQ</h2>{faq.map(([q, a]) => <><h3>{q}</h3><p>{a}</p></>)}
+  <SubStrip title="Never miss the next hot tool" sub="Weekly: what's hyped on X, and what's worth it."/>
   <h2>Discussion</h2><p class="muted">Comments are coming with sign-in.</p>
 </article></Shell></Base>

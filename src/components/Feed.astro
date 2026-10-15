@@ -1,13 +1,14 @@
 ---
 import type { Tool } from '../lib/data';
 import ToolCard from './ToolCard.astro';
+import SubStrip from './SubStrip.astro';
 const { tools } = Astro.props as { tools: Tool[] };
 const weekAgo = Date.now() - 7 * 864e5;
 ---
 <div class="tabs" role="tablist">
   {[['hot','Hot'],['buzz','🔥 Hype on X'],['new','New'],['top','Top'],['rising','Rising']].map(([s, l], i) => <button class:list={['tab', { on: i === 0 }]} role="tab" aria-selected={i === 0 ? 'true' : 'false'} data-sort={s}>{l}</button>)}
 </div>
-<div class="feed" id="feed">{tools.map((t) => <ToolCard tool={t} isNew={new Date(t.addedAt).getTime() > weekAgo} />)}</div>
+<div class="feed" id="feed">{tools.map((t, i) => <>{i === 6 && <div class="feed-promo" id="feed-promo"><SubStrip title="Like this list? Get it weekly" sub="The hottest AI tools + 10 legit prompts, every week. Free."/></div>}<ToolCard tool={t} isNew={new Date(t.addedAt).getTime() > weekAgo} /></>)}</div>
 <script>
 import { hasVoted } from '../lib/votes';
 const feed = document.getElementById('feed')!;
@@ -22,8 +23,9 @@ const score: Record<string, (el: HTMLElement) => number> = {
   rising: (el) => (votes(el) + buzz(el) + 1) / Math.pow(age(el) + 2, 1.5),
 };
 function sort(s: string) {
-  const items = [...feed.children] as HTMLElement[];
+  const items = [...feed.querySelectorAll(':scope > .post')] as HTMLElement[];
   items.sort((a, b) => score[s](b) - score[s](a)).forEach((el) => feed.appendChild(el));
+  const pr = document.getElementById('feed-promo'); if (pr && items[6]) feed.insertBefore(pr, items[6]);
   document.querySelectorAll('.tab').forEach((t) => { const on = (t as HTMLElement).dataset.sort === s; t.classList.toggle('on', on); t.setAttribute('aria-selected', String(on)); });
 }
 document.querySelectorAll<HTMLElement>('.tab').forEach((t) => t.addEventListener('click', () => sort(t.dataset.sort!)));

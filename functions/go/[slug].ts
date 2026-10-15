@@ -35,3 +35,11 @@ export const onRequestGet: PagesFunction<Env> = async (ctx) => {
   }
   return new Response(null, { status: 302, headers: { Location: dest.toString(), 'Cache-Control': 'no-store', 'X-Robots-Tag': 'noindex, nofollow', 'Referrer-Policy': 'unsafe-url' } });
 };
+
+// HEAD (link checkers, previews): same redirect, never logged.
+export const onRequestHead: PagesFunction<Env> = async (ctx) => {
+  const base = (MAP as Record<string, string>)[String(ctx.params.slug || '').toLowerCase()];
+  if (!base) return Response.redirect(new URL('/', ctx.request.url).toString(), 302);
+  const dest = new URL(base); dest.searchParams.set('ref', 'toolhype.dev');
+  return new Response(null, { status: 302, headers: { Location: dest.toString(), 'Cache-Control': 'no-store', 'X-Robots-Tag': 'noindex, nofollow' } });
+};

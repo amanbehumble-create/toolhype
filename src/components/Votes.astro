@@ -1,0 +1,9 @@
+<script>
+import { hasVoted, toggle } from '../lib/votes';
+document.querySelectorAll<HTMLElement>('[data-vote]').forEach((el) => {
+  const slug = el.dataset.vote!; const n = el.querySelector('.n')!;
+  const paint = (on: boolean) => { el.classList.toggle('on', on); n.textContent = on ? '1' : '0'; };
+  paint(hasVoted(slug));
+  el.querySelector('button')!.addEventListener('click', () => paint(toggle(slug)));
+});
+</script>

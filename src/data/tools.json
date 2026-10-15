@@ -1,0 +1,951 @@
+[
+  {
+    "slug": "chatgpt",
+    "name": "ChatGPT",
+    "url": "https://chatgpt.com",
+    "affiliateUrl": null,
+    "category": "chat",
+    "useCases": [
+      "chat",
+      "productivity",
+      "coding"
+    ],
+    "pricing": "freemium",
+    "verdict": "The default general assistant; strong all-rounder with a huge plugin and GPT ecosystem.",
+    "useThisIf": "you want one assistant that does a bit of everything.",
+    "alternatives": [
+      "claude",
+      "gemini",
+      "grok"
+    ],
+    "source": "seed",
+    "addedAt": "2026-10-15",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    }
+  },
+  {
+    "slug": "claude",
+    "name": "Claude",
+    "url": "https://claude.ai",
+    "affiliateUrl": null,
+    "category": "chat",
+    "useCases": [
+      "chat",
+      "coding",
+      "productivity"
+    ],
+    "pricing": "freemium",
+    "verdict": "Excellent for long documents, writing and careful coding help.",
+    "useThisIf": "you work with long context or want thoughtful writing.",
+    "alternatives": [
+      "chatgpt",
+      "gemini"
+    ],
+    "source": "seed",
+    "addedAt": "2026-10-14",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    }
+  },
+  {
+    "slug": "gemini",
+    "name": "Gemini",
+    "url": "https://gemini.google.com",
+    "affiliateUrl": null,
+    "category": "chat",
+    "useCases": [
+      "chat",
+      "productivity"
+    ],
+    "pricing": "freemium",
+    "verdict": "Google's assistant, best if you live in Gmail, Docs and Drive.",
+    "useThisIf": "you're deep in Google Workspace.",
+    "alternatives": [
+      "chatgpt",
+      "claude"
+    ],
+    "source": "seed",
+    "addedAt": "2026-10-13",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    }
+  },
+  {
+    "slug": "grok",
+    "name": "Grok",
+    "url": "https://grok.com",
+    "affiliateUrl": null,
+    "category": "chat",
+    "useCases": [
+      "chat",
+      "marketing"
+    ],
+    "pricing": "freemium",
+    "verdict": "xAI's assistant with native, real-time access to X.",
+    "useThisIf": "you need what's happening on X right now.",
+    "alternatives": [
+      "perplexity",
+      "chatgpt"
+    ],
+    "source": "seed",
+    "addedAt": "2026-10-12",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    }
+  },
+  {
+    "slug": "perplexity",
+    "name": "Perplexity",
+    "url": "https://www.perplexity.ai",
+    "affiliateUrl": null,
+    "category": "productivity",
+    "useCases": [
+      "productivity",
+      "chat"
+    ],
+    "pricing": "freemium",
+    "verdict": "Answer engine with citations; fast research instead of ten blue links.",
+    "useThisIf": "you want sourced answers quickly.",
+    "alternatives": [
+      "grok",
+      "chatgpt"
+    ],
+    "source": "seed",
+    "addedAt": "2026-10-11",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    }
+  },
+  {
+    "slug": "cursor",
+    "name": "Cursor",
+    "url": "https://cursor.com",
+    "affiliateUrl": null,
+    "category": "coding",
+    "useCases": [
+      "coding",
+      "agents"
+    ],
+    "pricing": "freemium",
+    "verdict": "AI-first code editor (VS Code fork) with strong agent and tab completion.",
+    "useThisIf": "you code daily and want AI built into the editor.",
+    "alternatives": [
+      "windsurf",
+      "github-copilot",
+      "claude-code"
+    ],
+    "source": "seed",
+    "addedAt": "2026-10-10",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    }
+  },
+  {
+    "slug": "github-copilot",
+    "name": "GitHub Copilot",
+    "url": "https://github.com/features/copilot",
+    "affiliateUrl": null,
+    "category": "coding",
+    "useCases": [
+      "coding"
+    ],
+    "pricing": "freemium",
+    "verdict": "AI pair programmer inside your existing IDE and GitHub.",
+    "useThisIf": "your team already lives on GitHub.",
+    "alternatives": [
+      "cursor",
+      "windsurf"
+    ],
+    "source": "seed",
+    "addedAt": "2026-10-09",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    }
+  },
+  {
+    "slug": "windsurf",
+    "name": "Windsurf",
+    "url": "https://windsurf.com",
+    "affiliateUrl": null,
+    "category": "coding",
+    "useCases": [
+      "coding",
+      "agents"
+    ],
+    "pricing": "freemium",
+    "verdict": "Agentic IDE focused on keeping you in flow.",
+    "useThisIf": "you want a Cursor alternative.",
+    "alternatives": [
+      "cursor",
+      "github-copilot"
+    ],
+    "source": "seed",
+    "addedAt": "2026-10-08",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    }
+  },
+  {
+    "slug": "claude-code",
+    "name": "Claude Code",
+    "url": "https://www.anthropic.com/claude-code",
+    "affiliateUrl": null,
+    "category": "coding",
+    "useCases": [
+      "coding",
+      "agents"
+    ],
+    "pricing": "paid",
+    "verdict": "Terminal-based coding agent that edits and runs your repo.",
+    "useThisIf": "you prefer the command line and big refactors.",
+    "alternatives": [
+      "cursor",
+      "aider"
+    ],
+    "source": "seed",
+    "addedAt": "2026-09-09",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    }
+  },
+  {
+    "slug": "aider",
+    "name": "Aider",
+    "url": "https://aider.chat",
+    "affiliateUrl": null,
+    "category": "coding",
+    "useCases": [
+      "coding",
+      "agents"
+    ],
+    "pricing": "open-source",
+    "verdict": "Open-source AI pair programming in your terminal, git-aware.",
+    "useThisIf": "you want open-source and bring-your-own model.",
+    "alternatives": [
+      "claude-code",
+      "cursor"
+    ],
+    "source": "seed",
+    "addedAt": "2026-09-10",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    }
+  },
+  {
+    "slug": "v0",
+    "name": "v0",
+    "url": "https://v0.dev",
+    "affiliateUrl": null,
+    "category": "coding",
+    "useCases": [
+      "coding",
+      "design"
+    ],
+    "pricing": "freemium",
+    "verdict": "Vercel's generator for React/Next UI from a prompt.",
+    "useThisIf": "you need a polished UI component fast.",
+    "alternatives": [
+      "bolt",
+      "lovable"
+    ],
+    "source": "seed",
+    "addedAt": "2026-09-11",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    }
+  },
+  {
+    "slug": "bolt",
+    "name": "Bolt",
+    "url": "https://bolt.new",
+    "affiliateUrl": null,
+    "category": "coding",
+    "useCases": [
+      "coding"
+    ],
+    "pricing": "freemium",
+    "verdict": "Prompt-to-full-stack app in the browser by StackBlitz.",
+    "useThisIf": "you want a running web app from one prompt.",
+    "alternatives": [
+      "lovable",
+      "replit",
+      "v0"
+    ],
+    "source": "seed",
+    "addedAt": "2026-09-12",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    }
+  },
+  {
+    "slug": "lovable",
+    "name": "Lovable",
+    "url": "https://lovable.dev",
+    "affiliateUrl": null,
+    "category": "coding",
+    "useCases": [
+      "coding"
+    ],
+    "pricing": "freemium",
+    "verdict": "Vibe-code full apps with Supabase backend from chat.",
+    "useThisIf": "you're a non-dev shipping an MVP.",
+    "alternatives": [
+      "bolt",
+      "replit"
+    ],
+    "source": "seed",
+    "addedAt": "2026-09-13",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    }
+  },
+  {
+    "slug": "replit",
+    "name": "Replit",
+    "url": "https://replit.com",
+    "affiliateUrl": null,
+    "category": "coding",
+    "useCases": [
+      "coding",
+      "agents"
+    ],
+    "pricing": "freemium",
+    "verdict": "Cloud IDE with Replit Agent that builds and deploys apps.",
+    "useThisIf": "you want build + hosting in one place.",
+    "alternatives": [
+      "bolt",
+      "lovable"
+    ],
+    "source": "seed",
+    "addedAt": "2026-09-14",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    }
+  },
+  {
+    "slug": "n8n",
+    "name": "n8n",
+    "url": "https://n8n.io",
+    "affiliateUrl": null,
+    "category": "agents",
+    "useCases": [
+      "agents",
+      "productivity"
+    ],
+    "pricing": "open-source",
+    "verdict": "Fair-code workflow automation with AI agent nodes; self-hostable.",
+    "useThisIf": "you want Zapier-style automations you control.",
+    "alternatives": [
+      "zapier",
+      "make"
+    ],
+    "source": "seed",
+    "addedAt": "2026-09-15",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    }
+  },
+  {
+    "slug": "zapier",
+    "name": "Zapier",
+    "url": "https://zapier.com",
+    "affiliateUrl": null,
+    "category": "agents",
+    "useCases": [
+      "agents",
+      "productivity"
+    ],
+    "pricing": "freemium",
+    "verdict": "The biggest no-code automation catalog, now with AI agents.",
+    "useThisIf": "you need to connect many SaaS apps fast.",
+    "alternatives": [
+      "n8n",
+      "make"
+    ],
+    "source": "seed",
+    "addedAt": "2026-09-16",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    }
+  },
+  {
+    "slug": "make",
+    "name": "Make",
+    "url": "https://www.make.com",
+    "affiliateUrl": null,
+    "category": "agents",
+    "useCases": [
+      "agents",
+      "productivity"
+    ],
+    "pricing": "freemium",
+    "verdict": "Visual automation builder with granular control.",
+    "useThisIf": "you like visual flows and lower prices than Zapier.",
+    "alternatives": [
+      "zapier",
+      "n8n"
+    ],
+    "source": "seed",
+    "addedAt": "2026-09-17",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    }
+  },
+  {
+    "slug": "langchain",
+    "name": "LangChain",
+    "url": "https://www.langchain.com",
+    "affiliateUrl": null,
+    "category": "agents",
+    "useCases": [
+      "agents",
+      "coding"
+    ],
+    "pricing": "open-source",
+    "verdict": "Popular framework for building LLM apps and agents.",
+    "useThisIf": "you're a developer building custom agents.",
+    "alternatives": [
+      "crewai"
+    ],
+    "source": "seed",
+    "addedAt": "2026-09-18",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    }
+  },
+  {
+    "slug": "crewai",
+    "name": "CrewAI",
+    "url": "https://www.crewai.com",
+    "affiliateUrl": null,
+    "category": "agents",
+    "useCases": [
+      "agents",
+      "coding"
+    ],
+    "pricing": "open-source",
+    "verdict": "Framework for multi-agent 'crews' with roles.",
+    "useThisIf": "you want several agents collaborating.",
+    "alternatives": [
+      "langchain"
+    ],
+    "source": "seed",
+    "addedAt": "2026-09-19",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    }
+  },
+  {
+    "slug": "midjourney",
+    "name": "Midjourney",
+    "url": "https://www.midjourney.com",
+    "affiliateUrl": null,
+    "category": "design",
+    "useCases": [
+      "design"
+    ],
+    "pricing": "paid",
+    "verdict": "Top-tier aesthetic image generation.",
+    "useThisIf": "image quality and style matter most.",
+    "alternatives": [
+      "ideogram",
+      "canva"
+    ],
+    "source": "seed",
+    "addedAt": "2026-09-20",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    }
+  },
+  {
+    "slug": "ideogram",
+    "name": "Ideogram",
+    "url": "https://ideogram.ai",
+    "affiliateUrl": null,
+    "category": "design",
+    "useCases": [
+      "design",
+      "marketing"
+    ],
+    "pricing": "freemium",
+    "verdict": "Image generation that renders text in images well.",
+    "useThisIf": "you need posters, logos or text-in-image.",
+    "alternatives": [
+      "midjourney"
+    ],
+    "source": "seed",
+    "addedAt": "2026-09-21",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    }
+  },
+  {
+    "slug": "canva",
+    "name": "Canva",
+    "url": "https://www.canva.com",
+    "affiliateUrl": null,
+    "category": "design",
+    "useCases": [
+      "design",
+      "marketing"
+    ],
+    "pricing": "freemium",
+    "verdict": "Design for everyone with Magic Studio AI features.",
+    "useThisIf": "you need quick social graphics and decks.",
+    "alternatives": [
+      "figma"
+    ],
+    "source": "seed",
+    "addedAt": "2026-09-22",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    }
+  },
+  {
+    "slug": "figma",
+    "name": "Figma",
+    "url": "https://www.figma.com",
+    "affiliateUrl": null,
+    "category": "design",
+    "useCases": [
+      "design"
+    ],
+    "pricing": "freemium",
+    "verdict": "Collaborative design standard with built-in AI features.",
+    "useThisIf": "you design product UI with a team.",
+    "alternatives": [
+      "canva",
+      "v0"
+    ],
+    "source": "seed",
+    "addedAt": "2026-09-23",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    }
+  },
+  {
+    "slug": "runway",
+    "name": "Runway",
+    "url": "https://runwayml.com",
+    "affiliateUrl": null,
+    "category": "video",
+    "useCases": [
+      "video"
+    ],
+    "pricing": "freemium",
+    "verdict": "AI video generation and editing suite for creators.",
+    "useThisIf": "you want generative video plus editing tools.",
+    "alternatives": [
+      "pika",
+      "heygen"
+    ],
+    "source": "seed",
+    "addedAt": "2026-09-24",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    }
+  },
+  {
+    "slug": "pika",
+    "name": "Pika",
+    "url": "https://pika.art",
+    "affiliateUrl": null,
+    "category": "video",
+    "useCases": [
+      "video"
+    ],
+    "pricing": "freemium",
+    "verdict": "Fun, fast text/image-to-video with effects.",
+    "useThisIf": "you make short playful social clips.",
+    "alternatives": [
+      "runway"
+    ],
+    "source": "seed",
+    "addedAt": "2026-09-25",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    }
+  },
+  {
+    "slug": "heygen",
+    "name": "HeyGen",
+    "url": "https://www.heygen.com",
+    "affiliateUrl": null,
+    "category": "video",
+    "useCases": [
+      "video",
+      "marketing"
+    ],
+    "pricing": "freemium",
+    "verdict": "AI avatars and video translation for talking-head content.",
+    "useThisIf": "you need presenter videos without filming.",
+    "alternatives": [
+      "synthesia"
+    ],
+    "source": "seed",
+    "addedAt": "2026-09-26",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    }
+  },
+  {
+    "slug": "synthesia",
+    "name": "Synthesia",
+    "url": "https://www.synthesia.io",
+    "affiliateUrl": null,
+    "category": "video",
+    "useCases": [
+      "video",
+      "marketing"
+    ],
+    "pricing": "paid",
+    "verdict": "Enterprise AI avatar videos for training and comms.",
+    "useThisIf": "you produce corporate training videos.",
+    "alternatives": [
+      "heygen"
+    ],
+    "source": "seed",
+    "addedAt": "2026-09-27",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    }
+  },
+  {
+    "slug": "descript",
+    "name": "Descript",
+    "url": "https://www.descript.com",
+    "affiliateUrl": null,
+    "category": "video",
+    "useCases": [
+      "video",
+      "audio"
+    ],
+    "pricing": "freemium",
+    "verdict": "Edit video and podcasts by editing the transcript.",
+    "useThisIf": "you edit talking content and podcasts.",
+    "alternatives": [
+      "capcut"
+    ],
+    "source": "seed",
+    "addedAt": "2026-09-28",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    }
+  },
+  {
+    "slug": "capcut",
+    "name": "CapCut",
+    "url": "https://www.capcut.com",
+    "affiliateUrl": null,
+    "category": "video",
+    "useCases": [
+      "video",
+      "marketing"
+    ],
+    "pricing": "freemium",
+    "verdict": "Free-ish short-form editor with AI captions and effects.",
+    "useThisIf": "you make TikToks, Reels and Shorts.",
+    "alternatives": [
+      "descript"
+    ],
+    "source": "seed",
+    "addedAt": "2026-09-01",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    }
+  },
+  {
+    "slug": "elevenlabs",
+    "name": "ElevenLabs",
+    "url": "https://elevenlabs.io",
+    "affiliateUrl": null,
+    "category": "audio",
+    "useCases": [
+      "audio",
+      "video"
+    ],
+    "pricing": "freemium",
+    "verdict": "Realistic text-to-speech and voice cloning.",
+    "useThisIf": "you need natural voiceovers.",
+    "alternatives": [
+      "descript"
+    ],
+    "source": "seed",
+    "addedAt": "2026-09-02",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    }
+  },
+  {
+    "slug": "suno",
+    "name": "Suno",
+    "url": "https://suno.com",
+    "affiliateUrl": null,
+    "category": "audio",
+    "useCases": [
+      "audio"
+    ],
+    "pricing": "freemium",
+    "verdict": "Generate full songs with vocals from a prompt.",
+    "useThisIf": "you need music or jingles fast.",
+    "alternatives": [
+      "elevenlabs"
+    ],
+    "source": "seed",
+    "addedAt": "2026-09-03",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    }
+  },
+  {
+    "slug": "notion",
+    "name": "Notion",
+    "url": "https://www.notion.com",
+    "affiliateUrl": null,
+    "category": "productivity",
+    "useCases": [
+      "productivity"
+    ],
+    "pricing": "freemium",
+    "verdict": "All-in-one workspace with Notion AI for docs and Q&A.",
+    "useThisIf": "your team's docs and wikis live in one place.",
+    "alternatives": [],
+    "source": "seed",
+    "addedAt": "2026-09-04",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    }
+  },
+  {
+    "slug": "granola",
+    "name": "Granola",
+    "url": "https://www.granola.ai",
+    "affiliateUrl": null,
+    "category": "productivity",
+    "useCases": [
+      "productivity"
+    ],
+    "pricing": "freemium",
+    "verdict": "AI meeting notes that enhance your own notes, no bot joins.",
+    "useThisIf": "you want meeting notes without a recorder bot.",
+    "alternatives": [
+      "notion"
+    ],
+    "source": "seed",
+    "addedAt": "2026-09-05",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    }
+  },
+  {
+    "slug": "jasper",
+    "name": "Jasper",
+    "url": "https://www.jasper.ai",
+    "affiliateUrl": null,
+    "category": "marketing",
+    "useCases": [
+      "marketing"
+    ],
+    "pricing": "paid",
+    "verdict": "AI marketing copy platform with brand voice.",
+    "useThisIf": "a marketing team needs on-brand copy at scale.",
+    "alternatives": [
+      "copy-ai",
+      "chatgpt"
+    ],
+    "source": "seed",
+    "addedAt": "2026-09-06",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    }
+  },
+  {
+    "slug": "copy-ai",
+    "name": "Copy.ai",
+    "url": "https://www.copy.ai",
+    "affiliateUrl": null,
+    "category": "marketing",
+    "useCases": [
+      "marketing",
+      "agents"
+    ],
+    "pricing": "freemium",
+    "verdict": "GTM AI workflows for sales and marketing copy.",
+    "useThisIf": "you automate outbound and content workflows.",
+    "alternatives": [
+      "jasper"
+    ],
+    "source": "seed",
+    "addedAt": "2026-09-07",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    }
+  },
+  {
+    "slug": "gamma",
+    "name": "Gamma",
+    "url": "https://gamma.app",
+    "affiliateUrl": null,
+    "category": "productivity",
+    "useCases": [
+      "productivity",
+      "design"
+    ],
+    "pricing": "freemium",
+    "verdict": "Generate decks, docs and webpages from a prompt.",
+    "useThisIf": "you need a good-looking deck in minutes.",
+    "alternatives": [
+      "canva"
+    ],
+    "source": "seed",
+    "addedAt": "2026-09-08",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    }
+  }
+]

@@ -1,0 +1,18 @@
+---
+import type { Tool } from '../lib/data';
+const { tool: t, isNew = false } = Astro.props as { tool: Tool; isNew?: boolean };
+---
+<article class:list={['post', { featured: t.featured }]} data-slug={t.slug} data-added={t.addedAt} data-buzz={t.buzz.score ?? 0} data-search={`${t.name} ${t.verdict} ${t.useCases.join(' ')}`.toLowerCase()}>
+  <div class="vote" data-vote={t.slug}><button aria-label={`Upvote ${t.name}`}>▲</button><span class="n">0</span></div>
+  <div class="avatar" aria-hidden="true">{t.name[0]}</div>
+  <div style="min-width:0">
+    <h3><a href={`/tools/${t.slug}`}>{t.name}</a> {t.featured && <span class="badge">FEATURED</span>} {isNew && <span class="badge">NEW</span>}</h3>
+    <p>{t.verdict}</p>
+    <div class="meta">
+      {t.useCases.map((c) => <a class="chip c" href={`/c/${c}`}>c/{c}</a>)}
+      <span class="chip">{t.pricing}</span>
+      <span class="chip" title="X buzz score (pending)">X buzz: {t.buzz.score ?? 'pending'}</span>
+      <span>added {t.addedAt}</span>
+    </div>
+  </div>
+</article>

@@ -1,0 +1,9 @@
+---
+import Base from '../layouts/Base.astro'; import Shell from '../components/Shell.astro'; import Feed from '../components/Feed.astro';
+import { newThisWeek } from '../lib/data'; import { listLd } from '../lib/ld';
+const tools = newThisWeek();
+---
+<Base title="New this week" description="New AI tools and software launched this week, from Product Hunt, GitHub and X." jsonld={[listLd('New this week', tools)]}>
+<Shell active="new"><h1>New this week</h1><p class="muted">The weekly drop, also sent as the newsletter. <a href="/rss.xml">RSS</a></p>
+{tools.length ? <Feed tools={tools}/> : <p class="card">No new tools this week yet. The daily scan adds them here.</p>}</Shell>
+</Base>

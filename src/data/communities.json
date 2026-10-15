@@ -1,0 +1,42 @@
+[
+  {
+    "slug": "agents",
+    "name": "AI agents",
+    "description": "Autonomous agents and frameworks that do multi-step work for you."
+  },
+  {
+    "slug": "coding",
+    "name": "Coding",
+    "description": "AI coding assistants, IDEs and app builders for vibe coders."
+  },
+  {
+    "slug": "video",
+    "name": "Video",
+    "description": "AI video generation and editing."
+  },
+  {
+    "slug": "marketing",
+    "name": "Marketing",
+    "description": "Copy, content and growth tools."
+  },
+  {
+    "slug": "design",
+    "name": "Design",
+    "description": "Image generation and design tools."
+  },
+  {
+    "slug": "productivity",
+    "name": "Productivity",
+    "description": "Notes, search, meetings and everyday work."
+  },
+  {
+    "slug": "chat",
+    "name": "Chat assistants",
+    "description": "General-purpose AI assistants."
+  },
+  {
+    "slug": "audio",
+    "name": "Audio",
+    "description": "Voice, speech and music generation."
+  }
+]

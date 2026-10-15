@@ -1,0 +1,34 @@
+---
+import '@fontsource-variable/funnel-sans';
+import '@fontsource-variable/funnel-display';
+import '@fontsource-variable/geist-mono';
+import '../styles.css';
+import { SITE } from '../lib/data';
+interface Props { title?: string; description?: string; jsonld?: object[] }
+const { title, description = SITE.tagline, jsonld = [] } = Astro.props;
+const full = title ? `${title} · ${SITE.name}` : `${SITE.name} — ${SITE.tagline}`;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+---
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>{full}</title><meta name="description" content={description}/><link rel="canonical" href={canonical}/>
+<meta property="og:title" content={full}/><meta property="og:description" content={description}/><meta property="og:url" content={canonical}/><meta property="og:type" content="website"/><meta property="og:site_name" content={SITE.name}/>
+<meta name="twitter:card" content="summary_large_image"/><meta name="twitter:site" content="@amanbehumble"/>
+<link rel="alternate" type="application/rss+xml" title="toolhype — New this week" href="/rss.xml"/>
+<link rel="icon" href="/favicon.svg"/>
+<script is:inline>document.documentElement.dataset.theme=localStorage.getItem('th:theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light')</script>
+{jsonld.map((j) => <script type="application/ld+json" set:html={JSON.stringify(j)} />)}
+</head><body>
+<header class="top"><a class="logo" href="/">tool<b>hype</b></a>
+<input class="search" id="q" type="search" placeholder="Search AI tools…" aria-label="Search"/>
+<a class="btn" href="/new">New this week</a><a class="btn primary" href="/submit">Get featured</a>
+<button class="btn" id="theme" aria-label="Toggle theme">◐</button></header>
+<slot/>
+<footer>toolhype · <a href="/newsletter">Newsletter</a> · <a href="/rss.xml">RSS</a> · <a href="/llms.txt">llms.txt</a> · Featured listings are labelled and never affect ranking.</footer>
+<script>
+document.getElementById('theme')!.addEventListener('click',()=>{const d=document.documentElement;d.dataset.theme=d.dataset.theme==='dark'?'light':'dark';localStorage.setItem('th:theme',d.dataset.theme!)});
+const q=document.getElementById('q') as HTMLInputElement;
+q.addEventListener('input',()=>{const v=q.value.toLowerCase();document.querySelectorAll<HTMLElement>('.post').forEach(p=>{p.style.display=(p.dataset.search||'').includes(v)?'':'none'})});
+q.addEventListener('keydown',e=>{if(e.key==='Enter'&&!document.querySelector('.post'))location.href='/?q='+encodeURIComponent(q.value)});
+</script>
+</body></html>

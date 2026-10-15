@@ -1,0 +1,8 @@
+---
+import Base from '../layouts/Base.astro'; import Shell from '../components/Shell.astro'; import Feed from '../components/Feed.astro';
+import { getTools, hot, SITE } from '../lib/data'; import { listLd } from '../lib/ld';
+const tools = [...getTools()].sort((a, b) => hot(0, b.buzz.score, b.addedAt) - hot(0, a.buzz.score, a.addedAt));
+---
+<Base jsonld={[listLd('Top AI tools on toolhype', tools), { '@context': 'https://schema.org', '@type': 'WebSite', name: SITE.name, url: Astro.site?.href }]}>
+<Shell active="home"><h1>AI tools people are actually using</h1><p class="muted">Ranked by builder upvotes and buzz on X. Featured spots are clearly labelled and can't buy rank.</p><Feed tools={tools}/></Shell>
+</Base>

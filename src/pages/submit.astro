@@ -1,0 +1,11 @@
+---
+import Base from '../layouts/Base.astro'; import Shell from '../components/Shell.astro';
+const stripe = import.meta.env.PUBLIC_STRIPE_FEATURED_LINK;
+---
+<Base title="Submit a tool / Get featured" description="List your AI tool on toolhype for free, or get a featured spot in front of builders and marketers.">
+<Shell><div class="prose"><h1>Submit your tool</h1>
+<div class="card"><h2>Free listing</h2><p class="muted">We review every submission. Approved tools go into the feed and the weekly newsletter.</p>
+<form name="submit" method="post" data-netlify="false"><input class="field" name="name" placeholder="Tool name" required/><input class="field" name="url" type="url" placeholder="https://" required/><textarea class="field" name="pitch" rows="3" placeholder="What does it do, and who is it for?"></textarea>
+<button class="btn" type="button" onclick="alert('Submissions open soon. Please DM @amanbehumble on X for now.')">Submit for free</button></form></div>
+<div class="card" style="margin-top:1rem;border-color:var(--cyan)"><h2>Featured listing</h2><p class="muted">A clearly labelled slot in the sidebar, at the top of a community, and in the newsletter. Featured spots never change organic rank.</p>
+{stripe ? <a class="btn primary" href={stripe}>Get featured →</a> : <button class="btn primary" disabled>Featured spots open soon</button>}</div></div></Shell></Base>

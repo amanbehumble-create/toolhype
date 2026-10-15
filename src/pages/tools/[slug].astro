@@ -1,0 +1,18 @@
+---
+import Base from '../../layouts/Base.astro'; import Shell from '../../components/Shell.astro';
+import { getTools, getTool, outUrl, type Tool } from '../../lib/data'; import { appLd } from '../../lib/ld';
+export const getStaticPaths = () => getTools().map((t) => ({ params: { slug: t.slug }, props: { t } }));
+const { t } = Astro.props as { t: Tool };
+const alts = t.alternatives.map(getTool).filter(Boolean) as Tool[];
+---
+<Base title={`${t.name}: review, use cases & alternatives`} description={`${t.name} — ${t.verdict}`} jsonld={[appLd(t)]}>
+<Shell><article class="card prose">
+  <div style="display:flex;gap:1rem;align-items:center"><div class="vote" data-vote={t.slug}><button aria-label="Upvote">▲</button><span class="n">0</span></div>
+  <div class="avatar">{t.name[0]}</div><h1 style="margin:0">{t.name}</h1></div>
+  <p><b>Verdict:</b> {t.verdict}</p><p><b>Use this if</b> {t.useThisIf}</p>
+  <div class="meta">{t.useCases.map((c) => <a class="chip c" href={`/c/${c}`}>c/{c}</a>)}<span class="chip">{t.pricing}</span></div>
+  <p><a class="btn primary" href={outUrl(t)} rel={t.affiliateUrl ? 'sponsored noopener' : 'noopener'} target="_blank">Visit {t.name} →</a></p>
+  <h2>X buzz</h2><p class="muted">Score: <span class="chip">{t.buzz.score ?? 'pending'}</span> Our daily X scan will show mention volume, engagement and top posts here.</p>
+  {alts.length > 0 && <><h2>Alternatives</h2><ul>{alts.map((a) => <li><a href={`/tools/${a.slug}`}>{a.name}</a>: {a.verdict}</li>)}</ul></>}
+  <h2>Discussion</h2><p class="muted">Comments are coming with sign-in.</p>
+</article></Shell></Base>

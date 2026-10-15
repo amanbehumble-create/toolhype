@@ -1,0 +1,7 @@
+---
+// Beehiiv hosted subscribe page (no API key client-side).
+export const SUBSCRIBE_URL = 'https://adrians-newsletter-156c86.beehiiv.com/subscribe';
+const { label = 'Subscribe free' } = Astro.props;
+---
+<form action={SUBSCRIBE_URL} method="get" target="_blank" rel="noopener"><input class="field" type="email" name="email" placeholder="you@email.com" required/><button class="btn primary" style="width:100%;justify-content:center;margin-top:.4rem">{label}</button></form>
+<p class="muted" style="font-size:.8rem;margin:.3rem 0 0">Opens our Beehiiv signup page to confirm. <a href={SUBSCRIBE_URL} target="_blank" rel="noopener">Or subscribe here</a>.</p>

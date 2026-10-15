@@ -1,4 +1,5 @@
 ---
+import Subscribe from "../../components/Subscribe.astro";
 import Base from '../../layouts/Base.astro'; import Shell from '../../components/Shell.astro'; import { getIssues, issueLd } from '../../lib/prompts';
 export function getStaticPaths() { return getIssues().map((i) => ({ params: { slug: i.slug }, props: { i } })); }
 const { i } = Astro.props;

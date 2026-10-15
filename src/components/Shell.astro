@@ -1,4 +1,5 @@
 ---
+import Subscribe from './Subscribe.astro';
 import { getCommunities, getTools, trendingOnX, BUZZ_AT, hkt, LABEL } from '../lib/data';
 import Votes from './Votes.astro';
 const { active = '' } = Astro.props;
@@ -19,7 +20,7 @@ const stripe = import.meta.env.PUBLIC_STRIPE_FEATURED_LINK;
   <aside class="right">
     <slot name="about"/>
     <div class="card"><h3>The weekly drop</h3><p class="muted">New AI tools from Product Hunt, GitHub and X, plus copy-paste prompts, every week. Free.</p><p style="margin:.4rem 0"><a href="/prompts/issue-1" style="color:var(--accent-ink)">📋 Read Prompt Drop #1 →</a></p>
-      <form action="/newsletter" method="get"><input class="field" type="email" name="email" placeholder="you@email.com" required/><button class="btn primary" style="width:100%;justify-content:center">Subscribe</button></form></div>
+      <Subscribe label="Subscribe" /></div>
     <div class="card"><h3>Featured</h3>
       {featured.length ? featured.map((t) => <p><a href={`/tools/${t.slug}`}>{t.name}</a></p>) :
         <p class="muted">This slot is open. Featured spots are clearly labelled and never change ranking.</p>}

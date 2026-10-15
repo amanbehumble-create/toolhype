@@ -1,4 +1,5 @@
 ---
+import Subscribe from '../../components/Subscribe.astro';
 import Base from '../../layouts/Base.astro'; import Shell from '../../components/Shell.astro'; import { getIssues } from '../../lib/prompts';
 const issues = getIssues();
 ---
@@ -6,4 +7,4 @@ const issues = getIssues();
 <Shell active="prompts"><div class="prose"><h1>Prompt Drop</h1>
 <p>Every week we find the AI prompts people are actually sharing and talking about on X and Reddit, tidy them up, and explain why they work. Copy, paste, swap the <code>[brackets]</code>, done.</p>
 {issues.map((i) => <a class="card post-link" href={`/prompts/${i.slug}`} style="display:block;margin:1rem 0;color:inherit"><div class="muted" style="font:500 .75rem var(--mono)">ISSUE #{i.n} · {i.date}</div><h2 style="margin:.3rem 0">{i.title}</h2><p class="muted" style="margin:0">{i.prompts.map((p) => p.title).slice(0, 4).join(' · ')} …</p></a>)}
-<p class="muted">Get it by email: <a href="/newsletter">join the newsletter</a>.</p></div></Shell></Base>
+<div class="card"><p class="muted">Get Prompt Drop by email every week:</p><Subscribe /></div></div></Shell></Base>

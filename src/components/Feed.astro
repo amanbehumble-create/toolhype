@@ -5,7 +5,7 @@ const { tools } = Astro.props as { tools: Tool[] };
 const weekAgo = Date.now() - 7 * 864e5;
 ---
 <div class="tabs" role="tablist">
-  {[['hot','Hot'],['buzz','🔥 Hype on X'],['new','New'],['top','Top'],['rising','Rising']].map(([s, l], i) => <button class:list={['tab', { on: i === 0 }]} data-sort={s}>{l}</button>)}
+  {[['hot','Hot'],['buzz','🔥 Hype on X'],['new','New'],['top','Top'],['rising','Rising']].map(([s, l], i) => <button class:list={['tab', { on: i === 0 }]} role="tab" aria-selected={i === 0 ? 'true' : 'false'} data-sort={s}>{l}</button>)}
 </div>
 <div class="feed" id="feed">{tools.map((t) => <ToolCard tool={t} isNew={new Date(t.addedAt).getTime() > weekAgo} />)}</div>
 <script>
@@ -24,7 +24,7 @@ const score: Record<string, (el: HTMLElement) => number> = {
 function sort(s: string) {
   const items = [...feed.children] as HTMLElement[];
   items.sort((a, b) => score[s](b) - score[s](a)).forEach((el) => feed.appendChild(el));
-  document.querySelectorAll('.tab').forEach((t) => t.classList.toggle('on', (t as HTMLElement).dataset.sort === s));
+  document.querySelectorAll('.tab').forEach((t) => { const on = (t as HTMLElement).dataset.sort === s; t.classList.toggle('on', on); t.setAttribute('aria-selected', String(on)); });
 }
 document.querySelectorAll<HTMLElement>('.tab').forEach((t) => t.addEventListener('click', () => sort(t.dataset.sort!)));
 const st = new URLSearchParams(location.search).get('sort'); if (st && score[st]) sort(st);

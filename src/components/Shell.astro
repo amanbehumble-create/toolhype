@@ -19,7 +19,7 @@ const stripe = import.meta.env.PUBLIC_STRIPE_FEATURED_LINK;
   <main><slot/></main>
   <aside class="right">
     <slot name="about"/>
-    <div class="card"><h3>The weekly drop</h3><p class="muted">New AI tools from Product Hunt, GitHub and X, plus copy-paste prompts, every week. Free.</p><p style="margin:.4rem 0"><a href="/prompts/issue-1" style="color:var(--accent-ink)">📋 Read Prompt Drop #1 →</a></p>
+    <div class="card"><h3>The weekly drop</h3><p style="margin:.4rem 0"><a href="/prompts/issue-1" style="color:var(--accent-ink)">📋 Read Prompt Drop #1 →</a></p>
       <Subscribe label="Subscribe" /></div>
     <div class="card"><h3>Featured</h3>
       {featured.length ? featured.map((t) => <p><a href={`/tools/${t.slug}`}>{t.name}</a></p>) :

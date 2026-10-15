@@ -28,6 +28,11 @@ export const onRequestGet: PagesFunction<Env> = async (ctx) => {
       try {
         const day = new Date().toISOString().slice(0, 10); // daily-rotating salt: can't track a person across days
         const ipHash = ip ? await hash(`${ctx.env.IP_SALT || ''}|${day}|${ip}`) : null;
+        // Per-IP limit: at most 10 logged clicks per IP-hash per 10 min; excess still redirects, just isn't logged.
+        if (ipHash) {
+          const c = await ctx.env.DB!.prepare("SELECT COUNT(*) AS n FROM clicks WHERE ip_hash = ? AND ts > strftime('%Y-%m-%dT%H:%M:%SZ','now','-10 minutes')").bind(ipHash).first<{ n: number }>();
+          if ((c?.n ?? 0) >= 10) return;
+        }
         await ctx.env.DB!.prepare('INSERT INTO clicks (tool_slug, dest_url, source_page, referrer_host, country, user_agent_class, ip_hash) VALUES (?,?,?,?,?,?,?)')
           .bind(slug, dest.toString(), from, refHost, (req as any).cf?.country || null, 'human', ipHash).run();
       } catch (e) { console.error('click log failed', e); }

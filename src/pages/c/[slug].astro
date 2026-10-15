@@ -4,7 +4,7 @@ import { getCommunities, toolsIn, type Community } from '../../lib/data'; import
 export const getStaticPaths = () => getCommunities().map((c) => ({ params: { slug: c.slug }, props: { c } }));
 const { c } = Astro.props as { c: Community }; const tools = toolsIn(c.slug);
 ---
-<Base title={`Best ${c.name} AI tools`} description={c.description} jsonld={[listLd(`Best ${c.name} tools`, tools)]}>
+<Base title={`Best ${c.name} AI tools`} description={`${c.description} Best ${c.name} AI tools ranked by upvotes and live X buzz.`} jsonld={[listLd(`Best ${c.name} tools`, tools)]}>
 <Shell active={c.slug}>
   <div slot="about" class="card"><h3>About c/{c.slug}</h3><p class="muted">{c.description}</p><p class="muted"><b>{tools.length}</b> tools</p><button class="btn" disabled title="Coming with sign-in">Join</button></div>
   <h1>c/{c.slug}</h1><p class="muted">{c.description}</p><Feed tools={tools}/>

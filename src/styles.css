@@ -46,3 +46,4 @@ img.avatar.logo[width="56"]{width:56px;height:56px;border-radius:12px}
 .xpost{display:block;border:1px solid var(--line);border-radius:var(--r-ctl);padding:.7rem .85rem;margin:.5rem 0}.xpost:hover{border-color:var(--cyan)}
 .xpost p{margin:.2rem 0;font-size:.875rem;color:var(--ink)}.xpost .m{font:500 .75rem var(--mono);color:var(--ink-3)}
 table.bz{width:100%;border-collapse:collapse;font-size:.85rem}table.bz td,table.bz th{border-bottom:1px solid var(--line);padding:.35rem .4rem;text-align:left}table.bz td.n{font-family:var(--mono);text-align:right}
+@media(max-width:640px){.hide-sm{display:none}.top{flex-wrap:wrap}}

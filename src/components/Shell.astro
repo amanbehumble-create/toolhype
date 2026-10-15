@@ -10,6 +10,7 @@ const stripe = import.meta.env.PUBLIC_STRIPE_FEATURED_LINK;
     <a href="/" class:list={{ on: active === 'home' }}>🏠 Home</a>
     <a href="/new" class:list={{ on: active === 'new' }}>✨ New this week</a>
     <a href="/buzz" class:list={{ on: active === "buzz" }}>🔥 X Buzz Score</a>
+    <a href="/prompts" class:list={{ on: active === "prompts" }}>📋 Prompt Drop</a>
     <a href="/newsletter">✉️ Newsletter</a>
     <div class="label">Communities</div>
     {getCommunities().map((c) => <a href={`/c/${c.slug}`} class:list={{ on: active === c.slug }}>c/{c.slug}</a>)}
@@ -17,7 +18,7 @@ const stripe = import.meta.env.PUBLIC_STRIPE_FEATURED_LINK;
   <main><slot/></main>
   <aside class="right">
     <slot name="about"/>
-    <div class="card"><h3>The weekly drop</h3><p class="muted">New AI tools from Product Hunt, GitHub and X, every week. Free.</p>
+    <div class="card"><h3>The weekly drop</h3><p class="muted">New AI tools from Product Hunt, GitHub and X, plus copy-paste prompts, every week. Free.</p><p style="margin:.4rem 0"><a href="/prompts/issue-1" style="color:var(--accent-ink)">📋 Read Prompt Drop #1 →</a></p>
       <form action="/newsletter" method="get"><input class="field" type="email" name="email" placeholder="you@email.com" required/><button class="btn primary" style="width:100%;justify-content:center">Subscribe</button></form></div>
     <div class="card"><h3>Featured</h3>
       {featured.length ? featured.map((t) => <p><a href={`/tools/${t.slug}`}>{t.name}</a></p>) :

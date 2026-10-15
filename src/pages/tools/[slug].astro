@@ -10,7 +10,7 @@ const line = pts.map((p, i) => `${i ? 'L' : 'M'}${p[0].toFixed(1)},${p[1].toFixe
 const fmt = (n: number) => n >= 1e6 ? (n / 1e6).toFixed(1) + 'M' : n >= 1e4 ? Math.round(n / 1e3) + 'k' : n.toLocaleString('en-US');
 const alts = t.alternatives.map(getTool).filter(Boolean) as Tool[];
 ---
-<Base title={`${t.name}: review, use cases & alternatives`} description={`${t.name} — ${t.verdict}`} jsonld={[appLd(t)]}>
+<Base title={`${t.name}: review, use cases & alternatives`} description={`${t.name}: ${t.verdict}${t.verdict.length < 60 ? " Use cases, pricing, alternatives and live X buzz." : ""}`} jsonld={[appLd(t)]}>
 <Shell><article class="card prose">
   <div style="display:flex;gap:1rem;align-items:center"><div class="vote" data-vote={t.slug}><button aria-label="Upvote">▲</button><span class="n">0</span></div>
   {t.logo ? <img class="avatar logo" src={t.logo} alt={`${t.name} logo`} width="56" height="56" /> : <div class="avatar">{t.name[0]}</div>}<h1 style="margin:0">{t.name}</h1></div>

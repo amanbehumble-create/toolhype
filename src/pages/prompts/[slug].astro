@@ -1,0 +1,28 @@
+---
+import Base from '../../layouts/Base.astro'; import Shell from '../../components/Shell.astro'; import { getIssues, issueLd } from '../../lib/prompts';
+export function getStaticPaths() { return getIssues().map((i) => ({ params: { slug: i.slug }, props: { i } })); }
+const { i } = Astro.props;
+const url = new URL(`/prompts/${i.slug}`, Astro.site).href;
+---
+<Base title={i.title} description={`${i.prompts.length} beginner-friendly AI prompts people shared this week, ready to copy: ${i.prompts.slice(0, 3).map((p) => p.title.toLowerCase()).join(', ')} and more.`.slice(0, 158)} ogType="article" jsonld={[issueLd(i, url)]}>
+<Shell active="prompts"><article class="prose">
+<div class="muted" style="font:500 .75rem var(--mono)"><a href="/prompts">PROMPT DROP</a> · ISSUE #{i.n} · {i.date}</div>
+<h1>{i.title}</h1><p>{i.intro}</p>
+{i.prompts.map((p, k) => <section class="card prompt" id={`p${k + 1}`} style="margin:1rem 0">
+  <div class="muted" style="font:500 .75rem var(--mono)">{String(k + 1).padStart(2, '0')} · {p.category.toUpperCase()} · WORKS IN {p.tool.toUpperCase()}</div>
+  <h2 style="margin:.35rem 0 .6rem;font-size:1.15rem">{p.title}</h2>
+  <pre class="ptext" style="white-space:pre-wrap;font:.875rem/1.5 var(--mono);background:var(--hover);border:1px solid var(--line);border-radius:var(--r-ctl);padding:.8rem;margin:0">{p.prompt}</pre>
+  <button class="btn primary copy" type="button" style="margin-top:.6rem" aria-label={`Copy prompt: ${p.title}`}>Copy prompt</button>
+  <p style="margin:.7rem 0 .3rem"><b>Why it works:</b> {p.why}</p>
+  {p.note && <p class="muted" style="margin:.2rem 0;font-size:.8rem">{p.note}</p>}
+  <p class="muted" style="margin:0;font-size:.8rem">Credit: <a href={p.source} rel="noopener nofollow" target="_blank">{p.author} on X</a></p>
+</section>)}
+<p class="muted">Prompts are lightly edited for clarity; credit goes to the original posters. Found a great prompt? Tag <a href="https://x.com/amanbehumble">@amanbehumble</a>. More issues: <a href="/prompts">Prompt Drop archive</a>.</p>
+</article></Shell>
+<script>
+document.querySelectorAll<HTMLButtonElement>('button.copy').forEach((b) => b.addEventListener('click', async () => {
+  const t = b.previousElementSibling!.textContent || '';
+  try { await navigator.clipboard.writeText(t); } catch { const a = document.createElement('textarea'); a.value = t; document.body.append(a); a.select(); document.execCommand('copy'); a.remove(); }
+  b.textContent = 'Copied ✓'; setTimeout(() => (b.textContent = 'Copy prompt'), 1500);
+}));
+</script></Base>

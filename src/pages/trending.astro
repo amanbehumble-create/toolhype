@@ -1,0 +1,18 @@
+---
+import Base from '../layouts/Base.astro'; import Shell from '../components/Shell.astro'; import Feed from '../components/Feed.astro';
+import { trendingOnX, BUZZ_AT, hkt, getCommunities } from '../lib/data'; import { listLd, faqLd, crumbsLd } from '../lib/ld';
+const tools = trendingOnX(25); const top = tools[0];
+const faq: [string, string][] = [
+  ['What are the trending AI tools today?', `As of ${hkt(BUZZ_AT)}, the most-discussed AI tools on X are ${tools.slice(0, 5).map((t) => `${t.name} (${t.buzz.score}/100)`).join(', ')}.`],
+  ['How is "trending" measured?', 'Each tool gets a Live X Buzz Score (0-100) from post volume in the last 24h and 7 days, 24h velocity versus its prior daily average, and engagement on top posts. Full method: https://toolhype.dev/buzz'],
+  ['How often is this list updated?', 'The X scan runs daily; the timestamp at the top shows the latest update.'],
+];
+---
+<Base title="Trending AI tools today (live X buzz ranking)" description={`The AI tools people are talking about on X right now${top ? `, led by ${top.name}` : ''}. Ranked by live X Buzz Score, updated ${hkt(BUZZ_AT)}.`} ogImage="/og/trending.png" jsonld={[listLd('Trending AI tools today', tools), faqLd(faq), crumbsLd([['Home', '/'], ['Trending AI tools today', '/trending']])]}>
+<Shell active="buzz">
+  <h1>Trending AI tools today</h1>
+  <p class="muted">Ranked by <a href="/buzz">Live X Buzz Score</a>, updated {hkt(BUZZ_AT)}. Browse by category: {getCommunities().map((c, i) => <>{i ? ' · ' : ''}<a href={`/best/${c.slug}`}>best {c.name.toLowerCase()} tools</a></>)}.</p>
+  <ol class="card prose">{tools.map((t) => <li><a href={`/tools/${t.slug}`}><b>{t.name}</b></a> ({t.buzz.score}/100, {t.buzz.mentions24h} X posts in 24h): {t.verdict}</li>)}</ol>
+  <Feed tools={tools}/>
+  <section class="card prose"><h2>FAQ</h2>{faq.map(([q, a]) => <><h3>{q}</h3><p>{a}</p></>)}</section>
+</Shell></Base>

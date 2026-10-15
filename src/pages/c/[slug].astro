@@ -7,5 +7,5 @@ const { c } = Astro.props as { c: Community }; const tools = toolsIn(c.slug);
 <Base title={`Best ${c.name} AI tools`} description={`${c.description} Best ${c.name} AI tools ranked by upvotes and live X buzz.`} jsonld={[listLd(`Best ${c.name} tools`, tools)]}>
 <Shell active={c.slug}>
   <div slot="about" class="card"><h3>About c/{c.slug}</h3><p class="muted">{c.description}</p><p class="muted"><b>{tools.length}</b> tools</p><button class="btn" disabled title="Coming with sign-in">Join</button></div>
-  <h1>c/{c.slug}</h1><p class="muted">{c.description}</p><Feed tools={tools}/>
+  <h1>c/{c.slug}</h1><p class="muted">{c.description} <a href={`/best/${c.slug}`}>See the ranked list of best {c.name.toLowerCase()} AI tools →</a></p><Feed tools={tools}/>
 </Shell></Base>

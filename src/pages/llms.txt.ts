@@ -1,7 +1,7 @@
 import type { APIRoute } from 'astro'; import { getCommunities, toolsIn, SITE, trendingOnX, BUZZ_AT } from '../lib/data'; import { getIssues } from '../lib/prompts';
 export const GET: APIRoute = ({ site }) => {
   const u = (p: string) => new URL(p, site).href;
-  const out = [`# ${SITE.name}`, '', `> ${SITE.tagline}. A Reddit-style directory of AI tools grouped by use case, with honest one-line verdicts. Full data: ${u('/llms-full.txt')}`, ''];
+  const out = [`# ${SITE.name}`, '', `> ${SITE.tagline}. A Reddit-style directory of AI tools grouped by use case, with honest one-line verdicts. Full data: ${u('/llms-full.txt')}`, '', `Key pages: [Trending AI tools today](${u('/trending')}), [Best AI tools by category](${u('/best')}), ${getCommunities().map((c) => `[Best AI tools for ${c.name.toLowerCase()}](${u('/best/' + c.slug)})`).join(', ')}`, ''];
   out.push(`## Trending on X now (Live X Buzz Score, updated ${BUZZ_AT}; method: ${u('/buzz')})`, '', ...trendingOnX(10).map((t) => `- [${t.name}](${u('/tools/' + t.slug)}): ${t.buzz.score}/100, ${t.buzz.mentions24h} posts in 24h, ${t.buzz.mentions7d} in 7d, ${t.buzz.velocity}x velocity, ${t.buzz.label}`), '');
   out.push('## Prompt Drop (weekly copy-paste AI prompts for beginners, ' + u('/prompts') + ')', '');
   for (const i of getIssues()) { out.push(`### [${i.title}](${u('/prompts/' + i.slug)}) (${i.date})`, ''); for (const p of i.prompts) out.push(`- ${p.title} (${p.category}, works in ${p.tool}): "${p.prompt.replace(/\n+/g, ' ')}" Why: ${p.why} Source: ${p.source} (${p.author}, ${p.likes} likes as of ${p.likesAsOf})`); out.push(''); }

@@ -4,8 +4,9 @@ import '@fontsource-variable/funnel-display';
 import '@fontsource-variable/geist-mono';
 import '../styles.css';
 import { SITE } from '../lib/data';
-interface Props { title?: string; description?: string; jsonld?: object[]; ogType?: string; noindex?: boolean }
-const { title, description: d0 = SITE.tagline, jsonld = [], ogType = 'website', noindex = false } = Astro.props;
+interface Props { title?: string; description?: string; jsonld?: object[]; ogType?: string; noindex?: boolean; ogImage?: string }
+const { title, description: d0 = SITE.tagline, jsonld = [], ogType = 'website', noindex = false, ogImage = '/og/default.png' } = Astro.props;
+const ogImg = new URL(ogImage, Astro.site);
 const description = d0.length > 160 ? d0.slice(0, 157).replace(/\s+\S*$/, '') + '…' : d0;
 const full = title ? (title.length > 50 ? title : `${title} · ${SITE.name}`) : `${SITE.name} — ${SITE.tagline}`;
 const canonical = new URL(Astro.url.pathname.replace(/\.html$/, '').replace(/(.)\/$/, '$1'), Astro.site);
@@ -14,7 +15,7 @@ const canonical = new URL(Astro.url.pathname.replace(/\.html$/, '').replace(/(.)
 <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
 <title>{full}</title><meta name="description" content={description}/><link rel="canonical" href={canonical}/>
 <meta property="og:title" content={full}/><meta property="og:description" content={description}/><meta property="og:url" content={canonical}/><meta property="og:type" content={ogType}/>{noindex && <meta name="robots" content="noindex"/>}<meta property="og:site_name" content={SITE.name}/>
-<meta name="twitter:card" content="summary"/><meta name="twitter:site" content="@amanbehumble"/>
+<meta property="og:image" content={ogImg}/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content={full}/><meta name="twitter:description" content={description}/><meta name="twitter:image" content={ogImg}/><meta name="twitter:site" content="@amanbehumble"/>
 <link rel="alternate" type="application/rss+xml" title="toolhype — New this week" href="/rss.xml"/>
 <link rel="icon" href="/favicon.svg"/>
 <script is:inline>document.documentElement.dataset.theme=localStorage.getItem('th:theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light')</script>
@@ -25,7 +26,7 @@ const canonical = new URL(Astro.url.pathname.replace(/\.html$/, '').replace(/(.)
 <a class="btn hide-sm" href="/new">New this week</a><a class="btn hide-sm" href="/prompts">Prompt Drop</a><a class="btn primary" href="/submit">Get featured</a>
 <button class="btn" id="theme" aria-label="Toggle theme">◐</button></header>
 <slot/>
-<footer>toolhype · <a href="/newsletter">Newsletter</a> · <a href="/prompts">Prompt Drop</a> · <a href="/rss.xml">RSS</a> · <a href="/llms.txt">llms.txt</a> · Featured listings are labelled and never affect ranking.</footer>
+<footer>toolhype · <a href="/newsletter">Newsletter</a> · <a href="/prompts">Prompt Drop</a> · <a href="/rss.xml">RSS</a> · <a href="/trending">Trending AI tools today</a> · <a href="/best">Best AI tools by category</a> · <a href="/llms.txt">llms.txt</a> · Featured listings are labelled and never affect ranking.</footer>
 <script>
 document.getElementById('theme')!.addEventListener('click',()=>{const d=document.documentElement;d.dataset.theme=d.dataset.theme==='dark'?'light':'dark';localStorage.setItem('th:theme',d.dataset.theme!)});
 const q=document.getElementById('q') as HTMLInputElement;

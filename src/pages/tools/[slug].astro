@@ -1,6 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro'; import Shell from '../../components/Shell.astro';
-import { getTools, getTool, outUrl, hkt, LABEL, type Tool } from '../../lib/data'; import { appLd } from '../../lib/ld';
+import { getTools, getTool, outUrl, hkt, LABEL, getCommunity, toolsIn, byBuzz, type Tool } from '../../lib/data'; import { appLd, faqLd, crumbsLd } from '../../lib/ld';
 export const getStaticPaths = () => getTools().map((t) => ({ params: { slug: t.slug }, props: { t } }));
 const { t } = Astro.props as { t: Tool };
 const b = t.buzz;
@@ -9,8 +9,17 @@ const pts = d.map((v, i) => [(i / Math.max(1, d.length - 1)) * 300, 76 - (v / mx
 const line = pts.map((p, i) => `${i ? 'L' : 'M'}${p[0].toFixed(1)},${p[1].toFixed(1)}`).join(' ');
 const fmt = (n: number) => n >= 1e6 ? (n / 1e6).toFixed(1) + 'M' : n >= 1e4 ? Math.round(n / 1e3) + 'k' : n.toLocaleString('en-US');
 const alts = t.alternatives.map(getTool).filter(Boolean) as Tool[];
+const cat = getCommunity(t.useCases[0]) ?? getCommunity(t.category);
+const related = [...new Set(t.useCases.flatMap(toolsIn))].filter((x) => x.slug !== t.slug && !t.alternatives.includes(x.slug)).sort(byBuzz).slice(0, 6);
+const altNames = [...alts, ...related].slice(0, 4).map((x) => x.name);
+const faq: [string, string][] = [
+  [`What is ${t.name}?`, t.verdict],
+  [`Who should use ${t.name}?`, `Use ${t.name} if ${t.useThisIf}`],
+  [`Is ${t.name} free?`, t.pricing === 'paid' ? `${t.name} is a paid tool.` : `${t.name} is listed as ${t.pricing}.`],
+  ...(altNames.length ? [[`What are alternatives to ${t.name}?`, `Alternatives include ${altNames.join(', ')}.`] as [string, string]] : []),
+];
 ---
-<Base title={`${t.name}: review, use cases & alternatives`} description={`${t.name}: ${t.verdict}${t.verdict.length < 60 ? " Use cases, pricing, alternatives and live X buzz." : ""}`} jsonld={[appLd(t)]}>
+<Base title={`${t.name}: review, use cases & alternatives`} description={`${t.name}: ${t.verdict}${t.verdict.length < 60 ? " Use cases, pricing, alternatives and live X buzz." : ""}`} ogImage={`/og/tool-${t.slug}.png`} jsonld={[appLd(t), faqLd(faq), crumbsLd([['Home', '/'], ...(cat ? [[`Best ${cat.name} tools`, `/best/${cat.slug}`] as [string, string]] : []), [t.name, `/tools/${t.slug}`]])]}>
 <Shell><article class="card prose">
   <div style="display:flex;gap:1rem;align-items:center"><div class="vote" data-vote={t.slug}><button aria-label="Upvote">▲</button><span class="n">0</span></div>
   {t.logo ? <img class="avatar logo" src={t.logo} alt={`${t.name} logo`} width="56" height="56" /> : <div class="avatar">{t.name[0]}</div>}<h1 style="margin:0">{t.name}</h1></div>
@@ -33,5 +42,8 @@ const alts = t.alternatives.map(getTool).filter(Boolean) as Tool[];
       <span class="m">♥ {fmt(p.likes)} · ⟲ {fmt(p.reposts)} · 💬 {fmt(p.replies)}{p.views ? ` · 👁 ${fmt(p.views)}` : ''}</span></a>)}</>}
   </> : <p class="muted">Score pending: this tool hasn't been through the daily X scan yet.</p>}
   {alts.length > 0 && <><h2>Alternatives</h2><ul>{alts.map((a) => <li><a href={`/tools/${a.slug}`}>{a.name}</a>: {a.verdict}</li>)}</ul></>}
+  {related.length > 0 && <><h2>Similar AI tools</h2><ul>{related.map((a) => <li><a href={`/tools/${a.slug}`}>{a.name}</a>: {a.verdict}</li>)}</ul></>}
+  {cat && <p>See all: <a href={`/best/${cat.slug}`}>best AI tools for {cat.name.toLowerCase()}</a> · <a href="/trending">trending AI tools today</a></p>}
+  <h2>FAQ</h2>{faq.map(([q, a]) => <><h3>{q}</h3><p>{a}</p></>)}
   <h2>Discussion</h2><p class="muted">Comments are coming with sign-in.</p>
 </article></Shell></Base>

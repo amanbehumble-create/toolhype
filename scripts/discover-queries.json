@@ -1,0 +1,12 @@
+{
+ "_note": "Discovery pass: run each query with search_posts_all (sort_order=relevancy, max_results=100, start_time=now-7d, post.fields=public_metrics,created_at,entities,lang, expansions=author_id, user.fields=username) and save to <rawDir>/discover/<key>.txt. Also save get_trends_by_woeid for each woeid as trends-<key>.txt and search_news(query, max_age_hours=168) as news.txt.",
+ "queries": {
+  "en-launch": "(\"I built\" OR \"we built\" OR \"just launched\" OR \"we're launching\" OR \"introducing\") (AI OR agent OR app) has:links -is:retweet -is:reply lang:en",
+  "en-built": "(\"vibe coded\" OR \"built with claude\" OR \"made with AI\" OR \"built this with\" OR \"a16z speedrun\" OR \"YC\") (launch OR built OR live) has:links -is:retweet -is:reply",
+  "ja-ai": "(AIツール OR \"AIで作った\" OR \"AI 作った\" OR \"Claudeで作った\" OR \"Claude Codeで\" OR 個人開発 OR 作ってみた) has:links -is:retweet -is:reply lang:ja",
+  "ja-game": "(ゲーム OR シミュレーション OR 診断) (AI OR Claude OR ChatGPT) has:links -is:retweet -is:reply lang:ja"
+ },
+ "trends": { "jp": 23424856, "us": 23424977 },
+ "news": "new AI tool app launch",
+ "minViews": 20000
+}

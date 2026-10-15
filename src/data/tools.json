@@ -1400,5 +1400,56 @@
       "updatedAt": null
     },
     "logo": "/logos/codex.png"
+  },
+  {
+    "slug": "mirror-mirror-ai",
+    "name": "Mirror Mirror AI",
+    "url": "https://www.mirrormirrorai.com",
+    "affiliateUrl": null,
+    "category": "design",
+    "useCases": [
+      "design",
+      "marketing"
+    ],
+    "pricing": "paid",
+    "verdict": "Fashion brands book real models who licensed their likeness, then generate on-model campaign, e-commerce and flat-lay images. Models get paid per licensed image.",
+    "useThisIf": "you need AI fashion imagery with real, consented faces instead of fake AI people that could look like someone real. Part of a16z speedrun.",
+    "alternatives": [
+      "midjourney"
+    ],
+    "source": "x",
+    "addedAt": "2026-10-16",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/mirror-mirror-ai.png"
+  },
+  {
+    "slug": "1in8b",
+    "name": "80億分の1 (1 in 8 Billion)",
+    "url": "https://1in8b.life/ja/",
+    "affiliateUrl": null,
+    "category": "fun",
+    "useCases": [
+      "fun"
+    ],
+    "pricing": "free",
+    "verdict": "A free browser life simulator. You are born as a random baby somewhere on Earth and live one whole life (30-90 min), driven by real UN, World Bank and WHO stats for 172 countries.",
+    "useThisIf": "you want to try the AI-built indie project going viral on Japanese X. Its creator built it with Claude. It is a game, not an AI tool. It includes heavy themes and is meant for ages 15+.",
+    "alternatives": [],
+    "source": "x",
+    "addedAt": "2026-10-16",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/1in8b.png"
   }
 ]

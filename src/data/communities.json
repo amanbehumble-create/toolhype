@@ -38,5 +38,10 @@
     "slug": "audio",
     "name": "Audio",
     "description": "Voice, speech and music generation."
+  },
+  {
+    "slug": "fun",
+    "name": "Fun & games",
+    "description": "Games and toys built with AI that are blowing up on X."
   }
 ]

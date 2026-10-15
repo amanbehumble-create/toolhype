@@ -50,5 +50,7 @@
  "copy-ai": "(\"copy.ai\" OR url:copy.ai) -is:retweet",
  "gamma": "(\"gamma app\" OR \"gamma ai\" OR url:gamma.app OR @MeetGamma) -is:retweet",
  "magic-patterns": "(\"magic patterns\" OR magicpatterns OR MagicOS OR url:magicpatterns.com) -is:retweet",
- "codex": "(\"openai codex\" OR \"codex cli\" OR \"codex app\" OR @OpenAIDevs codex OR url:chatgpt.com/codex) -is:retweet"
+ "codex": "(\"openai codex\" OR \"codex cli\" OR \"codex app\" OR @OpenAIDevs codex OR url:chatgpt.com/codex) -is:retweet",
+ "mirror-mirror-ai": "(\"mirror mirror ai\" OR mirrormirrorai OR @mirrormirror_ai OR url:mirrormirrorai.com) -is:retweet",
+ "1in8b": "(\"80億分の1\" OR \"1 in 8 billion\" OR 1in8b OR url:1in8b.life) -is:retweet"
 }

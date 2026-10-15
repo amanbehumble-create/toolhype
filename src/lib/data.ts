@@ -38,6 +38,7 @@ export const newThisWeek = (now = new Date()) =>
   getTools().filter((t) => now.getTime() - new Date(t.addedAt).getTime() <= 7 * 864e5).sort(byNew);
 export const byNew = (a: Tool, b: Tool) => b.addedAt.localeCompare(a.addedAt);
 export const outUrl = (t: Tool) => t.affiliateUrl || t.url;
+export const goUrl = (t: Tool, from: string) => `/go/${t.slug}?from=${encodeURIComponent(from)}`;
 
 // Hot = upvotes (log) + X Buzz Score + recency boost that fades over ~3 days. Same formula runs client-side in Feed.astro.
 export function hot(votes: number, buzz: number | null, addedAt: string, now = Date.now()) {

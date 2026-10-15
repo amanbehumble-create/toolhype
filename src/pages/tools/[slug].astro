@@ -1,6 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro'; import Shell from '../../components/Shell.astro';
-import { getTools, getTool, outUrl, hkt, LABEL, getCommunity, toolsIn, byBuzz, type Tool } from '../../lib/data'; import { appLd, faqLd, crumbsLd } from '../../lib/ld';
+import { getTools, getTool, outUrl, goUrl, hkt, LABEL, getCommunity, toolsIn, byBuzz, type Tool } from '../../lib/data'; import { appLd, faqLd, crumbsLd } from '../../lib/ld';
 export const getStaticPaths = () => getTools().map((t) => ({ params: { slug: t.slug }, props: { t } }));
 const { t } = Astro.props as { t: Tool };
 const b = t.buzz;
@@ -25,7 +25,7 @@ const faq: [string, string][] = [
   {t.logo ? <img class="avatar logo" src={t.logo} alt={`${t.name} logo`} width="56" height="56" /> : <div class="avatar">{t.name[0]}</div>}<h1 style="margin:0">{t.name}</h1></div>
   <p><b>Verdict:</b> {t.verdict}</p><p><b>Use this if</b> {t.useThisIf}</p>
   <div class="meta">{t.useCases.map((c) => <a class="chip c" href={`/c/${c}`}>c/{c}</a>)}<span class="chip">{t.pricing}</span></div>
-  <p><a class="btn primary" href={outUrl(t)} rel={t.affiliateUrl ? 'sponsored noopener' : 'noopener'} target="_blank">Visit {t.name} →</a></p>
+  <p><a class="btn primary" href={goUrl(t, '/tools/' + t.slug)} rel={t.affiliateUrl ? 'sponsored nofollow noopener' : 'nofollow noopener'} target="_blank">Visit {t.name} →</a></p>
   <h2 id="buzz">Live X Buzz Score</h2>
   {b.status === 'live' ? <>
     <p><span class:list={['buzz', b.label]} style="font-size:1rem">{b.label === 'hype' ? '🔥' : 'X'} {b.score}/100 <span class="lbl">{LABEL[b.label!]}</span></span> <span class="muted">updated {hkt(b.updatedAt!)}</span></p>

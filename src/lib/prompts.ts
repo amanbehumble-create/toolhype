@@ -1,6 +1,6 @@
 import pj from '../data/prompts.json';
-export interface Prompt { title: string; category: string; tool: string; prompt: string; why: string; source: string; author: string; note?: string }
-export interface Issue { n: number; slug: string; title: string; date: string; intro: string; prompts: Prompt[] }
+export interface Prompt { title: string; category: string; tool: string; prompt: string; why: string; source: string; author: string; note?: string; likes: number; likesAsOf: string; promptSource?: string }
+export interface Issue { n: number; slug: string; title: string; date: string; intro: string; rule?: string; prompts: Prompt[] }
 export const getIssues = (): Issue[] => [...(pj as any).issues].sort((a, b) => b.n - a.n);
 export const issueLd = (i: Issue, url: string) => ({
   '@context': 'https://schema.org', '@type': 'Article', headline: i.title, datePublished: i.date, dateModified: i.date, url,

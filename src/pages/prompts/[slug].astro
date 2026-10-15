@@ -5,20 +5,21 @@ export function getStaticPaths() { return getIssues().map((i) => ({ params: { sl
 const { i } = Astro.props;
 const url = new URL(`/prompts/${i.slug}`, Astro.site).href;
 ---
-<Base title={i.title} description={`${i.prompts.length} beginner-friendly AI prompts people shared this week, ready to copy: ${i.prompts.slice(0, 3).map((p) => p.title.toLowerCase()).join(', ')} and more.`.slice(0, 158)} ogType="article" jsonld={[issueLd(i, url)]}>
+<Base title={i.title} description={`${i.prompts.length} beginner-friendly AI prompts from X posts with 100+ likes, ready to copy: ${i.prompts.slice(0, 3).map((p) => p.title.toLowerCase()).join(', ')} and more.`.slice(0, 158)} ogType="article" jsonld={[issueLd(i, url)]}>
 <Shell active="prompts"><article class="prose">
 <div class="muted" style="font:500 .75rem var(--mono)"><a href="/prompts">PROMPT DROP</a> · ISSUE #{i.n} · {i.date}</div>
-<h1>{i.title}</h1><p>{i.intro}</p>
+<h1>{i.title}</h1><p>{i.intro}</p>{i.rule && <p class="muted" style="font-size:.85rem"><b>Selection rule:</b> {i.rule}</p>}
 {i.prompts.map((p, k) => <section class="card prompt" id={`p${k + 1}`} style="margin:1rem 0">
   <div class="muted" style="font:500 .75rem var(--mono)">{String(k + 1).padStart(2, '0')} · {p.category.toUpperCase()} · WORKS IN {p.tool.toUpperCase()}</div>
   <h2 style="margin:.35rem 0 .6rem;font-size:1.15rem">{p.title}</h2>
+  <a class="likes" href={p.source} rel="noopener nofollow" target="_blank" title={`Likes on the original X post as of ${p.likesAsOf}`} style="display:inline-block;margin:0 0 .6rem;font:600 .75rem var(--mono);padding:.15rem .5rem;border:1px solid var(--line);border-radius:999px;text-decoration:none">♥ {p.likes.toLocaleString('en-US')} likes on X</a>
   <pre class="ptext" style="white-space:pre-wrap;font:.875rem/1.5 var(--mono);background:var(--hover);border:1px solid var(--line);border-radius:var(--r-ctl);padding:.8rem;margin:0">{p.prompt}</pre>
   <button class="btn primary copy" type="button" style="margin-top:.6rem" aria-label={`Copy prompt: ${p.title}`}>Copy prompt</button>
   <p style="margin:.7rem 0 .3rem"><b>Why it works:</b> {p.why}</p>
   {p.note && <p class="muted" style="margin:.2rem 0;font-size:.8rem">{p.note}</p>}
-  <p class="muted" style="margin:0;font-size:.8rem">Credit: <a href={p.source} rel="noopener nofollow" target="_blank">{p.author} on X</a></p>
+  <p class="muted" style="margin:0;font-size:.8rem">Credit: <a href={p.source} rel="noopener nofollow" target="_blank">{p.author} on X</a>{p.promptSource && <> · <a href={p.promptSource} rel="noopener nofollow" target="_blank">prompt in thread</a></>} · {p.likes.toLocaleString('en-US')} likes as of {p.likesAsOf}</p>
 </section>)}
-<p class="muted">Prompts are lightly edited for clarity; credit goes to the original posters. Found a great prompt? Tag <a href="https://x.com/amanbehumble">@amanbehumble</a>. More issues: <a href="/prompts">Prompt Drop archive</a>.</p>
+<p class="muted">Prompts are copied word for word from the original posts (only the [brackets] are yours to fill); credit goes to the original posters. Found a great prompt? Tag <a href="https://x.com/amanbehumble">@amanbehumble</a>. More issues: <a href="/prompts">Prompt Drop archive</a>.</p>
 </article></Shell>
 <script>
 document.querySelectorAll<HTMLButtonElement>('button.copy').forEach((b) => b.addEventListener('click', async () => {

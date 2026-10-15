@@ -3,8 +3,8 @@ import Subscribe from '../../components/Subscribe.astro';
 import Base from '../../layouts/Base.astro'; import Shell from '../../components/Shell.astro'; import { getIssues } from '../../lib/prompts';
 const issues = getIssues();
 ---
-<Base title="Prompt Drop: copy-paste AI prompts for beginners" description="A free weekly drop of AI prompts people are sharing on X and Reddit, cleaned up so beginners can copy, paste and get results.">
+<Base title="Prompt Drop: copy-paste AI prompts for beginners" description="A free weekly drop of beginner AI prompts, each from an X post with 100+ likes. Copy, paste and get results.">
 <Shell active="prompts"><div class="prose"><h1>Prompt Drop</h1>
-<p>Every week we find the AI prompts people are actually sharing and talking about on X and Reddit, tidy them up, and explain why they work. Copy, paste, swap the <code>[brackets]</code>, done.</p>
+<p>Every week we pick AI prompts from X posts with at least 100 likes (we check every count), copy them word for word, and explain why they work. Copy, paste, swap the <code>[brackets]</code>, done.</p>
 {issues.map((i) => <a class="card post-link" href={`/prompts/${i.slug}`} style="display:block;margin:1rem 0;color:inherit"><div class="muted" style="font:500 .75rem var(--mono)">ISSUE #{i.n} · {i.date}</div><h2 style="margin:.3rem 0">{i.title}</h2><p class="muted" style="margin:0">{i.prompts.map((p) => p.title).slice(0, 4).join(' · ')} …</p></a>)}
 <div class="card"><p class="muted">Get Prompt Drop by email every week:</p><Subscribe /></div></div></Shell></Base>

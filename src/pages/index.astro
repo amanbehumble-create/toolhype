@@ -19,7 +19,7 @@ const top = topTools(5); const names = top.map((t) => t.name);
 </section>
 <Feed tools={tools}/></Shell>
 </Base>
-<style>
+<style is:global>
 .hero{text-align:center;padding:3.5rem 1rem 2.5rem}
 .hero h1{font:800 clamp(2.1rem,6.2vw,4.25rem)/1.08 var(--display);letter-spacing:-.035em;margin:0;color:var(--ink)}
 .blank{display:inline-block;min-width:3.2ch;color:var(--accent-ink);border-bottom:.09em dashed var(--cyan);text-align:left;white-space:nowrap}
@@ -63,7 +63,7 @@ else { let i = 0, j = 0, del = false; const tick = () => { const s = words[i % w
 const odo = document.getElementById('odo')!; const H = () => (odo.querySelector('.dg:not(.sep)') as HTMLElement)?.offsetHeight || 50;
 function render(n: number) {
   const s = n.toLocaleString('en-US'); const ch = [...s];
-  if (odo.children.length !== ch.length) { odo.innerHTML = ch.map((c) => /\d/.test(c) ? '<span class="dg"><span class="st">' + '0123456789'.split('').map((d) => '<span>' + d + '</span>').join('') + '</span></span>' : '<span class="dg sep">' + c + '</span>').join(''); void odo.offsetHeight; }
+  if (odo.children.length !== ch.length || !odo.querySelector(".st")) { odo.innerHTML = ch.map((c) => /\d/.test(c) ? '<span class="dg"><span class="st">' + '0123456789'.split('').map((d) => '<span>' + d + '</span>').join('') + '</span></span>' : '<span class="dg sep">' + c + '</span>').join(''); void odo.offsetHeight; }
   const h = H(); [...odo.children].forEach((c, k) => { const st = c.querySelector('.st') as HTMLElement | null; if (st) st.style.transform = 'translateY(-' + (+ch[k] * h) + 'px)'; });
   odo.setAttribute('aria-label', s + ' people checked the hype');
 }

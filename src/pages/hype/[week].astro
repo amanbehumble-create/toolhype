@@ -1,0 +1,6 @@
+---
+import HypeWeek from '../../components/HypeWeek.astro'; import { allWeeks, type HypeWeek as HW } from '../../lib/geo';
+export const getStaticPaths = () => allWeeks().map((h) => ({ params: { week: h.week }, props: { h } }));
+const { h } = Astro.props as { h: HW };
+---
+<HypeWeek h={h} />

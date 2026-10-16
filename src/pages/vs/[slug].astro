@@ -1,0 +1,38 @@
+---
+import Base from '../../layouts/Base.astro'; import Shell from '../../components/Shell.astro';
+import { BUZZ_AT, hkt, getCommunity, type Tool } from '../../lib/data'; import { getPairs, type Pair } from '../../lib/geo'; import { appLd, faqLd, crumbsLd } from '../../lib/ld';
+export const getStaticPaths = () => getPairs().map((p) => ({ params: { slug: p.slug }, props: { p } }));
+const { p } = Astro.props as { p: Pair }; const { a, b } = p;
+const s = (t: Tool) => t.buzz.score ?? null;
+const louder = s(a) != null && s(b) != null ? (s(a)! === s(b)! ? null : s(a)! > s(b)! ? a : b) : null;
+const shared = a.useCases.filter((c) => b.useCases.includes(c));
+const free = (t: Tool) => t.pricing !== 'paid' && !t.pricing.startsWith('paid');
+const summary = `${a.name}: ${a.verdict} ${b.name}: ${b.verdict} Pick ${a.name} if ${a.useThisIf.replace(/\.$/, '')}; pick ${b.name} if ${b.useThisIf.replace(/\.$/, '')}.`;
+const buzzLine = louder ? `${louder.name} has more buzz on X right now (${s(a)}/100 vs ${s(b)}/100 as of ${hkt(BUZZ_AT)}).` : `Both have similar X buzz (${s(a) ?? 'pending'} vs ${s(b) ?? 'pending'}).`;
+const faq: [string, string][] = [
+  [`What is the difference between ${a.name} and ${b.name}?`, summary],
+  [`Is ${a.name} or ${b.name} free?`, `${a.name} is ${a.pricing}; ${b.name} is ${b.pricing}.` + (free(a) && free(b) ? ' Both can be started without paying.' : '')],
+  [`Which is more popular, ${a.name} or ${b.name}?`, buzzLine],
+  [`Should I use ${a.name} or ${b.name}?`, `Use ${a.name} if ${a.useThisIf} Use ${b.name} if ${b.useThisIf}`],
+];
+const rows: [string, string, string][] = [
+  ['Category', getCommunity(a.category)?.name ?? a.category, getCommunity(b.category)?.name ?? b.category],
+  ['Pricing', a.pricing, b.pricing],
+  ['Use cases', a.useCases.join(', '), b.useCases.join(', ')],
+  ['X Buzz Score', a.buzz.score != null ? `${a.buzz.score}/100 (${a.buzz.label})` : 'pending', b.buzz.score != null ? `${b.buzz.score}/100 (${b.buzz.label})` : 'pending'],
+  ['X posts, last 7 days', a.buzz.mentions7d?.toLocaleString('en-US') ?? '—', b.buzz.mentions7d?.toLocaleString('en-US') ?? '—'],
+  ['Verdict', a.verdict, b.verdict],
+  ['Best for', a.useThisIf, b.useThisIf],
+  ['Website', a.url, b.url],
+];
+---
+<Base title={`${a.name} vs ${b.name}: pricing, use cases & buzz`} description={`${a.name} vs ${b.name} compared: ${a.pricing} vs ${b.pricing}, use cases and live X buzz. ${buzzLine}`} jsonld={[faqLd(faq), appLd(a), appLd(b), crumbsLd([['Home', '/'], ['Comparisons', '/vs'], [`${a.name} vs ${b.name}`, `/vs/${p.slug}`]])]}>
+<Shell><article class="card prose">
+  <h1>{a.name} vs {b.name}</h1>
+  <p><b>Short answer:</b> {summary} {buzzLine}</p>
+  <table><thead><tr><th></th><th><a href={`/tools/${a.slug}`}>{a.name}</a></th><th><a href={`/tools/${b.slug}`}>{b.name}</a></th></tr></thead>
+  <tbody>{rows.map(([k, x, y]) => <tr><th scope="row">{k}</th><td>{x}</td><td>{y}</td></tr>)}</tbody></table>
+  {shared.length > 0 && <p>Both are used for: {shared.map((c, i) => <>{i ? ', ' : ''}<a href={`/best/${c}`}>{c}</a></>)}.</p>}
+  <h2>FAQ</h2>{faq.map(([q, x]) => <><h3>{q}</h3><p>{x}</p></>)}
+  <p class="muted">Data from toolhype's listings and the daily X scan (updated {hkt(BUZZ_AT)}). <a href="/vs">More comparisons</a> · <a href="/hype">Most hyped this week</a></p>
+</article></Shell></Base>

@@ -1,0 +1,30 @@
+---
+import Base from '../layouts/Base.astro'; import Shell from './Shell.astro';
+import { hkt } from '../lib/data'; import { weekRange, allWeeks, type HypeWeek } from '../lib/geo'; import { faqLd, crumbsLd } from '../lib/ld';
+const { h, latest = false } = Astro.props as { h: HypeWeek; latest?: boolean };
+const site = import.meta.env.SITE || 'https://toolhype.dev';
+const range = weekRange(h.week); const r = h.rows; const W = h.week.toUpperCase().replace('-', ' ');
+const path = latest ? '/hype' : `/hype/${h.week}`;
+const tldr = r.length ? `The most hyped AI tool on X this week (${range}) is ${r[0].name} with a Buzz Score of ${r[0].score}/100, followed by ${r.slice(1, 3).map((x) => `${x.name} (${x.score})`).join(' and ')}.` : 'No data yet.';
+const faq: [string, string][] = [
+  ['What is the most hyped AI tool this week?', tldr],
+  ['How is the hype ranking calculated?', 'Each tool gets a Live X Buzz Score (0-100): post volume on X over 24h and 7 days (up to 50 points), 24h spike versus its prior daily average (up to 25), and engagement on top posts (up to 25). Method: ' + site + '/buzz'],
+  ['How often is it updated?', 'The current week refreshes with every daily X scan; past weeks are frozen archives.'],
+];
+const ld = [
+  { '@context': 'https://schema.org', '@type': 'ItemList', name: `Most hyped AI tools, ${W}`, numberOfItems: r.length, itemListElement: r.map((x, i) => ({ '@type': 'ListItem', position: i + 1, name: x.name, url: `${site}/tools/${x.slug}` })) },
+  { '@context': 'https://schema.org', '@type': 'Dataset', name: `toolhype X Buzz Score: most hyped AI tools ${W}`, description: `Top 10 AI tools by Live X Buzz Score for ISO week ${h.week} (${range}), with 7-day and 24h X post counts and velocity.`, url: site + path, dateModified: h.computedAt, temporalCoverage: h.week, creator: { '@type': 'Organization', name: 'toolhype', url: site }, isAccessibleForFree: true, license: 'https://creativecommons.org/licenses/by/4.0/', variableMeasured: ['Buzz Score (0-100)', 'X posts last 7 days', 'X posts last 24h', 'velocity'] },
+  faqLd(faq), crumbsLd([['Home', '/'], ['Most hyped AI tools', '/hype'], ...(latest ? [] : [[W, path] as [string, string]])]),
+];
+const others = allWeeks().filter((x) => x.week !== h.week);
+---
+<Base title={`Most hyped AI tools this week (${W}, ${range})`} description={tldr} ogImage="/og/trending.png" jsonld={ld}>
+<Shell active="buzz"><article class="card prose">
+  <h1>Most hyped AI tools {latest ? 'this week' : `in ${W}`}</h1>
+  <p class="muted">{W} · {range} · data updated {hkt(h.computedAt)}{latest && <> · permalink <a href={`/hype/${h.week}`}>/hype/{h.week}</a></>}</p>
+  <p><b>TL;DR:</b> {tldr}</p>
+  <ol>{r.map((x) => <li><h2 style="font-size:1.05rem;margin:.6rem 0 .2rem"><a href={`/tools/${x.slug}`}>{x.name}</a> — {x.score}/100 <span class="muted">({x.label})</span></h2><p style="margin:0"><b>Why:</b> {x.why} {x.verdict}</p></li>)}</ol>
+  <h2>FAQ</h2>{faq.map(([q, a]) => <><h3>{q}</h3><p>{a}</p></>)}
+  <p>See also: <a href="/trending">trending AI tools today</a> · <a href="/vs">AI tool comparisons</a> · <a href="/buzz">how the Buzz Score works</a></p>
+  {others.length > 0 && <><h2>Past weeks</h2><ul>{others.map((o) => <li><a href={`/hype/${o.week}`}>{o.week.toUpperCase()}</a> ({weekRange(o.week)}): #1 {o.rows[0]?.name}</li>)}</ul></>}
+</article></Shell></Base>

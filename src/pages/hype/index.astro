@@ -1,0 +1,4 @@
+---
+import HypeWeek from '../../components/HypeWeek.astro'; import { currentHype } from '../../lib/geo';
+---
+<HypeWeek h={currentHype()} latest />

@@ -1,7 +1,7 @@
 ---
 import SubStrip from '../../components/SubStrip.astro';
 import Base from '../../layouts/Base.astro'; import Shell from '../../components/Shell.astro';
-import { getTools, getTool, outUrl, goUrl, hkt, LABEL, getCommunity, toolsIn, byBuzz, type Tool } from '../../lib/data'; import { appLd, faqLd, crumbsLd } from '../../lib/ld';
+import { getTools, getTool, outUrl, goUrl, hkt, LABEL, getCommunity, toolsIn, byBuzz, type Tool } from '../../lib/data'; import { appLd, faqLd, crumbsLd } from '../../lib/ld'; import { pairsFor } from '../../lib/geo';
 export const getStaticPaths = () => getTools().map((t) => ({ params: { slug: t.slug }, props: { t } }));
 const { t } = Astro.props as { t: Tool };
 const b = t.buzz;
@@ -10,6 +10,7 @@ const pts = d.map((v, i) => [(i / Math.max(1, d.length - 1)) * 300, 76 - (v / mx
 const line = pts.map((p, i) => `${i ? 'L' : 'M'}${p[0].toFixed(1)},${p[1].toFixed(1)}`).join(' ');
 const fmt = (n: number) => n >= 1e6 ? (n / 1e6).toFixed(1) + 'M' : n >= 1e4 ? Math.round(n / 1e3) + 'k' : n.toLocaleString('en-US');
 const alts = t.alternatives.map(getTool).filter(Boolean) as Tool[];
+const vs = pairsFor(t.slug);
 const cat = getCommunity(t.useCases[0]) ?? getCommunity(t.category);
 const related = [...new Set(t.useCases.flatMap(toolsIn))].filter((x) => x.slug !== t.slug && !t.alternatives.includes(x.slug)).sort(byBuzz).slice(0, 6);
 const altNames = [...alts, ...related].slice(0, 4).map((x) => x.name);
@@ -24,6 +25,7 @@ const faq: [string, string][] = [
 <Shell><article class="card prose">
   <div style="display:flex;gap:1rem;align-items:center"><div class="vote" data-vote={t.slug}><button aria-label="Upvote">▲</button><span class="n">0</span></div>
   {t.logo ? <img class="avatar logo" src={t.logo} alt={`${t.name} logo`} width="56" height="56" /> : <div class="avatar">{t.name[0]}</div>}<h1 style="margin:0">{t.name}</h1></div>
+  <p class="answer"><b>In short:</b> {t.name} is a {t.pricing} {cat ? cat.name.toLowerCase() : t.category} AI tool. {t.verdict}{t.buzz.status === 'live' ? ` X Buzz Score: ${t.buzz.score}/100 (${t.buzz.mentions7d?.toLocaleString('en-US')} posts in 7 days).` : ''}</p>
   <p><b>Verdict:</b> {t.verdict}</p><p><b>Use this if</b> {t.useThisIf}</p>
   <div class="meta">{t.useCases.map((c) => <a class="chip c" href={`/c/${c}`}>c/{c}</a>)}<span class="chip">{t.pricing}</span></div>
   <p><a class="btn primary" data-track="visit:tool-page" href={goUrl(t, '/tools/' + t.slug)} rel={t.affiliateUrl ? 'sponsored nofollow noopener' : 'nofollow noopener'} target="_blank">Visit {t.name} →</a></p>
@@ -45,6 +47,7 @@ const faq: [string, string][] = [
   {alts.length > 0 && <><h2>Alternatives</h2><ul>{alts.map((a) => <li><a href={`/tools/${a.slug}`}>{a.name}</a>: {a.verdict}</li>)}</ul></>}
   <p class="share" style="display:flex;gap:.5rem;flex-wrap:wrap;margin:1.25rem 0"><a class="btn" target="_blank" rel="noopener" href={`https://x.com/intent/post?text=${encodeURIComponent(`${t.name} on toolhype`)}&url=${encodeURIComponent(`https://toolhype.dev/tools/${t.slug}`)}`}>Share on X</a><button class="btn" type="button" data-copy={`https://toolhype.dev/tools/${t.slug}`} onclick="navigator.clipboard.writeText(this.dataset.copy).then(()=>{this.textContent='Copied!'})">Copy link</button></p>
   {related.length > 0 && <><h2>Similar AI tools</h2><ul>{related.map((a) => <li><a href={`/tools/${a.slug}`}>{a.name}</a>: {a.verdict}</li>)}</ul></>}
+  {vs.length > 0 && <><h2>Comparisons</h2><ul>{vs.map((p) => <li><a href={`/vs/${p.slug}`}>{p.a.name} vs {p.b.name}</a></li>)}</ul></>}
   {cat && <p>See all: <a href={`/best/${cat.slug}`}>best AI tools for {cat.name.toLowerCase()}</a> · <a href="/trending">trending AI tools today</a></p>}
   <h2>FAQ</h2>{faq.map(([q, a]) => <><h3>{q}</h3><p>{a}</p></>)}
   <SubStrip place="tool-page" title="Never miss the next hot tool" sub="Weekly: what's hyped on X, and what's worth it."/>

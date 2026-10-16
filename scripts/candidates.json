@@ -1,11 +1,11 @@
 {
- "computedAt": "2026-10-15T17:16:37.152Z",
+ "computedAt": "2026-10-16T01:12:02.564Z",
  "candidates": [
   {
    "domain": "vampirebloodtypevol2.netlify.app",
    "known": false,
    "posts": 1,
-   "views": 1997,
+   "views": 2017,
    "eng": 44,
    "langs": [
     "ja"
@@ -15,9 +15,29 @@
    ],
    "top": {
     "url": "https://x.com/vampireNaoya/status/2110042180152864947",
-    "views": 1997,
+    "views": 2017,
     "likes": 16,
     "text": "チャッピー君に頼んで名前を入力するだけで自分の血の味やイメージをシミュレーションしてくれるサイトを作ったで(診断はAIは使用せず文字の組み合わせで決めとる)\n⚠️使用は自己責任でな！\nhttps://t.co/SZe4KS9Qf8 https://t.co/3If5QJQlCY"
+   },
+   "hot": false
+  },
+  {
+   "domain": "realpython.com",
+   "known": false,
+   "posts": 1,
+   "views": 1584,
+   "eng": 8,
+   "langs": [
+    "en"
+   ],
+   "queries": [
+    "en-built"
+   ],
+   "top": {
+    "url": "https://x.com/realpython/status/2110778197230886944",
+    "views": 1584,
+    "likes": 5,
+    "text": "Start with an empty directory. Two days later, you have a working Python CLI app, a terminal dashboard, tests, and a GitHub repo, all built with Claude Code.\n\nR"
    },
    "hot": false
   },
@@ -25,7 +45,7 @@
    "domain": "chat.z.ai",
    "known": false,
    "posts": 1,
-   "views": 1211,
+   "views": 1212,
    "eng": 14,
    "langs": [
     "en"
@@ -35,7 +55,7 @@
    ],
    "top": {
     "url": "https://x.com/ChrisPirillo/status/2109843806187303400",
-    "views": 1211,
+    "views": 1212,
     "likes": 6,
     "text": "Vibe Coding &amp; AI News to Use: October 12, 2026…\n\n@AnthropicAI finds small AI models may soon self-replicate on everyday devices\nhttps://t.co/KS3Uvbx5sH\n\nhtt"
    },
@@ -45,7 +65,7 @@
    "domain": "z.ai",
    "known": false,
    "posts": 1,
-   "views": 1211,
+   "views": 1212,
    "eng": 14,
    "langs": [
     "en"
@@ -55,9 +75,29 @@
    ],
    "top": {
     "url": "https://x.com/ChrisPirillo/status/2109843806187303400",
-    "views": 1211,
+    "views": 1212,
     "likes": 6,
     "text": "Vibe Coding &amp; AI News to Use: October 12, 2026…\n\n@AnthropicAI finds small AI models may soon self-replicate on everyday devices\nhttps://t.co/KS3Uvbx5sH\n\nhtt"
+   },
+   "hot": false
+  },
+  {
+   "domain": "whipback.lol",
+   "known": false,
+   "posts": 1,
+   "views": 779,
+   "eng": 69,
+   "langs": [
+    "en"
+   ],
+   "queries": [
+    "en-launch"
+   ],
+   "top": {
+    "url": "https://x.com/marouanegazouzi/status/2110385590416130332",
+    "views": 779,
+    "likes": 15,
+    "text": "Introducing Whipback for Mac\n\nYour coding agent whips you when you ignore it. you whip it back.\n\nI built it because I kept leaving Claude Code waiting for 6 min"
    },
    "hot": false
   },
@@ -65,8 +105,8 @@
    "domain": "atharvdubey22ug-glitch.github.io",
    "known": false,
    "posts": 1,
-   "views": 613,
-   "eng": 13,
+   "views": 696,
+   "eng": 16,
    "langs": [
     "en"
    ],
@@ -75,8 +115,8 @@
    ],
    "top": {
     "url": "https://x.com/AtharvDubey206/status/2110388373655634399",
-    "views": 613,
-    "likes": 11,
+    "views": 696,
+    "likes": 12,
     "text": "I made San Andreas into a living 3D map you can fly through in your browser.\n\nCars, boats, planes and peds going about their day, day/night, weather and the gam"
    },
    "hot": false
@@ -85,7 +125,7 @@
    "domain": "bencho.dev",
    "known": false,
    "posts": 1,
-   "views": 545,
+   "views": 547,
    "eng": 16,
    "langs": [
     "en"
@@ -95,18 +135,18 @@
    ],
    "top": {
     "url": "https://x.com/cabralorenzo/status/2108868492095262948",
-    "views": 545,
+    "views": 547,
     "likes": 10,
     "text": "still think bencho is one of the coolest interactive design tools built with claude. https://t.co/csJz2YLBAa"
    },
    "hot": false
   },
   {
-   "domain": "realpython.com",
+   "domain": "itlooksdone.com",
    "known": false,
    "posts": 1,
-   "views": 470,
-   "eng": 3,
+   "views": 415,
+   "eng": 14,
    "langs": [
     "en"
    ],
@@ -114,10 +154,10 @@
     "en-built"
    ],
    "top": {
-    "url": "https://x.com/realpython/status/2110778197230886944",
-    "views": 470,
-    "likes": 3,
-    "text": "Start with an empty directory. Two days later, you have a working Python CLI app, a terminal dashboard, tests, and a GitHub repo, all built with Claude Code.\n\nR"
+    "url": "https://x.com/williamsba/status/2110760882577817705",
+    "views": 415,
+    "likes": 10,
+    "text": "Two identical websites. One vibe-coded in four minutes. One built on WordPress. Let’s launch them both and see what happens...\n\nhttps://t.co/0XxFKnocNh"
    },
    "hot": false
   },
@@ -125,7 +165,7 @@
    "domain": "game-genre-check.pages.dev",
    "known": false,
    "posts": 1,
-   "views": 359,
+   "views": 360,
    "eng": 8,
    "langs": [
     "ja"
@@ -135,7 +175,7 @@
    ],
    "top": {
     "url": "https://x.com/papichantwitch/status/2108482440536916329",
-    "views": 359,
+    "views": 360,
     "likes": 6,
     "text": "私は「推理×成長×探検×死闘タイプ」でした！\n\n・推理・謎解きADV\n・アクションRPG\n・アクションアドベンチャー\n\nあなたと相性のいいゲームジャンルは？\n#ゲームジャンル相性診断\nhttps://t.co/fe3nMqtWQo\n\nAIにこの結果のおすすめゲームききたい"
    },
@@ -145,8 +185,8 @@
    "domain": "manacomicmonster.com",
    "known": false,
    "posts": 2,
-   "views": 248,
-   "eng": 11,
+   "views": 278,
+   "eng": 14,
    "langs": [
     "ja"
    ],
@@ -155,29 +195,9 @@
    ],
    "top": {
     "url": "https://x.com/nanami0177/status/2110005900165664916",
-    "views": 149,
+    "views": 155,
     "likes": 7,
     "text": "Claude Codeで、プログラミング初心者の私がiOSアプリを作ってApp Storeで公開するまでを記事にしました。\n苦労したことも審査のことも正直に書いています。\n\nhttps://t.co/ZdHjVAqrsY\n#ClaudeCode #個人開発 #推し旅貯金"
-   },
-   "hot": false
-  },
-  {
-   "domain": "zenn.dev",
-   "known": false,
-   "posts": 3,
-   "views": 154,
-   "eng": 10,
-   "langs": [
-    "ja"
-   ],
-   "queries": [
-    "ja-ai"
-   ],
-   "top": {
-    "url": "https://x.com/haginota/status/2109941964431122810",
-    "views": 129,
-    "likes": 6,
-    "text": "スポーツの日だったので、Palantir作ってみた 🥋\n\nスポーツとは。\n個人開発の記録です👇\nhttps://t.co/77Yzjfl3Xx https://t.co/DeqfWIej1L"
    },
    "hot": false
   },
@@ -185,7 +205,7 @@
    "domain": "startuply.vc",
    "known": false,
    "posts": 1,
-   "views": 150,
+   "views": 158,
    "eng": 1,
    "langs": [
     "en"
@@ -195,9 +215,29 @@
    ],
    "top": {
     "url": "https://x.com/startuplyvc/status/2110540456534687920",
-    "views": 150,
+    "views": 158,
     "likes": 1,
     "text": "The prospect pushes on price. Your manager isn't on the line.\n\nIn under 500ms, Othello puts the next rebuttal on the rep's screen. Quiet. Live.\n\nMicrosoft, Capi"
+   },
+   "hot": false
+  },
+  {
+   "domain": "zenn.dev",
+   "known": false,
+   "posts": 3,
+   "views": 155,
+   "eng": 10,
+   "langs": [
+    "ja"
+   ],
+   "queries": [
+    "ja-ai"
+   ],
+   "top": {
+    "url": "https://x.com/haginota/status/2109941964431122810",
+    "views": 130,
+    "likes": 6,
+    "text": "スポーツの日だったので、Palantir作ってみた 🥋\n\nスポーツとは。\n個人開発の記録です👇\nhttps://t.co/77Yzjfl3Xx https://t.co/DeqfWIej1L"
    },
    "hot": false
   },
@@ -225,7 +265,7 @@
    "domain": "hotdogplease.anemoncreative.com",
    "known": false,
    "posts": 1,
-   "views": 140,
+   "views": 142,
    "eng": 1,
    "langs": [
     "en"
@@ -235,7 +275,7 @@
    ],
    "top": {
     "url": "https://x.com/efeislekel/status/2109316378394046970",
-    "views": 140,
+    "views": 142,
     "likes": 1,
     "text": "🌭 My new game, Hot Dog Please!, is LIVE! 🚀\n\nBuilt with Claude Opus 5.5! 🤖\n\nRun your own hot dog business, serve customers, upgrade your truck, and grow your "
    },
@@ -262,11 +302,31 @@
    "hot": false
   },
   {
-   "domain": "itlooksdone.com",
+   "domain": "kagami-preview.vercel.app",
    "known": false,
    "posts": 1,
-   "views": 119,
-   "eng": 5,
+   "views": 112,
+   "eng": 4,
+   "langs": [
+    "ja"
+   ],
+   "queries": [
+    "ja-game"
+   ],
+   "top": {
+    "url": "https://x.com/JamiGaulddxnl/status/2110295694322073769",
+    "views": 112,
+    "likes": 2,
+    "text": "🪞【先行公開】AI占いゲーム『KAGAMI』\n\nあなたは、本当の自分を知っていますか？\n\n鏡の向こうで、まだ知らない自分に出会う。\n\n✨ 無料で体験\nhttps://t.co/mpFeqCQnKQ\n\n#KAGAMI #インディーゲーム #性格診断 #占い https://t.co/o74KYwFZ3a"
+   },
+   "hot": false
+  },
+  {
+   "domain": "devlhub.com",
+   "known": false,
+   "posts": 1,
+   "views": 108,
+   "eng": 4,
    "langs": [
     "en"
    ],
@@ -274,10 +334,10 @@
     "en-built"
    ],
    "top": {
-    "url": "https://x.com/williamsba/status/2110760882577817705",
-    "views": 119,
-    "likes": 3,
-    "text": "Two identical websites. One vibe-coded in four minutes. One built on WordPress. Let’s launch them both and see what happens...\n\nhttps://t.co/0XxFKnocNh"
+    "url": "https://x.com/devlhub/status/2110339359790551381",
+    "views": 108,
+    "likes": 4,
+    "text": "Learning Roblox scripting on DevlHub\n\nI built a site for Roblox developers: https://t.co/e7wKgEBxdb\n\nDevlHub is a place to find and share utilities - modules, m"
    },
    "hot": false
   },
@@ -302,26 +362,6 @@
    "hot": false
   },
   {
-   "domain": "kagami-preview.vercel.app",
-   "known": false,
-   "posts": 1,
-   "views": 104,
-   "eng": 2,
-   "langs": [
-    "ja"
-   ],
-   "queries": [
-    "ja-game"
-   ],
-   "top": {
-    "url": "https://x.com/JamiGaulddxnl/status/2110295694322073769",
-    "views": 104,
-    "likes": 2,
-    "text": "🪞【先行公開】AI占いゲーム『KAGAMI』\n\nあなたは、本当の自分を知っていますか？\n\n鏡の向こうで、まだ知らない自分に出会う。\n\n✨ 無料で体験\nhttps://t.co/mpFeqCQnKQ\n\n#KAGAMI #インディーゲーム #性格診断 #占い https://t.co/o74KYwFZ3a"
-   },
-   "hot": false
-  },
-  {
    "domain": "playnearia.online",
    "known": false,
    "posts": 1,
@@ -342,50 +382,10 @@
    "hot": false
   },
   {
-   "domain": "devlhub.com",
-   "known": false,
-   "posts": 1,
-   "views": 94,
-   "eng": 4,
-   "langs": [
-    "en"
-   ],
-   "queries": [
-    "en-built"
-   ],
-   "top": {
-    "url": "https://x.com/devlhub/status/2110339359790551381",
-    "views": 94,
-    "likes": 4,
-    "text": "Learning Roblox scripting on DevlHub\n\nI built a site for Roblox developers: https://t.co/e7wKgEBxdb\n\nDevlHub is a place to find and share utilities - modules, m"
-   },
-   "hot": false
-  },
-  {
-   "domain": "g-circle.jp",
-   "known": false,
-   "posts": 1,
-   "views": 86,
-   "eng": 0,
-   "langs": [
-    "ja"
-   ],
-   "queries": [
-    "ja-game"
-   ],
-   "top": {
-    "url": "https://x.com/TakashiNarahara/status/2108336386608669075",
-    "views": 86,
-    "likes": 0,
-    "text": "キャリア診断ゲームをAIで作ってみた。\nhttps://t.co/IzXgdNm7Jq\nゲームと言っても昔はやったゲームブック風。 https://t.co/kHSRcXjm9w"
-   },
-   "hot": false
-  },
-  {
    "domain": "orbital.freesoul.games",
    "known": false,
    "posts": 1,
-   "views": 68,
+   "views": 71,
    "eng": 0,
    "langs": [
     "en"
@@ -395,7 +395,7 @@
    ],
    "top": {
     "url": "https://x.com/Alex_Vainshtein/status/2109696887108288801",
-    "views": 68,
+    "views": 71,
     "likes": 0,
     "text": "ORBITAL SCRAPPER is live!\n\nPlay free: https://t.co/c02GRJubmr\n\nCut valuable parts from derelict starships orbiting a ringed gas giant. Install them to expand yo"
    },
@@ -405,7 +405,7 @@
    "domain": "ai-job-sindan.netlify.app",
    "known": false,
    "posts": 2,
-   "views": 58,
+   "views": 61,
    "eng": 0,
    "langs": [
     "ja"
@@ -415,9 +415,29 @@
    ],
    "top": {
     "url": "https://x.com/ai_work_sindan/status/2110150311318814893",
-    "views": 30,
+    "views": 31,
     "likes": 0,
     "text": "【AI時代 適合判定】\nTYPE #ENFP：AI発信者\n\n🛡️ 生存率：88%（高生存）\n🎯 最適職種：AIエバンジェリスト\n⚡ 推奨武器：ChatGPT-4o &amp; CapCut\n\n圧倒的なポジティブさで、AIのワクワクを広げる伝道師。\n\nあなたのAI適職を無料診断👇\nhttps://t.co/M3az"
+   },
+   "hot": false
+  },
+  {
+   "domain": "modal.com",
+   "known": false,
+   "posts": 1,
+   "views": 58,
+   "eng": 0,
+   "langs": [
+    "en"
+   ],
+   "queries": [
+    "en-built"
+   ],
+   "top": {
+    "url": "https://x.com/venturesintern/status/2110537239025668201",
+    "views": 58,
+    "likes": 0,
+    "text": "Funding radar · last 24h\n\nAI\n- Modal raised $750M Series D at $15.75B (lead Accel; Kleiner Perkins + existing). Serverless AI infra across 20+ clouds — crossed "
    },
    "hot": false
   },
@@ -442,11 +462,31 @@
    "hot": false
   },
   {
-   "domain": "modal.com",
+   "domain": "tapmap.mapierre.dev",
    "known": false,
    "posts": 1,
-   "views": 48,
-   "eng": 0,
+   "views": 46,
+   "eng": 3,
+   "langs": [
+    "ja"
+   ],
+   "queries": [
+    "ja-ai"
+   ],
+   "top": {
+    "url": "https://x.com/mapierre_dev/status/2110735238410428561",
+    "views": 46,
+    "likes": 3,
+    "text": "「どこだ？」を探さない。\nマップアプリが面倒な人「TAPMAP」\nhttps://t.co/0Lk6nGQAxi\n\n#個人開発 #バイブコーディング #作ってみた https://t.co/RCwVHBBthy"
+   },
+   "hot": false
+  },
+  {
+   "domain": "us-central1-easya-live.cloudfunctions.net",
+   "known": false,
+   "posts": 3,
+   "views": 45,
+   "eng": 2,
    "langs": [
     "en"
    ],
@@ -454,10 +494,10 @@
     "en-built"
    ],
    "top": {
-    "url": "https://x.com/venturesintern/status/2110537239025668201",
-    "views": 48,
-    "likes": 0,
-    "text": "Funding radar · last 24h\n\nAI\n- Modal raised $750M Series D at $15.75B (lead Accel; Kleiner Perkins + existing). Serverless AI infra across 20+ clouds — crossed "
+    "url": "https://x.com/eimzola/status/2109902461997584648",
+    "views": 41,
+    "likes": 2,
+    "text": "I just vibe coded a business with @EasyA_App!\n\nI described my idea, AI built the website, and now it’s live: https://t.co/tTpIc9fmJD\n\n#VibeCoding"
    },
    "hot": false
   },
@@ -518,26 +558,6 @@
     "views": 40,
     "likes": 0,
     "text": "生成AIでの見え方を確認する「LLMO診断」、日本語のセルフサービスで円建て・月額プランを提供 #生成AI #LLMO #AI検索 #ChatGPT #LLMO診断\nhttps://t.co/0vaUVBxuoP"
-   },
-   "hot": false
-  },
-  {
-   "domain": "tapmap.mapierre.dev",
-   "known": false,
-   "posts": 1,
-   "views": 38,
-   "eng": 2,
-   "langs": [
-    "ja"
-   ],
-   "queries": [
-    "ja-ai"
-   ],
-   "top": {
-    "url": "https://x.com/mapierre_dev/status/2110735238410428561",
-    "views": 38,
-    "likes": 2,
-    "text": "「どこだ？」を探さない。\nマップアプリが面倒な人「TAPMAP」\nhttps://t.co/0Lk6nGQAxi\n\n#個人開発 #バイブコーディング #作ってみた https://t.co/RCwVHBBthy"
    },
    "hot": false
   },
@@ -682,6 +702,26 @@
    "hot": false
   },
   {
+   "domain": "onyxhavenlabs.com",
+   "known": false,
+   "posts": 1,
+   "views": 12,
+   "eng": 0,
+   "langs": [
+    "en"
+   ],
+   "queries": [
+    "en-built"
+   ],
+   "top": {
+    "url": "https://x.com/OnyxHavenLabs/status/2110783204416426145",
+    "views": 12,
+    "likes": 0,
+    "text": "You vibe-coded it to 80%.\n\nHomestretch finishes the rest.\n\nSend a half-built web app repo. Agents scope the remaining work, quote a flat price, then finish, tes"
+   },
+   "hot": false
+  },
+  {
    "domain": "blog.google",
    "known": false,
    "posts": 1,
@@ -725,7 +765,7 @@
    "domain": "aifitguide.com",
    "known": false,
    "posts": 1,
-   "views": 7,
+   "views": 8,
    "eng": 0,
    "langs": [
     "ja"
@@ -735,7 +775,7 @@
    ],
    "top": {
     "url": "https://x.com/aifitguide/status/2110469525582049403",
-    "views": 7,
+    "views": 8,
     "likes": 0,
     "text": "ChatGPT、Gemini、Claude…\n結局、どのAIを使えばいい？\n\nそんな疑問を解決する\n無料のAI診断サイト『AI FIT』\n\n✅ 簡単な質問でAIとの相性を診断\n✅ 自分に合ったAIツールが見つかる\n✅ 初心者にもわかりやすく解説\n\nAI選びで迷っている方は、ぜひ試してみてください⬇️\n\nhttps://"
    },
@@ -760,100 +800,16 @@
     "text": "Othello $8M seed (a16z speedrun) for Hamlet: AI that coaches sales reps LIVE mid-call, not in the postmortem. Microsoft, Capital One, Lyft already on it.\n\nSales"
    },
    "hot": false
-  },
-  {
-   "domain": "yumeviq.com",
-   "known": false,
-   "posts": 1,
-   "views": 5,
-   "eng": 0,
-   "langs": [
-    "ja"
-   ],
-   "queries": [
-    "ja-game"
-   ],
-   "top": {
-    "url": "https://x.com/yumeviq_com/status/2109048852506657012",
-    "views": 5,
-    "likes": 0,
-    "text": "推し診断、やったことある？ 3 問答えて、2 択を 7 回。勝ち残った人と「推しタイプ」と、似てる 3 人まで出すわ。ゲーム感覚でどうぞ。\n\nねぇ、早く試してみて！\nhttps://t.co/7yB0gvGJXi\n#YUMEVIQ #AV女優 #AIイラスト #ミア #推し診断 #推し活 #制服 https://t.c"
-   },
-   "hot": false
-  },
-  {
-   "domain": "higgsfield.ai",
-   "known": false,
-   "posts": 1,
-   "views": 4,
-   "eng": 1,
-   "langs": [
-    "en"
-   ],
-   "queries": [
-    "en-built"
-   ],
-   "top": {
-    "url": "https://x.com/AryanSabha2qts/status/2110552309252120838",
-    "views": 4,
-    "likes": 1,
-    "text": "Streaming launch videos have zero right looking this clean.\n\nFully built with Claude + Higgsfield Katana.\nUse higgsfield plan grab the 50% discount deal for onl"
-   },
-   "hot": false
   }
  ],
  "flaggedTrends": [
   {
-   "region": "jp",
-   "name": "#ふたりの余韻診断"
-  },
-  {
-   "region": "jp",
-   "name": "陰キャ陽キャ診断"
-  },
-  {
-   "region": "jp",
-   "name": "メンヘラ診断"
-  },
-  {
-   "region": "jp",
-   "name": "チェンソーマン非公式性格診断"
+   "region": "us",
+   "name": "chappell"
   },
   {
    "region": "us",
-   "name": "Aikman"
-  },
-  {
-   "region": "us",
-   "name": "Aikman"
-  },
-  {
-   "region": "us",
-   "name": "#HoldPapergamesAccountable"
-  },
-  {
-   "region": "us",
-   "name": "#CNInvestigatePapergames"
-  },
-  {
-   "region": "us",
-   "name": "Happy Friday Eve"
-  },
-  {
-   "region": "us",
-   "name": "Nafisa Fai"
-  },
-  {
-   "region": "us",
-   "name": "ALCS Game 3"
-  },
-  {
-   "region": "us",
-   "name": "The Game Awards"
-  },
-  {
-   "region": "us",
-   "name": "Chamberlain"
+   "name": "#TheTraitorsUS"
   }
  ],
  "news": [
@@ -866,20 +822,12 @@
    "summary": "Voyager, a new desktop AI app from the team behind the popular Moda design tool, runs locally on your computer and connects to creative programs like Blender, DaVinci Resolve, After Effects, Ableton, "
   },
   {
-   "name": "Debate Heats Up Over AI Vibe Coding Tools Like Lovable",
-   "summary": "Lovable lets users turn plain-language prompts into full-stack web apps complete with frontend, databases, authentication, and hosting, and recently raised $400 million at a $13.3 billion valuation. I"
-  },
-  {
    "name": "Google Launches Gemini 4 Argon AI Model Globally",
    "summary": "Gemini 4 Argon brings major advances in writing, coding persistence, raw knowledge, and a 1M token output limit for handling long tasks. It's designed for complex workflows in software engineering, fi"
   },
   {
    "name": "Magic Patterns Launches MagicOS, AI Canvas for Designers",
    "summary": "MagicOS is a new AI-powered platform from Magic Patterns that keeps designers in control on a persistent infinite canvas, where PRDs, inspirations, variations, and decisions all stay visible side by s"
-  },
-  {
-   "name": "Google Launches Gemini 4 Argon with Creative Wins and Coding Critiques",
-   "summary": "Google rolled out Gemini 4 Argon, its newest frontier AI model, to subscribers and the API, showcasing strengths in scientific simulations, quantum computing, nuclear fusion, protein design, and inter"
   },
   {
    "name": "New AI Tools Boost Openness in Scientific Research",
@@ -894,8 +842,12 @@
    "summary": "OpenAI began rolling out GPT-6 and its Intelligent UI feature on October 7 for paid ChatGPT users, enabling the AI to create charts, tappable diagrams, adjustable forms, and custom tools right in chat"
   },
   {
-   "name": "Claude Opus 5.5 Tops User Rankings Over GPT-6.1 Sol",
-   "summary": "Anthropic launched Opus 5.5 on September 22, 2026, offering performance near its pricier Fable 5.1 at $4/$20 per million tokens—40% cheaper than the prior Opus. OpenAI's GPT-6.1 Sol, released late Sep"
+   "name": "Gemini 4 Argon Launches with Creative Wins and Coding Criticism",
+   "summary": "Google rolled out Gemini 4 Argon on October 13 to AI Pro and Ultra subscribers, plus developers via API, featuring a 1M-token context window and strengths in coding, science, and finance. Early highli"
+  },
+  {
+   "name": "OpenUI 1.0 Launches with Interactive AI Interfaces",
+   "summary": "OpenUI 1.0, an open-source framework from Thesys CEO Rabi Shanker Guha, lets AI agents create dynamic UIs like charts, maps, and buttons using a developer's own components. It works with any AI model,"
   },
   {
    "name": "Meta Launches Muse Wonder AI Models for Agentic Tasks",
@@ -922,20 +874,44 @@
    "summary": "Cursor's Origin has introduced an app marketplace featuring over 20 integrations for CI, deployments, code review, security, monitoring, and project management, including partners like Cloudflare, Ver"
   },
   {
-   "name": "OpenUI 1.0 Launches Generative Interfaces for Any AI Agent",
-   "summary": "The open-source project, started by Guha of thesysdev, lets models like GPT, Claude, or local ones via Ollama generate real UIs using an app's own components. It follows OpenAI's Intelligent UI in Cha"
-  },
-  {
-   "name": "OpenAI Launches Decisions API in Public Beta for Fast App Choices",
-   "summary": "On October 6, OpenAI released its Decisions API in public beta, enabling near real-time routing, classification, and action selection up to 10 times faster than standard calls on GPT-6 Luna. It handle"
-  },
-  {
    "name": "Anthropic Launches Claude Dashboards and Motion Beta Tools",
    "summary": "Claude Dashboards connects to platforms like BigQuery, Snowflake, and Salesforce, letting users ask questions naturally while Claude builds updating charts and reveals the queries behind them; it's in"
   },
   {
+   "name": "TermiX Enables AI Agents for On-Chain Commerce",
+   "summary": "TermiX launched PolyWin.agent, a tool linking prediction markets with seamless on-chain execution and settlement, which quickly drew thousands of views and community buzz. Its Agent Autonomous Commerc"
+  },
+  {
    "name": "TopviewAI Open-Sources 3D Builder for Precise AI Video Planning",
    "summary": "TopviewAI released its 3D Builder tool on GitHub under an Apache 2.0 license, allowing users to describe scenes or upload images to create editable 3D setups with characters, props, and cameras. Creat"
+  },
+  {
+   "name": "OpenAI Rolls Out GPT-6 with Intelligent UI to ChatGPT Users",
+   "summary": "OpenAI began rolling out GPT-6 to ChatGPT Plus, Pro, Business, and Enterprise tiers on October 7, and to free and Go tiers on October 8. The update introduces Intelligent UI, enabling interactive visu"
+  },
+  {
+   "name": "Finance Firm Ditches SaaS for Custom AI-Built Tools",
+   "summary": "The firm found tailored software, powered by AI coding agents, offers far greater value despite higher upfront engineer salaries. This mirrors a 2026 McKinsey survey where nearly one-third of organiza"
+  },
+  {
+   "name": "Hoppy Dating App Revives MySpace-Style Profiles Ahead of October 19 Launch",
+   "summary": "Hoppy, created by former Tinder and Bumble staff, lets users craft detailed, customizable profiles packed with videos, music, movies, and personal quirks under the tagline 'date like a human.' It ditc"
+  },
+  {
+   "name": "Pine AI Releases Pine Computer, a Cloud Computer Designed for AI Agents",
+   "summary": "Pine AI launched Pine Computer, a cloud-based system designed specifically for AI agents that reads web pages as structured data rather than pixels or screenshots. The system is accessible via a singl"
+  },
+  {
+   "name": "Binance Launches Free AI Trading Tools Worldwide for English Users",
+   "summary": "The new Binance AI interface delivers tailored market briefs in text or audio, smart portfolio summaries, voice alerts for price changes, and trade ideas matched to your experience level. Co-founder Y"
+  },
+  {
+   "name": "ScaleDown Launches Efficient Constrained Decoding Models for AI Tasks",
+   "summary": "The new Constrained Decoding Models—Classify, Extract, and Summarize—handle up to 1 million tokens of text or images, delivering tasks like labeling, JSON extraction, and short summaries with 77.2% ac"
+  },
+  {
+   "name": "Synthesia Launches Syren Video for AI Brand-Style Generation",
+   "summary": "Syren Video generates full videos up to three minutes long from text prompts, documents, or links, while studying a brand's footage to mimic typography, transitions, pacing, and editing rhythm. It sup"
   }
  ]
 }

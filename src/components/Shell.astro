@@ -28,7 +28,7 @@ const stripe = import.meta.env.PUBLIC_STRIPE_FEATURED_LINK;
         <p class="muted">This slot is open. Featured spots are clearly labelled and never change ranking.</p>}
       <a class="btn" href={stripe || '/submit'}>Get featured →</a></div>
     <div class="card"><h3>Trending on X</h3>
-      <ol class="trend">{trendingOnX(5).map((t, i) => <li><span class="rk">{i + 1}</span>{t.logo && <img src={t.logo} alt="" width="20" height="20" loading="lazy"/>}<a href={`/tools/${t.slug}`}>{t.name}</a><span class:list={['buzz', 'sm', t.buzz.label]}>{t.buzz.label === 'hype' ? '🔥' : ''}{t.buzz.score}</span></li>)}</ol>
+      <ol class="trend">{trendingOnX(5).map((t, i) => <li><span class="rk">{i + 1}</span>{t.logo && <img src={t.logo} alt={`${t.name} logo`} width="20" height="20" loading="lazy"/>}<a href={`/tools/${t.slug}`}>{t.name}</a><span class:list={['buzz', 'sm', t.buzz.label]}>{t.buzz.label === 'hype' ? '🔥' : ''}{t.buzz.score}</span></li>)}</ol>
       <p class="muted" style="font-size:.75rem;margin:.5rem 0 0">Updated {hkt(BUZZ_AT)} · <a href="/buzz" style="color:var(--accent-ink)">How the score works</a> · <a href="/?sort=buzz" style="color:var(--accent-ink)">All</a></p></div>
   </aside>
 </div>

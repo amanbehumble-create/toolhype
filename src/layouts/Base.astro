@@ -9,7 +9,10 @@ const { title, description: d0 = SITE.tagline, jsonld = [], ogType = 'website', 
 const ogImg = new URL(ogImage, Astro.site);
 const description = d0.length > 160 ? d0.slice(0, 157).replace(/\s+\S*$/, '') + '…' : d0;
 const full = title ? (title.length > 50 ? title : `${title} · ${SITE.name}`) : `${SITE.name} — ${SITE.tagline}`;
-const canonical = new URL(Astro.url.pathname.replace(/\.html$/, '').replace(/(.)\/$/, '$1'), Astro.site);
+let path = Astro.url.pathname.replace(/\.html$/, '');
+if (path === '/index' || path === '') path = '/';
+else path = path.replace(/\/$/, '');
+const canonical = new URL(path, Astro.site);
 ---
 <!doctype html><html lang="en"><head>
 <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>

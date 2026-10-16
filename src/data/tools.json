@@ -1562,5 +1562,120 @@
       "updatedAt": null
     },
     "logo": "/logos/muse-spark.png"
+  },
+  {
+    "slug": "instabox",
+    "name": "InstaBox",
+    "url": "https://instabox.sh",
+    "affiliateUrl": null,
+    "category": "agents",
+    "useCases": [
+      "agents",
+      "coding"
+    ],
+    "pricing": "freemium",
+    "verdict": "Cloud Linux VMs for AI agents: computer use, Docker, snapshots, pause/resume, and public HTTPS ports spun up in under a second.",
+    "useThisIf": "your agents need a real machine (not just a sandbox) with persistent files, Docker, and a desktop they can drive.",
+    "alternatives": [
+      "replit",
+      "codex"
+    ],
+    "source": "x",
+    "addedAt": "2026-10-16",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/instabox.svg"
+  },
+  {
+    "slug": "manimgx",
+    "name": "ManimGX",
+    "url": "https://manimgx.academa.ai",
+    "affiliateUrl": null,
+    "category": "video",
+    "useCases": [
+      "video",
+      "coding",
+      "agents"
+    ],
+    "pricing": "free",
+    "verdict": "Open-source 3D animation engine for agents: Manim-compatible Python API on a Rust+wgpu core, ~90× faster than ManimCE, pip install and go.",
+    "useThisIf": "you (or your coding agent) need fast math/3D explainer videos from Python without a heavy Manim install.",
+    "alternatives": [
+      "runway",
+      "descript"
+    ],
+    "source": "x",
+    "addedAt": "2026-10-16",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/manimgx.svg"
+  },
+  {
+    "slug": "voyager",
+    "name": "Voyager",
+    "url": "https://voyager.so",
+    "affiliateUrl": null,
+    "category": "video",
+    "useCases": [
+      "video",
+      "design",
+      "agents"
+    ],
+    "pricing": "freemium",
+    "verdict": "Local AI harness for creative work (from the Moda team): frontier models drive Blender, Resolve, After Effects, Ableton and built-in design/video/DAW engines.",
+    "useThisIf": "you want Codex-style agent workflows for video, motion, music and games instead of only code.",
+    "alternatives": [
+      "runway",
+      "descript",
+      "claude-code"
+    ],
+    "source": "x",
+    "addedAt": "2026-10-16",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/voyager.png"
+  },
+  {
+    "slug": "gakku",
+    "name": "Gakku",
+    "url": "https://gakku.ai",
+    "affiliateUrl": null,
+    "category": "productivity",
+    "useCases": [
+      "productivity",
+      "chat"
+    ],
+    "pricing": "freemium",
+    "verdict": "AI learning coach for ages 6–16 that coaches writing, speaking and thinking via voice + missions (companion Raku) instead of handing kids finished answers.",
+    "useThisIf": "you want kids practicing how to think and write with AI, not copy-pasting homework answers.",
+    "alternatives": [
+      "chatgpt",
+      "claude"
+    ],
+    "source": "x",
+    "addedAt": "2026-10-16",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/gakku.png"
   }
 ]

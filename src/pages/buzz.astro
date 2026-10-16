@@ -1,10 +1,16 @@
 ---
 import Base from '../layouts/Base.astro'; import Shell from '../components/Shell.astro';
 import { getTools, byBuzz, BUZZ_AT, hkt, LABEL } from '../lib/data';
+import { listLd, faqLd, crumbsLd } from '../lib/ld';
 const live = getTools().filter((t) => t.buzz.status === 'live').sort(byBuzz);
 const pending = getTools().filter((t) => t.buzz.status !== 'live');
+const faq = faqLd([
+  ['What is the Live X Buzz Score?', 'A 0–100 score for each tool on toolhype, built from public X data: post volume over 7 days, velocity (last 24h vs the prior 6-day average), and engagement from a sample of top posts. Paid placements never change it.'],
+  ['How often does the Buzz Score update?', 'Scores refresh with our daily X scan. The leaderboard on /buzz shows when it was last updated in Hong Kong time.'],
+  ['What do Hype, Rising, Steady and Quiet mean?', 'Hype: velocity ≥ 2× with 20+ posts in 24h, or a sampled post with 5,000+ likes this week. Rising: velocity ≥ 1.3×. Steady: 50+ posts a week. Quiet: everything else.'],
+]);
 ---
-<Base title="Live X Buzz Score: how we rank hype on X" description="How toolhype's 0-100 X Buzz Score is calculated from real X post counts, velocity and engagement, plus the full leaderboard.">
+<Base title="Live X Buzz Score: how we rank hype on X" description="How toolhype's 0-100 X Buzz Score is calculated from real X post counts, velocity and engagement, plus the full leaderboard." jsonld={[crumbsLd([['Home', '/'], ['Live X Buzz Score', '/buzz']]), listLd('X Buzz Score leaderboard', live), faq]}>
 <Shell><article class="card prose">
 <h1>Live X Buzz Score</h1>
 <p class="muted">Updated {hkt(BUZZ_AT)}. Every number here comes from public X data. Nothing is estimated, and paid placements never change it.</p>

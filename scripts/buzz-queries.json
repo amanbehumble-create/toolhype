@@ -1,6 +1,6 @@
 {
  "wispr-flow": "(\"wispr flow\" OR wisprflow OR @WisprFlow OR url:wisprflow.ai) -is:retweet",
- "pancake": "(\"pancake.ai\" OR url:pancake.ai) -is:retweet",
+ "pancake": "(\"pancake.ai\" OR url:pancake.ai OR @usepancake) -is:retweet -pancake-eating -\"tallest pancake\"",
  "inferock": "(inferock OR \"inferock-bench\") -is:retweet",
  "retriever-ai": "(rtrvr OR \"rtrvr.ai\" OR url:rtrvr.ai) -is:retweet",
  "articos": "(articos OR url:articos.com) -is:retweet",
@@ -29,7 +29,7 @@
  "replit": "(replit OR url:replit.com) -is:retweet",
  "n8n": "(n8n OR url:n8n.io) -is:retweet",
  "zapier": "(zapier OR url:zapier.com) -is:retweet",
- "make": "(\"make.com\" OR url:make.com OR @make_hq) -is:retweet",
+ "make": "(url:make.com OR @make_hq OR \"make.com automation\" OR \"make.com scenario\") -is:retweet",
  "langchain": "(langchain OR langgraph OR url:langchain.com) -is:retweet",
  "crewai": "(crewai OR \"crew ai\" OR url:crewai.com) -is:retweet",
  "midjourney": "(midjourney OR url:midjourney.com) -is:retweet",
@@ -56,5 +56,9 @@
  "rea": "(\"morluto/rea\" OR morluto OR url:\"github.com/morluto/rea\") -is:retweet",
  "nemotron": "nemotron -is:retweet",
  "krea": "(\"krea 3\" OR krea3 OR @krea_ai) -is:retweet",
- "muse-spark": "(\"muse spark\") -is:retweet"
+ "muse-spark": "(\"muse spark\") -is:retweet",
+ "instabox": "(instabox OR \"insta box\" OR url:instabox.sh) -is:retweet",
+ "manimgx": "(manimgx OR \"manim gx\" OR url:manimgx.academa.ai OR academa-labs/manimgx) -is:retweet",
+ "voyager": "(url:voyager.so OR \"voyager.so\" OR (Voyager (\"creative work\" OR harness OR @anvisha OR moda))) -is:retweet -NASA -\"star trek\" -voyager1 -Voyager2",
+ "gakku": "(gakku OR \"gakku.ai\" OR url:gakku.ai OR (\"AI learning coach\" Raku)) -is:retweet"
 }

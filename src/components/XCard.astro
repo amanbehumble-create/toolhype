@@ -4,7 +4,7 @@ const { compact = false } = Astro.props;
 const f = p.followers >= 1000 ? (p.followers / 1000).toFixed(1).replace(/\.0$/, '') + 'K' : String(p.followers);
 ---
 <div class:list={['xcard', { compact }]}>
-  <div class="xc-top"><img src={p.avatar} alt="" width="44" height="44" loading="lazy" decoding="async"/>
+  <div class="xc-top"><img src={p.avatar} alt={`${p.name} avatar`} width="44" height="44" loading="lazy" decoding="async"/>
     <div class="xc-id"><b>{p.name}</b><span>@{p.username}</span></div>
     <svg class="xc-logo" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M18.9 2H22l-7.2 8.2L23 22h-6.6l-5.2-6.8L5.3 22H2.2l7.7-8.8L1.8 2h6.8l4.7 6.2L18.9 2Zm-1.1 18h1.7L7.3 3.9H5.5L17.8 20Z"/></svg></div>
   <p class="xc-pitch">Daily AI tools &amp; vibe-coding drops.</p>

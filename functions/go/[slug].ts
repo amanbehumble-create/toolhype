@@ -3,7 +3,7 @@
 import MAP from './_map.json';
 
 interface Env { DB?: D1Database; IP_SALT?: string }
-const BOT = /bot|crawl|spider|slurp|preview|facebookexternalhit|embedly|headless|python|curl|wget|httpclient|axios|node-fetch|go-http|java\/|scrapy|lighthouse|pingdom|uptime|monitor|gptbot|chatgpt|claude|perplexity|bytespider|semrush|ahrefs/i;
+const BOT = /bot|crawl|spider|slurp|preview|facebookexternalhit|embedly|headless|python|curl|wget|httpclient|axios|node-fetch|go-http|java\/|scrapy|toolhype-scan|undici|lighthouse|pingdom|uptime|monitor|gptbot|chatgpt|claude|perplexity|bytespider|semrush|ahrefs/i;
 
 async function hash(s: string) {
   const d = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(s));
@@ -18,7 +18,7 @@ export const onRequestGet: PagesFunction<Env> = async (ctx) => {
   dest.searchParams.set('ref', 'toolhype.dev');
   const req = ctx.request; const url = new URL(req.url);
   const ua = req.headers.get('user-agent') || '';
-  const isBot = !ua || BOT.test(ua) || (req as any).cf?.botManagement?.verifiedBot === true;
+  const isBot = !ua || ua === 'node' || BOT.test(ua) || url.searchParams.has('scan') || (req as any).cf?.botManagement?.verifiedBot === true;
   if (!isBot && ctx.env.DB) {
     let refHost: string | null = null;
     try { refHost = new URL(req.headers.get('referer') || '').hostname || null; } catch {}

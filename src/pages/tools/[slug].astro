@@ -26,7 +26,7 @@ const faq: [string, string][] = [
   {t.logo ? <img class="avatar logo" src={t.logo} alt={`${t.name} logo`} width="56" height="56" /> : <div class="avatar">{t.name[0]}</div>}<h1 style="margin:0">{t.name}</h1></div>
   <p><b>Verdict:</b> {t.verdict}</p><p><b>Use this if</b> {t.useThisIf}</p>
   <div class="meta">{t.useCases.map((c) => <a class="chip c" href={`/c/${c}`}>c/{c}</a>)}<span class="chip">{t.pricing}</span></div>
-  <p><a class="btn primary" href={goUrl(t, '/tools/' + t.slug)} rel={t.affiliateUrl ? 'sponsored nofollow noopener' : 'nofollow noopener'} target="_blank">Visit {t.name} →</a></p>
+  <p><a class="btn primary" data-track="visit:tool-page" href={goUrl(t, '/tools/' + t.slug)} rel={t.affiliateUrl ? 'sponsored nofollow noopener' : 'nofollow noopener'} target="_blank">Visit {t.name} →</a></p>
   <h2 id="buzz">Live X Buzz Score</h2>
   {b.status === 'live' ? <>
     <p><span class:list={['buzz', b.label]} style="font-size:1rem">{b.label === 'hype' ? '🔥' : 'X'} {b.score}/100 <span class="lbl">{LABEL[b.label!]}</span></span> <span class="muted">updated {hkt(b.updatedAt!)}</span></p>
@@ -47,6 +47,6 @@ const faq: [string, string][] = [
   {related.length > 0 && <><h2>Similar AI tools</h2><ul>{related.map((a) => <li><a href={`/tools/${a.slug}`}>{a.name}</a>: {a.verdict}</li>)}</ul></>}
   {cat && <p>See all: <a href={`/best/${cat.slug}`}>best AI tools for {cat.name.toLowerCase()}</a> · <a href="/trending">trending AI tools today</a></p>}
   <h2>FAQ</h2>{faq.map(([q, a]) => <><h3>{q}</h3><p>{a}</p></>)}
-  <SubStrip title="Never miss the next hot tool" sub="Weekly: what's hyped on X, and what's worth it."/>
+  <SubStrip place="tool-page" title="Never miss the next hot tool" sub="Weekly: what's hyped on X, and what's worth it."/>
   <h2>Discussion</h2><p class="muted">Comments are coming with sign-in.</p>
 </article></Shell></Base>

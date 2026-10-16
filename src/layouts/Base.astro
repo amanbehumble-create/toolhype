@@ -24,13 +24,13 @@ const canonical = new URL(path, Astro.site);
 <script is:inline>document.documentElement.dataset.theme=localStorage.getItem('th:theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light')</script>
 {jsonld.map((j) => <script type="application/ld+json" set:html={JSON.stringify(j).replace(/</g, "\\u003c")} />)}
 </head><body>
-<header class="top"><a class="logo" href="/">tool<b>hype</b></a>
-<input class="search" id="q" type="search" placeholder="Search AI tools…" aria-label="Search"/>
+<header class="top" data-track-zone="topnav"><a class="logo" href="/">tool<b>hype</b></a>
+<input class="search" id="q" data-track="search" type="search" placeholder="Search AI tools…" aria-label="Search"/>
 <a class="btn hide-sm" href="/new">New this week</a><a class="btn hide-sm" href="/prompts">Prompt Drop</a><a class="btn primary" href="/submit">Get featured</a>
-<button class="btn" id="theme" aria-label="Toggle theme">◐</button></header>
+<button class="btn" data-track="theme" id="theme" aria-label="Toggle theme">◐</button></header>
 <slot/>
-<div class="subbar" id="subbar" role="region" aria-label="Newsletter"><b>✉️ The weekly AI tools drop</b><a class="btn primary" href="https://adrians-newsletter-156c86.beehiiv.com/subscribe" target="_blank" rel="noopener">Subscribe</a><button class="x" aria-label="Dismiss" type="button">✕</button></div>
-<footer>toolhype · <a href="/newsletter">Newsletter</a> · <a href="/prompts">Prompt Drop</a> · <a href="/rss.xml">RSS</a> · <a href="/trending">Trending AI tools today</a> · <a href="/best">Best AI tools by category</a> · <a href="/llms.txt">llms.txt</a> · Featured listings are labelled and never affect ranking.</footer>
+<div class="subbar" id="subbar" role="region" aria-label="Newsletter"><b>✉️ The weekly AI tools drop</b><a class="btn primary" data-track="sub:subbar" href="https://adrians-newsletter-156c86.beehiiv.com/subscribe" target="_blank" rel="noopener">Subscribe</a><button class="x" aria-label="Dismiss" type="button">✕</button></div>
+<footer data-track-zone="footer">toolhype · <a href="/newsletter">Newsletter</a> · <a href="/prompts">Prompt Drop</a> · <a href="/rss.xml">RSS</a> · <a href="/trending">Trending AI tools today</a> · <a href="/best">Best AI tools by category</a> · <a href="/llms.txt">llms.txt</a> · Featured listings are labelled and never affect ranking.</footer>
 <script>
 document.getElementById('theme')!.addEventListener('click',()=>{const d=document.documentElement;d.dataset.theme=d.dataset.theme==='dark'?'light':'dark';localStorage.setItem('th:theme',d.dataset.theme!)});
 {const b=document.getElementById('subbar')!;const k='th:subbar';
@@ -40,4 +40,9 @@ const q=document.getElementById('q') as HTMLInputElement;
 q.addEventListener('input',()=>{const v=q.value.toLowerCase();document.querySelectorAll<HTMLElement>('.post').forEach(p=>{p.style.display=(p.dataset.search||'').includes(v)?'':'none'})});
 q.addEventListener('keydown',e=>{if(e.key==='Enter'&&!document.querySelector('.post'))location.href='/?q='+encodeURIComponent(q.value)});
 </script>
+<script is:inline>(()=>{if(navigator.webdriver||/bot|crawl|spider|headless|toolhype-scan/i.test(navigator.userAgent))return;const p=location.pathname.replace(/\.html$/,'').replace(/(.)\/$/,'$1')||'/';const s=(k,e,l)=>{try{navigator.sendBeacon('/api/e',JSON.stringify({k,p,e:(e||'').slice(0,80),l:(l||'').replace(/\s+/g,' ').trim().slice(0,80)}))}catch{}};s('view','',document.referrer?new URL(document.referrer).hostname:'');
+document.addEventListener('click',ev=>{const t=ev.target.closest&&ev.target.closest('[data-track],a,button');if(!t||t.tagName==='FORM')return;if(t.closest('form[data-track]')&&t.tagName==='BUTTON')return;let e=t.dataset.track;if(!e){const z=t.closest('[data-track-zone]');const h=t.getAttribute('href')||'';e=(z?z.dataset.trackZone:'body')+':'+(h.startsWith('/go/')?'visit':h?h.split('?')[0].slice(0,60):t.tagName.toLowerCase())}s('click',e,t.getAttribute('aria-label')||t.textContent)},{capture:true,passive:true});
+document.addEventListener('submit',ev=>{const f=ev.target;s('submit',f.dataset.track||'form','')},{capture:true});
+let st;document.addEventListener('input',ev=>{if(ev.target.id!=='q')return;clearTimeout(st);st=setTimeout(()=>{const v=ev.target.value;if(v.length>1)s('search','search',v)},1200)},{passive:true});})()</script>
+<script is:inline defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "f8769e39a55648cabd350783a6a24eea"}'></script>
 </body></html>

@@ -1,7 +1,7 @@
 // Resubmit all URLs from the live sitemap to IndexNow (Bing, Yandex, etc.). Usage: node scripts/indexnow.mjs
 const HOST = 'toolhype.dev';
 const KEY = '7c2824b792163d3239080ca91f147428';
-const getLocs = async (u) => [...(await (await fetch(u)).text()).matchAll(/<loc>([^<]+)<\/loc>/g)].map(m => m[1].trim());
+const getLocs = async (u) => [...(await (await fetch(u, { headers: { 'User-Agent': 'toolhype-scan/1.0' } })).text()).matchAll(/<loc>([^<]+)<\/loc>/g)].map(m => m[1].trim());
 let urls = [], queue = ['https://' + HOST + '/sitemap.xml'];
 while (queue.length) {
   const u = queue.shift();

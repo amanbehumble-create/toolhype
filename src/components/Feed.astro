@@ -6,9 +6,9 @@ const { tools } = Astro.props as { tools: Tool[] };
 const weekAgo = Date.now() - 7 * 864e5;
 ---
 <div class="tabs" role="tablist">
-  {[['hot','Hot'],['buzz','🔥 Hype on X'],['new','New'],['top','Top'],['rising','Rising']].map(([s, l], i) => <button class:list={['tab', { on: i === 0 }]} role="tab" aria-selected={i === 0 ? 'true' : 'false'} data-sort={s}>{l}</button>)}
+  {[['hot','Hot'],['buzz','🔥 Hype on X'],['new','New'],['top','Top'],['rising','Rising']].map(([s, l], i) => <button class:list={['tab', { on: i === 0 }]} role="tab" aria-selected={i === 0 ? 'true' : 'false'} data-sort={s} data-track={`tab:${s}`}>{l}</button>)}
 </div>
-<div class="feed" id="feed">{tools.map((t, i) => <>{i === 6 && <div class="feed-promo" id="feed-promo"><SubStrip title="Like this list? Get it weekly" sub="The hottest AI tools + 10 legit prompts, every week. Free."/></div>}<ToolCard tool={t} isNew={new Date(t.addedAt).getTime() > weekAgo} /></>)}</div>
+<div class="feed" id="feed">{tools.map((t, i) => <>{i === 6 && <div class="feed-promo" id="feed-promo"><SubStrip place="feed" title="Like this list? Get it weekly" sub="The hottest AI tools + 10 legit prompts, every week. Free."/></div>}<ToolCard tool={t} isNew={new Date(t.addedAt).getTime() > weekAgo} /></>)}</div>
 <script>
 import { hasVoted } from '../lib/votes';
 const feed = document.getElementById('feed')!;

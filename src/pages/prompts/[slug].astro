@@ -21,7 +21,7 @@ const url = new URL(`/prompts/${i.slug}`, Astro.site).href;
   <p class="muted" style="margin:0;font-size:.8rem">Credit: <a href={p.source} rel="noopener nofollow" target="_blank">{p.author} on X</a>{p.promptSource && <> · <a href={p.promptSource} rel="noopener nofollow" target="_blank">prompt in thread</a></>} · {p.likes.toLocaleString('en-US')} likes as of {p.likesAsOf}</p>
 </section>)}
 <p class="muted">Prompts are copied word for word from the original posts (only the [brackets] are yours to fill); credit goes to the original posters. Found a great prompt? Tag <a href="https://x.com/amanbehumble">@amanbehumble</a>. More issues: <a href="/prompts">Prompt Drop archive</a>.</p>
-<SubStrip title="Get the next Prompt Drop" sub="10 prompts with 100+ likes on X, every week. Free."/>
+<SubStrip place="prompt-issue" title="Get the next Prompt Drop" sub="10 prompts with 100+ likes on X, every week. Free."/>
 </article></Shell>
 <script>
 document.querySelectorAll<HTMLButtonElement>('button.copy').forEach((b) => b.addEventListener('click', async () => {

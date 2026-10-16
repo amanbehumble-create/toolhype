@@ -1,0 +1,16 @@
+#!/usr/bin/env node
+// Private on-site interaction stats from D1 `events` (needs `npx wrangler login`). Usage: node scripts/events-report.mjs [days=7]
+import { execFileSync } from 'node:child_process';
+const days = Math.max(1, Math.min(90, parseInt(process.argv[2] || '7', 10) || 7));
+const since = `strftime('%Y-%m-%dT%H:%M:%SZ','now','-${days} days')`;
+const q = (sql) => JSON.parse(execFileSync('npx', ['wrangler', 'd1', 'execute', 'toolhype-clicks', '--remote', '--json', '--command', sql], { encoding: 'utf8' }))[0]?.results || [];
+console.log(`\nDaily pageviews / unique visitors (UTC days, last ${days}d)`);
+console.table(q(`SELECT substr(ts,1,10) AS day, SUM(kind='view') AS pageviews, COUNT(DISTINCT CASE WHEN kind='view' THEN ip_hash END) AS visitors, SUM(kind='click') AS clicks FROM events WHERE ts >= ${since} GROUP BY day ORDER BY day DESC`));
+console.log('\nPageviews by page (with click-through = clicks / views)');
+console.table(q(`SELECT page, SUM(kind='view') AS views, SUM(kind='click') AS clicks, ROUND(100.0*SUM(kind='click')/MAX(SUM(kind='view'),1),1) AS ctr_pct FROM events WHERE ts >= ${since} GROUP BY page ORDER BY views DESC LIMIT 40`));
+console.log('\nTop clicked elements by page');
+console.table(q(`SELECT page, element, kind, COUNT(*) AS n FROM events WHERE kind IN ('click','submit') AND ts >= ${since} GROUP BY page, element, kind ORDER BY n DESC LIMIT 50`));
+console.log('\nTop searches');
+console.table(q(`SELECT lower(label) AS term, COUNT(*) AS n FROM events WHERE kind='search' AND ts >= ${since} GROUP BY term ORDER BY n DESC LIMIT 20`));
+console.log('\nTraffic sources (referrer host on pageviews)');
+console.table(q(`SELECT COALESCE(label,'(direct)') AS referrer, COUNT(*) AS n FROM events WHERE kind='view' AND ts >= ${since} GROUP BY referrer ORDER BY n DESC LIMIT 20`));

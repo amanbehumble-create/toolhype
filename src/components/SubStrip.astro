@@ -1,8 +1,8 @@
 ---
 import { SUBSCRIBE_URL } from './Subscribe.astro';
-const { title = 'Get the weekly drop', sub = 'Top AI tools + prompts. Free.' } = Astro.props;
+const { place = 'substrip', title = 'Get the weekly drop', sub = 'Top AI tools + prompts. Free.' } = Astro.props;
 ---
-<form class="substrip" action={SUBSCRIBE_URL} method="get" target="_blank" rel="noopener">
+<form data-track={`sub:${place}`} class="substrip" action={SUBSCRIBE_URL} method="get" target="_blank" rel="noopener">
   <div class="ss-t"><b>✉️ {title}</b><span>{sub}</span></div>
   <div class="ss-f"><input class="field" type="email" name="email" placeholder="you@email.com" required aria-label="Email"/><button class="btn primary">Subscribe</button></div>
 </form>

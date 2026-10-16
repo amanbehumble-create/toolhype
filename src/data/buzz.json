@@ -1,5 +1,5 @@
 {
- "computedAt": "2026-10-16T12:00:44.102Z",
+ "computedAt": "2026-10-16T18:04:46.826Z",
  "method": "v1",
  "tools": {
   "wispr-flow": {
@@ -3236,8 +3236,80 @@
     }
    ],
    "computedAt": "2026-10-16T12:00:44.102Z"
+  },
+  "papertrade": {
+   "status": "live",
+   "query": "(papertrade (hyperliquid OR perp OR perps OR 1000x OR hyperevm) OR @papertrade_xyz OR url:papertrade.xyz) -is:retweet",
+   "mentions24h": 2009,
+   "mentions7d": 27386,
+   "priorDailyAvg": 4229.5,
+   "velocity": 0.47,
+   "daily": [
+    8154,
+    8129,
+    2384,
+    2856,
+    1734,
+    2120,
+    2009
+   ],
+   "peakDay": 8154,
+   "peakDaysAgo": 6,
+   "sample": {
+    "posts": 24,
+    "likes": 1117,
+    "reposts": 56,
+    "replies": 180
+   },
+   "parts": {
+    "volume": 44.4,
+    "velocity": 0,
+    "engagement": 16.1
+   },
+   "score": 60,
+   "label": "steady",
+   "viral": false,
+   "topPosts": [
+    {
+     "id": "2109308773231911359",
+     "url": "https://x.com/papertrade_xyz/status/2109308773231911359",
+     "author": "papertrade_xyz",
+     "text": "thank you everyone for your participation and support through papertrade's launch.\n\nwe flipped the stock market’s volume in the first 6 hours. one day after launch, papertrade is a fully working 1000x exchange with 5m in the LP and has paid out 25M to stakers.\n\naddressing two htt",
+     "created_at": "2026-10-11T15:42:55.000Z",
+     "likes": 1229,
+     "reposts": 64,
+     "replies": 320,
+     "views": 152366,
+     "quotes": 49
+    },
+    {
+     "id": "2109039698861834247",
+     "url": "https://x.com/papertrade_xyz/status/2109039698861834247",
+     "author": "papertrade_xyz",
+     "text": "having flipped the NASDAQ's daily notional traded volume, we have reached out to @NasdaqExchange to discuss the potential implementation of 1000x leverage in order to improve their volumes... https://t.co/5cM0fGySio",
+     "created_at": "2026-10-10T21:53:42.000Z",
+     "likes": 857,
+     "reposts": 52,
+     "replies": 288,
+     "views": 104367,
+     "quotes": 45
+    },
+    {
+     "id": "2110380347372470779",
+     "url": "https://x.com/papertrade_xyz/status/2110380347372470779",
+     "author": "papertrade_xyz",
+     "text": "literally, trillions https://t.co/Uo00nBPEmW",
+     "created_at": "2026-10-14T14:40:58.000Z",
+     "likes": 758,
+     "reposts": 50,
+     "replies": 87,
+     "views": 50116,
+     "quotes": 17
+    }
+   ],
+   "computedAt": "2026-10-16T18:04:46.826Z"
   }
  },
  "topPostsRule": "Top 3 original X posts that mention the tool with >=100 likes or >=10K views, ranked by likes + 3*reposts + 2*replies + 2*quotes + views/100. Hidden if none qualify.",
- "topPostsUpdatedAt": "2026-10-16T12:01:09.483Z"
+ "topPostsUpdatedAt": "2026-10-16T18:04:46.942Z"
 }

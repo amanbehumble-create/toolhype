@@ -66,5 +66,6 @@
  "kling-ai": "(\"kling ai\" OR klingai OR @Kling_ai OR url:klingai.com) -is:retweet",
  "genspark": "(genspark OR @genspark_ai OR url:genspark.ai) -is:retweet",
  "opusclip": "(opusclip OR \"opus clip\" OR @OpusClip OR url:opus.pro) -is:retweet",
- "manus": "(\"manus ai\" OR manusai OR @ManusAI OR url:manus.im) -is:retweet"
+ "manus": "(\"manus ai\" OR manusai OR @ManusAI OR url:manus.im) -is:retweet",
+ "papertrade": "(papertrade (hyperliquid OR perp OR perps OR 1000x OR hyperevm) OR @papertrade_xyz OR url:papertrade.xyz) -is:retweet"
 }

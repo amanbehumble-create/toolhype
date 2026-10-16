@@ -36,11 +36,15 @@ const top = topTools(5); const names = top.map((t) => t.name);
 const RM = matchMedia('(prefers-reduced-motion: reduce)').matches;
 const el = document.getElementById('hero-word')!; const w = el.querySelector('.w')!;
 let words: string[] = JSON.parse(el.dataset.words || '[]');
-fetch('/top.json', { cache: 'no-store' }).then((r) => r.json()).then((j) => { const n = (j?.top || []).map((t: any) => t.name).filter(Boolean); if (n.length) words = n; if (RM) w.textContent = words[0]; }).catch(() => {});
-if (RM || !words.length) { w.textContent = words[0] || '___'; }
+// ?feature=<slug>: put that tool first in the cycle for this page view only (tool-spotlight posts). Default unchanged.
+const feat = new URLSearchParams(location.search).get('feature')?.toLowerCase().replace(/[^a-z0-9-]/g, '') || '';
+fetch('/top.json', { cache: 'no-store' }).then((r) => r.json()).then((j) => { const n = (j?.top || []).map((t: any) => t.name).filter(Boolean); if (n.length) words = n;
+  if (feat && j?.feature?.[feat]) words = [j.feature[feat], ...words.filter((x) => x !== j.feature[feat])]; if (RM) w.textContent = words[0]; }).catch(() => {}).finally(() => { if (feat) start(); });
+const start = () => { if (RM || !words.length) { w.textContent = words[0] || '___'; }
 else { let i = 0, j = 0, del = false; const tick = () => { const s = words[i % words.length]; j += del ? -1 : 1; w.textContent = s.slice(0, j);
   let d = del ? 45 : 95; if (!del && j >= s.length) { del = true; d = 1700; } else if (del && j <= 0) { del = false; j = 0; i = (i + 1) % words.length; d = 350; }
-  setTimeout(tick, d); }; tick(); }
+  setTimeout(tick, d); }; tick(); } };
+if (!feat) start();
 const hq = document.getElementById('hero-q') as HTMLInputElement;
 const filt = () => { const v = hq.value.toLowerCase().trim(); document.querySelectorAll<HTMLElement>('.post').forEach((p) => { p.style.display = (p.dataset.search || '').includes(v) ? '' : 'none'; }); };
 hq.addEventListener('input', filt);

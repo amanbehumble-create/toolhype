@@ -25,8 +25,8 @@ const faq: [string, string][] = [
 <Shell><article class="card prose">
   <div style="display:flex;gap:1rem;align-items:center"><div class="vote" data-vote={t.slug}><button aria-label="Upvote">▲</button><span class="n">0</span></div>
   {t.logo ? <img class="avatar logo" src={t.logo} alt={`${t.name} logo`} width="56" height="56" /> : <div class="avatar">{t.name[0]}</div>}<h1 style="margin:0">{t.name}</h1></div>
-  <p class="answer"><b>In short:</b> {t.name} is a {t.pricing} {cat ? cat.name.toLowerCase() : t.category} AI tool. {t.verdict}{t.buzz.status === 'live' ? ` X Buzz Score: ${t.buzz.score}/100 (${t.buzz.mentions7d?.toLocaleString('en-US')} posts in 7 days).` : ''}</p>
-  <p><b>Verdict:</b> {t.verdict}</p><p><b>Use this if</b> {t.useThisIf}</p>
+  <p class="answer"><b>In short:</b> {t.name} is a {t.pricing} {cat ? cat.name.toLowerCase() : t.category} {t.category === 'crypto' ? 'app' : 'AI tool'}. {t.verdict}{t.buzz.status === 'live' ? ` X Buzz Score: ${t.buzz.score}/100 (${t.buzz.mentions7d?.toLocaleString('en-US')} posts in 7 days).` : ''}</p>
+  <p><b>Verdict:</b> {t.verdict}</p>{t.riskNote && <p class="muted"><b>Note:</b> {t.riskNote}</p>}<p><b>Use this if</b> {t.useThisIf}</p>
   <div class="meta">{t.useCases.map((c) => <a class="chip c" href={`/c/${c}`}>c/{c}</a>)}<span class="chip">{t.pricing}</span></div>
   <p><a class="btn primary" data-track="visit:tool-page" href={goUrl(t, '/tools/' + t.slug)} rel={t.affiliateUrl ? 'sponsored nofollow noopener' : 'nofollow noopener'} target="_blank">Visit {t.name} →</a></p>
   <h2 id="buzz">Live X Buzz Score</h2>

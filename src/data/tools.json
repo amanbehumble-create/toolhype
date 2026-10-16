@@ -1853,5 +1853,30 @@
       "updatedAt": null
     },
     "logo": "/logos/manus.png"
+  },
+  {
+    "slug": "papertrade",
+    "name": "Papertrade",
+    "url": "https://papertrade.xyz",
+    "affiliateUrl": null,
+    "category": "crypto",
+    "useCases": [
+      "crypto"
+    ],
+    "pricing": "free",
+    "verdict": "Onchain synthetic perpetual futures exchange on Hyperliquid's HyperEVM, offering BTC and ETH perps with up to 1000x leverage. Trades settle against a shared liquidity pool rather than an order book.",
+    "riskNote": "Leveraged trading is high risk. This is not financial advice.",
+    "useThisIf": "you already trade crypto perps and want to see the Hyperliquid app everyone on X is talking about.",
+    "alternatives": [],
+    "source": "x",
+    "addedAt": "2026-10-17",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/papertrade.png"
   }
 ]

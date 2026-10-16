@@ -43,5 +43,10 @@
     "slug": "fun",
     "name": "Fun & games",
     "description": "Games and toys built with AI that are blowing up on X."
+  },
+  {
+    "slug": "crypto",
+    "name": "Crypto",
+    "description": "Onchain trading apps and crypto tools getting buzz on X."
   }
 ]

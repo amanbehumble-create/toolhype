@@ -8,13 +8,14 @@ const free = tools.filter((t) => t.pricing !== 'paid');
 const label = c.name.toLowerCase();
 const faq: [string, string][] = [
   [`What is the best AI tool for ${label}?`, tools.length ? `Based on toolhype's verdicts and live X buzz, top picks are ${tools.slice(0, 3).map((t) => `${t.name} (${t.verdict})`).join('; ')}.` : 'No tools listed yet.'],
-  [`Are there free AI tools for ${label}?`, free.length ? `Yes: ${free.slice(0, 6).map((t) => `${t.name} (${t.pricing})`).join(', ')}.` : 'All tools listed here are currently paid.'],
+  [`Are there free ${AI}tools for ${label}?`, free.length ? `Yes: ${free.slice(0, 6).map((t) => `${t.name} (${t.pricing})`).join(', ')}.` : 'All tools listed here are currently paid.'],
   [`How does toolhype rank ${label} tools?`, 'By community upvotes and the Live X Buzz Score, which measures how much a tool is being discussed on X. Featured listings are labelled and never affect ranking.'],
 ];
+const AI = c.slug === 'crypto' ? '' : 'AI ';
 ---
-<Base title={`Best AI tools for ${label} (${year})`} description={`The best AI ${label} tools in ${year}: ${tools.slice(0, 4).map((t) => t.name).join(', ')} and more, with honest one-line verdicts, pricing and live X buzz.`} ogImage={`/og/best-${c.slug}.png`} jsonld={[listLd(`Best AI tools for ${label}`, tools), faqLd(faq), crumbsLd([['Home', '/'], ['Best AI tools', '/best'], [c.name, `/best/${c.slug}`]])]}>
+<Base title={`Best ${AI}tools for ${label} (${year})`} description={`The best ${AI}${label} tools in ${year}: ${tools.slice(0, 4).map((t) => t.name).join(', ')} and more, with honest one-line verdicts, pricing and live X buzz.`} ogImage={`/og/best-${c.slug}.png`} jsonld={[listLd(`Best ${AI}tools for ${label}`, tools), faqLd(faq), crumbsLd([['Home', '/'], ['Best ${AI}tools', '/best'], [c.name, `/best/${c.slug}`]])]}>
 <Shell active={c.slug}><article class="card prose">
-  <h1>Best AI tools for {label} ({year})</h1><p class="muted">{c.description} {tools.length} tools, sorted by live X buzz. Discuss in <a href={`/c/${c.slug}`}>c/{c.slug}</a>.</p>
+  <h1>Best {AI}tools for {label} ({year})</h1><p class="muted">{c.description} {tools.length} tools, sorted by live X buzz. Discuss in <a href={`/c/${c.slug}`}>c/{c.slug}</a>.</p>
   <ol>{tools.map((t) => <li><h2 style="font-size:1.05rem;margin:.6rem 0 .2rem"><a href={`/tools/${t.slug}`}>{t.name}</a> <span class="chip">{t.pricing}</span>{t.buzz.status === 'live' && <span class="muted"> · X buzz {t.buzz.score}/100</span>}</h2><p style="margin:0">{t.verdict} <b>Use it if</b> {t.useThisIf}</p></li>)}</ol>
   <h2>FAQ</h2>{faq.map(([q, a]) => <><h3>{q}</h3><p>{a}</p></>)}
   <p>More: {getCommunities().filter((x) => x.slug !== c.slug).map((x, i) => <>{i ? ' · ' : ''}<a href={`/best/${x.slug}`}>best {x.name.toLowerCase()} tools</a></>)} · <a href="/trending">trending today</a></p>

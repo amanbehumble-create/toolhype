@@ -18,11 +18,12 @@ export const OFFICIAL = {
   bolt: ['boltdotnew'], zapier: ['zapier'], make: ['make_hq'], crewai: ['crewaiinc'], runway: ['runwayml'], pika: ['pika_labs'],
   capcut: ['capcutapp'], gamma: ['meetgamma'], jasper: ['heyjasperai'], 'copy-ai': ['copy_ai'], figma: ['figma'], notion: ['notionhq'],
   claude: ['claudeai'], gemini: ['geminiapp'], perplexity: ['perplexity_ai'], replit: ['replit'], suno: ['suno'], heygen: ['heygen_official'],
+  higgsfield: ['higgsfield_ai'], base44: ['base44'], 'kling-ai': ['kling_ai'], genspark: ['genspark_ai'], opusclip: ['opusclip'], manus: ['manusai'],
 };
 // Generic "N AI tools you should know" list posts: only used when nothing better qualifies.
 export const LISTICLE = /^\W*\d+\s+(?:\S+\s+){0,3}(?:ai\s+)?(?:tools|links|websites|apps|courses)\b|\b\d+\s+(?:useful|must-use|free)\s+(?:ai\s+)?(?:tools|links|websites)\b|tools (?:you should know|nobody told you)/i;
 const STOP = new Set(['code', 'editor', 'coding', 'vibe', 'song', 'meeting', 'motion', 'dashboards', 'artifacts', 'url:', '@grok is this true']);
-const KW_OVERRIDE = { 'claude-motion': ['claude motion', 'claude dashboards'] };
+const KW_OVERRIDE = { 'claude-motion': ['claude motion', 'claude dashboards'], voyager: ['voyager.so', 'voyager'] };
 export function keywords(query, slug) {
   if (KW_OVERRIDE[slug]) return KW_OVERRIDE[slug];
   return rawKeywords(query).filter((k) => !STOP.has(k));

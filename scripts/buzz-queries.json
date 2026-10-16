@@ -60,5 +60,11 @@
  "instabox": "(instabox OR \"insta box\" OR url:instabox.sh) -is:retweet",
  "manimgx": "(manimgx OR \"manim gx\" OR url:manimgx.academa.ai OR academa-labs/manimgx) -is:retweet",
  "voyager": "(url:voyager.so OR \"voyager.so\" OR (Voyager (\"creative work\" OR harness OR @anvisha OR moda))) -is:retweet -NASA -\"star trek\" -voyager1 -Voyager2",
- "gakku": "(gakku OR \"gakku.ai\" OR url:gakku.ai OR (\"AI learning coach\" Raku)) -is:retweet"
+ "gakku": "(gakku OR \"gakku.ai\" OR url:gakku.ai OR (\"AI learning coach\" Raku)) -is:retweet",
+ "higgsfield": "(higgsfield OR @higgsfield_ai OR url:higgsfield.ai) -is:retweet",
+ "base44": "(base44 OR @base44 OR url:base44.com) -is:retweet",
+ "kling-ai": "(\"kling ai\" OR klingai OR @Kling_ai OR url:klingai.com) -is:retweet",
+ "genspark": "(genspark OR @genspark_ai OR url:genspark.ai) -is:retweet",
+ "opusclip": "(opusclip OR \"opus clip\" OR @OpusClip OR url:opus.pro) -is:retweet",
+ "manus": "(\"manus ai\" OR manusai OR @ManusAI OR url:manus.im) -is:retweet"
 }

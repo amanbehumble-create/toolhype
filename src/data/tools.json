@@ -1677,5 +1677,181 @@
       "updatedAt": null
     },
     "logo": "/logos/gakku.png"
+  },
+  {
+    "slug": "higgsfield",
+    "name": "Higgsfield",
+    "url": "https://higgsfield.ai",
+    "affiliateUrl": null,
+    "category": "video",
+    "useCases": [
+      "video",
+      "design",
+      "marketing"
+    ],
+    "pricing": "freemium",
+    "verdict": "AI video and image studio with cinematic camera-motion presets, ad and UGC-style generators, and access to top video models (Kling, Veo, Sora and more) in one place.",
+    "useThisIf": "you want scroll-stopping social clips and video ads without learning a full editing or prompting workflow.",
+    "alternatives": [
+      "runway",
+      "pika",
+      "kling-ai"
+    ],
+    "source": "x",
+    "addedAt": "2026-10-16",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/higgsfield.png"
+  },
+  {
+    "slug": "base44",
+    "name": "Base44",
+    "url": "https://base44.com",
+    "affiliateUrl": null,
+    "category": "coding",
+    "useCases": [
+      "coding",
+      "productivity"
+    ],
+    "pricing": "freemium",
+    "verdict": "No-code AI app builder (owned by Wix): describe an app in plain English and get a working web app with database, login and hosting built in.",
+    "useThisIf": "you want a working internal tool or MVP from a prompt without wiring up a backend yourself.",
+    "alternatives": [
+      "lovable",
+      "bolt",
+      "replit"
+    ],
+    "source": "x",
+    "addedAt": "2026-10-16",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/base44.png"
+  },
+  {
+    "slug": "kling-ai",
+    "name": "Kling AI",
+    "url": "https://klingai.com",
+    "affiliateUrl": null,
+    "category": "video",
+    "useCases": [
+      "video",
+      "design"
+    ],
+    "pricing": "freemium",
+    "verdict": "Kuaishou's text- and image-to-video generator, known for realistic motion and physics, with lip-sync, effects and image generation.",
+    "useThisIf": "you want high-quality AI video clips from a prompt or a still image.",
+    "alternatives": [
+      "runway",
+      "pika",
+      "higgsfield"
+    ],
+    "source": "x",
+    "addedAt": "2026-10-16",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/kling-ai.png"
+  },
+  {
+    "slug": "genspark",
+    "name": "Genspark",
+    "url": "https://www.genspark.ai",
+    "affiliateUrl": null,
+    "category": "agents",
+    "useCases": [
+      "agents",
+      "productivity",
+      "chat"
+    ],
+    "pricing": "freemium",
+    "verdict": "All-in-one AI agent workspace: Super Agent researches, makes slides, docs and sheets, generates images/video and can even make phone calls for you.",
+    "useThisIf": "you want one agent to turn a request into finished deliverables instead of just a chat answer.",
+    "alternatives": [
+      "manus",
+      "perplexity",
+      "chatgpt"
+    ],
+    "source": "x",
+    "addedAt": "2026-10-16",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/genspark.png"
+  },
+  {
+    "slug": "opusclip",
+    "name": "OpusClip",
+    "url": "https://www.opus.pro",
+    "affiliateUrl": null,
+    "category": "video",
+    "useCases": [
+      "video",
+      "marketing"
+    ],
+    "pricing": "freemium",
+    "verdict": "Turns long videos and podcasts into short viral-style clips for TikTok, Reels and Shorts, with auto captions, reframing and a virality score.",
+    "useThisIf": "you have long-form video and want ready-to-post shorts without editing them by hand.",
+    "alternatives": [
+      "descript",
+      "capcut"
+    ],
+    "source": "x",
+    "addedAt": "2026-10-16",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/opusclip.png"
+  },
+  {
+    "slug": "manus",
+    "name": "Manus",
+    "url": "https://manus.im",
+    "affiliateUrl": null,
+    "category": "agents",
+    "useCases": [
+      "agents",
+      "productivity",
+      "coding"
+    ],
+    "pricing": "freemium",
+    "verdict": "General-purpose autonomous AI agent that plans and executes multi-step tasks in its own cloud computer: research, building websites, data analysis and reports.",
+    "useThisIf": "you want to hand off a whole task and come back to the finished result.",
+    "alternatives": [
+      "genspark",
+      "chatgpt",
+      "crewai"
+    ],
+    "source": "x",
+    "addedAt": "2026-10-16",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/manus.png"
   }
 ]

@@ -2,7 +2,47 @@
 import Base from '../layouts/Base.astro'; import Shell from '../components/Shell.astro'; import Feed from '../components/Feed.astro';
 import { getTools, hot, SITE } from '../lib/data'; import { listLd } from '../lib/ld';
 const tools = [...getTools()].sort((a, b) => hot(0, b.buzz.score, b.addedAt) - hot(0, a.buzz.score, a.addedAt));
+const n = tools.length;
+const names = [...tools].sort((a, b) => (b.buzz.score ?? 0) - (a.buzz.score ?? 0)).slice(0, 8).map((t) => t.name);
 ---
 <Base jsonld={[listLd('Top AI tools on toolhype', tools), { '@context': 'https://schema.org', '@type': 'WebSite', name: SITE.name, url: Astro.site?.href }]}>
-<Shell active="home"><h1>AI tools people are actually using</h1><p class="muted">Ranked by builder upvotes and buzz on X. Featured spots are clearly labelled and can't buy rank.</p><Feed tools={tools}/></Shell>
+<Shell active="home">
+<section class="hero" data-track-zone="hero">
+  <h1>Is <span class="blank" id="hero-word" data-words={JSON.stringify(names)} aria-hidden="true"><span class="w"></span><span class="cur"></span></span><span class="sr">an AI tool</span> worth the&nbsp;hype?</h1>
+  <p class="sub">{n} AI tools ranked by live X buzz. See what's actually hyped right now, and why.</p>
+  <label class="term"><span class="gt" aria-hidden="true">&gt;</span><input id="hero-q" data-track="hero:search" type="search" autocomplete="off" placeholder={`type a tool… (${n})`} aria-label="Search AI tools"/></label>
+</section>
+<Feed tools={tools}/></Shell>
 </Base>
+<style>
+.hero{text-align:center;padding:3.5rem 1rem 2.5rem}
+.hero h1{font:800 clamp(2.1rem,6.2vw,4.25rem)/1.08 var(--display);letter-spacing:-.035em;margin:0;color:var(--ink)}
+.blank{display:inline-block;min-width:3.2ch;color:var(--accent-ink);border-bottom:.09em dashed var(--cyan);text-align:left;white-space:nowrap}
+.blank .w:empty::before{content:'\200b'}
+.cur{display:inline-block;width:.06em;height:.85em;margin-left:.04em;background:var(--cyan);vertical-align:-.05em;animation:bl 1s steps(1) infinite}
+@keyframes bl{50%{opacity:0}}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.sub{font:400 .875rem/1.5 var(--mono);color:var(--ink-2);margin:1.1rem auto 1.6rem;max-width:44rem}
+.term{display:flex;align-items:center;gap:.6rem;max-width:36rem;margin:0 auto;padding:.85rem 1rem;border:1px solid var(--line-strong);border-radius:10px;background:var(--surface);cursor:text}
+.term:focus-within{border-color:var(--cyan);box-shadow:0 0 0 3px color-mix(in srgb,var(--cyan) 20%,transparent)}
+.gt{font:700 1rem var(--mono);color:var(--accent-ink)}
+.term input{flex:1;min-width:0;border:0;outline:0;background:transparent;font:400 .9375rem var(--mono);color:var(--ink)}
+.term input::placeholder{color:var(--ink-3)}
+@media (prefers-reduced-motion:reduce){.cur{animation:none}}
+@media (max-width:600px){.hero{padding:2.25rem .25rem 1.75rem}.sub{font-size:.8rem}}
+</style>
+<script>
+const el = document.getElementById('hero-word')!; const w = el.querySelector('.w')!;
+const words: string[] = JSON.parse(el.dataset.words || '[]');
+if (matchMedia('(prefers-reduced-motion: reduce)').matches || !words.length) { w.textContent = words[0] || '___'; }
+else { let i = 0, j = 0, del = false; const tick = () => { const s = words[i]; j += del ? -1 : 1; w.textContent = s.slice(0, j);
+  let d = del ? 45 : 95; if (!del && j === s.length) { del = true; d = 1700; } else if (del && j === 0) { del = false; i = (i + 1) % words.length; d = 350; }
+  setTimeout(tick, d); }; tick(); }
+const hq = document.getElementById('hero-q') as HTMLInputElement;
+const filt = () => { const v = hq.value.toLowerCase().trim(); document.querySelectorAll<HTMLElement>('.post').forEach((p) => { p.style.display = (p.dataset.search || '').includes(v) ? '' : 'none'; }); };
+hq.addEventListener('input', filt);
+hq.addEventListener('keydown', (e) => { if (e.key !== 'Enter') return; const v = hq.value.toLowerCase().trim(); if (!v) return;
+  const posts = [...document.querySelectorAll<HTMLElement>('.post')];
+  const hit = posts.find((p) => p.querySelector('h3 a')?.textContent?.toLowerCase().trim() === v) || posts.find((p) => p.style.display !== 'none');
+  if (hit) location.href = '/tools/' + hit.dataset.slug; });
+</script>

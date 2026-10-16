@@ -15,3 +15,14 @@
 
 ## 3. Excluding our own traffic
 - Our scripts must send `User-Agent: toolhype-scan/1.0` (or append `?scan=1` to /go links). `/go` and `/api/e` skip `toolhype-scan`, bare `node`, curl/python/headless and other bots. The client script also skips `navigator.webdriver` (automated browsers).
+
+## Tool submissions (/submit)
+Form posts to `functions/api/submit.ts` → private D1 `toolhype-clicks`, table `submissions`
+(id, ts UTC, name, url, pitch, email, x_handle, status default 'new', country, ip_hash = daily-salted hash, no raw IP).
+Spam guards: honeypot `website`, Origin check, length limits, URL/email/handle validation, 5 per IP-hash per hour.
+
+List: `node scripts/submissions-report.mjs [new]` or
+```sql
+SELECT id, ts, name, url, email, x_handle, status, country, pitch FROM submissions ORDER BY ts DESC;
+```
+Mark reviewed: `UPDATE submissions SET status='approved' WHERE id=?;` (or 'rejected').

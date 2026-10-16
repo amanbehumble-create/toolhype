@@ -1,9 +1,9 @@
 ---
 import Base from '../layouts/Base.astro'; import Shell from '../components/Shell.astro'; import Feed from '../components/Feed.astro';
-import { getTools, hot, SITE } from '../lib/data'; import { listLd } from '../lib/ld';
+import { getTools, hot, SITE } from '../lib/data'; import { listLd } from '../lib/ld'; import { topTools } from '../lib/top';
 const tools = [...getTools()].sort((a, b) => hot(0, b.buzz.score, b.addedAt) - hot(0, a.buzz.score, a.addedAt));
 const n = tools.length;
-const names = [...tools].sort((a, b) => (b.buzz.score ?? 0) - (a.buzz.score ?? 0)).slice(0, 8).map((t) => t.name);
+const top = topTools(5); const names = top.map((t) => t.name);
 ---
 <Base jsonld={[listLd('Top AI tools on toolhype', tools), { '@context': 'https://schema.org', '@type': 'WebSite', name: SITE.name, url: Astro.site?.href }]}>
 <Shell active="home">
@@ -11,6 +11,11 @@ const names = [...tools].sort((a, b) => (b.buzz.score ?? 0) - (a.buzz.score ?? 0
   <h1>Is <span class="blank" id="hero-word" data-words={JSON.stringify(names)} aria-hidden="true"><span class="w"></span><span class="cur"></span></span><span class="sr">an AI tool</span> worth the&nbsp;hype?</h1>
   <p class="sub">{n} AI tools ranked by live X buzz. See what's actually hyped right now, and why.</p>
   <label class="term"><span class="gt" aria-hidden="true">&gt;</span><input id="hero-q" data-track="hero:search" type="search" autocomplete="off" placeholder={`type a tool… (${n})`} aria-label="Search AI tools"/></label>
+  <div class="band" data-track-zone="hero-counter">
+    <div class="tick" aria-hidden="true"><div class="tk" id="tk">{[0,1].map(() => <span>{top.map((t) => <>{t.name.toUpperCase()} <b>{t.score}</b> · </>)}</span>)}</div></div>
+    <div class="ctr"><span class="clab">people checked<br/>the hype</span><span class="odo" id="odo" role="img" aria-label="visitor count loading"><span class="dg">0</span></span>
+    <button class="qm" type="button" data-track="hero:counter-info" aria-label="About this number">?<span class="tip" role="tooltip">Real visitors, counted by Cloudflare Web Analytics, bots excluded</span></button></div>
+  </div>
 </section>
 <Feed tools={tools}/></Shell>
 </Base>
@@ -28,16 +33,46 @@ const names = [...tools].sort((a, b) => (b.buzz.score ?? 0) - (a.buzz.score ?? 0
 .gt{font:700 1rem var(--mono);color:var(--accent-ink)}
 .term input{flex:1;min-width:0;border:0;outline:0;background:transparent;font:400 .9375rem var(--mono);color:var(--ink)}
 .term input::placeholder{color:var(--ink-3)}
-@media (prefers-reduced-motion:reduce){.cur{animation:none}}
-@media (max-width:600px){.hero{padding:2.25rem .25rem 1.75rem}.sub{font-size:.8rem}}
+.band{margin:2rem -1rem 0;border-top:1px solid var(--cyan);border-bottom:1px solid var(--cyan);background:color-mix(in srgb,var(--cyan) 6%,var(--page));overflow:hidden}
+.tick{overflow:hidden;white-space:nowrap;padding:.45rem 0 0;mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.tk{display:inline-flex;animation:mq 28s linear infinite;font:500 .7rem var(--mono);letter-spacing:.06em;color:var(--ink-3)}.tk span{padding-right:.4rem}.tk b{color:var(--accent-ink);font-weight:600}
+@keyframes mq{to{transform:translateX(-50%)}}
+.ctr{display:flex;align-items:center;justify-content:center;gap:.9rem;padding:.7rem 1rem 1rem}
+.clab{font:500 .72rem/1.35 var(--mono);color:var(--ink-2);text-align:right}
+.odo{display:inline-flex;gap:.3rem;align-items:center}
+.dg{display:inline-block;width:2.4rem;height:3.1rem;border:1px solid var(--line-strong);border-radius:8px;background:var(--surface);overflow:hidden;font:700 2rem/3.1rem var(--mono);color:var(--accent-ink);text-align:center;box-shadow:inset 0 -1.55rem 0 color-mix(in srgb,var(--ink) 3%,transparent)}
+.dg.sep{width:auto;border:0;background:none;box-shadow:none;color:var(--ink-3)}
+.dg .st{display:flex;flex-direction:column;transition:transform .9s cubic-bezier(.2,.8,.2,1)}
+.qm{position:relative;width:1.4rem;height:1.4rem;border-radius:50%;border:1px solid var(--line-strong);background:var(--surface);font:600 .7rem var(--mono);color:var(--ink-2);cursor:help}
+.tip{display:none;position:absolute;bottom:130%;right:-.5rem;width:13rem;padding:.5rem .6rem;border-radius:8px;background:var(--ink);color:var(--page);font:400 .72rem/1.4 var(--sans);text-align:left;z-index:5}
+.qm:hover .tip,.qm:focus .tip{display:block}
+@media (prefers-reduced-motion:reduce){.cur,.tk{animation:none}.dg .st{transition:none}}
+
+@media (max-width:600px){.hero{padding:2.25rem .25rem 1.75rem}.sub{font-size:.8rem}.band{margin:1.5rem -.25rem 0}.dg{width:1.9rem;height:2.6rem;font-size:1.6rem;line-height:2.6rem}.ctr{gap:.6rem}.clab{font-size:.65rem}}
 </style>
 <script>
+const RM = matchMedia('(prefers-reduced-motion: reduce)').matches;
 const el = document.getElementById('hero-word')!; const w = el.querySelector('.w')!;
-const words: string[] = JSON.parse(el.dataset.words || '[]');
-if (matchMedia('(prefers-reduced-motion: reduce)').matches || !words.length) { w.textContent = words[0] || '___'; }
-else { let i = 0, j = 0, del = false; const tick = () => { const s = words[i]; j += del ? -1 : 1; w.textContent = s.slice(0, j);
-  let d = del ? 45 : 95; if (!del && j === s.length) { del = true; d = 1700; } else if (del && j === 0) { del = false; i = (i + 1) % words.length; d = 350; }
+let words: string[] = JSON.parse(el.dataset.words || '[]');
+fetch('/top.json', { cache: 'no-store' }).then((r) => r.json()).then((j) => { const n = (j?.top || []).map((t: any) => t.name).filter(Boolean); if (n.length) words = n; if (RM) w.textContent = words[0]; }).catch(() => {});
+if (RM || !words.length) { w.textContent = words[0] || '___'; }
+else { let i = 0, j = 0, del = false; const tick = () => { const s = words[i % words.length]; j += del ? -1 : 1; w.textContent = s.slice(0, j);
+  let d = del ? 45 : 95; if (!del && j >= s.length) { del = true; d = 1700; } else if (del && j <= 0) { del = false; j = 0; i = (i + 1) % words.length; d = 350; }
   setTimeout(tick, d); }; tick(); }
+// visitor odometer: shows only the real number from /api/visitors
+const odo = document.getElementById('odo')!; const H = () => (odo.querySelector('.dg:not(.sep)') as HTMLElement)?.offsetHeight || 50;
+function render(n: number) {
+  const s = n.toLocaleString('en-US'); const ch = [...s];
+  if (odo.children.length !== ch.length) { odo.innerHTML = ch.map((c) => /\d/.test(c) ? '<span class="dg"><span class="st">' + '0123456789'.split('').map((d) => '<span>' + d + '</span>').join('') + '</span></span>' : '<span class="dg sep">' + c + '</span>').join(''); void odo.offsetHeight; }
+  const h = H(); [...odo.children].forEach((c, k) => { const st = c.querySelector('.st') as HTMLElement | null; if (st) st.style.transform = 'translateY(-' + (+ch[k] * h) + 'px)'; });
+  odo.setAttribute('aria-label', s + ' people checked the hype');
+}
+let shown = -1;
+async function poll() { try { const j = await (await fetch('/api/visitors', { cache: 'no-store' })).json(); if (typeof j.total !== 'number') return;
+  if (j.source !== 'cloudflare-web-analytics') { const t = document.querySelector('.tip'); if (t) t.textContent = 'Real visitors (unique per day), counted by our own cookie-free analytics, bots excluded'; }
+  if (shown < 0 && !RM) { render(0); requestAnimationFrame(() => setTimeout(() => render(j.total), 60)); } else if (j.total !== shown) render(j.total);
+  shown = j.total; } catch {} }
+poll(); setInterval(() => { if (!document.hidden) poll(); }, 60000);
 const hq = document.getElementById('hero-q') as HTMLInputElement;
 const filt = () => { const v = hq.value.toLowerCase().trim(); document.querySelectorAll<HTMLElement>('.post').forEach((p) => { p.style.display = (p.dataset.search || '').includes(v) ? '' : 'none'; }); };
 hq.addEventListener('input', filt);

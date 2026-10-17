@@ -1,5 +1,283 @@
 [
   {
+    "slug": "gemini-4-argon",
+    "name": "Gemini 4 Argon",
+    "url": "https://deepmind.google/models/gemini/",
+    "affiliateUrl": null,
+    "category": "chat",
+    "useCases": [
+      "chat",
+      "coding"
+    ],
+    "pricing": "paid",
+    "verdict": "Google DeepMind's frontier model for hard science, coding and long-horizon work, available to Google AI Pro and Ultra subscribers.",
+    "useThisIf": "you pay for Google AI Pro or Ultra and want the newest Gemini for long tasks.",
+    "alternatives": [
+      "gemini",
+      "claude"
+    ],
+    "source": "hackernews",
+    "addedAt": "2026-10-17",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/gemini-4-argon.png"
+  },
+  {
+    "slug": "muse-wonder",
+    "name": "Muse Wonder",
+    "url": "https://research.meta.ai/blog/muse-wonder",
+    "affiliateUrl": null,
+    "category": "chat",
+    "useCases": [
+      "chat",
+      "agents"
+    ],
+    "pricing": "paid",
+    "verdict": "Meta's frontier model for personal and professional agents, with Active Memory and Active Focus, on the Meta Model API and Muse Code.",
+    "useThisIf": "you want Meta's newest agent model rather than the open-weight Muse Spark release.",
+    "alternatives": [
+      "muse-spark",
+      "claude"
+    ],
+    "source": "hackernews",
+    "addedAt": "2026-10-17",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/muse-wonder.png"
+  },
+  {
+    "slug": "glm-legal",
+    "name": "GLM-Legal",
+    "url": "https://z.ai/blog/glm-legal",
+    "affiliateUrl": null,
+    "category": "productivity",
+    "useCases": [
+      "productivity",
+      "agents"
+    ],
+    "pricing": "paid",
+    "verdict": "Z.ai model for agentic legal work: contract review, evidence analysis and compliance drafting.",
+    "useThisIf": "you want a model aimed at legal work product instead of a general chatbot.",
+    "alternatives": [
+      "claude"
+    ],
+    "source": "hackernews",
+    "addedAt": "2026-10-17",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/glm-legal.png"
+  },
+  {
+    "slug": "artcraft",
+    "name": "ArtCraft",
+    "url": "https://getartcraft.com",
+    "affiliateUrl": null,
+    "category": "design",
+    "useCases": [
+      "design",
+      "video"
+    ],
+    "pricing": "open-source",
+    "verdict": "Open-source artist studio: compose the shot yourself, then let the model render it. No subscription.",
+    "useThisIf": "you want direct control over a scene instead of hoping a prompt lands.",
+    "alternatives": [
+      "krea",
+      "midjourney"
+    ],
+    "source": "github",
+    "addedAt": "2026-10-17",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/artcraft.png"
+  },
+  {
+    "slug": "engineer-skills",
+    "name": "Skills for Real Engineers",
+    "url": "https://www.aihero.dev/skills",
+    "affiliateUrl": null,
+    "category": "coding",
+    "useCases": [
+      "coding",
+      "agents"
+    ],
+    "pricing": "open-source",
+    "verdict": "Small, composable agent skills for planning, specs, tests and shipping. Works with any model.",
+    "useThisIf": "you want a lightweight engineering workflow in your coding agent without a heavy process framework.",
+    "alternatives": [
+      "claude-code",
+      "codex"
+    ],
+    "source": "github",
+    "addedAt": "2026-10-17",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/engineer-skills.png"
+  },
+  {
+    "slug": "diagram-design",
+    "name": "Diagram Design",
+    "url": "https://diagramdesign.dev",
+    "affiliateUrl": null,
+    "category": "design",
+    "useCases": [
+      "design",
+      "coding"
+    ],
+    "pricing": "open-source",
+    "verdict": "Agent skill that draws 44 editorial diagram types as self-contained HTML and SVG, matched to your site's brand.",
+    "useThisIf": "your coding agent keeps producing generic box diagrams.",
+    "alternatives": [
+      "figma"
+    ],
+    "source": "github",
+    "addedAt": "2026-10-17",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/diagram-design.png"
+  },
+  {
+    "slug": "hyperframes",
+    "name": "Hyperframes",
+    "url": "https://www.hyperframes.dev",
+    "affiliateUrl": null,
+    "category": "video",
+    "useCases": [
+      "video",
+      "coding"
+    ],
+    "pricing": "open-source",
+    "verdict": "Open-source framework that turns HTML, CSS and animations into deterministic MP4 video, built for coding agents.",
+    "useThisIf": "you want an agent to render video from HTML instead of a timeline editor.",
+    "alternatives": [
+      "heygen",
+      "runway"
+    ],
+    "source": "github",
+    "addedAt": "2026-10-17",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/hyperframes.png"
+  },
+  {
+    "slug": "context-mode",
+    "name": "Context Mode",
+    "url": "https://context-mode.com",
+    "affiliateUrl": null,
+    "category": "coding",
+    "useCases": [
+      "coding",
+      "agents"
+    ],
+    "pricing": "freemium",
+    "verdict": "Sits between coding agents and the model: folds tool output, keeps session memory, and blocks commands by rules you set.",
+    "useThisIf": "Claude Code or Codex sessions burn tokens on logs, or you want a blocklist before tools run.",
+    "alternatives": [
+      "claude-code",
+      "codex"
+    ],
+    "source": "github",
+    "addedAt": "2026-10-17",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/context-mode.png"
+  },
+  {
+    "slug": "jockey",
+    "name": "Jockey",
+    "url": "https://www.twelvelabs.io/jockey",
+    "affiliateUrl": null,
+    "category": "video",
+    "useCases": [
+      "video",
+      "agents"
+    ],
+    "pricing": "freemium",
+    "verdict": "TwelveLabs video agent that searches a library by meaning and assembles clips, inside Claude, ChatGPT or the API.",
+    "useThisIf": "you have a large video archive and want to find moments or cut highlights by describing them.",
+    "alternatives": [
+      "opusclip",
+      "descript"
+    ],
+    "source": "producthunt",
+    "addedAt": "2026-10-17",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/jockey.png"
+  },
+  {
+    "slug": "harness",
+    "name": "Harness",
+    "url": "https://www.autonomous.ai/harness",
+    "affiliateUrl": null,
+    "category": "coding",
+    "useCases": [
+      "coding",
+      "agents"
+    ],
+    "pricing": "open-source",
+    "verdict": "Open-source command center for the coding agents you already run, across every machine, with harnesses beyond code.",
+    "useThisIf": "you run Claude Code, Codex and other agents on more than one machine and want them in one place.",
+    "alternatives": [
+      "claude-code",
+      "codex"
+    ],
+    "source": "producthunt",
+    "addedAt": "2026-10-17",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/harness.png"
+  },
+  {
     "slug": "pancake",
     "name": "Pancake",
     "url": "https://pancake.ai",

@@ -8,7 +8,7 @@ const louder = s(a) != null && s(b) != null ? (s(a)! === s(b)! ? null : s(a)! > 
 const shared = a.useCases.filter((c) => b.useCases.includes(c));
 const free = (t: Tool) => t.pricing !== 'paid' && !t.pricing.startsWith('paid');
 const summary = `${a.name}: ${a.verdict} ${b.name}: ${b.verdict} Pick ${a.name} if ${a.useThisIf.replace(/\.$/, '')}; pick ${b.name} if ${b.useThisIf.replace(/\.$/, '')}.`;
-const buzzLine = louder ? `${louder.name} has more buzz on X right now (${s(a)}/100 vs ${s(b)}/100 as of ${hkt(BUZZ_AT)}).` : `Both have similar X buzz (${s(a) ?? 'pending'} vs ${s(b) ?? 'pending'}).`;
+const buzzLine = louder ? `${louder.name} has more buzz on X right now (${s(louder)}/100 vs ${s(louder === a ? b : a)}/100 as of ${hkt(BUZZ_AT)}).` : `Both have similar X buzz (${s(a) ?? 'pending'} vs ${s(b) ?? 'pending'}).`;
 const faq: [string, string][] = [
   [`What is the difference between ${a.name} and ${b.name}?`, summary],
   [`Is ${a.name} or ${b.name} free?`, `${a.name} is ${a.pricing}; ${b.name} is ${b.pricing}.` + (free(a) && free(b) ? ' Both can be started without paying.' : '')],

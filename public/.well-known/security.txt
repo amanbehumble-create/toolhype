@@ -1,0 +1,4 @@
+Contact: mailto:amanbehumble@gmail.com
+Expires: 2027-10-17T00:00:00.000Z
+Preferred-Languages: en
+Canonical: https://toolhype.dev/.well-known/security.txt

@@ -16,7 +16,7 @@ const age = (el: HTMLElement) => (Date.now() - new Date(el.dataset.added!).getTi
 const votes = (el: HTMLElement) => (hasVoted(el.dataset.slug!) ? 1 : 0);
 const buzz = (el: HTMLElement) => Number(el.dataset.buzz || 0);
 const score: Record<string, (el: HTMLElement) => number> = {
-  hot: (el) => Math.log10(Math.max(votes(el), 1)) * 2 + buzz(el) / 20 + 3 * Math.exp(-age(el) / 72),
+  hot: (el) => buzz(el),
   buzz: (el) => buzz(el) + (el.dataset.label === 'hype' ? 100 : 0),
   new: (el) => -age(el),
   top: (el) => votes(el) * 1000 + buzz(el),

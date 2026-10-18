@@ -7,7 +7,7 @@ const more = getAgents().filter((x) => x.slug !== a.slug && x.category === a.cat
 const ld = { '@context': 'https://schema.org', '@type': 'SoftwareApplication', name: a.name, description: a.description, applicationCategory: a.category, operatingSystem: 'Grok Bot', url: a.templateUrl, offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' }, ...(a.creatorHandle ? { author: { '@type': 'Person', name: a.creatorName || a.creatorHandle, url: `https://x.com/${a.creatorHandle}` } } : a.creatorName ? { author: { '@type': 'Person', name: a.creatorName } } : {}) };
 ---
 <Base title={`${a.name}: Grok Bot agent template`} description={a.description} jsonld={[crumbsLd([['Home', '/'], ['Grok Bot agents', '/grok-bot-agents'], [a.name, `/grok-bot-agents/${a.slug}`]]), ld]}>
-<Shell active="agents"><article class="card prose" data-track-zone="agent">
+<Shell active="grok-bot-agents"><article class="card prose" data-track-zone="agent">
 <p class="muted" style="font-size:.8rem;margin:0"><a href="/grok-bot-agents">← Grok Bot agents</a> · <span class="chip c">{a.category}</span></p>
 <h1 style="margin:.5rem 0">{a.name}</h1>
 <p>{a.description}</p>

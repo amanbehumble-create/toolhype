@@ -1,5 +1,88 @@
 [
   {
+    "slug": "orkas",
+    "name": "Orkas",
+    "url": "https://orkas.ai",
+    "affiliateUrl": null,
+    "category": "agents",
+    "useCases": [
+      "agents",
+      "productivity"
+    ],
+    "pricing": "open-source",
+    "verdict": "Open-source (MIT), local-first desktop AI workforce: a Commander agent coordinates specialist agents to turn a brief and your project files into research, documents and creative assets.",
+    "useThisIf": "you want a team of agents working on your own files from a desktop app, and you are fine paying for model usage on top of the free core.",
+    "alternatives": [
+      "manus",
+      "genspark",
+      "crewai"
+    ],
+    "source": "submission",
+    "addedAt": "2026-10-18",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/orkas.png"
+  },
+  {
+    "slug": "wemotion",
+    "name": "WeMotion",
+    "url": "https://wemotion.ai",
+    "affiliateUrl": null,
+    "category": "video",
+    "useCases": [
+      "video",
+      "design"
+    ],
+    "pricing": "free",
+    "verdict": "Free Mac app (Apple silicon) with an AI designer built on Claude that makes motion graphics from a prompt as editable layers and keyframes, exporting up to 4K at 60fps.",
+    "useThisIf": "you are on an Apple silicon Mac, have an Anthropic API key or a Claude plan, and want prompt-made motion graphics you can still edit by hand.",
+    "alternatives": [
+      "hyperframes",
+      "claude-motion",
+      "runway"
+    ],
+    "source": "submission",
+    "addedAt": "2026-10-18",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/wemotion.png"
+  },
+  {
+    "slug": "batchrate",
+    "name": "Batchrate",
+    "url": "https://batchrate.ai",
+    "affiliateUrl": null,
+    "category": "coding",
+    "useCases": [
+      "coding",
+      "agents"
+    ],
+    "pricing": "paid",
+    "verdict": "Batch API for open AI models that works like OpenAI's batch API: upload JSONL, get results within hours. Works with the OpenAI SDK and LiteLLM, from $0.05 per million input tokens, with 10M free tokens at signup.",
+    "useThisIf": "you run big jobs on open models that can wait a few hours for results, and want them cheaper than real-time calls.",
+    "alternatives": [],
+    "source": "submission",
+    "addedAt": "2026-10-18",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/batchrate.png"
+  },
+  {
     "slug": "gemini-4-argon",
     "name": "Gemini 4 Argon",
     "url": "https://deepmind.google/models/gemini/",

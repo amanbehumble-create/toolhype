@@ -1,4 +1,7 @@
 {
+ "orkas": "(\"orkas.ai\" OR url:orkas.ai OR \"Orkas-AI/Orkas\" OR (orkas (agent OR agents OR commander))) -is:retweet",
+ "wemotion": "(wemotion OR url:wemotion.ai) -is:retweet",
+ "batchrate": "(batchrate OR url:batchrate.ai OR @batchrate) -is:retweet",
  "gemini-4-argon": "(\"gemini 4 argon\" OR \"gemini-4-argon\") -is:retweet",
  "muse-wonder": "(\"muse wonder\") -is:retweet",
  "glm-legal": "(\"glm-legal\" OR \"glm legal\") -is:retweet",

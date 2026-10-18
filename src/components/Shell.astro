@@ -15,6 +15,7 @@ const stripe = import.meta.env.PUBLIC_STRIPE_FEATURED_LINK;
     <a href="/prompts" class:list={{ on: active === "prompts" }}>📋 Prompt Drop</a>
     <a href="/grok-bot-agents" class:list={{ on: active === "grok-bot-agents" }}>🤖 Grok Bot agents</a>
     <a href="/newsletter">✉️ Newsletter</a>
+    <a class="subcount-card" href="/submit" data-track="subcount:sidenav"><b data-subcount>—</b><span>projects submitted</span><em>Submit yours free →</em></a>
     <div class="label">Communities</div>
     {getCommunities().map((c) => <a href={`/c/${c.slug}`} class:list={{ on: active === c.slug }}>c/{c.slug}</a>)}
   </nav></aside>

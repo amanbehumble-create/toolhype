@@ -1,1 +1,1 @@
-{"version":1,"include":["/go/*","/api/e","/api/submit"],"exclude":[]}
+{"version":1,"include":["/go/*","/api/e","/api/submit","/api/submissions-count"],"exclude":[]}

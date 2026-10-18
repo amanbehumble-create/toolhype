@@ -1,4 +1,7 @@
 {
+ "orkas": "https://orkas.ai",
+ "wemotion": "https://wemotion.ai",
+ "batchrate": "https://batchrate.ai",
  "gemini-4-argon": "https://deepmind.google/models/gemini/",
  "muse-wonder": "https://research.meta.ai/blog/muse-wonder",
  "glm-legal": "https://z.ai/blog/glm-legal",

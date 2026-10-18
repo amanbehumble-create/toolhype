@@ -1,0 +1,24 @@
+---
+import Base from '../../layouts/Base.astro'; import Shell from '../../components/Shell.astro';
+import { getAgents, creatorLabel, type Agent } from '../../lib/agents'; import { crumbsLd } from '../../lib/ld';
+export function getStaticPaths() { return getAgents().map((a) => ({ params: { slug: a.slug }, props: { a } })); }
+const { a } = Astro.props as { a: Agent };
+const more = getAgents().filter((x) => x.slug !== a.slug && x.category === a.category).concat(getAgents().filter((x) => x.slug !== a.slug && x.category !== a.category)).slice(0, 4);
+const ld = { '@context': 'https://schema.org', '@type': 'SoftwareApplication', name: a.name, description: a.description, applicationCategory: a.category, operatingSystem: 'Grok Bot', url: a.templateUrl, offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' }, ...(a.creatorHandle ? { author: { '@type': 'Person', name: a.creatorName || a.creatorHandle, url: `https://x.com/${a.creatorHandle}` } } : a.creatorName ? { author: { '@type': 'Person', name: a.creatorName } } : {}) };
+---
+<Base title={`${a.name}: Grok Bot agent template`} description={a.description} jsonld={[crumbsLd([['Home', '/'], ['Grok Bot agents', '/grok-bot-agents'], [a.name, `/grok-bot-agents/${a.slug}`]]), ld]}>
+<Shell active="grok-bot-agents"><article class="card prose" data-track-zone="agent">
+<p class="muted" style="font-size:.8rem;margin:0"><a href="/grok-bot-agents">← Grok Bot agents</a> · <span class="chip c">{a.category}</span></p>
+<h1 style="margin:.5rem 0">{a.name}</h1>
+<p>{a.description}</p>
+<p><a class="btn primary" href={a.templateUrl} target="_blank" rel="noopener" data-track={`agent:add:${a.slug}`}>Add to Grok Bot ↗</a></p>
+<ul>
+  <li>Creator: {a.creatorHandle ? <a href={`https://x.com/${a.creatorHandle}`} target="_blank" rel="noopener">@{a.creatorHandle}</a> : creatorLabel(a)}{a.creatorHandle && a.creatorName ? ` (${a.creatorName})` : ''}</li>
+  {a.sourcePostUrl && <li>Original post: <a href={a.sourcePostUrl} target="_blank" rel="noopener">view on X</a></li>}
+  {a.traction && <li>Traction: {a.traction.likes} likes, {a.traction.bookmarks} bookmarks on the original post (checked {a.traction.checkedAt})</li>}
+  <li>Added to toolhype: {a.addedAt}</li>
+</ul>
+<p class="muted" style="font-size:.8rem">Templates are made by their creators, not by toolhype. Review what an agent can access before you add it.</p>
+</article>
+{more.length > 0 && <div class="card" style="margin-top:1rem"><h3>More Grok Bot agents</h3>{more.map((m) => <p style="margin:.3rem 0"><a href={`/grok-bot-agents/${m.slug}`}>{m.name}</a> <span class="muted" style="font-size:.8rem">· {m.category}</span></p>)}</div>}
+</Shell></Base>

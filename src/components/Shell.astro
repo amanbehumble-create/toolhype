@@ -13,6 +13,7 @@ const stripe = import.meta.env.PUBLIC_STRIPE_FEATURED_LINK;
     <a href="/new" class:list={{ on: active === 'new' }}>✨ New this week</a>
     <a href="/buzz" class:list={{ on: active === "buzz" }}>🔥 X Buzz Score</a>
     <a href="/prompts" class:list={{ on: active === "prompts" }}>📋 Prompt Drop</a>
+    <a href="/grok-bot-agents" class:list={{ on: active === "grok-bot-agents" }}>🤖 Grok Bot agents</a>
     <a href="/newsletter">✉️ Newsletter</a>
     <div class="label">Communities</div>
     {getCommunities().map((c) => <a href={`/c/${c.slug}`} class:list={{ on: active === c.slug }}>c/{c.slug}</a>)}

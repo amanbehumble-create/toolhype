@@ -44,5 +44,5 @@ q.addEventListener('keydown',e=>{if(e.key==='Enter'&&!document.querySelector('.p
 document.addEventListener('click',ev=>{const t=ev.target.closest&&ev.target.closest('[data-track],a,button');if(!t||t.tagName==='FORM')return;if(t.closest('form[data-track]')&&t.tagName==='BUTTON')return;let e=t.dataset.track;if(!e){const z=t.closest('[data-track-zone]');const h=t.getAttribute('href')||'';e=(z?z.dataset.trackZone:'body')+':'+(h.startsWith('/go/')?'visit':h?h.split('?')[0].slice(0,60):t.tagName.toLowerCase())}s('click',e,t.getAttribute('aria-label')||t.textContent)},{capture:true,passive:true});
 document.addEventListener('submit',ev=>{const f=ev.target;s('submit',f.dataset.track||'form','')},{capture:true});
 let st;document.addEventListener('input',ev=>{if(ev.target.id!=='q')return;clearTimeout(st);st=setTimeout(()=>{const v=ev.target.value;if(v.length>1)s('search','search',v)},1200)},{passive:true});})()</script>
-<script is:inline defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "f8769e39a55648cabd350783a6a24eea"}'></script>
+<script is:inline defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"f8769e39a55648cabd350783a6a24eea","version":"2024.6.1","send":{"to":"/cdn-cgi/rum"}}'></script>
 </body></html>

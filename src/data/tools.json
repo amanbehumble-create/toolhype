@@ -1,5 +1,283 @@
 [
   {
+    "slug": "orca",
+    "name": "Orca",
+    "url": "https://www.onorca.dev",
+    "affiliateUrl": null,
+    "category": "coding",
+    "useCases": [
+      "coding",
+      "agents"
+    ],
+    "pricing": "open-source",
+    "verdict": "Free, open-source (MIT) agent development environment from Stably: run Claude Code, Codex, OpenCode and other coding agents in parallel, each in its own git worktree, with terminals, diffs, an embedded browser and a CLI in one desktop app, plus iOS and Android companions. Nearly 98K GitHub stars, it was on GitHub's daily Trending list on Oct 19, 2026 (1,500+ stars in a day), and its latest release passed 1M downloads.",
+    "useThisIf": "you juggle several coding agents at once and want one app to fan a task out, compare the diffs and keep the best one, using your own agent subscriptions.",
+    "alternatives": [
+      "harness",
+      "cursor",
+      "claude-code"
+    ],
+    "source": "github",
+    "addedAt": "2026-10-19",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/orca.png"
+  },
+  {
+    "slug": "headroom",
+    "name": "Headroom",
+    "url": "https://www.headroomlabs.ai",
+    "affiliateUrl": null,
+    "category": "coding",
+    "useCases": [
+      "coding",
+      "agents"
+    ],
+    "pricing": "open-source",
+    "verdict": "Open-source (Apache 2.0) context compression layer for AI agents: it strips repeated boilerplate from tool outputs, logs, files, JSON and RAG chunks before they reach the model, claiming about 20% fewer tokens for coding agents and 60-95% fewer for JSON. Ships as a library, proxy and MCP server; 76K GitHub stars and on the daily Trending list Oct 19, 2026.",
+    "useThisIf": "your Claude Code or Codex sessions keep hitting limits or your API bill is mostly re-read logs and tool output, and you want a drop-in way to cut tokens.",
+    "alternatives": [
+      "context-mode",
+      "claude-code"
+    ],
+    "source": "github",
+    "addedAt": "2026-10-19",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/headroom.png"
+  },
+  {
+    "slug": "cli-anything",
+    "name": "CLI-Anything",
+    "url": "https://github.com/HKUDS/CLI-Anything",
+    "affiliateUrl": null,
+    "category": "agents",
+    "useCases": [
+      "agents",
+      "coding"
+    ],
+    "pricing": "open-source",
+    "verdict": "Open-source (Apache 2.0) project from HKU's Data Intelligence Lab that generates agent-native command-line interfaces for desktop software, codebases and web APIs (FreeCAD and many more), plus a CLI-Hub registry you install as an agent skill. 55K GitHub stars; a 550+ like X post this week showed Claude Code driving desktop apps through it.",
+    "useThisIf": "you want Claude Code, Codex or another skill-compatible agent to operate real desktop apps without screen-clicking computer-use.",
+    "alternatives": [
+      "claude-code",
+      "codex"
+    ],
+    "source": "github",
+    "addedAt": "2026-10-19",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/cli-anything.png"
+  },
+  {
+    "slug": "comfyui",
+    "name": "ComfyUI",
+    "url": "https://www.comfy.org",
+    "affiliateUrl": null,
+    "category": "design",
+    "useCases": [
+      "design",
+      "video"
+    ],
+    "pricing": "open-source",
+    "verdict": "The most popular open-source (GPL-3.0) node-graph app for running image, video, 3D and audio diffusion models locally, with 139K GitHub stars. It is back on GitHub's daily Trending list (Oct 19, 2026) after Comfy Agent landed, which builds workflows inside ComfyUI for you; there is also a paid Comfy Cloud if you have no GPU.",
+    "useThisIf": "you want full control over open image and video models on your own GPU, and you are willing to learn node workflows (or let Comfy Agent build them).",
+    "alternatives": [
+      "midjourney",
+      "krea",
+      "runway"
+    ],
+    "source": "github",
+    "addedAt": "2026-10-19",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/comfyui.png"
+  },
+  {
+    "slug": "beam-win",
+    "name": "Beam",
+    "url": "https://beam.win",
+    "affiliateUrl": null,
+    "category": "productivity",
+    "useCases": [
+      "productivity",
+      "coding"
+    ],
+    "pricing": "freemium",
+    "verdict": "Mac utility that brings windows from another Mac (say, a Mac mini running your agents and builds) onto the Mac in front of you, each as a real native window with its own Dock icon and Cmd-Tab entry, encrypted end to end. #1 Product of the Day on Product Hunt on Oct 19, 2026. The Macs you connect to are free; using it on your own Mac costs $7/month (20 free minutes a day).",
+    "useThisIf": "you keep Claude Code, Codex or long builds running on a Mac mini or Studio and want their terminal and browser windows on your laptop without a clunky full-screen share.",
+    "alternatives": [
+      "harness"
+    ],
+    "source": "producthunt",
+    "addedAt": "2026-10-19",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/beam-win.png"
+  },
+  {
+    "slug": "viktor",
+    "name": "Viktor",
+    "url": "https://viktor.com",
+    "affiliateUrl": null,
+    "category": "agents",
+    "useCases": [
+      "agents",
+      "productivity"
+    ],
+    "pricing": "freemium",
+    "verdict": "AI employee that lives in Slack and Microsoft Teams, connects to 9,800+ tools and runs tasks on its own, including scheduled automations and proactive suggestions based on how your team works. Its Product Hunt launch scored 700+ this week. Free to start with up to $100 in credits; the Team plan is $100/month.",
+    "useThisIf": "your team already lives in Slack or Teams and you want an agent that picks up reports, research and recurring ops work there instead of in yet another app.",
+    "alternatives": [
+      "manus",
+      "zapier",
+      "n8n"
+    ],
+    "source": "producthunt",
+    "addedAt": "2026-10-19",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/viktor.png"
+  },
+  {
+    "slug": "talanoa",
+    "name": "Talanoa",
+    "url": "https://talanoa.email",
+    "affiliateUrl": null,
+    "category": "productivity",
+    "useCases": [
+      "productivity"
+    ],
+    "pricing": "freemium",
+    "verdict": "Desktop email client for macOS, Windows and Linux that turns threads into chat-style bubbles (no quotes or signatures), turns emails into todos, and adds a built-in calendar plus private, on-device AI for search, summaries and drafts. Everything stays on your computer. It finished #5 for the week on Product Hunt (week of Oct 12, 2026). Free for one account; Pro adds more.",
+    "useThisIf": "you hate reading long email threads and want a local-first, chat-like inbox with AI that never sends your mail to the cloud.",
+    "alternatives": [
+      "inbox-zero"
+    ],
+    "source": "producthunt",
+    "addedAt": "2026-10-19",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/talanoa.png"
+  },
+  {
+    "slug": "fish-audio",
+    "name": "Fish Audio",
+    "url": "https://fish.audio",
+    "affiliateUrl": null,
+    "category": "audio",
+    "useCases": [
+      "audio",
+      "video"
+    ],
+    "pricing": "freemium",
+    "verdict": "AI text-to-speech and voice cloning platform; its new Drama 3 model (on Product Hunt Oct 16, 2026) is built for directable, emotionally controlled voice acting with tags like [whispering] or [laughing], and one X creator posted 9 minutes of narration made for about 20 cents. Free tier with 8,000 credits a month, paid plans and an API.",
+    "useThisIf": "you need expressive narration, character voices or voice clones for videos and audiobooks at a lower price than ElevenLabs.",
+    "alternatives": [
+      "elevenlabs",
+      "voicestudio"
+    ],
+    "source": "producthunt",
+    "addedAt": "2026-10-19",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/fish-audio.png"
+  },
+  {
+    "slug": "llmspeed",
+    "name": "Llmspeed",
+    "url": "https://llmspeed.dev",
+    "affiliateUrl": null,
+    "category": "chat",
+    "useCases": [
+      "chat",
+      "productivity"
+    ],
+    "pricing": "free",
+    "verdict": "Free, open-source (MIT) site that simulates how fast a local LLM will actually stream on specific hardware (RTX 3090/5090, Mac Studio, DGX Spark, Strix Halo and more), showing tokens per second and time to first token from real community benchmarks. It hit 300+ points on Hacker News as a Show HN this week.",
+    "useThisIf": "you are about to spend money on a GPU or a big-RAM Mac to run local models and want to feel the speed before you buy.",
+    "alternatives": [],
+    "source": "hackernews",
+    "addedAt": "2026-10-19",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/llmspeed.png"
+  },
+  {
+    "slug": "orke",
+    "name": "Orke",
+    "url": "https://orke.bomtobe.com/en/",
+    "affiliateUrl": null,
+    "category": "coding",
+    "useCases": [
+      "coding",
+      "agents"
+    ],
+    "pricing": "free",
+    "verdict": "Desktop workspace for Claude Code and Codex from Korean studio BOMTOBE: assign work in a terminal, then review the result in a linked web window and Git panel on the same screen, with an agent that can click through pages for you. Runs on Windows, macOS (Apple Silicon) and Linux servers, with iPhone and Android apps to check on sessions away from your desk. Shipping steadily since April 2026 (v3.4.10 on Oct 18).",
+    "useThisIf": "you run Claude Code or Codex on Windows or a home server and want terminal, browser preview and Git review in one window you can also pick up from your phone. Traction is still early, and you bring your own agent accounts.",
+    "alternatives": [
+      "orca",
+      "harness",
+      "claude-code"
+    ],
+    "source": "submission",
+    "addedAt": "2026-10-19",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/orke.png"
+  },
+  {
     "slug": "inbox-zero",
     "name": "Inbox Zero",
     "url": "https://www.getinboxzero.com",

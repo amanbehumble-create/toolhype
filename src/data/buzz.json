@@ -1,5 +1,5 @@
 {
- "computedAt": "2026-10-19T01:20:45.885Z",
+ "computedAt": "2026-10-19T15:15:21.723Z",
  "method": "v1",
  "tools": {
   "inbox-zero": {
@@ -4171,8 +4171,444 @@
     }
    ],
    "computedAt": "2026-10-19T01:20:45.885Z"
+  },
+  "orca": {
+   "status": "live",
+   "query": "(url:onorca.dev OR \"onorca.dev\" OR \"stablyai/orca\" OR (orca (\"claude code\" OR codex OR \"coding agents\" OR worktree OR worktrees))) -is:retweet",
+   "mentions24h": 141,
+   "mentions7d": 594,
+   "priorDailyAvg": 75.6,
+   "velocity": 1.87,
+   "daily": [
+    60,
+    49,
+    68,
+    86,
+    86,
+    104,
+    141
+   ],
+   "peakDay": 141,
+   "peakDaysAgo": 0,
+   "sample": {
+    "posts": 24,
+    "likes": 15,
+    "reposts": 0,
+    "replies": 24
+   },
+   "parts": {
+    "volume": 27.7,
+    "velocity": 11.3,
+    "engagement": 9
+   },
+   "score": 48,
+   "label": "rising",
+   "viral": false,
+   "topPosts": [],
+   "computedAt": "2026-10-19T15:15:21.723Z"
+  },
+  "headroom": {
+   "status": "live",
+   "query": "(url:headroomlabs.ai OR headroomlabs OR \"headroom-ai\" OR (headroom (tokens OR \"claude code\" OR codex OR compression OR compress))) -is:retweet",
+   "mentions24h": 49,
+   "mentions7d": 172,
+   "priorDailyAvg": 20.5,
+   "velocity": 2.39,
+   "daily": [
+    31,
+    23,
+    20,
+    19,
+    16,
+    14,
+    49
+   ],
+   "peakDay": 49,
+   "peakDaysAgo": 0,
+   "sample": {
+    "posts": 25,
+    "likes": 1460,
+    "reposts": 175,
+    "replies": 137
+   },
+   "parts": {
+    "volume": 22.4,
+    "velocity": 13.3,
+    "engagement": 16.8
+   },
+   "score": 53,
+   "label": "hype",
+   "viral": false,
+   "topPosts": [
+    {
+     "id": "2111544526267428913",
+     "url": "https://x.com/LearnWithBrij/status/2111544526267428913",
+     "author": "LearnWithBrij",
+     "text": "🚨 A Netflix engineer just open-sourced the fix for the most expensive problem in AI: wasted tokens\n\nIt's called Headroom, and it might be the smartest fix to high token usage\n\nYour agent reads a 10,000-token log file to",
+     "created_at": "2026-10-17T19:47:00.000Z",
+     "likes": 1077,
+     "reposts": 128,
+     "replies": 61,
+     "views": 102858,
+     "quotes": 10
+    },
+    {
+     "id": "2110852820253438394",
+     "url": "https://x.com/rvaniaaaa/status/2110852820253438394",
+     "author": "rvaniaaaa",
+     "text": "STOP BURNING YOUR OPUS 5.5 LIMIT FOR NOTHING\n\nthese 8 repos cut what Claude reads, writes and re-reads. copy the list before your next long session:\n\nheadroom: shrinks tool output, logs and files before they reach the mo",
+     "created_at": "2026-10-15T21:58:24.000Z",
+     "likes": 196,
+     "reposts": 21,
+     "replies": 19,
+     "views": 11009,
+     "quotes": 1
+    }
+   ],
+   "computedAt": "2026-10-19T15:15:21.723Z"
+  },
+  "cli-anything": {
+   "status": "live",
+   "query": "(\"cli-anything\" OR clianything OR url:clianything.cc) -is:retweet",
+   "mentions24h": 40,
+   "mentions7d": 252,
+   "priorDailyAvg": 35.4,
+   "velocity": 1.13,
+   "daily": [
+    5,
+    11,
+    65,
+    48,
+    35,
+    48,
+    40
+   ],
+   "peakDay": 65,
+   "peakDaysAgo": 4,
+   "sample": {
+    "posts": 24,
+    "likes": 588,
+    "reposts": 71,
+    "replies": 70
+   },
+   "parts": {
+    "volume": 24,
+    "velocity": 1.8,
+    "engagement": 14.9
+   },
+   "score": 41,
+   "label": "steady",
+   "viral": false,
+   "topPosts": [
+    {
+     "id": "2110645603029889500",
+     "url": "https://x.com/RoundtableSpace/status/2110645603029889500",
+     "author": "RoundtableSpace",
+     "text": "Claude Code can now use almost any app on your computer, not just your code.\n\nCLI-Anything wraps desktop software in a command line an AI agent can operate: GIMP, Blender, LibreOffice, Calibre and a growing list of commu",
+     "created_at": "2026-10-15T08:15:00.000Z",
+     "likes": 559,
+     "reposts": 67,
+     "replies": 55,
+     "views": 66984,
+     "quotes": 12
+    }
+   ],
+   "computedAt": "2026-10-19T15:15:21.723Z"
+  },
+  "comfyui": {
+   "status": "live",
+   "query": "(comfyui OR @ComfyUI OR url:comfy.org) -is:retweet",
+   "mentions24h": 704,
+   "mentions7d": 5267,
+   "priorDailyAvg": 761.1,
+   "velocity": 0.92,
+   "daily": [
+    801,
+    656,
+    593,
+    945,
+    782,
+    786,
+    704
+   ],
+   "peakDay": 945,
+   "peakDaysAgo": 3,
+   "sample": {
+    "posts": 25,
+    "likes": 211,
+    "reposts": 10,
+    "replies": 19
+   },
+   "parts": {
+    "volume": 37.2,
+    "velocity": 0,
+    "engagement": 12.3
+   },
+   "score": 50,
+   "label": "steady",
+   "viral": false,
+   "topPosts": [
+    {
+     "id": "2110459149918306751",
+     "url": "https://x.com/ComfyUI/status/2110459149918306751",
+     "author": "ComfyUI",
+     "text": "ComfyUI Templates Tutorial: Build Without Making a Workflow\n\nThere are 620+ tested workflows on https://t.co/5QZWofsmVs, plus a template browser built into the sidebar. \n\nThey aren’t demos. They’re building blocks.\n\nClic",
+     "created_at": "2026-10-14T19:54:06.000Z",
+     "likes": 191,
+     "reposts": 10,
+     "replies": 15,
+     "views": 12248,
+     "quotes": 5
+    }
+   ],
+   "computedAt": "2026-10-19T15:15:21.723Z"
+  },
+  "beam-win": {
+   "status": "live",
+   "query": "(url:beam.win OR \"beam.win\") -is:retweet",
+   "mentions24h": 10,
+   "mentions7d": 13,
+   "priorDailyAvg": 0.5,
+   "velocity": 10,
+   "daily": [
+    1,
+    1,
+    0,
+    1,
+    0,
+    0,
+    10
+   ],
+   "peakDay": 10,
+   "peakDaysAgo": 0,
+   "sample": {
+    "posts": 13,
+    "likes": 14,
+    "reposts": 3,
+    "replies": 6
+   },
+   "parts": {
+    "volume": 11.5,
+    "velocity": 13,
+    "engagement": 7.8
+   },
+   "score": 32,
+   "label": "rising",
+   "viral": false,
+   "topPosts": [],
+   "computedAt": "2026-10-19T15:15:21.723Z"
+  },
+  "viktor": {
+   "status": "live",
+   "query": "(url:viktor.com OR \"viktor.com\" OR (viktor (slack OR \"ai employee\" OR \"ai coworker\"))) -is:retweet",
+   "mentions24h": 5,
+   "mentions7d": 78,
+   "priorDailyAvg": 12.2,
+   "velocity": 0.41,
+   "daily": [
+    9,
+    12,
+    18,
+    23,
+    8,
+    3,
+    5
+   ],
+   "peakDay": 23,
+   "peakDaysAgo": 3,
+   "sample": {
+    "posts": 25,
+    "likes": 1816,
+    "reposts": 353,
+    "replies": 236
+   },
+   "parts": {
+    "volume": 19,
+    "velocity": 0,
+    "engagement": 17.6
+   },
+   "score": 37,
+   "label": "steady",
+   "viral": false,
+   "topPosts": [
+    {
+     "id": "2110778503461282061",
+     "url": "https://x.com/EnzoSanchezIA/status/2110778503461282061",
+     "author": "EnzoSanchezIA",
+     "text": "I didn't hire someone to review my brand deals. Viktor reviewed 3 of them in one pass and flagged 4 kinds of missing terms.\n\nRunning a creator agency shouldn’t mean hiring someone just to review brand deals.\n\nBut the mor",
+     "created_at": "2026-10-15T17:03:06.000Z",
+     "likes": 203,
+     "reposts": 50,
+     "replies": 22,
+     "views": 102857,
+     "quotes": 0
+    },
+    {
+     "id": "2110760266841620529",
+     "url": "https://x.com/base10_/status/2110760266841620529",
+     "author": "base10_",
+     "text": "Viktor turned 156 raw Google Ads cells across 12 campaigns into 8 decisions: 6 ready for a yes or no, 2 that needed more data. Nothing changed until we approved.\n\nWe work in marketing, using Google Ads data to help our t",
+     "created_at": "2026-10-15T15:50:38.000Z",
+     "likes": 156,
+     "reposts": 55,
+     "replies": 21,
+     "views": 94549,
+     "quotes": 0
+    },
+    {
+     "id": "2110779383468155380",
+     "url": "https://x.com/alexaiworks/status/2110779383468155380",
+     "author": "alexaiworks",
+     "text": "I didn't hire a content assistant. Viktor planned 7 days of X content from 6 ideas and drafted all 7 posts.\n\nI gave an AI employee the workload of a content strategist.\n\nAnd he organized an entire week of X content from ",
+     "created_at": "2026-10-15T17:06:36.000Z",
+     "likes": 171,
+     "reposts": 44,
+     "replies": 17,
+     "views": 87090,
+     "quotes": 0
+    }
+   ],
+   "computedAt": "2026-10-19T15:15:21.723Z"
+  },
+  "talanoa": {
+   "status": "live",
+   "query": "(url:talanoa.email OR \"talanoa.email\" OR (talanoa (email OR inbox))) -is:retweet",
+   "mentions24h": 1,
+   "mentions7d": 21,
+   "priorDailyAvg": 3.3,
+   "velocity": 0.3,
+   "daily": [
+    1,
+    1,
+    6,
+    8,
+    4,
+    0,
+    1
+   ],
+   "peakDay": 8,
+   "peakDaysAgo": 3,
+   "sample": {
+    "posts": 20,
+    "likes": 40,
+    "reposts": 3,
+    "replies": 38
+   },
+   "parts": {
+    "volume": 13.4,
+    "velocity": 0,
+    "engagement": 10.5
+   },
+   "score": 24,
+   "label": "quiet",
+   "viral": false,
+   "topPosts": [],
+   "computedAt": "2026-10-19T15:15:21.723Z"
+  },
+  "fish-audio": {
+   "status": "live",
+   "query": "(\"fish audio\" OR fishaudio OR @FishAudio OR url:fish.audio) -is:retweet",
+   "mentions24h": 135,
+   "mentions7d": 12450,
+   "priorDailyAvg": 2054.1,
+   "velocity": 0.07,
+   "daily": [
+    133,
+    8416,
+    2207,
+    878,
+    514,
+    167,
+    135
+   ],
+   "peakDay": 8416,
+   "peakDaysAgo": 5,
+   "sample": {
+    "posts": 25,
+    "likes": 26,
+    "reposts": 3,
+    "replies": 12
+   },
+   "parts": {
+    "volume": 41,
+    "velocity": 0,
+    "engagement": 8.9
+   },
+   "score": 50,
+   "label": "steady",
+   "viral": false,
+   "topPosts": [],
+   "computedAt": "2026-10-19T15:15:21.723Z"
+  },
+  "llmspeed": {
+   "status": "live",
+   "query": "(llmspeed OR url:llmspeed.dev) -is:retweet",
+   "mentions24h": 20,
+   "mentions7d": 96,
+   "priorDailyAvg": 12.7,
+   "velocity": 1.58,
+   "daily": [
+    0,
+    0,
+    0,
+    0,
+    39,
+    37,
+    20
+   ],
+   "peakDay": 39,
+   "peakDaysAgo": 2,
+   "sample": {
+    "posts": 25,
+    "likes": 6,
+    "reposts": 3,
+    "replies": 14
+   },
+   "parts": {
+    "volume": 19.9,
+    "velocity": 5.5,
+    "engagement": 8.2
+   },
+   "score": 34,
+   "label": "rising",
+   "viral": false,
+   "topPosts": [],
+   "computedAt": "2026-10-19T15:15:21.723Z"
+  },
+  "orke": {
+   "status": "live",
+   "query": "(\"orke\" (claude OR codex OR agent OR agents OR workspace) OR url:orke.bomtobe.com) -is:retweet",
+   "mentions24h": 41,
+   "mentions7d": 166,
+   "priorDailyAvg": 20.9,
+   "velocity": 1.97,
+   "daily": [
+    0,
+    8,
+    36,
+    24,
+    1,
+    56,
+    41
+   ],
+   "peakDay": 56,
+   "peakDaysAgo": 1,
+   "sample": {
+    "posts": 25,
+    "likes": 2,
+    "reposts": 0,
+    "replies": 2
+   },
+   "parts": {
+    "volume": 22.2,
+    "velocity": 9.9,
+    "engagement": 4.2
+   },
+   "score": 36,
+   "label": "rising",
+   "viral": false,
+   "topPosts": [],
+   "computedAt": "2026-10-19T15:15:21.723Z"
   }
- },
- "topPostsRule": "Top 3 original X posts that mention the tool with >=100 likes or >=10K views, ranked by likes + 3*reposts + 2*replies + 2*quotes + views/100. Hidden if none qualify.",
- "topPostsUpdatedAt": "2026-10-19T01:21:19.065Z"
+ }
 }

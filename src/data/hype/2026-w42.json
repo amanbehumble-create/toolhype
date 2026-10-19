@@ -1,0 +1,116 @@
+{
+ "week": "2026-w42",
+ "computedAt": "2026-10-16T18:04:46.826Z",
+ "rows": [
+  {
+   "slug": "kling-ai",
+   "name": "Kling AI",
+   "score": 78,
+   "mentions7d": 5877,
+   "mentions24h": 2650,
+   "velocity": 4.92,
+   "label": "hype",
+   "verdict": "Kuaishou's text- and image-to-video generator, known for realistic motion and physics, with lip-sync, effects and image generation.",
+   "why": "5,877 X posts in 7 days (2650 in the last 24h, 4.92x velocity); top post by @AiwithAmeliaa got 164 likes."
+  },
+  {
+   "slug": "muse-spark",
+   "name": "Muse Spark Open",
+   "score": 76,
+   "mentions7d": 4080,
+   "mentions24h": 2570,
+   "velocity": 10.21,
+   "label": "hype",
+   "verdict": "Meta open-weight release of its Muse Spark model: an 816B mixture-of-experts with 42B active params, billed as the most capable US open-weight model to date.",
+   "why": "4,080 X posts in 7 days (2570 in the last 24h, 10.21x velocity); top post by @AIatMeta got 3,385 likes."
+  },
+  {
+   "slug": "1in8b",
+   "name": "80億分の1 (1 in 8 Billion)",
+   "score": 75,
+   "mentions7d": 95029,
+   "mentions24h": 19035,
+   "velocity": 1.5,
+   "label": "rising",
+   "verdict": "A free browser life simulator. You are born as a random baby somewhere on Earth and live one whole life (30-90 min), driven by real UN, World Bank and WHO stats for 172 countries.",
+   "why": "95,029 X posts in 7 days (19035 in the last 24h, 1.5x velocity); top post by @YOSHITAKEapp got 1,563 likes."
+  },
+  {
+   "slug": "nemotron",
+   "name": "NVIDIA Nemotron 3.5",
+   "score": 74,
+   "mentions7d": 2726,
+   "mentions24h": 1805,
+   "velocity": 11.76,
+   "label": "hype",
+   "verdict": "NVIDIA open model family. The new 3.5 wave adds Nemotron 3.5 Super VL (120B MoE, 12B active, image + video input) and Bolt models built for local agents.",
+   "why": "2,726 X posts in 7 days (1805 in the last 24h, 11.76x velocity); top post by @MiaAI_lab got 384 likes."
+  },
+  {
+   "slug": "opencode",
+   "name": "OpenCode 2.0",
+   "score": 71,
+   "mentions7d": 12574,
+   "mentions24h": 3706,
+   "velocity": 2.51,
+   "label": "hype",
+   "verdict": "Open-source, model-agnostic terminal coding agent with a native TUI and multi-session support.",
+   "why": "12,574 X posts in 7 days (3706 in the last 24h, 2.51x velocity); top post by @sekizonyedi_ got 155 likes."
+  },
+  {
+   "slug": "figma",
+   "name": "Figma",
+   "score": 70,
+   "mentions7d": 13089,
+   "mentions24h": 3628,
+   "velocity": 2.3,
+   "label": "hype",
+   "verdict": "Collaborative design standard with built-in AI features.",
+   "why": "13,089 X posts in 7 days (3628 in the last 24h, 2.3x velocity); top post by @cnyzgkc got 228 likes."
+  },
+  {
+   "slug": "grok",
+   "name": "Grok",
+   "score": 69,
+   "mentions7d": 321870,
+   "mentions24h": 46432,
+   "velocity": 1.01,
+   "label": "hype",
+   "verdict": "xAI's assistant with native, real-time access to X.",
+   "why": "321,870 X posts in 7 days (46432 in the last 24h, 1.01x velocity); top post by @elonmusk got 33,467 likes."
+  },
+  {
+   "slug": "claude-code",
+   "name": "Claude Code",
+   "score": 67,
+   "mentions7d": 64690,
+   "mentions24h": 11576,
+   "velocity": 1.31,
+   "label": "rising",
+   "verdict": "Terminal-based coding agent that edits and runs your repo.",
+   "why": "64,690 X posts in 7 days (11576 in the last 24h, 1.31x velocity); top post by @Abdullah_Ops1 got 390 likes."
+  },
+  {
+   "slug": "krea",
+   "name": "Krea 3",
+   "score": 67,
+   "mentions7d": 3361,
+   "mentions24h": 1024,
+   "velocity": 2.63,
+   "label": "hype",
+   "verdict": "Krea new image model, pitched as 4x faster than Nano Banana Pro. Built for production image editing that keeps your product intact, priced for volume.",
+   "why": "3,361 X posts in 7 days (1024 in the last 24h, 2.63x velocity); top post by @WolfRiccardo got 221 likes."
+  },
+  {
+   "slug": "canva",
+   "name": "Canva",
+   "score": 64,
+   "mentions7d": 75779,
+   "mentions24h": 11686,
+   "velocity": 1.09,
+   "label": "steady",
+   "verdict": "Design for everyone with Magic Studio AI features.",
+   "why": "75,779 X posts in 7 days (11686 in the last 24h, 1.09x velocity); top post by @canva got 96 likes."
+  }
+ ]
+}

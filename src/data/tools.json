@@ -1,5 +1,146 @@
 [
   {
+    "slug": "inbox-zero",
+    "name": "Inbox Zero",
+    "url": "https://www.getinboxzero.com",
+    "affiliateUrl": null,
+    "category": "productivity",
+    "useCases": [
+      "productivity",
+      "agents"
+    ],
+    "pricing": "freemium",
+    "verdict": "Open-source email app and AI assistant. Its new Inbox Zero Mail client (launched Oct 15, 2026, and #1 Product of the Day on Product Hunt on Oct 18) pitches itself as a free Superhuman alternative: a fast, keyboard-first unified inbox for Gmail and Outlook with split inboxes, AI sorting, drafts in your voice and bulk unsubscribe.",
+    "useThisIf": "your inbox is out of control and you want Superhuman-style speed plus AI triage without the Superhuman price, with the option to self-host the open-source code.",
+    "alternatives": [
+      "notion",
+      "zapier"
+    ],
+    "source": "producthunt",
+    "addedAt": "2026-10-19",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/inbox-zero.png"
+  },
+  {
+    "slug": "voicestudio",
+    "name": "VoiceStudio",
+    "url": "https://voicestudio.sh",
+    "affiliateUrl": null,
+    "category": "audio",
+    "useCases": [
+      "audio",
+      "video"
+    ],
+    "pricing": "open-source",
+    "verdict": "Free, fully local, open-source (AGPL-3.0) alternative to ElevenLabs: voice cloning, voice design, video dubbing, dictation, transcription and audiobook creation in up to 646 languages, with no account. It hit GitHub's daily Trending list on Oct 19, 2026 with 2,000+ new stars in a day (75K+ total).",
+    "useThisIf": "you want ElevenLabs-style voice cloning and dubbing on your own machine without paying per character, and you have a decent computer to run it.",
+    "alternatives": [
+      "elevenlabs",
+      "descript"
+    ],
+    "source": "github",
+    "addedAt": "2026-10-19",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/voicestudio.png"
+  },
+  {
+    "slug": "ai-job-search",
+    "name": "AI Job Search",
+    "url": "https://github.com/MadsLorentzen/ai-job-search",
+    "affiliateUrl": null,
+    "category": "agents",
+    "useCases": [
+      "agents",
+      "productivity"
+    ],
+    "pricing": "open-source",
+    "verdict": "Open-source (MIT) job application framework built on Claude Code: fill in your profile, then it scores job postings for fit, tailors your CV and cover letter (LaTeX), has a reviewer agent critique them and preps you for interviews. The author says it got him hired; it topped GitHub's daily Trending list on Oct 19, 2026 (2,200+ stars in a day, 53K+ total).",
+    "useThisIf": "you are job hunting, already pay for Claude Code (it has no free tier) and are comfortable forking a repo. The built-in job-board scrapers target Denmark, so you will swap in your own boards.",
+    "alternatives": [
+      "claude-code",
+      "codex"
+    ],
+    "source": "github",
+    "addedAt": "2026-10-19",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/ai-job-search.png"
+  },
+  {
+    "slug": "glimpse",
+    "name": "Glimpse by Elorian",
+    "url": "https://elorian.ai",
+    "affiliateUrl": null,
+    "category": "chat",
+    "useCases": [
+      "chat",
+      "agents"
+    ],
+    "pricing": "paid",
+    "verdict": "First model from Elorian, the visual-AI lab founded by ex-Google DeepMind researchers, launched Oct 16, 2026 as a research preview with an API and chat app. It reasons through images and video (cropping, pulling frames and re-checking evidence mid-thought) and claims frontier-level multimodal scores at $0.60 / $3.00 per million input/output tokens.",
+    "useThisIf": "you build apps that need to understand charts, screenshots, video or physical scenes and want a cheaper vision-reasoning API than the big frontier models. Benchmarks are self-reported, so test it on your own data.",
+    "alternatives": [
+      "gemini",
+      "chatgpt",
+      "claude"
+    ],
+    "source": "x",
+    "addedAt": "2026-10-19",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/glimpse.png"
+  },
+  {
+    "slug": "nitrostack",
+    "name": "NitroStack",
+    "url": "https://nitrostack.ai",
+    "affiliateUrl": null,
+    "category": "coding",
+    "useCases": [
+      "coding",
+      "agents"
+    ],
+    "pricing": "freemium",
+    "verdict": "Full-stack platform for building MCP servers and MCP apps: open-source TypeScript and Python SDKs, a visual Studio for testing and debugging, workflows, and managed hosting, so tools you build plug into ChatGPT, Claude and other AI clients. It was the #1 Product of the Day on Product Hunt on Oct 17, 2026.",
+    "useThisIf": "you want to ship your own MCP server or AI-app integration without stitching together auth, testing and deployment yourself.",
+    "alternatives": [
+      "langchain",
+      "n8n"
+    ],
+    "source": "producthunt",
+    "addedAt": "2026-10-19",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/nitrostack.png"
+  },
+  {
     "slug": "orkas",
     "name": "Orkas",
     "url": "https://orkas.ai",

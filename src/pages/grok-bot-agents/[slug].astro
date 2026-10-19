@@ -1,17 +1,17 @@
 ---
 import Base from '../../layouts/Base.astro'; import Shell from '../../components/Shell.astro';
-import { getAgents, creatorLabel, type Agent } from '../../lib/agents'; import { crumbsLd } from '../../lib/ld';
+import { getAgents, creatorLabel, type Agent } from '../../lib/agents'; import { crumbsLd } from '../../lib/ld'; import ShareBar from '../../components/ShareBar.astro';
 export function getStaticPaths() { return getAgents().map((a) => ({ params: { slug: a.slug }, props: { a } })); }
 const { a } = Astro.props as { a: Agent };
 const more = getAgents().filter((x) => x.slug !== a.slug && x.category === a.category).concat(getAgents().filter((x) => x.slug !== a.slug && x.category !== a.category)).slice(0, 4);
 const ld = { '@context': 'https://schema.org', '@type': 'SoftwareApplication', name: a.name, description: a.description, applicationCategory: a.category, operatingSystem: 'Grok Bot', url: a.templateUrl, offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' }, ...(a.creatorHandle ? { author: { '@type': 'Person', name: a.creatorName || a.creatorHandle, url: `https://x.com/${a.creatorHandle}` } } : a.creatorName ? { author: { '@type': 'Person', name: a.creatorName } } : {}) };
 ---
-<Base title={`${a.name}: Grok Bot agent template`} description={a.description} jsonld={[crumbsLd([['Home', '/'], ['Grok Bot agents', '/grok-bot-agents'], [a.name, `/grok-bot-agents/${a.slug}`]]), ld]}>
+<Base title={`${a.name}: free Grok Bot agent template`} description={a.description} ogImage={`/og/agent/${a.slug}.png`} jsonld={[crumbsLd([['Home', '/'], ['Grok Bot agents', '/grok-bot-agents'], [a.name, `/grok-bot-agents/${a.slug}`]]), ld]}>
 <Shell active="grok-bot-agents"><article class="card prose" data-track-zone="agent">
 <p class="muted" style="font-size:.8rem;margin:0"><a href="/grok-bot-agents">← Grok Bot agents</a> · <span class="chip c">{a.category}</span></p>
 <h1 style="margin:.5rem 0">{a.name}</h1>
 <p>{a.description}</p>
-<p><a class="btn primary" href={a.templateUrl} target="_blank" rel="noopener" data-track={`agent:add:${a.slug}`}>Add to Grok Bot ↗</a></p>
+<div style="display:flex;gap:.5rem;flex-wrap:wrap;align-items:center;margin:1rem 0"><a class="btn primary" href={a.templateUrl} target="_blank" rel="noopener" data-track={`agent:add:${a.slug}`}>Add to Grok Bot ↗</a><ShareBar path={`/grok-bot-agents/${a.slug}`} text={`${a.name}${a.creatorHandle ? ` by @${a.creatorHandle}` : ''}: a free Grok Bot agent you can add in one click`} track={a.slug} label={`Share ${a.name}`} /></div>
 <ul>
   <li>Creator: {a.creatorHandle ? <a href={`https://x.com/${a.creatorHandle}`} target="_blank" rel="noopener">@{a.creatorHandle}</a> : creatorLabel(a)}{a.creatorHandle && a.creatorName ? ` (${a.creatorName})` : ''}</li>
   {a.sourcePostUrl && <li>Original post: <a href={a.sourcePostUrl} target="_blank" rel="noopener">view on X</a></li>}

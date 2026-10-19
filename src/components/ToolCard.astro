@@ -3,6 +3,9 @@ import type { Tool } from '../lib/data';
 import { LABEL } from '../lib/data';
 const { tool: t, isNew = false } = Astro.props as { tool: Tool; isNew?: boolean };
 const b = t.buzz;
+// Where the daily scan found it (seed = the original hand-picked list, so no label).
+const SRC: Record<string, string> = { producthunt: 'Product Hunt', github: 'GitHub', x: 'X', hackernews: 'Hacker News', submission: 'community submission', 'producthunt + x': 'Product Hunt + X' };
+const via = SRC[t.source];
 ---
 <article class:list={['post', { featured: t.featured }]} data-slug={t.slug} data-added={t.addedAt} data-buzz={t.buzz.score ?? 0} data-label={t.buzz.label ?? ''} data-search={`${t.name} ${t.verdict} ${t.useCases.join(' ')}`.toLowerCase()}>
   <div class="vote" data-vote={t.slug}><button data-track="card:upvote" aria-label={`Upvote ${t.name}`}>▲</button><span class="n">0</span></div>
@@ -16,7 +19,7 @@ const b = t.buzz;
       {b.status === 'live'
         ? <a class:list={['buzz', b.label]} href={`/tools/${t.slug}#buzz`} title={`X Buzz Score ${b.score}/100 · ${b.mentions24h} posts in 24h · ${b.mentions7d} in 7d · ${b.velocity}× velocity`}>{b.label === 'hype' ? '🔥' : 'X'} {b.score}<span class="lbl">{LABEL[b.label!]}</span></a>
         : <span class="chip" title="X Buzz Score not computed yet">X buzz: pending</span>}
-      <span>added {t.addedAt}</span>
+      <span>added {t.addedAt}{via && <> · via {via}</>}</span>
     </div>
   </div>
 </article>

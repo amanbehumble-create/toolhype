@@ -209,6 +209,138 @@
           "note": "From the author's 5th reply under the main post (328 likes)."
         }
       ]
+    },
+    {
+      "n": 2,
+      "slug": "issue-2",
+      "title": "Prompt Drop #2: 10 AI prompts X actually loved (100+ likes each)",
+      "date": "2026-10-19",
+      "intro": "Every prompt here comes from an X post with at least 100 likes, and we checked each like count on X ourselves. All are from the last week and easy for beginners: copy one, swap the [brackets] for your own details, paste it into the AI, done.",
+      "rule": "Only prompts from X posts with 100+ likes (checked with X data). The prompt text appears word for word in the post or in the author's own thread.",
+      "prompts": [
+        {
+          "title": "Make your coding agent argue against its own plan",
+          "category": "Coding",
+          "tool": "Claude Code, Codex, Cursor or any coding AI",
+          "prompt": "Now argue the opposite. You're a senior engineer who thinks this plan is horribly wrong. What would you build instead? Don't build it yet, just write the full plan with counters to every point you believe is wrong. Then judge both honestly: which plan wins, and what from the counter should we keep?",
+          "why": "AI agents tend to propose the plan they think you'll like. Paste this right after it gives you a plan to get a real second opinion from the same model.",
+          "source": "https://x.com/kloss_xyz/status/2111110171380294031",
+          "author": "@kloss_xyz",
+          "likes": 288,
+          "likesAsOf": "Oct 19, 2026 HKT",
+          "note": "Prompt 1 of 2 in the post itself."
+        },
+        {
+          "title": "Ask your coding agent how sure it really is",
+          "category": "Coding",
+          "tool": "Claude Code, Codex, Cursor or any coding AI",
+          "prompt": "Rate your confidence 1 to 10 on each part of this plan's tasks, based on what you've actually verified in code, not assumed. Under an 8, tell me exactly what you'd need to know to increase confidence. Don't do anything yet, we're only mapping and investigating.",
+          "why": "Use it before the agent writes code: it has to score each step and say what it still needs to check, which catches gaps early.",
+          "source": "https://x.com/kloss_xyz/status/2111110171380294031",
+          "author": "@kloss_xyz",
+          "likes": 288,
+          "likesAsOf": "Oct 19, 2026 HKT",
+          "note": "Prompt 2 of 2 in the post itself."
+        },
+        {
+          "title": "Turn a so-so prompt into a deeper one",
+          "category": "Chat",
+          "tool": "Claude, ChatGPT, Gemini or Grok",
+          "prompt": "Adopt the role of a Senior Reviewer. You've reviewed work in your field for 20 years and you can tell a shallow brief from a deep one in seconds.\n\nYour mission: Rewrite my prompt so it asks for a deeper version of the task, not a bigger one.\n\nGround rules:\n1. Don't add more output. Add more depth.\n2. Every change must say what a top professional would do differently.\n3. Name an outside check that proves the result is right.\n\nPHASE 1: The Prompt\n\nI'm going to make your prompt go deeper.\n\nAnswer these:\n1. Paste the prompt you'd normally use.\n2. What's it for?\n3. What did the last answer get wrong or miss?\n\n→ Type \"continue\" when ready\n\nPHASE 2: What the Best Would Do\n\nWhat a top professional would do here that the prompt doesn't ask for.\n\n→ Type \"continue\" for the raw material\n\nPHASE 3: The Raw Material and Methods\n\nThe rawest material they'd start from, and the methods and tools they'd use.\n\n→ Type \"continue\" for the rewrite\n\nPHASE 4: The Rewrite\n\nThe new prompt, plus the outside check that shows the result is right.",
+          "why": "Beginner-friendly: paste a prompt you already use and the AI walks you through making it go deeper instead of just longer. Type \"continue\" to move through each phase.",
+          "source": "https://x.com/alex_prompter/status/2111068392950272308",
+          "promptSource": "https://x.com/alex_prompter/status/2111068465532715019",
+          "author": "@alex_prompter",
+          "likes": 363,
+          "likesAsOf": "Oct 19, 2026 HKT",
+          "note": "Prompt 6 of 7 in the author's reply thread, based on a Claude tutorial by Anthropic's Felix Rieseberg."
+        },
+        {
+          "title": "Find the 3 decisions your meeting actually needs",
+          "category": "Productivity",
+          "tool": "Claude, ChatGPT, Gemini or Grok",
+          "prompt": "Adopt the role of a Chief of Staff. You've sat through a thousand meetings that produced slides instead of decisions, and you now refuse to prepare for any meeting without knowing what it has to decide.\n\nYour mission: Turn my data into the 3 decisions that matter most, with the case for and against each.\n\nGround rules:\n1. Use only the data I give you. Flag anything you'd need to be sure.\n2. Rank decisions by urgency, not by how easy they are.\n3. Every direction gets an argument for and an argument against.\n\nPHASE 1: The Context\n\nI'm going to find the decisions hiding in your data.\n\nAnswer these:\n1. What's the meeting or review, and who's in it?\n2. What data do you have? Paste or connect all of it.\n3. What changed recently?\n\n→ Type \"continue\" when ready\n\nPHASE 2: What Changed\n\nWhat changed, why, and what it means.\n\n→ Type \"continue\" for the decisions\n\nPHASE 3: The Three Decisions\n\nThe 3 most urgent decisions, ranked.\n\n→ Type \"continue\" for the directions\n\nPHASE 4: The Directions\n\n2 or 3 directions for each decision, with for and against arguments and your pick.",
+          "why": "Paste your notes or data before a meeting and get the three most urgent decisions, each with arguments for and against.",
+          "source": "https://x.com/alex_prompter/status/2111068392950272308",
+          "promptSource": "https://x.com/alex_prompter/status/2111068417495363672",
+          "author": "@alex_prompter",
+          "likes": 363,
+          "likesAsOf": "Oct 19, 2026 HKT",
+          "note": "Prompt 2 of 7 in the author's reply thread."
+        },
+        {
+          "title": "Put yourself in a giant-boot street fashion shot",
+          "category": "Image",
+          "tool": "ChatGPT (GPT Image), Gemini or any image AI that takes a photo",
+          "prompt": "Create an ultra-realistic, high-fashion street photography image using my uploaded photo as the primary identity reference. Preserve my exact facial features, identity, skin tone, and natural appearance.\n\nSUBJECT:\nA stylish young woman wearing a shiny champagne-beige oversized quilted puffer jacket, loose beige cargo pants, a black baseball cap, round eyeglasses, and chunky black combat boots.\n\nPOSE AND COMPOSITION:\nCreate a playful, surreal fashion photograph. The woman is sitting casually on a city street, leaning back on one hand while extending one leg toward the camera. The oversized black combat boot dominates the foreground, showing its thick, rugged tread in dramatic perspective. Her other leg is bent naturally, and she looks slightly to the side with a confident, relaxed expression.\n\nLOCATION:\nA charming European-style street with historic red-brick buildings, tall arched windows with black iron grilles, narrow sidewalks, black street bollards, and a few pedestrians in the distance.\n\nCAMERA:\nExtremely low-angle wide-lens photography, exaggerated foreground perspective, full-body composition, realistic anatomy, natural pose, detailed clothing textures, and authentic street photography aesthetics.\n\nLIGHTING AND COLOR:\nNatural afternoon sunlight, soft shadows, warm earthy tones, realistic reflections on the glossy puffer jacket, blue sky with scattered clouds, cinematic contrast, and subtle film grain.\n\nSTYLE:\nPhotorealistic editorial street fashion, candid travel photography, premium fashion magazine aesthetic, ultra-detailed textures, realistic skin, 4K quality.\n\nIDENTITY PRESERVATION:\nUse my uploaded photo as the face reference. The subject must be a woman with my recognizable facial identity. Do not replace my face with a random person. Keep the overall appearance feminine and natural.\n\nIMPORTANT:\nThe oversized boot must appear very close to the camera, creating a dramatic forced-perspective effect. Keep the brick architecture and street environment realistic.\n\nAspect ratio: 4:5\nQuality: Ultra-realistic",
+          "why": "Upload your own photo first. The low-angle, forced-perspective setup is what makes the boot look huge, and the identity section keeps your face.",
+          "source": "https://x.com/Alina_with_Ai/status/2111047173873995806",
+          "promptSource": "https://x.com/Alina_with_Ai/status/2111047178177384574",
+          "author": "@Alina_with_Ai",
+          "likes": 117,
+          "likesAsOf": "Oct 19, 2026 HKT",
+          "note": "The prompt is in the author's first reply to the post. It is written for a woman; edit the SUBJECT line to match you."
+        },
+        {
+          "title": "Turn your character into a chibi growing out of a flower pot",
+          "category": "Image",
+          "tool": "Any image AI that takes a reference image (ChatGPT, Gemini, Grok)",
+          "prompt": "添付画像のキャラクターを使用し、顔・髪型・髪色・瞳・アクセサリー・雰囲気など本人性を維持したまま、約3頭身の可愛いコミカルなアニメイラストにしてください。\n\nテーマ｜植木鉢から生えちゃった！\n\n大きな植木鉢の土から、なぜかキャラクターが生えているシュールで可愛い日常コメディ。\n\n頭が大きく、胴体と手足が小さいデフォルメ体型。下半身は完全に土の中に埋まり、頭・肩・小さな上半身・両腕だけが見える。小さな手を鉢の縁にちょこんと乗せる。\n\n表情は「なんで私が植えられてるの？」と言いたげな、涙目・ジト目・むすっとした顔・絶望顔などからランダムに選択。瞳の虹彩とハイライトは繊細に描く。\n\n頭には小さな双葉、周囲の土には若葉や小さな花。画面上部から人物の見えないジョウロで水をかけられ、髪や服に水滴がついている。\n\n衣装はパーカー・セーター・部屋着など、キャラクターに似合う可愛いカジュアル服に変更。\n\n植木鉢はテラコッタ・陶器・パステルカラーなどから選択。背景は明るい庭・ベランダ・温室・窓辺などの日常風景。小さな猫や園芸道具を添えてもよい。\n\n構図・カメラアングル・表情・衣装・背景は自由にアレンジし、ユーモアと可愛さを強調。\n\n画風： 高品質なコミカルアニメ、くっきりした強弱のある輪郭線、メリハリのある陰影、鮮やかな色彩、繊細な虹彩、自然光、美しい水滴表現、豊かな表情。\n\n必須： 人物は1人のみ。植木鉢全体を描写。下半身は見せない。腕は2本、手指や身体の破綻なし。文字なし。分割・コラージュなし。独立した1枚絵。",
+          "why": "A fun Japanese prompt: attach a picture of your own character or avatar and it becomes a cute, grumpy chibi planted in a pot. You can paste it in Japanese as is.",
+          "source": "https://x.com/ENJU1123PIPI/status/2111585548913476068",
+          "promptSource": "https://x.com/ENJU1123PIPI/status/2111585549924319665",
+          "author": "@ENJU1123PIPI",
+          "likes": 131,
+          "likesAsOf": "Oct 19, 2026 HKT",
+          "note": "The prompt (in Japanese) is in the author's first reply to the post."
+        },
+        {
+          "title": "Turn your profile picture into a cute clay icon",
+          "category": "Image",
+          "tool": "ChatGPT (GPT Image), Gemini or any image AI that takes a photo",
+          "prompt": "Transform the uploaded icon image into a soft, rounded character icon. Create a single square image.\n\nElements to Preserve From the Original Icon\n\nKeep the original hairstyle, hair color, bangs, hair arrangement, skin and face colors, glasses, and any other accessories exactly as they appear in the uploaded icon.\n\nHowever, replace the eyes and anything worn on the head according to the instructions below. Do not include the original eyes or original hat.\n\nRequired Elements\n\nBlack Beret\n\nPlace a black beret on the character’s head.\nThe beret should have a soft, flattened disc shape with a small stem on top.\nThe hair should naturally peek out from beneath the edge of the beret, preserving the original hairstyle.\n\nEyes\n\nDraw only two small, vertically elongated black oval eyes.\nPosition them slightly apart.\nAdd one tiny white highlight to each eye.\nDo not draw a nose, mouth, eyebrows, eyelashes, or blush.\nCreate the entire facial expression using only the two eyes.\n\nShape and Appearance\n\nShow only the face.\nDo not include a neck, body, hands, or clothing.\nThe face should appear to float gently in midair.\nUse a smooth, continuous, rounded silhouette.\nAvoid fluffy, jagged, wavy, frilly, or fuzzy edges.\nDo not use black outlines.\nThe texture should resemble soft, matte clay.\nUse only extremely subtle gradients to create dimension.\nKeep the design minimal and simplified, without intricate details, patterns, or decorative elements.\n\nBackground and Shadow\n\nUse a pure white background.\nPlace exactly one soft shadow directly beneath the floating face.\nThe shadow should be a horizontally elongated, light-gray oval with heavily blurred edges.\nLeave a small gap between the face and the shadow to emphasize the floating effect.\nKeep the shadow very faint.\nDo not add text, borders, decorations, or other objects.\n\nComposition\n\nUse a square 1:1 aspect ratio.\nCenter the face in the composition.\nThe face should occupy approximately 60% of the image width.\nPosition the character facing directly forward.\n\nFinal Result\n\nCreate a quiet, cute, minimalist character icon featuring a single floating face wearing a black beret against a pure white background.\n\nThe character should look directly at the viewer with two small black oval eyes.\n\nThe overall aesthetic should be soft, rounded, matte, simple, and charming.",
+          "why": "Upload your current profile picture first. The prompt keeps your hair, glasses and colors but swaps in two tiny eyes and a beret, so you get a matching minimalist avatar.",
+          "source": "https://x.com/icreatelife/status/2110526852548972558",
+          "promptSource": "https://x.com/icreatelife/status/2110527011605111136",
+          "author": "@icreatelife",
+          "likes": 215,
+          "likesAsOf": "Oct 19, 2026 HKT",
+          "note": "The prompt is in the author's first reply to the post."
+        },
+        {
+          "title": "Y2K designer toy of any character",
+          "category": "Image",
+          "tool": "Any image AI (ChatGPT, Gemini, Grok, Midjourney)",
+          "prompt": "High-detail 3D render of a trendy [character], half-body portrait, designer toy blind box style, C4D/Blender aesthetic, exaggerated chibi proportions, oversized head, [facial features], [hairstyle], [expression], realistic skin texture, [piercings and accessories], wearing [streetwear outfit], [jewelry], cute decorative patches, Y2K fashion aesthetic, soft studio lighting, clean white background, premium collectible toy design, 8K",
+          "why": "Fill in the brackets with a character (or yourself) and an outfit, and you get a collectible blind-box toy look. Leave out any bracket you don't care about.",
+          "source": "https://x.com/azed_ai/status/2111774317289889900",
+          "author": "@azed_ai",
+          "likes": 129,
+          "likesAsOf": "Oct 19, 2026 HKT"
+        },
+        {
+          "title": "VHS film-noir pencil sketch",
+          "category": "Image",
+          "tool": "Any image AI (ChatGPT, Gemini, Grok, Midjourney)",
+          "prompt": "Retro 1990s handheld VHS of a [subject] in [setting], black-and-white film noir atmosphere, candid unposed moment, natural weight shift, relaxed asymmetrical posture, expressive hands and feet, subtle facial expression, spontaneous imperfect framing, loose pencil sketch rendering, overlapping construction marks, exploratory strokes, erased and redrawn lines, imperfect contours, charming irregularities, personal illustrator sketchbook feel, subtle VHS grain, analog tracking noise, soft motion blur, deep monochrome contrast, raw handmade finish",
+          "why": "Only two blanks to fill, like \"a jazz singer\" and \"a rainy alley\". The long style list does the work, mixing a sketchbook look with old-tape grain.",
+          "source": "https://x.com/azed_ai/status/2109600238428463125",
+          "author": "@azed_ai",
+          "likes": 124,
+          "likesAsOf": "Oct 19, 2026 HKT"
+        },
+        {
+          "title": "Thick impasto oil painting",
+          "category": "Image",
+          "tool": "Any image AI (ChatGPT, Gemini, Grok, Midjourney)",
+          "prompt": "Expressive impasto oil painting of [subject] in [setting], featuring [distinctive visual elements], [dynamic composition], [color palette], thick sculptural brushstrokes, heavily layered oil pigments, dramatic palette knife textures, bold gestural mark-making, exaggerated forms, rich saturated colors, visible paint ridges, expressive movement, tactile three-dimensional paint buildup, striking contrasts, dramatic directional lighting, contemporary fine art aesthetic, white background",
+          "why": "Turns any subject into a gallery-style painting with raised, textured paint. Try your pet or your city, and pick a color palette like \"teal and orange\".",
+          "source": "https://x.com/azed_ai/status/2110324004523515947",
+          "author": "@azed_ai",
+          "likes": 123,
+          "likesAsOf": "Oct 19, 2026 HKT"
+        }
+      ]
     }
   ]
 }

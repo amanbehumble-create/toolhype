@@ -1,9 +1,33 @@
 ---
 import Base from '../layouts/Base.astro'; import Shell from '../components/Shell.astro'; import Feed from '../components/Feed.astro';
-import { newThisWeek } from '../lib/data'; import { listLd } from '../lib/ld';
+import { newThisWeek, BUZZ_AT, hkt } from '../lib/data'; import { listLd, faqLd, crumbsLd } from '../lib/ld';
 const tools = newThisWeek();
+// Answer-first summary for search engines and chatbots: date range, count, newest picks and the most-buzzed newcomer.
+const fmt = (d: Date) => d.toLocaleDateString('en-GB', { timeZone: 'Asia/Hong_Kong', day: 'numeric', month: 'short' });
+const now = new Date(); const from = new Date(now.getTime() - 6 * 864e5);
+const range = `${fmt(from)} – ${fmt(now)} ${now.getFullYear()}`;
+const SRC: Record<string, string> = { producthunt: 'Product Hunt', github: 'GitHub', x: 'X', hackernews: 'Hacker News', submission: 'a community submission', 'producthunt + x': 'Product Hunt and X' };
+const newest = tools.slice(0, 5);
+const names = (l: typeof tools) => l.length > 1 ? `${l.slice(0, -1).map((t) => t.name).join(', ')} and ${l.at(-1)!.name}` : l[0]?.name ?? '';
+const topBuzz = [...tools].filter((t) => t.buzz.status === 'live').sort((a, b) => (b.buzz.score ?? 0) - (a.buzz.score ?? 0))[0];
+const title = tools.length ? `New AI tools this week (${range}): ${tools.length} new launches` : 'New AI tools this week';
+const description = tools.length
+  ? `${tools.length} new AI tools added in the last 7 days, including ${names(newest.slice(0, 3))}. Found on Product Hunt, GitHub and X, each with an honest verdict and a live X Buzz Score.`
+  : 'New AI tools and software launched this week, from Product Hunt, GitHub and X.';
+const answer = tools.length
+  ? `toolhype added ${tools.length} new AI tools in the 7 days from ${fmt(from)} to ${fmt(now)} ${now.getFullYear()}. The newest are ${names(newest)}.` + (topBuzz ? ` The most-talked-about newcomer on X is ${topBuzz.name} (X Buzz Score ${topBuzz.buzz.score}/100).` : '')
+  : 'No new tools this week yet.';
+const ld = [listLd('New AI tools this week', tools), crumbsLd([['Home', '/'], ['New this week', '/new']]),
+  { '@context': 'https://schema.org', '@type': 'CollectionPage', name: title, description, url: 'https://toolhype.dev/new', dateModified: BUZZ_AT, isPartOf: { '@type': 'WebSite', name: 'toolhype', url: 'https://toolhype.dev' } },
+  ...(tools.length ? [faqLd([['What new AI tools came out this week?', answer], ['Where does toolhype find new AI tools?', 'A daily scan of Product Hunt, GitHub Trending and X, plus free community submissions. Every tool gets a real logo, an honest one-line verdict and a live X Buzz Score from public X data.']])] : [])];
 ---
-<Base title="New this week" description="New AI tools and software launched this week, from Product Hunt, GitHub and X." jsonld={[listLd('New this week', tools)]}>
-<Shell active="new"><h1>New this week</h1><p class="muted">The weekly drop, also sent as the newsletter. <a href="/rss.xml">RSS</a></p>
+<Base title={title} description={description} jsonld={ld}>
+<Shell active="new"><h1>New this week</h1>
+<p class="muted">The weekly drop, also sent as the newsletter. <a href="/rss.xml">RSS</a></p>
+{tools.length > 0 && <div class="card answer" style="margin:.8rem 0">
+  <p style="margin:0 0 .5rem">{answer}</p>
+  <ul style="margin:0;padding-left:1.1rem">{newest.map((t) => <li><a href={`/tools/${t.slug}`}>{t.name}</a> <span class="muted">(added {t.addedAt}{SRC[t.source] && <> via {SRC[t.source]}</>})</span>: {t.useThisIf ? `use it if ${t.useThisIf}` : t.verdict}</li>)}</ul>
+  <p class="muted" style="font-size:.75rem;margin:.5rem 0 0">Buzz scores updated {hkt(BUZZ_AT)}.</p>
+</div>}
 {tools.length ? <Feed tools={tools}/> : <p class="card">No new tools this week yet. The daily scan adds them here.</p>}</Shell>
 </Base>

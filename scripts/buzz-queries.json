@@ -85,5 +85,15 @@
  "genspark": "(genspark OR @genspark_ai OR url:genspark.ai) -is:retweet",
  "opusclip": "(opusclip OR \"opus clip\" OR @OpusClip OR url:opus.pro) -is:retweet",
  "manus": "(\"manus ai\" OR manusai OR @ManusAI OR url:manus.im) -is:retweet",
- "papertrade": "(papertrade (hyperliquid OR perp OR perps OR 1000x OR hyperevm) OR @papertrade_xyz OR url:papertrade.xyz) -is:retweet"
+ "papertrade": "(papertrade (hyperliquid OR perp OR perps OR 1000x OR hyperevm) OR @papertrade_xyz OR url:papertrade.xyz) -is:retweet",
+ "orca": "(url:onorca.dev OR \"onorca.dev\" OR \"stablyai/orca\" OR (orca (\"claude code\" OR codex OR \"coding agents\" OR worktree OR worktrees))) -is:retweet",
+ "headroom": "(url:headroomlabs.ai OR headroomlabs OR \"headroom-ai\" OR (headroom (tokens OR \"claude code\" OR codex OR compression OR compress))) -is:retweet",
+ "cli-anything": "(\"cli-anything\" OR clianything OR url:clianything.cc) -is:retweet",
+ "comfyui": "(comfyui OR @ComfyUI OR url:comfy.org) -is:retweet",
+ "beam-win": "(url:beam.win OR \"beam.win\") -is:retweet",
+ "viktor": "(url:viktor.com OR \"viktor.com\" OR (viktor (slack OR \"ai employee\" OR \"ai coworker\"))) -is:retweet",
+ "talanoa": "(url:talanoa.email OR \"talanoa.email\" OR (talanoa (email OR inbox))) -is:retweet",
+ "fish-audio": "(\"fish audio\" OR fishaudio OR @FishAudio OR url:fish.audio) -is:retweet",
+ "llmspeed": "(llmspeed OR url:llmspeed.dev) -is:retweet",
+ "orke": "(\"orke\" (claude OR codex OR agent OR agents OR workspace) OR url:orke.bomtobe.com) -is:retweet"
 }

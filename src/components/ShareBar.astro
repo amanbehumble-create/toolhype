@@ -1,0 +1,22 @@
+---
+// Share on X (web intent, no SDK) + copy link. Shared links carry ?ref=… so first-party analytics can count them.
+interface Props { path: string; text: string; track: string; label?: string }
+const { path, text, track, label = 'Share' } = Astro.props;
+const site = Astro.site!;
+const xUrl = new URL(path, site); xUrl.searchParams.set('ref', 'x-share');
+const copyUrl = new URL(path, site); copyUrl.searchParams.set('ref', 'link');
+const intent = `https://x.com/intent/post?${new URLSearchParams({ text, url: xUrl.href, via: 'amanbehumble' })}`;
+---
+<div class="sharebar" role="group" aria-label={label}>
+  <a class="btn" href={intent} target="_blank" rel="noopener" data-track={`share:x:${track}`}><b aria-hidden="true">𝕏</b>&nbsp;Share on X</a>
+  <button class="btn" type="button" data-copy={copyUrl.href} data-track={`share:copy:${track}`}>🔗&nbsp;<span>Copy link</span></button>
+</div>
+<style>.sharebar{display:flex;gap:.5rem;flex-wrap:wrap;align-items:center}.sharebar .btn{font-size:.85rem}</style>
+<script>
+document.addEventListener('click', async (ev) => {
+  const b = (ev.target as HTMLElement).closest?.('[data-copy]') as HTMLButtonElement | null; if (!b) return;
+  const s = b.querySelector('span'); const url = b.dataset.copy!;
+  try { await navigator.clipboard.writeText(url); } catch { const t = document.createElement('textarea'); t.value = url; document.body.appendChild(t); t.select(); try { document.execCommand('copy'); } catch {} t.remove(); }
+  if (s) { s.textContent = 'Copied ✓'; setTimeout(() => { s.textContent = 'Copy link'; }, 1800); }
+});
+</script>

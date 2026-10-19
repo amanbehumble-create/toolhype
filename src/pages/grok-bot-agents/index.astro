@@ -1,14 +1,15 @@
 ---
 import Base from '../../layouts/Base.astro'; import Shell from '../../components/Shell.astro';
-import { getAgents, agentCategories, creatorLabel, AGENTS_INTRO } from '../../lib/agents'; import { crumbsLd } from '../../lib/ld';
+import { getAgents, agentCategories, creatorLabel, AGENTS_INTRO } from '../../lib/agents'; import { crumbsLd } from '../../lib/ld'; import ShareBar from '../../components/ShareBar.astro';
 const agents = getAgents();
 const site = Astro.site!;
 const listLd = { '@context': 'https://schema.org', '@type': 'ItemList', name: 'Grok Bot agents', itemListElement: agents.map((a, i) => ({ '@type': 'ListItem', position: i + 1, url: new URL(`/grok-bot-agents/${a.slug}`, site).href, name: a.name })) };
 ---
-<Base title="Grok Bot agents: ready-to-use templates" description={`${AGENTS_INTRO} Free public Grok Bot templates for research, privacy, coding, selling, finance and more.`} jsonld={[crumbsLd([['Home', '/'], ['Grok Bot agents', '/grok-bot-agents']]), listLd]}>
+<Base title="Grok Bot agents: free ready-to-use templates" description={`${agents.length} free Grok Bot agent templates you can add in one click: research, privacy, coding, video, finance and more, each with a working public share link.`} ogImage="/og/grok-bot-agents.png" jsonld={[crumbsLd([['Home', '/'], ['Grok Bot agents', '/grok-bot-agents']]), listLd]}>
 <Shell active="grok-bot-agents"><div class="prose"><h1>Grok Bot agents</h1>
 <p>{AGENTS_INTRO} Each one is a free public template: hit <b>Add to Grok Bot</b> and it opens in Grok Bot, ready to set up. We only list agents with a working public share link.</p>
-<p class="muted" style="font-size:.8rem">{agents.length} agents · {agentCategories().join(' · ')}</p></div>
+<p class="muted" style="font-size:.8rem">{agents.length} agents · {agentCategories().join(' · ')}</p>
+<div style="margin:.6rem 0 1rem"><ShareBar path="/grok-bot-agents" text={`${agents.length} free Grok Bot agents you can add in one click 🤖`} track="agents" label="Share the Grok Bot agents list" /></div></div>
 <div class="feed" data-track-zone="agents">
 {agents.map((a) => <article class="post agent" data-search={`${a.name} ${a.description} ${a.category} ${creatorLabel(a)}`.toLowerCase()}>
   <div style="flex:1;min-width:0">

@@ -2,7 +2,7 @@
 // A post qualifies only if: >=100 likes OR >=10K views, it's an original post (not a reply/retweet),
 // and its text actually mentions the tool (a keyword from its buzz query) and doesn't hit the tool's exclude list.
 // Qualifying posts are ranked by engagement and the top 3 are shown; if none qualify the section is hidden.
-export const MIN_LIKES = 100, MIN_VIEWS = 10000, MIN_LIKES_WITH_VIEWS = 10, SHOW = 3; // views-only posts still need 10+ likes (filters zero-like promos)
+export const MIN_LIKES = 100, MIN_VIEWS = 10000, MIN_LIKES_WITH_VIEWS = 10, SHOW = 3, MAX_AGE_DAYS = 7; // views-only posts still need 10+ likes (filters zero-like promos)
 export const engagement = (p) => p.likes + 3 * p.reposts + 2 * p.replies + 2 * (p.quotes || 0) + (p.views || 0) / 100;
 // Per-tool exclusions for ambiguous names (e.g. "figma" is also a toy-figure line).
 export const EXCLUDE = {
@@ -42,11 +42,13 @@ function rawKeywords(query) {
   for (const w of bare.split(/\s+/)) if (w && !/^(OR|AND|lang:\w+)$/i.test(w) && w.length >= 4) k.add(w.toLowerCase().replace(/^@/, ''));
   return [...k];
 }
-export function selectTop(slug, query, posts) {
-  const kw = keywords(query, slug), ex = EXCLUDE[slug];
+// now: reference time; posts older than MAX_AGE_DAYS are dropped so carried-over posts don't outlive the 7-day window.
+export function selectTop(slug, query, posts, now = Date.now()) {
+  const kw = keywords(query, slug), ex = EXCLUDE[slug], cutoff = +new Date(now) - MAX_AGE_DAYS * 864e5;
   const seen = new Set();
   return posts.filter((p) => {
     if (!p || seen.has(p.id)) return false; seen.add(p.id);
+    if (p.created_at && +new Date(p.created_at) < cutoff) return false;
     const t = (p.text || '').toLowerCase();
     if (p.isReply || /^@\w+/.test(p.text || '') || /^rt @/i.test(p.text || '')) return false;
     if (!(p.likes >= MIN_LIKES || ((p.views || 0) >= MIN_VIEWS && p.likes >= MIN_LIKES_WITH_VIEWS))) return false;

@@ -1,0 +1,30 @@
+{
+  "n8n-vs-zapier": {
+    "title": "n8n vs Zapier (2026): pricing, self-hosting & which to pick",
+    "description": "n8n vs Zapier compared with checked Oct 2026 pricing: n8n bills per workflow run and can be self-hosted free; Zapier bills per task and connects 9,000+ apps.",
+    "checked": "Oct 20, 2026 HKT",
+    "bottomLine": "Pick Zapier if you want the biggest app catalog and the quickest no-code setup and your Zaps have only a few steps. Pick n8n if you are comfortable with a more technical tool, want to self-host for free or keep data on your own server, or run long multi-step workflows: n8n counts one execution per full run, while Zapier counts a task for every successful action step.",
+    "rows": [
+      ["How usage is billed", "Per workflow execution: one full run counts once, however many steps it has", "Per task: every successful action step counts (triggers and built-in tools like Filter, Formatter and Paths don't)"],
+      ["Free option", "Community Edition is free to self-host (source on GitHub); n8n Cloud has a free trial with 1,000 executions, no card needed", "Free plan with 100 tasks/month, two-step Zaps only; 14-day Professional trial, no card needed"],
+      ["Cheapest paid plan", "Starter: €20/month billed annually", "Professional: $19.99/month billed annually for 750 tasks ($29.99 billed monthly)"],
+      ["Self-hosting", "Yes, run it on your own server", "No, cloud only"],
+      ["App integrations", "2,367 listed in n8n's integrations directory", "9,000+ apps"],
+      ["Code steps", "JavaScript or Python code steps on every plan", "Code by Zapier (JavaScript or Python): 1 second of runtime per step on Free, 30 seconds on Professional"],
+      ["AI agents", "AI Agent node, MCP client and MCP server trigger included in plans", "Zapier Agents is a separate product billed in activities (400/month free), plus Zapier MCP"],
+      ["Where data lives", "n8n Cloud: EU servers in Frankfurt; self-hosted: wherever you host it", "Zapier's cloud"],
+      ["License", "Fair-code: Sustainable Use License (source available, 208K+ GitHub stars)", "Proprietary"]
+    ],
+    "faq": [
+      ["Is n8n cheaper than Zapier?", "It depends on your workflows. n8n Cloud starts at €20/month (billed annually) and charges per full workflow run; Zapier Professional starts at $19.99/month (billed annually) for 750 tasks, and every successful action step uses a task. For long multi-step workflows n8n usually works out cheaper, and self-hosted n8n Community Edition is free. Prices checked Oct 20, 2026."],
+      ["Can I self-host Zapier like n8n?", "No. Zapier only runs in its own cloud. n8n can be self-hosted for free with the Community Edition, or used on n8n Cloud."],
+      ["Does Zapier have a free plan?", "Yes: 100 tasks per month with two-step Zaps (one trigger, one action). Multi-step Zaps, premium apps and webhooks need a paid plan."]
+    ],
+    "sources": [
+      ["n8n pricing", "https://n8n.io/pricing/"],
+      ["n8n integrations", "https://n8n.io/integrations/"],
+      ["n8n on GitHub", "https://github.com/n8n-io/n8n"],
+      ["Zapier pricing", "https://zapier.com/pricing"]
+    ]
+  }
+}

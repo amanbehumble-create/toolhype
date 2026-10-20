@@ -5,6 +5,7 @@ import Base from '../../layouts/Base.astro'; import Shell from '../../components
 export function getStaticPaths() { return getIssues().map((i) => ({ params: { slug: i.slug }, props: { i } })); }
 const { i } = Astro.props;
 const url = new URL(`/prompts/${i.slug}`, Astro.site).href;
+const LONG = 900; // prompts longer than this start collapsed (Copy still copies the full text)
 ---
 <Base title={i.title} description={`${i.prompts.length} beginner-friendly AI prompts from X posts with 100+ likes, ready to copy: ${i.prompts.slice(0, 3).map((p) => p.title.toLowerCase()).join(', ')} and more.`.slice(0, 158)} ogType="article" jsonld={[issueLd(i, url)]}>
 <Shell active="prompts"><article class="prose">
@@ -14,8 +15,9 @@ const url = new URL(`/prompts/${i.slug}`, Astro.site).href;
   <div class="muted" style="font:500 .75rem var(--mono)">{String(k + 1).padStart(2, '0')} · {p.category.toUpperCase()} · WORKS IN {p.tool.toUpperCase()}</div>
   <h2 style="margin:.35rem 0 .6rem;font-size:1.15rem">{p.title}</h2>
   <a class="likes" href={p.source} rel="noopener nofollow" target="_blank" title={`Likes on the original X post as of ${p.likesAsOf}`} style="display:inline-block;margin:0 0 .6rem;font:600 .75rem var(--mono);padding:.15rem .5rem;border:1px solid var(--line);border-radius:999px;text-decoration:none">♥ {p.likes.toLocaleString('en-US')} likes on X</a>
-  <pre class="ptext" style="white-space:pre-wrap;font:.875rem/1.5 var(--mono);background:var(--hover);border:1px solid var(--line);border-radius:var(--r-ctl);padding:.8rem;margin:0">{p.prompt}</pre>
+  <pre class:list={['ptext', { long: p.prompt.length > LONG }]} id={`pt${k + 1}`} style="white-space:pre-wrap;font:.875rem/1.5 var(--mono);background:var(--hover);border:1px solid var(--line);border-radius:var(--r-ctl);padding:.8rem;margin:0">{p.prompt}</pre>
   <button class="btn primary copy" type="button" style="margin-top:.6rem" aria-label={`Copy prompt: ${p.title}`}>Copy prompt</button>
+  {p.prompt.length > LONG && <button class="btn more" type="button" style="margin:.6rem 0 0 .4rem" aria-expanded="false" aria-controls={`pt${k + 1}`}>Show full prompt ({p.prompt.trim().split(/\s+/).length.toLocaleString('en-US')} words)</button>}
   <p style="margin:.7rem 0 .3rem"><b>Why it works:</b> {p.why}</p>
   {p.note && <p class="muted" style="margin:.2rem 0;font-size:.8rem">{p.note}</p>}
   <p class="muted" style="margin:0;font-size:.8rem">Credit: <a href={p.source} rel="noopener nofollow" target="_blank">{p.author} on X</a>{p.promptSource && <> · <a href={p.promptSource} rel="noopener nofollow" target="_blank">prompt in thread</a></>} · {p.likes.toLocaleString('en-US')} likes as of {p.likesAsOf}</p>
@@ -29,4 +31,12 @@ document.querySelectorAll<HTMLButtonElement>('button.copy').forEach((b) => b.add
   try { await navigator.clipboard.writeText(t); } catch { const a = document.createElement('textarea'); a.value = t; document.body.append(a); a.select(); document.execCommand('copy'); a.remove(); }
   b.textContent = 'Copied ✓'; setTimeout(() => (b.textContent = 'Copy prompt'), 1500);
 }));
-</script></Base>
+document.querySelectorAll<HTMLButtonElement>('button.more').forEach((b) => { const label = b.textContent; b.addEventListener('click', () => {
+  const pre = document.getElementById(b.getAttribute('aria-controls')!)!; const open = pre.classList.toggle('open');
+  b.setAttribute('aria-expanded', String(open)); b.textContent = open ? 'Collapse prompt' : label;
+}); });
+</script>
+<style>
+  pre.ptext.long:not(.open) { max-height: 15rem; overflow: hidden; -webkit-mask-image: linear-gradient(#000 70%, transparent); mask-image: linear-gradient(#000 70%, transparent); }
+  @media print { pre.ptext.long { max-height: none !important; -webkit-mask-image: none !important; mask-image: none !important; } }
+</style></Base>

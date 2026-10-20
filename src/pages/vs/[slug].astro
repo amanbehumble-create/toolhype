@@ -1,8 +1,11 @@
 ---
 import Base from '../../layouts/Base.astro'; import Shell from '../../components/Shell.astro';
-import { BUZZ_AT, hkt, getCommunity, type Tool } from '../../lib/data'; import { getPairs, type Pair } from '../../lib/geo'; import { appLd, faqLd, crumbsLd } from '../../lib/ld';
+import { BUZZ_AT, hkt, getCommunity, type Tool } from '../../lib/data'; import { getPairs, type Pair } from '../../lib/geo'; import { appLd, faqLd, crumbsLd } from '../../lib/ld'; import vsNotes from '../../data/vs-notes.json';
 export const getStaticPaths = () => getPairs().map((p) => ({ params: { slug: p.slug }, props: { p } }));
 const { p } = Astro.props as { p: Pair }; const { a, b } = p;
+// Optional hand-checked facts per pair (src/data/vs-notes.json): only verified, sourced data with a checked date.
+type Notes = { title?: string; description?: string; checked: string; bottomLine?: string; rows: [string, string, string][]; faq?: [string, string][]; sources: [string, string][] };
+const notes = (vsNotes as Record<string, Notes>)[p.slug];
 const s = (t: Tool) => t.buzz.score ?? null;
 const louder = s(a) != null && s(b) != null ? (s(a)! === s(b)! ? null : s(a)! > s(b)! ? a : b) : null;
 const shared = a.useCases.filter((c) => b.useCases.includes(c));
@@ -13,7 +16,8 @@ const faq: [string, string][] = [
   [`What is the difference between ${a.name} and ${b.name}?`, summary],
   [`Is ${a.name} or ${b.name} free?`, `${a.name} is ${a.pricing}; ${b.name} is ${b.pricing}.` + (free(a) && free(b) ? ' Both can be started without paying.' : '')],
   [`Which is more popular, ${a.name} or ${b.name}?`, buzzLine],
-  [`Should I use ${a.name} or ${b.name}?`, `Use ${a.name} if ${a.useThisIf} Use ${b.name} if ${b.useThisIf}`],
+  [`Should I use ${a.name} or ${b.name}?`, notes?.bottomLine ?? `Use ${a.name} if ${a.useThisIf} Use ${b.name} if ${b.useThisIf}`],
+  ...(notes?.faq ?? []),
 ];
 const rows: [string, string, string][] = [
   ['Category', getCommunity(a.category)?.name ?? a.category, getCommunity(b.category)?.name ?? b.category],
@@ -26,10 +30,15 @@ const rows: [string, string, string][] = [
   ['Website', a.url, b.url],
 ];
 ---
-<Base title={`${a.name} vs ${b.name}: pricing, use cases & buzz`} description={`${a.name} vs ${b.name} compared: ${a.pricing} vs ${b.pricing}, use cases and live X buzz. ${buzzLine}`} jsonld={[faqLd(faq), appLd(a), appLd(b), crumbsLd([['Home', '/'], ['Comparisons', '/vs'], [`${a.name} vs ${b.name}`, `/vs/${p.slug}`]])]}>
+<Base title={notes?.title ?? `${a.name} vs ${b.name}: pricing, use cases & buzz`} description={notes?.description ?? `${a.name} vs ${b.name} compared: ${a.pricing} vs ${b.pricing}, use cases and live X buzz. ${buzzLine}`} jsonld={[faqLd(faq), appLd(a), appLd(b), crumbsLd([['Home', '/'], ['Comparisons', '/vs'], [`${a.name} vs ${b.name}`, `/vs/${p.slug}`]])]}>
 <Shell><article class="card prose">
   <h1>{a.name} vs {b.name}</h1>
-  <p><b>Short answer:</b> {summary} {buzzLine}</p>
+  <p><b>Short answer:</b> {notes?.bottomLine ? <>{notes.bottomLine} </> : <>{summary} </>}{buzzLine}</p>
+  {notes && <><h2>Key differences (checked {notes.checked})</h2>
+  <table><thead><tr><th></th><th>{a.name}</th><th>{b.name}</th></tr></thead>
+  <tbody>{notes.rows.map(([k, x, y]) => <tr><th scope="row">{k}</th><td>{x}</td><td>{y}</td></tr>)}</tbody></table>
+  <p class="muted" style="font-size:.85rem">Sources: {notes.sources.map(([n, u], i) => <>{i ? ' · ' : ''}<a href={u} rel="noopener nofollow" target="_blank">{n}</a></>)}. Prices change, so check the official pages before you buy.</p>
+  <h2>At a glance</h2></>}
   <table><thead><tr><th></th><th><a href={`/tools/${a.slug}`}>{a.name}</a></th><th><a href={`/tools/${b.slug}`}>{b.name}</a></th></tr></thead>
   <tbody>{rows.map(([k, x, y]) => <tr><th scope="row">{k}</th><td>{x}</td><td>{y}</td></tr>)}</tbody></table>
   {shared.length > 0 && <p>Both are used for: {shared.map((c, i) => <>{i ? ', ' : ''}<a href={`/best/${c}`}>{c}</a></>)}.</p>}

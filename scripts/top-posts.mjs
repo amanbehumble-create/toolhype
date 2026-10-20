@@ -20,7 +20,7 @@ for (const [slug, t] of Object.entries(buzz.tools)) {
   if (!t.query) continue;
   let pool = [...(fs.existsSync(td) ? fs.readdirSync(td).filter((f) => new RegExp(`^${slug}\\d*\\.txt$`).test(f)) : []).flatMap((f) => normalize(json(`${td}/${f}`))), ...normalize(json(`${rawDir}/${slug}.posts.txt`)), ...(t.topPosts || []), ...official];
   pool = pool.map((p) => fresh[p.id] ? { ...p, ...fresh[p.id], text: p.text.length > fresh[p.id].text.length ? p.text : fresh[p.id].text, isReply: p.isReply || fresh[p.id].isReply } : p);
-  t.topPosts = selectTop(slug, t.query, pool).map(({ isReply, urls, ...p }) => p);
+  t.topPosts = selectTop(slug, t.query, pool, buzz.computedAt || Date.now()).map(({ isReply, urls, ...p }) => p);
   if (t.topPosts.length) shown++;
 }
 buzz.topPostsRule = 'Top 3 original X posts that mention the tool with >=100 likes or >=10K views, ranked by likes + 3*reposts + 2*replies + 2*quotes + views/100. Hidden if none qualify.';

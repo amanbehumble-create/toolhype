@@ -43,7 +43,7 @@ for (const [slug, query] of Object.entries(queries)) {
       reposts: x.public_metrics?.retweet_count || 0, replies: x.public_metrics?.reply_count || 0, views: x.public_metrics?.impression_count ?? null, quotes: x.public_metrics?.quote_count || 0 }));
     sample = posts.length;
     for (const x of posts) { likes += x.likes; reposts += x.reposts; replies += x.replies; }
-    top = selectTop(slug, query, [...posts, ...((prev.tools[slug] || {}).topPosts || [])]); // high-engagement + relevant only (docs/buzz-top-posts.md)
+    top = selectTop(slug, query, [...posts, ...((prev.tools[slug] || {}).topPosts || [])], now); // high-engagement + relevant only (docs/buzz-top-posts.md)
   }
   const eng = likes + 3 * reposts + 2 * replies + top.reduce((a, b) => a + b.quotes, 0) * 2;
   // Score: volume (0-50) + velocity spike (0-25) + engagement (0-25)

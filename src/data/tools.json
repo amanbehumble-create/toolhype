@@ -2658,5 +2658,146 @@
       "updatedAt": null
     },
     "logo": "/logos/papertrade.png"
+  },
+  {
+    "slug": "cleanyourtv",
+    "name": "CleanYourTV",
+    "url": "https://cleanyour.tv",
+    "affiliateUrl": null,
+    "category": "productivity",
+    "useCases": [
+      "productivity",
+      "coding"
+    ],
+    "pricing": "open-source",
+    "verdict": "Free, open-source (MIT) kit that debloats Android TV and Google TV sets over Wi-Fi with Claude Code or another coding agent: it switches off ad and tracking packages and swaps the ad-filled home screen for a clean Apple TV-style launcher. No root, nothing is uninstalled, and one command restores it. The GitHub repo was created on Oct 17, 2026 and passed 5,300 stars in three days after its creator's demo went viral on X (he reports 4.8M views).",
+    "riskNote": "It changes system settings on your TV over adb. It is reversible, but read the README and check your model is supported first.",
+    "useThisIf": "your Android TV or Google TV is slow and full of ads, and you are comfortable letting a coding agent run adb commands on it.",
+    "alternatives": [
+      "claude-code",
+      "opencode"
+    ],
+    "source": "x",
+    "addedAt": "2026-10-20",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/cleanyourtv.png"
+  },
+  {
+    "slug": "agentcloak",
+    "name": "AgentCloak",
+    "url": "https://incountry.com/products/agentcloak/",
+    "affiliateUrl": null,
+    "category": "chat",
+    "useCases": [
+      "chat",
+      "productivity"
+    ],
+    "pricing": "free",
+    "verdict": "Free browser extension (Chrome, Edge) and Mac app from data-residency company InCountry that swaps names, emails, phone numbers, addresses and bank numbers for fake ones before your prompt reaches ChatGPT, Claude, Gemini, Grok or DeepSeek, then restores the real values in the reply on your device. Its launch video (a Mac Mini smashed with a baseball bat) went viral on X on Oct 19, 2026. Still small: the Chrome Web Store listing showed 689 users on Oct 20. Business versions for agents, MCP and coding tools are sold separately.",
+    "useThisIf": "you paste contracts, statements or client details into AI chatbots and want personal data masked before it leaves your browser.",
+    "alternatives": [
+      "chatgpt",
+      "claude"
+    ],
+    "source": "x",
+    "addedAt": "2026-10-20",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/agentcloak.png"
+  },
+  {
+    "slug": "viggle-jst-2",
+    "name": "Viggle JST-2",
+    "url": "https://viggle.ai/jst2",
+    "affiliateUrl": null,
+    "category": "video",
+    "useCases": [
+      "video",
+      "design"
+    ],
+    "pricing": "freemium",
+    "verdict": "Viggle's new physics-native 3D world model, launched Oct 19, 2026: one model builds scenes, rigged 3D characters (from a single image) and motion (from a phone video) inside a shared 3D world you can move around in. Free to try, also on the Viggle API. Impressive demos from the team behind the Viggle dance-meme app; the benchmark wins so far are Viggle's own tests, not independent ones.",
+    "useThisIf": "you make animation, games or short videos and want a rigged 3D character and motion without a mocap setup.",
+    "alternatives": [
+      "runway",
+      "krea"
+    ],
+    "source": "x",
+    "addedAt": "2026-10-20",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/viggle-jst-2.png"
+  },
+  {
+    "slug": "mercury-3",
+    "name": "Mercury 3",
+    "url": "https://www.inceptionlabs.ai/blog/introducing-mercury-3",
+    "affiliateUrl": null,
+    "category": "agents",
+    "useCases": [
+      "agents",
+      "coding"
+    ],
+    "pricing": "paid",
+    "verdict": "Inception's new diffusion LLM, launched Oct 19, 2026, writes many tokens in parallel instead of one at a time: 1,068 tokens/sec on NVIDIA GPUs, a 1M-token context window, tool calling and structured outputs. Inception says it beats GPT-6 Luna and Claude Haiku 5.5 on standard benchmarks (vendor numbers). API pricing is $0.20 / $0.70 per million input / output tokens, half price at launch, and it is also on Vercel AI Gateway.",
+    "useThisIf": "you build voice bots, browser agents or chat support where speed and cost per call matter more than top-end reasoning.",
+    "alternatives": [
+      "claude-haiku-5-5",
+      "nemotron"
+    ],
+    "source": "x",
+    "addedAt": "2026-10-20",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/mercury-3.png"
+  },
+  {
+    "slug": "wabi",
+    "name": "Wabi 2.0",
+    "url": "https://wabi.ai",
+    "affiliateUrl": null,
+    "category": "chat",
+    "useCases": [
+      "chat",
+      "productivity"
+    ],
+    "pricing": "free",
+    "verdict": "Multiplayer AI assistant from Replika founder Eugenia Kuyda, for iOS, Android and Mac. Wabi 2.0 opened to everyone on Oct 19, 2026: add it to a group chat and it plans the trip, books the stay, sorts dinner or turns a joke into a mini-game, with home-screen widgets on your phone. Free to download. It is new, so test it on a real group errand before relying on it.",
+    "useThisIf": "your group chats keep stalling on plans and you want an AI that coordinates with everyone, not just you.",
+    "alternatives": [
+      "chatgpt",
+      "grok"
+    ],
+    "source": "x",
+    "addedAt": "2026-10-20",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/wabi.png"
   }
 ]

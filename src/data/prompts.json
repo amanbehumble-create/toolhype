@@ -341,6 +341,73 @@
           "likesAsOf": "Oct 19, 2026 HKT"
         }
       ]
+    },
+    {
+      "n": 3,
+      "slug": "issue-3",
+      "title": "Prompt Drop #3: 5 AI prompts X actually loved (100+ likes each)",
+      "date": "2026-10-20",
+      "intro": "This week's running pool. Every prompt comes from an X post with at least 100 likes, and we checked each like count on X ourselves. Copy one, swap any [brackets] or details for your own, paste it into the AI, done. More get added through the week.",
+      "rule": "Only prompts from X posts with 100+ likes (checked with X data). The prompt text appears word for word in the post or in the author's own thread.",
+      "prompts": [
+        {
+          "title": "Turn a long document into a 5-slide deck",
+          "category": "Productivity",
+          "tool": "Claude (upload the document first)",
+          "prompt": "Adopt the role of a consultant who turns 40-page reports into 10-minute presentations.\n\nI have a long document nobody will read. Turn it into a deck in Claude Slides, then give me:\n\n→ the 5 points that survive the cut\n→ one slide per point, with a visual\n→ speaker notes for each slide\n→ a list of what you left out and why\n\nDon't add anything that isn't in the document.\n\nWho it's for: [AUDIENCE].",
+          "why": "Upload a report, PDF or notes nobody will read, paste this, and swap [AUDIENCE] for who will see it (your boss, a client, your class). You get the 5 key points, one slide each, speaker notes, and a list of what was cut and why.",
+          "source": "https://x.com/alex_prompter/status/2111472389032956344",
+          "author": "@alex_prompter",
+          "likes": 173,
+          "likesAsOf": "Oct 20, 2026 HKT"
+        },
+        {
+          "title": "Make the AI prove its work before it says \"done\"",
+          "category": "Productivity",
+          "tool": "Claude, ChatGPT, Gemini or Grok",
+          "prompt": "Adopt the role of a senior reviewer at Anthropic who never accepts \"done\" without proof.\n\nFor every task I give you:\n\n→ before you start, tell me how you'll prove the result is right: a test, a check against the source, or a calculation I can repeat\n→ when you finish, show me the proof, not a summary saying it's done\n→ then review your work as if you've never seen it, and list anything that could still be wrong\n→ if we go 3 rounds without fixing something, stop and suggest a different approach\n\nDon't say \"done\", \"fixed\" or \"checked\" unless you can show me the evidence.\n\nMy task: [WHAT YOU NEED]",
+          "why": "Stops the AI from just saying a task is finished. Paste it, replace [WHAT YOU NEED] with your task (a report, a spreadsheet, a plan, some code) and it shows you a check you can repeat, then reviews its own work for mistakes.",
+          "source": "https://x.com/alex_prompter/status/2111834743948091665",
+          "author": "@alex_prompter",
+          "likes": 128,
+          "likesAsOf": "Oct 20, 2026 HKT"
+        },
+        {
+          "title": "Let the AI interview you, then plan what to automate",
+          "category": "Productivity",
+          "tool": "Grok Bot (Phase 1 works in any chat AI)",
+          "prompt": "I want you to act as my workflow architect for a moment. You're someone who thinks in bottlenecks, not features. You find the one thing that, if fixed, unlocks everything downstream. You distrust any plan that tries to automate everything at once.\n\nHere's what I need you to do, in two phases.\n\nPHASE 1: INTERVIEW ME\n\nBefore you propose anything, interview me. Ask ONE round of 2 to 3 questions at a time. Wait for my answers before continuing. Adapt each round based on what I told you.\n\nCover these areas across rounds:\n\nRound 1: What does my typical workday look like? Walk me through my core tasks and the tools I use.\n\nRound 2: Based on what I said, dig deeper. Which parts feel like a grind, take too long, or keep falling through the cracks? Where do I lose the most time or energy?\n\nRound 3: What have I tried to automate or do with AI that did not work, or that I gave up on? What would change my life if it just handled itself?\n\nRound 4 (if needed): Clarify specifics on tools, frequency, inputs/outputs for the highest-pain items.\n\nWhen you have enough signal, say: \"I have what I need. Here is what I heard.\" Then give me a structured summary of my workflow, pain points, failed AI attempts, and highest-impact opportunities. Ask me: \"Did I get this right, or did I miss anything?\"\n\nDo NOT move to Phase 2 until I confirm.\n\nPHASE 2: PLAN AND EXECUTE\n\nTurn everything you learned into a prioritized action plan, then start building.\n\n1. Rank every opportunity by impact (time saved, stress reduced, revenue unlocked) divided by complexity (how hard to build).\n2. Present a numbered plan. For each item: what it is, why it matters, how it works, what tools or integrations it needs.\n3. Label each item: AUTOMATE (fully hands-off), SEMI-AUTO (human in the loop), or SKILL (build a skill for it).\n4. For the top 3 items, immediately spawn a new bot for each one. Give each bot a clear brief: the task, the constraints, the tools available, and the expected deliverable.\n5. Report back to me as bots complete their work. Show me results, ask for feedback, iterate.\n\nNever propose a plan without finishing the interview. Never assume my tools or stack. Ask. Keep everything concise. No filler, no fluff. When uncertain, ask. Do not guess.\n\nStart Phase 1 now.",
+          "why": "Instead of guessing what to automate, the AI asks you 2 to 3 questions at a time about your workday, sums up where you lose time, and ranks fixes by impact vs effort. Step 4 of Phase 2 assumes an agent that can start other bots, like Grok Bot; in a normal chatbot just stop at the ranked plan.",
+          "source": "https://x.com/EXM7777/status/2111820095723085986",
+          "author": "@EXM7777",
+          "likes": 181,
+          "likesAsOf": "Oct 20, 2026 HKT"
+        },
+        {
+          "title": "One-line motion graphics video",
+          "category": "Coding",
+          "tool": "Gemini 4 Argon in Antigravity, or any coding AI that can write HTML animations",
+          "prompt": "Create a dynamic 45 second motion graphics video that showcases your incredible motion design skills.",
+          "why": "The shortest prompt in this issue: one sentence and the AI codes a 45-second animated video in your browser. A fun way to see what a coding model can do. Ask it to save everything as one HTML file you can open.",
+          "source": "https://x.com/IamEmily2050/status/2111381391246320012",
+          "author": "@IamEmily2050",
+          "likes": 276,
+          "likesAsOf": "Oct 20, 2026 HKT"
+        },
+        {
+          "title": "Make a photo of a child fly away on a giant leaf",
+          "category": "Video",
+          "tool": "Any image-to-video AI (upload a starting image)",
+          "prompt": "Create a 15-second cinematic fantasy video, using the supplied image as the exact opening frame. Film the entire event in ONE SINGLE, CONTINUOUS, UNBROKEN SHOT, with no cuts, transitions, time skips, or sudden camera jumps. Start at puddle height from the same intimate side angle: a tiny child in a vivid sunflower-yellow hooded puffer raincoat, blue shorts, and bare feet leans forward at frame left, holding the base of an enormous bright emerald-green leaf at frame right. Preserve the child's size and outfit, the hood hiding most of the face, the leaf's distinctive shape and delicate veins, and the beautifully glossy rain-drenched reflections. Behind them is a dark, softly blurred green forest, filled with cool rainy morning fog.\nIn the first two seconds, a breeze ripples the puddle, flutters the hem of the little yellow coat, and makes the leaf tremble. Large raindrops cling to the leaf's ridged veins, merge and slide off, falling in glittering beads. The child presses against the leaf with innocent curiosity. Then a stronger, playful gust sweeps through. The giant leaf bows backward, its broad green blade catching the moving air like a sail, flexing naturally around its thick center vein. The child grabs the leaf's sturdy lower stem with both tiny hands, sensing something wonderful about to happen.\nAround seconds three to six, the wind slips beneath the leaf and lifts its tip, then gently raises the whole leaf. The child holds on as their heels rise and both bare feet lift clear of the puddle, releasing one charming splash and a scattering of sparkling droplets. There is a delightful beat of surprise: the child's knees curl, the yellow hood bobs, and the tiny legs kick once before swinging freely. The huge leaf becomes a natural umbrella-kite, carrying the child lightly upward. Show believable airflow, gravity, and a graceful elastic flex in the leaf, not frantic spinning. The child is happy and secure, gripping the same thick stem with anatomically correct hands throughout.\nThe camera rises WITH the child in one perfectly connected move. From the opening puddle-level profile, it glides back, lifts in a slow curving crane motion, and turns very slightly into a three-quarter tracking view, keeping the yellow figure and leaf in clear sight. As they climb, the reflection sinks away naturally to reveal mossy stones, waterlogged roots, tiny trembling wildflowers, fern fronds, and a silver stream winding through the forest floor. They float past wet hanging branches and between enormous old tree trunks. Rain streaks through the foreground and a few droplets pass near the lens. Soft, cold mist curls through layers of foliage, briefly drifting between the camera and the flying pair.\nBy seconds eight to eleven, the leaf carries the giggling child just above the lower treetops. The camera continues its same rising, retreating movement, now becoming a breathtaking aerial follow view without any invisible cut. The leaf rolls softly in the wind, flashing droplets and intricate green veins; the little yellow coat glows like a miniature lantern in a vast sea of saturated greens. Reveal towering ancient rainforest trees, overlapping emerald canopies, graceful hanging vines, little waterfalls threading down moss-covered rocks, and deep ravines filled with ribbons of pearl-gray fog. A pale, diffused silver morning glow leaks through the clouds, making the rain luminous while keeping the sky overcast, moody, and beautifully inclement.\nFor the last few seconds, the camera floats higher and wider, seamlessly revealing the immense misty forest from above while retaining the child and leaf as a recognizable foreground silhouette. Beneath them, rounded rain-soaked treetops spread into the distance like an endless velvety green carpet, with silver fog flowing through the valleys. The child looks around in delighted amazement, swings two little feet, and leans subtly with the leaf as another soft gust gives them one buoyant upward lift. The leaf makes a lovely slow wobble, steadies, and glides onward like a tiny magical ship. End on the pair peacefully sailing above the green canopy into a glowing opening in the fog, with rain still falling, no sudden landing or abrupt camera movement.\nVisual style: cinematic photorealism touched with delicate storybook magic, realistic skin and fabric, accurate wet textures, glittering water droplets, exquisite leaf details, soft shallow focus at the start gradually deepening during the aerial reveal, natural motion blur, atmospheric perspective, rich deep-green and teal colors with the bright yellow coat as the only bold accent. Camera motion is smooth, weightless, and physically continuous, a gentle puddle-level dolly/crane evolving into one aerial tracking rise. Sound is intimate rainfall, leaf rustle, wind building and softening, tiny splashes, a sweet childlike giggle, distant forest birds, and a faint whimsical musical swell. No dialogue, no text, no logos, no extra characters, no duplicated fingers, no changing outfits, no leaf morphing, no violent turbulence, no cuts. Exactly 15 seconds, one continuous magical take.",
+          "why": "An image-to-video prompt: upload a picture of a small child in a yellow raincoat holding a big leaf (or make one with an image AI first), then paste this. It is long, but it tells the video model exactly how the wind, camera and one continuous shot should move.",
+          "source": "https://x.com/umesh_ai/status/2111047268409442646",
+          "promptSource": "https://x.com/umesh_ai/status/2111047272196681881",
+          "author": "@umesh_ai",
+          "note": "From the author's reply under the main post (171 likes).",
+          "likes": 171,
+          "likesAsOf": "Oct 20, 2026 HKT"
+        }
+      ]
     }
   ]
 }

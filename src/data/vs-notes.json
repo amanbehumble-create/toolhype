@@ -5,26 +5,150 @@
     "checked": "Oct 20, 2026 HKT",
     "bottomLine": "Pick Zapier if you want the biggest app catalog and the quickest no-code setup and your Zaps have only a few steps. Pick n8n if you are comfortable with a more technical tool, want to self-host for free or keep data on your own server, or run long multi-step workflows: n8n counts one execution per full run, while Zapier counts a task for every successful action step.",
     "rows": [
-      ["How usage is billed", "Per workflow execution: one full run counts once, however many steps it has", "Per task: every successful action step counts (triggers and built-in tools like Filter, Formatter and Paths don't)"],
-      ["Free option", "Community Edition is free to self-host (source on GitHub); n8n Cloud has a free trial with 1,000 executions, no card needed", "Free plan with 100 tasks/month, two-step Zaps only; 14-day Professional trial, no card needed"],
-      ["Cheapest paid plan", "Starter: €20/month billed annually", "Professional: $19.99/month billed annually for 750 tasks ($29.99 billed monthly)"],
-      ["Self-hosting", "Yes, run it on your own server", "No, cloud only"],
-      ["App integrations", "2,367 listed in n8n's integrations directory", "9,000+ apps"],
-      ["Code steps", "JavaScript or Python code steps on every plan", "Code by Zapier (JavaScript or Python): 1 second of runtime per step on Free, 30 seconds on Professional"],
-      ["AI agents", "AI Agent node, MCP client and MCP server trigger included in plans", "Zapier Agents is a separate product billed in activities (400/month free), plus Zapier MCP"],
-      ["Where data lives", "n8n Cloud: EU servers in Frankfurt; self-hosted: wherever you host it", "Zapier's cloud"],
-      ["License", "Fair-code: Sustainable Use License (source available, 208K+ GitHub stars)", "Proprietary"]
+      [
+        "How usage is billed",
+        "Per workflow execution: one full run counts once, however many steps it has",
+        "Per task: every successful action step counts (triggers and built-in tools like Filter, Formatter and Paths don't)"
+      ],
+      [
+        "Free option",
+        "Community Edition is free to self-host (source on GitHub); n8n Cloud has a free trial with 1,000 executions, no card needed",
+        "Free plan with 100 tasks/month, two-step Zaps only; 14-day Professional trial, no card needed"
+      ],
+      [
+        "Cheapest paid plan",
+        "Starter: \u20ac20/month billed annually",
+        "Professional: $19.99/month billed annually for 750 tasks ($29.99 billed monthly)"
+      ],
+      [
+        "Self-hosting",
+        "Yes, run it on your own server",
+        "No, cloud only"
+      ],
+      [
+        "App integrations",
+        "2,367 listed in n8n's integrations directory",
+        "9,000+ apps"
+      ],
+      [
+        "Code steps",
+        "JavaScript or Python code steps on every plan",
+        "Code by Zapier (JavaScript or Python): 1 second of runtime per step on Free, 30 seconds on Professional"
+      ],
+      [
+        "AI agents",
+        "AI Agent node, MCP client and MCP server trigger included in plans",
+        "Zapier Agents is a separate product billed in activities (400/month free), plus Zapier MCP"
+      ],
+      [
+        "Where data lives",
+        "n8n Cloud: EU servers in Frankfurt; self-hosted: wherever you host it",
+        "Zapier's cloud"
+      ],
+      [
+        "License",
+        "Fair-code: Sustainable Use License (source available, 208K+ GitHub stars)",
+        "Proprietary"
+      ]
     ],
     "faq": [
-      ["Is n8n cheaper than Zapier?", "It depends on your workflows. n8n Cloud starts at €20/month (billed annually) and charges per full workflow run; Zapier Professional starts at $19.99/month (billed annually) for 750 tasks, and every successful action step uses a task. For long multi-step workflows n8n usually works out cheaper, and self-hosted n8n Community Edition is free. Prices checked Oct 20, 2026."],
-      ["Can I self-host Zapier like n8n?", "No. Zapier only runs in its own cloud. n8n can be self-hosted for free with the Community Edition, or used on n8n Cloud."],
-      ["Does Zapier have a free plan?", "Yes: 100 tasks per month with two-step Zaps (one trigger, one action). Multi-step Zaps, premium apps and webhooks need a paid plan."]
+      [
+        "Is n8n cheaper than Zapier?",
+        "It depends on your workflows. n8n Cloud starts at \u20ac20/month (billed annually) and charges per full workflow run; Zapier Professional starts at $19.99/month (billed annually) for 750 tasks, and every successful action step uses a task. For long multi-step workflows n8n usually works out cheaper, and self-hosted n8n Community Edition is free. Prices checked Oct 20, 2026."
+      ],
+      [
+        "Can I self-host Zapier like n8n?",
+        "No. Zapier only runs in its own cloud. n8n can be self-hosted for free with the Community Edition, or used on n8n Cloud."
+      ],
+      [
+        "Does Zapier have a free plan?",
+        "Yes: 100 tasks per month with two-step Zaps (one trigger, one action). Multi-step Zaps, premium apps and webhooks need a paid plan."
+      ]
     ],
     "sources": [
-      ["n8n pricing", "https://n8n.io/pricing/"],
-      ["n8n integrations", "https://n8n.io/integrations/"],
-      ["n8n on GitHub", "https://github.com/n8n-io/n8n"],
-      ["Zapier pricing", "https://zapier.com/pricing"]
+      [
+        "n8n pricing",
+        "https://n8n.io/pricing/"
+      ],
+      [
+        "n8n integrations",
+        "https://n8n.io/integrations/"
+      ],
+      [
+        "n8n on GitHub",
+        "https://github.com/n8n-io/n8n"
+      ],
+      [
+        "Zapier pricing",
+        "https://zapier.com/pricing"
+      ]
+    ]
+  },
+  "chatgpt-vs-claude": {
+    "title": "ChatGPT vs Claude (2026): pricing, coding & which to pick",
+    "description": "ChatGPT vs Claude compared with checked Oct 2026 plan pages: Claude Pro is $20/month or $17/month billed annually ($200). ChatGPT offers Free, Go, Plus and Pro individual tiers (Plus includes Codex and deep research). Claude Code is on Claude Pro.",
+    "checked": "Oct 21, 2026 HKT",
+    "bottomLine": "Pick ChatGPT if you want the largest consumer ecosystem, plugins, image gen, Codex and deep research on Plus (or higher). Pick Claude if you want Claude Code, Artifacts and an optional cheaper annual Pro ($17/month billed as $200/year; $20 monthly). Both have free tiers; heavy daily use may need ChatGPT Pro or Claude Max (from $100/month).",
+    "rows": [
+      [
+        "Consumer paid plans",
+        "Free, Go, Plus and Pro (see openai.com/chatgpt/pricing for current amounts; Plus is the main individual upgrade with Codex and deep research)",
+        "Claude Pro: $20/month, or $17/month with annual ($200 billed up front); Max from $100/month"
+      ],
+      [
+        "Free tier",
+        "Yes: limited GPT models and features on chat.openai.com / the apps",
+        "Yes: Claude Free on web, desktop and mobile with Sonnet/Haiku, Artifacts, web search"
+      ],
+      [
+        "Coding agent in the plan",
+        "Codex / coding tools on Plus (and higher); usage shared with chat",
+        "Claude Code included on Pro and above; same usage pool as chat"
+      ],
+      [
+        "Higher individual tier",
+        "Higher ChatGPT plans above Plus for more usage (see openai.com/pricing)",
+        "Claude Max from $100/month: 5x or 20x Pro usage per 5-hour window"
+      ],
+      [
+        "Long documents / projects",
+        "Projects and custom GPTs on paid plans",
+        "Projects on Free (up to 5) and unlimited on Pro; Artifacts for live HTML/apps"
+      ],
+      [
+        "Company behind it",
+        "OpenAI",
+        "Anthropic"
+      ],
+      [
+        "Best known for",
+        "Broad apps, plugins, image gen and the largest consumer user base",
+        "Careful long-context writing, coding agents and Artifacts you can iterate in-chat"
+      ]
+    ],
+    "faq": [
+      [
+        "Is Claude Pro cheaper than ChatGPT Plus?",
+        "Claude Pro is $20/month or $17/month if you pay $200 for the year. ChatGPT lists Free, Go, Plus and Pro; check openai.com/chatgpt/pricing for the current Plus amount in your country. Prices checked Oct 21, 2026; tax may apply."
+      ],
+      [
+        "Does ChatGPT Plus include a coding agent like Claude Code?",
+        "Plus includes OpenAI's coding tools (Codex and related features) that share the plan's usage. Claude Pro includes Claude Code in the terminal and desktop, also sharing the same usage pool as chat."
+      ],
+      [
+        "Which is better for beginners?",
+        "Either free tier is enough to try. If you mostly chat and want plugins or image tools, start with ChatGPT. If you want to build small apps or long docs in the chat (Artifacts) or try an agent in the terminal, start with Claude."
+      ]
+    ],
+    "sources": [
+      [
+        "Claude pricing",
+        "https://claude.com/pricing"
+      ],
+      [
+        "OpenAI ChatGPT plans",
+        "https://openai.com/chatgpt/pricing/"
+      ]
     ]
   }
 }

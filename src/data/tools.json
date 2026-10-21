@@ -2799,5 +2799,146 @@
       "updatedAt": null
     },
     "logo": "/logos/wabi.png"
+  },
+  {
+    "slug": "composio-instant",
+    "name": "Composio Instant",
+    "url": "https://composio.dev/instant",
+    "affiliateUrl": null,
+    "category": "agents",
+    "useCases": [
+      "agents",
+      "productivity"
+    ],
+    "pricing": "freemium",
+    "verdict": "Product Hunt #2 on Oct 20, 2026: gives your AI agent a wallet so it can pay per call for 100+ tools (Apollo, Exa, Higgsfield, scraping, voice) without you creating provider accounts or subscriptions. Works with Claude, ChatGPT, Cursor, Codex and MCP clients; new accounts get $2 credit, Pro includes monthly credit. You still need a Composio account, and Instant covers core actions rather than every provider setting.",
+    "useThisIf": "your agent keeps stalling because you have not signed up for yet another SaaS API key, and you are fine paying per call instead.",
+    "alternatives": [
+      "langchain",
+      "n8n"
+    ],
+    "source": "producthunt",
+    "addedAt": "2026-10-21",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/composio-instant.png"
+  },
+  {
+    "slug": "harness-2",
+    "name": "Harness²",
+    "url": "https://github.com/google-research/harness2",
+    "affiliateUrl": null,
+    "category": "agents",
+    "useCases": [
+      "agents",
+      "coding"
+    ],
+    "pricing": "open-source",
+    "verdict": "Google Cloud AI Research open-source framework (PH Oct 20–21, 2026; paper arXiv:2610.14224) that recursively improves an agent’s harness—prompts, tools, memory, skills—while keeping model weights fixed. Uses Propose–Probe–Compose without ground-truth labels; reported gains up to +11.5 on WorkBuddy-Bench (vendor/paper numbers). Different from the existing Harness command-center product.",
+    "useThisIf": "you run coding or office agents and want the scaffolding around a frozen model to self-improve across tasks.",
+    "alternatives": [
+      "harness",
+      "crewai"
+    ],
+    "source": "producthunt",
+    "addedAt": "2026-10-21",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/harness-2.png"
+  },
+  {
+    "slug": "fasth3-omni",
+    "name": "FastH3 Omni",
+    "url": "https://nuvalab.ai/fasth3/",
+    "affiliateUrl": null,
+    "category": "video",
+    "useCases": [
+      "video",
+      "design"
+    ],
+    "pricing": "open-source",
+    "verdict": "Open weights released Oct 20, 2026 by Nuva Lab × FastVideo (Hao AI Lab): distilled MiniMax H3 for reference-to-video with synced audio. Takes text plus up to 9 images, 3 videos and 3 audio refs; outputs 5–15s at 24 fps. BF16 and ComfyUI builds on Hugging Face; hosted options via Reactor/Nuva. Needs serious GPU VRAM for local runs; MiniMax-H3 community license applies.",
+    "useThisIf": "you want Seedance-style omni-reference video with audio and will run open weights or a hosted API instead of a closed proprietary clip tool.",
+    "alternatives": [
+      "kling-ai",
+      "runway",
+      "comfyui"
+    ],
+    "source": "x",
+    "addedAt": "2026-10-21",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/fasth3-omni.png"
+  },
+  {
+    "slug": "exa-3",
+    "name": "Exa 3.0",
+    "url": "https://exa.ai",
+    "affiliateUrl": null,
+    "category": "productivity",
+    "useCases": [
+      "productivity",
+      "agents"
+    ],
+    "pricing": "paid",
+    "verdict": "Exa’s Oct 19, 2026 search API upgrade for AI agents: larger embeddings, Dynamic Highlights GA (vendor says ~95% fewer tokens than full page text), expanded index (products, local businesses, live data), plus Exa Lite at $4 per 1,000 requests (Auto $7). Exa claims first place on eight self-reported benchmarks; treat those as vendor numbers. API-only—no consumer chat UI.",
+    "useThisIf": "you are wiring web search into an agent and care about retrieval quality and cost per thousand calls more than a chat answer box.",
+    "alternatives": [
+      "perplexity",
+      "genspark"
+    ],
+    "source": "producthunt",
+    "addedAt": "2026-10-21",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/exa-3.png"
+  },
+  {
+    "slug": "mintlify-autopilot",
+    "name": "Mintlify Autopilot",
+    "url": "https://www.mintlify.com/blog/autopilot",
+    "affiliateUrl": null,
+    "category": "productivity",
+    "useCases": [
+      "productivity",
+      "coding"
+    ],
+    "pricing": "paid",
+    "verdict": "Always-on docs agent from Mintlify (announced Oct 20, 2026; PH launch same window): watches code, Slack, trackers, tickets and feature flags, drafts updates, and opens pull requests for human review—nothing publishes until someone merges. Learns tone from merged/closed PRs. Beta on Pro and Enterprise; each PR costs 250 Mintlify credits, empty runs are free.",
+    "useThisIf": "your docs drift every sprint and you already use Mintlify and want PRs that update pages instead of another chatbot tab.",
+    "alternatives": [
+      "notion",
+      "cursor"
+    ],
+    "source": "producthunt",
+    "addedAt": "2026-10-21",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/mintlify-autopilot.png"
   }
 ]

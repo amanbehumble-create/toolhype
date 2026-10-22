@@ -4,7 +4,7 @@ import { LABEL } from '../lib/data';
 const { tool: t, isNew = false } = Astro.props as { tool: Tool; isNew?: boolean };
 const b = t.buzz;
 // Where the daily scan found it (seed = the original hand-picked list, so no label).
-const SRC: Record<string, string> = { producthunt: 'Product Hunt', github: 'GitHub', x: 'X', hackernews: 'Hacker News', submission: 'community submission', 'producthunt + x': 'Product Hunt + X' };
+const SRC: Record<string, string> = { producthunt: 'Product Hunt', ph: 'Product Hunt', github: 'GitHub', x: 'X', hackernews: 'Hacker News', submission: 'community submission', 'producthunt + x': 'Product Hunt + X' };
 const via = SRC[t.source];
 ---
 <article class:list={['post', { featured: t.featured }]} data-slug={t.slug} data-added={t.addedAt} data-buzz={t.buzz.score ?? 0} data-label={t.buzz.label ?? ''} data-search={`${t.name} ${t.verdict} ${t.useCases.join(' ')}`.toLowerCase()}>

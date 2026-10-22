@@ -345,8 +345,8 @@
     {
       "n": 3,
       "slug": "issue-3",
-      "title": "Prompt Drop #3: 5 AI prompts X actually loved (100+ likes each)",
-      "date": "2026-10-20",
+      "title": "Prompt Drop #3: 15 AI prompts X actually loved (100+ likes each)",
+      "date": "2026-10-22",
       "intro": "This week's running pool. Every prompt comes from an X post with at least 100 likes, and we checked each like count on X ourselves. Copy one, swap any [brackets] or details for your own, paste it into the AI, done. More get added through the week.",
       "rule": "Only prompts from X posts with 100+ likes (checked with X data). The prompt text appears word for word in the post or in the author's own thread.",
       "prompts": [
@@ -406,6 +406,117 @@
           "note": "From the author's reply under the main post (171 likes).",
           "likes": 171,
           "likesAsOf": "Oct 20, 2026 HKT"
+        },
+        {
+          "title": "Ship the stuck project this week (Zuckerberg method)",
+          "category": "Productivity",
+          "tool": "ChatGPT or Claude",
+          "prompt": "Adopt the role of an expert product lead trained in Mark Zuckerberg's Hacker Way, tasked with getting my stalled project shipped this week. Your primary objective is to cut it to the smallest version I can release and learn from, in a 7-day ship plan. Define what \"done\" means for version one, list everything I'm polishing that can wait, name the one rough prototype that would settle the question I keep debating, and mark what can safely break and what can't. Don't let me wait for perfect, and don't cut anything that would break my customers' trust. Take a deep breath and work on this problem step-by-step.\n\nINFORMATION ABOUT ME:\nMy project: [INSERT PROJECT]\nHow long I've been working on it: [INSERT TIME]\nWhat I keep debating instead of testing: [INSERT QUESTION]\nWho it's for: [INSERT AUDIENCE]\n\nMOST IMPORTANT!: Give your output in a day-by-day plan format for 7 days, ending with what I ship on day 7 and the one number that tells me if it worked.",
+          "why": "Paste it when a project has been almost finished for months. Swap the brackets for your project, how long you have been stuck, the debate you keep having, and who it is for. You get a 7-day ship plan ending with what ships on day 7 and the one metric that says it worked.",
+          "source": "https://x.com/alex_prompter/status/2103095866638917907",
+          "author": "@alex_prompter",
+          "likes": 107,
+          "likesAsOf": "Oct 21, 2026 HKT"
+        },
+        {
+          "title": "Build a working phone app in one Claude chat",
+          "category": "Coding",
+          "tool": "Claude (Artifacts / chat app)",
+          "prompt": "Adopt the role of an expert app developer. Build me a working app I can use right here in the chat, as one finished page. Build the whole thing in one go, with no placeholders, no fake data and nothing left for later. Keep it clean, simple and easy to use on my phone. Save what I enter so it's still there next time. If you can't, add a button to download a backup. Before you show me, check every button works and fix anything that doesn't. Then give me the app and one line on how to use it. The app I want [DESCRIBE WHAT IT DOES, WHO IT'S FOR AND THE 3 THINGS IT MUST DO]",
+          "why": "Describe a habit tracker, budget planner or client tracker in the brackets, paste into Claude, and get a single finished page you can use on your phone—with a backup download if it cannot save state.",
+          "source": "https://x.com/alex_prompter/status/2103862217800359939",
+          "author": "@alex_prompter",
+          "likes": 149,
+          "likesAsOf": "Oct 21, 2026 HKT"
+        },
+        {
+          "title": "One-page HTML plan before Claude builds anything",
+          "category": "Coding",
+          "tool": "Claude",
+          "prompt": "I want to plan [PROJECT] before anything gets built. Make me a one-page plan as an HTML artifact.\n\nWrite it in plain language a smart 12-year-old could follow. No jargon.\n\n→ Start with the goal in one sentence\n→ Break the work into 5-7 steps, in order\n→ Under each step, list what I need to decide and what could go wrong\n→ Put every question you need me to answer in a box at the top. Don't guess the answers.\n→ Add a rough mockup of the finished thing (a page, a screen, a flowchart, whatever fits)\n\nDon't start building anything. Don't let me skip the questions.\n\nMy project: [DESCRIBE IT IN 2-3 SENTENCES]",
+          "why": "Based on how an Anthropic Claude Code engineer plans in plain language. Paste before you ask Claude to code: you get questions up front, steps, risks and a rough mockup—and it is not allowed to start building yet.",
+          "source": "https://x.com/alex_prompter/status/2107444518358573289",
+          "author": "@alex_prompter",
+          "likes": 149,
+          "likesAsOf": "Oct 21, 2026 HKT"
+        },
+        {
+          "title": "30-second HTML explainer video for your business",
+          "category": "Marketing",
+          "tool": "Claude (HTML artifact, then screen-record)",
+          "prompt": "Adopt the role of an expert motion designer. Build a 30-second animated explainer for my business as a single HTML page. 5 scenes. The customer's problem, what I do, how it works in 3 steps, one proof point, and my name at the end. Bold text, smooth transitions, my brand colours. My business [DESCRIBE WHAT YOU SELL, WHO IT'S FOR AND YOUR COLOURS]",
+          "why": "Paste with what you sell, who it is for and your colours. Claude plays a 5-scene explainer in chat; screen-record it for your site, deck or socials, then give notes like \"Slower\" or \"Add pricing\".",
+          "source": "https://x.com/alex_prompter/status/2103499977632997524",
+          "author": "@alex_prompter",
+          "likes": 372,
+          "likesAsOf": "Oct 21, 2026 HKT"
+        },
+        {
+          "title": "Fill an empty room from everything ChatGPT knows about you",
+          "category": "Image",
+          "tool": "ChatGPT (with memory / your chat history)",
+          "prompt": "Knowing everything you know about me fill this room. Except deeply personal info",
+          "why": "Upload or paste an empty-room image (or use the one from the post), paste this, and ChatGPT furnishes the room from what it already knows about you—skipping deeply personal details.",
+          "source": "https://x.com/icreatelife/status/2103978107518546419",
+          "promptSource": "https://x.com/icreatelife/status/2103979444339933639",
+          "author": "@icreatelife",
+          "likes": 126,
+          "likesAsOf": "Oct 21, 2026 HKT"
+        },
+        {
+          "title": "List every codebase assumption before the agent codes",
+          "category": "Coding",
+          "tool": "Claude Code, Codex, or Grok",
+          "prompt": "List every assumption you're making about this codebase. Mark each one verified (you read the actual code) or guessed (you inferred it, and say why). Propose your highest confidence surgical fix for each, but don't apply it yet. Stop and wait for my manual review.",
+          "why": "Forces the agent to separate what it read from what it guessed before it edits—most vibe-coding bugs hide in the guessed column.",
+          "source": "https://x.com/kloss_xyz/status/2104088147739242660",
+          "author": "@kloss_xyz",
+          "likes": 655,
+          "likesAsOf": "Oct 22, 2026 HKT"
+        },
+        {
+          "title": "Wipe your name off data-broker sites (one site at a time)",
+          "category": "Productivity",
+          "tool": "Claude (Opus)",
+          "prompt": "Adopt the role of a privacy investigator who's helped hundreds of people disappear from data brokers, people-search sites and old accounts.\nI want my personal information off the internet, and I want you to help me do it properly.\n\nDon't give me a generic privacy checklist. Instead, work through it with me one site at a time and help me answer:\n• Where do my name, phone, email and address show up, with links?\n• Which listings expose the most, and what's the opt-out page for each?\n• Which old accounts should I delete for good, and how?\n• Which sites have no opt-out button, and what GDPR or CCPA letter do I send them?\n\nDon't submit, send or delete anything until I say yes. Don't let me skip the sites that look too annoying to deal with.\n\nMy name, city, email and old usernames: [YOUR DETAILS]",
+          "why": "Turns a vague \"get me off the internet\" ask into a supervised, one-site-at-a-time opt-out plan—and it refuses to act until you approve.",
+          "source": "https://x.com/alex_prompter/status/2112816190976573537",
+          "author": "@alex_prompter",
+          "likes": 840,
+          "likesAsOf": "Oct 22, 2026 HKT"
+        },
+        {
+          "title": "90-day plan to become irreplaceable at work",
+          "category": "Productivity",
+          "tool": "Claude (Opus)",
+          "prompt": "I want to become irreplaceable at work. Analyze my current role, responsibilities, and team dynamics.\n\nIdentify the 3 highest-leverage skills that will make me indispensable in my position.\nBreak down each skill into sub-skills I can build.\nCreate a 90-day mastery plan with weekly milestones and daily actions.\nInclude learning resources, tools, and checkpoints to measure progress.\n\nFormat output into a table with columns for Day, Task, Skill Focus, Time Required, and Outcome.\n\nMy role and context: [DESCRIBE YOUR JOB]",
+          "why": "Gives beginners a concrete day-by-day table instead of vague career advice—fill in your role and you get a plan you can start tomorrow.",
+          "source": "https://x.com/alex_prompter/status/2112559527677816861",
+          "author": "@alex_prompter",
+          "likes": 694,
+          "likesAsOf": "Oct 22, 2026 HKT"
+        },
+        {
+          "title": "Calm-in-chaos die-cut sticker (image)",
+          "category": "Image",
+          "tool": "ChatGPT, Gemini, Grok, or Midjourney",
+          "prompt": "Die-cut sticker art of a [character] calmly [action] while surrounded by an exaggerated [chaotic situation], caption: \"[text]\", absurd cartoon style, bold saturated colors, thick black outlines, minimal shading, simplified shapes, playful proportions, expressive posture, humorous contrast between calm behavior and surrounding chaos, clean sticker composition, stark white background",
+          "why": "Copy-paste image prompt with clear [brackets]—great for stickers, memes, and merch mockups.",
+          "source": "https://x.com/azed_ai/status/2106700879667900888",
+          "author": "@azed_ai",
+          "likes": 140,
+          "likesAsOf": "Oct 22, 2026 HKT"
+        },
+        {
+          "title": "Stitched stop-motion fabric sculpture (image)",
+          "category": "Image",
+          "tool": "ChatGPT, Gemini, Grok, or Midjourney",
+          "prompt": "A stop-motion scene featuring a whimsical sculpture of a [subject], handcrafted from layered fabric scraps, felt, yarn, and stitched textiles, positioned on a handmade [object/element], visible seams and embroidery, soft tactile textures, slightly imperfect shapes, playful proportions, charming folk-art character design, miniature handcrafted scenery, cozy stop-motion animation aesthetic",
+          "why": "A beginner-friendly craft aesthetic with fill-in [subject] and [object]—works well for kids' book vibes and cozy product shots.",
+          "source": "https://x.com/azed_ai/status/2104526554374267368",
+          "author": "@azed_ai",
+          "likes": 240,
+          "likesAsOf": "Oct 22, 2026 HKT"
         }
       ]
     }

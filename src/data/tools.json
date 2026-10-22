@@ -1,2803 +1,3083 @@
 [
-  {
-    "slug": "orca",
-    "name": "Orca",
-    "url": "https://www.onorca.dev",
-    "affiliateUrl": null,
-    "category": "coding",
-    "useCases": [
-      "coding",
-      "agents"
-    ],
-    "pricing": "open-source",
-    "verdict": "Free, open-source (MIT) agent development environment from Stably: run Claude Code, Codex, OpenCode and other coding agents in parallel, each in its own git worktree, with terminals, diffs, an embedded browser and a CLI in one desktop app, plus iOS and Android companions. Nearly 98K GitHub stars, it was on GitHub's daily Trending list on Oct 19, 2026 (1,500+ stars in a day), and its latest release passed 1M downloads.",
-    "useThisIf": "you juggle several coding agents at once and want one app to fan a task out, compare the diffs and keep the best one, using your own agent subscriptions.",
-    "alternatives": [
-      "harness",
-      "cursor",
-      "claude-code"
-    ],
-    "source": "github",
-    "addedAt": "2026-10-19",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/orca.png"
-  },
-  {
-    "slug": "headroom",
-    "name": "Headroom",
-    "url": "https://www.headroomlabs.ai",
-    "affiliateUrl": null,
-    "category": "coding",
-    "useCases": [
-      "coding",
-      "agents"
-    ],
-    "pricing": "open-source",
-    "verdict": "Open-source (Apache 2.0) context compression layer for AI agents: it strips repeated boilerplate from tool outputs, logs, files, JSON and RAG chunks before they reach the model, claiming about 20% fewer tokens for coding agents and 60-95% fewer for JSON. Ships as a library, proxy and MCP server; 76K GitHub stars and on the daily Trending list Oct 19, 2026.",
-    "useThisIf": "your Claude Code or Codex sessions keep hitting limits or your API bill is mostly re-read logs and tool output, and you want a drop-in way to cut tokens.",
-    "alternatives": [
-      "context-mode",
-      "claude-code"
-    ],
-    "source": "github",
-    "addedAt": "2026-10-19",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/headroom.png"
-  },
-  {
-    "slug": "cli-anything",
-    "name": "CLI-Anything",
-    "url": "https://github.com/HKUDS/CLI-Anything",
-    "affiliateUrl": null,
-    "category": "agents",
-    "useCases": [
-      "agents",
-      "coding"
-    ],
-    "pricing": "open-source",
-    "verdict": "Open-source (Apache 2.0) project from HKU's Data Intelligence Lab that generates agent-native command-line interfaces for desktop software, codebases and web APIs (FreeCAD and many more), plus a CLI-Hub registry you install as an agent skill. 55K GitHub stars; a 550+ like X post this week showed Claude Code driving desktop apps through it.",
-    "useThisIf": "you want Claude Code, Codex or another skill-compatible agent to operate real desktop apps without screen-clicking computer-use.",
-    "alternatives": [
-      "claude-code",
-      "codex"
-    ],
-    "source": "github",
-    "addedAt": "2026-10-19",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/cli-anything.png"
-  },
-  {
-    "slug": "comfyui",
-    "name": "ComfyUI",
-    "url": "https://www.comfy.org",
-    "affiliateUrl": null,
-    "category": "design",
-    "useCases": [
-      "design",
-      "video"
-    ],
-    "pricing": "open-source",
-    "verdict": "The most popular open-source (GPL-3.0) node-graph app for running image, video, 3D and audio diffusion models locally, with 139K GitHub stars. It is back on GitHub's daily Trending list (Oct 19, 2026) after Comfy Agent landed, which builds workflows inside ComfyUI for you; there is also a paid Comfy Cloud if you have no GPU.",
-    "useThisIf": "you want full control over open image and video models on your own GPU, and you are willing to learn node workflows (or let Comfy Agent build them).",
-    "alternatives": [
-      "midjourney",
-      "krea",
-      "runway"
-    ],
-    "source": "github",
-    "addedAt": "2026-10-19",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/comfyui.png"
-  },
-  {
-    "slug": "beam-win",
-    "name": "Beam",
-    "url": "https://beam.win",
-    "affiliateUrl": null,
-    "category": "productivity",
-    "useCases": [
-      "productivity",
-      "coding"
-    ],
-    "pricing": "freemium",
-    "verdict": "Mac utility that brings windows from another Mac (say, a Mac mini running your agents and builds) onto the Mac in front of you, each as a real native window with its own Dock icon and Cmd-Tab entry, encrypted end to end. #1 Product of the Day on Product Hunt on Oct 19, 2026. The Macs you connect to are free; using it on your own Mac costs $7/month (20 free minutes a day).",
-    "useThisIf": "you keep Claude Code, Codex or long builds running on a Mac mini or Studio and want their terminal and browser windows on your laptop without a clunky full-screen share.",
-    "alternatives": [
-      "harness"
-    ],
-    "source": "producthunt",
-    "addedAt": "2026-10-19",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/beam-win.png"
-  },
-  {
-    "slug": "viktor",
-    "name": "Viktor",
-    "url": "https://viktor.com",
-    "affiliateUrl": null,
-    "category": "agents",
-    "useCases": [
-      "agents",
-      "productivity"
-    ],
-    "pricing": "freemium",
-    "verdict": "AI employee that lives in Slack and Microsoft Teams, connects to 9,800+ tools and runs tasks on its own, including scheduled automations and proactive suggestions based on how your team works. Its Product Hunt launch scored 700+ this week. Free to start with up to $100 in credits; the Team plan is $100/month.",
-    "useThisIf": "your team already lives in Slack or Teams and you want an agent that picks up reports, research and recurring ops work there instead of in yet another app.",
-    "alternatives": [
-      "manus",
-      "zapier",
-      "n8n"
-    ],
-    "source": "producthunt",
-    "addedAt": "2026-10-19",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/viktor.png"
-  },
-  {
-    "slug": "talanoa",
-    "name": "Talanoa",
-    "url": "https://talanoa.email",
-    "affiliateUrl": null,
-    "category": "productivity",
-    "useCases": [
-      "productivity"
-    ],
-    "pricing": "freemium",
-    "verdict": "Desktop email client for macOS, Windows and Linux that turns threads into chat-style bubbles (no quotes or signatures), turns emails into todos, and adds a built-in calendar plus private, on-device AI for search, summaries and drafts. Everything stays on your computer. It finished #5 for the week on Product Hunt (week of Oct 12, 2026). Free for one account; Pro adds more.",
-    "useThisIf": "you hate reading long email threads and want a local-first, chat-like inbox with AI that never sends your mail to the cloud.",
-    "alternatives": [
-      "inbox-zero"
-    ],
-    "source": "producthunt",
-    "addedAt": "2026-10-19",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/talanoa.png"
-  },
-  {
-    "slug": "fish-audio",
-    "name": "Fish Audio",
-    "url": "https://fish.audio",
-    "affiliateUrl": null,
-    "category": "audio",
-    "useCases": [
-      "audio",
-      "video"
-    ],
-    "pricing": "freemium",
-    "verdict": "AI text-to-speech and voice cloning platform; its new Drama 3 model (on Product Hunt Oct 16, 2026) is built for directable, emotionally controlled voice acting with tags like [whispering] or [laughing], and one X creator posted 9 minutes of narration made for about 20 cents. Free tier with 8,000 credits a month, paid plans and an API.",
-    "useThisIf": "you need expressive narration, character voices or voice clones for videos and audiobooks at a lower price than ElevenLabs.",
-    "alternatives": [
-      "elevenlabs",
-      "voicestudio"
-    ],
-    "source": "producthunt",
-    "addedAt": "2026-10-19",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/fish-audio.png"
-  },
-  {
-    "slug": "llmspeed",
-    "name": "Llmspeed",
-    "url": "https://llmspeed.dev",
-    "affiliateUrl": null,
-    "category": "chat",
-    "useCases": [
-      "chat",
-      "productivity"
-    ],
-    "pricing": "free",
-    "verdict": "Free, open-source (MIT) site that simulates how fast a local LLM will actually stream on specific hardware (RTX 3090/5090, Mac Studio, DGX Spark, Strix Halo and more), showing tokens per second and time to first token from real community benchmarks. It hit 300+ points on Hacker News as a Show HN this week.",
-    "useThisIf": "you are about to spend money on a GPU or a big-RAM Mac to run local models and want to feel the speed before you buy.",
-    "alternatives": [],
-    "source": "hackernews",
-    "addedAt": "2026-10-19",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/llmspeed.png"
-  },
-  {
-    "slug": "orke",
-    "name": "Orke",
-    "url": "https://orke.bomtobe.com/en/",
-    "affiliateUrl": null,
-    "category": "coding",
-    "useCases": [
-      "coding",
-      "agents"
-    ],
-    "pricing": "free",
-    "verdict": "Desktop workspace for Claude Code and Codex from Korean studio BOMTOBE: assign work in a terminal, then review the result in a linked web window and Git panel on the same screen, with an agent that can click through pages for you. Runs on Windows, macOS (Apple Silicon) and Linux servers, with iPhone and Android apps to check on sessions away from your desk. Shipping steadily since April 2026 (v3.4.10 on Oct 18).",
-    "useThisIf": "you run Claude Code or Codex on Windows or a home server and want terminal, browser preview and Git review in one window you can also pick up from your phone. Traction is still early, and you bring your own agent accounts.",
-    "alternatives": [
-      "orca",
-      "harness",
-      "claude-code"
-    ],
-    "source": "submission",
-    "addedAt": "2026-10-19",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/orke.png"
-  },
-  {
-    "slug": "inbox-zero",
-    "name": "Inbox Zero",
-    "url": "https://www.getinboxzero.com",
-    "affiliateUrl": null,
-    "category": "productivity",
-    "useCases": [
-      "productivity",
-      "agents"
-    ],
-    "pricing": "freemium",
-    "verdict": "Open-source email app and AI assistant. Its new Inbox Zero Mail client (launched Oct 15, 2026, and #1 Product of the Day on Product Hunt on Oct 18) pitches itself as a free Superhuman alternative: a fast, keyboard-first unified inbox for Gmail and Outlook with split inboxes, AI sorting, drafts in your voice and bulk unsubscribe.",
-    "useThisIf": "your inbox is out of control and you want Superhuman-style speed plus AI triage without the Superhuman price, with the option to self-host the open-source code.",
-    "alternatives": [
-      "notion",
-      "zapier"
-    ],
-    "source": "producthunt",
-    "addedAt": "2026-10-19",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/inbox-zero.png"
-  },
-  {
-    "slug": "voicestudio",
-    "name": "VoiceStudio",
-    "url": "https://voicestudio.sh",
-    "affiliateUrl": null,
-    "category": "audio",
-    "useCases": [
-      "audio",
-      "video"
-    ],
-    "pricing": "open-source",
-    "verdict": "Free, fully local, open-source (AGPL-3.0) alternative to ElevenLabs: voice cloning, voice design, video dubbing, dictation, transcription and audiobook creation in up to 646 languages, with no account. It hit GitHub's daily Trending list on Oct 19, 2026 with 2,000+ new stars in a day (75K+ total).",
-    "useThisIf": "you want ElevenLabs-style voice cloning and dubbing on your own machine without paying per character, and you have a decent computer to run it.",
-    "alternatives": [
-      "elevenlabs",
-      "descript"
-    ],
-    "source": "github",
-    "addedAt": "2026-10-19",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/voicestudio.png"
-  },
-  {
-    "slug": "ai-job-search",
-    "name": "AI Job Search",
-    "url": "https://github.com/MadsLorentzen/ai-job-search",
-    "affiliateUrl": null,
-    "category": "agents",
-    "useCases": [
-      "agents",
-      "productivity"
-    ],
-    "pricing": "open-source",
-    "verdict": "Open-source (MIT) job application framework built on Claude Code: fill in your profile, then it scores job postings for fit, tailors your CV and cover letter (LaTeX), has a reviewer agent critique them and preps you for interviews. The author says it got him hired; it topped GitHub's daily Trending list on Oct 19, 2026 (2,200+ stars in a day, 53K+ total).",
-    "useThisIf": "you are job hunting, already pay for Claude Code (it has no free tier) and are comfortable forking a repo. The built-in job-board scrapers target Denmark, so you will swap in your own boards.",
-    "alternatives": [
-      "claude-code",
-      "codex"
-    ],
-    "source": "github",
-    "addedAt": "2026-10-19",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/ai-job-search.png"
-  },
-  {
-    "slug": "glimpse",
-    "name": "Glimpse by Elorian",
-    "url": "https://elorian.ai",
-    "affiliateUrl": null,
-    "category": "chat",
-    "useCases": [
-      "chat",
-      "agents"
-    ],
-    "pricing": "paid",
-    "verdict": "First model from Elorian, the visual-AI lab founded by ex-Google DeepMind researchers, launched Oct 16, 2026 as a research preview with an API and chat app. It reasons through images and video (cropping, pulling frames and re-checking evidence mid-thought) and claims frontier-level multimodal scores at $0.60 / $3.00 per million input/output tokens.",
-    "useThisIf": "you build apps that need to understand charts, screenshots, video or physical scenes and want a cheaper vision-reasoning API than the big frontier models. Benchmarks are self-reported, so test it on your own data.",
-    "alternatives": [
-      "gemini",
-      "chatgpt",
-      "claude"
-    ],
-    "source": "x",
-    "addedAt": "2026-10-19",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/glimpse.png"
-  },
-  {
-    "slug": "nitrostack",
-    "name": "NitroStack",
-    "url": "https://nitrostack.ai",
-    "affiliateUrl": null,
-    "category": "coding",
-    "useCases": [
-      "coding",
-      "agents"
-    ],
-    "pricing": "freemium",
-    "verdict": "Full-stack platform for building MCP servers and MCP apps: open-source TypeScript and Python SDKs, a visual Studio for testing and debugging, workflows, and managed hosting, so tools you build plug into ChatGPT, Claude and other AI clients. It was the #1 Product of the Day on Product Hunt on Oct 17, 2026.",
-    "useThisIf": "you want to ship your own MCP server or AI-app integration without stitching together auth, testing and deployment yourself.",
-    "alternatives": [
-      "langchain",
-      "n8n"
-    ],
-    "source": "producthunt",
-    "addedAt": "2026-10-19",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/nitrostack.png"
-  },
-  {
-    "slug": "orkas",
-    "name": "Orkas",
-    "url": "https://orkas.ai",
-    "affiliateUrl": null,
-    "category": "agents",
-    "useCases": [
-      "agents",
-      "productivity"
-    ],
-    "pricing": "open-source",
-    "verdict": "Open-source (MIT), local-first desktop AI workforce: a Commander agent coordinates specialist agents to turn a brief and your project files into research, documents and creative assets.",
-    "useThisIf": "you want a team of agents working on your own files from a desktop app, and you are fine paying for model usage on top of the free core.",
-    "alternatives": [
-      "manus",
-      "genspark",
-      "crewai"
-    ],
-    "source": "submission",
-    "addedAt": "2026-10-18",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/orkas.png"
-  },
-  {
-    "slug": "wemotion",
-    "name": "WeMotion",
-    "url": "https://wemotion.ai",
-    "affiliateUrl": null,
-    "category": "video",
-    "useCases": [
-      "video",
-      "design"
-    ],
-    "pricing": "free",
-    "verdict": "Free Mac app (Apple silicon) with an AI designer built on Claude that makes motion graphics from a prompt as editable layers and keyframes, exporting up to 4K at 60fps.",
-    "useThisIf": "you are on an Apple silicon Mac, have an Anthropic API key or a Claude plan, and want prompt-made motion graphics you can still edit by hand.",
-    "alternatives": [
-      "hyperframes",
-      "claude-motion",
-      "runway"
-    ],
-    "source": "submission",
-    "addedAt": "2026-10-18",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/wemotion.png"
-  },
-  {
-    "slug": "batchrate",
-    "name": "Batchrate",
-    "url": "https://batchrate.ai",
-    "affiliateUrl": null,
-    "category": "coding",
-    "useCases": [
-      "coding",
-      "agents"
-    ],
-    "pricing": "paid",
-    "verdict": "Batch API for open AI models that works like OpenAI's batch API: upload JSONL, get results within hours. Works with the OpenAI SDK and LiteLLM, from $0.05 per million input tokens, with 10M free tokens at signup.",
-    "useThisIf": "you run big jobs on open models that can wait a few hours for results, and want them cheaper than real-time calls.",
-    "alternatives": [],
-    "source": "submission",
-    "addedAt": "2026-10-18",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/batchrate.png"
-  },
-  {
-    "slug": "gemini-4-argon",
-    "name": "Gemini 4 Argon",
-    "url": "https://deepmind.google/models/gemini/",
-    "affiliateUrl": null,
-    "category": "chat",
-    "useCases": [
-      "chat",
-      "coding"
-    ],
-    "pricing": "paid",
-    "verdict": "Google DeepMind's frontier model for hard science, coding and long-horizon work, available to Google AI Pro and Ultra subscribers.",
-    "useThisIf": "you pay for Google AI Pro or Ultra and want the newest Gemini for long tasks.",
-    "alternatives": [
-      "gemini",
-      "claude"
-    ],
-    "source": "hackernews",
-    "addedAt": "2026-10-17",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/gemini-4-argon.png"
-  },
-  {
-    "slug": "muse-wonder",
-    "name": "Muse Wonder",
-    "url": "https://research.meta.ai/blog/muse-wonder",
-    "affiliateUrl": null,
-    "category": "chat",
-    "useCases": [
-      "chat",
-      "agents"
-    ],
-    "pricing": "paid",
-    "verdict": "Meta's frontier model for personal and professional agents, with Active Memory and Active Focus, on the Meta Model API and Muse Code.",
-    "useThisIf": "you want Meta's newest agent model rather than the open-weight Muse Spark release.",
-    "alternatives": [
-      "muse-spark",
-      "claude"
-    ],
-    "source": "hackernews",
-    "addedAt": "2026-10-17",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/muse-wonder.png"
-  },
-  {
-    "slug": "glm-legal",
-    "name": "GLM-Legal",
-    "url": "https://z.ai/blog/glm-legal",
-    "affiliateUrl": null,
-    "category": "productivity",
-    "useCases": [
-      "productivity",
-      "agents"
-    ],
-    "pricing": "paid",
-    "verdict": "Z.ai model for agentic legal work: contract review, evidence analysis and compliance drafting.",
-    "useThisIf": "you want a model aimed at legal work product instead of a general chatbot.",
-    "alternatives": [
-      "claude"
-    ],
-    "source": "hackernews",
-    "addedAt": "2026-10-17",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/glm-legal.png"
-  },
-  {
-    "slug": "artcraft",
-    "name": "ArtCraft",
-    "url": "https://getartcraft.com",
-    "affiliateUrl": null,
-    "category": "design",
-    "useCases": [
-      "design",
-      "video"
-    ],
-    "pricing": "open-source",
-    "verdict": "Open-source artist studio: compose the shot yourself, then let the model render it. No subscription.",
-    "useThisIf": "you want direct control over a scene instead of hoping a prompt lands.",
-    "alternatives": [
-      "krea",
-      "midjourney"
-    ],
-    "source": "github",
-    "addedAt": "2026-10-17",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/artcraft.png"
-  },
-  {
-    "slug": "engineer-skills",
-    "name": "Skills for Real Engineers",
-    "url": "https://www.aihero.dev/skills",
-    "affiliateUrl": null,
-    "category": "coding",
-    "useCases": [
-      "coding",
-      "agents"
-    ],
-    "pricing": "open-source",
-    "verdict": "Small, composable agent skills for planning, specs, tests and shipping. Works with any model.",
-    "useThisIf": "you want a lightweight engineering workflow in your coding agent without a heavy process framework.",
-    "alternatives": [
-      "claude-code",
-      "codex"
-    ],
-    "source": "github",
-    "addedAt": "2026-10-17",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/engineer-skills.png"
-  },
-  {
-    "slug": "diagram-design",
-    "name": "Diagram Design",
-    "url": "https://diagramdesign.dev",
-    "affiliateUrl": null,
-    "category": "design",
-    "useCases": [
-      "design",
-      "coding"
-    ],
-    "pricing": "open-source",
-    "verdict": "Agent skill that draws 44 editorial diagram types as self-contained HTML and SVG, matched to your site's brand.",
-    "useThisIf": "your coding agent keeps producing generic box diagrams.",
-    "alternatives": [
-      "figma"
-    ],
-    "source": "github",
-    "addedAt": "2026-10-17",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/diagram-design.png"
-  },
-  {
-    "slug": "hyperframes",
-    "name": "Hyperframes",
-    "url": "https://www.hyperframes.dev",
-    "affiliateUrl": null,
-    "category": "video",
-    "useCases": [
-      "video",
-      "coding"
-    ],
-    "pricing": "open-source",
-    "verdict": "Open-source framework that turns HTML, CSS and animations into deterministic MP4 video, built for coding agents.",
-    "useThisIf": "you want an agent to render video from HTML instead of a timeline editor.",
-    "alternatives": [
-      "heygen",
-      "runway"
-    ],
-    "source": "github",
-    "addedAt": "2026-10-17",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/hyperframes.png"
-  },
-  {
-    "slug": "context-mode",
-    "name": "Context Mode",
-    "url": "https://context-mode.com",
-    "affiliateUrl": null,
-    "category": "coding",
-    "useCases": [
-      "coding",
-      "agents"
-    ],
-    "pricing": "freemium",
-    "verdict": "Sits between coding agents and the model: folds tool output, keeps session memory, and blocks commands by rules you set.",
-    "useThisIf": "Claude Code or Codex sessions burn tokens on logs, or you want a blocklist before tools run.",
-    "alternatives": [
-      "claude-code",
-      "codex"
-    ],
-    "source": "github",
-    "addedAt": "2026-10-17",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/context-mode.png"
-  },
-  {
-    "slug": "jockey",
-    "name": "Jockey",
-    "url": "https://www.twelvelabs.io/jockey",
-    "affiliateUrl": null,
-    "category": "video",
-    "useCases": [
-      "video",
-      "agents"
-    ],
-    "pricing": "freemium",
-    "verdict": "TwelveLabs video agent that searches a library by meaning and assembles clips, inside Claude, ChatGPT or the API.",
-    "useThisIf": "you have a large video archive and want to find moments or cut highlights by describing them.",
-    "alternatives": [
-      "opusclip",
-      "descript"
-    ],
-    "source": "producthunt",
-    "addedAt": "2026-10-17",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/jockey.png"
-  },
-  {
-    "slug": "harness",
-    "name": "Harness",
-    "url": "https://www.autonomous.ai/harness",
-    "affiliateUrl": null,
-    "category": "coding",
-    "useCases": [
-      "coding",
-      "agents"
-    ],
-    "pricing": "open-source",
-    "verdict": "Open-source command center for the coding agents you already run, across every machine, with harnesses beyond code.",
-    "useThisIf": "you run Claude Code, Codex and other agents on more than one machine and want them in one place.",
-    "alternatives": [
-      "claude-code",
-      "codex"
-    ],
-    "source": "producthunt",
-    "addedAt": "2026-10-17",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/harness.png"
-  },
-  {
-    "slug": "pancake",
-    "name": "Pancake",
-    "url": "https://pancake.ai",
-    "affiliateUrl": null,
-    "category": "marketing",
-    "useCases": [
-      "marketing",
-      "agents"
-    ],
-    "pricing": "paid",
-    "verdict": "GTM building blocks (data, enrichment, sending) your AI agent drives over one MCP connection.",
-    "useThisIf": "you run outbound from Claude or Codex and want data plus sending in one place.",
-    "alternatives": [
-      "copy-ai"
-    ],
-    "source": "producthunt",
-    "addedAt": "2026-10-14",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/pancake.png"
-  },
-  {
-    "slug": "inferock",
-    "name": "Inferock",
-    "url": "https://github.com/inferock/inferock-bench",
-    "affiliateUrl": null,
-    "category": "coding",
-    "useCases": [
-      "coding"
-    ],
-    "pricing": "open-source",
-    "verdict": "Local proxy that logs per-call LLM token usage and failures so you can audit what you were billed.",
-    "useThisIf": "you suspect your LLM API bill includes failed or retried calls.",
-    "alternatives": [],
-    "source": "producthunt",
-    "addedAt": "2026-10-14",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/inferock.png"
-  },
-  {
-    "slug": "retriever-ai",
-    "name": "Retriever AI",
-    "url": "https://rtrvr.ai",
-    "affiliateUrl": null,
-    "category": "agents",
-    "useCases": [
-      "agents",
-      "productivity"
-    ],
-    "pricing": "free",
-    "verdict": "Ad-supported browser agent for lead finding, outreach and form filling, no API key needed.",
-    "useThisIf": "you want to try a browser agent without paying for inference.",
-    "alternatives": [],
-    "source": "producthunt",
-    "addedAt": "2026-10-14",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/retriever-ai.png"
-  },
-  {
-    "slug": "articos",
-    "name": "Articos MCP",
-    "url": "https://www.articos.com",
-    "affiliateUrl": null,
-    "category": "marketing",
-    "useCases": [
-      "marketing",
-      "agents"
-    ],
-    "pricing": "paid",
-    "verdict": "Tests messaging and landing pages against simulated buyer personas from inside your agent.",
-    "useThisIf": "you want quick directional feedback on positioning before real user tests.",
-    "alternatives": [],
-    "source": "producthunt",
-    "addedAt": "2026-10-13",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": null
-  },
-  {
-    "slug": "opencode",
-    "name": "OpenCode 2.0",
-    "url": "https://opencode.ai",
-    "affiliateUrl": null,
-    "category": "coding",
-    "useCases": [
-      "coding",
-      "agents"
-    ],
-    "pricing": "open-source",
-    "verdict": "Open-source, model-agnostic terminal coding agent with a native TUI and multi-session support.",
-    "useThisIf": "you want a Claude Code-style agent that works with any model.",
-    "alternatives": [
-      "claude-code",
-      "aider"
-    ],
-    "source": "producthunt",
-    "addedAt": "2026-10-13",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/opencode.png"
-  },
-  {
-    "slug": "indra",
-    "name": "Indra",
-    "url": "https://github.com/datalab-to/indra",
-    "affiliateUrl": null,
-    "category": "productivity",
-    "useCases": [
-      "productivity",
-      "coding"
-    ],
-    "pricing": "open-source",
-    "verdict": "Fast CPU-only OCR from Datalab that outputs reading-ordered markdown.",
-    "useThisIf": "you need to turn scans or PDFs into markdown without a GPU.",
-    "alternatives": [],
-    "source": "github",
-    "addedAt": "2026-10-13",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/indra.png"
-  },
-  {
-    "slug": "solid-glass",
-    "name": "Solid Glass",
-    "url": "https://deeplethe.github.io/solid-glass",
-    "affiliateUrl": null,
-    "category": "design",
-    "useCases": [
-      "design",
-      "coding"
-    ],
-    "pricing": "open-source",
-    "verdict": "Open-source design system aimed at AI app interfaces; trending on GitHub this week.",
-    "useThisIf": "you are vibe-coding an AI app and want a ready-made visual language.",
-    "alternatives": [],
-    "source": "github",
-    "addedAt": "2026-10-12",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/solid-glass.png"
-  },
-  {
-    "slug": "reso-ai",
-    "name": "ReSO AI",
-    "url": "https://www.resollm.ai",
-    "affiliateUrl": null,
-    "category": "marketing",
-    "useCases": [
-      "marketing"
-    ],
-    "pricing": "paid",
-    "verdict": "Generative engine optimization: tracks and improves how ChatGPT, Perplexity and Google AI recommend you.",
-    "useThisIf": "you care about showing up in AI answers, not just Google.",
-    "alternatives": [],
-    "source": "producthunt",
-    "addedAt": "2026-10-10",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/reso-ai.png"
-  },
-  {
-    "slug": "onepin",
-    "name": "Onepin",
-    "url": "https://onepin.ai",
-    "affiliateUrl": null,
-    "category": "audio",
-    "useCases": [
-      "audio",
-      "video"
-    ],
-    "pricing": "freemium",
-    "verdict": "Quality layer over ElevenLabs and other TTS voices that fixes names, prices and dates in AI voiceover.",
-    "useThisIf": "you ship multilingual AI voiceover and keep catching mispronunciations.",
-    "alternatives": [
-      "elevenlabs"
-    ],
-    "source": "producthunt",
-    "addedAt": "2026-10-10",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/onepin.png"
-  },
-  {
-    "slug": "claude-motion",
-    "name": "Claude Dashboards & Motion",
-    "url": "https://claude.com/resources/articles/dashboards-and-motion",
-    "affiliateUrl": null,
-    "category": "productivity",
-    "useCases": [
-      "productivity",
-      "video"
-    ],
-    "pricing": "paid",
-    "verdict": "Claude artifacts that build live data dashboards and code-animated explainer videos (beta).",
-    "useThisIf": "you already pay for Claude and want charts or animated walkthroughs without new tools.",
-    "alternatives": [
-      "claude"
-    ],
-    "source": "producthunt + x",
-    "addedAt": "2026-10-10",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/claude-motion.png"
-  },
-  {
-    "slug": "openseo",
-    "name": "OpenSEO",
-    "url": "https://openseo.so",
-    "affiliateUrl": null,
-    "category": "marketing",
-    "useCases": [
-      "marketing"
-    ],
-    "pricing": "paid",
-    "verdict": "Open-source Semrush alternative with keyword, backlink and audit data your agent can use via MCP.",
-    "useThisIf": "you want SEO data for your agent without a $100+/mo suite.",
-    "alternatives": [],
-    "source": "producthunt",
-    "addedAt": "2026-10-08",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/openseo.png"
-  },
-  {
-    "slug": "claude-haiku-5-5",
-    "name": "Claude Haiku 5.5",
-    "url": "https://www.anthropic.com/claude-haiku-5-5",
-    "affiliateUrl": null,
-    "category": "chat",
-    "useCases": [
-      "chat",
-      "coding"
-    ],
-    "pricing": "paid",
-    "verdict": "Anthropic's fastest small model, pitched for high-volume tasks and coding subagents.",
-    "useThisIf": "you need cheap, fast calls for classification, support or subagents.",
-    "alternatives": [
-      "claude"
-    ],
-    "source": "producthunt",
-    "addedAt": "2026-10-08",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/claude-haiku-5-5.png"
-  },
-  {
-    "slug": "openswarm",
-    "name": "OpenSwarm",
-    "url": "https://openswarm.info",
-    "affiliateUrl": null,
-    "category": "agents",
-    "useCases": [
-      "agents",
-      "productivity"
-    ],
-    "pricing": "freemium",
-    "verdict": "Agent-first desktop environment where swarms of agents run apps and browsers in parallel.",
-    "useThisIf": "you want to orchestrate many agents at once and like experimental setups.",
-    "alternatives": [],
-    "source": "producthunt",
-    "addedAt": "2026-10-08",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/openswarm.png"
-  },
-  {
-    "slug": "chatgpt",
-    "name": "ChatGPT",
-    "url": "https://chatgpt.com",
-    "affiliateUrl": null,
-    "category": "chat",
-    "useCases": [
-      "chat",
-      "productivity",
-      "coding"
-    ],
-    "pricing": "freemium",
-    "verdict": "The default general assistant; strong all-rounder with a huge plugin and GPT ecosystem.",
-    "useThisIf": "you want one assistant that does a bit of everything.",
-    "alternatives": [
-      "claude",
-      "gemini",
-      "grok"
-    ],
-    "source": "seed",
-    "addedAt": "2022-11-30",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/chatgpt.png"
-  },
-  {
-    "slug": "claude",
-    "name": "Claude",
-    "url": "https://claude.ai",
-    "affiliateUrl": null,
-    "category": "chat",
-    "useCases": [
-      "chat",
-      "coding",
-      "productivity"
-    ],
-    "pricing": "freemium",
-    "verdict": "Excellent for long documents, writing and careful coding help.",
-    "useThisIf": "you work with long context or want thoughtful writing.",
-    "alternatives": [
-      "chatgpt",
-      "gemini"
-    ],
-    "source": "seed",
-    "addedAt": "2023-03-14",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/claude.png"
-  },
-  {
-    "slug": "gemini",
-    "name": "Gemini",
-    "url": "https://gemini.google.com",
-    "affiliateUrl": null,
-    "category": "chat",
-    "useCases": [
-      "chat",
-      "productivity"
-    ],
-    "pricing": "freemium",
-    "verdict": "Google's assistant, best if you live in Gmail, Docs and Drive.",
-    "useThisIf": "you're deep in Google Workspace.",
-    "alternatives": [
-      "chatgpt",
-      "claude"
-    ],
-    "source": "seed",
-    "addedAt": "2023-12-06",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/gemini.png"
-  },
-  {
-    "slug": "grok",
-    "name": "Grok",
-    "url": "https://grok.com",
-    "affiliateUrl": null,
-    "category": "chat",
-    "useCases": [
-      "chat",
-      "marketing"
-    ],
-    "pricing": "freemium",
-    "verdict": "xAI's assistant with native, real-time access to X.",
-    "useThisIf": "you need what's happening on X right now.",
-    "alternatives": [
-      "perplexity",
-      "chatgpt"
-    ],
-    "source": "seed",
-    "addedAt": "2023-11-04",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/grok.png"
-  },
-  {
-    "slug": "perplexity",
-    "name": "Perplexity",
-    "url": "https://www.perplexity.ai",
-    "affiliateUrl": null,
-    "category": "productivity",
-    "useCases": [
-      "productivity",
-      "chat"
-    ],
-    "pricing": "freemium",
-    "verdict": "Answer engine with citations; fast research instead of ten blue links.",
-    "useThisIf": "you want sourced answers quickly.",
-    "alternatives": [
-      "grok",
-      "chatgpt"
-    ],
-    "source": "seed",
-    "addedAt": "2022-12-07",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/perplexity.png"
-  },
-  {
-    "slug": "cursor",
-    "name": "Cursor",
-    "url": "https://cursor.com",
-    "affiliateUrl": null,
-    "category": "coding",
-    "useCases": [
-      "coding",
-      "agents"
-    ],
-    "pricing": "freemium",
-    "verdict": "AI-first code editor (VS Code fork) with strong agent and tab completion.",
-    "useThisIf": "you code daily and want AI built into the editor.",
-    "alternatives": [
-      "windsurf",
-      "github-copilot",
-      "claude-code"
-    ],
-    "source": "seed",
-    "addedAt": "2023-03-14",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/cursor.png"
-  },
-  {
-    "slug": "github-copilot",
-    "name": "GitHub Copilot",
-    "url": "https://github.com/features/copilot",
-    "affiliateUrl": null,
-    "category": "coding",
-    "useCases": [
-      "coding"
-    ],
-    "pricing": "freemium",
-    "verdict": "AI pair programmer inside your existing IDE and GitHub.",
-    "useThisIf": "your team already lives on GitHub.",
-    "alternatives": [
-      "cursor",
-      "windsurf"
-    ],
-    "source": "seed",
-    "addedAt": "2021-06-29",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/github-copilot.png"
-  },
-  {
-    "slug": "windsurf",
-    "name": "Windsurf",
-    "url": "https://windsurf.com",
-    "affiliateUrl": null,
-    "category": "coding",
-    "useCases": [
-      "coding",
-      "agents"
-    ],
-    "pricing": "freemium",
-    "verdict": "Agentic IDE focused on keeping you in flow.",
-    "useThisIf": "you want a Cursor alternative.",
-    "alternatives": [
-      "cursor",
-      "github-copilot"
-    ],
-    "source": "seed",
-    "addedAt": "2024-11-13",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/windsurf.png"
-  },
-  {
-    "slug": "claude-code",
-    "name": "Claude Code",
-    "url": "https://www.anthropic.com/claude-code",
-    "affiliateUrl": null,
-    "category": "coding",
-    "useCases": [
-      "coding",
-      "agents"
-    ],
-    "pricing": "paid",
-    "verdict": "Terminal-based coding agent that edits and runs your repo.",
-    "useThisIf": "you prefer the command line and big refactors.",
-    "alternatives": [
-      "cursor",
-      "aider"
-    ],
-    "source": "seed",
-    "addedAt": "2025-02-24",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/claude-code.png"
-  },
-  {
-    "slug": "aider",
-    "name": "Aider",
-    "url": "https://aider.chat",
-    "affiliateUrl": null,
-    "category": "coding",
-    "useCases": [
-      "coding",
-      "agents"
-    ],
-    "pricing": "open-source",
-    "verdict": "Open-source AI pair programming in your terminal, git-aware.",
-    "useThisIf": "you want open-source and bring-your-own model.",
-    "alternatives": [
-      "claude-code",
-      "cursor"
-    ],
-    "source": "seed",
-    "addedAt": "2023-05-09",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/aider.png"
-  },
-  {
-    "slug": "v0",
-    "name": "v0",
-    "url": "https://v0.dev",
-    "affiliateUrl": null,
-    "category": "coding",
-    "useCases": [
-      "coding",
-      "design"
-    ],
-    "pricing": "freemium",
-    "verdict": "Vercel's generator for React/Next UI from a prompt.",
-    "useThisIf": "you need a polished UI component fast.",
-    "alternatives": [
-      "bolt",
-      "lovable"
-    ],
-    "source": "seed",
-    "addedAt": "2023-10-11",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/v0.png"
-  },
-  {
-    "slug": "bolt",
-    "name": "Bolt",
-    "url": "https://bolt.new",
-    "affiliateUrl": null,
-    "category": "coding",
-    "useCases": [
-      "coding"
-    ],
-    "pricing": "freemium",
-    "verdict": "Prompt-to-full-stack app in the browser by StackBlitz.",
-    "useThisIf": "you want a running web app from one prompt.",
-    "alternatives": [
-      "lovable",
-      "replit",
-      "v0"
-    ],
-    "source": "seed",
-    "addedAt": "2024-10-03",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/bolt.png"
-  },
-  {
-    "slug": "lovable",
-    "name": "Lovable",
-    "url": "https://lovable.dev",
-    "affiliateUrl": null,
-    "category": "coding",
-    "useCases": [
-      "coding"
-    ],
-    "pricing": "freemium",
-    "verdict": "Vibe-code full apps with Supabase backend from chat.",
-    "useThisIf": "you're a non-dev shipping an MVP.",
-    "alternatives": [
-      "bolt",
-      "replit"
-    ],
-    "source": "seed",
-    "addedAt": "2024-11-21",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/lovable.png"
-  },
-  {
-    "slug": "replit",
-    "name": "Replit",
-    "url": "https://replit.com",
-    "affiliateUrl": null,
-    "category": "coding",
-    "useCases": [
-      "coding",
-      "agents"
-    ],
-    "pricing": "freemium",
-    "verdict": "Cloud IDE with Replit Agent that builds and deploys apps.",
-    "useThisIf": "you want build + hosting in one place.",
-    "alternatives": [
-      "bolt",
-      "lovable"
-    ],
-    "source": "seed",
-    "addedAt": "2016-01-01",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/replit.png"
-  },
-  {
-    "slug": "n8n",
-    "name": "n8n",
-    "url": "https://n8n.io",
-    "affiliateUrl": null,
-    "category": "agents",
-    "useCases": [
-      "agents",
-      "productivity"
-    ],
-    "pricing": "open-source",
-    "verdict": "Fair-code workflow automation with AI agent nodes; self-hostable.",
-    "useThisIf": "you want Zapier-style automations you control.",
-    "alternatives": [
-      "zapier",
-      "make"
-    ],
-    "source": "seed",
-    "addedAt": "2019-10-08",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/n8n.png"
-  },
-  {
-    "slug": "zapier",
-    "name": "Zapier",
-    "url": "https://zapier.com",
-    "affiliateUrl": null,
-    "category": "agents",
-    "useCases": [
-      "agents",
-      "productivity"
-    ],
-    "pricing": "freemium",
-    "verdict": "The biggest no-code automation catalog, now with AI agents.",
-    "useThisIf": "you need to connect many SaaS apps fast.",
-    "alternatives": [
-      "n8n",
-      "make"
-    ],
-    "source": "seed",
-    "addedAt": "2012-10-01",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/zapier.png"
-  },
-  {
-    "slug": "make",
-    "name": "Make",
-    "url": "https://www.make.com",
-    "affiliateUrl": null,
-    "category": "agents",
-    "useCases": [
-      "agents",
-      "productivity"
-    ],
-    "pricing": "freemium",
-    "verdict": "Visual automation builder with granular control.",
-    "useThisIf": "you like visual flows and lower prices than Zapier.",
-    "alternatives": [
-      "zapier",
-      "n8n"
-    ],
-    "source": "seed",
-    "addedAt": "2022-02-01",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/make.png"
-  },
-  {
-    "slug": "langchain",
-    "name": "LangChain",
-    "url": "https://www.langchain.com",
-    "affiliateUrl": null,
-    "category": "agents",
-    "useCases": [
-      "agents",
-      "coding"
-    ],
-    "pricing": "open-source",
-    "verdict": "Popular framework for building LLM apps and agents.",
-    "useThisIf": "you're a developer building custom agents.",
-    "alternatives": [
-      "crewai"
-    ],
-    "source": "seed",
-    "addedAt": "2022-10-24",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/langchain.png"
-  },
-  {
-    "slug": "crewai",
-    "name": "CrewAI",
-    "url": "https://www.crewai.com",
-    "affiliateUrl": null,
-    "category": "agents",
-    "useCases": [
-      "agents",
-      "coding"
-    ],
-    "pricing": "open-source",
-    "verdict": "Framework for multi-agent 'crews' with roles.",
-    "useThisIf": "you want several agents collaborating.",
-    "alternatives": [
-      "langchain"
-    ],
-    "source": "seed",
-    "addedAt": "2023-12-01",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/crewai.png"
-  },
-  {
-    "slug": "midjourney",
-    "name": "Midjourney",
-    "url": "https://www.midjourney.com",
-    "affiliateUrl": null,
-    "category": "design",
-    "useCases": [
-      "design"
-    ],
-    "pricing": "paid",
-    "verdict": "Top-tier aesthetic image generation.",
-    "useThisIf": "image quality and style matter most.",
-    "alternatives": [
-      "ideogram",
-      "canva"
-    ],
-    "source": "seed",
-    "addedAt": "2022-07-12",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/midjourney.png"
-  },
-  {
-    "slug": "ideogram",
-    "name": "Ideogram",
-    "url": "https://ideogram.ai",
-    "affiliateUrl": null,
-    "category": "design",
-    "useCases": [
-      "design",
-      "marketing"
-    ],
-    "pricing": "freemium",
-    "verdict": "Image generation that renders text in images well.",
-    "useThisIf": "you need posters, logos or text-in-image.",
-    "alternatives": [
-      "midjourney"
-    ],
-    "source": "seed",
-    "addedAt": "2023-08-22",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/ideogram.png"
-  },
-  {
-    "slug": "canva",
-    "name": "Canva",
-    "url": "https://www.canva.com",
-    "affiliateUrl": null,
-    "category": "design",
-    "useCases": [
-      "design",
-      "marketing"
-    ],
-    "pricing": "freemium",
-    "verdict": "Design for everyone with Magic Studio AI features.",
-    "useThisIf": "you need quick social graphics and decks.",
-    "alternatives": [
-      "figma"
-    ],
-    "source": "seed",
-    "addedAt": "2013-08-26",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/canva.png"
-  },
-  {
-    "slug": "figma",
-    "name": "Figma",
-    "url": "https://www.figma.com",
-    "affiliateUrl": null,
-    "category": "design",
-    "useCases": [
-      "design"
-    ],
-    "pricing": "freemium",
-    "verdict": "Collaborative design standard with built-in AI features.",
-    "useThisIf": "you design product UI with a team.",
-    "alternatives": [
-      "canva",
-      "v0"
-    ],
-    "source": "seed",
-    "addedAt": "2016-09-27",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/figma.png"
-  },
-  {
-    "slug": "runway",
-    "name": "Runway",
-    "url": "https://runwayml.com",
-    "affiliateUrl": null,
-    "category": "video",
-    "useCases": [
-      "video"
-    ],
-    "pricing": "freemium",
-    "verdict": "AI video generation and editing suite for creators.",
-    "useThisIf": "you want generative video plus editing tools.",
-    "alternatives": [
-      "pika",
-      "heygen"
-    ],
-    "source": "seed",
-    "addedAt": "2018-06-01",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/runway.png"
-  },
-  {
-    "slug": "pika",
-    "name": "Pika",
-    "url": "https://pika.art",
-    "affiliateUrl": null,
-    "category": "video",
-    "useCases": [
-      "video"
-    ],
-    "pricing": "freemium",
-    "verdict": "Fun, fast text/image-to-video with effects.",
-    "useThisIf": "you make short playful social clips.",
-    "alternatives": [
-      "runway"
-    ],
-    "source": "seed",
-    "addedAt": "2023-11-28",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/pika.png"
-  },
-  {
-    "slug": "heygen",
-    "name": "HeyGen",
-    "url": "https://www.heygen.com",
-    "affiliateUrl": null,
-    "category": "video",
-    "useCases": [
-      "video",
-      "marketing"
-    ],
-    "pricing": "freemium",
-    "verdict": "AI avatars and video translation for talking-head content.",
-    "useThisIf": "you need presenter videos without filming.",
-    "alternatives": [
-      "synthesia"
-    ],
-    "source": "seed",
-    "addedAt": "2020-12-01",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/heygen.png"
-  },
-  {
-    "slug": "synthesia",
-    "name": "Synthesia",
-    "url": "https://www.synthesia.io",
-    "affiliateUrl": null,
-    "category": "video",
-    "useCases": [
-      "video",
-      "marketing"
-    ],
-    "pricing": "paid",
-    "verdict": "Enterprise AI avatar videos for training and comms.",
-    "useThisIf": "you produce corporate training videos.",
-    "alternatives": [
-      "heygen"
-    ],
-    "source": "seed",
-    "addedAt": "2017-06-01",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/synthesia.png"
-  },
-  {
-    "slug": "descript",
-    "name": "Descript",
-    "url": "https://www.descript.com",
-    "affiliateUrl": null,
-    "category": "video",
-    "useCases": [
-      "video",
-      "audio"
-    ],
-    "pricing": "freemium",
-    "verdict": "Edit video and podcasts by editing the transcript.",
-    "useThisIf": "you edit talking content and podcasts.",
-    "alternatives": [
-      "capcut"
-    ],
-    "source": "seed",
-    "addedAt": "2017-12-01",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/descript.png"
-  },
-  {
-    "slug": "capcut",
-    "name": "CapCut",
-    "url": "https://www.capcut.com",
-    "affiliateUrl": null,
-    "category": "video",
-    "useCases": [
-      "video",
-      "marketing"
-    ],
-    "pricing": "freemium",
-    "verdict": "Free-ish short-form editor with AI captions and effects.",
-    "useThisIf": "you make TikToks, Reels and Shorts.",
-    "alternatives": [
-      "descript"
-    ],
-    "source": "seed",
-    "addedAt": "2020-04-01",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/capcut.png"
-  },
-  {
-    "slug": "elevenlabs",
-    "name": "ElevenLabs",
-    "url": "https://elevenlabs.io",
-    "affiliateUrl": null,
-    "category": "audio",
-    "useCases": [
-      "audio",
-      "video"
-    ],
-    "pricing": "freemium",
-    "verdict": "Realistic text-to-speech and voice cloning.",
-    "useThisIf": "you need natural voiceovers.",
-    "alternatives": [
-      "descript"
-    ],
-    "source": "seed",
-    "addedAt": "2023-01-23",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/elevenlabs.png"
-  },
-  {
-    "slug": "suno",
-    "name": "Suno",
-    "url": "https://suno.com",
-    "affiliateUrl": null,
-    "category": "audio",
-    "useCases": [
-      "audio"
-    ],
-    "pricing": "freemium",
-    "verdict": "Generate full songs with vocals from a prompt.",
-    "useThisIf": "you need music or jingles fast.",
-    "alternatives": [
-      "elevenlabs"
-    ],
-    "source": "seed",
-    "addedAt": "2023-12-20",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/suno.png"
-  },
-  {
-    "slug": "notion",
-    "name": "Notion",
-    "url": "https://www.notion.com",
-    "affiliateUrl": null,
-    "category": "productivity",
-    "useCases": [
-      "productivity"
-    ],
-    "pricing": "freemium",
-    "verdict": "All-in-one workspace with Notion AI for docs and Q&A.",
-    "useThisIf": "your team's docs and wikis live in one place.",
-    "alternatives": [],
-    "source": "seed",
-    "addedAt": "2016-03-01",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/notion.png"
-  },
-  {
-    "slug": "granola",
-    "name": "Granola",
-    "url": "https://www.granola.ai",
-    "affiliateUrl": null,
-    "category": "productivity",
-    "useCases": [
-      "productivity"
-    ],
-    "pricing": "freemium",
-    "verdict": "AI meeting notes that enhance your own notes, no bot joins.",
-    "useThisIf": "you want meeting notes without a recorder bot.",
-    "alternatives": [
-      "notion"
-    ],
-    "source": "seed",
-    "addedAt": "2024-05-22",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/granola.png"
-  },
-  {
-    "slug": "jasper",
-    "name": "Jasper",
-    "url": "https://www.jasper.ai",
-    "affiliateUrl": null,
-    "category": "marketing",
-    "useCases": [
-      "marketing"
-    ],
-    "pricing": "paid",
-    "verdict": "AI marketing copy platform with brand voice.",
-    "useThisIf": "a marketing team needs on-brand copy at scale.",
-    "alternatives": [
-      "copy-ai",
-      "chatgpt"
-    ],
-    "source": "seed",
-    "addedAt": "2021-02-01",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/jasper.png"
-  },
-  {
-    "slug": "copy-ai",
-    "name": "Copy.ai",
-    "url": "https://www.copy.ai",
-    "affiliateUrl": null,
-    "category": "marketing",
-    "useCases": [
-      "marketing",
-      "agents"
-    ],
-    "pricing": "freemium",
-    "verdict": "GTM AI workflows for sales and marketing copy.",
-    "useThisIf": "you automate outbound and content workflows.",
-    "alternatives": [
-      "jasper"
-    ],
-    "source": "seed",
-    "addedAt": "2020-10-01",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/copy-ai.png"
-  },
-  {
-    "slug": "gamma",
-    "name": "Gamma",
-    "url": "https://gamma.app",
-    "affiliateUrl": null,
-    "category": "productivity",
-    "useCases": [
-      "productivity",
-      "design"
-    ],
-    "pricing": "freemium",
-    "verdict": "Generate decks, docs and webpages from a prompt.",
-    "useThisIf": "you need a good-looking deck in minutes.",
-    "alternatives": [
-      "canva"
-    ],
-    "source": "seed",
-    "addedAt": "2022-11-01",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/gamma.png"
-  },
-  {
-    "slug": "wispr-flow",
-    "name": "Wispr Flow",
-    "url": "https://wisprflow.ai",
-    "affiliateUrl": null,
-    "category": "productivity",
-    "useCases": [
-      "audio",
-      "productivity"
-    ],
-    "pricing": "freemium",
-    "verdict": "Voice dictation that works in every app and cleans up your words as you speak.",
-    "useThisIf": "you'd rather talk than type emails, prompts and docs.",
-    "alternatives": [
-      "granola"
-    ],
-    "source": "x",
-    "addedAt": "2026-10-15",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/wispr-flow.png"
-  },
-  {
-    "slug": "magic-patterns",
-    "name": "Magic Patterns",
-    "url": "https://www.magicpatterns.com",
-    "affiliateUrl": null,
-    "category": "design",
-    "useCases": [
-      "design",
-      "coding"
-    ],
-    "pricing": "freemium",
-    "verdict": "AI design canvas (MagicOS) that turns prompts and PRDs into editable UI prototypes.",
-    "useThisIf": "you want AI-generated UI you can still steer as a designer.",
-    "alternatives": [
-      "v0",
-      "figma"
-    ],
-    "source": "x",
-    "addedAt": "2026-10-14",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/magic-patterns.png"
-  },
-  {
-    "slug": "codex",
-    "name": "OpenAI Codex",
-    "url": "https://chatgpt.com/codex",
-    "affiliateUrl": null,
-    "category": "coding",
-    "useCases": [
-      "coding",
-      "agents"
-    ],
-    "pricing": "paid (in ChatGPT plans)",
-    "verdict": "OpenAI's coding agent: runs tasks in the cloud, CLI or IDE and opens PRs.",
-    "useThisIf": "you're on ChatGPT and want an agent to take whole coding tasks.",
-    "alternatives": [
-      "claude-code",
-      "cursor",
-      "opencode"
-    ],
-    "source": "x",
-    "addedAt": "2026-10-15",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/codex.png"
-  },
-  {
-    "slug": "mirror-mirror-ai",
-    "name": "Mirror Mirror AI",
-    "url": "https://www.mirrormirrorai.com",
-    "affiliateUrl": null,
-    "category": "design",
-    "useCases": [
-      "design",
-      "marketing"
-    ],
-    "pricing": "paid",
-    "verdict": "Fashion brands book real models who licensed their likeness, then generate on-model campaign, e-commerce and flat-lay images. Models get paid per licensed image.",
-    "useThisIf": "you need AI fashion imagery with real, consented faces instead of fake AI people that could look like someone real. Part of a16z speedrun.",
-    "alternatives": [
-      "midjourney"
-    ],
-    "source": "x",
-    "addedAt": "2026-10-16",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/mirror-mirror-ai.png"
-  },
-  {
-    "slug": "1in8b",
-    "name": "80億分の1 (1 in 8 Billion)",
-    "url": "https://1in8b.life/ja/",
-    "affiliateUrl": null,
-    "category": "fun",
-    "useCases": [
-      "fun"
-    ],
-    "pricing": "free",
-    "verdict": "A free browser life simulator. You are born as a random baby somewhere on Earth and live one whole life (30-90 min), driven by real UN, World Bank and WHO stats for 172 countries.",
-    "useThisIf": "you want to try the AI-built indie project going viral on Japanese X. Its creator built it with Claude. It is a game, not an AI tool. It includes heavy themes and is meant for ages 15+.",
-    "alternatives": [],
-    "source": "x",
-    "addedAt": "2026-10-16",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/1in8b.png"
-  },
-  {
-    "slug": "rea",
-    "name": "REA",
-    "url": "https://rea.tools",
-    "affiliateUrl": null,
-    "category": "coding",
-    "useCases": [
-      "coding",
-      "agents"
-    ],
-    "pricing": "open-source",
-    "verdict": "Open-source toolkit that lets your coding agent reverse engineer apps, browser behavior and native binaries. #1 on GitHub trending with 264K+ stars.",
-    "useThisIf": "you want Claude Code, Codex or similar agents to dig into how an app or binary works instead of doing it by hand in a disassembler.",
-    "alternatives": [
-      "claude-code",
-      "codex"
-    ],
-    "source": "x",
-    "addedAt": "2026-10-16",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/rea.png"
-  },
-  {
-    "slug": "nemotron",
-    "name": "NVIDIA Nemotron 3.5",
-    "url": "https://www.nvidia.com/en-us/ai-data-science/foundation-models/nemotron/",
-    "affiliateUrl": null,
-    "category": "agents",
-    "useCases": [
-      "agents",
-      "coding"
-    ],
-    "pricing": "open-source",
-    "verdict": "NVIDIA open model family. The new 3.5 wave adds Nemotron 3.5 Super VL (120B MoE, 12B active, image + video input) and Bolt models built for local agents.",
-    "useThisIf": "you want open-weight models you can fine-tune or run on your own NVIDIA hardware for agent workloads.",
-    "alternatives": [
-      "muse-spark"
-    ],
-    "source": "x",
-    "addedAt": "2026-10-16",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/nemotron.png"
-  },
-  {
-    "slug": "krea",
-    "name": "Krea 3",
-    "url": "https://www.krea.ai/krea-3",
-    "affiliateUrl": null,
-    "category": "design",
-    "useCases": [
-      "design",
-      "marketing"
-    ],
-    "pricing": "freemium",
-    "verdict": "Krea new image model, pitched as 4x faster than Nano Banana Pro. Built for production image editing that keeps your product intact, priced for volume.",
-    "useThisIf": "you generate or edit lots of product and marketing images and care about speed and cost per image.",
-    "alternatives": [
-      "midjourney",
-      "ideogram"
-    ],
-    "source": "x",
-    "addedAt": "2026-10-16",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/krea.png"
-  },
-  {
-    "slug": "muse-spark",
-    "name": "Muse Spark Open",
-    "url": "https://research.meta.ai/blog/muse-spark-open",
-    "affiliateUrl": null,
-    "category": "chat",
-    "useCases": [
-      "chat",
-      "agents"
-    ],
-    "pricing": "open-source",
-    "verdict": "Meta open-weight release of its Muse Spark model: an 816B mixture-of-experts with 42B active params, billed as the most capable US open-weight model to date.",
-    "useThisIf": "you want a frontier-class open model to self-host for agentic work, for example on an M5 Ultra Mac Studio.",
-    "alternatives": [
-      "nemotron",
-      "chatgpt"
-    ],
-    "source": "x",
-    "addedAt": "2026-10-16",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/muse-spark.png"
-  },
-  {
-    "slug": "instabox",
-    "name": "InstaBox",
-    "url": "https://instabox.sh",
-    "affiliateUrl": null,
-    "category": "agents",
-    "useCases": [
-      "agents",
-      "coding"
-    ],
-    "pricing": "freemium",
-    "verdict": "Cloud Linux VMs for AI agents: computer use, Docker, snapshots, pause/resume, and public HTTPS ports spun up in under a second.",
-    "useThisIf": "your agents need a real machine (not just a sandbox) with persistent files, Docker, and a desktop they can drive.",
-    "alternatives": [
-      "replit",
-      "codex"
-    ],
-    "source": "x",
-    "addedAt": "2026-10-16",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/instabox.svg"
-  },
-  {
-    "slug": "manimgx",
-    "name": "ManimGX",
-    "url": "https://manimgx.academa.ai",
-    "affiliateUrl": null,
-    "category": "video",
-    "useCases": [
-      "video",
-      "coding",
-      "agents"
-    ],
-    "pricing": "free",
-    "verdict": "Open-source 3D animation engine for agents: Manim-compatible Python API on a Rust+wgpu core, ~90× faster than ManimCE, pip install and go.",
-    "useThisIf": "you (or your coding agent) need fast math/3D explainer videos from Python without a heavy Manim install.",
-    "alternatives": [
-      "runway",
-      "descript"
-    ],
-    "source": "x",
-    "addedAt": "2026-10-16",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/manimgx.svg"
-  },
-  {
-    "slug": "voyager",
-    "name": "Voyager",
-    "url": "https://voyager.so",
-    "affiliateUrl": null,
-    "category": "video",
-    "useCases": [
-      "video",
-      "design",
-      "agents"
-    ],
-    "pricing": "freemium",
-    "verdict": "Local AI harness for creative work (from the Moda team): frontier models drive Blender, Resolve, After Effects, Ableton and built-in design/video/DAW engines.",
-    "useThisIf": "you want Codex-style agent workflows for video, motion, music and games instead of only code.",
-    "alternatives": [
-      "runway",
-      "descript",
-      "claude-code"
-    ],
-    "source": "x",
-    "addedAt": "2026-10-16",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/voyager.png"
-  },
-  {
-    "slug": "gakku",
-    "name": "Gakku",
-    "url": "https://gakku.ai",
-    "affiliateUrl": null,
-    "category": "productivity",
-    "useCases": [
-      "productivity",
-      "chat"
-    ],
-    "pricing": "freemium",
-    "verdict": "AI learning coach for ages 6–16 that coaches writing, speaking and thinking via voice + missions (companion Raku) instead of handing kids finished answers.",
-    "useThisIf": "you want kids practicing how to think and write with AI, not copy-pasting homework answers.",
-    "alternatives": [
-      "chatgpt",
-      "claude"
-    ],
-    "source": "x",
-    "addedAt": "2026-10-16",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/gakku.png"
-  },
-  {
-    "slug": "higgsfield",
-    "name": "Higgsfield",
-    "url": "https://higgsfield.ai",
-    "affiliateUrl": null,
-    "category": "video",
-    "useCases": [
-      "video",
-      "design",
-      "marketing"
-    ],
-    "pricing": "freemium",
-    "verdict": "AI video and image studio with cinematic camera-motion presets, ad and UGC-style generators, and access to top video models (Kling, Veo, Sora and more) in one place.",
-    "useThisIf": "you want scroll-stopping social clips and video ads without learning a full editing or prompting workflow.",
-    "alternatives": [
-      "runway",
-      "pika",
-      "kling-ai"
-    ],
-    "source": "x",
-    "addedAt": "2026-10-16",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/higgsfield.png"
-  },
-  {
-    "slug": "base44",
-    "name": "Base44",
-    "url": "https://base44.com",
-    "affiliateUrl": null,
-    "category": "coding",
-    "useCases": [
-      "coding",
-      "productivity"
-    ],
-    "pricing": "freemium",
-    "verdict": "No-code AI app builder (owned by Wix): describe an app in plain English and get a working web app with database, login and hosting built in.",
-    "useThisIf": "you want a working internal tool or MVP from a prompt without wiring up a backend yourself.",
-    "alternatives": [
-      "lovable",
-      "bolt",
-      "replit"
-    ],
-    "source": "x",
-    "addedAt": "2026-10-16",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/base44.png"
-  },
-  {
-    "slug": "kling-ai",
-    "name": "Kling AI",
-    "url": "https://klingai.com",
-    "affiliateUrl": null,
-    "category": "video",
-    "useCases": [
-      "video",
-      "design"
-    ],
-    "pricing": "freemium",
-    "verdict": "Kuaishou's text- and image-to-video generator, known for realistic motion and physics, with lip-sync, effects and image generation.",
-    "useThisIf": "you want high-quality AI video clips from a prompt or a still image.",
-    "alternatives": [
-      "runway",
-      "pika",
-      "higgsfield"
-    ],
-    "source": "x",
-    "addedAt": "2026-10-16",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/kling-ai.png"
-  },
-  {
-    "slug": "genspark",
-    "name": "Genspark",
-    "url": "https://www.genspark.ai",
-    "affiliateUrl": null,
-    "category": "agents",
-    "useCases": [
-      "agents",
-      "productivity",
-      "chat"
-    ],
-    "pricing": "freemium",
-    "verdict": "All-in-one AI agent workspace: Super Agent researches, makes slides, docs and sheets, generates images/video and can even make phone calls for you.",
-    "useThisIf": "you want one agent to turn a request into finished deliverables instead of just a chat answer.",
-    "alternatives": [
-      "manus",
-      "perplexity",
-      "chatgpt"
-    ],
-    "source": "x",
-    "addedAt": "2026-10-16",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/genspark.png"
-  },
-  {
-    "slug": "opusclip",
-    "name": "OpusClip",
-    "url": "https://www.opus.pro",
-    "affiliateUrl": null,
-    "category": "video",
-    "useCases": [
-      "video",
-      "marketing"
-    ],
-    "pricing": "freemium",
-    "verdict": "Turns long videos and podcasts into short viral-style clips for TikTok, Reels and Shorts, with auto captions, reframing and a virality score.",
-    "useThisIf": "you have long-form video and want ready-to-post shorts without editing them by hand.",
-    "alternatives": [
-      "descript",
-      "capcut"
-    ],
-    "source": "x",
-    "addedAt": "2026-10-16",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/opusclip.png"
-  },
-  {
-    "slug": "manus",
-    "name": "Manus",
-    "url": "https://manus.im",
-    "affiliateUrl": null,
-    "category": "agents",
-    "useCases": [
-      "agents",
-      "productivity",
-      "coding"
-    ],
-    "pricing": "freemium",
-    "verdict": "General-purpose autonomous AI agent that plans and executes multi-step tasks in its own cloud computer: research, building websites, data analysis and reports.",
-    "useThisIf": "you want to hand off a whole task and come back to the finished result.",
-    "alternatives": [
-      "genspark",
-      "chatgpt",
-      "crewai"
-    ],
-    "source": "x",
-    "addedAt": "2026-10-16",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/manus.png"
-  },
-  {
-    "slug": "papertrade",
-    "name": "Papertrade",
-    "url": "https://papertrade.xyz",
-    "affiliateUrl": null,
-    "category": "crypto",
-    "useCases": [
-      "crypto"
-    ],
-    "pricing": "free",
-    "verdict": "Onchain synthetic perpetual futures exchange on Hyperliquid's HyperEVM, offering BTC and ETH perps with up to 1000x leverage. Trades settle against a shared liquidity pool rather than an order book.",
-    "riskNote": "Leveraged trading is high risk. This is not financial advice.",
-    "useThisIf": "you already trade crypto perps and want to see the Hyperliquid app everyone on X is talking about.",
-    "alternatives": [],
-    "source": "x",
-    "addedAt": "2026-10-17",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/papertrade.png"
-  },
-  {
-    "slug": "cleanyourtv",
-    "name": "CleanYourTV",
-    "url": "https://cleanyour.tv",
-    "affiliateUrl": null,
-    "category": "productivity",
-    "useCases": [
-      "productivity",
-      "coding"
-    ],
-    "pricing": "open-source",
-    "verdict": "Free, open-source (MIT) kit that debloats Android TV and Google TV sets over Wi-Fi with Claude Code or another coding agent: it switches off ad and tracking packages and swaps the ad-filled home screen for a clean Apple TV-style launcher. No root, nothing is uninstalled, and one command restores it. The GitHub repo was created on Oct 17, 2026 and passed 5,300 stars in three days after its creator's demo went viral on X (he reports 4.8M views).",
-    "riskNote": "It changes system settings on your TV over adb. It is reversible, but read the README and check your model is supported first.",
-    "useThisIf": "your Android TV or Google TV is slow and full of ads, and you are comfortable letting a coding agent run adb commands on it.",
-    "alternatives": [
-      "claude-code",
-      "opencode"
-    ],
-    "source": "x",
-    "addedAt": "2026-10-20",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/cleanyourtv.png"
-  },
-  {
-    "slug": "agentcloak",
-    "name": "AgentCloak",
-    "url": "https://incountry.com/products/agentcloak/",
-    "affiliateUrl": null,
-    "category": "chat",
-    "useCases": [
-      "chat",
-      "productivity"
-    ],
-    "pricing": "free",
-    "verdict": "Free browser extension (Chrome, Edge) and Mac app from data-residency company InCountry that swaps names, emails, phone numbers, addresses and bank numbers for fake ones before your prompt reaches ChatGPT, Claude, Gemini, Grok or DeepSeek, then restores the real values in the reply on your device. Its launch video (a Mac Mini smashed with a baseball bat) went viral on X on Oct 19, 2026. Still small: the Chrome Web Store listing showed 689 users on Oct 20. Business versions for agents, MCP and coding tools are sold separately.",
-    "useThisIf": "you paste contracts, statements or client details into AI chatbots and want personal data masked before it leaves your browser.",
-    "alternatives": [
-      "chatgpt",
-      "claude"
-    ],
-    "source": "x",
-    "addedAt": "2026-10-20",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/agentcloak.png"
-  },
-  {
-    "slug": "viggle-jst-2",
-    "name": "Viggle JST-2",
-    "url": "https://viggle.ai/jst2",
-    "affiliateUrl": null,
-    "category": "video",
-    "useCases": [
-      "video",
-      "design"
-    ],
-    "pricing": "freemium",
-    "verdict": "Viggle's new physics-native 3D world model, launched Oct 19, 2026: one model builds scenes, rigged 3D characters (from a single image) and motion (from a phone video) inside a shared 3D world you can move around in. Free to try, also on the Viggle API. Impressive demos from the team behind the Viggle dance-meme app; the benchmark wins so far are Viggle's own tests, not independent ones.",
-    "useThisIf": "you make animation, games or short videos and want a rigged 3D character and motion without a mocap setup.",
-    "alternatives": [
-      "runway",
-      "krea"
-    ],
-    "source": "x",
-    "addedAt": "2026-10-20",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/viggle-jst-2.png"
-  },
-  {
-    "slug": "mercury-3",
-    "name": "Mercury 3",
-    "url": "https://www.inceptionlabs.ai/blog/introducing-mercury-3",
-    "affiliateUrl": null,
-    "category": "agents",
-    "useCases": [
-      "agents",
-      "coding"
-    ],
-    "pricing": "paid",
-    "verdict": "Inception's new diffusion LLM, launched Oct 19, 2026, writes many tokens in parallel instead of one at a time: 1,068 tokens/sec on NVIDIA GPUs, a 1M-token context window, tool calling and structured outputs. Inception says it beats GPT-6 Luna and Claude Haiku 5.5 on standard benchmarks (vendor numbers). API pricing is $0.20 / $0.70 per million input / output tokens, half price at launch, and it is also on Vercel AI Gateway.",
-    "useThisIf": "you build voice bots, browser agents or chat support where speed and cost per call matter more than top-end reasoning.",
-    "alternatives": [
-      "claude-haiku-5-5",
-      "nemotron"
-    ],
-    "source": "x",
-    "addedAt": "2026-10-20",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/mercury-3.png"
-  },
-  {
-    "slug": "wabi",
-    "name": "Wabi 2.0",
-    "url": "https://wabi.ai",
-    "affiliateUrl": null,
-    "category": "chat",
-    "useCases": [
-      "chat",
-      "productivity"
-    ],
-    "pricing": "free",
-    "verdict": "Multiplayer AI assistant from Replika founder Eugenia Kuyda, for iOS, Android and Mac. Wabi 2.0 opened to everyone on Oct 19, 2026: add it to a group chat and it plans the trip, books the stay, sorts dinner or turns a joke into a mini-game, with home-screen widgets on your phone. Free to download. It is new, so test it on a real group errand before relying on it.",
-    "useThisIf": "your group chats keep stalling on plans and you want an AI that coordinates with everyone, not just you.",
-    "alternatives": [
-      "chatgpt",
-      "grok"
-    ],
-    "source": "x",
-    "addedAt": "2026-10-20",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/wabi.png"
-  }
+ {
+  "slug": "orca",
+  "name": "Orca",
+  "url": "https://www.onorca.dev",
+  "affiliateUrl": null,
+  "category": "coding",
+  "useCases": [
+   "coding",
+   "agents"
+  ],
+  "pricing": "open-source",
+  "verdict": "Free, open-source (MIT) agent development environment from Stably: run Claude Code, Codex, OpenCode and other coding agents in parallel, each in its own git worktree, with terminals, diffs, an embedded browser and a CLI in one desktop app, plus iOS and Android companions. Nearly 98K GitHub stars, it was on GitHub's daily Trending list on Oct 19, 2026 (1,500+ stars in a day), and its latest release passed 1M downloads.",
+  "useThisIf": "you juggle several coding agents at once and want one app to fan a task out, compare the diffs and keep the best one, using your own agent subscriptions.",
+  "alternatives": [
+   "harness",
+   "cursor",
+   "claude-code"
+  ],
+  "source": "github",
+  "addedAt": "2026-10-19",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/orca.png"
+ },
+ {
+  "slug": "headroom",
+  "name": "Headroom",
+  "url": "https://www.headroomlabs.ai",
+  "affiliateUrl": null,
+  "category": "coding",
+  "useCases": [
+   "coding",
+   "agents"
+  ],
+  "pricing": "open-source",
+  "verdict": "Open-source (Apache 2.0) context compression layer for AI agents: it strips repeated boilerplate from tool outputs, logs, files, JSON and RAG chunks before they reach the model, claiming about 20% fewer tokens for coding agents and 60-95% fewer for JSON. Ships as a library, proxy and MCP server; 76K GitHub stars and on the daily Trending list Oct 19, 2026.",
+  "useThisIf": "your Claude Code or Codex sessions keep hitting limits or your API bill is mostly re-read logs and tool output, and you want a drop-in way to cut tokens.",
+  "alternatives": [
+   "context-mode",
+   "claude-code"
+  ],
+  "source": "github",
+  "addedAt": "2026-10-19",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/headroom.png"
+ },
+ {
+  "slug": "cli-anything",
+  "name": "CLI-Anything",
+  "url": "https://github.com/HKUDS/CLI-Anything",
+  "affiliateUrl": null,
+  "category": "agents",
+  "useCases": [
+   "agents",
+   "coding"
+  ],
+  "pricing": "open-source",
+  "verdict": "Open-source (Apache 2.0) project from HKU's Data Intelligence Lab that generates agent-native command-line interfaces for desktop software, codebases and web APIs (FreeCAD and many more), plus a CLI-Hub registry you install as an agent skill. 55K GitHub stars; a 550+ like X post this week showed Claude Code driving desktop apps through it.",
+  "useThisIf": "you want Claude Code, Codex or another skill-compatible agent to operate real desktop apps without screen-clicking computer-use.",
+  "alternatives": [
+   "claude-code",
+   "codex"
+  ],
+  "source": "github",
+  "addedAt": "2026-10-19",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/cli-anything.png"
+ },
+ {
+  "slug": "comfyui",
+  "name": "ComfyUI",
+  "url": "https://www.comfy.org",
+  "affiliateUrl": null,
+  "category": "design",
+  "useCases": [
+   "design",
+   "video"
+  ],
+  "pricing": "open-source",
+  "verdict": "The most popular open-source (GPL-3.0) node-graph app for running image, video, 3D and audio diffusion models locally, with 139K GitHub stars. It is back on GitHub's daily Trending list (Oct 19, 2026) after Comfy Agent landed, which builds workflows inside ComfyUI for you; there is also a paid Comfy Cloud if you have no GPU.",
+  "useThisIf": "you want full control over open image and video models on your own GPU, and you are willing to learn node workflows (or let Comfy Agent build them).",
+  "alternatives": [
+   "midjourney",
+   "krea",
+   "runway"
+  ],
+  "source": "github",
+  "addedAt": "2026-10-19",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/comfyui.png"
+ },
+ {
+  "slug": "beam-win",
+  "name": "Beam",
+  "url": "https://beam.win",
+  "affiliateUrl": null,
+  "category": "productivity",
+  "useCases": [
+   "productivity",
+   "coding"
+  ],
+  "pricing": "freemium",
+  "verdict": "Mac utility that brings windows from another Mac (say, a Mac mini running your agents and builds) onto the Mac in front of you, each as a real native window with its own Dock icon and Cmd-Tab entry, encrypted end to end. #1 Product of the Day on Product Hunt on Oct 19, 2026. The Macs you connect to are free; using it on your own Mac costs $7/month (20 free minutes a day).",
+  "useThisIf": "you keep Claude Code, Codex or long builds running on a Mac mini or Studio and want their terminal and browser windows on your laptop without a clunky full-screen share.",
+  "alternatives": [
+   "harness"
+  ],
+  "source": "producthunt",
+  "addedAt": "2026-10-19",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/beam-win.png"
+ },
+ {
+  "slug": "viktor",
+  "name": "Viktor",
+  "url": "https://viktor.com",
+  "affiliateUrl": null,
+  "category": "agents",
+  "useCases": [
+   "agents",
+   "productivity"
+  ],
+  "pricing": "freemium",
+  "verdict": "AI employee that lives in Slack and Microsoft Teams, connects to 9,800+ tools and runs tasks on its own, including scheduled automations and proactive suggestions based on how your team works. Its Product Hunt launch scored 700+ this week. Free to start with up to $100 in credits; the Team plan is $100/month.",
+  "useThisIf": "your team already lives in Slack or Teams and you want an agent that picks up reports, research and recurring ops work there instead of in yet another app.",
+  "alternatives": [
+   "manus",
+   "zapier",
+   "n8n"
+  ],
+  "source": "producthunt",
+  "addedAt": "2026-10-19",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/viktor.png"
+ },
+ {
+  "slug": "talanoa",
+  "name": "Talanoa",
+  "url": "https://talanoa.email",
+  "affiliateUrl": null,
+  "category": "productivity",
+  "useCases": [
+   "productivity"
+  ],
+  "pricing": "freemium",
+  "verdict": "Desktop email client for macOS, Windows and Linux that turns threads into chat-style bubbles (no quotes or signatures), turns emails into todos, and adds a built-in calendar plus private, on-device AI for search, summaries and drafts. Everything stays on your computer. It finished #5 for the week on Product Hunt (week of Oct 12, 2026). Free for one account; Pro adds more.",
+  "useThisIf": "you hate reading long email threads and want a local-first, chat-like inbox with AI that never sends your mail to the cloud.",
+  "alternatives": [
+   "inbox-zero"
+  ],
+  "source": "producthunt",
+  "addedAt": "2026-10-19",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/talanoa.png"
+ },
+ {
+  "slug": "fish-audio",
+  "name": "Fish Audio",
+  "url": "https://fish.audio",
+  "affiliateUrl": null,
+  "category": "audio",
+  "useCases": [
+   "audio",
+   "video"
+  ],
+  "pricing": "freemium",
+  "verdict": "AI text-to-speech and voice cloning platform; its new Drama 3 model (on Product Hunt Oct 16, 2026) is built for directable, emotionally controlled voice acting with tags like [whispering] or [laughing], and one X creator posted 9 minutes of narration made for about 20 cents. Free tier with 8,000 credits a month, paid plans and an API.",
+  "useThisIf": "you need expressive narration, character voices or voice clones for videos and audiobooks at a lower price than ElevenLabs.",
+  "alternatives": [
+   "elevenlabs",
+   "voicestudio"
+  ],
+  "source": "producthunt",
+  "addedAt": "2026-10-19",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/fish-audio.png"
+ },
+ {
+  "slug": "llmspeed",
+  "name": "Llmspeed",
+  "url": "https://llmspeed.dev",
+  "affiliateUrl": null,
+  "category": "chat",
+  "useCases": [
+   "chat",
+   "productivity"
+  ],
+  "pricing": "free",
+  "verdict": "Free, open-source (MIT) site that simulates how fast a local LLM will actually stream on specific hardware (RTX 3090/5090, Mac Studio, DGX Spark, Strix Halo and more), showing tokens per second and time to first token from real community benchmarks. It hit 300+ points on Hacker News as a Show HN this week.",
+  "useThisIf": "you are about to spend money on a GPU or a big-RAM Mac to run local models and want to feel the speed before you buy.",
+  "alternatives": [],
+  "source": "hackernews",
+  "addedAt": "2026-10-19",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/llmspeed.png"
+ },
+ {
+  "slug": "orke",
+  "name": "Orke",
+  "url": "https://orke.bomtobe.com/en/",
+  "affiliateUrl": null,
+  "category": "coding",
+  "useCases": [
+   "coding",
+   "agents"
+  ],
+  "pricing": "free",
+  "verdict": "Desktop workspace for Claude Code and Codex from Korean studio BOMTOBE: assign work in a terminal, then review the result in a linked web window and Git panel on the same screen, with an agent that can click through pages for you. Runs on Windows, macOS (Apple Silicon) and Linux servers, with iPhone and Android apps to check on sessions away from your desk. Shipping steadily since April 2026 (v3.4.10 on Oct 18).",
+  "useThisIf": "you run Claude Code or Codex on Windows or a home server and want terminal, browser preview and Git review in one window you can also pick up from your phone. Traction is still early, and you bring your own agent accounts.",
+  "alternatives": [
+   "orca",
+   "harness",
+   "claude-code"
+  ],
+  "source": "submission",
+  "addedAt": "2026-10-19",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/orke.png"
+ },
+ {
+  "slug": "inbox-zero",
+  "name": "Inbox Zero",
+  "url": "https://www.getinboxzero.com",
+  "affiliateUrl": null,
+  "category": "productivity",
+  "useCases": [
+   "productivity",
+   "agents"
+  ],
+  "pricing": "freemium",
+  "verdict": "Open-source email app and AI assistant. Its new Inbox Zero Mail client (launched Oct 15, 2026, and #1 Product of the Day on Product Hunt on Oct 18) pitches itself as a free Superhuman alternative: a fast, keyboard-first unified inbox for Gmail and Outlook with split inboxes, AI sorting, drafts in your voice and bulk unsubscribe.",
+  "useThisIf": "your inbox is out of control and you want Superhuman-style speed plus AI triage without the Superhuman price, with the option to self-host the open-source code.",
+  "alternatives": [
+   "notion",
+   "zapier"
+  ],
+  "source": "producthunt",
+  "addedAt": "2026-10-19",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/inbox-zero.png"
+ },
+ {
+  "slug": "voicestudio",
+  "name": "VoiceStudio",
+  "url": "https://voicestudio.sh",
+  "affiliateUrl": null,
+  "category": "audio",
+  "useCases": [
+   "audio",
+   "video"
+  ],
+  "pricing": "open-source",
+  "verdict": "Free, fully local, open-source (AGPL-3.0) alternative to ElevenLabs: voice cloning, voice design, video dubbing, dictation, transcription and audiobook creation in up to 646 languages, with no account. It hit GitHub's daily Trending list on Oct 19, 2026 with 2,000+ new stars in a day (75K+ total).",
+  "useThisIf": "you want ElevenLabs-style voice cloning and dubbing on your own machine without paying per character, and you have a decent computer to run it.",
+  "alternatives": [
+   "elevenlabs",
+   "descript"
+  ],
+  "source": "github",
+  "addedAt": "2026-10-19",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/voicestudio.png"
+ },
+ {
+  "slug": "ai-job-search",
+  "name": "AI Job Search",
+  "url": "https://github.com/MadsLorentzen/ai-job-search",
+  "affiliateUrl": null,
+  "category": "agents",
+  "useCases": [
+   "agents",
+   "productivity"
+  ],
+  "pricing": "open-source",
+  "verdict": "Open-source (MIT) job application framework built on Claude Code: fill in your profile, then it scores job postings for fit, tailors your CV and cover letter (LaTeX), has a reviewer agent critique them and preps you for interviews. The author says it got him hired; it topped GitHub's daily Trending list on Oct 19, 2026 (2,200+ stars in a day, 53K+ total).",
+  "useThisIf": "you are job hunting, already pay for Claude Code (it has no free tier) and are comfortable forking a repo. The built-in job-board scrapers target Denmark, so you will swap in your own boards.",
+  "alternatives": [
+   "claude-code",
+   "codex"
+  ],
+  "source": "github",
+  "addedAt": "2026-10-19",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/ai-job-search.png"
+ },
+ {
+  "slug": "glimpse",
+  "name": "Glimpse by Elorian",
+  "url": "https://elorian.ai",
+  "affiliateUrl": null,
+  "category": "chat",
+  "useCases": [
+   "chat",
+   "agents"
+  ],
+  "pricing": "paid",
+  "verdict": "First model from Elorian, the visual-AI lab founded by ex-Google DeepMind researchers, launched Oct 16, 2026 as a research preview with an API and chat app. It reasons through images and video (cropping, pulling frames and re-checking evidence mid-thought) and claims frontier-level multimodal scores at $0.60 / $3.00 per million input/output tokens.",
+  "useThisIf": "you build apps that need to understand charts, screenshots, video or physical scenes and want a cheaper vision-reasoning API than the big frontier models. Benchmarks are self-reported, so test it on your own data.",
+  "alternatives": [
+   "gemini",
+   "chatgpt",
+   "claude"
+  ],
+  "source": "x",
+  "addedAt": "2026-10-19",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/glimpse.png"
+ },
+ {
+  "slug": "nitrostack",
+  "name": "NitroStack",
+  "url": "https://nitrostack.ai",
+  "affiliateUrl": null,
+  "category": "coding",
+  "useCases": [
+   "coding",
+   "agents"
+  ],
+  "pricing": "freemium",
+  "verdict": "Full-stack platform for building MCP servers and MCP apps: open-source TypeScript and Python SDKs, a visual Studio for testing and debugging, workflows, and managed hosting, so tools you build plug into ChatGPT, Claude and other AI clients. It was the #1 Product of the Day on Product Hunt on Oct 17, 2026.",
+  "useThisIf": "you want to ship your own MCP server or AI-app integration without stitching together auth, testing and deployment yourself.",
+  "alternatives": [
+   "langchain",
+   "n8n"
+  ],
+  "source": "producthunt",
+  "addedAt": "2026-10-19",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/nitrostack.png"
+ },
+ {
+  "slug": "orkas",
+  "name": "Orkas",
+  "url": "https://orkas.ai",
+  "affiliateUrl": null,
+  "category": "agents",
+  "useCases": [
+   "agents",
+   "productivity"
+  ],
+  "pricing": "open-source",
+  "verdict": "Open-source (MIT), local-first desktop AI workforce: a Commander agent coordinates specialist agents to turn a brief and your project files into research, documents and creative assets.",
+  "useThisIf": "you want a team of agents working on your own files from a desktop app, and you are fine paying for model usage on top of the free core.",
+  "alternatives": [
+   "manus",
+   "genspark",
+   "crewai"
+  ],
+  "source": "submission",
+  "addedAt": "2026-10-18",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/orkas.png"
+ },
+ {
+  "slug": "wemotion",
+  "name": "WeMotion",
+  "url": "https://wemotion.ai",
+  "affiliateUrl": null,
+  "category": "video",
+  "useCases": [
+   "video",
+   "design"
+  ],
+  "pricing": "free",
+  "verdict": "Free Mac app (Apple silicon) with an AI designer built on Claude that makes motion graphics from a prompt as editable layers and keyframes, exporting up to 4K at 60fps.",
+  "useThisIf": "you are on an Apple silicon Mac, have an Anthropic API key or a Claude plan, and want prompt-made motion graphics you can still edit by hand.",
+  "alternatives": [
+   "hyperframes",
+   "claude-motion",
+   "runway"
+  ],
+  "source": "submission",
+  "addedAt": "2026-10-18",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/wemotion.png"
+ },
+ {
+  "slug": "batchrate",
+  "name": "Batchrate",
+  "url": "https://batchrate.ai",
+  "affiliateUrl": null,
+  "category": "coding",
+  "useCases": [
+   "coding",
+   "agents"
+  ],
+  "pricing": "paid",
+  "verdict": "Batch API for open AI models that works like OpenAI's batch API: upload JSONL, get results within hours. Works with the OpenAI SDK and LiteLLM, from $0.05 per million input tokens, with 10M free tokens at signup.",
+  "useThisIf": "you run big jobs on open models that can wait a few hours for results, and want them cheaper than real-time calls.",
+  "alternatives": [],
+  "source": "submission",
+  "addedAt": "2026-10-18",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/batchrate.png"
+ },
+ {
+  "slug": "gemini-4-argon",
+  "name": "Gemini 4 Argon",
+  "url": "https://deepmind.google/models/gemini/",
+  "affiliateUrl": null,
+  "category": "chat",
+  "useCases": [
+   "chat",
+   "coding"
+  ],
+  "pricing": "paid",
+  "verdict": "Google DeepMind's frontier model for hard science, coding and long-horizon work, available to Google AI Pro and Ultra subscribers.",
+  "useThisIf": "you pay for Google AI Pro or Ultra and want the newest Gemini for long tasks.",
+  "alternatives": [
+   "gemini",
+   "claude"
+  ],
+  "source": "hackernews",
+  "addedAt": "2026-10-17",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/gemini-4-argon.png"
+ },
+ {
+  "slug": "muse-wonder",
+  "name": "Muse Wonder",
+  "url": "https://research.meta.ai/blog/muse-wonder",
+  "affiliateUrl": null,
+  "category": "chat",
+  "useCases": [
+   "chat",
+   "agents"
+  ],
+  "pricing": "paid",
+  "verdict": "Meta's frontier model for personal and professional agents, with Active Memory and Active Focus, on the Meta Model API and Muse Code.",
+  "useThisIf": "you want Meta's newest agent model rather than the open-weight Muse Spark release.",
+  "alternatives": [
+   "muse-spark",
+   "claude"
+  ],
+  "source": "hackernews",
+  "addedAt": "2026-10-17",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/muse-wonder.png"
+ },
+ {
+  "slug": "glm-legal",
+  "name": "GLM-Legal",
+  "url": "https://z.ai/blog/glm-legal",
+  "affiliateUrl": null,
+  "category": "productivity",
+  "useCases": [
+   "productivity",
+   "agents"
+  ],
+  "pricing": "paid",
+  "verdict": "Z.ai model for agentic legal work: contract review, evidence analysis and compliance drafting.",
+  "useThisIf": "you want a model aimed at legal work product instead of a general chatbot.",
+  "alternatives": [
+   "claude"
+  ],
+  "source": "hackernews",
+  "addedAt": "2026-10-17",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/glm-legal.png"
+ },
+ {
+  "slug": "artcraft",
+  "name": "ArtCraft",
+  "url": "https://getartcraft.com",
+  "affiliateUrl": null,
+  "category": "design",
+  "useCases": [
+   "design",
+   "video"
+  ],
+  "pricing": "open-source",
+  "verdict": "Open-source artist studio: compose the shot yourself, then let the model render it. No subscription.",
+  "useThisIf": "you want direct control over a scene instead of hoping a prompt lands.",
+  "alternatives": [
+   "krea",
+   "midjourney"
+  ],
+  "source": "github",
+  "addedAt": "2026-10-17",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/artcraft.png"
+ },
+ {
+  "slug": "engineer-skills",
+  "name": "Skills for Real Engineers",
+  "url": "https://www.aihero.dev/skills",
+  "affiliateUrl": null,
+  "category": "coding",
+  "useCases": [
+   "coding",
+   "agents"
+  ],
+  "pricing": "open-source",
+  "verdict": "Small, composable agent skills for planning, specs, tests and shipping. Works with any model.",
+  "useThisIf": "you want a lightweight engineering workflow in your coding agent without a heavy process framework.",
+  "alternatives": [
+   "claude-code",
+   "codex"
+  ],
+  "source": "github",
+  "addedAt": "2026-10-17",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/engineer-skills.png"
+ },
+ {
+  "slug": "diagram-design",
+  "name": "Diagram Design",
+  "url": "https://diagramdesign.dev",
+  "affiliateUrl": null,
+  "category": "design",
+  "useCases": [
+   "design",
+   "coding"
+  ],
+  "pricing": "open-source",
+  "verdict": "Agent skill that draws 44 editorial diagram types as self-contained HTML and SVG, matched to your site's brand.",
+  "useThisIf": "your coding agent keeps producing generic box diagrams.",
+  "alternatives": [
+   "figma"
+  ],
+  "source": "github",
+  "addedAt": "2026-10-17",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/diagram-design.png"
+ },
+ {
+  "slug": "hyperframes",
+  "name": "Hyperframes",
+  "url": "https://www.hyperframes.dev",
+  "affiliateUrl": null,
+  "category": "video",
+  "useCases": [
+   "video",
+   "coding"
+  ],
+  "pricing": "open-source",
+  "verdict": "Open-source framework that turns HTML, CSS and animations into deterministic MP4 video, built for coding agents.",
+  "useThisIf": "you want an agent to render video from HTML instead of a timeline editor.",
+  "alternatives": [
+   "heygen",
+   "runway"
+  ],
+  "source": "github",
+  "addedAt": "2026-10-17",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/hyperframes.png"
+ },
+ {
+  "slug": "context-mode",
+  "name": "Context Mode",
+  "url": "https://context-mode.com",
+  "affiliateUrl": null,
+  "category": "coding",
+  "useCases": [
+   "coding",
+   "agents"
+  ],
+  "pricing": "freemium",
+  "verdict": "Sits between coding agents and the model: folds tool output, keeps session memory, and blocks commands by rules you set.",
+  "useThisIf": "Claude Code or Codex sessions burn tokens on logs, or you want a blocklist before tools run.",
+  "alternatives": [
+   "claude-code",
+   "codex"
+  ],
+  "source": "github",
+  "addedAt": "2026-10-17",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/context-mode.png"
+ },
+ {
+  "slug": "jockey",
+  "name": "Jockey",
+  "url": "https://www.twelvelabs.io/jockey",
+  "affiliateUrl": null,
+  "category": "video",
+  "useCases": [
+   "video",
+   "agents"
+  ],
+  "pricing": "freemium",
+  "verdict": "TwelveLabs video agent that searches a library by meaning and assembles clips, inside Claude, ChatGPT or the API.",
+  "useThisIf": "you have a large video archive and want to find moments or cut highlights by describing them.",
+  "alternatives": [
+   "opusclip",
+   "descript"
+  ],
+  "source": "producthunt",
+  "addedAt": "2026-10-17",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/jockey.png"
+ },
+ {
+  "slug": "harness",
+  "name": "Harness",
+  "url": "https://www.autonomous.ai/harness",
+  "affiliateUrl": null,
+  "category": "coding",
+  "useCases": [
+   "coding",
+   "agents"
+  ],
+  "pricing": "open-source",
+  "verdict": "Open-source command center for the coding agents you already run, across every machine, with harnesses beyond code.",
+  "useThisIf": "you run Claude Code, Codex and other agents on more than one machine and want them in one place.",
+  "alternatives": [
+   "claude-code",
+   "codex"
+  ],
+  "source": "producthunt",
+  "addedAt": "2026-10-17",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/harness.png"
+ },
+ {
+  "slug": "pancake",
+  "name": "Pancake",
+  "url": "https://pancake.ai",
+  "affiliateUrl": null,
+  "category": "marketing",
+  "useCases": [
+   "marketing",
+   "agents"
+  ],
+  "pricing": "paid",
+  "verdict": "GTM building blocks (data, enrichment, sending) your AI agent drives over one MCP connection.",
+  "useThisIf": "you run outbound from Claude or Codex and want data plus sending in one place.",
+  "alternatives": [
+   "copy-ai"
+  ],
+  "source": "producthunt",
+  "addedAt": "2026-10-14",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/pancake.png"
+ },
+ {
+  "slug": "inferock",
+  "name": "Inferock",
+  "url": "https://github.com/inferock/inferock-bench",
+  "affiliateUrl": null,
+  "category": "coding",
+  "useCases": [
+   "coding"
+  ],
+  "pricing": "open-source",
+  "verdict": "Local proxy that logs per-call LLM token usage and failures so you can audit what you were billed.",
+  "useThisIf": "you suspect your LLM API bill includes failed or retried calls.",
+  "alternatives": [],
+  "source": "producthunt",
+  "addedAt": "2026-10-14",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/inferock.png"
+ },
+ {
+  "slug": "retriever-ai",
+  "name": "Retriever AI",
+  "url": "https://rtrvr.ai",
+  "affiliateUrl": null,
+  "category": "agents",
+  "useCases": [
+   "agents",
+   "productivity"
+  ],
+  "pricing": "free",
+  "verdict": "Ad-supported browser agent for lead finding, outreach and form filling, no API key needed.",
+  "useThisIf": "you want to try a browser agent without paying for inference.",
+  "alternatives": [],
+  "source": "producthunt",
+  "addedAt": "2026-10-14",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/retriever-ai.png"
+ },
+ {
+  "slug": "articos",
+  "name": "Articos MCP",
+  "url": "https://www.articos.com",
+  "affiliateUrl": null,
+  "category": "marketing",
+  "useCases": [
+   "marketing",
+   "agents"
+  ],
+  "pricing": "paid",
+  "verdict": "Tests messaging and landing pages against simulated buyer personas from inside your agent.",
+  "useThisIf": "you want quick directional feedback on positioning before real user tests.",
+  "alternatives": [],
+  "source": "producthunt",
+  "addedAt": "2026-10-13",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": null
+ },
+ {
+  "slug": "opencode",
+  "name": "OpenCode 2.0",
+  "url": "https://opencode.ai",
+  "affiliateUrl": null,
+  "category": "coding",
+  "useCases": [
+   "coding",
+   "agents"
+  ],
+  "pricing": "open-source",
+  "verdict": "Open-source, model-agnostic terminal coding agent with a native TUI and multi-session support.",
+  "useThisIf": "you want a Claude Code-style agent that works with any model.",
+  "alternatives": [
+   "claude-code",
+   "aider"
+  ],
+  "source": "producthunt",
+  "addedAt": "2026-10-13",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/opencode.png"
+ },
+ {
+  "slug": "indra",
+  "name": "Indra",
+  "url": "https://github.com/datalab-to/indra",
+  "affiliateUrl": null,
+  "category": "productivity",
+  "useCases": [
+   "productivity",
+   "coding"
+  ],
+  "pricing": "open-source",
+  "verdict": "Fast CPU-only OCR from Datalab that outputs reading-ordered markdown.",
+  "useThisIf": "you need to turn scans or PDFs into markdown without a GPU.",
+  "alternatives": [],
+  "source": "github",
+  "addedAt": "2026-10-13",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/indra.png"
+ },
+ {
+  "slug": "solid-glass",
+  "name": "Solid Glass",
+  "url": "https://deeplethe.github.io/solid-glass",
+  "affiliateUrl": null,
+  "category": "design",
+  "useCases": [
+   "design",
+   "coding"
+  ],
+  "pricing": "open-source",
+  "verdict": "Open-source design system aimed at AI app interfaces; trending on GitHub this week.",
+  "useThisIf": "you are vibe-coding an AI app and want a ready-made visual language.",
+  "alternatives": [],
+  "source": "github",
+  "addedAt": "2026-10-12",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/solid-glass.png"
+ },
+ {
+  "slug": "reso-ai",
+  "name": "ReSO AI",
+  "url": "https://www.resollm.ai",
+  "affiliateUrl": null,
+  "category": "marketing",
+  "useCases": [
+   "marketing"
+  ],
+  "pricing": "paid",
+  "verdict": "Generative engine optimization: tracks and improves how ChatGPT, Perplexity and Google AI recommend you.",
+  "useThisIf": "you care about showing up in AI answers, not just Google.",
+  "alternatives": [],
+  "source": "producthunt",
+  "addedAt": "2026-10-10",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/reso-ai.png"
+ },
+ {
+  "slug": "onepin",
+  "name": "Onepin",
+  "url": "https://onepin.ai",
+  "affiliateUrl": null,
+  "category": "audio",
+  "useCases": [
+   "audio",
+   "video"
+  ],
+  "pricing": "freemium",
+  "verdict": "Quality layer over ElevenLabs and other TTS voices that fixes names, prices and dates in AI voiceover.",
+  "useThisIf": "you ship multilingual AI voiceover and keep catching mispronunciations.",
+  "alternatives": [
+   "elevenlabs"
+  ],
+  "source": "producthunt",
+  "addedAt": "2026-10-10",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/onepin.png"
+ },
+ {
+  "slug": "claude-motion",
+  "name": "Claude Dashboards & Motion",
+  "url": "https://claude.com/resources/articles/dashboards-and-motion",
+  "affiliateUrl": null,
+  "category": "productivity",
+  "useCases": [
+   "productivity",
+   "video"
+  ],
+  "pricing": "paid",
+  "verdict": "Claude artifacts that build live data dashboards and code-animated explainer videos (beta).",
+  "useThisIf": "you already pay for Claude and want charts or animated walkthroughs without new tools.",
+  "alternatives": [
+   "claude"
+  ],
+  "source": "producthunt + x",
+  "addedAt": "2026-10-10",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/claude-motion.png"
+ },
+ {
+  "slug": "openseo",
+  "name": "OpenSEO",
+  "url": "https://openseo.so",
+  "affiliateUrl": null,
+  "category": "marketing",
+  "useCases": [
+   "marketing"
+  ],
+  "pricing": "paid",
+  "verdict": "Open-source Semrush alternative with keyword, backlink and audit data your agent can use via MCP.",
+  "useThisIf": "you want SEO data for your agent without a $100+/mo suite.",
+  "alternatives": [],
+  "source": "producthunt",
+  "addedAt": "2026-10-08",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/openseo.png"
+ },
+ {
+  "slug": "claude-haiku-5-5",
+  "name": "Claude Haiku 5.5",
+  "url": "https://www.anthropic.com/claude-haiku-5-5",
+  "affiliateUrl": null,
+  "category": "chat",
+  "useCases": [
+   "chat",
+   "coding"
+  ],
+  "pricing": "paid",
+  "verdict": "Anthropic's fastest small model, pitched for high-volume tasks and coding subagents.",
+  "useThisIf": "you need cheap, fast calls for classification, support or subagents.",
+  "alternatives": [
+   "claude"
+  ],
+  "source": "producthunt",
+  "addedAt": "2026-10-08",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/claude-haiku-5-5.png"
+ },
+ {
+  "slug": "openswarm",
+  "name": "OpenSwarm",
+  "url": "https://openswarm.info",
+  "affiliateUrl": null,
+  "category": "agents",
+  "useCases": [
+   "agents",
+   "productivity"
+  ],
+  "pricing": "freemium",
+  "verdict": "Agent-first desktop environment where swarms of agents run apps and browsers in parallel.",
+  "useThisIf": "you want to orchestrate many agents at once and like experimental setups.",
+  "alternatives": [],
+  "source": "producthunt",
+  "addedAt": "2026-10-08",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/openswarm.png"
+ },
+ {
+  "slug": "chatgpt",
+  "name": "ChatGPT",
+  "url": "https://chatgpt.com",
+  "affiliateUrl": null,
+  "category": "chat",
+  "useCases": [
+   "chat",
+   "productivity",
+   "coding"
+  ],
+  "pricing": "freemium",
+  "verdict": "The default general assistant; strong all-rounder with a huge plugin and GPT ecosystem.",
+  "useThisIf": "you want one assistant that does a bit of everything.",
+  "alternatives": [
+   "claude",
+   "gemini",
+   "grok"
+  ],
+  "source": "seed",
+  "addedAt": "2022-11-30",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/chatgpt.png"
+ },
+ {
+  "slug": "claude",
+  "name": "Claude",
+  "url": "https://claude.ai",
+  "affiliateUrl": null,
+  "category": "chat",
+  "useCases": [
+   "chat",
+   "coding",
+   "productivity"
+  ],
+  "pricing": "freemium",
+  "verdict": "Excellent for long documents, writing and careful coding help.",
+  "useThisIf": "you work with long context or want thoughtful writing.",
+  "alternatives": [
+   "chatgpt",
+   "gemini"
+  ],
+  "source": "seed",
+  "addedAt": "2023-03-14",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/claude.png"
+ },
+ {
+  "slug": "gemini",
+  "name": "Gemini",
+  "url": "https://gemini.google.com",
+  "affiliateUrl": null,
+  "category": "chat",
+  "useCases": [
+   "chat",
+   "productivity"
+  ],
+  "pricing": "freemium",
+  "verdict": "Google's assistant, best if you live in Gmail, Docs and Drive.",
+  "useThisIf": "you're deep in Google Workspace.",
+  "alternatives": [
+   "chatgpt",
+   "claude"
+  ],
+  "source": "seed",
+  "addedAt": "2023-12-06",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/gemini.png"
+ },
+ {
+  "slug": "grok",
+  "name": "Grok",
+  "url": "https://grok.com",
+  "affiliateUrl": null,
+  "category": "chat",
+  "useCases": [
+   "chat",
+   "marketing"
+  ],
+  "pricing": "freemium",
+  "verdict": "xAI's assistant with native, real-time access to X.",
+  "useThisIf": "you need what's happening on X right now.",
+  "alternatives": [
+   "perplexity",
+   "chatgpt"
+  ],
+  "source": "seed",
+  "addedAt": "2023-11-04",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/grok.png"
+ },
+ {
+  "slug": "perplexity",
+  "name": "Perplexity",
+  "url": "https://www.perplexity.ai",
+  "affiliateUrl": null,
+  "category": "productivity",
+  "useCases": [
+   "productivity",
+   "chat"
+  ],
+  "pricing": "freemium",
+  "verdict": "Answer engine with citations; fast research instead of ten blue links.",
+  "useThisIf": "you want sourced answers quickly.",
+  "alternatives": [
+   "grok",
+   "chatgpt"
+  ],
+  "source": "seed",
+  "addedAt": "2022-12-07",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/perplexity.png"
+ },
+ {
+  "slug": "cursor",
+  "name": "Cursor",
+  "url": "https://cursor.com",
+  "affiliateUrl": null,
+  "category": "coding",
+  "useCases": [
+   "coding",
+   "agents"
+  ],
+  "pricing": "freemium",
+  "verdict": "AI-first code editor (VS Code fork) with strong agent and tab completion.",
+  "useThisIf": "you code daily and want AI built into the editor.",
+  "alternatives": [
+   "windsurf",
+   "github-copilot",
+   "claude-code"
+  ],
+  "source": "seed",
+  "addedAt": "2023-03-14",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/cursor.png"
+ },
+ {
+  "slug": "github-copilot",
+  "name": "GitHub Copilot",
+  "url": "https://github.com/features/copilot",
+  "affiliateUrl": null,
+  "category": "coding",
+  "useCases": [
+   "coding"
+  ],
+  "pricing": "freemium",
+  "verdict": "AI pair programmer inside your existing IDE and GitHub.",
+  "useThisIf": "your team already lives on GitHub.",
+  "alternatives": [
+   "cursor",
+   "windsurf"
+  ],
+  "source": "seed",
+  "addedAt": "2021-06-29",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/github-copilot.png"
+ },
+ {
+  "slug": "windsurf",
+  "name": "Windsurf",
+  "url": "https://windsurf.com",
+  "affiliateUrl": null,
+  "category": "coding",
+  "useCases": [
+   "coding",
+   "agents"
+  ],
+  "pricing": "freemium",
+  "verdict": "Agentic IDE focused on keeping you in flow.",
+  "useThisIf": "you want a Cursor alternative.",
+  "alternatives": [
+   "cursor",
+   "github-copilot"
+  ],
+  "source": "seed",
+  "addedAt": "2024-11-13",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/windsurf.png"
+ },
+ {
+  "slug": "claude-code",
+  "name": "Claude Code",
+  "url": "https://www.anthropic.com/claude-code",
+  "affiliateUrl": null,
+  "category": "coding",
+  "useCases": [
+   "coding",
+   "agents"
+  ],
+  "pricing": "paid",
+  "verdict": "Terminal-based coding agent that edits and runs your repo.",
+  "useThisIf": "you prefer the command line and big refactors.",
+  "alternatives": [
+   "cursor",
+   "aider"
+  ],
+  "source": "seed",
+  "addedAt": "2025-02-24",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/claude-code.png"
+ },
+ {
+  "slug": "aider",
+  "name": "Aider",
+  "url": "https://aider.chat",
+  "affiliateUrl": null,
+  "category": "coding",
+  "useCases": [
+   "coding",
+   "agents"
+  ],
+  "pricing": "open-source",
+  "verdict": "Open-source AI pair programming in your terminal, git-aware.",
+  "useThisIf": "you want open-source and bring-your-own model.",
+  "alternatives": [
+   "claude-code",
+   "cursor"
+  ],
+  "source": "seed",
+  "addedAt": "2023-05-09",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/aider.png"
+ },
+ {
+  "slug": "v0",
+  "name": "v0",
+  "url": "https://v0.dev",
+  "affiliateUrl": null,
+  "category": "coding",
+  "useCases": [
+   "coding",
+   "design"
+  ],
+  "pricing": "freemium",
+  "verdict": "Vercel's generator for React/Next UI from a prompt.",
+  "useThisIf": "you need a polished UI component fast.",
+  "alternatives": [
+   "bolt",
+   "lovable"
+  ],
+  "source": "seed",
+  "addedAt": "2023-10-11",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/v0.png"
+ },
+ {
+  "slug": "bolt",
+  "name": "Bolt",
+  "url": "https://bolt.new",
+  "affiliateUrl": null,
+  "category": "coding",
+  "useCases": [
+   "coding"
+  ],
+  "pricing": "freemium",
+  "verdict": "Prompt-to-full-stack app in the browser by StackBlitz.",
+  "useThisIf": "you want a running web app from one prompt.",
+  "alternatives": [
+   "lovable",
+   "replit",
+   "v0"
+  ],
+  "source": "seed",
+  "addedAt": "2024-10-03",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/bolt.png"
+ },
+ {
+  "slug": "lovable",
+  "name": "Lovable",
+  "url": "https://lovable.dev",
+  "affiliateUrl": null,
+  "category": "coding",
+  "useCases": [
+   "coding"
+  ],
+  "pricing": "freemium",
+  "verdict": "Vibe-code full apps with Supabase backend from chat.",
+  "useThisIf": "you're a non-dev shipping an MVP.",
+  "alternatives": [
+   "bolt",
+   "replit"
+  ],
+  "source": "seed",
+  "addedAt": "2024-11-21",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/lovable.png"
+ },
+ {
+  "slug": "replit",
+  "name": "Replit",
+  "url": "https://replit.com",
+  "affiliateUrl": null,
+  "category": "coding",
+  "useCases": [
+   "coding",
+   "agents"
+  ],
+  "pricing": "freemium",
+  "verdict": "Cloud IDE with Replit Agent that builds and deploys apps.",
+  "useThisIf": "you want build + hosting in one place.",
+  "alternatives": [
+   "bolt",
+   "lovable"
+  ],
+  "source": "seed",
+  "addedAt": "2016-01-01",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/replit.png"
+ },
+ {
+  "slug": "n8n",
+  "name": "n8n",
+  "url": "https://n8n.io",
+  "affiliateUrl": null,
+  "category": "agents",
+  "useCases": [
+   "agents",
+   "productivity"
+  ],
+  "pricing": "open-source",
+  "verdict": "Fair-code workflow automation with AI agent nodes; self-hostable.",
+  "useThisIf": "you want Zapier-style automations you control.",
+  "alternatives": [
+   "zapier",
+   "make"
+  ],
+  "source": "seed",
+  "addedAt": "2019-10-08",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/n8n.png"
+ },
+ {
+  "slug": "zapier",
+  "name": "Zapier",
+  "url": "https://zapier.com",
+  "affiliateUrl": null,
+  "category": "agents",
+  "useCases": [
+   "agents",
+   "productivity"
+  ],
+  "pricing": "freemium",
+  "verdict": "The biggest no-code automation catalog, now with AI agents.",
+  "useThisIf": "you need to connect many SaaS apps fast.",
+  "alternatives": [
+   "n8n",
+   "make"
+  ],
+  "source": "seed",
+  "addedAt": "2012-10-01",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/zapier.png"
+ },
+ {
+  "slug": "make",
+  "name": "Make",
+  "url": "https://www.make.com",
+  "affiliateUrl": null,
+  "category": "agents",
+  "useCases": [
+   "agents",
+   "productivity"
+  ],
+  "pricing": "freemium",
+  "verdict": "Visual automation builder with granular control.",
+  "useThisIf": "you like visual flows and lower prices than Zapier.",
+  "alternatives": [
+   "zapier",
+   "n8n"
+  ],
+  "source": "seed",
+  "addedAt": "2022-02-01",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/make.png"
+ },
+ {
+  "slug": "langchain",
+  "name": "LangChain",
+  "url": "https://www.langchain.com",
+  "affiliateUrl": null,
+  "category": "agents",
+  "useCases": [
+   "agents",
+   "coding"
+  ],
+  "pricing": "open-source",
+  "verdict": "Popular framework for building LLM apps and agents.",
+  "useThisIf": "you're a developer building custom agents.",
+  "alternatives": [
+   "crewai"
+  ],
+  "source": "seed",
+  "addedAt": "2022-10-24",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/langchain.png"
+ },
+ {
+  "slug": "crewai",
+  "name": "CrewAI",
+  "url": "https://www.crewai.com",
+  "affiliateUrl": null,
+  "category": "agents",
+  "useCases": [
+   "agents",
+   "coding"
+  ],
+  "pricing": "open-source",
+  "verdict": "Framework for multi-agent 'crews' with roles.",
+  "useThisIf": "you want several agents collaborating.",
+  "alternatives": [
+   "langchain"
+  ],
+  "source": "seed",
+  "addedAt": "2023-12-01",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/crewai.png"
+ },
+ {
+  "slug": "midjourney",
+  "name": "Midjourney",
+  "url": "https://www.midjourney.com",
+  "affiliateUrl": null,
+  "category": "design",
+  "useCases": [
+   "design"
+  ],
+  "pricing": "paid",
+  "verdict": "Top-tier aesthetic image generation.",
+  "useThisIf": "image quality and style matter most.",
+  "alternatives": [
+   "ideogram",
+   "canva"
+  ],
+  "source": "seed",
+  "addedAt": "2022-07-12",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/midjourney.png"
+ },
+ {
+  "slug": "ideogram",
+  "name": "Ideogram",
+  "url": "https://ideogram.ai",
+  "affiliateUrl": null,
+  "category": "design",
+  "useCases": [
+   "design",
+   "marketing"
+  ],
+  "pricing": "freemium",
+  "verdict": "Image generation that renders text in images well.",
+  "useThisIf": "you need posters, logos or text-in-image.",
+  "alternatives": [
+   "midjourney"
+  ],
+  "source": "seed",
+  "addedAt": "2023-08-22",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/ideogram.png"
+ },
+ {
+  "slug": "canva",
+  "name": "Canva",
+  "url": "https://www.canva.com",
+  "affiliateUrl": null,
+  "category": "design",
+  "useCases": [
+   "design",
+   "marketing"
+  ],
+  "pricing": "freemium",
+  "verdict": "Design for everyone with Magic Studio AI features.",
+  "useThisIf": "you need quick social graphics and decks.",
+  "alternatives": [
+   "figma"
+  ],
+  "source": "seed",
+  "addedAt": "2013-08-26",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/canva.png"
+ },
+ {
+  "slug": "figma",
+  "name": "Figma",
+  "url": "https://www.figma.com",
+  "affiliateUrl": null,
+  "category": "design",
+  "useCases": [
+   "design"
+  ],
+  "pricing": "freemium",
+  "verdict": "Collaborative design standard with built-in AI features.",
+  "useThisIf": "you design product UI with a team.",
+  "alternatives": [
+   "canva",
+   "v0"
+  ],
+  "source": "seed",
+  "addedAt": "2016-09-27",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/figma.png"
+ },
+ {
+  "slug": "runway",
+  "name": "Runway",
+  "url": "https://runwayml.com",
+  "affiliateUrl": null,
+  "category": "video",
+  "useCases": [
+   "video"
+  ],
+  "pricing": "freemium",
+  "verdict": "AI video generation and editing suite for creators.",
+  "useThisIf": "you want generative video plus editing tools.",
+  "alternatives": [
+   "pika",
+   "heygen"
+  ],
+  "source": "seed",
+  "addedAt": "2018-06-01",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/runway.png"
+ },
+ {
+  "slug": "pika",
+  "name": "Pika",
+  "url": "https://pika.art",
+  "affiliateUrl": null,
+  "category": "video",
+  "useCases": [
+   "video"
+  ],
+  "pricing": "freemium",
+  "verdict": "Fun, fast text/image-to-video with effects.",
+  "useThisIf": "you make short playful social clips.",
+  "alternatives": [
+   "runway"
+  ],
+  "source": "seed",
+  "addedAt": "2023-11-28",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/pika.png"
+ },
+ {
+  "slug": "heygen",
+  "name": "HeyGen",
+  "url": "https://www.heygen.com",
+  "affiliateUrl": null,
+  "category": "video",
+  "useCases": [
+   "video",
+   "marketing"
+  ],
+  "pricing": "freemium",
+  "verdict": "AI avatars and video translation for talking-head content.",
+  "useThisIf": "you need presenter videos without filming.",
+  "alternatives": [
+   "synthesia"
+  ],
+  "source": "seed",
+  "addedAt": "2020-12-01",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/heygen.png"
+ },
+ {
+  "slug": "synthesia",
+  "name": "Synthesia",
+  "url": "https://www.synthesia.io",
+  "affiliateUrl": null,
+  "category": "video",
+  "useCases": [
+   "video",
+   "marketing"
+  ],
+  "pricing": "paid",
+  "verdict": "Enterprise AI avatar videos for training and comms.",
+  "useThisIf": "you produce corporate training videos.",
+  "alternatives": [
+   "heygen"
+  ],
+  "source": "seed",
+  "addedAt": "2017-06-01",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/synthesia.png"
+ },
+ {
+  "slug": "descript",
+  "name": "Descript",
+  "url": "https://www.descript.com",
+  "affiliateUrl": null,
+  "category": "video",
+  "useCases": [
+   "video",
+   "audio"
+  ],
+  "pricing": "freemium",
+  "verdict": "Edit video and podcasts by editing the transcript.",
+  "useThisIf": "you edit talking content and podcasts.",
+  "alternatives": [
+   "capcut"
+  ],
+  "source": "seed",
+  "addedAt": "2017-12-01",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/descript.png"
+ },
+ {
+  "slug": "capcut",
+  "name": "CapCut",
+  "url": "https://www.capcut.com",
+  "affiliateUrl": null,
+  "category": "video",
+  "useCases": [
+   "video",
+   "marketing"
+  ],
+  "pricing": "freemium",
+  "verdict": "Free-ish short-form editor with AI captions and effects.",
+  "useThisIf": "you make TikToks, Reels and Shorts.",
+  "alternatives": [
+   "descript"
+  ],
+  "source": "seed",
+  "addedAt": "2020-04-01",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/capcut.png"
+ },
+ {
+  "slug": "elevenlabs",
+  "name": "ElevenLabs",
+  "url": "https://elevenlabs.io",
+  "affiliateUrl": null,
+  "category": "audio",
+  "useCases": [
+   "audio",
+   "video"
+  ],
+  "pricing": "freemium",
+  "verdict": "Realistic text-to-speech and voice cloning.",
+  "useThisIf": "you need natural voiceovers.",
+  "alternatives": [
+   "descript"
+  ],
+  "source": "seed",
+  "addedAt": "2023-01-23",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/elevenlabs.png"
+ },
+ {
+  "slug": "suno",
+  "name": "Suno",
+  "url": "https://suno.com",
+  "affiliateUrl": null,
+  "category": "audio",
+  "useCases": [
+   "audio"
+  ],
+  "pricing": "freemium",
+  "verdict": "Generate full songs with vocals from a prompt.",
+  "useThisIf": "you need music or jingles fast.",
+  "alternatives": [
+   "elevenlabs"
+  ],
+  "source": "seed",
+  "addedAt": "2023-12-20",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/suno.png"
+ },
+ {
+  "slug": "notion",
+  "name": "Notion",
+  "url": "https://www.notion.com",
+  "affiliateUrl": null,
+  "category": "productivity",
+  "useCases": [
+   "productivity"
+  ],
+  "pricing": "freemium",
+  "verdict": "All-in-one workspace with Notion AI for docs and Q&A.",
+  "useThisIf": "your team's docs and wikis live in one place.",
+  "alternatives": [],
+  "source": "seed",
+  "addedAt": "2016-03-01",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/notion.png"
+ },
+ {
+  "slug": "granola",
+  "name": "Granola",
+  "url": "https://www.granola.ai",
+  "affiliateUrl": null,
+  "category": "productivity",
+  "useCases": [
+   "productivity"
+  ],
+  "pricing": "freemium",
+  "verdict": "AI meeting notes that enhance your own notes, no bot joins.",
+  "useThisIf": "you want meeting notes without a recorder bot.",
+  "alternatives": [
+   "notion"
+  ],
+  "source": "seed",
+  "addedAt": "2024-05-22",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/granola.png"
+ },
+ {
+  "slug": "jasper",
+  "name": "Jasper",
+  "url": "https://www.jasper.ai",
+  "affiliateUrl": null,
+  "category": "marketing",
+  "useCases": [
+   "marketing"
+  ],
+  "pricing": "paid",
+  "verdict": "AI marketing copy platform with brand voice.",
+  "useThisIf": "a marketing team needs on-brand copy at scale.",
+  "alternatives": [
+   "copy-ai",
+   "chatgpt"
+  ],
+  "source": "seed",
+  "addedAt": "2021-02-01",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/jasper.png"
+ },
+ {
+  "slug": "copy-ai",
+  "name": "Copy.ai",
+  "url": "https://www.copy.ai",
+  "affiliateUrl": null,
+  "category": "marketing",
+  "useCases": [
+   "marketing",
+   "agents"
+  ],
+  "pricing": "freemium",
+  "verdict": "GTM AI workflows for sales and marketing copy.",
+  "useThisIf": "you automate outbound and content workflows.",
+  "alternatives": [
+   "jasper"
+  ],
+  "source": "seed",
+  "addedAt": "2020-10-01",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/copy-ai.png"
+ },
+ {
+  "slug": "gamma",
+  "name": "Gamma",
+  "url": "https://gamma.app",
+  "affiliateUrl": null,
+  "category": "productivity",
+  "useCases": [
+   "productivity",
+   "design"
+  ],
+  "pricing": "freemium",
+  "verdict": "Generate decks, docs and webpages from a prompt.",
+  "useThisIf": "you need a good-looking deck in minutes.",
+  "alternatives": [
+   "canva"
+  ],
+  "source": "seed",
+  "addedAt": "2022-11-01",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/gamma.png"
+ },
+ {
+  "slug": "wispr-flow",
+  "name": "Wispr Flow",
+  "url": "https://wisprflow.ai",
+  "affiliateUrl": null,
+  "category": "productivity",
+  "useCases": [
+   "audio",
+   "productivity"
+  ],
+  "pricing": "freemium",
+  "verdict": "Voice dictation that works in every app and cleans up your words as you speak.",
+  "useThisIf": "you'd rather talk than type emails, prompts and docs.",
+  "alternatives": [
+   "granola"
+  ],
+  "source": "x",
+  "addedAt": "2026-10-15",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/wispr-flow.png"
+ },
+ {
+  "slug": "magic-patterns",
+  "name": "Magic Patterns",
+  "url": "https://www.magicpatterns.com",
+  "affiliateUrl": null,
+  "category": "design",
+  "useCases": [
+   "design",
+   "coding"
+  ],
+  "pricing": "freemium",
+  "verdict": "AI design canvas (MagicOS) that turns prompts and PRDs into editable UI prototypes.",
+  "useThisIf": "you want AI-generated UI you can still steer as a designer.",
+  "alternatives": [
+   "v0",
+   "figma"
+  ],
+  "source": "x",
+  "addedAt": "2026-10-14",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/magic-patterns.png"
+ },
+ {
+  "slug": "codex",
+  "name": "OpenAI Codex",
+  "url": "https://chatgpt.com/codex",
+  "affiliateUrl": null,
+  "category": "coding",
+  "useCases": [
+   "coding",
+   "agents"
+  ],
+  "pricing": "paid (in ChatGPT plans)",
+  "verdict": "OpenAI's coding agent: runs tasks in the cloud, CLI or IDE and opens PRs.",
+  "useThisIf": "you're on ChatGPT and want an agent to take whole coding tasks.",
+  "alternatives": [
+   "claude-code",
+   "cursor",
+   "opencode"
+  ],
+  "source": "x",
+  "addedAt": "2026-10-15",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/codex.png"
+ },
+ {
+  "slug": "mirror-mirror-ai",
+  "name": "Mirror Mirror AI",
+  "url": "https://www.mirrormirrorai.com",
+  "affiliateUrl": null,
+  "category": "design",
+  "useCases": [
+   "design",
+   "marketing"
+  ],
+  "pricing": "paid",
+  "verdict": "Fashion brands book real models who licensed their likeness, then generate on-model campaign, e-commerce and flat-lay images. Models get paid per licensed image.",
+  "useThisIf": "you need AI fashion imagery with real, consented faces instead of fake AI people that could look like someone real. Part of a16z speedrun.",
+  "alternatives": [
+   "midjourney"
+  ],
+  "source": "x",
+  "addedAt": "2026-10-16",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/mirror-mirror-ai.png"
+ },
+ {
+  "slug": "1in8b",
+  "name": "80億分の1 (1 in 8 Billion)",
+  "url": "https://1in8b.life/ja/",
+  "affiliateUrl": null,
+  "category": "fun",
+  "useCases": [
+   "fun"
+  ],
+  "pricing": "free",
+  "verdict": "A free browser life simulator. You are born as a random baby somewhere on Earth and live one whole life (30-90 min), driven by real UN, World Bank and WHO stats for 172 countries.",
+  "useThisIf": "you want to try the AI-built indie project going viral on Japanese X. Its creator built it with Claude. It is a game, not an AI tool. It includes heavy themes and is meant for ages 15+.",
+  "alternatives": [],
+  "source": "x",
+  "addedAt": "2026-10-16",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/1in8b.png"
+ },
+ {
+  "slug": "rea",
+  "name": "REA",
+  "url": "https://rea.tools",
+  "affiliateUrl": null,
+  "category": "coding",
+  "useCases": [
+   "coding",
+   "agents"
+  ],
+  "pricing": "open-source",
+  "verdict": "Open-source toolkit that lets your coding agent reverse engineer apps, browser behavior and native binaries. #1 on GitHub trending with 264K+ stars.",
+  "useThisIf": "you want Claude Code, Codex or similar agents to dig into how an app or binary works instead of doing it by hand in a disassembler.",
+  "alternatives": [
+   "claude-code",
+   "codex"
+  ],
+  "source": "x",
+  "addedAt": "2026-10-16",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/rea.png"
+ },
+ {
+  "slug": "nemotron",
+  "name": "NVIDIA Nemotron 3.5",
+  "url": "https://www.nvidia.com/en-us/ai-data-science/foundation-models/nemotron/",
+  "affiliateUrl": null,
+  "category": "agents",
+  "useCases": [
+   "agents",
+   "coding"
+  ],
+  "pricing": "open-source",
+  "verdict": "NVIDIA open model family. The new 3.5 wave adds Nemotron 3.5 Super VL (120B MoE, 12B active, image + video input) and Bolt models built for local agents.",
+  "useThisIf": "you want open-weight models you can fine-tune or run on your own NVIDIA hardware for agent workloads.",
+  "alternatives": [
+   "muse-spark"
+  ],
+  "source": "x",
+  "addedAt": "2026-10-16",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/nemotron.png"
+ },
+ {
+  "slug": "krea",
+  "name": "Krea 3",
+  "url": "https://www.krea.ai/krea-3",
+  "affiliateUrl": null,
+  "category": "design",
+  "useCases": [
+   "design",
+   "marketing"
+  ],
+  "pricing": "freemium",
+  "verdict": "Krea new image model, pitched as 4x faster than Nano Banana Pro. Built for production image editing that keeps your product intact, priced for volume.",
+  "useThisIf": "you generate or edit lots of product and marketing images and care about speed and cost per image.",
+  "alternatives": [
+   "midjourney",
+   "ideogram"
+  ],
+  "source": "x",
+  "addedAt": "2026-10-16",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/krea.png"
+ },
+ {
+  "slug": "muse-spark",
+  "name": "Muse Spark Open",
+  "url": "https://research.meta.ai/blog/muse-spark-open",
+  "affiliateUrl": null,
+  "category": "chat",
+  "useCases": [
+   "chat",
+   "agents"
+  ],
+  "pricing": "open-source",
+  "verdict": "Meta open-weight release of its Muse Spark model: an 816B mixture-of-experts with 42B active params, billed as the most capable US open-weight model to date.",
+  "useThisIf": "you want a frontier-class open model to self-host for agentic work, for example on an M5 Ultra Mac Studio.",
+  "alternatives": [
+   "nemotron",
+   "chatgpt"
+  ],
+  "source": "x",
+  "addedAt": "2026-10-16",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/muse-spark.png"
+ },
+ {
+  "slug": "instabox",
+  "name": "InstaBox",
+  "url": "https://instabox.sh",
+  "affiliateUrl": null,
+  "category": "agents",
+  "useCases": [
+   "agents",
+   "coding"
+  ],
+  "pricing": "freemium",
+  "verdict": "Cloud Linux VMs for AI agents: computer use, Docker, snapshots, pause/resume, and public HTTPS ports spun up in under a second.",
+  "useThisIf": "your agents need a real machine (not just a sandbox) with persistent files, Docker, and a desktop they can drive.",
+  "alternatives": [
+   "replit",
+   "codex"
+  ],
+  "source": "x",
+  "addedAt": "2026-10-16",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/instabox.svg"
+ },
+ {
+  "slug": "manimgx",
+  "name": "ManimGX",
+  "url": "https://manimgx.academa.ai",
+  "affiliateUrl": null,
+  "category": "video",
+  "useCases": [
+   "video",
+   "coding",
+   "agents"
+  ],
+  "pricing": "free",
+  "verdict": "Open-source 3D animation engine for agents: Manim-compatible Python API on a Rust+wgpu core, ~90× faster than ManimCE, pip install and go.",
+  "useThisIf": "you (or your coding agent) need fast math/3D explainer videos from Python without a heavy Manim install.",
+  "alternatives": [
+   "runway",
+   "descript"
+  ],
+  "source": "x",
+  "addedAt": "2026-10-16",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/manimgx.svg"
+ },
+ {
+  "slug": "voyager",
+  "name": "Voyager",
+  "url": "https://voyager.so",
+  "affiliateUrl": null,
+  "category": "video",
+  "useCases": [
+   "video",
+   "design",
+   "agents"
+  ],
+  "pricing": "freemium",
+  "verdict": "Local AI harness for creative work (from the Moda team): frontier models drive Blender, Resolve, After Effects, Ableton and built-in design/video/DAW engines.",
+  "useThisIf": "you want Codex-style agent workflows for video, motion, music and games instead of only code.",
+  "alternatives": [
+   "runway",
+   "descript",
+   "claude-code"
+  ],
+  "source": "x",
+  "addedAt": "2026-10-16",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/voyager.png"
+ },
+ {
+  "slug": "gakku",
+  "name": "Gakku",
+  "url": "https://gakku.ai",
+  "affiliateUrl": null,
+  "category": "productivity",
+  "useCases": [
+   "productivity",
+   "chat"
+  ],
+  "pricing": "freemium",
+  "verdict": "AI learning coach for ages 6–16 that coaches writing, speaking and thinking via voice + missions (companion Raku) instead of handing kids finished answers.",
+  "useThisIf": "you want kids practicing how to think and write with AI, not copy-pasting homework answers.",
+  "alternatives": [
+   "chatgpt",
+   "claude"
+  ],
+  "source": "x",
+  "addedAt": "2026-10-16",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/gakku.png"
+ },
+ {
+  "slug": "higgsfield",
+  "name": "Higgsfield",
+  "url": "https://higgsfield.ai",
+  "affiliateUrl": null,
+  "category": "video",
+  "useCases": [
+   "video",
+   "design",
+   "marketing"
+  ],
+  "pricing": "freemium",
+  "verdict": "AI video and image studio with cinematic camera-motion presets, ad and UGC-style generators, and access to top video models (Kling, Veo, Sora and more) in one place.",
+  "useThisIf": "you want scroll-stopping social clips and video ads without learning a full editing or prompting workflow.",
+  "alternatives": [
+   "runway",
+   "pika",
+   "kling-ai"
+  ],
+  "source": "x",
+  "addedAt": "2026-10-16",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/higgsfield.png"
+ },
+ {
+  "slug": "base44",
+  "name": "Base44",
+  "url": "https://base44.com",
+  "affiliateUrl": null,
+  "category": "coding",
+  "useCases": [
+   "coding",
+   "productivity"
+  ],
+  "pricing": "freemium",
+  "verdict": "No-code AI app builder (owned by Wix): describe an app in plain English and get a working web app with database, login and hosting built in.",
+  "useThisIf": "you want a working internal tool or MVP from a prompt without wiring up a backend yourself.",
+  "alternatives": [
+   "lovable",
+   "bolt",
+   "replit"
+  ],
+  "source": "x",
+  "addedAt": "2026-10-16",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/base44.png"
+ },
+ {
+  "slug": "kling-ai",
+  "name": "Kling AI",
+  "url": "https://klingai.com",
+  "affiliateUrl": null,
+  "category": "video",
+  "useCases": [
+   "video",
+   "design"
+  ],
+  "pricing": "freemium",
+  "verdict": "Kuaishou's text- and image-to-video generator, known for realistic motion and physics, with lip-sync, effects and image generation.",
+  "useThisIf": "you want high-quality AI video clips from a prompt or a still image.",
+  "alternatives": [
+   "runway",
+   "pika",
+   "higgsfield"
+  ],
+  "source": "x",
+  "addedAt": "2026-10-16",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/kling-ai.png"
+ },
+ {
+  "slug": "genspark",
+  "name": "Genspark",
+  "url": "https://www.genspark.ai",
+  "affiliateUrl": null,
+  "category": "agents",
+  "useCases": [
+   "agents",
+   "productivity",
+   "chat"
+  ],
+  "pricing": "freemium",
+  "verdict": "All-in-one AI agent workspace: Super Agent researches, makes slides, docs and sheets, generates images/video and can even make phone calls for you.",
+  "useThisIf": "you want one agent to turn a request into finished deliverables instead of just a chat answer.",
+  "alternatives": [
+   "manus",
+   "perplexity",
+   "chatgpt"
+  ],
+  "source": "x",
+  "addedAt": "2026-10-16",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/genspark.png"
+ },
+ {
+  "slug": "opusclip",
+  "name": "OpusClip",
+  "url": "https://www.opus.pro",
+  "affiliateUrl": null,
+  "category": "video",
+  "useCases": [
+   "video",
+   "marketing"
+  ],
+  "pricing": "freemium",
+  "verdict": "Turns long videos and podcasts into short viral-style clips for TikTok, Reels and Shorts, with auto captions, reframing and a virality score.",
+  "useThisIf": "you have long-form video and want ready-to-post shorts without editing them by hand.",
+  "alternatives": [
+   "descript",
+   "capcut"
+  ],
+  "source": "x",
+  "addedAt": "2026-10-16",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/opusclip.png"
+ },
+ {
+  "slug": "manus",
+  "name": "Manus",
+  "url": "https://manus.im",
+  "affiliateUrl": null,
+  "category": "agents",
+  "useCases": [
+   "agents",
+   "productivity",
+   "coding"
+  ],
+  "pricing": "freemium",
+  "verdict": "General-purpose autonomous AI agent that plans and executes multi-step tasks in its own cloud computer: research, building websites, data analysis and reports.",
+  "useThisIf": "you want to hand off a whole task and come back to the finished result.",
+  "alternatives": [
+   "genspark",
+   "chatgpt",
+   "crewai"
+  ],
+  "source": "x",
+  "addedAt": "2026-10-16",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/manus.png"
+ },
+ {
+  "slug": "papertrade",
+  "name": "Papertrade",
+  "url": "https://papertrade.xyz",
+  "affiliateUrl": null,
+  "category": "crypto",
+  "useCases": [
+   "crypto"
+  ],
+  "pricing": "free",
+  "verdict": "Onchain synthetic perpetual futures exchange on Hyperliquid's HyperEVM, offering BTC and ETH perps with up to 1000x leverage. Trades settle against a shared liquidity pool rather than an order book.",
+  "riskNote": "Leveraged trading is high risk. This is not financial advice.",
+  "useThisIf": "you already trade crypto perps and want to see the Hyperliquid app everyone on X is talking about.",
+  "alternatives": [],
+  "source": "x",
+  "addedAt": "2026-10-17",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/papertrade.png"
+ },
+ {
+  "slug": "cleanyourtv",
+  "name": "CleanYourTV",
+  "url": "https://cleanyour.tv",
+  "affiliateUrl": null,
+  "category": "productivity",
+  "useCases": [
+   "productivity",
+   "coding"
+  ],
+  "pricing": "open-source",
+  "verdict": "Free, open-source (MIT) kit that debloats Android TV and Google TV sets over Wi-Fi with Claude Code or another coding agent: it switches off ad and tracking packages and swaps the ad-filled home screen for a clean Apple TV-style launcher. No root, nothing is uninstalled, and one command restores it. The GitHub repo was created on Oct 17, 2026 and passed 5,300 stars in three days after its creator's demo went viral on X (he reports 4.8M views).",
+  "riskNote": "It changes system settings on your TV over adb. It is reversible, but read the README and check your model is supported first.",
+  "useThisIf": "your Android TV or Google TV is slow and full of ads, and you are comfortable letting a coding agent run adb commands on it.",
+  "alternatives": [
+   "claude-code",
+   "opencode"
+  ],
+  "source": "x",
+  "addedAt": "2026-10-20",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/cleanyourtv.png"
+ },
+ {
+  "slug": "agentcloak",
+  "name": "AgentCloak",
+  "url": "https://incountry.com/products/agentcloak/",
+  "affiliateUrl": null,
+  "category": "chat",
+  "useCases": [
+   "chat",
+   "productivity"
+  ],
+  "pricing": "free",
+  "verdict": "Free browser extension (Chrome, Edge) and Mac app from data-residency company InCountry that swaps names, emails, phone numbers, addresses and bank numbers for fake ones before your prompt reaches ChatGPT, Claude, Gemini, Grok or DeepSeek, then restores the real values in the reply on your device. Its launch video (a Mac Mini smashed with a baseball bat) went viral on X on Oct 19, 2026. Still small: the Chrome Web Store listing showed 689 users on Oct 20. Business versions for agents, MCP and coding tools are sold separately.",
+  "useThisIf": "you paste contracts, statements or client details into AI chatbots and want personal data masked before it leaves your browser.",
+  "alternatives": [
+   "chatgpt",
+   "claude"
+  ],
+  "source": "x",
+  "addedAt": "2026-10-20",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/agentcloak.png"
+ },
+ {
+  "slug": "viggle-jst-2",
+  "name": "Viggle JST-2",
+  "url": "https://viggle.ai/jst2",
+  "affiliateUrl": null,
+  "category": "video",
+  "useCases": [
+   "video",
+   "design"
+  ],
+  "pricing": "freemium",
+  "verdict": "Viggle's new physics-native 3D world model, launched Oct 19, 2026: one model builds scenes, rigged 3D characters (from a single image) and motion (from a phone video) inside a shared 3D world you can move around in. Free to try, also on the Viggle API. Impressive demos from the team behind the Viggle dance-meme app; the benchmark wins so far are Viggle's own tests, not independent ones.",
+  "useThisIf": "you make animation, games or short videos and want a rigged 3D character and motion without a mocap setup.",
+  "alternatives": [
+   "runway",
+   "krea"
+  ],
+  "source": "x",
+  "addedAt": "2026-10-20",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/viggle-jst-2.png"
+ },
+ {
+  "slug": "mercury-3",
+  "name": "Mercury 3",
+  "url": "https://www.inceptionlabs.ai/blog/introducing-mercury-3",
+  "affiliateUrl": null,
+  "category": "agents",
+  "useCases": [
+   "agents",
+   "coding"
+  ],
+  "pricing": "paid",
+  "verdict": "Inception's new diffusion LLM, launched Oct 19, 2026, writes many tokens in parallel instead of one at a time: 1,068 tokens/sec on NVIDIA GPUs, a 1M-token context window, tool calling and structured outputs. Inception says it beats GPT-6 Luna and Claude Haiku 5.5 on standard benchmarks (vendor numbers). API pricing is $0.20 / $0.70 per million input / output tokens, half price at launch, and it is also on Vercel AI Gateway.",
+  "useThisIf": "you build voice bots, browser agents or chat support where speed and cost per call matter more than top-end reasoning.",
+  "alternatives": [
+   "claude-haiku-5-5",
+   "nemotron"
+  ],
+  "source": "x",
+  "addedAt": "2026-10-20",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/mercury-3.png"
+ },
+ {
+  "slug": "wabi",
+  "name": "Wabi 2.0",
+  "url": "https://wabi.ai",
+  "affiliateUrl": null,
+  "category": "chat",
+  "useCases": [
+   "chat",
+   "productivity"
+  ],
+  "pricing": "free",
+  "verdict": "Multiplayer AI assistant from Replika founder Eugenia Kuyda, for iOS, Android and Mac. Wabi 2.0 opened to everyone on Oct 19, 2026: add it to a group chat and it plans the trip, books the stay, sorts dinner or turns a joke into a mini-game, with home-screen widgets on your phone. Free to download. It is new, so test it on a real group errand before relying on it.",
+  "useThisIf": "your group chats keep stalling on plans and you want an AI that coordinates with everyone, not just you.",
+  "alternatives": [
+   "chatgpt",
+   "grok"
+  ],
+  "source": "x",
+  "addedAt": "2026-10-20",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/wabi.png"
+ },
+ {
+  "slug": "composio-instant",
+  "name": "Composio Instant",
+  "url": "https://composio.dev/instant",
+  "affiliateUrl": null,
+  "category": "agents",
+  "useCases": [
+   "agents",
+   "productivity"
+  ],
+  "pricing": "freemium",
+  "verdict": "Product Hunt #2 on Oct 20, 2026: gives your AI agent a wallet so it can pay per call for 100+ tools (Apollo, Exa, Higgsfield, scraping, voice) without you creating provider accounts or subscriptions. Works with Claude, ChatGPT, Cursor, Codex and MCP clients; new accounts get $2 credit, Pro includes monthly credit. You still need a Composio account, and Instant covers core actions rather than every provider setting.",
+  "useThisIf": "your agent keeps stalling because you have not signed up for yet another SaaS API key, and you are fine paying per call instead.",
+  "alternatives": [
+   "langchain",
+   "n8n"
+  ],
+  "source": "producthunt",
+  "addedAt": "2026-10-21",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/composio-instant.png"
+ },
+ {
+  "slug": "harness-2",
+  "name": "Harness²",
+  "url": "https://github.com/google-research/harness2",
+  "affiliateUrl": null,
+  "category": "agents",
+  "useCases": [
+   "agents",
+   "coding"
+  ],
+  "pricing": "open-source",
+  "verdict": "Google Cloud AI Research open-source framework (PH Oct 20–21, 2026; paper arXiv:2610.14224) that recursively improves an agent’s harness—prompts, tools, memory, skills—while keeping model weights fixed. Uses Propose–Probe–Compose without ground-truth labels; reported gains up to +11.5 on WorkBuddy-Bench (vendor/paper numbers). Different from the existing Harness command-center product.",
+  "useThisIf": "you run coding or office agents and want the scaffolding around a frozen model to self-improve across tasks.",
+  "alternatives": [
+   "harness",
+   "crewai"
+  ],
+  "source": "producthunt",
+  "addedAt": "2026-10-21",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/harness-2.png"
+ },
+ {
+  "slug": "fasth3-omni",
+  "name": "FastH3 Omni",
+  "url": "https://nuvalab.ai/fasth3/",
+  "affiliateUrl": null,
+  "category": "video",
+  "useCases": [
+   "video",
+   "design"
+  ],
+  "pricing": "open-source",
+  "verdict": "Open weights released Oct 20, 2026 by Nuva Lab × FastVideo (Hao AI Lab): distilled MiniMax H3 for reference-to-video with synced audio. Takes text plus up to 9 images, 3 videos and 3 audio refs; outputs 5–15s at 24 fps. BF16 and ComfyUI builds on Hugging Face; hosted options via Reactor/Nuva. Needs serious GPU VRAM for local runs; MiniMax-H3 community license applies.",
+  "useThisIf": "you want Seedance-style omni-reference video with audio and will run open weights or a hosted API instead of a closed proprietary clip tool.",
+  "alternatives": [
+   "kling-ai",
+   "runway",
+   "comfyui"
+  ],
+  "source": "x",
+  "addedAt": "2026-10-21",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/fasth3-omni.png"
+ },
+ {
+  "slug": "exa-3",
+  "name": "Exa 3.0",
+  "url": "https://exa.ai",
+  "affiliateUrl": null,
+  "category": "productivity",
+  "useCases": [
+   "productivity",
+   "agents"
+  ],
+  "pricing": "paid",
+  "verdict": "Exa’s Oct 19, 2026 search API upgrade for AI agents: larger embeddings, Dynamic Highlights GA (vendor says ~95% fewer tokens than full page text), expanded index (products, local businesses, live data), plus Exa Lite at $4 per 1,000 requests (Auto $7). Exa claims first place on eight self-reported benchmarks; treat those as vendor numbers. API-only—no consumer chat UI.",
+  "useThisIf": "you are wiring web search into an agent and care about retrieval quality and cost per thousand calls more than a chat answer box.",
+  "alternatives": [
+   "perplexity",
+   "genspark"
+  ],
+  "source": "producthunt",
+  "addedAt": "2026-10-21",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/exa-3.png"
+ },
+ {
+  "slug": "mintlify-autopilot",
+  "name": "Mintlify Autopilot",
+  "url": "https://www.mintlify.com/blog/autopilot",
+  "affiliateUrl": null,
+  "category": "productivity",
+  "useCases": [
+   "productivity",
+   "coding"
+  ],
+  "pricing": "paid",
+  "verdict": "Always-on docs agent from Mintlify (announced Oct 20, 2026; PH launch same window): watches code, Slack, trackers, tickets and feature flags, drafts updates, and opens pull requests for human review—nothing publishes until someone merges. Learns tone from merged/closed PRs. Beta on Pro and Enterprise; each PR costs 250 Mintlify credits, empty runs are free.",
+  "useThisIf": "your docs drift every sprint and you already use Mintlify and want PRs that update pages instead of another chatbot tab.",
+  "alternatives": [
+   "notion",
+   "cursor"
+  ],
+  "source": "producthunt",
+  "addedAt": "2026-10-21",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/mintlify-autopilot.png"
+ },
+ {
+  "slug": "useit",
+  "name": "UseIt Studio",
+  "url": "https://useit.im",
+  "affiliateUrl": null,
+  "category": "design",
+  "useCases": [
+   "design",
+   "productivity"
+  ],
+  "pricing": "freemium",
+  "verdict": "Product Hunt #1 on Oct 21, 2026: AI design studio for physical goods—pins, stickers, gift boxes, brand kits—with editable layers, live 3D previews, cut lines, bleed and dielines, plus Illustrator handoff. Browser and Windows desktop. You still refine by pointing at details; it is not a one-click factory.",
+  "useThisIf": "you want real printable files (not flat AI mockups) for small-run merch or packaging and will spend a few minutes directing the edits.",
+  "alternatives": [
+   "canva",
+   "diagram-design"
+  ],
+  "source": "producthunt",
+  "addedAt": "2026-10-22",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/useit.png"
+ },
+ {
+  "slug": "needle",
+  "name": "Needle",
+  "url": "https://needle.app",
+  "affiliateUrl": null,
+  "category": "marketing",
+  "useCases": [
+   "marketing",
+   "agents"
+  ],
+  "pricing": "paid",
+  "verdict": "Product Hunt top-3 on Oct 21, 2026: agent-native outbound engine. From Claude, ChatGPT, Grok Bot or Cursor you find leads, skip CRM overlaps, and run LinkedIn/Instagram/email campaigns with daily limits and warm-up. $69/mo per connected account; 7-day free trial, one account, no card. Automation can still risk account health if you push past the guardrails.",
+  "useThisIf": "you already live in an MCP client and want outbound lists + sends without bouncing between Clay and a sequencer.",
+  "alternatives": [
+   "openseo",
+   "batchrate"
+  ],
+  "source": "producthunt",
+  "addedAt": "2026-10-22",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/needle.png"
+ },
+ {
+  "slug": "band",
+  "name": "BAND",
+  "url": "https://www.band.ai",
+  "affiliateUrl": null,
+  "category": "agents",
+  "useCases": [
+   "agents",
+   "coding"
+  ],
+  "pricing": "freemium",
+  "verdict": "Product Hunt #2 on Oct 21, 2026: shared interaction layer so humans and heterogeneous coding/enterprise agents can collaborate in real time with governance—discovery, delegation and trust instead of brittle point-to-point glue. Desktop for multi-agent work plus a developer view of coding-agent collaboration. Still early infrastructure; you bring your own agents.",
+  "useThisIf": "you run several coding or enterprise agents that need to talk to each other and to people without hand-wiring every handoff.",
+  "alternatives": [
+   "langchain",
+   "crewai"
+  ],
+  "source": "producthunt",
+  "addedAt": "2026-10-22",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/band.png"
+ },
+ {
+  "slug": "the-brains",
+  "name": "The Brains",
+  "url": "https://brains.ceo",
+  "affiliateUrl": null,
+  "category": "productivity",
+  "useCases": [
+   "productivity",
+   "agents"
+  ],
+  "pricing": "open-source",
+  "verdict": "Product Hunt launch Oct 21, 2026: turns public talks, essays and posts from founders/CEOs/investors into searchable MCP servers for Claude, Cursor, ChatGPT or Codex—every answer cites a source link. ~37 brains at launch, free MIT, unofficial and not affiliated with the people. Coverage is only what those people published publicly.",
+  "useThisIf": "you want cited advice in the style of specific public founders inside your MCP client, not another uncited chat persona.",
+  "alternatives": [
+   "perplexity",
+   "notion"
+  ],
+  "source": "producthunt",
+  "addedAt": "2026-10-22",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/the-brains.png"
+ },
+ {
+  "slug": "phone-use",
+  "name": "Phone Use",
+  "url": "https://www.phoneuse.dev",
+  "affiliateUrl": null,
+  "category": "agents",
+  "useCases": [
+   "agents",
+   "coding"
+  ],
+  "pricing": "open-source",
+  "verdict": "Open-source iOS-native runtime (npm: phone-use) so AI agents observe accessibility trees, tap real UI elements, verify screen state, and compile successful routes into replayable skills—CLI, SDK or MCP. Cloud/simulator iPhone environments; early X buzz Oct 21–22, 2026. Still niche: you need an agent stack and iOS runtime access, not a consumer chat app.",
+  "useThisIf": "you are building agents that must drive native iOS apps (Uber, Notes, Settings) without brittle screenshot-only vision loops.",
+  "alternatives": [
+   "composio-instant"
+  ],
+  "source": "x",
+  "addedAt": "2026-10-22",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/phone-use.png"
+ }
 ]

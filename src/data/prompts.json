@@ -345,8 +345,8 @@
     {
       "n": 3,
       "slug": "issue-3",
-      "title": "Prompt Drop #3: 5 AI prompts X actually loved (100+ likes each)",
-      "date": "2026-10-20",
+      "title": "Prompt Drop #3: 15 AI prompts X actually loved (100+ likes each)",
+      "date": "2026-10-22",
       "intro": "This week's running pool. Every prompt comes from an X post with at least 100 likes, and we checked each like count on X ourselves. Copy one, swap any [brackets] or details for your own, paste it into the AI, done. More get added through the week.",
       "rule": "Only prompts from X posts with 100+ likes (checked with X data). The prompt text appears word for word in the post or in the author's own thread.",
       "prompts": [
@@ -462,6 +462,61 @@
           "author": "@icreatelife",
           "likes": 126,
           "likesAsOf": "Oct 21, 2026 HKT"
+        },
+        {
+          "title": "List every codebase assumption before the agent codes",
+          "category": "Coding",
+          "tool": "Claude Code, Codex, or Grok",
+          "prompt": "List every assumption you're making about this codebase. Mark each one verified (you read the actual code) or guessed (you inferred it, and say why). Propose your highest confidence surgical fix for each, but don't apply it yet. Stop and wait for my manual review.",
+          "why": "Forces the agent to separate what it read from what it guessed before it edits—most vibe-coding bugs hide in the guessed column.",
+          "source": "https://x.com/kloss_xyz/status/2104088147739242660",
+          "author": "@kloss_xyz",
+          "likes": 655,
+          "likesAsOf": "Oct 22, 2026 HKT"
+        },
+        {
+          "title": "Wipe your name off data-broker sites (one site at a time)",
+          "category": "Productivity",
+          "tool": "Claude (Opus)",
+          "prompt": "Adopt the role of a privacy investigator who's helped hundreds of people disappear from data brokers, people-search sites and old accounts.\nI want my personal information off the internet, and I want you to help me do it properly.\n\nDon't give me a generic privacy checklist. Instead, work through it with me one site at a time and help me answer:\n• Where do my name, phone, email and address show up, with links?\n• Which listings expose the most, and what's the opt-out page for each?\n• Which old accounts should I delete for good, and how?\n• Which sites have no opt-out button, and what GDPR or CCPA letter do I send them?\n\nDon't submit, send or delete anything until I say yes. Don't let me skip the sites that look too annoying to deal with.\n\nMy name, city, email and old usernames: [YOUR DETAILS]",
+          "why": "Turns a vague \"get me off the internet\" ask into a supervised, one-site-at-a-time opt-out plan—and it refuses to act until you approve.",
+          "source": "https://x.com/alex_prompter/status/2112816190976573537",
+          "author": "@alex_prompter",
+          "likes": 840,
+          "likesAsOf": "Oct 22, 2026 HKT"
+        },
+        {
+          "title": "90-day plan to become irreplaceable at work",
+          "category": "Productivity",
+          "tool": "Claude (Opus)",
+          "prompt": "I want to become irreplaceable at work. Analyze my current role, responsibilities, and team dynamics.\n\nIdentify the 3 highest-leverage skills that will make me indispensable in my position.\nBreak down each skill into sub-skills I can build.\nCreate a 90-day mastery plan with weekly milestones and daily actions.\nInclude learning resources, tools, and checkpoints to measure progress.\n\nFormat output into a table with columns for Day, Task, Skill Focus, Time Required, and Outcome.\n\nMy role and context: [DESCRIBE YOUR JOB]",
+          "why": "Gives beginners a concrete day-by-day table instead of vague career advice—fill in your role and you get a plan you can start tomorrow.",
+          "source": "https://x.com/alex_prompter/status/2112559527677816861",
+          "author": "@alex_prompter",
+          "likes": 694,
+          "likesAsOf": "Oct 22, 2026 HKT"
+        },
+        {
+          "title": "Calm-in-chaos die-cut sticker (image)",
+          "category": "Image",
+          "tool": "ChatGPT, Gemini, Grok, or Midjourney",
+          "prompt": "Die-cut sticker art of a [character] calmly [action] while surrounded by an exaggerated [chaotic situation], caption: \"[text]\", absurd cartoon style, bold saturated colors, thick black outlines, minimal shading, simplified shapes, playful proportions, expressive posture, humorous contrast between calm behavior and surrounding chaos, clean sticker composition, stark white background",
+          "why": "Copy-paste image prompt with clear [brackets]—great for stickers, memes, and merch mockups.",
+          "source": "https://x.com/azed_ai/status/2106700879667900888",
+          "author": "@azed_ai",
+          "likes": 140,
+          "likesAsOf": "Oct 22, 2026 HKT"
+        },
+        {
+          "title": "Stitched stop-motion fabric sculpture (image)",
+          "category": "Image",
+          "tool": "ChatGPT, Gemini, Grok, or Midjourney",
+          "prompt": "A stop-motion scene featuring a whimsical sculpture of a [subject], handcrafted from layered fabric scraps, felt, yarn, and stitched textiles, positioned on a handmade [object/element], visible seams and embroidery, soft tactile textures, slightly imperfect shapes, playful proportions, charming folk-art character design, miniature handcrafted scenery, cozy stop-motion animation aesthetic",
+          "why": "A beginner-friendly craft aesthetic with fill-in [subject] and [object]—works well for kids' book vibes and cozy product shots.",
+          "source": "https://x.com/azed_ai/status/2104526554374267368",
+          "author": "@azed_ai",
+          "likes": 240,
+          "likesAsOf": "Oct 22, 2026 HKT"
         }
       ]
     }

@@ -105,5 +105,10 @@
  "harness-2": "((\"harness 2\" OR harness2 OR \"Harness2\") (google OR agent OR agents OR recursive OR \"google-research\" OR \"google research\") OR \"harness2.github.io\") -is:retweet",
  "fasth3-omni": "((\"fasth3\" OR \"fast h3\" OR FastH3) (omni OR video OR minimax OR nuva OR fastvideo) OR \"FastH3-Omni\" OR \"FastH3 Omni\" OR url:nuvalab.ai) -is:retweet",
  "exa-3": "((\"exa 3\" OR \"exa 3.0\" OR exa3) (search OR api OR lite OR agent OR agents) OR (exa (Lite OR \"Dynamic Highlights\"))) -is:retweet",
- "mintlify-autopilot": "((mintlify autopilot) OR (mintlify (autopilot OR \"docs agent\" OR \"self-updating\" OR \"self updating\"))) -is:retweet"
+ "mintlify-autopilot": "((mintlify autopilot) OR (mintlify (autopilot OR \"docs agent\" OR \"self-updating\" OR \"self updating\"))) -is:retweet",
+ "useit": "(\"UseIt Studio\" OR useit.im OR (useit (studio OR printable OR dieline OR packaging))) -is:retweet",
+ "needle": "(needle.app OR \"Needle outbound\" OR (Needle (outbound OR MCP) (leads OR LinkedIn OR Instagram))) -is:retweet",
+ "band": "(band.ai OR \"BAND for Developers\" OR (BAND agents (collaboration OR governance OR \"coding agents\"))) -is:retweet",
+ "the-brains": "((\"The Brains\" OR brains.ceo) (MCP OR Claude OR Cursor OR ChatGPT)) -is:retweet",
+ "phone-use": "((\"Phone Use\" OR phoneuse.dev OR \"phone-use\") (agent OR iOS OR MCP OR runtime)) -is:retweet"
 }

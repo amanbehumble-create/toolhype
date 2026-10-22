@@ -3079,5 +3079,199 @@
    "updatedAt": null
   },
   "logo": "/logos/phone-use.png"
+ },
+ {
+  "slug": "novastart",
+  "name": "Novastart",
+  "url": "https://novastart.com",
+  "affiliateUrl": null,
+  "category": "productivity",
+  "useCases": [
+   "productivity",
+   "agents"
+  ],
+  "pricing": "freemium",
+  "verdict": "Infinite-canvas \"OS\" where apps, teammates and AI agents share one whiteboard—lead agent spins up helpers, you can correct them mid-run, results land in sheets on the canvas. Free plan; Pro $10/mo, Team $20/mo; agent runs cost $0.02 per use from credit packs starting at $25. Ambitious all-in-one, so expect a learning curve versus a plain doc or whiteboard.",
+  "useThisIf": "you want agents and teammates working side by side on one visual canvas instead of juggling chat tabs and docs.",
+  "alternatives": [
+   "notion",
+   "manus"
+  ],
+  "source": "submission",
+  "addedAt": "2026-10-22",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/novastart.png"
+ },
+ {
+  "slug": "rewords",
+  "name": "ReWords.AI",
+  "url": "https://rewords.ai",
+  "affiliateUrl": null,
+  "category": "design",
+  "useCases": [
+   "design",
+   "marketing"
+  ],
+  "pricing": "paid",
+  "verdict": "Edits or replaces text inside an image while keeping the original font, color and background—screenshots, posters, signs, thumbnails, translations. First edit free, then from $5.99. Its own comparison notes rotated or arched text is not supported.",
+  "useThisIf": "you need to fix a typo, price or headline baked into an image and do not have the source file.",
+  "alternatives": [
+   "canva",
+   "ideogram"
+  ],
+  "source": "submission",
+  "addedAt": "2026-10-22",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/rewords.png"
+ },
+ {
+  "slug": "svgicons",
+  "name": "SVGicons",
+  "url": "https://svgicons.com",
+  "affiliateUrl": null,
+  "category": "design",
+  "useCases": [
+   "design",
+   "coding"
+  ],
+  "pricing": "freemium",
+  "verdict": "Search engine over 312K+ free icons from 227 open-source sets; copy SVG or React/Vue code, restyle in Icon Studio, and pull icons via API, CLI or MCP so coding agents can fetch them. Pro is listed at $7/month or $79 once. The icons themselves are open-source sets you could find elsewhere—the value is search plus agent access.",
+  "useThisIf": "you want your coding agent (or you) to find and drop in consistent open-source icons without hunting across icon sites.",
+  "alternatives": [
+   "figma",
+   "v0"
+  ],
+  "source": "submission",
+  "addedAt": "2026-10-22",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/svgicons.png"
+ },
+ {
+  "slug": "vectoree",
+  "name": "Vectoree",
+  "url": "https://vectoree.ai",
+  "affiliateUrl": null,
+  "category": "agents",
+  "useCases": [
+   "agents",
+   "coding"
+  ],
+  "pricing": "paid",
+  "verdict": "One project key gives a coding agent a backend: model gateway across xAI/OpenAI/Google/Anthropic/DeepSeek (OpenAI-compatible), sign-in, database and storage, set up via skill + CLI. No monthly fee—pay-as-you-go wallet, $5 credit after CLI link, calls billed at catalog model prices. New and small; locking an agent app to one young provider is the real tradeoff.",
+  "useThisIf": "you want Codex/Claude Code to ship an agent app with models, auth, DB and storage behind a single key and wallet.",
+  "alternatives": [
+   "replit",
+   "base44"
+  ],
+  "source": "submission",
+  "addedAt": "2026-10-22",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/vectoree.png"
+ },
+ {
+  "slug": "aitho",
+  "name": "Aitho",
+  "url": "https://aitho.app",
+  "affiliateUrl": null,
+  "category": "productivity",
+  "useCases": [
+   "productivity",
+   "audio"
+  ],
+  "pricing": "freemium",
+  "verdict": "Voice-following AI teleprompter: imports PowerPoint/PDF, scrolls your script and advances slides as you speak, keeps notes private, and gives grounded private answers from your deck during Q&A. Free plan (3 private answers to try); Pro $39/month. Pricey for occasional presenters.",
+  "useThisIf": "you present often and want your script and slides to follow your voice instead of clicking and reading notes.",
+  "alternatives": [
+   "gamma",
+   "descript"
+  ],
+  "source": "submission",
+  "addedAt": "2026-10-22",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/aitho.png"
+ },
+ {
+  "slug": "agenvas",
+  "name": "Agenvas",
+  "url": "https://agenvas.com",
+  "affiliateUrl": null,
+  "category": "design",
+  "useCases": [
+   "design",
+   "video"
+  ],
+  "pricing": "open-source",
+  "verdict": "Self-hosted, single-admin AI creation canvas (MIT): text, images, video and audio are cards on one canvas, 6 media adapters, deployed with one Docker Compose command. Repo github.com/grayrepo-byte/Agenvas is brand new (created Sep 2026, a handful of stars)—promising but early; you bring your own model keys.",
+  "useThisIf": "you want a private, self-hosted canvas for AI media generation instead of a hosted creative SaaS.",
+  "alternatives": [
+   "comfyui",
+   "krea"
+  ],
+  "source": "submission",
+  "addedAt": "2026-10-22",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/agenvas.png"
+ },
+ {
+  "slug": "image-to-calendar",
+  "name": "Image to Calendar",
+  "url": "https://imagetocalendar.app",
+  "affiliateUrl": null,
+  "category": "productivity",
+  "useCases": [
+   "productivity"
+  ],
+  "pricing": "paid",
+  "verdict": "Upload a photo, screenshot or PDF of a schedule and get editable events (up to 100 per conversion, recurring series expanded) as one ICS file to import anywhere. One free conversion without an account, two more credits with Google sign-in, then one-time packs: $9.90/30, $19.90/100, $39.90/300 credits—no subscription. Site does not say who makes it.",
+  "useThisIf": "you keep retyping school, sports or class schedules from photos into your calendar.",
+  "alternatives": [
+   "notion"
+  ],
+  "source": "submission",
+  "addedAt": "2026-10-22",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/image-to-calendar.png"
  }
 ]

@@ -6,6 +6,7 @@ export function getStaticPaths() { return getIssues().map((i) => ({ params: { sl
 const { i } = Astro.props;
 const url = new URL(`/prompts/${i.slug}`, Astro.site).href;
 const LONG = 900; // prompts longer than this start collapsed (Copy still copies the full text)
+const dropCount = i.prompts.length;
 ---
 <Base title={i.title} description={`${i.prompts.length} beginner-friendly AI prompts from X posts with 100+ likes, ready to copy: ${i.prompts.slice(0, 3).map((p) => p.title.toLowerCase()).join(', ')} and more.`.slice(0, 158)} ogType="article" jsonld={[issueLd(i, url)]}>
 <Shell active="prompts"><article class="prose">
@@ -23,7 +24,7 @@ const LONG = 900; // prompts longer than this start collapsed (Copy still copies
   <p class="muted" style="margin:0;font-size:.8rem">Credit: <a href={p.source} rel="noopener nofollow" target="_blank">{p.author} on X</a>{p.promptSource && <> · <a href={p.promptSource} rel="noopener nofollow" target="_blank">prompt in thread</a></>} · {p.likes.toLocaleString('en-US')} likes as of {p.likesAsOf}</p>
 </section>)}
 <p class="muted">Prompts are copied word for word from the original posts (only the [brackets] are yours to fill); credit goes to the original posters. Found a great prompt? Tag <a href="https://x.com/amanbehumble">@amanbehumble</a>. More issues: <a href="/prompts">Prompt Drop archive</a>.</p>
-<SubStrip place="prompt-issue" title="Get the next Prompt Drop" sub="10 prompts with 100+ likes on X, every week. Free."/>
+<SubStrip place="prompt-issue" title="Get the next Prompt Drop" sub={`${dropCount} prompts with 100+ likes on X in this issue. Free weekly.`}/>
 </article></Shell>
 <script>
 document.querySelectorAll<HTMLButtonElement>('button.copy').forEach((b) => b.addEventListener('click', async () => {

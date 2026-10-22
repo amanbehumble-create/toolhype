@@ -110,5 +110,12 @@
  "needle": "(needle.app OR \"Needle outbound\" OR (Needle (outbound OR MCP) (leads OR LinkedIn OR Instagram))) -is:retweet",
  "band": "(band.ai OR \"BAND for Developers\" OR (BAND agents (collaboration OR governance OR \"coding agents\"))) -is:retweet",
  "the-brains": "((\"The Brains\" OR brains.ceo) (MCP OR Claude OR Cursor OR ChatGPT)) -is:retweet",
- "phone-use": "((\"Phone Use\" OR phoneuse.dev OR \"phone-use\") (agent OR iOS OR MCP OR runtime)) -is:retweet"
+ "phone-use": "((\"Phone Use\" OR phoneuse.dev OR \"phone-use\") (agent OR iOS OR MCP OR runtime)) -is:retweet",
+ "novastart": "(novastart OR url:novastart.com OR \"novastart.com\") -is:retweet",
+ "rewords": "(\"rewords.ai\" OR url:rewords.ai OR \"ReWords AI\" OR ReWordsAI) -is:retweet",
+ "svgicons": "(\"svgicons.com\" OR url:svgicons.com OR (svgicons (mcp OR icons OR api))) -is:retweet",
+ "vectoree": "(vectoree OR url:vectoree.ai) -is:retweet",
+ "aitho": "(aitho OR url:aitho.app) -is:retweet",
+ "agenvas": "(agenvas OR url:agenvas.com OR \"grayrepo-byte/Agenvas\") -is:retweet",
+ "image-to-calendar": "(\"imagetocalendar.app\" OR url:imagetocalendar.app OR \"image to calendar\" app) -is:retweet"
 }

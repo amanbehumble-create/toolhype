@@ -1,5 +1,5 @@
 {
- "computedAt": "2026-10-22T01:16:52.316Z",
+ "computedAt": "2026-10-22T08:40:53.775Z",
  "method": "v1",
  "tools": {
   "inbox-zero": {
@@ -4464,6 +4464,251 @@
     }
    ],
    "computedAt": "2026-10-22T01:16:52.316Z"
+  },
+  "novastart": {
+   "status": "live",
+   "query": "(novastart OR url:novastart.com OR \"novastart.com\") -is:retweet",
+   "mentions24h": 10,
+   "mentions7d": 77,
+   "priorDailyAvg": 11.2,
+   "velocity": 0.9,
+   "daily": [
+    4,
+    6,
+    2,
+    14,
+    18,
+    23,
+    10
+   ],
+   "peakDay": 23,
+   "peakDaysAgo": 1,
+   "sample": {
+    "posts": 25,
+    "likes": 5,
+    "reposts": 3,
+    "replies": 1
+   },
+   "parts": {
+    "volume": 18.9,
+    "velocity": 0,
+    "engagement": 6.2
+   },
+   "score": 25,
+   "label": "steady",
+   "viral": false,
+   "topPosts": [],
+   "computedAt": "2026-10-22T08:40:53.775Z"
+  },
+  "rewords": {
+   "status": "live",
+   "query": "(\"rewords.ai\" OR url:rewords.ai OR \"ReWords AI\" OR ReWordsAI) -is:retweet",
+   "mentions24h": 0,
+   "mentions7d": 0,
+   "priorDailyAvg": 0,
+   "velocity": 0,
+   "daily": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "peakDay": 0,
+   "peakDaysAgo": 6,
+   "sample": {
+    "posts": 0,
+    "likes": 0,
+    "reposts": 0,
+    "replies": 0
+   },
+   "parts": {
+    "volume": 0,
+    "velocity": 0,
+    "engagement": 0
+   },
+   "score": 0,
+   "label": "quiet",
+   "viral": false,
+   "topPosts": [],
+   "computedAt": "2026-10-22T08:40:53.775Z"
+  },
+  "svgicons": {
+   "status": "live",
+   "query": "(\"svgicons.com\" OR url:svgicons.com OR (svgicons (mcp OR icons OR api))) -is:retweet",
+   "mentions24h": 1,
+   "mentions7d": 5,
+   "priorDailyAvg": 0.7,
+   "velocity": 1,
+   "daily": [
+    1,
+    0,
+    0,
+    0,
+    2,
+    1,
+    1
+   ],
+   "peakDay": 2,
+   "peakDaysAgo": 2,
+   "sample": {
+    "posts": 2,
+    "likes": 0,
+    "reposts": 0,
+    "replies": 0
+   },
+   "parts": {
+    "volume": 7.8,
+    "velocity": 0,
+    "engagement": 0
+   },
+   "score": 8,
+   "label": "quiet",
+   "viral": false,
+   "topPosts": [],
+   "computedAt": "2026-10-22T08:40:53.775Z"
+  },
+  "vectoree": {
+   "status": "live",
+   "query": "(vectoree OR url:vectoree.ai) -is:retweet",
+   "mentions24h": 3,
+   "mentions7d": 15,
+   "priorDailyAvg": 2,
+   "velocity": 1.5,
+   "daily": [
+    0,
+    0,
+    0,
+    2,
+    2,
+    8,
+    3
+   ],
+   "peakDay": 8,
+   "peakDaysAgo": 1,
+   "sample": {
+    "posts": 15,
+    "likes": 7,
+    "reposts": 0,
+    "replies": 2
+   },
+   "parts": {
+    "volume": 12,
+    "velocity": 2.2,
+    "engagement": 5.4
+   },
+   "score": 20,
+   "label": "quiet",
+   "viral": false,
+   "topPosts": [],
+   "computedAt": "2026-10-22T08:40:53.775Z"
+  },
+  "aitho": {
+   "status": "live",
+   "query": "(aitho OR url:aitho.app) -is:retweet",
+   "mentions24h": 2,
+   "mentions7d": 18,
+   "priorDailyAvg": 2.7,
+   "velocity": 0.75,
+   "daily": [
+    10,
+    2,
+    1,
+    0,
+    0,
+    3,
+    2
+   ],
+   "peakDay": 10,
+   "peakDaysAgo": 6,
+   "sample": {
+    "posts": 16,
+    "likes": 11,
+    "reposts": 0,
+    "replies": 9
+   },
+   "parts": {
+    "volume": 12.8,
+    "velocity": 0,
+    "engagement": 7.4
+   },
+   "score": 20,
+   "label": "quiet",
+   "viral": false,
+   "topPosts": [],
+   "computedAt": "2026-10-22T08:40:53.775Z"
+  },
+  "agenvas": {
+   "status": "live",
+   "query": "(agenvas OR url:agenvas.com OR \"grayrepo-byte/Agenvas\") -is:retweet",
+   "mentions24h": 0,
+   "mentions7d": 1,
+   "priorDailyAvg": 0.2,
+   "velocity": 0,
+   "daily": [
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "peakDay": 1,
+   "peakDaysAgo": 5,
+   "sample": {
+    "posts": 1,
+    "likes": 0,
+    "reposts": 0,
+    "replies": 0
+   },
+   "parts": {
+    "volume": 3,
+    "velocity": 0,
+    "engagement": 0
+   },
+   "score": 3,
+   "label": "quiet",
+   "viral": false,
+   "topPosts": [],
+   "computedAt": "2026-10-22T08:40:53.775Z"
+  },
+  "image-to-calendar": {
+   "status": "live",
+   "query": "(\"imagetocalendar.app\" OR url:imagetocalendar.app OR \"image to calendar\" app) -is:retweet",
+   "mentions24h": 0,
+   "mentions7d": 0,
+   "priorDailyAvg": 0,
+   "velocity": 0,
+   "daily": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "peakDay": 0,
+   "peakDaysAgo": 6,
+   "sample": {
+    "posts": 0,
+    "likes": 0,
+    "reposts": 0,
+    "replies": 0
+   },
+   "parts": {
+    "volume": 0,
+    "velocity": 0,
+    "engagement": 0
+   },
+   "score": 0,
+   "label": "quiet",
+   "viral": false,
+   "topPosts": [],
+   "computedAt": "2026-10-22T08:40:53.775Z"
   }
  }
 }

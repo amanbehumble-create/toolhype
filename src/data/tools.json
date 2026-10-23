@@ -3331,35 +3331,6 @@
   "logo": "/logos/ai-compare-ninja.png"
  },
  {
-  "slug": "xquik",
-  "name": "Xquik",
-  "url": "https://xquik.com",
-  "affiliateUrl": null,
-  "category": "coding",
-  "useCases": [
-   "coding",
-   "agents",
-   "marketing"
-  ],
-  "pricing": "paid",
-  "verdict": "X (Twitter) data API and MCP server: pull tweets, replies, profiles, followers and trends, monitor accounts and export data, at about $0.00015 per result. Credit plans from $20/mo (Starter) to $199/mo; top-ups from $10. Third-party and not affiliated with X Corp, so check X's terms before you build on it.",
-  "useThisIf": "you need X data inside an agent or pipeline and the official API pricing is too steep.",
-  "alternatives": [
-   "composio-instant",
-   "n8n"
-  ],
-  "source": "submission",
-  "addedAt": "2026-10-23",
-  "featured": false,
-  "buzz": {
-   "score": null,
-   "status": "pending",
-   "mentions7d": null,
-   "updatedAt": null
-  },
-  "logo": "/logos/xquik.png"
- },
- {
   "slug": "bestllmfor",
   "name": "BestLLMFor",
   "url": "https://bestllmfor.com/recommandeur-quantification/",

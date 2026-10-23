@@ -120,7 +120,6 @@
  "image-to-calendar": "(\"imagetocalendar.app\" OR url:imagetocalendar.app OR \"image to calendar\" app) -is:retweet",
  "riff": "(riffreply OR url:riffreply.com OR \"riffreply.com\" OR (\"Riff\" chrome extension reply)) -is:retweet",
  "ai-compare-ninja": "(\"aicompare.ninja\" OR url:aicompare.ninja OR \"AI Compare Ninja\") -is:retweet",
- "xquik": "(xquik OR url:xquik.com) -is:retweet",
  "bestllmfor": "(bestllmfor OR url:bestllmfor.com OR \"BestLLMfor\") -is:retweet",
  "pingcron": "(pingcron OR url:pingcron.io) -is:retweet",
  "spritefuse": "(spritefuse OR url:spritefuse.com) -is:retweet"

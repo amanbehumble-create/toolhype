@@ -3273,5 +3273,174 @@
    "updatedAt": null
   },
   "logo": "/logos/image-to-calendar.png"
+ },
+ {
+  "slug": "riff",
+  "name": "Riff",
+  "url": "https://riffreply.com",
+  "affiliateUrl": null,
+  "category": "marketing",
+  "useCases": [
+   "marketing",
+   "productivity"
+  ],
+  "pricing": "free",
+  "verdict": "Chrome extension that turns your saved point into a fresh, post-specific reply on X, LinkedIn, Facebook and Instagram, plus DM answers and your own posts. Runs on Chrome's built-in on-device AI and never posts for you—you review and send. Brand new (launched October 2026), so expect rough edges.",
+  "useThisIf": "you reply a lot on social to get noticed and want each reply tailored to the post without pasting into ChatGPT.",
+  "alternatives": [
+   "chatgpt",
+   "copy-ai"
+  ],
+  "source": "submission",
+  "addedAt": "2026-10-23",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/riff.png"
+ },
+ {
+  "slug": "ai-compare-ninja",
+  "name": "AI Compare Ninja",
+  "url": "https://www.aicompare.ninja/en/",
+  "affiliateUrl": null,
+  "category": "productivity",
+  "useCases": [
+   "productivity",
+   "chat"
+  ],
+  "pricing": "free",
+  "verdict": "Free, no-signup research site comparing ~970 AI tools by task, with sourced prices, plan limits and free-tier details by region, plus subscription/API cost calculators and a prompt and skills library. Deliberately not a ranking—it orders by task match. German-first, with English and other languages.",
+  "useThisIf": "you want to check what an AI tool actually costs and limits in your region before signing up.",
+  "alternatives": [
+   "perplexity",
+   "chatgpt"
+  ],
+  "source": "submission",
+  "addedAt": "2026-10-23",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/ai-compare-ninja.png"
+ },
+ {
+  "slug": "xquik",
+  "name": "Xquik",
+  "url": "https://xquik.com",
+  "affiliateUrl": null,
+  "category": "coding",
+  "useCases": [
+   "coding",
+   "agents",
+   "marketing"
+  ],
+  "pricing": "paid",
+  "verdict": "X (Twitter) data API and MCP server: pull tweets, replies, profiles, followers and trends, monitor accounts and export data, at about $0.00015 per result. Credit plans from $20/mo (Starter) to $199/mo; top-ups from $10. Third-party and not affiliated with X Corp, so check X's terms before you build on it.",
+  "useThisIf": "you need X data inside an agent or pipeline and the official API pricing is too steep.",
+  "alternatives": [
+   "composio-instant",
+   "n8n"
+  ],
+  "source": "submission",
+  "addedAt": "2026-10-23",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/xquik.png"
+ },
+ {
+  "slug": "bestllmfor",
+  "name": "BestLLMFor",
+  "url": "https://bestllmfor.com/recommandeur-quantification/",
+  "affiliateUrl": null,
+  "category": "coding",
+  "useCases": [
+   "coding",
+   "chat"
+  ],
+  "pricing": "freemium",
+  "verdict": "Free local-LLM guide from Paris: tell it your GPU/VRAM or Mac and it shortlists open models and the quantization (Q4/Q5/Q8) that will actually fit, backed by 250+ indexed models, measured tokens/sec and Ollama/LM Studio guides. Optional paid setup kits ($24, or $49 for all).",
+  "useThisIf": "you want to run a model locally and need to know which one and which quant fits your hardware.",
+  "alternatives": [
+   "llmspeed",
+   "comfyui"
+  ],
+  "source": "submission",
+  "addedAt": "2026-10-23",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/bestllmfor.png"
+ },
+ {
+  "slug": "pingcron",
+  "name": "PingCron",
+  "url": "https://www.pingcron.io",
+  "affiliateUrl": null,
+  "category": "coding",
+  "useCases": [
+   "coding",
+   "productivity"
+  ],
+  "pricing": "freemium",
+  "verdict": "Cron-job monitoring: your job pings PingCron after it succeeds, and you get email, Slack or Discord alerts when a check-in is late. 5 monitors free; Pro $9.99/mo for 50, larger plans $29 and $79/mo. Also connects to Claude, ChatGPT or Codex over MCP.",
+  "useThisIf": "you have backups, syncs or scheduled scripts that fail silently and want a simple dead-man's switch.",
+  "alternatives": [
+   "n8n",
+   "zapier"
+  ],
+  "source": "submission",
+  "addedAt": "2026-10-23",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/pingcron.png"
+ },
+ {
+  "slug": "spritefuse",
+  "name": "SpriteFuse",
+  "url": "https://spritefuse.com",
+  "affiliateUrl": null,
+  "category": "design",
+  "useCases": [
+   "design",
+   "video"
+  ],
+  "pricing": "paid",
+  "verdict": "AI sprite generator for indie 2D games: describe a character and move, preview and refine, then export transparent sprite sheets; also free utilities like a sprite sheet cutter, tileset maker and GIF-to-sheet. Credits only used on usable results; plans from $10/mo (250 credits), Pro $20/mo. API and MCP available.",
+  "useThisIf": "you are making a 2D game and need consistent character animations without hand-drawing every frame.",
+  "alternatives": [
+   "krea",
+   "midjourney"
+  ],
+  "source": "submission",
+  "addedAt": "2026-10-23",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/spritefuse.png"
  }
 ]

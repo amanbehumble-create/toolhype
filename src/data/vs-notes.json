@@ -17,7 +17,7 @@
       ],
       [
         "Cheapest paid plan",
-        "Starter: €20/month billed annually",
+        "Starter: \u20ac20/month billed annually",
         "Professional: $19.99/month billed annually for 750 tasks ($29.99 billed monthly)"
       ],
       [
@@ -54,7 +54,7 @@
     "faq": [
       [
         "Is n8n cheaper than Zapier?",
-        "It depends on your workflows. n8n Cloud starts at €20/month (billed annually) and charges per full workflow run; Zapier Professional starts at $19.99/month (billed annually) for 750 tasks, and every successful action step uses a task. For long multi-step workflows n8n usually works out cheaper, and self-hosted n8n Community Edition is free. Prices checked Oct 20, 2026."
+        "It depends on your workflows. n8n Cloud starts at \u20ac20/month (billed annually) and charges per full workflow run; Zapier Professional starts at $19.99/month (billed annually) for 750 tasks, and every successful action step uses a task. For long multi-step workflows n8n usually works out cheaper, and self-hosted n8n Community Edition is free. Prices checked Oct 20, 2026."
       ],
       [
         "Can I self-host Zapier like n8n?",
@@ -85,10 +85,10 @@
     ]
   },
   "chatgpt-vs-claude": {
-    "title": "ChatGPT vs Claude (2026): pricing, coding & which to pick",
-    "description": "ChatGPT vs Claude compared with checked Oct 2026 plan pages: Claude Pro is $20/month or $17/month billed annually ($200). ChatGPT offers Free, Go, Plus and Pro individual tiers (Plus includes Codex and deep research). Claude Code is on Claude Pro.",
-    "checked": "Oct 21, 2026 HKT",
-    "bottomLine": "Pick ChatGPT if you want the largest consumer ecosystem, plugins, image gen, Codex and deep research on Plus (or higher). Pick Claude if you want Claude Code, Artifacts and an optional cheaper annual Pro ($17/month billed as $200/year; $20 monthly). Both have free tiers; heavy daily use may need ChatGPT Pro or Claude Max (from $100/month).",
+    "title": "ChatGPT vs Claude (2026): pricing, agents & which to pick",
+    "description": "ChatGPT vs Claude compared with checked Oct 2026 plan pages: Claude Pro is $20/month or $17/month billed annually ($200) and now includes Claude Duet (US research preview). ChatGPT offers Free, Go, Plus and Pro individual tiers (Plus includes Codex and deep research).",
+    "checked": "Oct 23, 2026 HKT",
+    "bottomLine": "Pick ChatGPT if you want the largest consumer ecosystem, plugins, image gen, Codex and deep research on Plus (or higher). Pick Claude if you want Claude Code, Artifacts, and (in the US on Pro/Max) Claude Duet as a proactive background agent. Both have free tiers; heavy daily use may need ChatGPT Pro or Claude Max (from $100/month).",
     "rows": [
       [
         "Consumer paid plans",
@@ -104,6 +104,11 @@
         "Coding agent in the plan",
         "Codex / coding tools on Plus (and higher); usage shared with chat",
         "Claude Code included on Pro and above; same usage pool as chat"
+      ],
+      [
+        "Proactive / always-on agent",
+        "No single first-party equivalent to Claude Duet in the ChatGPT app yet; custom GPTs and scheduled tasks cover some of the same ground",
+        "Claude Duet (US research preview on Pro/Max): morning briefs, background VM work, approval before send/pay/delete; shares Claude usage limits"
       ],
       [
         "Higher individual tier",
@@ -138,6 +143,10 @@
       [
         "Which is better for beginners?",
         "Either free tier is enough to try. If you mostly chat and want plugins or image tools, start with ChatGPT. If you want to build small apps or long docs in the chat (Artifacts) or try an agent in the terminal, start with Claude."
+      ],
+      [
+        "What is Claude Duet, and does ChatGPT have the same thing?",
+        "Claude Duet is Anthropic's standalone proactive agent (waitlist, US Pro/Max as of Oct 23, 2026). It watches connected apps, works in a cloud VM, and asks before consequential actions. ChatGPT has custom GPTs and coding tools on Plus+, but not the same always-on brief-and-act agent product yet. Source: claude.com/product/claude-duet."
       ]
     ],
     "sources": [
@@ -148,6 +157,14 @@
       [
         "OpenAI ChatGPT plans",
         "https://openai.com/chatgpt/pricing/"
+      ],
+      [
+        "Claude Duet",
+        "https://claude.com/product/claude-duet"
+      ],
+      [
+        "Introducing Claude Duet",
+        "https://claude.com/resources/articles/claude-duet"
       ]
     ]
   },
@@ -155,7 +172,7 @@
     "title": "Cursor vs GitHub Copilot (2026): pricing, agents & which to pick",
     "description": "Cursor vs GitHub Copilot compared with checked Oct 2026 pricing: Cursor is sold on The X Subscription (Plus $8, Premium $30, Super $100, Ultra $200/mo). Copilot Pro is $10/mo, Pro+ $39/mo, Max $100/mo with GitHub AI Credits.",
     "checked": "Oct 22, 2026 HKT",
-    "bottomLine": "Pick GitHub Copilot if you already live in GitHub issues/PRs and want the cheapest paid coding assistant (Pro $10/mo) with unlimited completions. Pick Cursor (The X Subscription Premium $30/mo or higher) if you want an agent-first IDE with cloud agents, Origin code hosting and Bugbot—know that third-party models on Cursor bill at API list price from prepaid credit, and Plus ($8) is Grok models only.",
+    "bottomLine": "Pick GitHub Copilot if you already live in GitHub issues/PRs and want the cheapest paid coding assistant (Pro $10/mo) with unlimited completions. Pick Cursor (The X Subscription Premium $30/mo or higher) if you want an agent-first IDE with cloud agents, Origin code hosting and Bugbot\u2014know that third-party models on Cursor bill at API list price from prepaid credit, and Plus ($8) is Grok models only.",
     "rows": [
       [
         "Cheapest paid individual plan",
@@ -164,7 +181,7 @@
       ],
       [
         "Higher individual tiers",
-        "Super $100/mo (15× Plus usage); Ultra $200/mo (50× Plus)",
+        "Super $100/mo (15\u00d7 Plus usage); Ultra $200/mo (50\u00d7 Plus)",
         "Pro+ $39/mo; Max $100/mo"
       ],
       [
@@ -195,7 +212,7 @@
       [
         "Legacy note",
         "Older Hobby/Pro/Pro+/Ultra Cursor plans still work for existing subscribers; new customers get The X Subscription",
-        "Plans use AI Credits; amounts and flex allotments can change—check github.com/features/copilot/plans"
+        "Plans use AI Credits; amounts and flex allotments can change\u2014check github.com/features/copilot/plans"
       ]
     ],
     "faq": [

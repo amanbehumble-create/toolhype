@@ -345,8 +345,8 @@
     {
       "n": 3,
       "slug": "issue-3",
-      "title": "Prompt Drop #3: 15 AI prompts X actually loved (100+ likes each)",
-      "date": "2026-10-22",
+      "title": "Prompt Drop #3: 20 AI prompts X actually loved (100+ likes each)",
+      "date": "2026-10-23",
       "intro": "This week's running pool. Every prompt comes from an X post with at least 100 likes, and we checked each like count on X ourselves. Copy one, swap any [brackets] or details for your own, paste it into the AI, done. More get added through the week.",
       "rule": "Only prompts from X posts with 100+ likes (checked with X data). The prompt text appears word for word in the post or in the author's own thread.",
       "prompts": [
@@ -517,6 +517,63 @@
           "author": "@azed_ai",
           "likes": 240,
           "likesAsOf": "Oct 22, 2026 HKT"
+        },
+        {
+          "title": "Inbox rescue brief for Claude Duet",
+          "category": "Productivity",
+          "tool": "Claude Duet (or Claude with Gmail/Slack connected)",
+          "prompt": "Adopt the role of an executive assistant who's run the inbox for a CEO getting 300 emails a day.\n\nI'm drowning in Gmail and Slack and I keep missing things that matter. Go through what came in this week, then give me:\n\n→ the messages that need my reply today, ranked\n→ a draft reply for each, in my tone\n→ what can wait, and what I can ignore for good\n→ anyone I've left hanging for more than 3 days\n\nDon't send anything until I approve each reply.",
+          "why": "Paste into Claude Duet (or Claude with mail connected) to get a prioritized reply list instead of scrolling every thread yourself.",
+          "source": "https://x.com/alex_prompter/status/2113167221371597009",
+          "promptSource": "https://x.com/alex_prompter/status/2113167233631539393",
+          "author": "@alex_prompter",
+          "likes": 147,
+          "likesAsOf": "2026-10-23 HKT"
+        },
+        {
+          "title": "Weekday morning brief for Claude Duet",
+          "category": "Productivity",
+          "tool": "Claude Duet (or Claude with calendar/mail connected)",
+          "prompt": "Adopt the role of a personal assistant who knows what their boss needs before the boss does.\n\nEvery weekday morning, look across my email, calendar and messages, then bring me:\n\n→ the 3 things that need me today\n→ anything that changed overnight\n→ what you can handle without me, waiting for my yes\n→ one thing I'm about to forget\n\nKeep it short enough to read in one minute.",
+          "why": "A standing morning instruction so the agent brings you the top 3 things that need you, overnight changes, and what can wait.",
+          "source": "https://x.com/alex_prompter/status/2113167221371597009",
+          "promptSource": "https://x.com/alex_prompter/status/2113167305224163633",
+          "author": "@alex_prompter",
+          "likes": 147,
+          "likesAsOf": "2026-10-23 HKT"
+        },
+        {
+          "title": "French watercolor character sheet (image)",
+          "category": "Image",
+          "tool": "ChatGPT, Gemini, Grok, or Midjourney",
+          "prompt": "Children’s picture book character sheet of an anthropomorphic [character] named “[name]”, wearing [outfit] with [accessories], featuring [distinctive features], French picture book illustration style, delicate watercolor washes, soft colored pencil textures, charming hand-painted details, light cream background, large full-body character portrait, front, side, back turnaround views, five facial expressions showing [emotions], four action poses depicting [activities], handwritten French labels, coordinated color palette swatches, separate clothing and accessory studies, consistent character proportions, expressive personality, whimsical editorial layout, professional character design sheet",
+          "why": "Fill in [character], [name], outfit and features for a kids'-book style character sheet in delicate watercolor.",
+          "source": "https://x.com/azed_ai/status/2113223607539368049",
+          "author": "@azed_ai",
+          "likes": 240,
+          "likesAsOf": "2026-10-23 HKT"
+        },
+        {
+          "title": "Cinematic 3D fantasy character (image)",
+          "category": "Image",
+          "tool": "ChatGPT, Gemini, Grok, or Midjourney",
+          "prompt": "A highly detailed cinematic 3D character render of [fantasy adventurer], wearing [armor design] crafted from recycled warforged robot parts, featuring [facial features], [hairstyle], [weapon], [weathered clothing], rusted mechanical plates, exposed gears, damaged robotic components, intricate armor construction, exhausted facial expression, guarded posture reflecting years of warfare, realistic PBR materials, detailed skin textures, metallic surface imperfections, stylized realistic proportions, dramatic studio lighting, Unreal Engine 5 aesthetic, full-body character design, clean white background",
+          "why": "Swap the [fantasy adventurer], armor, face, hair and weapon brackets for a polished cinematic 3D character render.",
+          "source": "https://x.com/azed_ai/status/2111050036905939238",
+          "author": "@azed_ai",
+          "likes": 127,
+          "likesAsOf": "2026-10-23 HKT"
+        },
+        {
+          "title": "Gothic cartoon character (image)",
+          "category": "Image",
+          "tool": "ChatGPT, Gemini, Grok, or Midjourney",
+          "prompt": "A whimsical gothic cartoon illustration of [character], featuring [exaggerated facial features], [hairstyle], [expressive eyes], wearing [outfit] with [distinctive accessories], [pose or action], elongated limbs, exaggerated proportions, quirky personality, dark fairytale aesthetic, delicate sketch-like details, theatrical elegance, subtle macabre humor, stylized character design, full-body composition, clean white background",
+          "why": "Beginner-friendly whimsical gothic cartoon: fill [character], features, outfit and pose, then paste into any image model.",
+          "source": "https://x.com/azed_ai/status/2112135940953260039",
+          "author": "@azed_ai",
+          "likes": 115,
+          "likesAsOf": "2026-10-23 HKT"
         }
       ]
     }

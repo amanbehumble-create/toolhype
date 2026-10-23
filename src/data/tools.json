@@ -3275,6 +3275,149 @@
   "logo": "/logos/image-to-calendar.png"
  },
  {
+  "slug": "deepcell",
+  "name": "DeepCell",
+  "url": "https://deepcell.net",
+  "affiliateUrl": null,
+  "category": "productivity",
+  "useCases": [
+   "productivity",
+   "design"
+  ],
+  "pricing": "free",
+  "verdict": "Deadline kit for office work: one .deepcell file links spreadsheets, reports, slides and cheat sheets so changing an assumption updates the rest, then export to PPT/PDF/XLSX/DOC. Free for individuals (no account to try; free account keeps files past 30 days) with CLI and MCP; Teams coming soon, Enterprise custom. Brand-new format—great if numbers and narrative keep drifting apart; less useful if you only need a one-off deck.",
+  "useThisIf": "you build models and decks under deadline and hate re-copying the same number into slides and memos.",
+  "alternatives": [
+   "gamma",
+   "notion"
+  ],
+  "source": "producthunt",
+  "addedAt": "2026-10-23",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/deepcell.png"
+ },
+ {
+  "slug": "claude-duet",
+  "name": "Claude Duet",
+  "url": "https://claude.com/product/claude-duet",
+  "affiliateUrl": null,
+  "category": "agents",
+  "useCases": [
+   "agents",
+   "productivity"
+  ],
+  "pricing": "paid (in Claude Pro/Max)",
+  "verdict": "Anthropic's proactive agent app (research preview): morning briefs from connected apps, background work on its own cloud VM, and approval gates before send/pay/delete. Included for US Pro and Max on the waitlist; shares Claude usage limits and runs on Opus 5.5. Early and US-only—personal errands are weaker, and you can't watch its browser yet.",
+  "useThisIf": "you're already on Claude Pro/Max in the US and want an always-on agent that brings you priorities instead of waiting for a chat.",
+  "alternatives": [
+   "claude",
+   "manus",
+   "wabi"
+  ],
+  "source": "producthunt",
+  "addedAt": "2026-10-23",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/claude-duet.png"
+ },
+ {
+  "slug": "heal",
+  "name": "heal.dev",
+  "url": "https://www.heal.dev",
+  "affiliateUrl": null,
+  "category": "coding",
+  "useCases": [
+   "coding",
+   "agents"
+  ],
+  "pricing": "free",
+  "verdict": "Runtime bug and vuln hunter: learns how to run your app, builds a production-like sandbox with services stubbed, then only files defects it can reproduce with a failing test. Free during beta (no card). Complements AI code review—it catches what a diff miss; still early, so treat findings as a second pass before you auto-merge.",
+  "useThisIf": "code review and E2E still miss user-path bugs and you want reproducible runtime defects, not another static AI comment pile.",
+  "alternatives": [
+   "github-copilot",
+   "claude-code"
+  ],
+  "source": "producthunt",
+  "addedAt": "2026-10-23",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/heal.png"
+ },
+ {
+  "slug": "whiteboard",
+  "name": "Whiteboard",
+  "url": "https://whiteboard.dev.fast",
+  "affiliateUrl": null,
+  "category": "coding",
+  "useCases": [
+   "coding",
+   "design"
+  ],
+  "pricing": "open-source",
+  "verdict": "YC W26 MIT desktop canvas where Claude Code, Codex and friends draw sequence diagrams, semantic diffs and decision logs that jump to source (Code OSS + LSP). Free/local; you cannot edit files inside it yet, and multi-repo reviews are rough. Best as a review surface for agent-written PRs, not a replacement IDE.",
+  "useThisIf": "you review big agent-written changes and want diagrams and diffs linked to code instead of a 40-file wall of text.",
+  "alternatives": [
+   "cursor",
+   "claude-code",
+   "opencode"
+  ],
+  "source": "producthunt",
+  "addedAt": "2026-10-23",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/whiteboard.png"
+ },
+ {
+  "slug": "dadan",
+  "name": "Dadan",
+  "url": "https://www.dadan.io",
+  "affiliateUrl": null,
+  "category": "video",
+  "useCases": [
+   "video",
+   "productivity"
+  ],
+  "pricing": "freemium",
+  "verdict": "AI video workspace: screen/meeting recording, transcript editing, step-by-step guides, interactive polls/CTAs/lead forms, plus Dadan MCP for Claude/ChatGPT/Cursor. Free: 25 videos, 2 GB, 720p, 10 AI credits/month; Lite $8/mo annual ($14 monthly), Pro $14/mo annual ($24 monthly), Business $14/seat annual (min 3). Loom-class competitor with more lead-gen chrome—pricing jumps if you need long meeting recording or unlimited AI.",
+  "useThisIf": "you want Loom-style async video plus guides and lead forms in one place, ideally wired into your AI assistant via MCP.",
+  "alternatives": [
+   "descript",
+   "capcut",
+   "heygen"
+  ],
+  "source": "producthunt",
+  "addedAt": "2026-10-23",
+  "featured": false,
+  "buzz": {
+   "score": null,
+   "status": "pending",
+   "mentions7d": null,
+   "updatedAt": null
+  },
+  "logo": "/logos/dadan.png"
+ },
+ {
   "slug": "riff",
   "name": "Riff",
   "url": "https://riffreply.com",

@@ -1,0 +1,118 @@
+---
+// Homepage "live" panel. All numbers come from /api/live-stats at runtime; nothing is baked in or estimated.
+---
+<section class="ls" id="live" aria-labelledby="ls-h" data-track-zone="live-stats" hidden>
+  <header class="ls-top"><h2 id="ls-h"><span class="ls-dot" aria-hidden="true"></span>LIVE · WHO'S READING TOOLHYPE · PUBLIC, BECAUSE WHY NOT</h2><span class="ls-priv">country-level only, nobody is identifiable</span></header>
+  <div class="ls-grid">
+    <div class="ls-globe-wrap"><canvas class="ls-globe" width="360" height="360" aria-hidden="true"></canvas></div>
+    <div class="ls-body">
+      <p class="ls-big" data-k="big" hidden><b></b> <span></span></p>
+      <p class="ls-meta" data-k="meta"></p>
+      <ul class="ls-feed" data-k="feed" hidden></ul>
+      <div class="ls-blk" data-k="cc" hidden><h3>VISITS · 7D · BY COUNTRY</h3><div class="ls-chips"></div></div>
+      <div class="ls-blk" data-k="ai" hidden><h3>AI PULL · CRAWLER FETCHES · 7D</h3><p class="ls-ai"></p><p class="ls-note"></p></div>
+    </div>
+  </div>
+</section>
+<style>
+.ls{max-width:64rem;margin:1rem auto 2.5rem;padding:1.25rem 1.25rem 1.5rem;border:1px solid var(--line);border-radius:var(--r-card);background:var(--inset);font-family:var(--mono)}
+.ls-top{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.5rem 1rem;margin-bottom:1rem}
+.ls-top h2{font:500 .72rem/1.4 var(--mono);letter-spacing:.12em;color:var(--ink-2);margin:0;display:flex;align-items:center;gap:.5rem}
+.ls-priv{font-size:.72rem;color:var(--ink-3)}
+.ls-dot{width:.5rem;height:.5rem;border-radius:50%;background:#ff8a00;box-shadow:0 0 0 0 #ff8a0080;animation:lsp 2s infinite}
+@keyframes lsp{70%{box-shadow:0 0 0 .5rem #ff8a0000}100%{box-shadow:0 0 0 0 #ff8a0000}}
+.ls-grid{display:grid;grid-template-columns:minmax(0,22rem) 1fr;gap:1.5rem;align-items:center}
+.ls-globe-wrap{aspect-ratio:1;max-width:22rem;width:100%;margin:0 auto}
+.ls-globe{width:100%;height:100%;display:block}
+.ls-big{margin:0 0 .4rem;display:flex;flex-wrap:wrap;align-items:baseline;gap:.25rem .75rem}
+.ls-big b{font:800 clamp(2.6rem,7vw,4rem)/1 var(--display);letter-spacing:-.03em;color:var(--ink);font-variant-numeric:tabular-nums}
+.ls-big span{font-size:.9rem;color:var(--ink-2)}
+.ls-meta{font-size:.8rem;color:var(--ink-2);margin:0 0 1rem;padding-bottom:1rem;border-bottom:1px solid var(--line)}
+.ls-feed{list-style:none;margin:0 0 1rem;padding:0 0 1rem;border-bottom:1px solid var(--line);display:grid;gap:.45rem;font-size:.82rem;color:var(--ink)}
+.ls-feed li{display:flex;gap:.5rem;align-items:baseline}.ls-feed li::before{content:'';width:.4rem;height:.4rem;border-radius:50%;background:color-mix(in srgb,var(--cyan) 55%,transparent);flex:none;align-self:center}
+.ls-feed time{color:var(--ink-3);font-size:.75rem;white-space:nowrap}
+.ls-blk h3{font:500 .72rem var(--mono);letter-spacing:.12em;color:var(--ink-2);margin:0 0 .6rem}
+.ls-blk+.ls-blk{margin-top:1rem}
+.ls-chips{display:flex;flex-wrap:wrap;gap:.45rem;align-items:center}
+.ls-chip{border:1px solid var(--line-strong);border-radius:8px;padding:.35rem .6rem;font-size:.8rem;background:var(--page);color:var(--ink);font-variant-numeric:tabular-nums}
+.ls-more{font-size:.8rem;color:var(--ink-3)}
+.ls-ai{font-size:.85rem;margin:0;color:var(--ink);line-height:1.7}.ls-ai b{font-weight:600}
+.ls-note{font-size:.72rem;color:var(--ink-3);margin:.35rem 0 0}
+@media (max-width:720px){.ls-grid{grid-template-columns:1fr}.ls-globe-wrap{max-width:15rem}.ls{padding:1rem}}
+@media (prefers-reduced-motion:reduce){.ls-dot{animation:none}}
+</style>
+<script>
+type Row = { cc: string; n: number };
+const root = document.getElementById('live') as HTMLElement | null;
+const RM = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const fmt = (n: number) => n.toLocaleString('en-US');
+const flag = (cc: string) => /^[A-Z]{2}$/.test(cc) ? String.fromCodePoint(...[...cc].map((c) => 0x1f1a5 + c.charCodeAt(0))) : '🏳️';
+const ago = (ts: string) => { const s = Math.max(0, (Date.now() - Date.parse(ts)) / 1000); return s < 90 ? 'just now' : s < 3600 ? `${Math.round(s / 60)}m ago` : s < 86400 ? `${Math.round(s / 3600)}h ago` : `${Math.round(s / 86400)}d ago`; };
+const esc = (s: string) => s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]!));
+const dShort = (d: string) => new Date(d + 'T00:00:00Z').toLocaleDateString('en-GB', { day: 'numeric', month: 'short', timeZone: 'UTC' }).toLowerCase();
+
+async function run() {
+  if (!root) return;
+  let s: any, geo: any;
+  try { [s, geo] = await Promise.all([fetch('/api/live-stats').then((r) => r.json()), fetch('/stats-geo.json').then((r) => r.json())]); } catch { root.hidden = true; return; }
+  const cf = s?.cloudflare?.ok ? s.cloudflare : null, site = s?.site || null;
+  const name = (cc: string) => geo?.countries?.[cc]?.[2] || cc;
+  const $ = (k: string) => root.querySelector(`[data-k="${k}"]`) as HTMLElement;
+  let any = false;
+  // Big number: Cloudflare 7-day unique visitors (edge-measured; Cloudflare's free plan can't fully exclude bots).
+  const big = $('big');
+  if (cf && cf.uniques > 0) { big.querySelector('b')!.textContent = fmt(cf.uniques); big.querySelector('span')!.textContent = 'unique visitors in the last 7 days'; big.hidden = false; any = true; }
+  else if (site?.active30m > 0) { big.querySelector('b')!.textContent = fmt(site.active30m); big.querySelector('span')!.textContent = 'people on the site in the last 30 min'; big.hidden = false; any = true; }
+  const meta: string[] = [];
+  if (cf && site?.active30m > 0) meta.push(`${fmt(site.active30m)} active in the last 30 min`);
+  const views: Row[] = site?.views7d || [];
+  const nC = views.length || cf?.countries?.length || 0;
+  if (nC) meta.push(`from ${nC} countries`);
+  if (cf?.requests) meta.push(`${fmt(cf.requests)} requests since ${dShort(cf.since)}`);
+  $('meta').textContent = meta.join(' · ');
+  // Feed: latest anonymised first-party events (country + public page path only).
+  const feed = (site?.feed || []).filter((e: any) => e.cc);
+  if (feed.length) { const f = $('feed');
+    f.innerHTML = feed.slice(0, 4).map((e: any) => { const what = e.kind === 'search' ? 'searched for a tool' : e.kind === 'click' ? `clicked through from <b>${esc(e.page)}</b>` : `is reading <b>${esc(e.page)}</b>`;
+      return `<li><span>${flag(e.cc)} someone in ${esc(name(e.cc))} ${what}</span> <time datetime="${esc(e.ts)}">${ago(e.ts)}</time></li>`; }).join('');
+    f.hidden = false; any = true; }
+  // Country chips: bot-filtered first-party page views (D1).
+  if (views.length) { const c = $('cc');
+    c.querySelector('.ls-chips')!.innerHTML = views.slice(0, 6).map((v) => `<span class="ls-chip" title="${esc(name(v.cc))}">${flag(v.cc)} ${esc(v.cc)} ${fmt(v.n)}</span>`).join('') + (views.length > 6 ? `<span class="ls-more">+ ${views.length - 6} more</span>` : '');
+    c.hidden = false; any = true; }
+  // AI pull: crawler fetches counted by our edge middleware (D1 ai_hits).
+  if (Array.isArray(site?.ai)) { const a = $('ai'); const tot = site.ai.reduce((x: number, r: any) => x + r.n, 0);
+    a.querySelector('.ls-ai')!.innerHTML = tot ? site.ai.slice(0, 8).map((r: any) => `${esc(r.bot)} <b>${fmt(r.n)}</b>`).join(' · ') : 'No AI crawler fetches counted yet.';
+    const sevenAgo = new Date(Date.now() - 6 * 864e5).toISOString().slice(0, 10);
+    a.querySelector('.ls-note')!.textContent = (tot ? `${fmt(tot)} fetches by AI crawlers (ChatGPT, Claude, Perplexity, Gemini…)` : '') + (site.aiSince && site.aiSince > sevenAgo ? `${tot ? ' · ' : ''}counting since ${dShort(site.aiSince)}` : '');
+    a.hidden = false; any = true; }
+  if (!any) { root.hidden = true; return; }
+  root.style.visibility = '';
+  globe(root.querySelector('.ls-globe') as HTMLCanvasElement, geo, (views.length ? views : cf?.countries || []).slice(0, 12));
+}
+
+function globe(cv: HTMLCanvasElement, geo: any, hot: Row[]) {
+  const ctx = cv.getContext('2d'); if (!ctx || !geo?.dots) return;
+  const dpr = Math.min(2, devicePixelRatio || 1), W = 360; cv.width = W * dpr; cv.height = W * dpr; ctx.scale(dpr, dpr);
+  const R = W / 2 - 8, C = W / 2, rad = Math.PI / 180, d: number[] = geo.dots;
+  const pins = hot.map((h) => geo.countries?.[h.cc]).filter(Boolean).map((p: any, i: number) => ({ lon: p[0], lat: p[1], w: 1 - i / 14 }));
+  const css = getComputedStyle(document.documentElement);
+  const land = css.getPropertyValue('--accent-ink').trim() || '#00749e', rim = css.getPropertyValue('--line-strong').trim() || '#ccc';
+  let lon0 = pins[0] ? -pins[0].lon + 25 : 0; const lat0 = 18 * rad, sl = Math.sin(lat0), cl = Math.cos(lat0);
+  const proj = (lon: number, lat: number) => { const l = (lon + lon0) * rad, p = lat * rad, cp = Math.cos(p);
+    const x = cp * Math.sin(l), y = cl * Math.sin(p) - sl * cp * Math.cos(l), z = sl * Math.sin(p) + cl * cp * Math.cos(l); return [C + R * x, C - R * y, z]; };
+  let vis = true; new IntersectionObserver((e) => { vis = e[0].isIntersecting; }).observe(cv);
+  const draw = (t: number) => { ctx.clearRect(0, 0, W, W);
+    ctx.beginPath(); ctx.arc(C, C, R + 4, 0, 7); ctx.strokeStyle = rim; ctx.lineWidth = 1; ctx.stroke();
+    ctx.fillStyle = land;
+    for (let i = 0; i < d.length; i += 2) { const [x, y, z] = proj(d[i], d[i + 1]); if (z <= 0) continue; ctx.globalAlpha = .25 + .75 * z; const s = 1.2 + 1.6 * z; ctx.fillRect(x - s / 2, y - s / 2, s, s); }
+    for (const p of pins) { const [x, y, z] = proj(p.lon, p.lat); if (z <= 0) continue; const ph = RM ? 0 : ((t / 1600 + p.w) % 1);
+      ctx.globalAlpha = (1 - ph) * .45 * z; ctx.fillStyle = '#ff8a00'; ctx.beginPath(); ctx.arc(x, y, 3 + ph * 10, 0, 7); ctx.fill();
+      ctx.globalAlpha = z; ctx.beginPath(); ctx.arc(x, y, 2.5 + 2 * p.w, 0, 7); ctx.fill(); ctx.fillStyle = land; }
+    ctx.globalAlpha = 1; };
+  if (RM) { draw(0); return; }
+  let last = 0; const loop = (t: number) => { if (vis && !document.hidden) { lon0 += (t - last) * .004; draw(t); } last = t; requestAnimationFrame(loop); }; requestAnimationFrame(loop);
+}
+const io = new IntersectionObserver((e) => { if (e.some((x) => x.isIntersecting)) { io.disconnect(); run(); } }, { rootMargin: '400px' });
+if (root) { root.hidden = false; root.style.visibility = 'hidden'; io.observe(root); }
+</script>

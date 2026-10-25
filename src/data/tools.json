@@ -3865,59 +3865,5 @@
       "updatedAt": null
     },
     "logo": "/logos/agent-s4.png"
-  },
-  {
-    "slug": "databull",
-    "name": "DataBull",
-    "url": "https://databull.app/",
-    "affiliateUrl": null,
-    "category": "marketing",
-    "useCases": [
-      "marketing",
-      "productivity"
-    ],
-    "pricing": "paid",
-    "verdict": "Revenue-first analytics you pay for once and self-host on your own Cloudflare account (Workers + D1, one `npx databull@latest` command). Ties every Stripe, Polar and Dodo sale to the post, search or link that brought the buyer, with Telegram sale pings and an MCP server for agents. Indie DataFast alternative launched Oct 24, 2026; launch pricing $29→$99 one-time, no refunds.",
-    "useThisIf": "you sell via Stripe/Polar/Dodo and want to know which tweet or link made money, without a monthly analytics bill.",
-    "alternatives": [],
-    "source": "x",
-    "addedAt": "2026-10-26",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/databull.png"
-  },
-  {
-    "slug": "sume",
-    "name": "Sume",
-    "url": "https://www.sume.com/",
-    "affiliateUrl": null,
-    "category": "video",
-    "useCases": [
-      "video",
-      "design"
-    ],
-    "pricing": "paid",
-    "verdict": "Pay-as-you-go app and API for AI video and image models (Seedance 2.5, Kling, Veo, Wan, Nano Banana and more) billed at the provider's price with 0% markup; OpenRouter-compatible video API, top-ups from $5, no subscription. Buzzed on X Oct 23-25, 2026 for undercutting other video platforms.",
-    "useThisIf": "you generate a lot of AI video and want the major models in one place at provider cost.",
-    "alternatives": [
-      "kling-ai",
-      "higgsfield",
-      "runway"
-    ],
-    "source": "x",
-    "addedAt": "2026-10-26",
-    "featured": false,
-    "buzz": {
-      "score": null,
-      "status": "pending",
-      "mentions7d": null,
-      "updatedAt": null
-    },
-    "logo": "/logos/sume.png"
   }
 ]

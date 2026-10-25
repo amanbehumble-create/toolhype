@@ -1,6 +1,7 @@
 ---
 import Subscribe from './Subscribe.astro';
 import XCard from './XCard.astro';
+import AdSlot from './AdSlot.astro';
 import { getCommunities, getTools, trendingOnX, BUZZ_AT, hkt, LABEL } from '../lib/data';
 import Votes from './Votes.astro';
 import { getIssues } from '../lib/prompts';
@@ -25,6 +26,7 @@ const latestDrop = getIssues()[0];
   <aside class="right" data-track-zone="sidebar">
     <slot name="about"/>
     <XCard place="sidebar"/>
+    <AdSlot/>
     <div class="card"><h3>The weekly drop</h3><p style="margin:.4rem 0"><a href={`/prompts/${latestDrop.slug}`} style="color:var(--accent-ink)">📋 Read Prompt Drop #{latestDrop.n} →</a></p>
       <Subscribe label="Subscribe" place="sidebar" /></div>
     <div class="card"><h3>Featured</h3>

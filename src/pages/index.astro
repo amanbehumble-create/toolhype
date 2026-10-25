@@ -1,5 +1,5 @@
 ---
-import Base from '../layouts/Base.astro'; import Shell from '../components/Shell.astro'; import Feed from '../components/Feed.astro'; import LiveStats from '../components/LiveStats.astro';
+import Base from '../layouts/Base.astro'; import Shell from '../components/Shell.astro'; import Feed from '../components/Feed.astro';
 import { getTools, byBuzz, SITE } from '../lib/data'; import { listLd } from '../lib/ld'; import { topTools } from '../lib/top';
 // Default ranking is purely by X Buzz Score (no recency boost, no ?feature influence).
 const tools = [...getTools()].sort(byBuzz);
@@ -13,8 +13,7 @@ const top = topTools(5); const names = top.map((t) => t.name);
   <p class="sub">{n} AI tools ranked by live X buzz. See what's actually hyped right now, and why.</p>
   <label class="term"><span class="gt" aria-hidden="true">&gt;</span><input id="hero-q" data-track="hero:search" type="search" autocomplete="off" placeholder={`type a tool… (${n})`} aria-label="Search AI tools"/></label>
 </section>
-<LiveStats/>
-<Feed tools={tools}/></Shell>
+<Feed tools={tools} live/></Shell>
 </Base>
 <style is:global>
 .hero{text-align:center;padding:3.5rem 1rem 2.5rem}

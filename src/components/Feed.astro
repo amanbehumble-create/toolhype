@@ -2,8 +2,9 @@
 import type { Tool } from '../lib/data';
 import ToolCard from './ToolCard.astro';
 import SubStrip from './SubStrip.astro';
+import LiveStats from './LiveStats.astro';
 import { getIssues } from '../lib/prompts';
-const { tools } = Astro.props as { tools: Tool[] };
+const { tools, live = false } = Astro.props as { tools: Tool[]; live?: boolean };
 const weekAgo = Date.now() - 7 * 864e5;
 const latestDrop = getIssues()[0];
 const dropN = latestDrop?.prompts.length ?? 10;
@@ -11,7 +12,7 @@ const dropN = latestDrop?.prompts.length ?? 10;
 <div class="tabs" role="tablist">
   {[['hot','Hot'],['buzz','🔥 Hype on X'],['new','New'],['top','Top'],['rising','Rising']].map(([s, l], i) => <button class:list={['tab', { on: i === 0 }]} role="tab" aria-selected={i === 0 ? 'true' : 'false'} data-sort={s} data-track={`tab:${s}`}>{l}</button>)}
 </div>
-<div class="feed" id="feed">{tools.map((t, i) => <>{i === 6 && <div class="feed-promo" id="feed-promo"><SubStrip place="feed" title="Like this list? Get it weekly" sub={`The hottest AI tools + ${dropN} legit prompts, every week. Free.`}/></div>}<ToolCard tool={t} isNew={new Date(t.addedAt).getTime() > weekAgo} /></>)}</div>
+<div class="feed" id="feed">{tools.map((t, i) => <>{live && i === 5 && <div class="feed-live" id="feed-live"><LiveStats/></div>}{i === 6 && <div class="feed-promo" id="feed-promo"><SubStrip place="feed" title="Like this list? Get it weekly" sub={`The hottest AI tools + ${dropN} legit prompts, every week. Free.`}/></div>}<ToolCard tool={t} isNew={new Date(t.addedAt).getTime() > weekAgo} /></>)}</div>
 <script>
 import { hasVoted } from '../lib/votes';
 const feed = document.getElementById('feed')!;
@@ -29,6 +30,7 @@ function sort(s: string) {
   const items = [...feed.querySelectorAll(':scope > .post')] as HTMLElement[];
   items.sort((a, b) => score[s](b) - score[s](a)).forEach((el) => feed.appendChild(el));
   const pr = document.getElementById('feed-promo'); if (pr && items[6]) feed.insertBefore(pr, items[6]);
+  const lv = document.getElementById('feed-live'); if (lv && items[5]) feed.insertBefore(lv, items[5]);
   document.querySelectorAll('.tab').forEach((t) => { const on = (t as HTMLElement).dataset.sort === s; t.classList.toggle('on', on); t.setAttribute('aria-selected', String(on)); });
 }
 document.querySelectorAll<HTMLElement>('.tab').forEach((t) => t.addEventListener('click', () => sort(t.dataset.sort!)));

@@ -71,7 +71,3 @@ table.bz{width:100%;border-collapse:collapse;font-size:.85rem}table.bz td,table.
 .subcount-card{display:flex!important;flex-direction:column;gap:.1rem;margin:1rem .2rem .2rem;padding:.75rem .8rem!important;border:1px solid var(--cyan);border-radius:var(--r-card);background:linear-gradient(135deg,rgba(0,187,255,.1),transparent)}
 .subcount-card b{font:600 1.6rem var(--mono);color:var(--accent-ink);line-height:1.1;font-variant-numeric:tabular-nums}.subcount-card span{font-size:.8rem;color:var(--ink-2)}.subcount-card em{font:500 .75rem var(--mono);font-style:normal;color:var(--accent-ink);margin-top:.25rem}
 .subcount.off,.subcount-card.off{display:none!important}
-
-.vcount{border-color:#ff8a00;color:var(--ink-2)}.vcount:hover{color:var(--ink)}.vcount .dot{background:#ff8a00;animation:none}.vcount:not(.off)+.subcount{margin-left:.5rem}.vcount b{min-width:3.5ch}
-#live{scroll-margin-top:5rem}
-@media(max-width:420px){.vcount{display:none}}

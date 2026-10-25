@@ -1,13 +1,13 @@
 ---
 // Homepage "live" panel. All numbers come from /api/live-stats at runtime; nothing is baked in or estimated.
 ---
-<section class="ls" id="live" aria-labelledby="ls-h" data-track-zone="live-stats" hidden>
+<section class="ls" id="live" aria-labelledby="ls-h" data-track-zone="live-stats" aria-busy="true">
   <header class="ls-top"><h2 id="ls-h"><span class="ls-dot" aria-hidden="true"></span>LIVE · WHO'S READING TOOLHYPE · PUBLIC, BECAUSE WHY NOT</h2><span class="ls-priv">country-level only, nobody is identifiable</span></header>
   <div class="ls-grid">
     <div class="ls-globe-wrap"><canvas class="ls-globe" width="360" height="360" aria-hidden="true"></canvas></div>
     <div class="ls-body">
-      <p class="ls-big" data-k="big" hidden><b></b> <span></span></p>
-      <p class="ls-meta" data-k="meta"></p>
+      <p class="ls-big" data-k="big"><b>—</b> <span>loading live stats…</span></p>
+      <p class="ls-meta" data-k="meta">&nbsp;</p>
       <ul class="ls-feed" data-k="feed" hidden></ul>
       <div class="ls-blk" data-k="cc" hidden><h3>VISITS · 7D · BY COUNTRY</h3><div class="ls-chips"></div></div>
       <div class="ls-blk" data-k="ai" hidden><h3>AI PULL · CRAWLER FETCHES · 7D</h3><p class="ls-ai"></p><p class="ls-note"></p></div>
@@ -21,7 +21,7 @@
 .ls-priv{font-size:.72rem;color:var(--ink-3)}
 .ls-dot{width:.5rem;height:.5rem;border-radius:50%;background:#ff8a00;box-shadow:0 0 0 0 #ff8a0080;animation:lsp 2s infinite}
 @keyframes lsp{70%{box-shadow:0 0 0 .5rem #ff8a0000}100%{box-shadow:0 0 0 0 #ff8a0000}}
-.ls-grid{display:grid;grid-template-columns:minmax(0,22rem) 1fr;gap:1.5rem;align-items:center}
+.ls-grid{min-height:22rem;display:grid;grid-template-columns:minmax(0,22rem) 1fr;gap:1.5rem;align-items:center}
 .ls-globe-wrap{aspect-ratio:1;max-width:22rem;width:100%;margin:0 auto}
 .ls-globe{width:100%;height:100%;display:block}
 .ls-big{margin:0 0 .4rem;display:flex;flex-wrap:wrap;align-items:baseline;gap:.25rem .75rem}
@@ -38,7 +38,7 @@
 .ls-more{font-size:.8rem;color:var(--ink-3)}
 .ls-ai{font-size:.85rem;margin:0;color:var(--ink);line-height:1.7}.ls-ai b{font-weight:600}
 .ls-note{font-size:.72rem;color:var(--ink-3);margin:.35rem 0 0}
-@media (max-width:720px){.ls-grid{grid-template-columns:1fr}.ls-globe-wrap{max-width:15rem}.ls{padding:1rem}}
+@media (max-width:720px){.ls-grid{grid-template-columns:1fr;min-height:30rem;gap:1rem}.ls-top{margin-bottom:.5rem}.ls-globe-wrap{max-width:15rem}.ls{padding:1rem}}
 @media (prefers-reduced-motion:reduce){.ls-dot{animation:none}}
 </style>
 <script>
@@ -61,6 +61,7 @@ async function run() {
   let any = false;
   // Big number: Cloudflare 7-day unique visitors (edge-measured; Cloudflare's free plan can't fully exclude bots).
   const big = $('big');
+  big.querySelector('span')!.textContent = 'visitors';
   if (cf && cf.uniques > 0) { big.querySelector('b')!.textContent = fmt(cf.uniques); big.querySelector('span')!.textContent = 'unique visitors in the last 7 days'; big.hidden = false; any = true; }
   else if (site?.active30m > 0) { big.querySelector('b')!.textContent = fmt(site.active30m); big.querySelector('span')!.textContent = 'people on the site in the last 30 min'; big.hidden = false; any = true; }
   const meta: string[] = [];
@@ -86,8 +87,9 @@ async function run() {
     const sevenAgo = new Date(Date.now() - 6 * 864e5).toISOString().slice(0, 10);
     a.querySelector('.ls-note')!.textContent = (tot ? `${fmt(tot)} fetches by AI crawlers (ChatGPT, Claude, Perplexity, Gemini…)` : '') + (site.aiSince && site.aiSince > sevenAgo ? `${tot ? ' · ' : ''}counting since ${dShort(site.aiSince)}` : '');
     a.hidden = false; any = true; }
+  root.removeAttribute('aria-busy');
   if (!any) { root.hidden = true; return; }
-  root.style.visibility = '';
+  if (big.querySelector('b')!.textContent === '—') big.hidden = true;
   globe(root.querySelector('.ls-globe') as HTMLCanvasElement, geo, (views.length ? views : cf?.countries || []).slice(0, 12));
 }
 
@@ -113,6 +115,5 @@ function globe(cv: HTMLCanvasElement, geo: any, hot: Row[]) {
   if (RM) { draw(0); return; }
   let last = 0; const loop = (t: number) => { if (vis && !document.hidden) { lon0 += (t - last) * .004; draw(t); } last = t; requestAnimationFrame(loop); }; requestAnimationFrame(loop);
 }
-const io = new IntersectionObserver((e) => { if (e.some((x) => x.isIntersecting)) { io.disconnect(); run(); } }, { rootMargin: '400px' });
-if (root) { root.hidden = false; root.style.visibility = 'hidden'; io.observe(root); }
+run();
 </script>

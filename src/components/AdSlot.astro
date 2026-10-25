@@ -1,0 +1,24 @@
+---
+import ads from '../data/ads.json';
+type Sponsor = { name: string; tagline?: string; logo?: string; url: string };
+const sponsors = (ads.sponsors || []) as Sponsor[];
+---
+<div class="ads" data-track-zone="ads">
+  {sponsors.map((s) => <a class="ad-card" href={s.url} rel="sponsored nofollow noopener" target="_blank" data-track={`ad:${s.name}`}>
+    <span class="ad-lbl">Sponsored</span>
+    {s.logo && <img src={s.logo} alt="" width="40" height="40" loading="lazy"/>}
+    <b>{s.name}</b>{s.tagline && <span class="ad-tag">{s.tagline}</span>}</a>)}
+  <a class="ad-open" href={ads.contact} target="_blank" rel="noopener" data-track="ad:open-slot">
+    <span class="ad-lbl">AD SLOT · OPEN</span><b>Advertise here</b><em>put your product here →</em></a>
+</div>
+<style>
+.ads{display:grid;gap:.75rem;margin-bottom:1rem;font-family:var(--mono)}
+.ad-card,.ad-open{display:flex;flex-direction:column;align-items:center;text-align:center;gap:.35rem;padding:1.1rem 1rem;border-radius:var(--r-card);text-decoration:none;color:var(--ink)}
+.ad-card{border:1px solid color-mix(in srgb,#ff8a00 35%,var(--line));background:color-mix(in srgb,#ff8a00 7%,var(--surface))}
+.ad-card img{border-radius:10px}.ad-card b{font:700 1.05rem var(--display)}.ad-tag{font-size:.8rem;color:var(--ink-2)}
+.ad-open{border:1.5px dashed var(--line-strong);background:var(--surface);padding:1.6rem 1rem}
+.ad-open:hover{border-color:var(--cyan)}
+.ad-lbl{font-size:.68rem;letter-spacing:.16em;color:var(--ink-3);text-transform:uppercase}
+.ad-open b{font:700 1.05rem var(--display)}.ad-open em{font-style:normal;font-size:.82rem;color:var(--ink-2)}
+@media (max-width:900px){.ad-open{padding:.9rem 1rem;flex-direction:row;flex-wrap:wrap;justify-content:center;gap:.25rem .6rem}}
+</style>

@@ -3752,5 +3752,33 @@
       "updatedAt": null
     },
     "logo": "/logos/seedrouter.png"
+  },
+  {
+    "slug": "seltlox",
+    "name": "Seltlox",
+    "url": "https://seltlox.com/",
+    "affiliateUrl": null,
+    "category": "productivity",
+    "useCases": [
+      "productivity",
+      "chat"
+    ],
+    "pricing": "freemium",
+    "verdict": "AI \"clarity lens\": paste a message or describe a situation, decision or pattern that feels hard to read, and it returns a structured analysis of what matters, what may be shaping it and what you might be missing. Balanced, Direct, Supportive and Strategic modes. Solo-founder product, launched Aug 2026.",
+    "useThisIf": "you want a second read on a tricky message, decision or situation before you respond.",
+    "alternatives": [
+      "chatgpt",
+      "claude"
+    ],
+    "source": "submission",
+    "addedAt": "2026-10-25",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/seltlox.png"
   }
 ]

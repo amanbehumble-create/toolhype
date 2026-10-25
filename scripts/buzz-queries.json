@@ -134,5 +134,6 @@
   "ai-room-makeover": "(\"airoommakeover\" OR url:airoommakeover.com OR \"AI Room Makeover\") -is:retweet",
   "domain-search-king": "(\"domainsearchking\" OR url:domainsearchking.com OR \"Domain Search King\") -is:retweet",
   "fileaify": "(fileaify OR url:fileaify.com) -is:retweet",
-  "seedrouter": "(seedrouter OR url:seedrouter.ai OR \"SeedRouter\") -is:retweet"
+  "seedrouter": "(seedrouter OR url:seedrouter.ai OR \"SeedRouter\") -is:retweet",
+  "seltlox": "(seltlox OR url:seltlox.com) -is:retweet"
 }

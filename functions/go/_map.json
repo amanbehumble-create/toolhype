@@ -135,5 +135,8 @@
  "domain-search-king": "https://domainsearchking.com/",
  "fileaify": "https://fileaify.com/",
  "seedrouter": "https://seedrouter.ai/",
- "seltlox": "https://seltlox.com/"
+ "seltlox": "https://seltlox.com/",
+ "kimi": "https://www.kimi.com/",
+ "gemini-api-cli": "https://github.com/google-gemini/gemini-api-cli",
+ "agent-s4": "https://github.com/simular-ai/Agent-S"
 }

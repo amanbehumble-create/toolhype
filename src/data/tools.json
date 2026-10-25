@@ -3780,5 +3780,90 @@
       "updatedAt": null
     },
     "logo": "/logos/seltlox.png"
+  },
+  {
+    "slug": "kimi",
+    "name": "Kimi",
+    "url": "https://www.kimi.com/",
+    "affiliateUrl": null,
+    "category": "chat",
+    "useCases": [
+      "chat",
+      "coding",
+      "agents"
+    ],
+    "pricing": "freemium",
+    "verdict": "Moonshot AI's assistant, now running Kimi K3.1 Pro (released Oct 23, 2026): a 2.8T-parameter open-weight MoE with a 1M-token context, strong at long coding sessions, agent tasks and 3D/Blender work at a low cost per task. Use it free in the Kimi web/app or via Kimi Code and the API. ~11k X posts in a week; claims of matching top US models still need independent checks.",
+    "useThisIf": "you want a near-frontier, cheap open-weight model for long coding or agent work.",
+    "alternatives": [
+      "chatgpt",
+      "claude",
+      "gemini"
+    ],
+    "source": "x",
+    "addedAt": "2026-10-26",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/kimi.png"
+  },
+  {
+    "slug": "gemini-api-cli",
+    "name": "Gemini API CLI",
+    "url": "https://github.com/google-gemini/gemini-api-cli",
+    "affiliateUrl": null,
+    "category": "coding",
+    "useCases": [
+      "coding",
+      "agents"
+    ],
+    "pricing": "open-source",
+    "verdict": "Google's experimental, Apache-2.0 `gemini-api` binary that gives any shell-capable coding agent (Claude Code, Codex, Cursor...) Gemini text, image, video, music, speech, file analysis and managed agents from one command, with --dry-run and self-describing schemas. Preview released Oct 19, 2026; needs a Gemini API key (usage billed by Google). Not the old Gemini CLI coding agent.",
+    "useThisIf": "your coding agent needs to generate images, voiceovers or video, or call Gemini managed agents, without writing SDK code.",
+    "alternatives": [
+      "gemini",
+      "claude-code"
+    ],
+    "source": "x",
+    "addedAt": "2026-10-26",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/gemini-api-cli.png"
+  },
+  {
+    "slug": "agent-s4",
+    "name": "Agent S4 by Simular",
+    "url": "https://github.com/simular-ai/Agent-S",
+    "affiliateUrl": null,
+    "category": "agents",
+    "useCases": [
+      "agents",
+      "productivity"
+    ],
+    "pricing": "open-source",
+    "verdict": "Simular's open-source (Apache-2.0) computer-use research agent that evolves the tool interfaces a desktop agent works through instead of the model. With open Qwen3.8-27B it scores 21.3% on OSWorld V2, above GPT-5.5 (13.0%), at a fraction of the cost. Released Oct 20, 2026. Research-grade setup (VMs, benchmark clones); Simular's hosted computer-agent API is the easier path.",
+    "useThisIf": "you build desktop/computer-use agents and want them to get better at real apps without retraining a model.",
+    "alternatives": [
+      "manus"
+    ],
+    "source": "x",
+    "addedAt": "2026-10-26",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/agent-s4.png"
   }
 ]

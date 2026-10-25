@@ -135,5 +135,10 @@
   "domain-search-king": "(\"domainsearchking\" OR url:domainsearchking.com OR \"Domain Search King\") -is:retweet",
   "fileaify": "(fileaify OR url:fileaify.com) -is:retweet",
   "seedrouter": "(seedrouter OR url:seedrouter.ai OR \"SeedRouter\") -is:retweet",
-  "seltlox": "(seltlox OR url:seltlox.com) -is:retweet"
+  "seltlox": "(seltlox OR url:seltlox.com) -is:retweet",
+  "kimi": "(\"Kimi K3.1\" OR \"Kimi K3\" OR url:kimi.com OR @Kimi_Moonshot) -is:retweet",
+  "gemini-api-cli": "(\"Gemini API CLI\" OR \"gemini-api-cli\" OR \"gemini-api cli\") -is:retweet",
+  "agent-s4": "(\"Agent S4\" OR \"simular-ai/Agent-S\" OR (simular agent)) -is:retweet",
+  "databull": "(databull OR url:databull.app) -is:retweet",
+  "sume": "(\"Sume API\" OR url:sume.com OR (sume (seedance OR video) markup)) -is:retweet"
 }

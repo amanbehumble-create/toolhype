@@ -8,7 +8,7 @@ const day = (d: number) => new Date(Date.now() - d * 864e5).toISOString().slice(
 
 async function cfZone(env: Env) {
   if (!env.CF_API_TOKEN || !env.CF_ZONE_ID) return { ok: false, reason: 'not_configured' };
-  const query = `query($z:String!,$s:Date!){viewer{zones(filter:{zoneTag:$z}){httpRequests1dGroups(limit:8,filter:{date_geq:$s},orderBy:[date_ASC]){dimensions{date} sum{requests countryMap{clientCountryName requests}} uniq{uniques}}}}}`;
+  const query = `query($z:String!,$s:Date!){viewer{zones(filter:{zoneTag:$z}){total:httpRequests1dGroups(limit:1,filter:{date_geq:$s}){uniq{uniques}} httpRequests1dGroups(limit:8,filter:{date_geq:$s},orderBy:[date_ASC]){dimensions{date} sum{requests countryMap{clientCountryName requests}} uniq{uniques}}}}}`;
   const r = await fetch('https://api.cloudflare.com/client/v4/graphql', {
     method: 'POST', headers: { Authorization: `Bearer ${env.CF_API_TOKEN}`, 'Content-Type': 'application/json' },
     body: JSON.stringify({ query, variables: { z: env.CF_ZONE_ID, s: day(6) } }),
@@ -19,6 +19,8 @@ async function cfZone(env: Env) {
   const byC: Record<string, number> = {}; let uniques = 0, requests = 0;
   for (const d of g) { uniques += d.uniq?.uniques || 0; requests += d.sum?.requests || 0;
     for (const c of d.sum?.countryMap || []) if (c.clientCountryName && c.clientCountryName !== 'XX' && c.clientCountryName !== 'T1') byC[c.clientCountryName] = (byC[c.clientCountryName] || 0) + c.requests; }
+  // True 7-day unique (one window, no date dimension), not a sum of daily uniques.
+  const tu = j?.data?.viewer?.zones?.[0]?.total?.[0]?.uniq?.uniques; if (typeof tu === 'number') uniques = tu;
   const countries = Object.entries(byC).sort((a, b) => b[1] - a[1]).map(([cc, n]) => ({ cc, n }));
   return { ok: true, uniques, requests, days: g.length, since: g[0]?.dimensions?.date || null, countries };
 }

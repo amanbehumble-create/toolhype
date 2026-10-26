@@ -1,7 +1,7 @@
 ---
 import SubStrip from '../../components/SubStrip.astro';
 import Base from '../../layouts/Base.astro'; import Shell from '../../components/Shell.astro';
-import { getTools, getTool, outUrl, goUrl, hkt, LABEL, getCommunity, toolsIn, byBuzz, type Tool } from '../../lib/data'; import { appLd, faqLd, crumbsLd } from '../../lib/ld'; import { pairsFor } from '../../lib/geo';
+import { getTools, getTool, outUrl, goUrl, hkt, LABEL, getCommunity, toolsIn, byBuzz, velText, type Tool } from '../../lib/data'; import { appLd, faqLd, crumbsLd } from '../../lib/ld'; import { pairsFor } from '../../lib/geo';
 export const getStaticPaths = () => getTools().map((t) => ({ params: { slug: t.slug }, props: { t } }));
 const { t } = Astro.props as { t: Tool };
 const b = t.buzz;
@@ -35,7 +35,7 @@ const faq: [string, string][] = [
     <div class="stats">
       <div class="stat"><b>{fmt(b.mentions24h!)}</b><span>posts, last 24h</span></div>
       <div class="stat"><b>{fmt(b.mentions7d!)}</b><span>posts, last 7 days</span></div>
-      <div class="stat"><b>{b.velocity}×</b><span>24h vs prior daily avg ({fmt(Math.round(b.priorDailyAvg!))})</span></div>
+      <div class="stat"><b>{velText(b)}</b><span>24h vs prior daily avg ({b.priorDailyAvg! < 1 ? 'under 1' : fmt(Math.round(b.priorDailyAvg!))})</span></div>
       <div class="stat"><b>{fmt(b.sample!.likes)}</b><span>likes in top {b.sample!.posts} sampled posts</span></div>
     </div>
     <svg class="spark" viewBox="0 0 300 80" preserveAspectRatio="none" role="img" aria-label={`Daily X mentions over 7 days: ${d.join(', ')}`}><path class="a" d={`${line} L300,80 L0,80 Z`}/><path class="l" d={line}/></svg>

@@ -1,6 +1,6 @@
 ---
 import Base from '../layouts/Base.astro'; import Shell from '../components/Shell.astro';
-import { getTools, byBuzz, BUZZ_AT, hkt, LABEL } from '../lib/data';
+import { getTools, byBuzz, BUZZ_AT, hkt, LABEL, velText } from '../lib/data';
 import { listLd, faqLd, crumbsLd } from '../lib/ld';
 const live = getTools().filter((t) => t.buzz.status === 'live').sort(byBuzz);
 const pending = getTools().filter((t) => t.buzz.status !== 'live');
@@ -25,7 +25,7 @@ const faq = faqLd([
 <p>Scores refresh with our daily scan. <b>Hot</b> in the feed blends upvotes, the Buzz Score and how new a tool is; <b>Hype on X</b> sorts purely by the score with 🔥 tools first.</p>
 <h2>Leaderboard</h2>
 <div style="overflow-x:auto"><table class="bz"><thead><tr><th>#</th><th>Tool</th><th>Score</th><th>Label</th><th>24h</th><th>7d</th><th>Velocity</th></tr></thead><tbody>
-{live.map((t, i) => <tr><td class="n">{i + 1}</td><td><a data-track="buzz:row" href={`/tools/${t.slug}#buzz`}>{t.name}</a></td><td class="n">{t.buzz.score}</td><td>{LABEL[t.buzz.label!]}</td><td class="n">{t.buzz.mentions24h}</td><td class="n">{t.buzz.mentions7d}</td><td class="n">{t.buzz.velocity}×</td></tr>)}
+{live.map((t, i) => <tr><td class="n">{i + 1}</td><td><a data-track="buzz:row" href={`/tools/${t.slug}#buzz`}>{t.name}</a></td><td class="n">{t.buzz.score}</td><td>{LABEL[t.buzz.label!]}</td><td class="n">{t.buzz.mentions24h}</td><td class="n">{t.buzz.mentions7d}</td><td class="n" title={velText(t.buzz) === 'new' ? 'New this week: under 1 post a day before, so no fair multiplier yet' : undefined}>{velText(t.buzz)}</td></tr>)}
 </tbody></table></div>
 {pending.length > 0 && <p class="muted">Pending: {pending.map((t) => t.name).join(', ')}</p>}
 <h2>Queries</h2>

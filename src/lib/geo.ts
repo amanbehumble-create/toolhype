@@ -1,4 +1,4 @@
-import { getTool, getTools, BUZZ_AT, byBuzz, type Tool } from './data';
+import { getTool, getTools, BUZZ_AT, byBuzz, velPhrase, type Tool } from './data';
 import buzzJson from '../data/buzz.json';
 // ISO-8601 week id, e.g. 2026-w42
 export const isoWeek = (iso: string) => {
@@ -16,7 +16,7 @@ export const weekRange = (id: string) => {
 };
 export interface HypeRow { slug: string; name: string; score: number; mentions7d: number; mentions24h: number; velocity: number; label: string; why: string; verdict: string }
 export interface HypeWeek { week: string; computedAt: string; rows: HypeRow[] }
-const why = (b: any) => { const p = b.topPosts?.[0]; return `${b.mentions7d.toLocaleString('en-US')} X posts in 7 days (${b.mentions24h} in the last 24h, ${b.velocity}x velocity)` + (p ? `; top post by @${p.author ?? 'x'} got ${p.likes.toLocaleString('en-US')} likes` : '') + '.'; };
+const why = (b: any) => { const p = b.topPosts?.[0]; return `${b.mentions7d.toLocaleString('en-US')} X posts in 7 days (${b.mentions24h} in the last 24h, ${velPhrase(b)})` + (p ? `; top post by @${p.author ?? 'x'} got ${p.likes.toLocaleString('en-US')} likes` : '') + '.'; };
 export const currentHype = (): HypeWeek => {
   const B = (buzzJson as any).tools;
   const rows = getTools().filter((t) => t.buzz.status === 'live').sort(byBuzz).slice(0, 10).map((t) => {

@@ -1,0 +1,1023 @@
+{
+ "packs": [
+  {
+   "slug": "starter-pack-1",
+   "n": 1,
+   "title": "Self-growth & useful-resource creators on X",
+   "short": "98 X creators for builders, writers and thinkers",
+   "asOf": "2026-10-20",
+   "sections": [
+    {
+     "key": "essentials",
+     "n": "01",
+     "title": "Essentials"
+    },
+    {
+     "key": "strong-follows",
+     "n": "02",
+     "title": "Strong follows"
+    },
+    {
+     "key": "further-picks",
+     "n": "03",
+     "title": "Further picks"
+    },
+    {
+     "key": "article-writers",
+     "n": "04",
+     "title": "Article writers"
+    }
+   ],
+   "accounts": [
+    {
+     "no": 1,
+     "handle": "thedankoe",
+     "name": "DAN KOE",
+     "followers": 1044016,
+     "section": "essentials",
+     "descriptor": "Creator and marketer content systems; behind the content tool Eden",
+     "avatar": "/creators/avatars/thedankoe.webp",
+     "tools": []
+    },
+    {
+     "no": 2,
+     "handle": "levelsio",
+     "name": "@levelsio",
+     "followers": 978728,
+     "section": "essentials",
+     "descriptor": "Solo maker running a portfolio of indie products, shared with live revenue",
+     "avatar": "/creators/avatars/levelsio.webp",
+     "tools": []
+    },
+    {
+     "no": 3,
+     "handle": "gregisenberg",
+     "name": "GREG ISENBERG",
+     "followers": 746769,
+     "section": "essentials",
+     "descriptor": "Daily startup ideas, a startup-ideas podcast and a studio that builds companies",
+     "avatar": "/creators/avatars/gregisenberg.webp",
+     "tools": []
+    },
+    {
+     "no": 4,
+     "handle": "SahilBloom",
+     "name": "Sahil Bloom",
+     "followers": 1188577,
+     "section": "essentials",
+     "descriptor": "Bestselling author on the many forms of wealth and designing a good life",
+     "avatar": "/creators/avatars/SahilBloom.webp",
+     "tools": []
+    },
+    {
+     "no": 5,
+     "handle": "JamesClear",
+     "name": "James Clear",
+     "followers": 1435098,
+     "section": "essentials",
+     "descriptor": "Atomic Habits author writing on building good habits; 3-2-1 newsletter",
+     "avatar": "/creators/avatars/JamesClear.webp",
+     "tools": []
+    },
+    {
+     "no": 6,
+     "handle": "naval",
+     "name": "Naval",
+     "followers": 4124779,
+     "section": "essentials",
+     "descriptor": "Compressed one-liners on wealth, leverage and happiness",
+     "avatar": "/creators/avatars/naval.webp",
+     "tools": []
+    },
+    {
+     "no": 7,
+     "handle": "rowancheung",
+     "name": "Rowan Cheung",
+     "followers": 601343,
+     "section": "essentials",
+     "descriptor": "The Rundown AI founder sharing the latest developments in AI",
+     "avatar": "/creators/avatars/rowancheung.webp",
+     "tools": []
+    },
+    {
+     "no": 8,
+     "handle": "emollick",
+     "name": "Ethan Mollick",
+     "followers": 405933,
+     "section": "essentials",
+     "descriptor": "Wharton professor studying how AI changes work, with a Substack and books",
+     "avatar": "/creators/avatars/emollick.webp",
+     "tools": []
+    },
+    {
+     "no": 9,
+     "handle": "karpathy",
+     "name": "Andrej Karpathy",
+     "followers": 4380303,
+     "section": "essentials",
+     "descriptor": "Deep but accessible AI explainers; coined \"vibe coding\"",
+     "avatar": "/creators/avatars/karpathy.webp",
+     "tools": []
+    },
+    {
+     "no": 10,
+     "handle": "minchoi",
+     "name": "Min Choi",
+     "followers": 391661,
+     "section": "essentials",
+     "descriptor": "What's wild and practical in AI right now, shown through builds",
+     "avatar": "/creators/avatars/minchoi.webp",
+     "tools": []
+    },
+    {
+     "no": 11,
+     "handle": "dickiebush",
+     "name": "Dickie Bush",
+     "followers": 447109,
+     "section": "essentials",
+     "descriptor": "Digital writing, internet business and personal growth; runs Ship 30",
+     "avatar": "/creators/avatars/dickiebush.webp",
+     "tools": []
+    },
+    {
+     "no": 12,
+     "handle": "Nicolascole77",
+     "name": "Nicolas Cole 🚢👻",
+     "followers": 228146,
+     "section": "essentials",
+     "descriptor": "The art and business of writing online and owning a niche",
+     "avatar": "/creators/avatars/Nicolascole77.webp",
+     "tools": []
+    },
+    {
+     "no": 13,
+     "handle": "jackbutcher",
+     "name": "@jackbutcher",
+     "followers": 353407,
+     "section": "essentials",
+     "descriptor": "Visual symbols and one-liners on creativity, from Visualize Value",
+     "avatar": "/creators/avatars/jackbutcher.webp",
+     "tools": []
+    },
+    {
+     "no": 14,
+     "handle": "ridd_design",
+     "name": "Ridd 🤿",
+     "followers": 76913,
+     "section": "essentials",
+     "descriptor": "Product-design craft and learning, from the builder behind Dive Club",
+     "avatar": "/creators/avatars/ridd_design.webp",
+     "tools": []
+    },
+    {
+     "no": 15,
+     "handle": "george__mack",
+     "name": "George Mack",
+     "followers": 310564,
+     "section": "essentials",
+     "descriptor": "Essays and threads on agency as a core trait; author of 'High Agency'",
+     "avatar": "/creators/avatars/george__mack.webp",
+     "tools": []
+    },
+    {
+     "no": 16,
+     "handle": "lennysan",
+     "name": "Lenny Rachitsky",
+     "followers": 453948,
+     "section": "essentials",
+     "descriptor": "Deeply researched product, growth and career advice",
+     "avatar": "/creators/avatars/lennysan.webp",
+     "tools": []
+    },
+    {
+     "no": 17,
+     "handle": "tibo_maker",
+     "name": "Tibo",
+     "followers": 214937,
+     "section": "strong-follows",
+     "descriptor": "Indie-hacker growth tips from a serial SaaS maker",
+     "avatar": "/creators/avatars/tibo_maker.webp",
+     "tools": []
+    },
+    {
+     "no": 18,
+     "handle": "itsPaulAi",
+     "name": "Paul Couvert",
+     "followers": 220604,
+     "section": "strong-follows",
+     "descriptor": "AI and no-code education for building better and faster",
+     "avatar": "/creators/avatars/itsPaulAi.webp",
+     "tools": []
+    },
+    {
+     "no": 19,
+     "handle": "LinusEkenstam",
+     "name": "Linus ✦ Ekenstam",
+     "followers": 245187,
+     "section": "strong-follows",
+     "descriptor": "AI and robotics deep dives and hot takes for people and businesses",
+     "avatar": "/creators/avatars/LinusEkenstam.webp",
+     "tools": []
+    },
+    {
+     "no": 20,
+     "handle": "ai_for_success",
+     "name": "AshutoshShrivastava",
+     "followers": 82181,
+     "section": "strong-follows",
+     "descriptor": "Daily AI news, tools, tutorials and memes",
+     "avatar": "/creators/avatars/ai_for_success.webp",
+     "tools": []
+    },
+    {
+     "no": 21,
+     "handle": "_akhaliq",
+     "name": "AK",
+     "followers": 534637,
+     "section": "strong-follows",
+     "descriptor": "Daily AI research paper picks, from an ML lead at Gradio / Hugging Face",
+     "avatar": "/creators/avatars/_akhaliq.webp",
+     "tools": []
+    },
+    {
+     "no": 22,
+     "handle": "OfficialLoganK",
+     "name": "Logan Kilpatrick",
+     "followers": 381978,
+     "section": "strong-follows",
+     "descriptor": "Gemini, Google AI Studio and Gemini API updates from someone on the team",
+     "avatar": "/creators/avatars/OfficialLoganK.webp",
+     "tools": [
+      "gemini"
+     ]
+    },
+    {
+     "no": 23,
+     "handle": "DataChaz",
+     "name": "Charly Wargnier ♨️",
+     "followers": 182354,
+     "section": "strong-follows",
+     "descriptor": "Daily AI gems on agents, LLMs, automation and open source",
+     "avatar": "/creators/avatars/DataChaz.webp",
+     "tools": []
+    },
+    {
+     "no": 24,
+     "handle": "kloss_xyz",
+     "name": "klöss",
+     "followers": 79692,
+     "section": "strong-follows",
+     "descriptor": "Prompting, AI systems and automation engineering",
+     "avatar": "/creators/avatars/kloss_xyz.webp",
+     "tools": []
+    },
+    {
+     "no": 25,
+     "handle": "mreflow",
+     "name": "Matt Wolfe",
+     "followers": 120993,
+     "section": "strong-follows",
+     "descriptor": "A cool-tools database plus tech news and commentary",
+     "avatar": "/creators/avatars/mreflow.webp",
+     "tools": []
+    },
+    {
+     "no": 26,
+     "handle": "swyx",
+     "name": "swyx",
+     "followers": 204272,
+     "section": "strong-follows",
+     "descriptor": "AI engineering community and Latent Space podcast host",
+     "avatar": "/creators/avatars/swyx.webp",
+     "tools": []
+    },
+    {
+     "no": 27,
+     "handle": "simonw",
+     "name": "Simon Willison",
+     "followers": 241676,
+     "section": "strong-follows",
+     "descriptor": "Datasette creator and Django co-creator writing hands-on notes on LLMs",
+     "avatar": "/creators/avatars/simonw.webp",
+     "tools": []
+    },
+    {
+     "no": 28,
+     "handle": "bentossell",
+     "name": "Ben Tossell",
+     "followers": 202008,
+     "section": "strong-follows",
+     "descriptor": "Non-coder building with AI; investor in dev tools and infra",
+     "avatar": "/creators/avatars/bentossell.webp",
+     "tools": []
+    },
+    {
+     "no": 29,
+     "handle": "amasad",
+     "name": "Amjad Masad",
+     "followers": 499985,
+     "section": "strong-follows",
+     "descriptor": "Replit CEO on AI-assisted building and civilization-scale ambition",
+     "avatar": "/creators/avatars/amasad.webp",
+     "tools": [
+      "replit"
+     ]
+    },
+    {
+     "no": 30,
+     "handle": "rauchg",
+     "name": "Guillermo Rauch",
+     "followers": 913267,
+     "section": "strong-follows",
+     "descriptor": "Vercel CEO on the web, v0 and AI-native development",
+     "avatar": "/creators/avatars/rauchg.webp",
+     "tools": []
+    },
+    {
+     "no": 31,
+     "handle": "wesbos",
+     "name": "Wes Bos",
+     "followers": 444283,
+     "section": "strong-follows",
+     "descriptor": "Full-stack dev tips, Syntax podcast and AI and hardware tinkering",
+     "avatar": "/creators/avatars/wesbos.webp",
+     "tools": []
+    },
+    {
+     "no": 32,
+     "handle": "jsngr",
+     "name": "Jordan Singer",
+     "followers": 181138,
+     "section": "strong-follows",
+     "descriptor": "AI + design tooling from a Mainframe co-founder, ex-Figma",
+     "avatar": "/creators/avatars/jsngr.webp",
+     "tools": [
+      "figma"
+     ]
+    },
+    {
+     "no": 33,
+     "handle": "visualizevalue",
+     "name": "VV",
+     "followers": 364453,
+     "section": "strong-follows",
+     "descriptor": "Minimal visual frameworks: create more than you consume",
+     "avatar": "/creators/avatars/visualizevalue.webp",
+     "tools": []
+    },
+    {
+     "no": 34,
+     "handle": "david_perell",
+     "name": "David Perell",
+     "followers": 480932,
+     "section": "strong-follows",
+     "descriptor": "The writing guy: writing, beauty and architecture; How I Write podcast",
+     "avatar": "/creators/avatars/david_perell.webp",
+     "tools": []
+    },
+    {
+     "no": 35,
+     "handle": "ShaanVP",
+     "name": "Shaan Puri",
+     "followers": 477526,
+     "section": "strong-follows",
+     "descriptor": "An idea dealer: business ideas, storytelling and copywriting",
+     "avatar": "/creators/avatars/ShaanVP.webp",
+     "tools": []
+    },
+    {
+     "no": 36,
+     "handle": "AlexHormozi",
+     "name": "Alex Hormozi",
+     "followers": 1081700,
+     "section": "strong-follows",
+     "descriptor": "Blunt advice on offers, sales and scaling for business owners",
+     "avatar": "/creators/avatars/AlexHormozi.webp",
+     "tools": []
+    },
+    {
+     "no": 37,
+     "handle": "AliAbdaal",
+     "name": "Ali Abdaal",
+     "followers": 356182,
+     "section": "strong-follows",
+     "descriptor": "Doctor-turned-entrepreneur on productivity, focus and feel-good work",
+     "avatar": "/creators/avatars/AliAbdaal.webp",
+     "tools": []
+    },
+    {
+     "no": 38,
+     "handle": "jayclouse",
+     "name": "Jay Clouse",
+     "followers": 55624,
+     "section": "strong-follows",
+     "descriptor": "Creator Science: creator experiments, interviews and studying trust",
+     "avatar": "/creators/avatars/jayclouse.webp",
+     "tools": []
+    },
+    {
+     "no": 39,
+     "handle": "thisiskp_",
+     "name": "KP",
+     "followers": 72752,
+     "section": "strong-follows",
+     "descriptor": "The build-in-public guy; community work for developers and AI startups",
+     "avatar": "/creators/avatars/thisiskp_.webp",
+     "tools": []
+    },
+    {
+     "no": 40,
+     "handle": "arvidkahl",
+     "name": "Arvid Kahl",
+     "followers": 213358,
+     "section": "strong-follows",
+     "descriptor": "Bootstrapping and building a software business in public, with kindness",
+     "avatar": "/creators/avatars/arvidkahl.webp",
+     "tools": []
+    },
+    {
+     "no": 41,
+     "handle": "dvassallo",
+     "name": "Daniel Vassallo",
+     "followers": 205633,
+     "section": "strong-follows",
+     "descriptor": "Small bets and indie income from an ex-big-tech engineer",
+     "avatar": "/creators/avatars/dvassallo.webp",
+     "tools": []
+    },
+    {
+     "no": 42,
+     "handle": "shl",
+     "name": "Sahil Lavingia",
+     "followers": 394302,
+     "section": "strong-follows",
+     "descriptor": "Gumroad founder on minimalist entrepreneurship and building in public",
+     "avatar": "/creators/avatars/shl.webp",
+     "tools": []
+    },
+    {
+     "no": 43,
+     "handle": "rrhoover",
+     "name": "Ryan Hoover",
+     "followers": 496326,
+     "section": "strong-follows",
+     "descriptor": "Product Hunt founder and investor on new products and makers",
+     "avatar": "/creators/avatars/rrhoover.webp",
+     "tools": []
+    },
+    {
+     "no": 44,
+     "handle": "shreyas",
+     "name": "Shreyas Doshi",
+     "followers": 405808,
+     "section": "strong-follows",
+     "descriptor": "Product and leadership frameworks from an ex-Stripe product lead and coach",
+     "avatar": "/creators/avatars/shreyas.webp",
+     "tools": []
+    },
+    {
+     "no": 45,
+     "handle": "paulg",
+     "name": "Paul Graham",
+     "followers": 5442199,
+     "section": "strong-follows",
+     "descriptor": "Essays-in-miniature on startups, writing and thinking",
+     "avatar": "/creators/avatars/paulg.webp",
+     "tools": []
+    },
+    {
+     "no": 46,
+     "handle": "morganhousel",
+     "name": "Morgan Housel",
+     "followers": 718543,
+     "section": "strong-follows",
+     "descriptor": "Author on the psychology of money and timeless behavior",
+     "avatar": "/creators/avatars/morganhousel.webp",
+     "tools": []
+    },
+    {
+     "no": 47,
+     "handle": "tferriss",
+     "name": "Tim Ferriss",
+     "followers": 1989973,
+     "section": "further-picks",
+     "descriptor": "Author and podcaster on experiments, tools and performance",
+     "avatar": "/creators/avatars/tferriss.webp",
+     "tools": []
+    },
+    {
+     "no": 48,
+     "handle": "hubermanlab",
+     "name": "Andrew D. Huberman, Ph.D.",
+     "followers": 1896824,
+     "section": "further-picks",
+     "descriptor": "Stanford neurobiologist sharing science-based health and focus protocols",
+     "avatar": "/creators/avatars/hubermanlab.webp",
+     "tools": []
+    },
+    {
+     "no": 49,
+     "handle": "Codie_Sanchez",
+     "name": "Codie Sanchez",
+     "followers": 715657,
+     "section": "further-picks",
+     "descriptor": "Contrarian takes on buying and scaling profitable boring businesses",
+     "avatar": "/creators/avatars/Codie_Sanchez.webp",
+     "tools": []
+    },
+    {
+     "no": 50,
+     "handle": "sweatystartup",
+     "name": "Nick Huber",
+     "followers": 528691,
+     "section": "further-picks",
+     "descriptor": "Practical small-business and real-estate lessons from an owner-operator",
+     "avatar": "/creators/avatars/sweatystartup.webp",
+     "tools": []
+    },
+    {
+     "no": 51,
+     "handle": "Austen",
+     "name": "Austen Allred",
+     "followers": 487347,
+     "section": "further-picks",
+     "descriptor": "Gauntlet AI CEO on free AI training and the engineering jobs market",
+     "avatar": "/creators/avatars/Austen.webp",
+     "tools": []
+    },
+    {
+     "no": 52,
+     "handle": "BrendanFoody",
+     "name": "Brendan (can/do)",
+     "followers": 30376,
+     "section": "further-picks",
+     "descriptor": "Mercor CEO on organizing human expertise for the AI era",
+     "avatar": "/creators/avatars/BrendanFoody.webp",
+     "tools": []
+    },
+    {
+     "no": 53,
+     "handle": "godofprompt",
+     "name": "God of Prompt",
+     "followers": 22282,
+     "section": "further-picks",
+     "descriptor": "Prompts, workflows and guides for working with AI",
+     "avatar": "/creators/avatars/godofprompt.webp",
+     "tools": []
+    },
+    {
+     "no": 54,
+     "handle": "kentcdodds",
+     "name": "Kent C. Dodds 🐨",
+     "followers": 331909,
+     "section": "further-picks",
+     "descriptor": "Developer education from a longtime JS educator and dad",
+     "avatar": "/creators/avatars/kentcdodds.webp",
+     "tools": []
+    },
+    {
+     "no": 55,
+     "handle": "dhh",
+     "name": "DHH",
+     "followers": 934461,
+     "section": "further-picks",
+     "descriptor": "Rails creator and 37signals CTO with opinionated takes on software and work",
+     "avatar": "/creators/avatars/dhh.webp",
+     "tools": []
+    },
+    {
+     "no": 56,
+     "handle": "jasonfried",
+     "name": "Jason Fried",
+     "followers": 5297129,
+     "section": "further-picks",
+     "descriptor": "37signals co-founder on calm companies, work culture and product",
+     "avatar": "/creators/avatars/jasonfried.webp",
+     "tools": []
+    },
+    {
+     "no": 57,
+     "handle": "tobi",
+     "name": "tobi lutke",
+     "followers": 519135,
+     "section": "further-picks",
+     "descriptor": "Shopify CEO on building, hacking and learning broadly",
+     "avatar": "/creators/avatars/tobi.webp",
+     "tools": []
+    },
+    {
+     "no": 58,
+     "handle": "patrick_oshag",
+     "name": "Patrick OShaughnessy",
+     "followers": 363819,
+     "section": "further-picks",
+     "descriptor": "Investing and business-building conversations; Invest Like the Best host",
+     "avatar": "/creators/avatars/patrick_oshag.webp",
+     "tools": []
+    },
+    {
+     "no": 59,
+     "handle": "eladgil",
+     "name": "Elad Gil",
+     "followers": 738490,
+     "section": "further-picks",
+     "descriptor": "Entrepreneur and investor on scaling startups and AI markets",
+     "avatar": "/creators/avatars/eladgil.webp",
+     "tools": []
+    },
+    {
+     "no": 60,
+     "handle": "MKBHD",
+     "name": "Marques Brownlee",
+     "followers": 6148710,
+     "section": "further-picks",
+     "descriptor": "Consumer tech reviews and gadget takes from a web video producer",
+     "avatar": "/creators/avatars/MKBHD.webp",
+     "tools": []
+    },
+    {
+     "no": 61,
+     "handle": "Mrwhosetheboss",
+     "name": "Arun Maini",
+     "followers": 1709153,
+     "section": "further-picks",
+     "descriptor": "Phone and gadget explainers from a huge YouTube tech channel",
+     "avatar": "/creators/avatars/Mrwhosetheboss.webp",
+     "tools": []
+    },
+    {
+     "no": 62,
+     "handle": "nntaleb",
+     "name": "Nassim Nicholas Taleb",
+     "followers": 1158992,
+     "section": "further-picks",
+     "descriptor": "Probability, risk and antifragility, in a combative tone",
+     "avatar": "/creators/avatars/nntaleb.webp",
+     "tools": []
+    },
+    {
+     "no": 63,
+     "handle": "Tim_Denning",
+     "name": "Tim Denning",
+     "followers": 152222,
+     "section": "article-writers",
+     "descriptor": "Writing online and building digital businesses for high performers",
+     "avatar": "/creators/avatars/Tim_Denning.webp",
+     "tools": []
+    },
+    {
+     "no": 64,
+     "handle": "Hawks0x",
+     "name": "Hawks",
+     "followers": 9381,
+     "section": "article-writers",
+     "descriptor": "Easy high-protein meals, fitness and nutrition",
+     "avatar": "/creators/avatars/Hawks0x.webp",
+     "tools": []
+    },
+    {
+     "no": 65,
+     "handle": "the2ndfloorguy",
+     "name": "Pankaj",
+     "followers": 31660,
+     "section": "article-writers",
+     "descriptor": "AI + hardware builder who makes whatever he finds funny",
+     "avatar": "/creators/avatars/the2ndfloorguy.webp",
+     "tools": []
+    },
+    {
+     "no": 66,
+     "handle": "DylanCalluy",
+     "name": "Dylan",
+     "followers": 303237,
+     "section": "article-writers",
+     "descriptor": "Photography and videography, plus iPhone presets",
+     "avatar": "/creators/avatars/DylanCalluy.webp",
+     "tools": []
+    },
+    {
+     "no": 67,
+     "handle": "BerbarianWizard",
+     "name": "Jamal Dinkoui",
+     "followers": 30699,
+     "section": "article-writers",
+     "descriptor": "Act, perceive, think: short philosophy on how to live",
+     "avatar": "/creators/avatars/BerbarianWizard.webp",
+     "tools": []
+    },
+    {
+     "no": 68,
+     "handle": "hooeem",
+     "name": "hoeem",
+     "followers": 167806,
+     "section": "article-writers",
+     "descriptor": "Turning screen time into cash flow with modern digital stacks",
+     "avatar": "/creators/avatars/hooeem.webp",
+     "tools": []
+    },
+    {
+     "no": 69,
+     "handle": "RianSweetDoris",
+     "name": "Rian Doris",
+     "followers": 11748,
+     "section": "article-writers",
+     "descriptor": "Flow-state training for entrepreneurs and execs",
+     "avatar": "/creators/avatars/RianSweetDoris.webp",
+     "tools": []
+    },
+    {
+     "no": 70,
+     "handle": "JIMMYEDGAR",
+     "name": "jimmy",
+     "followers": 77236,
+     "section": "article-writers",
+     "descriptor": "Cryptic updates on life as a simulation",
+     "avatar": "/creators/avatars/JIMMYEDGAR.webp",
+     "tools": []
+    },
+    {
+     "no": 71,
+     "handle": "digiii",
+     "name": "Digi",
+     "followers": 103933,
+     "section": "article-writers",
+     "descriptor": "Delusional optimism from a creative-studio founder",
+     "avatar": "/creators/avatars/digiii.webp",
+     "tools": []
+    },
+    {
+     "no": 72,
+     "handle": "gemchange_ltd",
+     "name": "gemchanger",
+     "followers": 30327,
+     "section": "article-writers",
+     "descriptor": "Personal essays and posts, tied to Capital ADHD",
+     "avatar": "/creators/avatars/gemchange_ltd.webp",
+     "tools": []
+    },
+    {
+     "no": 73,
+     "handle": "0x_kaize",
+     "name": "kaize",
+     "followers": 24127,
+     "section": "article-writers",
+     "descriptor": "AI dev and builder posting about xAI and Grok",
+     "avatar": "/creators/avatars/0x_kaize.webp",
+     "tools": [
+      "grok"
+     ]
+    },
+    {
+     "no": 74,
+     "handle": "eng_khairallah1",
+     "name": "Khairallah AL-Awady",
+     "followers": 79808,
+     "section": "article-writers",
+     "descriptor": "AI agents, LLMs and vibe coding, plus AI and onchain research",
+     "avatar": "/creators/avatars/eng_khairallah1.webp",
+     "tools": []
+    },
+    {
+     "no": 75,
+     "handle": "zackbshapiro",
+     "name": "Zack Shapiro",
+     "followers": 24750,
+     "section": "article-writers",
+     "descriptor": "AI-native law and bitcoin policy from a law-firm managing partner",
+     "avatar": "/creators/avatars/zackbshapiro.webp",
+     "tools": []
+    },
+    {
+     "no": 76,
+     "handle": "MurrayHillGuy1",
+     "name": "Murray Hill Guy",
+     "followers": 116600,
+     "section": "article-writers",
+     "descriptor": "NYC life, humor and personal training",
+     "avatar": "/creators/avatars/MurrayHillGuy1.webp",
+     "tools": []
+    },
+    {
+     "no": 77,
+     "handle": "shedrinkswater",
+     "name": "smoothie",
+     "followers": 8235,
+     "section": "article-writers",
+     "descriptor": "Writing to spread more love in the world",
+     "avatar": "/creators/avatars/shedrinkswater.webp",
+     "tools": []
+    },
+    {
+     "no": 78,
+     "handle": "Bober_smart",
+     "name": "Bober_smart",
+     "followers": 20114,
+     "section": "article-writers",
+     "descriptor": "Testing AI tools and technologies as a builder",
+     "avatar": "/creators/avatars/Bober_smart.webp",
+     "tools": []
+    },
+    {
+     "no": 79,
+     "handle": "DeRonin_",
+     "name": "Ronin",
+     "followers": 118986,
+     "section": "article-writers",
+     "descriptor": "Engineering virality for AI companies; young founder and angel",
+     "avatar": "/creators/avatars/DeRonin_.webp",
+     "tools": []
+    },
+    {
+     "no": 80,
+     "handle": "thedarshakrana",
+     "name": "Darshak Rana ⚡️",
+     "followers": 129336,
+     "section": "article-writers",
+     "descriptor": "Frameworks for high-performance living and self-improvement",
+     "avatar": "/creators/avatars/thedarshakrana.webp",
+     "tools": []
+    },
+    {
+     "no": 81,
+     "handle": "lifemaxxjourney",
+     "name": "lifemaxxers",
+     "followers": 11866,
+     "section": "article-writers",
+     "descriptor": "Charisma and social-skill improvement",
+     "avatar": "/creators/avatars/lifemaxxjourney.webp",
+     "tools": []
+    },
+    {
+     "no": 82,
+     "handle": "maxmarchione",
+     "name": "Max Marchione",
+     "followers": 35181,
+     "section": "article-writers",
+     "descriptor": "Building a new kind of health system; Superpower founder",
+     "avatar": "/creators/avatars/maxmarchione.webp",
+     "tools": []
+    },
+    {
+     "no": 83,
+     "handle": "itsreallyvivek",
+     "name": "vivek",
+     "followers": 18596,
+     "section": "article-writers",
+     "descriptor": "Hacker and researcher posts",
+     "avatar": "/creators/avatars/itsreallyvivek.webp",
+     "tools": []
+    },
+    {
+     "no": 84,
+     "handle": "colejaczko",
+     "name": "Cole Jaczko",
+     "followers": 28890,
+     "section": "article-writers",
+     "descriptor": "Self-improvement and building an internet country club",
+     "avatar": "/creators/avatars/colejaczko.webp",
+     "tools": []
+    },
+    {
+     "no": 85,
+     "handle": "handotdev",
+     "name": "Han Wang",
+     "followers": 11850,
+     "section": "article-writers",
+     "descriptor": "Building developer docs as a Mintlify co-founder",
+     "avatar": "/creators/avatars/handotdev.webp",
+     "tools": []
+    },
+    {
+     "no": 86,
+     "handle": "zodchiii",
+     "name": "darkzodchi",
+     "followers": 29200,
+     "section": "article-writers",
+     "descriptor": "An AI entrepreneur sharing what he learns while building",
+     "avatar": "/creators/avatars/zodchiii.webp",
+     "tools": []
+    },
+    {
+     "no": 87,
+     "handle": "Tanimal",
+     "name": "🦣Tanimal",
+     "followers": 7454,
+     "section": "article-writers",
+     "descriptor": "Relentless optimism about life and work",
+     "avatar": "/creators/avatars/Tanimal.webp",
+     "tools": []
+    },
+    {
+     "no": 88,
+     "handle": "CoachDanGo",
+     "name": "Dan Go",
+     "followers": 1237254,
+     "section": "article-writers",
+     "descriptor": "Fat loss and body optimization for entrepreneurs",
+     "avatar": "/creators/avatars/CoachDanGo.webp",
+     "tools": []
+    },
+    {
+     "no": 89,
+     "handle": "DrDominicNg",
+     "name": "Dr. Dominic Ng",
+     "followers": 41831,
+     "section": "article-writers",
+     "descriptor": "A neuroscientist sharing ways to build a healthier brain",
+     "avatar": "/creators/avatars/DrDominicNg.webp",
+     "tools": []
+    },
+    {
+     "no": 90,
+     "handle": "tiffhuangx",
+     "name": "tiff",
+     "followers": 15530,
+     "section": "article-writers",
+     "descriptor": "Essays on Asian culture, Puerto Rico and the idea of home",
+     "avatar": "/creators/avatars/tiffhuangx.webp",
+     "tools": []
+    },
+    {
+     "no": 91,
+     "handle": "Alfred_Lin",
+     "name": "Alfred Lin",
+     "followers": 151043,
+     "section": "article-writers",
+     "descriptor": "Sequoia partner on working with founders from idea to IPO",
+     "avatar": "/creators/avatars/Alfred_Lin.webp",
+     "tools": []
+    },
+    {
+     "no": 92,
+     "handle": "it_unprofession",
+     "name": "IT Unprofessional",
+     "followers": 79169,
+     "section": "article-writers",
+     "descriptor": "IT humor from 25+ years of turning it off and on again",
+     "avatar": "/creators/avatars/it_unprofession.webp",
+     "tools": []
+    },
+    {
+     "no": 93,
+     "handle": "RohOnChain",
+     "name": "Roan",
+     "followers": 81525,
+     "section": "article-writers",
+     "descriptor": "AI agents, LLMs and quant systems for prediction markets and crypto",
+     "avatar": "/creators/avatars/RohOnChain.webp",
+     "tools": []
+    },
+    {
+     "no": 94,
+     "handle": "cyrilXBT",
+     "name": "CyrilXBT",
+     "followers": 197303,
+     "section": "article-writers",
+     "descriptor": "Building and writing about AI agents and crypto",
+     "avatar": "/creators/avatars/cyrilXBT.webp",
+     "tools": []
+    },
+    {
+     "no": 95,
+     "handle": "philhchen",
+     "name": "Phil Chen",
+     "followers": 18660,
+     "section": "article-writers",
+     "descriptor": "Building something new after AI research at top labs",
+     "avatar": "/creators/avatars/philhchen.webp",
+     "tools": []
+    },
+    {
+     "no": 96,
+     "handle": "albeik",
+     "name": "Haitham Al-Beik",
+     "followers": 260,
+     "section": "article-writers",
+     "descriptor": "A people-first, intuitive, automated world",
+     "avatar": "/creators/avatars/albeik.webp",
+     "tools": []
+    },
+    {
+     "no": 97,
+     "handle": "zaygranet",
+     "name": "Isaiah Granet",
+     "followers": 5068,
+     "section": "article-writers",
+     "descriptor": "Building voice AI at Bland",
+     "avatar": "/creators/avatars/zaygranet.webp",
+     "tools": []
+    },
+    {
+     "no": 98,
+     "handle": "jaynitx",
+     "name": "Jaynit",
+     "followers": 60094,
+     "section": "article-writers",
+     "descriptor": "Personal-brand building for VCs and founders, plus self-improvement",
+     "avatar": "/creators/avatars/jaynitx.webp",
+     "tools": []
+    }
+   ]
+  }
+ ]
+}

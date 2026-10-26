@@ -11,8 +11,11 @@ const rawDir = process.argv[2] || '/workspace/buzzraw';
 const queries = JSON.parse(fs.readFileSync(new URL('./buzz-queries.json', import.meta.url)));
 const outFile = new URL('../src/data/buzz.json', import.meta.url);
 const prev = fs.existsSync(outFile) ? JSON.parse(fs.readFileSync(outFile)) : { tools: {} };
-const json = (f) => { const s = fs.readFileSync(f, 'utf8'); const i = s.indexOf('{'); let d = 0;
-  for (let j = i; j < s.length; j++) { if (s[j] === '{') d++; else if (s[j] === '}' && --d === 0) return JSON.parse(s.slice(i, j + 1)); } };
+// Extract the first JSON object from an MCP result file. String-aware so braces inside post text don't break it.
+const json = (f) => { const s = fs.readFileSync(f, 'utf8'); const i = s.indexOf('{'); let d = 0, str = false, esc = false;
+  for (let j = i; j < s.length; j++) { const c = s[j];
+    if (str) { if (esc) esc = false; else if (c === '\\') esc = true; else if (c === '"') str = false; continue; }
+    if (c === '"') str = true; else if (c === '{') d++; else if (c === '}' && --d === 0) return JSON.parse(s.slice(i, j + 1)); } };
 
 const now = new Date();
 const tools = {};

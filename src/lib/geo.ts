@@ -32,6 +32,7 @@ export const PAIRS: [string, string][] = [
   ['chatgpt', 'claude'], ['claude', 'gemini'], ['perplexity', 'grok'], ['cursor', 'github-copilot'], ['cursor', 'windsurf'],
   ['claude-code', 'codex'], ['lovable', 'bolt'], ['n8n', 'zapier'], ['midjourney', 'ideogram'], ['canva', 'figma'],
   ['runway', 'kling-ai'], ['heygen', 'synthesia'],
+  ['kimi', 'claude'], ['chatgpt', 'grok'], ['claude-code', 'opencode'], ['base44', 'lovable'], ['kling-ai', 'higgsfield'], ['capcut', 'descript'], ['suno', 'elevenlabs'],
 ];
 export const vsSlug = (a: string, b: string) => `${a}-vs-${b}`;
 export const getPairs = () => PAIRS.map(([a, b]) => ({ slug: vsSlug(a, b), a: getTool(a)!, b: getTool(b)! })).filter((p) => p.a && p.b);

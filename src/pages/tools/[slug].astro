@@ -1,5 +1,5 @@
 ---
-import SubStrip from '../../components/SubStrip.astro';
+import SubStrip from '../../components/SubStrip.astro'; import BadgeSnippet from '../../components/BadgeSnippet.astro';
 import Base from '../../layouts/Base.astro'; import Shell from '../../components/Shell.astro';
 import { getTools, getTool, outUrl, goUrl, hkt, LABEL, getCommunity, toolsIn, byBuzz, velText, type Tool } from '../../lib/data'; import { appLd, faqLd, crumbsLd } from '../../lib/ld'; import { pairsFor } from '../../lib/geo';
 export const getStaticPaths = () => getTools().map((t) => ({ params: { slug: t.slug }, props: { t } }));
@@ -50,6 +50,7 @@ const faq: [string, string][] = [
   {vs.length > 0 && <><h2>Comparisons</h2><ul>{vs.map((p) => <li><a href={`/vs/${p.slug}`}>{p.a.name} vs {p.b.name}</a></li>)}</ul></>}
   {cat && <p>See all: <a href={`/best/${cat.slug}`}>best AI tools for {cat.name.toLowerCase()}</a> · <a href="/trending">trending AI tools today</a></p>}
   <h2>FAQ</h2>{faq.map(([q, a]) => <><h3>{q}</h3><p>{a}</p></>)}
+  <details id="badge"><summary><b>Get your badge</b>: maker of {t.name}? Add a free "Featured on toolhype" badge</summary><BadgeSnippet slug={t.slug} name={t.name} /><p class="muted"><a href="/badge">About the badge</a></p></details>
   <SubStrip place="tool-page" title="Never miss the next hot tool" sub="Weekly: what's hyped on X, and what's worth it."/>
   <h2>Discussion</h2><p class="muted">Comments are coming with sign-in.</p>
 </article></Shell></Base>

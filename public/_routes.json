@@ -1,1 +1,1 @@
-{"version":1,"include":["/*"],"exclude":["/_astro/*","/logos/*","/og/*","/favicon.svg","/aman.webp","/stats-geo.json"]}
+{"version":1,"include":["/*"],"exclude":["/_astro/*","/logos/*","/og/*","/favicon.svg","/aman.webp","/stats-geo.json","/badge/*.svg"]}

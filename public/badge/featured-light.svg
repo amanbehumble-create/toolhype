@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="220" height="54" viewBox="0 0 220 54" role="img" aria-label="Featured on toolhype">
+<title>Featured on toolhype</title>
+<rect x="0.5" y="0.5" width="219" height="53" rx="12" fill="#ffffff" stroke="#e0e0e0"/>
+<g transform="translate(14 13)"><rect width="28" height="28" rx="8" fill="#00bbff"/><path d="M16 5 8 16h6l-2 8 8-11h-6z" fill="#000"/></g>
+<text x="54" y="22" font-family="system-ui,-apple-system,Segoe UI,Roboto,sans-serif" font-size="10" font-weight="600" letter-spacing=".08em" fill="#616161">FEATURED ON</text>
+<text x="54" y="40" font-family="system-ui,-apple-system,Segoe UI,Roboto,sans-serif" font-size="19" font-weight="700" fill="#000000">toolhype</text>
+<text x="139" y="40" font-family="system-ui,-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#616161">.dev</text>
+</svg>

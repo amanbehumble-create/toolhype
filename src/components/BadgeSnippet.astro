@@ -1,0 +1,21 @@
+---
+const { slug, name } = Astro.props as { slug?: string; name?: string };
+const page = `https://toolhype.dev/tools/${slug ?? 'your-tool'}`;
+const alt = name ? `${name} is featured on toolhype` : 'Featured on toolhype';
+const html = (v: string) => `<a href="${page}" target="_blank"><img src="https://toolhype.dev/badge/featured-${v}.svg" alt="${alt}" width="220" height="54" /></a>`;
+const md = (v: string) => `[![${alt}](https://toolhype.dev/badge/featured-${v}.svg)](${page})`;
+---
+<div class="badge-snip">
+  <div style="display:flex;gap:.75rem;flex-wrap:wrap;align-items:center;margin:.5rem 0">
+    <img src="/badge/featured-light.svg" alt="Featured on toolhype badge (light)" width="220" height="54" loading="lazy" />
+    <img src="/badge/featured-dark.svg" alt="Featured on toolhype badge (dark)" width="220" height="54" loading="lazy" />
+  </div>
+  {['light', 'dark'].map((v) => <>
+    <p class="muted" style="margin:.4rem 0 .2rem;font-size:.85rem">HTML ({v})</p>
+    <pre style="white-space:pre-wrap;word-break:break-all"><code>{html(v)}</code></pre>
+    <button class="btn" type="button" data-copy={html(v)} onclick="navigator.clipboard.writeText(this.dataset.copy).then(()=>{this.textContent='Copied!'})">Copy HTML</button>
+    <p class="muted" style="margin:.4rem 0 .2rem;font-size:.85rem">Markdown ({v})</p>
+    <pre style="white-space:pre-wrap;word-break:break-all"><code>{md(v)}</code></pre>
+    <button class="btn" type="button" data-copy={md(v)} onclick="navigator.clipboard.writeText(this.dataset.copy).then(()=>{this.textContent='Copied!'})">Copy Markdown</button>
+  </>)}
+</div>

@@ -1,0 +1,19 @@
+---
+import Base from '../../layouts/Base.astro'; import Shell from '../../components/Shell.astro'; import BadgeSnippet from '../../components/BadgeSnippet.astro';
+import { getTools } from '../../lib/data'; import { crumbsLd, faqLd } from '../../lib/ld';
+const faq: [string, string][] = [
+  ['Is the Featured on toolhype badge free?', 'Yes. Any tool listed on toolhype can use it for free. There is no payment, sign-up or tracking pixel; it is a plain SVG image.'],
+  ['Where should the badge link?', "To your tool's own toolhype page (toolhype.dev/tools/your-tool). The snippet on your tool page already has the right link."],
+  ['Does the badge affect my ranking?', 'No. Rankings come from community upvotes and the Live X Buzz Score only.'],
+];
+---
+<Base title="Featured on toolhype badge for makers" description="Free 'Featured on toolhype' badge for listed AI tools. Light and dark SVG, copy-paste HTML and Markdown, no tracking." jsonld={[faqLd(faq), crumbsLd([['Home', '/'], ['Badge', '/badge']])]}>
+<Shell><article class="card prose">
+  <h1>Featured on toolhype badge</h1>
+  <p class="answer"><b>Short answer:</b> if your tool is listed on toolhype, add this free badge to your site or README. Open your tool's page and copy the snippet from "Get your badge", or swap <code>your-tool</code> below for your slug.</p>
+  <BadgeSnippet />
+  <p class="muted">Light and dark SVGs: <a href="/badge/featured-light.svg">/badge/featured-light.svg</a> · <a href="/badge/featured-dark.svg">/badge/featured-dark.svg</a>. Plain images with no tracking. Not listed yet? <a href="/submit">Submit your tool free</a>.</p>
+  <h2>Find your tool</h2>
+  <ul style="columns:2">{getTools().map((t) => <li><a href={`/tools/${t.slug}#badge`}>{t.name}</a></li>)}</ul>
+  <h2>FAQ</h2>{faq.map(([q, a]) => <><h3>{q}</h3><p>{a}</p></>)}
+</article></Shell></Base>

@@ -576,6 +576,73 @@
           "likesAsOf": "2026-10-23 HKT"
         }
       ]
+    },
+    {
+      "n": 4,
+      "slug": "issue-4",
+      "title": "Prompt Drop #4: 5 AI prompts X actually loved (100+ likes each)",
+      "date": "2026-10-26",
+      "intro": "This week's running pool. Every prompt comes from an X post with at least 100 likes, and we checked each like count on X ourselves. Copy one, swap any [brackets] or details for your own, paste it into the AI, done. More get added through the week.",
+      "rule": "Only prompts from X posts with 100+ likes (checked with X data). The prompt text appears word for word in the post or in the author's own thread.",
+      "prompts": [
+        {
+          "title": "Copy the style of any image as a reusable JSON file",
+          "category": "Image",
+          "tool": "Gemini (works best in Google AI Studio)",
+          "prompt": "extract this visual style as JSON structured data: colors, typography, composition, effects... make it ultra detailed",
+          "why": "Paste an image you like into Gemini with this one line. Save the JSON it gives you, then paste it next to any new image prompt to get the same look again.",
+          "source": "https://x.com/EXM7777/status/2113998207097450723",
+          "author": "@EXM7777",
+          "likes": 466,
+          "likesAsOf": "Oct 26, 2026 HKT"
+        },
+        {
+          "title": "A calm, no-fluff AI that thinks from first principles",
+          "category": "Chat",
+          "tool": "ChatGPT, Claude, Grok, Gemini or Grok Bot (paste as custom instructions)",
+          "prompt": "You are a 200 IQ reasoning machine. You think and speak like Mike Ehrmantraut: calm, direct, no wasted words.\n\nYou don't perform enthusiasm. You say what needs saying and stop. Dry humor is fine. Warmth comes through competence and honesty, not pleasantries.\n\nThink from first principles. Break problems down to their moving parts before answering. Don't pattern-match to conventional wisdom: figure out what's actually true. If my reasoning is wrong, say so plainly.\n\nNo em dashes. No bullet-point walls unless I ask for a list.\nNo \"Great question!\" or \"Absolutely!\" or any filler affirmations.\nNo hedging preambles (\"It's worth noting that...\"). Just say the thing.\nKeep paragraphs short. White space is your friend.\n\nYou're direct, not robotic. Think \"guy who knows what he's talking about and respects you enough to not bullshit you.\" Not \"emotionless terminal output.\"",
+          "why": "Paste it into your AI's custom instructions (or as the first message) and answers get shorter, more honest and less sugary. It will also tell you when your reasoning is wrong.",
+          "source": "https://x.com/EXM7777/status/2113692938236748065",
+          "author": "@EXM7777",
+          "likes": 907,
+          "likesAsOf": "Oct 26, 2026 HKT"
+        },
+        {
+          "title": "Expressive Chinese ink painting of anything (image)",
+          "category": "Image",
+          "tool": "ChatGPT, Gemini, Grok, or Midjourney",
+          "prompt": "A colorful Chinese ink painting of [subject], inspired by Qi Baishi's expressive brushwork, minimalist abstract composition, bold continuous brushstrokes, thick expressive ink lines, vibrant watercolor accents, exaggerated anatomy, [dramatic pose], [satirical facial expression], animated cartoon personality, playful distortion, dynamic perspective, humorous philosophical undertones, traditional Chinese freehand painting aesthetic, visible ink bleeding, organic brush textures, expressive movement, generous negative space, pure white background",
+          "why": "Fill in [subject], a pose and a funny expression (a cat, your dog, a chef), then paste it into any image model for a playful ink-and-watercolor painting.",
+          "source": "https://x.com/azed_ai/status/2113587252714729605",
+          "author": "@azed_ai",
+          "likes": 191,
+          "likesAsOf": "Oct 26, 2026 HKT"
+        },
+        {
+          "title": "One-shot bike courier chase in the rain (video)",
+          "category": "Video",
+          "tool": "Any text-to-video AI (the author used Kling 4.0)",
+          "prompt": "Create an ultra-photorealistic, intensely exhilarating 15-second cinematic action sequence following a bicycle courier racing through a crowded downtown street during a rainstorm. The ENTIRE VIDEO MUST BE ONE ABSOLUTELY UNBROKEN CONTINUOUS CAMERA SHOT, from the very first frame to the final frame. ZERO cuts, ZERO hidden edits, ZERO transitions, ZERO teleportation. Action must remain relentless throughout all 15 seconds, with absolutely no static establishing shots, pauses, or slow motion.0–3 seconds: BEGIN IMMEDIATELY IN VIOLENT MOTION. A bicycle tire blasts through a puddle while the rider leans sharply around a wet street corner. The camera rockets alongside the spinning wheel, rapidly rolls upward around the handlebars, and whips around the rider's shoulder as buses, taxis, and bright storefronts flash past. Water droplets strike the lens.3–6 seconds: A taxi begins pulling out from the curb. The rider brakes sharply and swerves through a clear gap with realistic tire grip and controlled body movement. The camera executes an incredibly fast 270-degree orbit around the moving bicycle, narrowly skimming past a parked vehicle before accelerating alongside the courier again.6–9 seconds: The courier bunny-hops over a broken drainage channel while loose cardboard sheets tumble across the bicycle lane in the wind. The camera plunges inches above the spinning chain and pedals, then swings upward around the rider as a bus sends an enormous curtain of water across the street.9–12 seconds: The rider bursts out of the spray, charges up a low curb ramp, and races toward a shop where the owner is lowering the metal shutter against the storm. The camera sweeps rapidly around the courier, revealing the glowing storefront reflected across the wet pavement.12–15 seconds: The courier executes a controlled sliding stop, snatches a waterproof envelope from the delivery bag, and passes it beneath the descending shutter. The shopkeeper catches it just in time. The camera violently swings around their hands, then rockets backward as the shutter slams shut and rainwater explodes across the pavement.Absolutely authentic physics, no superhero movements, natural human reactions, convincing wet-road traction, genuine urban sound, extraordinary foreground parallax, aggressive camera banking, and relentless acceleration. MAKE ORDINARY REALITY LOOK UNBELIEVABLY CINEMATIC WITHOUT MAKING IT LOOK FAKE. EXACTLY 15 SECONDS. ONE SINGLE COMPLETELY UNINTERRUPTED PHYSICAL CAMERA TAKE.",
+          "why": "No image needed: paste it into a text-to-video tool. It is long, but it spells out every 3-second beat and tells the model to keep one unbroken camera move, which is what makes these clips look real.",
+          "source": "https://x.com/umesh_ai/status/2113542849748926819",
+          "promptSource": "https://x.com/umesh_ai/status/2113542853221913018",
+          "author": "@umesh_ai",
+          "note": "From the author's reply under the main post (276 likes).",
+          "likes": 276,
+          "likesAsOf": "Oct 26, 2026 HKT"
+        },
+        {
+          "title": "Disney-style prince caricature (image)",
+          "category": "Image",
+          "tool": "ChatGPT, Gemini, Grok, or Midjourney",
+          "prompt": "A professional 3D caricature of [famous person] reimagined as a charming Disney-style [royal character], Pixar-inspired animated character design, recognizable facial features, exaggerated facial proportions, oversized expressive eyes, [facial expression], wearing [elaborate royal outfit], intricate gold embroidery, luxurious fabric textures, [confident pose], whimsical fairytale aesthetic, stylized realistic skin, detailed hair sculpting, cinematic studio lighting, Octane render, full-body composition, pure white background, ultra-detailed, premium animated movie quality",
+          "why": "Swap [famous person] for a friend, a pet or yourself (upload a photo), pick a royal role and outfit, and you get a Pixar-style 3D caricature on a clean background.",
+          "source": "https://x.com/azed_ai/status/2113947627419267370",
+          "author": "@azed_ai",
+          "likes": 145,
+          "likesAsOf": "Oct 26, 2026 HKT"
+        }
+      ]
     }
   ]
 }

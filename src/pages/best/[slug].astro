@@ -1,22 +1,35 @@
 ---
 import Base from '../../layouts/Base.astro'; import Shell from '../../components/Shell.astro';
-import { getCommunities, toolsIn, byBuzz, type Community } from '../../lib/data'; import { listLd, faqLd, crumbsLd } from '../../lib/ld';
+import { getCommunities, toolsIn, byBuzz, BUZZ_AT, hkt, type Community } from '../../lib/data'; import { getPairs } from '../../lib/geo'; import { listLd, faqLd, crumbsLd } from '../../lib/ld';
 export const getStaticPaths = () => getCommunities().map((c) => ({ params: { slug: c.slug }, props: { c } }));
 const { c } = Astro.props as { c: Community };
 const AI = c.slug === 'crypto' ? '' : 'AI ';
-const tools = [...toolsIn(c.slug)].sort(byBuzz); const year = new Date().getFullYear();
-const free = tools.filter((t) => t.pricing !== 'paid');
+const tools = [...toolsIn(c.slug)].sort(byBuzz);
+const month = new Date(BUZZ_AT).toLocaleDateString('en-US', { month: 'long', year: 'numeric', timeZone: 'Asia/Hong_Kong' });
+const free = tools.filter((t) => t.pricing !== 'paid' && !t.pricing.startsWith('paid'));
 const label = c.name.toLowerCase();
+const top = tools.slice(0, 3); const set = new Set(tools.map((t) => t.slug));
+const pairs = getPairs().filter((p) => set.has(p.a.slug) || set.has(p.b.slug));
+const sc = (t: any) => t.buzz.status === 'live' ? `${t.buzz.score}/100` : 'pending';
+const answer = top.length ? `The best ${AI}tools for ${label} right now are ${top.map((t) => `${t.name} (${t.pricing}, X buzz ${sc(t)})`).join(', ')}, ranked by live X buzz across ${tools.length} tools toolhype tracks.` : 'No tools listed yet.';
 const faq: [string, string][] = [
-  [`What is the best ${AI}tool for ${label}?`, tools.length ? `Based on toolhype's verdicts and live X buzz, top picks are ${tools.slice(0, 3).map((t) => `${t.name} (${t.verdict})`).join('; ')}.` : 'No tools listed yet.'],
+  [`What is the best ${AI}tool for ${label}?`, tools.length ? `${top[0].name} leads on live X buzz (${sc(top[0])}). ${top[0].verdict} Runners-up: ${top.slice(1).map((t) => t.name).join(' and ')}.` : 'No tools listed yet.'],
   [`Are there free ${AI}tools for ${label}?`, free.length ? `Yes: ${free.slice(0, 6).map((t) => `${t.name} (${t.pricing})`).join(', ')}.` : 'All tools listed here are currently paid.'],
-  [`How does toolhype rank ${label} tools?`, 'By community upvotes and the Live X Buzz Score, which measures how much a tool is being discussed on X. Featured listings are labelled and never affect ranking.'],
+  [`How does toolhype rank ${label} tools?`, `By the Live X Buzz Score (0-100), which measures how much each tool is discussed on X over the last 7 days, refreshed daily (last update ${hkt(BUZZ_AT)}). Featured listings are labelled and never affect ranking.`],
+  ...(pairs.length ? [[`How do the top ${label} tools compare?`, `See side-by-side comparisons: ${pairs.map((p) => `${p.a.name} vs ${p.b.name}`).join(', ')}.`] as [string, string]] : []),
 ];
 ---
-<Base title={`Best ${AI}tools for ${label} (${year})`} description={`The best ${AI}${label} tools in ${year}: ${tools.slice(0, 4).map((t) => t.name).join(', ')} and more, with honest one-line verdicts, pricing and live X buzz.`} ogImage={`/og/best-${c.slug}.png`} jsonld={[listLd(`Best ${AI}tools for ${label}`, tools), faqLd(faq), crumbsLd([['Home', '/'], ['Best ${AI}tools', '/best'], [c.name, `/best/${c.slug}`]])]}>
-<Shell active={c.slug}><article class="card prose">
-  <h1>Best {AI}tools for {label} ({year})</h1><p class="muted">{c.description} {tools.length} tools, sorted by live X buzz. Discuss in <a href={`/c/${c.slug}`}>c/{c.slug}</a>.</p>
-  <ol>{tools.map((t) => <li><h2 style="font-size:1.05rem;margin:.6rem 0 .2rem"><a href={`/tools/${t.slug}`}>{t.name}</a> <span class="chip">{t.pricing}</span>{t.buzz.status === 'live' && <span class="muted"> · X buzz {t.buzz.score}/100</span>}</h2><p style="margin:0">{t.verdict} <b>Use it if</b> {t.useThisIf}</p></li>)}</ol>
+<Base title={`Best ${AI}tools for ${label} (${month})`} description={`${answer} Pricing, verdicts and a comparison table.`} ogImage={`/og/best-${c.slug}.png`} jsonld={[listLd(`Best ${AI}tools for ${label}`, tools), faqLd(faq), crumbsLd([['Home', '/'], [`Best ${AI}tools`, '/best'], [c.name, `/best/${c.slug}`]])]}>
+<Shell active="best"><article class="card prose">
+  <h1>Best {AI}tools for {label} ({month})</h1>
+  <p class="answer"><b>Short answer:</b> {answer}</p>
+  <p class="muted">Updated {month} · buzz data {hkt(BUZZ_AT)} · {c.description} Discuss in <a href={`/c/${c.slug}`}>c/{c.slug}</a>.</p>
+  <h2>Comparison table</h2>
+  <div style="overflow-x:auto"><table><thead><tr><th>#</th><th>Tool</th><th>Pricing</th><th>X buzz</th><th>X posts (7d)</th><th>Best for</th></tr></thead>
+  <tbody>{tools.slice(0, 10).map((t, i) => <tr><td>{i + 1}</td><td><a href={`/tools/${t.slug}`}>{t.name}</a></td><td>{t.pricing}</td><td>{sc(t)}</td><td>{t.buzz.mentions7d?.toLocaleString('en-US') ?? '—'}</td><td>{t.useThisIf}</td></tr>)}</tbody></table></div>
+  <h2>Ranked list</h2>
+  <ol>{tools.map((t) => <li><h3 style="font-size:1.05rem;margin:.6rem 0 .2rem"><a href={`/tools/${t.slug}`}>{t.name}</a> <span class="chip">{t.pricing}</span>{t.buzz.status === 'live' && <span class="muted"> · X buzz {t.buzz.score}/100</span>}</h3><p style="margin:0"><b>Why:</b> {t.verdict} <b>Use it if</b> {t.useThisIf}</p></li>)}</ol>
+  {pairs.length > 0 && <><h2>Head-to-head comparisons</h2><ul>{pairs.map((p) => <li><a href={`/vs/${p.slug}`}>{p.a.name} vs {p.b.name}</a></li>)}</ul></>}
   <h2>FAQ</h2>{faq.map(([q, a]) => <><h3>{q}</h3><p>{a}</p></>)}
-  <p>More: {getCommunities().filter((x) => x.slug !== c.slug).map((x, i) => <>{i ? ' · ' : ''}<a href={`/best/${x.slug}`}>best {x.name.toLowerCase()} tools</a></>)} · <a href="/trending">trending today</a></p>
+  <p>More: {getCommunities().filter((x) => x.slug !== c.slug).map((x, i) => <>{i ? ' · ' : ''}<a href={`/best/${x.slug}`}>best {x.name.toLowerCase()} tools</a></>)} · <a href="/vs">all comparisons</a> · <a href="/trending">trending today</a></p>
 </article></Shell></Base>

@@ -1,8 +1,14 @@
 ---
 import Base from '../../layouts/Base.astro'; import Shell from '../../components/Shell.astro';
-import { getCommunities, toolsIn } from '../../lib/data'; import { crumbsLd } from '../../lib/ld';
+import { getCommunities, toolsIn, byBuzz, BUZZ_AT } from '../../lib/data'; import { crumbsLd, faqLd } from '../../lib/ld';
+const month = new Date(BUZZ_AT).toLocaleDateString('en-US', { month: 'long', year: 'numeric', timeZone: 'Asia/Hong_Kong' });
+const cats = getCommunities().map((c) => ({ c, tools: [...toolsIn(c.slug)].sort(byBuzz) })).filter((x) => x.tools.length);
+const faq: [string, string][] = cats.slice(0, 8).map(({ c, tools }) => [`What is the best AI tool for ${c.name.toLowerCase()}?`, `${tools[0].name}, by live X buzz, followed by ${tools.slice(1, 3).map((t) => t.name).join(' and ')}.`]);
 ---
-<Base title="Best AI tools by category" description="Hand-picked best AI tools for coding, agents, video, design, marketing, productivity, chat, audio and more, with one-line verdicts and live X buzz." jsonld={[crumbsLd([['Home', '/'], ['Best AI tools', '/best']])]}>
-<Shell><article class="card prose"><h1>Best AI tools by category</h1>
-<ul>{getCommunities().map((c) => <li><a href={`/best/${c.slug}`}><b>Best AI tools for {c.name.toLowerCase()}</b></a> ({toolsIn(c.slug).length} tools): {c.description}</li>)}</ul>
-<p>Or see <a href="/trending">trending AI tools today</a>.</p></article></Shell></Base>
+<Base title={`Best AI tools by category (${month})`} description="The best AI tools for coding, agents, video, design, marketing, productivity, chat and audio, ranked by live X buzz with pricing and verdicts." jsonld={[faqLd(faq), crumbsLd([['Home', '/'], ['Best AI tools', '/best']])]}>
+<Shell active="best"><article class="card prose"><h1>Best AI tools by category ({month})</h1>
+<p class="answer"><b>Short answer:</b> {cats.slice(0, 4).map(({ c, tools }) => `${tools[0].name} leads ${c.name.toLowerCase()}`).join(', ')}, based on toolhype's live X Buzz Score. Pick a category for the full ranking.</p>
+<p class="muted">Updated {month}.</p>
+<ul>{cats.map(({ c, tools }) => <li><a href={`/best/${c.slug}`}><b>Best AI tools for {c.name.toLowerCase()}</b></a> ({tools.length} tools): top picks {tools.slice(0, 3).map((t, i) => <>{i ? ', ' : ''}<a href={`/tools/${t.slug}`}>{t.name}</a></>)}</li>)}</ul>
+<h2>FAQ</h2>{faq.map(([q, a]) => <><h3>{q}</h3><p>{a}</p></>)}
+<p>Or see <a href="/vs">head-to-head comparisons</a> and <a href="/trending">trending AI tools today</a>.</p></article></Shell></Base>

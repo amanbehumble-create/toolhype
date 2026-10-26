@@ -31,8 +31,8 @@ const rows: [string, string, string][] = [
 ];
 ---
 <Base title={notes?.title ?? `${a.name} vs ${b.name}: pricing, use cases & buzz`} description={notes?.description ?? `${a.name} vs ${b.name} compared: ${a.pricing} vs ${b.pricing}, use cases and live X buzz. ${buzzLine}`} jsonld={[faqLd(faq), appLd(a), appLd(b), crumbsLd([['Home', '/'], ['Comparisons', '/vs'], [`${a.name} vs ${b.name}`, `/vs/${p.slug}`]])]}>
-<Shell><article class="card prose">
-  <h1>{a.name} vs {b.name}</h1>
+<Shell active="vs"><article class="card prose">
+  <h1>{a.name} vs {b.name}</h1><p class="muted">Updated {new Date(BUZZ_AT).toLocaleDateString("en-US", { month: "long", year: "numeric", timeZone: "Asia/Hong_Kong" })}</p>
   <p><b>Short answer:</b> {notes?.bottomLine ? <>{notes.bottomLine} </> : <>{summary} </>}{buzzLine}</p>
   {notes && <><h2>Key differences (checked {notes.checked})</h2>
   <table><thead><tr><th></th><th>{a.name}</th><th>{b.name}</th></tr></thead>

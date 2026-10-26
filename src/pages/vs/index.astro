@@ -3,6 +3,6 @@ import Base from '../../layouts/Base.astro'; import Shell from '../../components
 import { getPairs } from '../../lib/geo'; import { crumbsLd } from '../../lib/ld';
 ---
 <Base title="AI tool comparisons (X vs Y)" description="Side-by-side comparisons of popular AI tools: ChatGPT vs Claude, Cursor vs GitHub Copilot, n8n vs Zapier and more, with pricing, use cases and live X buzz." jsonld={[crumbsLd([['Home', '/'], ['Comparisons', '/vs']])]}>
-<Shell><article class="card prose"><h1>AI tool comparisons</h1>
+<Shell active="vs"><article class="card prose"><h1>AI tool comparisons</h1><p class="answer"><b>Short answer:</b> pick a pair below for a side-by-side table of pricing, use cases and live X buzz, plus a plain-English verdict on which to use.</p>
 <ul>{getPairs().map((p) => <li><a href={`/vs/${p.slug}`}><b>{p.a.name} vs {p.b.name}</b></a> ({p.a.category === p.b.category ? p.a.category : `${p.a.category} / ${p.b.category}`})</li>)}</ul>
 </article></Shell></Base>

@@ -30,7 +30,7 @@ const canonical = new URL(path, Astro.site);
 <button class="btn" data-track="theme" id="theme" aria-label="Toggle theme">◐</button></header>
 <slot/>
 <div class="subbar" id="subbar" role="region" aria-label="Newsletter"><b>✉️ The weekly AI tools drop</b><a class="btn primary" data-track="sub:subbar" href="https://adrians-newsletter-156c86.beehiiv.com/subscribe" target="_blank" rel="noopener">Subscribe</a><button class="x" aria-label="Dismiss" type="button">✕</button></div>
-<footer data-track-zone="footer">toolhype · <a href="/newsletter">Newsletter</a> · <a href="/prompts">Prompt Drop</a> · <a href="/grok-bot-agents">Grok Bot agents</a> · <a href="/rss.xml">RSS</a> · <a href="/trending">Trending AI tools today</a> · <a href="/hype">Most hyped this week</a> · <a href="/vs">Comparisons</a> · <a href="/best">Best AI tools by category</a> · <a href="/llms.txt">llms.txt</a> · Featured listings are labelled and never affect ranking.</footer>
+<footer data-track-zone="footer">toolhype · <a href="/newsletter">Newsletter</a> · <a href="/prompts">Prompt Drop</a> · <a href="/grok-bot-agents">Grok Bot agents</a> · <a href="/rss.xml">RSS</a> · <a href="/trending">Trending AI tools today</a> · <a href="/hype">Most hyped this week</a> · <a href="/vs">Comparisons</a> · <a href="/best">Best AI tools by category</a> · <a href="/badge">Featured on toolhype badge</a> · <a href="/llms.txt">llms.txt</a> · Featured listings are labelled and never affect ranking.</footer>
 <script>
 document.getElementById('theme')!.addEventListener('click',()=>{const d=document.documentElement;d.dataset.theme=d.dataset.theme==='dark'?'light':'dark';localStorage.setItem('th:theme',d.dataset.theme!)});
 {const b=document.getElementById('subbar')!;const k='th:subbar';

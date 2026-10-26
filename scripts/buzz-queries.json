@@ -138,5 +138,9 @@
   "seltlox": "(seltlox OR url:seltlox.com) -is:retweet",
   "kimi": "(\"Kimi K3.1\" OR \"Kimi K3\" OR url:kimi.com OR @Kimi_Moonshot) -is:retweet",
   "gemini-api-cli": "(\"Gemini API CLI\" OR \"gemini-api-cli\" OR \"gemini-api cli\") -is:retweet",
-  "agent-s4": "(\"Agent S4\" OR \"simular-ai/Agent-S\" OR (simular agent)) -is:retweet"
+  "agent-s4": "(\"Agent S4\" OR \"simular-ai/Agent-S\" OR (simular agent)) -is:retweet",
+  "nanbeige-4-3": "(nanbeige OR \"Nanbeige4.3\" OR \"Nanbeige4.3-33B\") -is:retweet",
+  "moli": "(lexmount OR \"lexmount/moli\" OR (moli (\"headless browser\" OR headless OR playwright OR cdp))) -is:retweet",
+  "llama-app": "(url:llama.app OR \"llama.app\" OR \"llama windows\" OR \"Llama-Windows\" OR (\"llama.cpp\" (\"menu bar\" OR \"system tray\" OR tray) app)) -is:retweet",
+  "hibi": "(url:hibi.garden OR \"hibi.garden\" OR \"schmayterling/hibi\" OR (hibi (obsidian OR typst OR latex OR \"writing app\"))) -is:retweet"
 }

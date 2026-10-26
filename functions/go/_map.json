@@ -138,5 +138,9 @@
  "seltlox": "https://seltlox.com/",
  "kimi": "https://www.kimi.com/",
  "gemini-api-cli": "https://github.com/google-gemini/gemini-api-cli",
- "agent-s4": "https://github.com/simular-ai/Agent-S"
+ "agent-s4": "https://github.com/simular-ai/Agent-S",
+ "nanbeige-4-3": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B",
+ "moli": "https://github.com/lexmount/moli",
+ "llama-app": "https://llama.app/",
+ "hibi": "https://www.hibi.garden/"
 }

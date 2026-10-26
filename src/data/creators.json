@@ -1,0 +1,196 @@
+{
+ "packs": [
+  {
+   "slug": "starter-pack-1",
+   "n": 1,
+   "title": "Self-growth & useful-resource creators on X",
+   "short": "98 X creators for builders, writers and thinkers",
+   "asOf": "2026-10-20",
+   "sections": [
+    {
+     "key": "essentials",
+     "n": "01",
+     "title": "Essentials"
+    },
+    {
+     "key": "strong-follows",
+     "n": "02",
+     "title": "Strong follows"
+    },
+    {
+     "key": "further-picks",
+     "n": "03",
+     "title": "Further picks"
+    },
+    {
+     "key": "article-writers",
+     "n": "04",
+     "title": "Article writers"
+    }
+   ],
+   "accounts": [
+    {
+     "no": 1,
+     "handle": "thedankoe",
+     "name": "DAN KOE",
+     "followers": 1044016,
+     "section": "essentials",
+     "descriptor": "Creator and marketer content systems; behind the content tool Eden",
+     "avatar": "/creators/avatars/thedankoe.webp",
+     "tools": []
+    },
+    {
+     "no": 2,
+     "handle": "levelsio",
+     "name": "@levelsio",
+     "followers": 978728,
+     "section": "essentials",
+     "descriptor": "Solo maker running a portfolio of indie products, shared with live revenue",
+     "avatar": "/creators/avatars/levelsio.webp",
+     "tools": []
+    },
+    {
+     "no": 3,
+     "handle": "gregisenberg",
+     "name": "GREG ISENBERG",
+     "followers": 746769,
+     "section": "essentials",
+     "descriptor": "Daily startup ideas, a startup-ideas podcast and a studio that builds companies",
+     "avatar": "/creators/avatars/gregisenberg.webp",
+     "tools": []
+    },
+    {
+     "no": 4,
+     "handle": "SahilBloom",
+     "name": "Sahil Bloom",
+     "followers": 1188577,
+     "section": "essentials",
+     "descriptor": "Bestselling author on the many forms of wealth and designing a good life",
+     "avatar": "/creators/avatars/SahilBloom.webp",
+     "tools": []
+    },
+    {
+     "no": 5,
+     "handle": "JamesClear",
+     "name": "James Clear",
+     "followers": 1435098,
+     "section": "essentials",
+     "descriptor": "Atomic Habits author writing on building good habits; 3-2-1 newsletter",
+     "avatar": "/creators/avatars/JamesClear.webp",
+     "tools": []
+    },
+    {
+     "no": 6,
+     "handle": "naval",
+     "name": "Naval",
+     "followers": 4124779,
+     "section": "essentials",
+     "descriptor": "Compressed one-liners on wealth, leverage and happiness",
+     "avatar": "/creators/avatars/naval.webp",
+     "tools": []
+    },
+    {
+     "no": 7,
+     "handle": "rowancheung",
+     "name": "Rowan Cheung",
+     "followers": 601343,
+     "section": "essentials",
+     "descriptor": "The Rundown AI founder sharing the latest developments in AI",
+     "avatar": "/creators/avatars/rowancheung.webp",
+     "tools": []
+    },
+    {
+     "no": 8,
+     "handle": "emollick",
+     "name": "Ethan Mollick",
+     "followers": 405933,
+     "section": "essentials",
+     "descriptor": "Wharton professor studying how AI changes work, with a Substack and books",
+     "avatar": "/creators/avatars/emollick.webp",
+     "tools": []
+    },
+    {
+     "no": 9,
+     "handle": "karpathy",
+     "name": "Andrej Karpathy",
+     "followers": 4380303,
+     "section": "essentials",
+     "descriptor": "Deep but accessible AI explainers; coined \"vibe coding\"",
+     "avatar": "/creators/avatars/karpathy.webp",
+     "tools": []
+    },
+    {
+     "no": 10,
+     "handle": "minchoi",
+     "name": "Min Choi",
+     "followers": 391661,
+     "section": "essentials",
+     "descriptor": "What's wild and practical in AI right now, shown through builds",
+     "avatar": "/creators/avatars/minchoi.webp",
+     "tools": []
+    },
+    {
+     "no": 11,
+     "handle": "dickiebush",
+     "name": "Dickie Bush",
+     "followers": 447109,
+     "section": "essentials",
+     "descriptor": "Digital writing, internet business and personal growth; runs Ship 30",
+     "avatar": "/creators/avatars/dickiebush.webp",
+     "tools": []
+    },
+    {
+     "no": 12,
+     "handle": "Nicolascole77",
+     "name": "Nicolas Cole 🚢👻",
+     "followers": 228146,
+     "section": "essentials",
+     "descriptor": "The art and business of writing online and owning a niche",
+     "avatar": "/creators/avatars/Nicolascole77.webp",
+     "tools": []
+    },
+    {
+     "no": 13,
+     "handle": "jackbutcher",
+     "name": "@jackbutcher",
+     "followers": 353407,
+     "section": "essentials",
+     "descriptor": "Visual symbols and one-liners on creativity, from Visualize Value",
+     "avatar": "/creators/avatars/jackbutcher.webp",
+     "tools": []
+    },
+    {
+     "no": 14,
+     "handle": "ridd_design",
+     "name": "Ridd 🤿",
+     "followers": 76913,
+     "section": "essentials",
+     "descriptor": "Product-design craft and learning, from the builder behind Dive Club",
+     "avatar": "/creators/avatars/ridd_design.webp",
+     "tools": []
+    },
+    {
+     "no": 15,
+     "handle": "george__mack",
+     "name": "George Mack",
+     "followers": 310564,
+     "section": "essentials",
+     "descriptor": "Essays and threads on agency as a core trait; author of 'High Agency'",
+     "avatar": "/creators/avatars/george__mack.webp",
+     "tools": []
+    },
+    {
+     "no": 16,
+     "handle": "lennysan",
+     "name": "Lenny Rachitsky",
+     "followers": 453948,
+     "section": "essentials",
+     "descriptor": "Deeply researched product, growth and career advice",
+     "avatar": "/creators/avatars/lennysan.webp",
+     "tools": []
+    }
+   ],
+   "total": 98
+  }
+ ]
+}

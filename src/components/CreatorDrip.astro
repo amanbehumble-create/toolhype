@@ -1,0 +1,31 @@
+---
+// Values below are static fallbacks; functions/creators/[[path]].ts fills them per request.
+const { full = false } = Astro.props;
+---
+<div class="w98-fomo"><b>🔓 New creator unlocked every day until Dec 31</b> · <span data-drip-revealed>16</span>/98 revealed · next drop in <span class="drip-cd" data-drip-next="">soon</span></div>
+{full && <div class="w98-desk">
+  <section class="w98" id="daily-drops"><div class="w98-bar"><span>📅 Daily drops.exe</span><span class="w98-btns" aria-hidden="true"><i>_</i><i>□</i><i>×</i></span></div><div class="w98-body">
+    <ul class="w98-list" data-drip-list>
+      <li class="w98-item" data-drip-empty><div><b>First drop: tomorrow, 00:00 HKT</b><p>One new creator unlocks here every day. Come back tomorrow, or sign up below.</p></div></li>
+      <li class="w98-item w98-locked" data-drip-locked><div class="w98-blur" aria-hidden="true"><b>████████ ██████</b><small>@█████████ · ███K followers</small><p>███████ ██ ███ ██████ ████ ███ █████████ ██ ████</p></div><div class="w98-lock">🔒 Next creator drops in <b class="drip-cd" data-drip-next="">soon</b></div></li>
+    </ul>
+    <p data-drip-done style="margin:6px 0 0">🎉 All 98 creators are unlocked.</p>
+  </div></section>
+</div>}
+<script>
+  const tick = () => document.querySelectorAll<HTMLElement>('[data-drip-next]').forEach((el) => {
+    let t = Number(el.dataset.dripNext);
+    if (!t) { const d = new Date(Date.now() + 8 * 3600e3); d.setUTCHours(24, 0, 0, 0); t = d.getTime() - 8 * 3600e3; }
+    const s = Math.max(0, Math.floor((t - Date.now()) / 1000));
+    el.textContent = s ? `${String(Math.floor(s / 3600)).padStart(2, '0')}:${String(Math.floor(s / 60) % 60).padStart(2, '0')}:${String(s % 60).padStart(2, '0')}` : 'now, refresh!';
+  });
+  tick(); setInterval(tick, 1000);
+</script>
+<style is:global>
+.w98-fomo{background:#ffffe1;border:1px solid #000;color:#000;padding:6px 10px;margin:0 0 .8rem;font:13px Tahoma,Arial,sans-serif}
+.w98-fomo .drip-cd,.w98-lock .drip-cd{font-family:monospace}
+.w98-locked{position:relative;overflow:hidden}
+.w98-blur{filter:blur(4px);user-select:none}
+.w98-lock{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(192,192,192,.6);font-size:13px}
+.w98-new{background:#c00;color:#fff;font-size:10px;padding:1px 4px;margin-left:4px}
+</style>

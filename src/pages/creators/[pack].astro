@@ -1,22 +1,24 @@
 ---
 import Base from '../../layouts/Base.astro'; import Shell from '../../components/Shell.astro'; import Win98 from '../../components/Win98.astro';
-import { getPacks, fmtK, toolName, creatorsListLd } from '../../lib/creators'; import { crumbsLd, faqLd } from '../../lib/ld';
+import { getPacks, fmtK, toolName, creatorsListLd, DRIP_TOTAL } from '../../lib/creators'; import CreatorDrip from '../../components/CreatorDrip.astro'; import CreatorsCTA from '../../components/CreatorsCTA.astro'; import { crumbsLd, faqLd } from '../../lib/ld';
 export function getStaticPaths() { return getPacks().map((p) => ({ params: { pack: p.slug }, props: { p } })); }
 const { p } = Astro.props;
 const title = `Starter Pack #${p.n}: ${p.title}`;
 const top = p.accounts.filter((c) => c.section === p.sections[0].key).slice(0, 5).map((c) => c.name.replace(/^@/, ''));
+const ess = p.accounts.filter((c) => c.section === 'essentials');
 const faq: [string, string][] = [
-  [`Who should I follow on X for ${p.title.toLowerCase().replace(' on x', '')}?`, `Start with the ${p.sections[0].title} window: ${top.join(', ')} and the rest of the ${p.accounts.filter((c) => c.section === p.sections[0].key).length} essentials. Then work through ${p.sections.slice(1).map((s) => s.title).join(', ')}.`],
+  ['When are the other creators revealed?', `One new creator unlocks every day at midnight Hong Kong time until Dec 31. ${ess.length} of ${DRIP_TOTAL} are live now, starting with the Essentials.`],
+  [`Who should I follow on X for ${p.title.toLowerCase().replace(' on x', '')}?`, `Start with the ${p.sections[0].title} window: ${top.join(', ')} and the rest of the ${ess.length} essentials. New picks unlock daily below.`],
   ['Are follower counts live?', `No. They are a snapshot from ${p.asOf}.`],
 ];
 ---
-<Base title={`${title} (${p.accounts.length} accounts)`} description={`${p.accounts.length} hand-picked X creators for builders, writers and thinkers: ${top.join(', ')} and more, with one-line summaries. Retro Windows 98 directory.`} jsonld={[creatorsListLd(title, p.accounts), faqLd(faq), crumbsLd([['Home', '/'], ['X Creators', '/creators'], [`Starter Pack #${p.n}`, `/creators/${p.slug}`]])]}>
+<Base title={`${title}: ${ess.length} essentials + a new creator daily`} description={`${ess.length} essential X creators for builders, writers and thinkers: ${top.join(', ')} and more, with one-line summaries, and a new creator unlocked every day until Dec 31. Retro Windows 98 directory.`} jsonld={[creatorsListLd(title, p.accounts), faqLd(faq), crumbsLd([['Home', '/'], ['X Creators', '/creators'], [`Starter Pack #${p.n}`, `/creators/${p.slug}`]])]}>
 <Shell active="creators"><article class="card prose">
   <p class="muted"><a href="/creators">X Creators</a> › Starter Pack #{p.n}</p>
   <h1>{title}</h1>
-  <p class="answer"><b>Short answer:</b> {p.accounts.length} X accounts worth following, in four windows. Start with {top.slice(0, 3).join(', ')} in {p.sections[0].title}, then go deeper. Every card links straight to the creator's X profile.</p>
-  <p>{p.sections.map((s) => <a class="w98-btn" href={`#${s.key}`}>{s.n} {s.title} ({p.accounts.filter((c) => c.section === s.key).length})</a>)}</p>
-  <div class="w98-desk">{p.sections.map((s) => (
+  <p class="answer"><b>Short answer:</b> start with these {ess.length} essential X accounts, like {top.slice(0, 3).join(', ')}. The rest of the {DRIP_TOTAL}-creator pack unlocks one per day. Every card links straight to the creator's X profile.</p>
+  <CreatorDrip />
+  <div class="w98-desk">{p.sections.slice(0, 1).map((s) => (
     <Win98 id={s.key} title={`${s.n} ${s.title}.exe`}>
       <ul class="w98-list">{p.accounts.filter((c) => c.section === s.key).map((c) => (
         <li class="w98-item" id={c.handle}>
@@ -28,6 +30,8 @@ const faq: [string, string][] = [
       </ul>
     </Win98>))}
   </div>
+  <CreatorDrip full />
+  <CreatorsCTA source={`creators/${p.slug}`} />
   <p class="muted">Follower figures are a {p.asOf} snapshot. Avatars from public X profiles. Summaries are our own one-liners from public bios. Missing someone? <a href="https://x.com/amanbehumble" rel="noopener">Tell us on X</a>.</p>
   <h2>FAQ</h2>{faq.map(([q, a]) => <><h3>{q}</h3><p>{a}</p></>)}
 </article></Shell></Base>

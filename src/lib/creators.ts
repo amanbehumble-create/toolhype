@@ -9,3 +9,6 @@ export const creatorsListLd = (name: string, list: Creator[]) => ({
   '@context': 'https://schema.org', '@type': 'ItemList', name, numberOfItems: list.length,
   itemListElement: list.map((c, i) => ({ '@type': 'ListItem', position: i + 1, item: { '@type': 'Person', name: c.name, alternateName: '@' + c.handle, url: `https://x.com/${c.handle}`, description: c.descriptor } })),
 });
+// Daily drip: non-Essentials creators live in D1 `creator_drip` (not in the repo or static build) and are
+// revealed one per day at 00:00 HKT by functions/creators/[[path]].ts. Static HTML only has Essentials.
+export const DRIP_TOTAL = 98;

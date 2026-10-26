@@ -1,6 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro'; import Shell from '../../components/Shell.astro'; import Win98 from '../../components/Win98.astro';
-import { getPacks } from '../../lib/creators'; import { crumbsLd, faqLd } from '../../lib/ld';
+import { getPacks, DRIP_TOTAL } from '../../lib/creators'; import CreatorDrip from '../../components/CreatorDrip.astro'; import CreatorsCTA from '../../components/CreatorsCTA.astro'; import { crumbsLd, faqLd } from '../../lib/ld';
 const packs = getPacks();
 const faq: [string, string][] = [
   ['What is an X creator starter pack?', 'A hand-curated list of X (Twitter) accounts worth following on one theme, grouped from must-follow essentials to deeper picks, with a one-line summary of what each person posts.'],
@@ -11,13 +11,15 @@ const ld = { '@context': 'https://schema.org', '@type': 'ItemList', name: 'X cre
 <Base title="X creator starter packs: curated accounts to follow" description="Curated starter packs of X (Twitter) creators worth following for builders, writers and AI people, in a retro Windows 98 directory." jsonld={[ld, faqLd(faq), crumbsLd([['Home', '/'], ['X Creators', '/creators']])]}>
 <Shell active="creators"><article class="card prose">
   <h1>X creator starter packs</h1>
-  <p class="answer"><b>Short answer:</b> hand-picked lists of X accounts worth following, each with a one-line summary of what they post. Starter Pack #1 covers {packs[0].accounts.length} creators for builders, writers and thinkers, from Naval and Andrej Karpathy to levelsio.</p>
+  <p class="answer"><b>Short answer:</b> hand-picked lists of X accounts worth following, each with a one-line summary of what they post. Starter Pack #1 starts with {packs[0].accounts.length} essential creators for builders, writers and thinkers, and a new one unlocks every day until Dec 31 ({DRIP_TOTAL} in total).</p>
+  <CreatorDrip />
   <div class="w98-desk">{packs.map((p) => (
     <Win98 title={`📁 Starter Pack #${p.n}.exe`}>
-      <p style="margin:0 0 6px"><b>{p.title}</b><br/>{p.short}. Snapshot {p.asOf}.</p>
+      <p style="margin:0 0 6px"><b>{p.title}</b><br/>{p.accounts.length} essentials live, new creator daily. Snapshot {p.asOf}.</p>
       <p style="display:flex;gap:4px;margin:0 0 6px">{p.accounts.slice(0, 12).map((c) => <img src={c.avatar} alt={c.name} width="32" height="32" loading="lazy" style="border:1px solid #808080"/>)}</p>
       <a class="w98-btn" href={`/creators/${p.slug}`}>Open ▸</a>
     </Win98>))}
   </div>
+  <CreatorsCTA source="creators" />
   <h2>FAQ</h2>{faq.map(([q, a]) => <><h3>{q}</h3><p>{a}</p></>)}
 </article></Shell></Base>

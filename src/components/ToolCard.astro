@@ -1,6 +1,6 @@
 ---
 import type { Tool } from '../lib/data';
-import { LABEL } from '../lib/data';
+import { LABEL, velText } from '../lib/data';
 const { tool: t, isNew = false } = Astro.props as { tool: Tool; isNew?: boolean };
 const b = t.buzz;
 // Where the daily scan found it (seed = the original hand-picked list, so no label).
@@ -17,7 +17,7 @@ const via = SRC[t.source];
       {t.useCases.map((c) => <a class="chip c" href={`/c/${c}`}>c/{c}</a>)}
       <span class="chip">{t.pricing}</span>
       {b.status === 'live'
-        ? <a class:list={['buzz', b.label]} href={`/tools/${t.slug}#buzz`} title={`X Buzz Score ${b.score}/100 · ${b.mentions24h} posts in 24h · ${b.mentions7d} in 7d · ${b.velocity}× velocity`}>{b.label === 'hype' ? '🔥' : 'X'} {b.score}<span class="lbl">{LABEL[b.label!]}</span></a>
+        ? <a class:list={['buzz', b.label]} href={`/tools/${t.slug}#buzz`} title={`X Buzz Score ${b.score}/100 · ${b.mentions24h} posts in 24h · ${b.mentions7d} in 7d · ${velText(b) === 'new' ? 'new this week' : velText(b) + ' velocity'}`}>{b.label === 'hype' ? '🔥' : 'X'} {b.score}<span class="lbl">{LABEL[b.label!]}</span></a>
         : <span class="chip" title="X Buzz Score not computed yet">X buzz: pending</span>}
       <span>added {t.addedAt}{via && <> · via {via}</>}</span>
     </div>

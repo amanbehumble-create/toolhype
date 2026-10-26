@@ -3865,5 +3865,116 @@
       "updatedAt": null
     },
     "logo": "/logos/agent-s4.png"
+  },
+  {
+    "slug": "nanbeige-4-3",
+    "name": "Nanbeige4.3-33B",
+    "url": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B",
+    "affiliateUrl": null,
+    "category": "coding",
+    "useCases": [
+      "coding",
+      "agents"
+    ],
+    "pricing": "open-source",
+    "verdict": "Nanbeige LLM Lab's (BOSS Zhipin) open-weight 33B model, Apache-2.0, released Oct 25, 2026 with a 512K context. Built for agentic coding and office \"cowork\" tasks; its own tables show 80.9 on Terminal-Bench 2.1 vs 73.0 for Qwen3.8-27B, but every number is self-reported so far. Needs serious GPUs (the sample vLLM setup uses 4) or a community MLX/GGUF quant.",
+    "useThisIf": "you want a strong open ~30B model for self-hosted coding agents and can run it yourself.",
+    "alternatives": [
+      "nemotron",
+      "kimi"
+    ],
+    "source": "x",
+    "addedAt": "2026-10-26",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/nanbeige.png"
+  },
+  {
+    "slug": "moli",
+    "name": "Moli by Lexmount",
+    "url": "https://github.com/lexmount/moli",
+    "affiliateUrl": null,
+    "category": "agents",
+    "useCases": [
+      "agents",
+      "coding"
+    ],
+    "pricing": "open-source",
+    "verdict": "A headless browser written from scratch in Rust for AI agents: reads pages as DOM/Markdown/JSON, takes screenshots only when asked, and exposes CDP so Playwright can connect. Apache-2.0 with ~20k GitHub stars; #1 on Product Hunt on Oct 25, 2026. Lexmount sells hosted cloud sessions with proxies on top (free allowance, then paid plans). Pick Chromium instead when you need extensions or pixel-perfect pages.",
+    "useThisIf": "your agent fetches lots of pages and Chrome is too slow or memory-hungry.",
+    "alternatives": [
+      "retriever-ai",
+      "exa-3"
+    ],
+    "source": "producthunt",
+    "addedAt": "2026-10-26",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/moli.png"
+  },
+  {
+    "slug": "llama-app",
+    "name": "Llama (llama.app)",
+    "url": "https://llama.app/",
+    "affiliateUrl": null,
+    "category": "chat",
+    "useCases": [
+      "chat",
+      "coding",
+      "productivity"
+    ],
+    "pricing": "free",
+    "verdict": "A tiny free, open-source (MIT) menu bar / system tray app from the llama.cpp team and Hugging Face that picks open models that fit your machine, sets them up, and serves one local OpenAI- and Anthropic-compatible API for your chat, editors and coding agents. The Windows 11 version launched on Product Hunt on Oct 25, 2026 (Mac app already out; Linux gets a CLI). Speed depends entirely on your hardware.",
+    "useThisIf": "you want private, offline local AI on your own Mac or PC without fiddling with llama.cpp settings.",
+    "alternatives": [
+      "chatgpt",
+      "comfyui"
+    ],
+    "source": "producthunt",
+    "addedAt": "2026-10-26",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/llama-app.png"
+  },
+  {
+    "slug": "hibi",
+    "name": "hibi",
+    "url": "https://www.hibi.garden/",
+    "affiliateUrl": null,
+    "category": "productivity",
+    "useCases": [
+      "productivity"
+    ],
+    "pricing": "open-source",
+    "verdict": "A free, open-source, local-first writing app for macOS, Windows and Linux that edits Markdown, Typst, LaTeX and MDX in your own folders, opens Obsidian vaults as-is, and adds addons, git-based version history and doc-site export. Public beta announced Oct 25, 2026 (211 likes on launch post). It is a solo hobby project in beta, so expect bugs; not an AI tool itself, but handy for prompts and agent context files.",
+    "useThisIf": "you write across Markdown, Typst or LaTeX and want one local app instead of Obsidian + Overleaf.",
+    "alternatives": [
+      "notion"
+    ],
+    "source": "x",
+    "addedAt": "2026-10-26",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/hibi.png"
   }
 ]

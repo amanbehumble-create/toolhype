@@ -122,7 +122,7 @@
   "claude-duet": "(\"Claude Duet\" OR ClaudeDuet OR url:claude.com/product/claude-duet) -is:retweet",
   "heal": "(url:heal.dev OR heal.dev OR @healdevHQ OR \"heal.dev\") -is:retweet",
   "whiteboard": "(url:whiteboard.dev.fast OR \"devdotfast/whiteboard\" OR @devdotfast OR (\"Whiteboard\" (\"dev.fast\" OR \"coding agent\" OR \"Claude Code\" OR Codex) (canvas OR IDE OR review))) -is:retweet",
-  "dadan": "(dadan OR url:dadan.io OR @getdadan OR @dadan_io OR \"dadan.io\") -is:retweet",
+  "dadan": "(url:dadan.io OR \"dadan.io\" OR @getdadan OR @dadan_io OR (dadan (screen OR recording OR recorder OR video OR loom OR \"product hunt\"))) -is:retweet",
   "riff": "(riffreply OR url:riffreply.com OR \"riffreply.com\" OR (\"Riff\" chrome extension reply)) -is:retweet",
   "ai-compare-ninja": "(\"aicompare.ninja\" OR url:aicompare.ninja OR \"AI Compare Ninja\") -is:retweet",
   "bestllmfor": "(bestllmfor OR url:bestllmfor.com OR \"BestLLMfor\") -is:retweet",
@@ -130,7 +130,7 @@
   "spritefuse": "(spritefuse OR url:spritefuse.com) -is:retweet",
   "vricko": "(vricko OR url:vricko.app OR \"vricko.app\") -is:retweet",
   "traxly": "(traxly OR \"Traxly Office\" OR url:traxly.pro) -is:retweet",
-  "api-market": "(\"api.market\" OR url:api.market OR \"API.market\" OR \"API Market\") -is:retweet",
+  "api-market": "(\"api.market\" OR url:api.market) -is:retweet",
   "ai-room-makeover": "(\"airoommakeover\" OR url:airoommakeover.com OR \"AI Room Makeover\") -is:retweet",
   "domain-search-king": "(\"domainsearchking\" OR url:domainsearchking.com OR \"Domain Search King\") -is:retweet",
   "fileaify": "(fileaify OR url:fileaify.com) -is:retweet",
@@ -138,5 +138,9 @@
   "seltlox": "(seltlox OR url:seltlox.com) -is:retweet",
   "kimi": "(\"Kimi K3.1\" OR \"Kimi K3\" OR url:kimi.com OR @Kimi_Moonshot) -is:retweet",
   "gemini-api-cli": "(\"Gemini API CLI\" OR \"gemini-api-cli\" OR \"gemini-api cli\") -is:retweet",
-  "agent-s4": "(\"Agent S4\" OR \"simular-ai/Agent-S\" OR (simular agent)) -is:retweet"
+  "agent-s4": "(\"Agent S4\" OR \"simular-ai/Agent-S\" OR (simular agent)) -is:retweet",
+  "nanbeige-4-3": "(nanbeige OR \"Nanbeige4.3\" OR \"Nanbeige4.3-33B\") -is:retweet",
+  "moli": "(lexmount OR \"lexmount/moli\" OR (moli (\"headless browser\" OR headless OR playwright OR cdp))) -is:retweet",
+  "llama-app": "(url:llama.app OR \"llama.app\" OR \"llama windows\" OR \"Llama-Windows\" OR (\"llama.cpp\" (\"menu bar\" OR \"system tray\" OR tray) app)) -is:retweet",
+  "hibi": "(url:hibi.garden OR \"hibi.garden\" OR \"schmayterling/hibi\" OR (hibi (obsidian OR typst OR latex OR \"writing app\"))) -is:retweet"
 }

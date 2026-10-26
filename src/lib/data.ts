@@ -27,6 +27,11 @@ const withBuzz = (t: Tool): Tool => {
 const ALL = (toolsJson as Tool[]).map(withBuzz);
 export const getTools = (): Tool[] => ALL;
 export const byBuzz = (a: Tool, b: Tool) => (b.buzz.score ?? -1) - (a.buzz.score ?? -1);
+// Velocity is 24h ÷ prior daily average (floored at 1), so a brand-new launch with ~0 prior posts shows absurd
+// multipliers like 824×. Show those as "new" instead of a misleading number.
+export const isFreshSpike = (b: Partial<Buzz>) => (b.priorDailyAvg ?? 0) < 1 && (b.mentions24h ?? 0) >= 10;
+export const velText = (b: Partial<Buzz>) => (isFreshSpike(b) ? 'new' : `${b.velocity}×`);
+export const velPhrase = (b: Partial<Buzz>) => (isFreshSpike(b) ? 'new this week, up from under 1 post a day before' : `${b.velocity}x velocity`);
 export const trendingOnX = (n = 5) => [...ALL].filter((t) => t.buzz.status === 'live').sort(byBuzz).slice(0, n);
 export const hkt = (iso: string) => new Date(iso).toLocaleString('en-GB', { timeZone: 'Asia/Hong_Kong', day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit', hour12: false }) + ' HKT';
 export const LABEL: Record<string, string> = { hype: 'Hype', rising: '↗ Rising', steady: 'Steady', quiet: 'Quiet' };

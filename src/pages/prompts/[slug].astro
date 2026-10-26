@@ -12,6 +12,7 @@ const dropCount = i.prompts.length;
 <Shell active="prompts"><article class="prose">
 <div class="muted" style="font:500 .75rem var(--mono)"><a href="/prompts">PROMPT DROP</a> · ISSUE #{i.n} · {i.date}</div>
 <h1>{i.title}</h1><p>{i.intro}</p>{i.rule && <p class="muted" style="font-size:.85rem"><b>Selection rule:</b> {i.rule}</p>}
+<nav class="toc" aria-label="Prompts in this issue"><b>In this issue:</b> {i.prompts.map((p, k) => <a href={`#p${k + 1}`}>{String(k + 1).padStart(2, '0')} {p.title} <span class="muted">({p.category})</span></a>)}</nav>
 {i.prompts.map((p, k) => <section class="card prompt" id={`p${k + 1}`} style="margin:1rem 0">
   <div class="muted" style="font:500 .75rem var(--mono)">{String(k + 1).padStart(2, '0')} · {p.category.toUpperCase()} · WORKS IN {p.tool.toUpperCase()}</div>
   <h2 style="margin:.35rem 0 .6rem;font-size:1.15rem">{p.title}</h2>
@@ -38,6 +39,10 @@ document.querySelectorAll<HTMLButtonElement>('button.more').forEach((b) => { con
 }); });
 </script>
 <style>
+  nav.toc { display: flex; flex-wrap: wrap; gap: .35rem .5rem; align-items: baseline; margin: .8rem 0 1rem; font-size: .8rem; }
+  nav.toc a { padding: .15rem .55rem; border: 1px solid var(--line); border-radius: 999px; text-decoration: none; }
+  nav.toc a:hover { background: var(--hover); }
+  section.prompt { scroll-margin-top: 4.5rem; }
   pre.ptext.long:not(.open) { max-height: 15rem; overflow: hidden; -webkit-mask-image: linear-gradient(#000 70%, transparent); mask-image: linear-gradient(#000 70%, transparent); }
   @media print { pre.ptext.long { max-height: none !important; -webkit-mask-image: none !important; mask-image: none !important; } }
 </style></Base>

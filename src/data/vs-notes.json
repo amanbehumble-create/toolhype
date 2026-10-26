@@ -243,5 +243,72 @@
         "https://github.com/features/copilot/plans"
       ]
     ]
+  },
+  "claude-code-vs-codex": {
+    "title": "Claude Code vs OpenAI Codex (2026): pricing, limits & which to pick",
+    "description": "Claude Code vs OpenAI Codex with checked Oct 2026 pricing: Claude Code needs Claude Pro ($20/mo, $17 annual) or Max (from $100). Codex has a Free and Go ($8) tier in the desktop app; full CLI/IDE/cloud starts at Plus $20/mo.",
+    "checked": "Oct 26, 2026 HKT",
+    "bottomLine": "Pick OpenAI Codex if you already pay for ChatGPT or want to try a coding agent for $0\u2013$8 first: Plus ($20/mo) unlocks Codex on the web, CLI, IDE and iOS plus GitHub code review and Slack. Pick Claude Code if you live in the terminal and want Anthropic's Opus/Sonnet models: it is included from Claude Pro ($20/mo, or $17/mo billed yearly), with Max ($100+) for all-day sessions. Both bill heavy use beyond plan limits at API rates.",
+    "rows": [
+      [
+        "Cheapest way in",
+        "Claude Pro $20/mo ($17/mo billed annually); not on the Free plan",
+        "Free and Go ($8/mo) get GPT-6 Luna in the desktop app (rolling out); Plus $20/mo for the full product"
+      ],
+      [
+        "Higher individual tiers",
+        "Max 5x or 20x usage, from $100/mo",
+        "Pro at $100, $200 or $500/mo (Ultrafast mode on $500)"
+      ],
+      [
+        "How limits work",
+        "Rolling 5-hour sessions plus weekly limits, shared with your Claude chats; turn on usage credits at API rates",
+        "Rolling 5-hour local-message limits on Plus (Pro has no 5-hour cap right now), weekly limits may apply; buy ChatGPT credits to keep going"
+      ],
+      [
+        "Where it runs",
+        "Terminal-first CLI agent that edits and runs your repo",
+        "Desktop app, CLI, IDE extension, web (Codex cloud) and iOS"
+      ],
+      [
+        "Cloud / GitHub integration",
+        "Mainly local; Team/Enterprise plans add org features",
+        "Cloud tasks, @codex on GitHub issues/PRs, automatic PR reviews, Slack and Linear on paid ChatGPT plans"
+      ],
+      [
+        "Models",
+        "Claude Opus, Sonnet and Haiku (Fable 5.1 on higher tiers/credits)",
+        "GPT-6.1 Sol, GPT-6 Sol and GPT-6 Luna (GPT-5.5 retired from ChatGPT sign-in Oct 14, 2026)"
+      ],
+      [
+        "API-key option",
+        "Pay-as-you-go via a Claude Console account",
+        "Use an API key in the CLI/SDK/IDE for CI; no cloud features, billed at API prices"
+      ]
+    ],
+    "faq": [
+      [
+        "Is Claude Code free?",
+        "No. Claude Code is included in every paid Claude plan (Pro $20/mo or $17/mo billed yearly, Max from $100/mo, Team and Enterprise) and shares usage with your Claude chats. The Free plan does not include it. Checked Oct 26, 2026 on claude.com/pricing."
+      ],
+      [
+        "Can I use OpenAI Codex for free?",
+        "Partly. OpenAI says Free and Go ($8/mo) users get GPT-6 Luna in the Codex desktop app, subject to rollout. The CLI, IDE extension, Codex cloud and GitHub code review start at ChatGPT Plus ($20/mo). Checked Oct 26, 2026 on OpenAI's Codex pricing page."
+      ],
+      [
+        "Which is better for heavy daily coding?",
+        "Both sell $100+ tiers: Claude Max (5x or 20x Pro usage) and ChatGPT Pro ($100/$200/$500), which currently has no 5-hour Codex cap. Exact limits depend on model and task size, so check each usage dashboard before you upgrade."
+      ]
+    ],
+    "sources": [
+      [
+        "Claude pricing",
+        "https://claude.com/pricing"
+      ],
+      [
+        "OpenAI Codex pricing",
+        "https://developers.openai.com/codex/pricing"
+      ]
+    ]
   }
 }

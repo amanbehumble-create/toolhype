@@ -11,11 +11,12 @@ const ld = { '@context': 'https://schema.org', '@type': 'SoftwareApplication', n
 <p class="muted" style="font-size:.8rem;margin:0"><a href="/grok-bot-agents">← Grok Bot agents</a> · <span class="chip c">{a.category}</span></p>
 <h1 style="margin:.5rem 0">{a.name}</h1>
 <p>{a.description}</p>
+{a.why && <p><b>Why people like it:</b> {a.why}</p>}
 <div style="display:flex;gap:.5rem;flex-wrap:wrap;align-items:center;margin:1rem 0"><a class="btn primary" href={a.templateUrl} target="_blank" rel="noopener" data-track={`agent:add:${a.slug}`}>Add to Grok Bot ↗</a><ShareBar path={`/grok-bot-agents/${a.slug}`} text={`${a.name}${a.creatorHandle ? ` by @${a.creatorHandle}` : ''}: a free Grok Bot agent you can add in one click`} track={a.slug} label={`Share ${a.name}`} /></div>
 <ul>
   <li>Creator: {a.creatorHandle ? <a href={`https://x.com/${a.creatorHandle}`} target="_blank" rel="noopener">@{a.creatorHandle}</a> : creatorLabel(a)}{a.creatorHandle && a.creatorName ? ` (${a.creatorName})` : ''}</li>
   {a.sourcePostUrl && <li>Original post: <a href={a.sourcePostUrl} target="_blank" rel="noopener">view on X</a></li>}
-  {a.traction && <li>Traction: {a.traction.likes} likes, {a.traction.bookmarks} bookmarks on the original post (checked {a.traction.checkedAt})</li>}
+  {a.traction && <li>Traction: {a.traction.likes} likes, {a.traction.reposts ?? 0} reposts, {a.traction.replies ?? 0} replies, {a.traction.bookmarks} bookmarks on the original post (checked {a.traction.checkedAt})</li>}
   <li>Added to toolhype: {a.addedAt}</li>
 </ul>
 <p class="muted" style="font-size:.8rem">Templates are made by their creators, not by toolhype. Review what an agent can access before you add it.</p>

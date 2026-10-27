@@ -5,7 +5,7 @@ const agents = getAgents();
 const site = Astro.site!;
 const listLd = { '@context': 'https://schema.org', '@type': 'ItemList', name: 'Grok Bot agents', itemListElement: agents.map((a, i) => ({ '@type': 'ListItem', position: i + 1, url: new URL(`/grok-bot-agents/${a.slug}`, site).href, name: a.name })) };
 ---
-<Base title="Grok Bot agents: free ready-to-use templates" description={`${agents.length} free Grok Bot agent templates you can add in one click: research, privacy, coding, video, finance and more, each with a working public share link.`} ogImage="/og/grok-bot-agents.png" jsonld={[crumbsLd([['Home', '/'], ['Grok Bot agents', '/grok-bot-agents']]), listLd]}>
+<Base title="Grok Bot agents: free ready-to-use templates" description={`${agents.length} free Grok Bot agent templates you can add in one click: privacy, finance, research, video, coding and more, each with a working public share link.`} ogImage="/og/grok-bot-agents.png" jsonld={[crumbsLd([['Home', '/'], ['Grok Bot agents', '/grok-bot-agents']]), listLd]}>
 <Shell active="grok-bot-agents"><div class="prose"><h1>Grok Bot agents</h1>
 <p>{AGENTS_INTRO} Each one is a free public template: hit <b>Add to Grok Bot</b> and it opens in Grok Bot, ready to set up. We only list agents with a working public share link.</p>
 <p class="muted" style="font-size:.8rem">{agents.length} agents · {agentCategories().join(' · ')}</p>
@@ -13,12 +13,13 @@ const listLd = { '@context': 'https://schema.org', '@type': 'ItemList', name: 'G
 <div class="feed" data-track-zone="agents">
 {agents.map((a) => <article class="post agent" data-search={`${a.name} ${a.description} ${a.category} ${creatorLabel(a)}`.toLowerCase()}>
   <div style="flex:1;min-width:0">
-    <div class="meta" style="display:flex;gap:.4rem;flex-wrap:wrap;align-items:center"><span class="chip c">{a.category}</span><span class="muted" style="font-size:.75rem">by {a.creatorHandle ? <a href={`https://x.com/${a.creatorHandle}`} target="_blank" rel="noopener">@{a.creatorHandle}</a> : creatorLabel(a)}</span>{a.traction && <span class="muted" style="font:500 .7rem var(--mono)">♥ {a.traction.likes} · 🔖 {a.traction.bookmarks}</span>}</div>
+    <div class="meta" style="display:flex;gap:.4rem;flex-wrap:wrap;align-items:center"><span class="chip c">{a.category}</span><span class="muted" style="font-size:.75rem">by {a.creatorHandle ? <a href={`https://x.com/${a.creatorHandle}`} target="_blank" rel="noopener">@{a.creatorHandle}</a> : creatorLabel(a)}</span>{a.traction && <span class="muted" style="font:500 .7rem var(--mono)">♥ {a.traction.likes} · 🔁 {a.traction.reposts ?? 0} · 💬 {a.traction.replies ?? 0} · 🔖 {a.traction.bookmarks}</span>}</div>
     <h3 style="margin-top:.35rem"><a href={`/grok-bot-agents/${a.slug}`}>{a.name}</a></h3>
     <p>{a.description}</p>
+    {a.why && <p class="muted" style="font-size:.85rem"><b>Why people like it:</b> {a.why}{a.sourcePostUrl && <> · <a href={a.sourcePostUrl} target="_blank" rel="noopener">source post</a></>}</p>}
     <div style="display:flex;gap:.5rem;flex-wrap:wrap"><a class="btn primary" href={a.templateUrl} target="_blank" rel="noopener" data-track={`agent:add:${a.slug}`}>Add to Grok Bot ↗</a><a class="btn" href={`/grok-bot-agents/${a.slug}`}>Details</a></div>
   </div>
 </article>)}
 </div>
-<div class="card" style="margin-top:1rem"><p class="muted" style="margin:0">Built a Grok Bot agent with a public share link? <a href="/submit" style="color:var(--accent-ink)">Send it to us →</a> Likes and bookmarks are from the creator's original X post, checked on the date shown on each agent's page.</p></div>
+<div class="card" style="margin-top:1rem"><p class="muted" style="margin:0">Built a Grok Bot agent with a public share link? <a href="/submit" style="color:var(--accent-ink)">Send it to us →</a> Likes, reposts, replies and bookmarks are from the creator's original X post, checked on the date shown on each agent's page.</p></div>
 </Shell></Base>

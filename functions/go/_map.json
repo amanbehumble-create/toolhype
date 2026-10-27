@@ -142,5 +142,10 @@
  "nanbeige-4-3": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B",
  "moli": "https://github.com/lexmount/moli",
  "llama-app": "https://llama.app/",
- "hibi": "https://www.hibi.garden/"
+ "hibi": "https://www.hibi.garden/",
+ "pomerado": "https://pomerado.ai",
+ "strawberry": "https://strawberrybrowser.com",
+ "surgepix": "https://surgepix.ai",
+ "breken": "https://breken.ai",
+ "manyagents": "https://manyagents.app"
 }

@@ -5,7 +5,7 @@
   "glimpse": "((glimpse elorian) OR \"elorian glimpse\" OR @ElorianAI OR url:elorian.ai) -is:retweet",
   "nitrostack": "(nitrostack OR @nitrostackai OR url:nitrostack.ai) -is:retweet",
   "orkas": "(\"orkas.ai\" OR url:orkas.ai OR \"Orkas-AI/Orkas\" OR (orkas (agent OR agents OR commander))) -is:retweet",
-  "wemotion": "(wemotion OR url:wemotion.ai) -is:retweet",
+  "wemotion": "(url:wemotion.ai OR \"wemotion.ai\" OR @wemotionai OR (wemotion (motion OR graphics OR mac OR claude OR designer OR animation OR \"apple silicon\"))) -is:retweet",
   "batchrate": "(batchrate OR url:batchrate.ai OR @batchrate) -is:retweet",
   "gemini-4-argon": "(\"gemini 4 argon\" OR \"gemini-4-argon\") -is:retweet",
   "muse-wonder": "(\"muse wonder\") -is:retweet",
@@ -121,7 +121,7 @@
   "deepcell": "(url:deepcell.net OR (\"DeepCell\" (deadline OR spreadsheet OR \"Product Hunt\" OR \"AI spreadsheet\" OR \"AI data\")) OR @deepcell_ai) -is:retweet",
   "claude-duet": "(\"Claude Duet\" OR ClaudeDuet OR url:claude.com/product/claude-duet) -is:retweet",
   "heal": "(url:heal.dev OR heal.dev OR @healdevHQ OR \"heal.dev\") -is:retweet",
-  "whiteboard": "(url:whiteboard.dev.fast OR \"devdotfast/whiteboard\" OR @devdotfast OR (\"Whiteboard\" (\"dev.fast\" OR \"coding agent\" OR \"Claude Code\" OR Codex) (canvas OR IDE OR review))) -is:retweet",
+  "whiteboard": "(url:whiteboard.dev.fast OR \"whiteboard.dev.fast\" OR \"devdotfast/whiteboard\" OR @devdotfast) -is:retweet",
   "dadan": "(url:dadan.io OR \"dadan.io\" OR @getdadan OR @dadan_io OR (dadan (screen OR recording OR recorder OR video OR loom OR \"product hunt\"))) -is:retweet",
   "riff": "(riffreply OR url:riffreply.com OR \"riffreply.com\" OR (\"Riff\" chrome extension reply)) -is:retweet",
   "ai-compare-ninja": "(\"aicompare.ninja\" OR url:aicompare.ninja OR \"AI Compare Ninja\") -is:retweet",
@@ -142,5 +142,10 @@
   "nanbeige-4-3": "(nanbeige OR \"Nanbeige4.3\" OR \"Nanbeige4.3-33B\") -is:retweet",
   "moli": "(lexmount OR \"lexmount/moli\" OR (moli (\"headless browser\" OR headless OR playwright OR cdp))) -is:retweet",
   "llama-app": "(url:llama.app OR \"llama.app\" OR \"llama windows\" OR \"Llama-Windows\" OR (\"llama.cpp\" (\"menu bar\" OR \"system tray\" OR tray) app)) -is:retweet",
-  "hibi": "(url:hibi.garden OR \"hibi.garden\" OR \"schmayterling/hibi\" OR (hibi (obsidian OR typst OR latex OR \"writing app\"))) -is:retweet"
+  "hibi": "(url:hibi.garden OR \"hibi.garden\" OR \"schmayterling/hibi\" OR (hibi (obsidian OR typst OR latex OR \"writing app\"))) -is:retweet",
+  "pomerado": "(pomerado OR url:pomerado.ai OR \"pomerado.ai\" OR @pomeradoai OR \"Pomerado/pomerado\") -is:retweet",
+  "strawberry": "(\"Strawberry Browser\" OR url:strawberrybrowser.com OR \"strawberrybrowser.com\" OR @strawberrybrows) -is:retweet",
+  "surgepix": "(surgepix OR \"SurgePix\" OR url:surgepix.ai OR \"surgepix.ai\") -is:retweet",
+  "breken": "(url:breken.ai OR \"breken.ai\" OR @brekenai OR (breken (production OR chaos OR ESCAPES OR synthetic OR testing OR clone OR clones OR app OR rebuilds))) -is:retweet -\"contract address\" -\"Ca:\" -token",
+  "manyagents": "(manyagents OR \"ManyAgents\" OR url:manyagents.app OR \"manyagents.app\") -is:retweet"
 }

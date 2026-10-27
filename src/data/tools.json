@@ -4028,5 +4028,150 @@
       "updatedAt": null
     },
     "logo": "/logos/pius-bot.png"
+  },
+  {
+    "slug": "pomerado",
+    "name": "Pomerado",
+    "url": "https://pomerado.ai",
+    "affiliateUrl": null,
+    "category": "agents",
+    "useCases": [
+      "agents",
+      "coding"
+    ],
+    "pricing": "open-source",
+    "verdict": "YC F26 open-source harness that turns any website into an API/MCP for agents in minutes, without brittle browser automation. Claims 2–4× speed and much lower cost vs browser agents on its own benchmarks (~930 GitHub stars; free signup + paid plans). Still early (launched Oct 25, 2026), so expect breakage when sites change layout or add CAPTCHAs.",
+    "useThisIf": "you need agents to use sites that have no public API and browser agents are too slow or flaky.",
+    "alternatives": [
+      "moli",
+      "composio-instant"
+    ],
+    "source": "x",
+    "addedAt": "2026-10-27",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/pomerado.png"
+  },
+  {
+    "slug": "strawberry",
+    "name": "Strawberry Browser",
+    "url": "https://strawberrybrowser.com",
+    "affiliateUrl": null,
+    "category": "agents",
+    "useCases": [
+      "agents",
+      "productivity",
+      "chat"
+    ],
+    "pricing": "freemium",
+    "verdict": "An agentic desktop browser whose AI companions work inside accounts you are already signed into (email, docs, dashboards) for multi-step tasks. Free tier with monthly credits; paid Individual/Team/Enterprise for higher limits (Part-Time plan around $85/mo). Strong Product Hunt traction (~269 upvotes on the recent launch), but you are trusting a third-party agent with logged-in sessions.",
+    "useThisIf": "you want an AI that can click through your real signed-in web apps, not just chat about them.",
+    "alternatives": [
+      "chatgpt",
+      "manus",
+      "phone-use"
+    ],
+    "source": "ph",
+    "addedAt": "2026-10-27",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/strawberry.png"
+  },
+  {
+    "slug": "surgepix",
+    "name": "SurgePix",
+    "url": "https://surgepix.ai",
+    "affiliateUrl": null,
+    "category": "design",
+    "useCases": [
+      "design",
+      "marketing"
+    ],
+    "pricing": "freemium",
+    "verdict": "Generate images, decks, carousels and posters with AI, then edit every layer and export a publish-ready file — less \"one-shot image,\" more design tool. Hit Product Hunt (~213 upvotes) in the last couple of days. Early product; layer editing is the hook vs pure Midjourney/Ideogram one-shots, but depth of controls and export quality still need real-world testing.",
+    "useThisIf": "you want AI visuals you can still tweak layer-by-layer before publishing.",
+    "alternatives": [
+      "midjourney",
+      "ideogram",
+      "canva"
+    ],
+    "source": "ph",
+    "addedAt": "2026-10-27",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/surgepix.png"
+  },
+  {
+    "slug": "breken",
+    "name": "Breken",
+    "url": "https://breken.ai",
+    "affiliateUrl": null,
+    "category": "coding",
+    "useCases": [
+      "coding",
+      "agents"
+    ],
+    "pricing": "open-source",
+    "verdict": "AI that rebuilds production-like chaos for your app (failures, dropped connections, sped-up user activity), proves each bug, and opens a draft PR with a fix. X news this week claimed it caught ~32% of 235 real OSS bugs vs ~16% for top models alone. Open-source angle plus hosted product; still new, so treat bug claims as early and keep a human reviewing every PR.",
+    "useThisIf": "you want an agent to find and draft-fix real bugs before users hit them.",
+    "alternatives": [
+      "cursor",
+      "claude-code",
+      "codex"
+    ],
+    "source": "x",
+    "addedAt": "2026-10-27",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/breken.png"
+  },
+  {
+    "slug": "manyagents",
+    "name": "ManyAgents",
+    "url": "https://manyagents.app",
+    "affiliateUrl": null,
+    "category": "coding",
+    "useCases": [
+      "coding",
+      "agents"
+    ],
+    "pricing": "freemium",
+    "verdict": "Native Mac app (macOS 14+) that runs a team of Claude Code and Codex agents in one window: one tab per agent, an orchestrator per project, and a live web/iOS preview beside the chat. Free 14-day trial, no card; requires Claude Code. Handy if you already juggle multiple coding agents and hate switching terminals — Mac-only and early (v1.3.x).",
+    "useThisIf": "you run several Claude Code/Codex agents on a Mac and want one orchestrated window with a live preview.",
+    "alternatives": [
+      "claude-code",
+      "cursor",
+      "codex"
+    ],
+    "source": "x",
+    "addedAt": "2026-10-27",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/manyagents.png"
   }
 ]

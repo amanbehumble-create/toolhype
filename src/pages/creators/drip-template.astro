@@ -1,0 +1,15 @@
+---
+// Shell for daily-drip creator pages. Contains NO creator data: functions/creators/[[path]].ts fills the
+// __CR_*__ placeholders from D1 only for released creators, and returns 404 for this path itself.
+import Base from '../../layouts/Base.astro'; import Shell from '../../components/Shell.astro'; import CreatorsCTA from '../../components/CreatorsCTA.astro'; import BadgeStyles from '../../components/BadgeStyles.astro';
+---
+<Base title="__CR_TITLE__" description="__CR_DESC__" ogType="profile" noindex>
+<BadgeStyles />
+<Shell active="creators"><article class="card prose cr-page">
+  <p class="muted"><a href="/creators">X Creators</a> › <a href="/creators/starter-pack-1">Starter Pack #1</a> › @__CR_HANDLE__</p>
+  <div data-cr-badge></div>
+  <p class="answer" data-cr-answer></p>
+  <p><a class="btn primary" href="https://x.com/__CR_HANDLE__" rel="noopener" target="_blank">Follow @__CR_HANDLE__ on X ↗</a> <a class="btn" href="/creators">← All X creators</a></p>
+  <p class="muted">Summary is our own one-liner from their public X bio. Follower count is a dated snapshot. toolhype is not affiliated with this creator.</p>
+  <CreatorsCTA source="creators/drip" />
+</article></Shell></Base>

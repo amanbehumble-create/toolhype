@@ -1,0 +1,49 @@
+---
+// Windows 98 creator pass (ID badge on a lanyard). Pure CSS, matches the Win98 creators windows.
+---
+<style is:global>
+.bdg-grid{list-style:none;margin:0;padding:2px;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,190px),1fr));gap:10px}
+.bdg-cell{min-width:0;scroll-margin-top:80px}
+.bdg{position:relative;display:flex;flex-direction:column;align-items:center;text-align:center;min-width:0;background:#c0c0c0;color:#000;
+  border:2px solid;border-color:#fff #404040 #404040 #fff;box-shadow:1px 1px 0 #000;padding:0 0 6px;
+  font:12px Tahoma,"MS Sans Serif",Arial,sans-serif;text-decoration:none!important}
+.bdg-hole{display:none}
+.bdg-top{align-self:stretch;display:flex;justify-content:space-between;align-items:center;gap:4px;background:linear-gradient(90deg,#000080,#1084d0);color:#fff;font-weight:700;padding:2px 3px 2px 5px;margin:0 0 6px}
+.bdg-kind{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0;font-size:11px}
+.bdg-btns{display:flex;flex:none}.bdg-btns i{display:inline-block;width:14px;height:12px;line-height:10px;text-align:center;background:#c0c0c0;color:#000;font-style:normal;font-size:10px;margin-left:2px;border:1px solid;border-color:#fff #404040 #404040 #fff}
+.bdg-org{font-size:10px;letter-spacing:.06em;color:#000080}.bdg-org b{color:#000}
+.bdg-photo{margin:6px 0;padding:2px;background:#fff;border:2px solid;border-color:#808080 #fff #fff #808080}
+.bdg-photo img{display:block;width:72px;height:72px;object-fit:cover}
+.bdg-name{display:block;font-weight:700;font-size:14px;line-height:1.2;margin:0 6px;overflow-wrap:anywhere}
+.bdg-handle{display:block;font-size:11px;color:#333;margin:2px 6px 0;overflow-wrap:anywhere}
+.bdg-why{display:block;font-size:11px;line-height:1.35;margin:6px 8px 0;padding:3px 5px;background:#fff;border:2px solid;border-color:#808080 #fff #fff #808080;text-align:left;align-self:stretch}
+.bdg-strip{display:flex;align-items:center;gap:6px;align-self:stretch;margin:auto 8px 0;padding-top:6px}
+.bdg-strip .bdg-bar{flex:1;min-width:0;height:20px;fill:#000;background:#fff;border:1px solid #808080}
+.bdg-id{font:11px monospace;white-space:nowrap}
+.bdg-new{background:#c00;color:#fff;font-size:9px;padding:1px 4px}
+a.bdg-mini{height:100%}a.bdg-mini:hover .bdg-name{text-decoration:underline;color:#000080}
+a.bdg-mini:focus-visible{outline:1px dotted #000;outline-offset:-5px}
+.bdg-cell:target .bdg{outline:2px dashed #000080}
+.bdg-photo-x{width:72px;height:72px;display:grid;place-items:center;font:700 30px monospace;color:#808080}
+.bdg-stamp{display:inline-block;margin:2px 0 4px;padding:1px 8px;border:2px solid #c00;color:#c00;font-weight:700;letter-spacing:.15em;transform:rotate(-5deg)}
+.bdg-classified .drip-cd{font-family:monospace}
+.bdg-hang{display:flex;flex-direction:column;align-items:center;margin:0 auto 1.2rem;max-width:380px;width:100%}
+.bdg-lanyard{display:flex;flex-direction:column;align-items:center}
+.bdg-strap{width:26px;height:80px;background:#000080;border:1px solid #000;display:flex;justify-content:center;overflow:hidden}
+.bdg-strap i{writing-mode:vertical-rl;font:700 9px/1 Tahoma,sans-serif;color:#fff;font-style:normal;padding-top:4px;white-space:nowrap}
+.bdg-clip{width:30px;height:18px;background:#c0c0c0;border:2px solid;border-color:#fff #404040 #404040 #fff;box-shadow:1px 1px 0 #000}
+.bdg-full{width:100%;padding-bottom:10px}
+.bdg-full .bdg-kind{font-size:13px}.bdg-full .bdg-btns i{width:16px;height:14px;line-height:12px}
+.bdg-full .bdg-photo img{width:150px;height:150px}
+.bdg-full .bdg-name{font-size:20px;margin-top:2px}.bdg-full .bdg-handle{font-size:13px}.bdg-handle a{color:#00e}
+.bdg-fields{display:grid;grid-template-columns:1fr 1fr;gap:6px 8px;align-self:stretch;margin:10px 10px 0;text-align:left}
+.bdg-fields div{min-width:0}
+.bdg-fields dt{font-size:11px}
+.bdg-fields dd{margin:1px 0 0;font-size:12px;background:#fff;padding:2px 4px;border:2px solid;border-color:#808080 #fff #fff #808080;overflow-wrap:anywhere}
+.bdg-full .bdg-why{font-size:13px;margin:10px 10px 0}
+.bdg-tools{font-size:12px;margin:6px 10px 0;align-self:stretch;text-align:left}.bdg-tools a{color:#00e}
+.bdg-full .bdg-strip{margin:0 10px;padding-top:10px}.bdg-full .bdg-bar{height:34px}
+.bdg-qr{width:56px;height:56px;flex:none;fill:#000;border:1px solid #808080}
+@media (max-width:420px){.bdg-full .bdg-photo img{width:120px;height:120px}.bdg-full .bdg-name{font-size:18px}}
+.cr-page{overflow-x:hidden}
+</style>

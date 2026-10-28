@@ -1,0 +1,45 @@
+---
+import Base from '../../layouts/Base.astro'; import Shell from '../../components/Shell.astro'; import Win98 from '../../components/Win98.astro';
+import { getPacks, DRIP_TOTAL, essentialBadges } from '../../lib/creators'; import CreatorDrip from '../../components/CreatorDrip.astro'; import CreatorsCTA from '../../components/CreatorsCTA.astro'; import BadgeStyles from '../../components/BadgeStyles.astro'; import { crumbsLd, faqLd } from '../../lib/ld';
+import { badgeHtml, creatorsItemListLd, profilePageLd, creatorTitle, creatorDesc, whyFollow, displayName, type BadgeCreator } from '../../lib/badge';
+export function getStaticPaths() {
+  return [...getPacks().map((p) => ({ params: { slug: p.slug }, props: { p, c: null } })), ...essentialBadges().map((c) => ({ params: { slug: c.handle }, props: { p: null, c } }))];
+}
+const { p, c } = Astro.props as { p: ReturnType<typeof getPacks>[number] | null; c: BadgeCreator | null };
+const ess = essentialBadges();
+const pack = getPacks()[0];
+const title = `Starter Pack #${pack.n}: ${pack.title}`;
+const top = ess.slice(0, 5).map((x) => displayName(x));
+const faq: [string, string][] = [
+  ['When are the other creators revealed?', `One new creator unlocks every day at midnight Hong Kong time until Dec 31. ${ess.length} of ${DRIP_TOTAL} are live now, starting with the Essentials.`],
+  [`Who should I follow on X for ${pack.title.toLowerCase().replace(' on x', '')}?`, `Start with the Essentials: ${top.join(', ')} and the rest of the ${ess.length} essentials. New picks unlock daily below.`],
+  ['Are follower counts live?', `No. They are a snapshot from ${pack.asOf}.`],
+];
+---
+{p && <Base title={`${title}: ${ess.length} essentials + a new creator daily`} description={`${ess.length} essential X creators for builders, writers and thinkers: ${top.join(', ')} and more, with one-line summaries, and a new creator unlocked every day until Dec 31.`} jsonld={[creatorsItemListLd(title, ess), faqLd(faq), crumbsLd([['Home', '/'], ['X Creators', '/creators'], [`Starter Pack #${p.n}`, `/creators/${p.slug}`]])]}>
+<BadgeStyles />
+<Shell active="creators"><article class="card prose cr-page">
+  <p class="muted"><a href="/creators">X Creators</a> › Starter Pack #{p.n}</p>
+  <h1>{title}</h1>
+  <p class="answer"><b>Short answer:</b> start with these {ess.length} essential X accounts, like {top.slice(0, 3).join(', ')}. The rest of the {DRIP_TOTAL}-creator pack unlocks one per day. Every creator pass opens a page with their bio and X link.</p>
+  <CreatorDrip />
+  <div class="w98-desk">
+    <Win98 id="essentials" title="01 Essentials.exe">
+      <ul class="w98-list" set:html={ess.map((x) => badgeHtml(x, 'mini')).join('')} />
+    </Win98>
+  </div>
+  <CreatorDrip full />
+  <CreatorsCTA source={`creators/${p.slug}`} />
+  <p class="muted">Follower figures are a {p.asOf} snapshot. Avatars from public X profiles. Summaries are our own one-liners from public bios. Missing someone? <a href="https://x.com/amanbehumble" rel="noopener">Tell us on X</a>.</p>
+  <h2>FAQ</h2>{faq.map(([q, a]) => <><h3>{q}</h3><p>{a}</p></>)}
+</article></Shell></Base>}
+{c && <Base title={creatorTitle(c)} description={creatorDesc(c)} ogType="profile" jsonld={[profilePageLd(c), crumbsLd([['Home', '/'], ['X Creators', '/creators'], [`Starter Pack #1`, '/creators/starter-pack-1'], [displayName(c), `/creators/${c.handle}`]])]}>
+<BadgeStyles />
+<Shell active="creators"><article class="card prose cr-page">
+  <p class="muted"><a href="/creators">X Creators</a> › <a href="/creators/starter-pack-1">Starter Pack #1</a> › @{c.handle}</p>
+  <Fragment set:html={badgeHtml(c, 'full')} />
+  <p class="answer"><b>{displayName(c)}</b> (@{c.handle}) {whyFollow(c).replace(/^Why follow: /, 'is ')}</p>
+  <p><a class="btn primary" href={`https://x.com/${c.handle}`} rel="noopener" target="_blank">Follow @{c.handle} on X ↗</a> <a class="btn" href="/creators">← All X creators</a></p>
+  <p class="muted">Summary is our own one-liner from their public X bio. Follower count is a dated snapshot. toolhype is not affiliated with this creator.</p>
+  <CreatorsCTA source={`creators/${c.handle}`} />
+</article></Shell></Base>}

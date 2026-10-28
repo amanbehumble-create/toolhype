@@ -2,7 +2,7 @@
 // Values below are static fallbacks; functions/creators/[[path]].ts fills them per request.
 const { full = false } = Astro.props;
 ---
-<div class="w98-fomo"><b>🔓 New creator unlocked every day until Dec 31</b> · <span data-drip-revealed>16</span>/98 revealed · next drop in <span class="drip-cd" data-drip-next="">soon</span></div>
+{!full && <div class="w98-fomo"><b>🔓 New creator unlocked every day until Dec 31</b> · <span data-drip-revealed>16</span>/98 revealed · next drop in <span class="drip-cd" data-drip-next="">soon</span></div>}
 {full && <div class="w98-desk">
   <section class="w98" id="daily-drops"><div class="w98-bar"><span>📅 Daily drops.exe</span><span class="w98-btns" aria-hidden="true"><i>_</i><i>□</i><i>×</i></span></div><div class="w98-body">
     <ul class="w98-list" data-drip-list>

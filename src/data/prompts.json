@@ -580,7 +580,7 @@
     {
       "n": 4,
       "slug": "issue-4",
-      "title": "Prompt Drop #4: 10 AI prompts X actually loved (100+ likes each)",
+      "title": "Prompt Drop #4: 15 AI prompts X actually loved (100+ likes each)",
       "date": "2026-10-26",
       "intro": "This week's running pool. Every prompt comes from an X post with at least 100 likes, and we checked each like count on X ourselves. Copy one, swap any [brackets] or details for your own, paste it into the AI, done. More get added through the week.",
       "rule": "Only prompts from X posts with 100+ likes (checked with X data). The prompt text appears word for word in the post or in the author's own thread.",
@@ -700,6 +700,63 @@
           "author": "@EXM7777",
           "likes": 247,
           "likesAsOf": "Oct 27, 2026 HKT"
+        },
+        {
+          "title": "The one starter prompt for any new AI chat",
+          "category": "Chat",
+          "tool": "Claude, ChatGPT, Gemini or Grok",
+          "prompt": "Goal: [what you want, and what it's for] Context: [who it's for, what you already have, what good looks like] Before you start, restate in your own words what you think my goals are and the problem I'm trying to solve. If you need more context, ask me questions.",
+          "why": "Fill in the two brackets and paste it at the start of any chat. Making the AI repeat your goal back and ask questions first stops it from guessing and saves you a round of fixes.",
+          "source": "https://x.com/rubenhassid/status/2113948625927852196",
+          "author": "@rubenhassid",
+          "likes": 864,
+          "likesAsOf": "Oct 28, 2026 HKT"
+        },
+        {
+          "title": "Teach AI to write emails in your voice",
+          "category": "Writing",
+          "tool": "Claude (with the Gmail connector on)",
+          "prompt": "Read my last 30 sent emails in Gmail. Write my voice profile: how I greet, how I sign off, my sentence length, my go-to phrases, the words I never use. Format it as writing instructions to follow when drafting as me.",
+          "why": "Turn on Claude's Gmail connector first. You get a short style guide you can paste into any future chat so drafts sound like you, not like a robot. Always read drafts before sending.",
+          "source": "https://x.com/rubenhassid/status/2112136695089152367",
+          "author": "@rubenhassid",
+          "likes": 132,
+          "likesAsOf": "Oct 28, 2026 HKT"
+        },
+        {
+          "title": "Minimal black ink character drawing",
+          "category": "Image",
+          "tool": "Any image AI (ChatGPT, Gemini, Grok, Midjourney)",
+          "prompt": "Minimalist black ink line drawing of a [subject] [simple action], wearing [clothing/accessories], rendered with clean expressive brushstrokes and varied line thickness, relaxed natural posture, simplified facial features, selective solid black areas, minimal surrounding objects suggesting the activity, elegant hand-drawn character illustration, generous negative space, no shading, monochrome black ink on an off-white background",
+          "why": "Swap in a subject, an action and an outfit (for example \"a girl reading a book, wearing a scarf\"). The \"no shading\" and \"generous negative space\" bits keep it clean and simple.",
+          "source": "https://x.com/azed_ai/status/2109238346644123993",
+          "author": "@azed_ai",
+          "likes": 143,
+          "likesAsOf": "Oct 28, 2026 HKT"
+        },
+        {
+          "title": "Glowing storybook drawing of anything",
+          "category": "Image",
+          "tool": "Any image AI (ChatGPT, Gemini, Grok, Midjourney)",
+          "prompt": "A [subject] in a minimalist children’s drawing style, thick white lines, softly glowing contours, full-body view, blurred [environment], floating [details], whimsical atmosphere, warm lighting, simple shapes, dreamy storybook aesthetic",
+          "why": "Fill in a subject, a place and a few floating details (stars, leaves, bubbles). Short and forgiving, so it is a good first image prompt to try.",
+          "source": "https://x.com/azed_ai/status/2106338493844930621",
+          "author": "@azed_ai",
+          "likes": 153,
+          "likesAsOf": "Oct 28, 2026 HKT"
+        },
+        {
+          "title": "Turn your photo into a photo-plus-ink art poster",
+          "category": "Image",
+          "tool": "ChatGPT (GPT Image), Gemini or any image AI that takes a photo",
+          "prompt": "Using the uploaded reference image, create a single high-resolution vertical 2:3 editorial art poster.\n\nDivide the canvas into two perfectly equal horizontal sections, each occupying exactly 50% of the total height. Separate them with a clean, perfectly straight horizontal dividing line.\n\n1. TOP HALF — ORIGINAL REFERENCE PHOTOGRAPH\n\nUse the uploaded reference photograph directly in the upper 50% of the poster.\n\nPreserve its original photographic quality, sharpness, natural lighting, and color relationships.\n\nAllow only subtle, intelligent cropping around the outer edges when necessary, without compromising the main subject.\n\nIf required, naturally extend a small portion of the surrounding environment to fit the composition.\n\nDo not redraw, illustrate, stretch, blur, or modify the subject's appearance, structure, or spatial relationships.\n\nDo not introduce black borders, white margins, or empty edges.\n\n2. BOTTOM HALF — MINIMALIST EDITORIAL ILLUSTRATION\n\nUse a warm, near-white ivory paper background with an extremely subtle paper texture.\n\nAnalyze the main subject and visual story of the uploaded reference image.\n\nExtract only the primary subject, preserving one or two essential identifying elements.\n\nRemove or heavily simplify all secondary details, including background architecture, crowds, vehicles, fences, signs, trees, and other unnecessary elements.\n\nTransform the primary subject into a sophisticated black-ink editorial illustration.\n\nILLUSTRATION STYLE:\n\nUse natural, clean pen strokes with varied line weight.\n\nPreserve an authentic hand-drawn appearance with expressive but controlled linework.\n\nAvoid overly precise engraving aesthetics, excessive internal details, and dense cross-hatching.\n\nPlace a large, nearly pure-black rectangular ink block behind the illustrated subject.\n\nThe rectangular block should have subtly imperfect, handmade print-style edges.\n\nKeep the black background clean, with only fine paper grain and minimal noise.\n\nAvoid obvious hatching, scratches, architectural lines, or complex textures.\n\nILLUSTRATION SCALE AND COMPOSITION:\n\nThe illustrated subject must occupy approximately 72–77% of the canvas width and 58–64% of the bottom section's height.\n\nMaintain a clear visual focal point with generous negative space surrounding the illustration.\n\nCenter the illustration within the lower section, balancing the subject and the rectangular black ink block.\n\nUse negative space as an intentional design element rather than filling it with decorative details.\n\n3. COLOR RULES\n\nThe bottom illustration must follow a strictly black-and-white color palette by default.\n\nPreserve only one localized accent color if the original reference image contains a clearly distinctive, concentrated color element with meaningful narrative importance.\n\nOrdinary blue skies, green vegetation, stone surfaces, skin tones, and environmental colors must not be treated as accent colors.\n\nAny preserved accent color must remain strictly localized to the relevant subject or area.\n\nNever allow accent colors to spread across the entire illustration.\n\n4. MINIMALIST EDITORIAL LAYOUT\n\nThe composition must contain absolutely no typography or written elements.\n\nDo not generate titles, captions, annotations, coordinates, location names, dates, numbers, signatures, logos, watermarks, symbols resembling letters, or decorative lettering.\n\nKeep all negative space completely free of text.\n\nAchieve the editorial aesthetic exclusively through composition, contrast, scale, texture, and the relationship between photography and illustration.\n\nMaintain visually balanced margins and intentional spacing throughout the lower section.\n\n5. FINAL ART DIRECTION\n\nThe finished poster must combine:\n\n- Authentic, high-quality photography\n- Minimalist black-and-white editorial illustration\n- Generous negative space\n- Independent art publication aesthetics\n- Quiet, restrained, sophisticated visual storytelling\n- A balanced relationship between documentary realism and expressive hand-drawn artwork\n\nThe overall result should resemble a carefully designed, collectible editorial art print.\n\n6. FINAL OUTPUT REQUIREMENTS\n\nASPECT RATIO:\n2:3 vertical\n\nRESOLUTION:\nHigh-resolution, sharp, print-quality output\n\nCOMPOSITION:\n- Exactly 50% original reference photography on top\n- Exactly 50% editorial illustration on the bottom\n- One perfectly straight horizontal dividing line\n- One complete, standalone poster\n\nRESTRICTIONS:\n- No text whatsoever\n- No typography, letters, numbers, captions, or annotations\n- No collages\n- No multi-poster layouts\n- No combined images\n- No unnecessary decorative elements\n- No modifications to the original subject's identity or appearance\n- No excessive illustration details\n- No changes to the original photograph's natural color relationships\n\nFINAL GOAL:\n\nCreate a sophisticated, visually balanced, completely text-free editorial art poster that faithfully preserves the uploaded reference photograph while transforming its primary subject into an expressive, minimalist black-ink illustration.\n\nThe visual storytelling must be accomplished entirely through imagery, with no written language anywhere in the composition.",
+          "why": "Upload one of your own photos, then paste the whole prompt. The top half keeps your photo and the bottom half redraws the main subject as a minimal black ink illustration. The author says you can delete the first section if you only want the drawing.",
+          "source": "https://x.com/icreatelife/status/2110148454832046359",
+          "promptSource": "https://x.com/icreatelife/status/2110149181197226275",
+          "author": "@icreatelife",
+          "likes": 116,
+          "note": "The prompt is in the author's two replies to the post (part 1 and part 2), joined here.",
+          "likesAsOf": "Oct 28, 2026 HKT"
         }
       ]
     }

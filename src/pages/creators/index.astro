@@ -20,7 +20,7 @@ const packsLd = { '@context': 'https://schema.org', '@type': 'ItemList', name: '
   <div class="w98-desk">{packs.map((p) => (
     <Win98 title={`📁 Starter Pack #${p.n}.exe`}>
       <p style="margin:0 0 8px"><b>{p.title}</b><br/>{ess.length} essentials live, new creator daily. Snapshot {p.asOf}. <a class="w98-btn" href={`/creators/${p.slug}`}>Open full pack ▸</a></p>
-      <ul class="bdg-grid" set:html={ess.map((c) => badgeHtml(c, 'mini')).join('')} />
+      <ul class="w98-list" set:html={ess.map((c) => badgeHtml(c, 'mini')).join('')} />
     </Win98>))}
   </div>
   <CreatorDrip full />

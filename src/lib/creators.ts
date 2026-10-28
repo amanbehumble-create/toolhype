@@ -12,3 +12,7 @@ export const creatorsListLd = (name: string, list: Creator[]) => ({
 // Daily drip: non-Essentials creators live in D1 `creator_drip` (not in the repo or static build) and are
 // revealed one per day at 00:00 HKT by functions/creators/[[path]].ts. Static HTML only has Essentials.
 export const DRIP_TOTAL = 98;
+import { ESSENTIALS_LIVE, type BadgeCreator } from './badge';
+// Only Essentials are ever turned into static pages / sitemap / llms entries. Drip creators come from D1 at runtime.
+export const essentials = () => data.packs[0].accounts.filter((c) => c.section === 'essentials');
+export const essentialBadges = (): BadgeCreator[] => essentials().map((c) => ({ handle: c.handle, name: c.name, followers: c.followers, section: c.section, descriptor: c.descriptor, avatar: c.avatar, drop: c.no, unlocked: ESSENTIALS_LIVE, tools: c.tools.map((t) => ({ slug: t, name: toolName(t) })) }));

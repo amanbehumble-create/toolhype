@@ -1,18 +1,19 @@
 // Daily creator drip. Unreleased creators live only in D1 `creator_drip`; this injects the ones whose
-// release_date (HKT) has arrived into the static /creators pages, and serves their avatars.
-interface Env { DB?: D1Database }
-type Row = { seq: number; release_date: string; handle: string; name: string; followers: number; section: string; descriptor: string; tools: string };
-const TOTAL = 98, ESSENTIALS = 16;
-const HKT = 8 * 3600e3;
-const todayHKT = (now = Date.now()) => new Date(now + HKT).toISOString().slice(0, 10);
-const nextUnlockMs = (now = Date.now()) => { const d = new Date(now + HKT); d.setUTCHours(24, 0, 0, 0); return d.getTime() - HKT; };
-const esc = (s: unknown) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]!));
-const fmtK = (n: number) => (n >= 1e6 ? (n / 1e6).toFixed(1) + 'M' : n >= 1e3 ? Math.round(n / 1e3) + 'K' : String(n));
-const SECTION: Record<string, string> = { 'strong-follows': 'Strong follows', 'further-picks': 'Further picks', 'article-writers': 'Article writers' };
+// release_date (HKT) has arrived into the static /creators list pages, serves their avatars, and renders
+// /creators/<handle> pages for released drip creators (404 before release, never for parked rows).
+import { type Env, TOTAL, ESSENTIALS, todayHKT, nextUnlockMs, releasedBadges } from '../_lib/drip';
+import { badgeHtml, creatorsItemListLd, profilePageLd, creatorTitle, creatorDesc, whyFollow, displayName, esc } from '../../src/lib/badge';
+const json = (o: unknown) => JSON.stringify(o).replace(/</g, '\\u003c');
+const notFound = async (ctx: EventContext<Env, string, unknown>) => {
+  const r = await ctx.env.ASSETS.fetch(new URL('/404', ctx.request.url));
+  return new Response(r.body, { status: 404, headers: { 'Content-Type': 'text/html; charset=utf-8', 'Cache-Control': 'public, max-age=0, s-maxage=300, must-revalidate' } });
+};
+const fresh = (res: Response, status = res.status) => { const h = new Headers(res.headers); h.set('Cache-Control', 'public, max-age=0, s-maxage=300, must-revalidate'); return new Response(res.body, { status, headers: h }); };
 
 export const onRequestGet: PagesFunction<Env> = async (ctx) => {
   const url = new URL(ctx.request.url);
-  const av = url.pathname.match(/^\/creators\/av\/([A-Za-z0-9_]{1,15})\.webp$/);
+  const path = url.pathname.replace(/\/$/, '').replace(/\.html$/, '');
+  const av = path.match(/^\/creators\/av\/([A-Za-z0-9_]{1,15})\.webp$/);
   if (av) {
     if (!ctx.env.DB) return new Response('Not found', { status: 404 });
     const r = await ctx.env.DB.prepare('SELECT avatar_b64 FROM creator_drip WHERE handle = ? AND release_date <= ?').bind(av[1], todayHKT()).first<{ avatar_b64: string }>();
@@ -20,27 +21,42 @@ export const onRequestGet: PagesFunction<Env> = async (ctx) => {
     const bin = Uint8Array.from(atob(r.avatar_b64), (c) => c.charCodeAt(0));
     return new Response(bin, { headers: { 'Content-Type': 'image/webp', 'Cache-Control': 'public, max-age=86400' } });
   }
+  if (path === '/creators/drip-template') return notFound(ctx);
+  const isList = path === '/creators' || /^\/creators\/starter-pack-\d+$/.test(path);
+  const one = !isList ? path.match(/^\/creators\/([A-Za-z0-9_]{1,15})$/) : null;
   const res = await ctx.next();
-  if (!(res.headers.get('content-type') || '').includes('text/html')) return res;
-  let rows: Row[] = [];
-  try { if (ctx.env.DB) rows = (await ctx.env.DB.prepare("SELECT seq, release_date, handle, name, followers, section, descriptor, tools FROM creator_drip WHERE pack = 'starter-pack-1' AND release_date <= ? ORDER BY seq DESC").bind(todayHKT()).all<Row>()).results ?? []; } catch {}
-  const revealed = ESSENTIALS + rows.length, next = nextUnlockMs();
-  const list = rows.map((c) => {
-    let tools: string[] = []; try { tools = JSON.parse(c.tools || '[]'); } catch {}
-    const isNew = c.release_date === todayHKT();
-    return `<li class="w98-item" id="${esc(c.handle)}"><img src="/creators/av/${esc(c.handle)}.webp" alt="${esc(c.name)} on X" width="48" height="48" loading="lazy"/><div><b><a href="https://x.com/${esc(c.handle)}" rel="noopener" target="_blank">${esc(c.name)}</a>${isNew ? ' <span class="w98-new">NEW TODAY</span>' : ''}</b><small>@${esc(c.handle)} · ${fmtK(c.followers)} followers · ${esc(SECTION[c.section] || '')}</small><p>${esc(c.descriptor)}</p>${tools.length ? `<p>On toolhype: ${tools.map((t) => `<a href="/tools/${esc(t)}">${esc(t)}</a>`).join(', ')}</p>` : ''}<small>Unlocked ${esc(c.release_date)}</small></div></li>`;
-  }).join('');
-  const ld = rows.length ? JSON.stringify({ '@context': 'https://schema.org', '@type': 'ItemList', name: 'Daily creator drops', numberOfItems: rows.length, itemListElement: rows.map((c, i) => ({ '@type': 'ListItem', position: i + 1, item: { '@type': 'Person', name: c.name, alternateName: '@' + c.handle, url: `https://x.com/${c.handle}`, description: c.descriptor } })) }).replace(/</g, '\\u003c') : '';
+  if (one && res.status === 404) {
+    const all = await releasedBadges(ctx.env);
+    const c = all.find((x) => x.handle.toLowerCase() === one[1].toLowerCase());
+    if (!c) return notFound(ctx);
+    if (c.handle !== one[1]) return Response.redirect(new URL(`/creators/${c.handle}`, url).toString(), 301);
+    const tpl = await (await ctx.env.ASSETS.fetch(new URL('/creators/drip-template', url))).text();
+    const name = displayName(c);
+    const ld = [profilePageLd(c), { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [['Home', '/'], ['X Creators', '/creators'], ['Starter Pack #1', '/creators/starter-pack-1'], [name, `/creators/${c.handle}`]].map(([n, p], i) => ({ '@type': 'ListItem', position: i + 1, name: n, item: 'https://toolhype.dev' + p })) }];
+    const title = creatorTitle(c), desc = creatorDesc(c).length > 160 ? creatorDesc(c).slice(0, 157).replace(/\s+\S*$/, '') + '…' : creatorDesc(c);
+    const html = tpl
+      .replace(/<meta name="robots" content="noindex"\s*\/?>/, '')
+      .replaceAll('/creators/drip-template', `/creators/${c.handle}`)
+      .replaceAll('__CR_TITLE__', esc(title)).replaceAll('__CR_DESC__', esc(desc)).replaceAll('__CR_HANDLE__', esc(c.handle))
+      .replace(/<div data-cr-badge><\/div>/, badgeHtml(c, 'full'))
+      .replace(/<p class="answer" data-cr-answer><\/p>/, `<p class="answer"><b>${esc(name)}</b> (@${esc(c.handle)}) ${esc(whyFollow(c).replace(/^Why follow: /, 'is '))}</p>`)
+      .replace('</head>', `<script type="application/ld+json">${json(ld[0])}</script><script type="application/ld+json">${json(ld[1])}</script></head>`);
+    return new Response(html, { status: 200, headers: { 'Content-Type': 'text/html; charset=utf-8', 'Cache-Control': 'public, max-age=0, s-maxage=300, must-revalidate' } });
+  }
+  if (!isList || !(res.headers.get('content-type') || '').includes('text/html')) return res;
+  const rel = await releasedBadges(ctx.env), today = todayHKT();
+  const revealed = ESSENTIALS + rel.length, next = nextUnlockMs();
+  const list = [...rel].reverse().map((c) => badgeHtml(c, 'mini', { isNew: c.unlocked === today })).join('');
+  const ld = rel.length ? json(creatorsItemListLd('Daily creator drops', rel)) : '';
   const out = new HTMLRewriter()
     .on('[data-drip-revealed]', { element(e) { e.setInnerContent(String(revealed)); } })
     .on('[data-drip-left]', { element(e) { e.setInnerContent(String(TOTAL - revealed)); } })
     .on('[data-drip-next]', { element(e) { e.setAttribute('data-drip-next', String(next)); } })
-    .on('[data-drip-list]', { element(e) { if (list) e.setInnerContent(list, { html: true }); } })
+    .on('[data-drip-list]', { element(e) { if (list) e.prepend(list, { html: true }); } })
     .on('[data-drip-empty]', { element(e) { if (list) e.remove(); } })
     .on('[data-drip-done]', { element(e) { if (revealed < TOTAL) e.remove(); } })
     .on('[data-drip-locked]', { element(e) { if (revealed >= TOTAL) e.remove(); } })
     .on('head', { element(e) { if (ld) e.append(`<script type="application/ld+json">${ld}</script>`, { html: true }); } })
     .transform(res);
-  const h = new Headers(out.headers); h.set('Cache-Control', 'public, max-age=0, s-maxage=300, must-revalidate');
-  return new Response(out.body, { status: out.status, headers: h });
+  return fresh(out);
 };

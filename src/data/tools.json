@@ -3976,5 +3976,57 @@
       "updatedAt": null
     },
     "logo": "/logos/hibi.png"
+  },
+  {
+    "slug": "soldfetch",
+    "name": "SoldFetch",
+    "url": "https://soldfetch.com/",
+    "affiliateUrl": null,
+    "category": "agents",
+    "useCases": [
+      "agents",
+      "coding"
+    ],
+    "pricing": "freemium",
+    "verdict": "API and MCP server that returns real eBay sold listings (up to 200 per call) with sold prices, item details and seller data, so your app or AI agent can price items from actual sales. Starts with 100 free units, then paid usage. Independent service, not affiliated with eBay; new site (domain registered Oct 2026).",
+    "useThisIf": "you resell on eBay or build pricing tools and want sold-price comps via API or MCP instead of scraping.",
+    "alternatives": [],
+    "source": "submission",
+    "addedAt": "2026-10-28",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/soldfetch.png"
+  },
+  {
+    "slug": "pius-bot",
+    "name": "Pius Bot",
+    "url": "https://products.ai/",
+    "affiliateUrl": null,
+    "category": "chat",
+    "useCases": [
+      "chat",
+      "productivity"
+    ],
+    "pricing": "free",
+    "verdict": "Free, ad-free AI shopping assistant from products.ai: it reads buying guides, reviews and forums, gives you one clear pick that fits what you asked for, explains why, and tells you where to buy it.",
+    "useThisIf": "you want one well-reasoned product recommendation instead of scrolling through review sites.",
+    "alternatives": [
+      "chatgpt"
+    ],
+    "source": "submission",
+    "addedAt": "2026-10-28",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/pius-bot.png"
   }
 ]

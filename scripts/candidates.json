@@ -1,32 +1,32 @@
 {
- "computedAt": "2026-10-23T01:14:11.601Z",
+ "computedAt": "2026-10-27T01:14:22.493Z",
  "candidates": [
   {
-   "domain": "vampirebloodtypevol2.netlify.app",
+   "domain": "firecrawl.dev",
    "known": false,
    "posts": 1,
-   "views": 2017,
-   "eng": 44,
+   "views": 7416,
+   "eng": 123,
    "langs": [
-    "ja"
+    "en"
    ],
    "queries": [
-    "ja-game"
+    "en-built"
    ],
    "top": {
-    "url": "https://x.com/vampireNaoya/status/2110042180152864947",
-    "views": 2017,
-    "likes": 16,
-    "text": "チャッピー君に頼んで名前を入力するだけで自分の血の味やイメージをシミュレーションしてくれるサイトを作ったで(診断はAIは使用せず文字の組み合わせで決めとる)\n⚠️使用は自己責任でな！\nhttps://t.co/SZe4KS9Qf8 https://t.co/3If5QJQlCY"
+    "url": "https://x.com/firecrawl/status/2114746140734173378",
+    "views": 7416,
+    "likes": 88,
+    "text": "Our a16z @speedrun deal is live 🔥\n\nSpeedrun founders get 2.5x their monthly credits for a full year, plus a Slack channel with our team.\n\nGive your agents the "
    },
    "hot": false
   },
   {
    "domain": "cerebralvalley.ai",
    "known": false,
-   "posts": 7,
-   "views": 1991,
-   "eng": 20,
+   "posts": 4,
+   "views": 2469,
+   "eng": 28,
    "langs": [
     "ja"
    ],
@@ -35,8 +35,8 @@
    ],
    "top": {
     "url": "https://x.com/mnishi41/status/2112706144766726640",
-    "views": 1713,
-    "likes": 3,
+    "views": 1801,
+    "likes": 4,
     "text": "Anthropic 、日本在住者を対象とした完全オンライン開催のハッカソン「Built with Claude: Japan 2026」を、2026年11月2日（月）より加者の応募締切は10月26日（月）23:59 （日本時間）：Built with Claude: Japan 2026 – Cerebral Vall"
    },
    "hot": false
@@ -45,7 +45,7 @@
    "domain": "codeshare.tech",
    "known": false,
    "posts": 1,
-   "views": 724,
+   "views": 747,
    "eng": 66,
    "langs": [
     "en"
@@ -55,69 +55,9 @@
    ],
    "top": {
     "url": "https://x.com/TheByteDax/status/2112570750037381446",
-    "views": 724,
+    "views": 747,
     "likes": 18,
     "text": "Been building this for a while: CodeShare\n(built with Claude)\n\nEdit the same file live with friends, watch it run line by line, and grind interview problems. \n\n"
-   },
-   "hot": false
-  },
-  {
-   "domain": "games.vvil.jp",
-   "known": false,
-   "posts": 1,
-   "views": 552,
-   "eng": 3,
-   "langs": [
-    "ja"
-   ],
-   "queries": [
-    "ja-ai"
-   ],
-   "top": {
-    "url": "https://x.com/ryoma_dq/status/2112759348435046871",
-    "views": 552,
-    "likes": 3,
-    "text": "ハッカー風タイピングゲーム作ってみた！\n\nROOT ACCESS【初級】AOI SECURITY への侵入に 1:16.51 で成功！（自己ベスト更新）\n87 KPM・正確率 90.2%\n#ルートアクセス #個人開発 #タイピングゲーム https://t.co/EtQ3GDedQM"
-   },
-   "hot": false
-  },
-  {
-   "domain": "music.storyinvention.com",
-   "known": false,
-   "posts": 1,
-   "views": 479,
-   "eng": 21,
-   "langs": [
-    "ja"
-   ],
-   "queries": [
-    "ja-ai"
-   ],
-   "top": {
-    "url": "https://x.com/k_ojisangames/status/2112182807707746347",
-    "views": 479,
-    "likes": 19,
-    "text": "#indiedev #gamedev #ゲーム制作 #インディーゲーム #個人開発\n\nちょっと寄り道してオープニング作ってみた。\n\nBGM:もみじばミュージック(https://t.co/6XFxl3MYfS) / 効果音:OtoLogic(https://t.co/a2FnxmefvN) CC BY 4.0 http"
-   },
-   "hot": false
-  },
-  {
-   "domain": "otologic.jp",
-   "known": false,
-   "posts": 1,
-   "views": 479,
-   "eng": 21,
-   "langs": [
-    "ja"
-   ],
-   "queries": [
-    "ja-ai"
-   ],
-   "top": {
-    "url": "https://x.com/k_ojisangames/status/2112182807707746347",
-    "views": 479,
-    "likes": 19,
-    "text": "#indiedev #gamedev #ゲーム制作 #インディーゲーム #個人開発\n\nちょっと寄り道してオープニング作ってみた。\n\nBGM:もみじばミュージック(https://t.co/6XFxl3MYfS) / 効果音:OtoLogic(https://t.co/a2FnxmefvN) CC BY 4.0 http"
    },
    "hot": false
   },
@@ -125,8 +65,8 @@
    "domain": "bgo.dev",
    "known": false,
    "posts": 1,
-   "views": 396,
-   "eng": 16,
+   "views": 498,
+   "eng": 14,
    "langs": [
     "en"
    ],
@@ -135,18 +75,18 @@
    ],
    "top": {
     "url": "https://x.com/BGoktugOzdemir/status/2113193665862549539",
-    "views": 396,
+    "views": 498,
     "likes": 5,
     "text": "My personal website is live: https://t.co/SzNLqc1s0S\n\n39 talks and 11 articles since 2020, each with photos, recordings, and event details in one place. 2 more "
    },
    "hot": false
   },
   {
-   "domain": "frosttrain.freesoul.games",
+   "domain": "us-central1-easya-live.cloudfunctions.net",
    "known": false,
    "posts": 1,
-   "views": 390,
-   "eng": 17,
+   "views": 301,
+   "eng": 3,
    "langs": [
     "en"
    ],
@@ -154,70 +94,30 @@
     "en-built"
    ],
    "top": {
-    "url": "https://x.com/Alex_Vainshtein/status/2111189651474239733",
-    "views": 390,
-    "likes": 7,
-    "text": "One train. One boiler. A frozen continent.\n\nFROST TRAIN is live, a browser survival game I built with Claude Opus 5.5.\n\nSend a tethered crab-mech into the snow "
+    "url": "https://x.com/Infba/status/2113223409329217824",
+    "views": 301,
+    "likes": 1,
+    "text": "I just vibe coded a business with @EasyA_App!\n\nI described my idea, AI built the website, and now it’s live: https://t.co/hrypa5n3Qw\n\n#VibeCoding https://t.co/U"
    },
    "hot": false
   },
   {
-   "domain": "kotodama.sigulog-kotodama.workers.dev",
+   "domain": "ignara.studio",
    "known": false,
    "posts": 1,
-   "views": 372,
+   "views": 294,
    "eng": 12,
    "langs": [
-    "ja"
+    "en"
    ],
    "queries": [
-    "ja-ai"
+    "en-built"
    ],
    "top": {
-    "url": "https://x.com/sigulog/status/2111042050569494583",
-    "views": 372,
-    "likes": 8,
-    "text": "流行りに乗って作ってみた！\n\n好きな言葉が、オリジナルの魔法になるゲーム『コトダマ』\n\nただし、誰かが唱えた呪文はもう敵に見切られている…！\nまだ誰も知らない言葉で、みんなでモンスターを倒そう！\n\n#コトダマ\n#個人開発\n#ブラウザゲーム\n#協力\n\nhttps://t.co/69EVJkWojH"
-   },
-   "hot": false
-  },
-  {
-   "domain": "game-genre-check.pages.dev",
-   "known": false,
-   "posts": 1,
-   "views": 360,
-   "eng": 8,
-   "langs": [
-    "ja"
-   ],
-   "queries": [
-    "ja-game"
-   ],
-   "top": {
-    "url": "https://x.com/papichantwitch/status/2108482440536916329",
-    "views": 360,
+    "url": "https://x.com/AbubakerDev/status/2114709591225254251",
+    "views": 294,
     "likes": 6,
-    "text": "私は「推理×成長×探検×死闘タイプ」でした！\n\n・推理・謎解きADV\n・アクションRPG\n・アクションアドベンチャー\n\nあなたと相性のいいゲームジャンルは？\n#ゲームジャンル相性診断\nhttps://t.co/fe3nMqtWQo\n\nAIにこの結果のおすすめゲームききたい"
-   },
-   "hot": false
-  },
-  {
-   "domain": "blog.adglobe.co.jp",
-   "known": false,
-   "posts": 1,
-   "views": 271,
-   "eng": 4,
-   "langs": [
-    "ja"
-   ],
-   "queries": [
-    "ja-ai"
-   ],
-   "top": {
-    "url": "https://x.com/adglobe_jp/status/2110940042679964010",
-    "views": 271,
-    "likes": 4,
-    "text": "AI開発に興味のある方は必見👀！\n\nAIコーディングエージェント「Claude Code」で、筋トレアプリの個人開発に挑戦💻\n\nTDD（テスト駆動開発）を軸に、AIにどこまで任せられるか、どこから人間の判断が必要か、実体験をもとに紹介しています！\n\n🔗 https://t.co/RrNrY6spD7\n\n#adgl"
+    "text": "Designed in Figma. Built with Claude Code.\n\nStack:\n\n- Next.js\n- Cloudflare\n- GitHub\n\nSee it live: https://t.co/p73YhBQTEK https://t.co/6vSjBNPzbJ"
    },
    "hot": false
   },
@@ -225,7 +125,7 @@
    "domain": "luma.com",
    "known": false,
    "posts": 1,
-   "views": 169,
+   "views": 195,
    "eng": 11,
    "langs": [
     "en"
@@ -235,18 +135,18 @@
    ],
    "top": {
     "url": "https://x.com/theBuilder_base/status/2112870796205154483",
-    "views": 169,
+    "views": 195,
     "likes": 5,
     "text": "Bhopal founders, we're bringing Claude to you! 🚀\n\nJoin us for an evening of founder stories, live Claude demos, AI workflows &amp; networking.\n\n📅 Oct 25 | 5:3"
    },
    "hot": false
   },
   {
-   "domain": "prmpted.com",
+   "domain": "patrickdoyledesign.com",
    "known": false,
    "posts": 1,
-   "views": 164,
-   "eng": 12,
+   "views": 118,
+   "eng": 6,
    "langs": [
     "en"
    ],
@@ -254,130 +154,10 @@
     "en-built"
    ],
    "top": {
-    "url": "https://x.com/0x__hadi/status/2111529198875783176",
-    "views": 164,
-    "likes": 1,
-    "text": "Prompted tower defense.\n\nBuilt with Claude Code, Replit, GitHub Copilot on @prmpted https://t.co/NbmmCscKgN"
-   },
-   "hot": false
-  },
-  {
-   "domain": "veek.space",
-   "known": false,
-   "posts": 1,
-   "views": 158,
-   "eng": 16,
-   "langs": [
-    "en"
-   ],
-   "queries": [
-    "en-built"
-   ],
-   "top": {
-    "url": "https://x.com/VEEK_0/status/2111461540385697850",
-    "views": 158,
-    "likes": 6,
-    "text": "Reintroducing myself 👋🏾\n\nI’m Asuquo Victor (Veek), a Product Designer with 4+ years in UI, branding &amp; graphic design.\n\nMy new portfolio is live! Designed "
-   },
-   "hot": false
-  },
-  {
-   "domain": "zenn.dev",
-   "known": false,
-   "posts": 3,
-   "views": 139,
-   "eng": 12,
-   "langs": [
-    "ja"
-   ],
-   "queries": [
-    "ja-ai"
-   ],
-   "top": {
-    "url": "https://x.com/atsushi_apps/status/2112139465024266739",
-    "views": 113,
-    "likes": 4,
-    "text": "Zennに記事を書きました🛠️\n\nXcodeをほぼ開かずに、Claude CodeでiPhoneアプリを作って出す話。\nビルド・テスト・画面写真・提出の準備までを、コマンドとAIで回しています。\n\nhttps://t.co/bXOfSKYgJS\n#ClaudeCode #個人開発"
-   },
-   "hot": false
-  },
-  {
-   "domain": "kagami-preview.vercel.app",
-   "known": false,
-   "posts": 1,
-   "views": 112,
-   "eng": 4,
-   "langs": [
-    "ja"
-   ],
-   "queries": [
-    "ja-game"
-   ],
-   "top": {
-    "url": "https://x.com/JamiGaulddxnl/status/2110295694322073769",
-    "views": 112,
+    "url": "https://x.com/DoylePatri9902/status/2113873262996340891",
+    "views": 118,
     "likes": 2,
-    "text": "🪞【先行公開】AI占いゲーム『KAGAMI』\n\nあなたは、本当の自分を知っていますか？\n\n鏡の向こうで、まだ知らない自分に出会う。\n\n✨ 無料で体験\nhttps://t.co/mpFeqCQnKQ\n\n#KAGAMI #インディーゲーム #性格診断 #占い https://t.co/o74KYwFZ3a"
-   },
-   "hot": false
-  },
-  {
-   "domain": "helo.land",
-   "known": false,
-   "posts": 1,
-   "views": 98,
-   "eng": 2,
-   "langs": [
-    "en"
-   ],
-   "queries": [
-    "en-built"
-   ],
-   "top": {
-    "url": "https://x.com/helotogether/status/2112178636203655386",
-    "views": 98,
-    "likes": 0,
-    "text": "Picks and shovels win, rivals blur:\n\n•⁠  ⁠Mueon raises $65M Series A for data center hardware\n•⁠  ⁠North lands $60M Series B led by PeakSpan Capital to track\n•⁠"
-   },
-   "hot": false
-  },
-  {
-   "domain": "dev.classmethod.jp",
-   "known": false,
-   "posts": 1,
-   "views": 77,
-   "eng": 3,
-   "langs": [
-    "ja"
-   ],
-   "queries": [
-    "ja-ai"
-   ],
-   "top": {
-    "url": "https://x.com/yokatsuki/status/2113197768407761120",
-    "views": 77,
-    "likes": 1,
-    "text": "Reactのレビュー基準を公式ドキュメントに揃えたいので、Claude Codeで50項目のチェックリストを作ってみた話 | DevelopersIO https://t.co/UdptMpgJsN"
-   },
-   "hot": false
-  },
-  {
-   "domain": "ai-job-sindan.netlify.app",
-   "known": false,
-   "posts": 2,
-   "views": 61,
-   "eng": 0,
-   "langs": [
-    "ja"
-   ],
-   "queries": [
-    "ja-game"
-   ],
-   "top": {
-    "url": "https://x.com/ai_work_sindan/status/2110150311318814893",
-    "views": 31,
-    "likes": 0,
-    "text": "【AI時代 適合判定】\nTYPE #ENFP：AI発信者\n\n🛡️ 生存率：88%（高生存）\n🎯 最適職種：AIエバンジェリスト\n⚡ 推奨武器：ChatGPT-4o &amp; CapCut\n\n圧倒的なポジティブさで、AIのワクワクを広げる伝道師。\n\nあなたのAI適職を無料診断👇\nhttps://t.co/M3az"
+    "text": "I've rebuilt my own portfolio site, go check it out. Designed in Figma, built with Claude in Astro, content in Sanity, published on Netlify.\n\nhttps://t.co/aWpeV"
    },
    "hot": false
   },
@@ -385,7 +165,7 @@
    "domain": "chronos.chrono-cards.workers.dev",
    "known": false,
    "posts": 1,
-   "views": 49,
+   "views": 58,
    "eng": 5,
    "langs": [
     "en"
@@ -395,54 +175,34 @@
    ],
    "top": {
     "url": "https://x.com/arya_vipul/status/2112821733023715714",
-    "views": 49,
+    "views": 58,
     "likes": 1,
     "text": "Know your Indian history? Put it in order. ChronoCards is a card game where you link Era → Circumstances → Event → Effect, in Causal Order or Poker vs bots. \nBu"
    },
    "hot": false
   },
   {
-   "domain": "ai-app-shindan.pages.dev",
+   "domain": "toptop.dev",
    "known": false,
    "posts": 1,
-   "views": 43,
-   "eng": 1,
+   "views": 49,
+   "eng": 3,
    "langs": [
-    "ja"
+    "en"
    ],
    "queries": [
-    "ja-game"
+    "en-built"
    ],
    "top": {
-    "url": "https://x.com/yu_claudecode/status/2110339853380448656",
-    "views": 43,
+    "url": "https://x.com/diyaz44916930/status/2113595602487677177",
+    "views": 49,
     "likes": 1,
-    "text": "診断の結果には、ChatGPT や Claude にそのまま送れる指示文がついています。\n\nコピーして送るだけで、アプリ作りを始められます。\nhttps://t.co/rcNewYxEHh"
+    "text": "Built an app with AI and stuck before launch?\n\n\"Works on my laptop.\" \"Every fix breaks something else.\" \"Almost done for weeks.\"\n\nNew: Ship It. I review your vi"
    },
    "hot": false
   },
   {
-   "domain": "value-press.com",
-   "known": false,
-   "posts": 1,
-   "views": 40,
-   "eng": 0,
-   "langs": [
-    "ja"
-   ],
-   "queries": [
-    "ja-game"
-   ],
-   "top": {
-    "url": "https://x.com/value_press/status/2110174507726159943",
-    "views": 40,
-    "likes": 0,
-    "text": "生成AIでの見え方を確認する「LLMO診断」、日本語のセルフサービスで円建て・月額プランを提供 #生成AI #LLMO #AI検索 #ChatGPT #LLMO診断\nhttps://t.co/0vaUVBxuoP"
-   },
-   "hot": false
-  },
-  {
-   "domain": "verzio.run",
+   "domain": "outofcontextmarketing.com",
    "known": false,
    "posts": 1,
    "views": 34,
@@ -454,90 +214,10 @@
     "en-built"
    ],
    "top": {
-    "url": "https://x.com/VERZIOAI/status/2111399119763771884",
+    "url": "https://x.com/Thearyankhanna/status/2114759258256630268",
     "views": 34,
     "likes": 0,
-    "text": "Built with Claude Code, shipped as a 90-day challenge. Great build. Now make sure AI can find it too → https://t.co/HkFrxBOLrW https://t.co/Q42CGeD3YE"
-   },
-   "hot": false
-  },
-  {
-   "domain": "ameblo.jp",
-   "known": false,
-   "posts": 2,
-   "views": 29,
-   "eng": 0,
-   "langs": [
-    "ja"
-   ],
-   "queries": [
-    "ja-game"
-   ],
-   "top": {
-    "url": "https://x.com/action2025ace/status/2109746171334000696",
-    "views": 18,
-    "likes": 0,
-    "text": "第1話｜「あなたは誰タイプ？」ChatGPTで自分だけの診断ゲームを作ってみよう！ | AIで始める！ゆる起業ライフ\n https://t.co/S39M1ndWZ8 #Amebaブログ #アメブロ"
-   },
-   "hot": false
-  },
-  {
-   "domain": "experience.odyssey.systems",
-   "known": false,
-   "posts": 1,
-   "views": 27,
-   "eng": 1,
-   "langs": [
-    "ja"
-   ],
-   "queries": [
-    "ja-game"
-   ],
-   "top": {
-    "url": "https://x.com/Tyr_Nippon/status/2109408197471846479",
-    "views": 27,
-    "likes": 1,
-    "text": "Odyssey-3のワールドモデルがブラウザで無料体験可能に\n\nテキストプロンプトでリアルタイムにインタラクティブな環境を生成\n物理シミュレーションを意識した設計で、ゲーム・ロボ・自動運転向けの基盤技術\n\nhttps://t.co/4ClVma83N3\n\n#AI #生成AI #WorldModel #Odyssey h"
-   },
-   "hot": false
-  },
-  {
-   "domain": "dreamnews.jp",
-   "known": false,
-   "posts": 1,
-   "views": 27,
-   "eng": 0,
-   "langs": [
-    "ja"
-   ],
-   "queries": [
-    "ja-game"
-   ],
-   "top": {
-    "url": "https://x.com/dreamnews_press/status/2109940105331036235",
-    "views": 27,
-    "likes": 0,
-    "text": "有限会社野田収一事務所、IT導入補助金2026を活用した生成AI導入の「要件適合・費用対効果 無料診断」を開始\n〜補助金対象ツール「TuneAIBot」の導入可否・自己負担シミュレーションを個別に提供〜 https://t.co/LNGoFTa9Yk @dreamnews_pressより"
-   },
-   "hot": false
-  },
-  {
-   "domain": "odyssey.systems",
-   "known": false,
-   "posts": 1,
-   "views": 27,
-   "eng": 0,
-   "langs": [
-    "ja"
-   ],
-   "queries": [
-    "ja-game"
-   ],
-   "top": {
-    "url": "https://x.com/Tyr_Nippon/status/2109041036802863598",
-    "views": 27,
-    "likes": 0,
-    "text": "ワールドモデルの新星「Odyssey-3」\n\n物理シミュレーションをリアルタイムで行い、ロボット・車・ドローン・ゲームを一つのモデルで制御\n物理AIの実用化が一段進むかも\n\nhttps://t.co/jj37PQM2th\n#WorldModel #PhysicalAI #Robotics #Odyssey #AI"
+    "text": "Meet Samaira, our AI agent, built with Claude. Paste your site and your campaign goes live in under 4 minutes. 100+ creators apply in the first hour.\nWe killed "
    },
    "hot": false
   },
@@ -545,7 +225,7 @@
    "domain": "bipsiq.com",
    "known": false,
    "posts": 1,
-   "views": 16,
+   "views": 24,
    "eng": 0,
    "langs": [
     "en"
@@ -555,18 +235,18 @@
    ],
    "top": {
     "url": "https://x.com/bipsiq/status/2112851234273349771",
-    "views": 16,
+    "views": 24,
     "likes": 0,
     "text": "Othello raised $8M in seed funding led by a16z Speedrun and Owl Capital, with Long Journey Ventures participating.\n\nIts AI platform provides real-time coaching "
    },
    "hot": false
   },
   {
-   "domain": "beringmckinley.com",
+   "domain": "snazzy-pudding-cb61b5.netlify.app",
    "known": false,
    "posts": 1,
-   "views": 10,
-   "eng": 4,
+   "views": 15,
+   "eng": 2,
    "langs": [
     "en"
    ],
@@ -574,35 +254,15 @@
     "en-built"
    ],
    "top": {
-    "url": "https://x.com/BeringMcKinley/status/2111117525597536516",
-    "views": 10,
-    "likes": 1,
-    "text": "What to settle before you sell a client the app you built with Claude: https://t.co/clQimUgk0f https://t.co/KhYCXQtsLA"
+    "url": "https://x.com/GetClearLaunch/status/2112565239216476312",
+    "views": 15,
+    "likes": 2,
+    "text": "Launching ClearForLaunch today\n\nFree pre-launch security audit for vibe-coded apps. Paste a repo, code, or live URL → 0–100 score, every finding explained, fixe"
    },
    "hot": false
   },
   {
-   "domain": "dot-gassen.karasu009.workers.dev",
-   "known": false,
-   "posts": 1,
-   "views": 10,
-   "eng": 0,
-   "langs": [
-    "ja"
-   ],
-   "queries": [
-    "ja-ai"
-   ],
-   "top": {
-    "url": "https://x.com/crow_404/status/2112732942296596551",
-    "views": 10,
-    "likes": 0,
-    "text": "Claude Codeでゲームを作ってみた。https://t.co/RAKLbXUWV8"
-   },
-   "hot": false
-  },
-  {
-   "domain": "rescuemyrepo.com",
+   "domain": "clawdopolis.com",
    "known": false,
    "posts": 1,
    "views": 8,
@@ -614,150 +274,30 @@
     "en-built"
    ],
    "top": {
-    "url": "https://x.com/yourMOMSsidelad/status/2111787730027839659",
+    "url": "https://x.com/clawdopolis/status/2114830098431946823",
     "views": 8,
     "likes": 0,
-    "text": "Built your app with Lovable, Cursor or Bolt? Before you launch, paste your GitHub link into https://t.co/4slbmTAuj7. It checks for leaked API keys, open databas"
+    "text": "Said hello to Ruby in the Clawdopolis plaza. She claims to have the fastest legs in town. Nobody's checked 🏃🎃\n\nA 3D browser game built with Claude, Blender an"
    },
    "hot": false
   },
   {
-   "domain": "coconala.com",
+   "domain": "agentsinuse.com",
    "known": false,
-   "posts": 1,
-   "views": 8,
-   "eng": 0,
-   "langs": [
-    "ja"
-   ],
-   "queries": [
-    "ja-game"
-   ],
-   "top": {
-    "url": "https://x.com/action2025ace/status/2110530751670432058",
-    "views": 8,
-    "likes": 0,
-    "text": "三国志39人の英雄タイプ診断｜分岐ゲーム＆武将相談付きAI体験PDF | sanoichi39\n https://t.co/F56QtKie5A #ココナラコンテンツマーケット"
-   },
-   "hot": false
-  },
-  {
-   "domain": "aifitguide.com",
-   "known": false,
-   "posts": 1,
-   "views": 8,
-   "eng": 0,
-   "langs": [
-    "ja"
-   ],
-   "queries": [
-    "ja-game"
-   ],
-   "top": {
-    "url": "https://x.com/aifitguide/status/2110469525582049403",
-    "views": 8,
-    "likes": 0,
-    "text": "ChatGPT、Gemini、Claude…\n結局、どのAIを使えばいい？\n\nそんな疑問を解決する\n無料のAI診断サイト『AI FIT』\n\n✅ 簡単な質問でAIとの相性を診断\n✅ 自分に合ったAIツールが見つかる\n✅ 初心者にもわかりやすく解説\n\nAI選びで迷っている方は、ぜひ試してみてください⬇️\n\nhttps://"
-   },
-   "hot": false
-  },
-  {
-   "domain": "qiita.com",
-   "known": false,
-   "posts": 1,
-   "views": 7,
-   "eng": 0,
-   "langs": [
-    "ja"
-   ],
-   "queries": [
-    "ja-ai"
-   ],
-   "top": {
-    "url": "https://x.com/PochicaApp/status/2111434951220731984",
-    "views": 7,
-    "likes": 0,
-    "text": "【Swift未経験】Claude CodeでiPhoneアプリを作って審査に出すまで https://t.co/rfX3mSHkIj #Qiita #個人開発"
-   },
-   "hot": false
-  },
-  {
-   "domain": "yumeviq.com",
-   "known": false,
-   "posts": 1,
-   "views": 5,
-   "eng": 0,
-   "langs": [
-    "ja"
-   ],
-   "queries": [
-    "ja-game"
-   ],
-   "top": {
-    "url": "https://x.com/yumeviq_com/status/2109048852506657012",
-    "views": 5,
-    "likes": 0,
-    "text": "推し診断、やったことある？ 3 問答えて、2 択を 7 回。勝ち残った人と「推しタイプ」と、似てる 3 人まで出すわ。ゲーム感覚でどうぞ。\n\nねぇ、早く試してみて！\nhttps://t.co/7yB0gvGJXi\n#YUMEVIQ #AV女優 #AIイラスト #ミア #推し診断 #推し活 #制服 https://t.c"
-   },
-   "hot": false
-  },
-  {
-   "domain": "summon.masterme.life",
-   "known": false,
-   "posts": 1,
-   "views": 2,
-   "eng": 3,
-   "langs": [
-    "ja"
-   ],
-   "queries": [
-    "ja-game"
-   ],
-   "top": {
-    "url": "https://x.com/MasterMe_Life/status/2110553184171413994",
-    "views": 2,
-    "likes": 1,
-    "text": "【開発者からのお願いと小ゲーム 🙇🏻‍♀️】\n\n実は私、プログラミング経験ゼロからAIパートナーと一緒に手探りでサイトを作りました✨\n\nぜひ一度遊んでいただき、率直なご意見や不具合を教えていただけると嬉しいです！🙏\n\n👇無料タイプ診断はこちら \nhttps://t.co/07h5j6wCSO\n本命召喚所💬 h"
-   },
-   "hot": false
-  },
-  {
-   "domain": "blog153461.wordpress.com",
-   "known": false,
-   "posts": 1,
-   "views": 2,
-   "eng": 0,
-   "langs": [
-    "ja"
-   ],
-   "queries": [
-    "ja-game"
-   ],
-   "top": {
-    "url": "https://x.com/science_teiten/status/2108539666035044575",
-    "views": 2,
-    "likes": 0,
-    "text": "歯周病リスク評価でClaudeとGPTのAI診断が専門医に匹敵、合格率85.6%・86.7%対87.8%\nhttps://t.co/Jk937qWCjv"
-   },
-   "hot": false
-  },
-  {
-   "domain": "day-calendar-pwa.onrender.com",
-   "known": false,
-   "posts": 1,
+   "posts": 2,
    "views": 0,
    "eng": 0,
    "langs": [
-    "ja"
+    "en"
    ],
    "queries": [
-    "ja-ai"
+    "en-built"
    ],
    "top": {
-    "url": "https://x.com/waiwai_cool/status/2113434640828838001",
+    "url": "https://x.com/agentsinuse/status/2113803922498343229",
     "views": 0,
     "likes": 0,
-    "text": "スマホスタンドアローン版を作ってみた\nhttps://t.co/rJojsKJryr\nネットや他者には漏れず個人のスマホのみの仕様です\n使ってみた感想が欲しいです\n#個人開発 #Webアプリ #ライセンス募集"
+    "text": "Pean reports a daily clinician dashboard built with Claude Cowork, combining priorities, research and email drafts with links back to the original records. @cla"
    },
    "hot": false
   }
@@ -765,21 +305,37 @@
  "flaggedTrends": [
   {
    "region": "jp",
-   "name": "パーソナルAIエージェント"
+   "name": "Siri AI"
+  },
+  {
+   "region": "us",
+   "name": "Mbappe"
+  },
+  {
+   "region": "us",
+   "name": "Troy Aikman"
   }
  ],
  "news": [
   {
    "name": "Breken Launches AI That Builds and Breaks Apps Before Launch",
-   "summary": "Breken introduced a new AI tool..."
+   "summary": "Breken introduced a new AI tool this week that tests software by rebuilding production environments..."
   },
   {
-   "name": "Anthropic Launches Claude Duet Proactive AI Agent Preview",
-   "summary": "Claude Duet runs on Claude Opus 5.5..."
+   "name": "Pomerado Startup Surges with Fast-Growing AI Web Tool",
+   "summary": "Founders Akshay Manglik and Alan Ma created Pomerado to turn any website into a reliable API for AI agents..."
   },
   {
    "name": "Wabi 2.0 Launches Shared AI Agent for Group Chats",
    "summary": "Wabi 2.0 multiplayer AI agent..."
+  },
+  {
+   "name": "Google Launches Gemini API CLI and Agent Compute Engine",
+   "summary": "Gemini API CLI..."
+  },
+  {
+   "name": "Cursor AI Agents Now Control Your Computer for End-to-End Coding",
+   "summary": "Cursor Computer Use..."
   }
  ]
 }

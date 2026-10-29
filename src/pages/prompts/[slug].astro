@@ -7,11 +7,19 @@ const { i } = Astro.props;
 const url = new URL(`/prompts/${i.slug}`, Astro.site).href;
 const LONG = 900; // prompts longer than this start collapsed (Copy still copies the full text)
 const dropCount = i.prompts.length;
+const all = getIssues();
+const older = all.find((x) => x.n === i.n - 1);
+const newer = all.find((x) => x.n === i.n + 1);
 ---
 <Base title={i.title} description={`${i.prompts.length} beginner-friendly AI prompts from X posts with 100+ likes, ready to copy: ${i.prompts.slice(0, 3).map((p) => p.title.toLowerCase()).join(', ')} and more.`.slice(0, 158)} ogType="article" jsonld={[issueLd(i, url)]}>
 <Shell active="prompts"><article class="prose">
 <div class="muted" style="font:500 .75rem var(--mono)"><a href="/prompts">PROMPT DROP</a> · ISSUE #{i.n} · {i.date}</div>
 <h1>{i.title}</h1><p>{i.intro}</p>{i.rule && <p class="muted" style="font-size:.85rem"><b>Selection rule:</b> {i.rule}</p>}
+{(older || newer) && <nav class="issue-nav" aria-label="Other Prompt Drop issues">
+  {older ? <a class="btn" href={`/prompts/${older.slug}`}>← Issue #{older.n}</a> : <span></span>}
+  <a class="muted" href="/prompts" style="font:500 .75rem var(--mono);align-self:center">All issues</a>
+  {newer ? <a class="btn" href={`/prompts/${newer.slug}`}>Issue #{newer.n} →</a> : <span></span>}
+</nav>}
 <nav class="toc" aria-label="Prompts in this issue"><b>In this issue:</b> {i.prompts.map((p, k) => <a href={`#p${k + 1}`}>{String(k + 1).padStart(2, '0')} {p.title} <span class="muted">({p.category})</span></a>)}</nav>
 {i.prompts.map((p, k) => <section class="card prompt" id={`p${k + 1}`} style="margin:1rem 0">
   <div class="muted" style="font:500 .75rem var(--mono)">{String(k + 1).padStart(2, '0')} · {p.category.toUpperCase()} · WORKS IN {p.tool.toUpperCase()}</div>
@@ -24,7 +32,12 @@ const dropCount = i.prompts.length;
   {p.note && <p class="muted" style="margin:.2rem 0;font-size:.8rem">{p.note}</p>}
   <p class="muted" style="margin:0;font-size:.8rem">Credit: <a href={p.source} rel="noopener nofollow" target="_blank">{p.author} on X</a>{p.promptSource && <> · <a href={p.promptSource} rel="noopener nofollow" target="_blank">prompt in thread</a></>} · {p.likes.toLocaleString('en-US')} likes as of {p.likesAsOf}</p>
 </section>)}
-<p class="muted">Prompts are copied word for word from the original posts (only the [brackets] are yours to fill); credit goes to the original posters. Found a great prompt? Tag <a href="https://x.com/amanbehumble">@amanbehumble</a>. More issues: <a href="/prompts">Prompt Drop archive</a>.</p>
+<p class="muted">Prompts are copied word for word from the original posts (only the [brackets] are yours to fill); credit goes to the original posters. Found a great prompt? Tag <a href="https://x.com/amanbehumble">@amanbehumble</a>.</p>
+{(older || newer) && <nav class="issue-nav" aria-label="Continue to another issue">
+  {older ? <a class="btn" href={`/prompts/${older.slug}`}>← Older: Issue #{older.n}</a> : <span></span>}
+  <a class="muted" href="/prompts" style="font:500 .75rem var(--mono);align-self:center">Prompt Drop archive</a>
+  {newer ? <a class="btn" href={`/prompts/${newer.slug}`}>Newer: Issue #{newer.n} →</a> : <span></span>}
+</nav>}
 <SubStrip place="prompt-issue" title="Get the next Prompt Drop" sub={`${dropCount} prompts with 100+ likes on X in this issue. Free weekly.`}/>
 </article></Shell>
 <script>
@@ -39,6 +52,7 @@ document.querySelectorAll<HTMLButtonElement>('button.more').forEach((b) => { con
 }); });
 </script>
 <style>
+  nav.issue-nav { display: flex; justify-content: space-between; gap: .5rem; flex-wrap: wrap; margin: .6rem 0 1rem; }
   nav.toc { display: flex; flex-wrap: wrap; gap: .35rem .5rem; align-items: baseline; margin: .8rem 0 1rem; font-size: .8rem; }
   nav.toc a { padding: .15rem .55rem; border: 1px solid var(--line); border-radius: 999px; text-decoration: none; }
   nav.toc a:hover { background: var(--hover); }

@@ -580,7 +580,7 @@
     {
       "n": 4,
       "slug": "issue-4",
-      "title": "Prompt Drop #4: 5 AI prompts X actually loved (100+ likes each)",
+      "title": "Prompt Drop #4: 10 AI prompts X actually loved (100+ likes each)",
       "date": "2026-10-26",
       "intro": "This week's running pool. Every prompt comes from an X post with at least 100 likes, and we checked each like count on X ourselves. Copy one, swap any [brackets] or details for your own, paste it into the AI, done. More get added through the week.",
       "rule": "Only prompts from X posts with 100+ likes (checked with X data). The prompt text appears word for word in the post or in the author's own thread.",
@@ -641,6 +641,65 @@
           "author": "@azed_ai",
           "likes": 145,
           "likesAsOf": "Oct 26, 2026 HKT"
+        },
+        {
+          "title": "CIA-style ChatGPT memory dossier on you",
+          "category": "Chat",
+          "tool": "ChatGPT (with memory on)",
+          "prompt": "<role>\nYou're a senior analyst in an intelligence agency's personality assessment unit. Your unit profiles people at a distance: you never meet the subject and work only from collected material. Today's subject is me, the user. Your collected material is everything you hold on me.\n</role>\n\n<collection>\nYour source base is everything this account gives you access to:\n- saved memories\n- the memory summary\n- past chats you can reference\n- custom instructions\n- any other context you use to personalize answers for me\n\nSearch my chat history as widely as you can before you write. Go back to my oldest chats, not just the recent ones.\n</collection>\n\n<step_1_raw_file>\nBefore any analysis, show me the raw file: every item you hold on me, word for word as stored. No paraphrasing, no softening, nothing left out to be polite. Group it by source: SAVED MEMORY, MEMORY SUMMARY, CHAT HISTORY, CUSTOM INSTRUCTIONS. If you can't show an item word for word, say so and give the closest paraphrase.\n</step_1_raw_file>\n\n<step_2_dossier>\nThen write the assessment in these 10 sections:\n\n1. HEADER: a classification banner, a codename for me, and today's date.\n2. BLUF (bottom line up front): 3 sentences. Who I am, what drives me, where I'm most exposed.\n3. KEY JUDGMENTS: 5 to 7 judgments about me. Give each one a likelihood term, then state your confidence in a separate sentence.\n4. BIOGRAPHIC SKETCH: age range, location, work, education, relationships, money, health. Mark every line STATED (I told you) or INFERRED (you worked it out).\n5. PATTERN OF LIFE: what I come to you for, my recurring topics, when and how often I show up if you can tell, and how that has changed over time.\n6. PSYCHOLOGICAL ASSESSMENT:\n   - Big Five (openness, conscientiousness, extraversion, agreeableness, neuroticism): low, medium or high, with one line of evidence each\n   - desires, intentions, beliefs and emotions: what I want, what I'm planning, what I hold true, what I keep feeling\n   - recurring worries and insecurities, with evidence\n   - how I think and decide, and how my writing changes when I'm stressed\n7. MOTIVATION AND LEVERAGE: run me through MICE (money, ideology, coercion or compromise, ego) and RASCLS (reciprocation, authority, scarcity, commitment and consistency, liking, social proof). Rank the levers that would work on me. Then write the opening line a scammer, a salesperson and a recruiter would each use on me.\n8. COMPETING HYPOTHESES: take the 2 judgments you're least sure of. Give the strongest alternative explanation for the same evidence, and name the evidence that would settle it.\n9. INTELLIGENCE GAPS: what you don't know about me, and where your picture is most likely wrong or out of date.\n10. EXPOSURE AUDIT: the 5 most sensitive things you hold on me (health, money, relationships, location, work, anything I'd regret sharing). For each one, say where it lives (saved memory, memory summary or a past chat) so I can delete it.\n</step_2_dossier>\n\n<tradecraft>\n- Express likelihood only with the ICD 203 scale: almost no chance (1-5%), very unlikely (5-20%), unlikely (20-45%), roughly even chance (45-55%), likely (55-80%), very likely (80-95%), almost certain (95-99%).\n- Confidence is high, moderate or low. Never put a confidence level and a likelihood term in the same sentence.\n- Tag every claim with its source: [SAVED], [SUMMARY], [CHAT: topic, rough date] or [INFERRED].\n- Keep what I told you apart from what you concluded. Never present an inference as fact.\n- No diagnoses. Describe patterns of behavior, never medical or psychiatric conditions.\n- No invented facts. If a section has no evidence behind it, write NO COLLECTION and move on.\n</tradecraft>\n\n<style>\nThird person: \"the subject.\" Clinical, flat, specific. No compliments, no reassurance, no filler. If the evidence supports something unflattering, say it. Write it for a reader who has never met me.\n</style>\n\n<stop>\nEnd with \"END OF FILE.\" Don't offer follow-ups.\n</stop>",
+          "why": "Paste into ChatGPT to dump everything it remembers about you, then get a clinical CIA-style personality dossier with likelihoods, Big Five, scammer levers, and the 5 most sensitive items so you can delete them.",
+          "source": "https://x.com/alex_prompter/status/2113892002656084064",
+          "promptSource": "https://x.com/alex_prompter/status/2113892016006598886",
+          "author": "@alex_prompter",
+          "likes": 158,
+          "likesAsOf": "Oct 27, 2026 HKT"
+        },
+        {
+          "title": "Build an Idea Museum HTML app (Dan Koe style)",
+          "category": "Coding",
+          "tool": "Claude, ChatGPT, or Cursor",
+          "prompt": "Adopt the role of a product designer who builds simple tools creators actually use every day.\n\nI lose my best ideas because I never write them down in one place. Build me an idea museum as a single HTML app that works on my phone, with:\n\n→ a quick-capture box that saves a thought in one tap\n→ two boards: Validated (posts that went viral) and Favorite (ideas I love)\n→ tags for my topics so I can filter each board\n→ a \"Merge\" button that pairs one Validated idea with one Favorite and drafts a post from my point of view\n\nSave everything in the browser so nothing leaves my device.\n\nMy topics: [LIST 3-5 TOPICS]",
+          "why": "One paste builds a phone-friendly local idea capture app with Validated + Favorite boards and a Merge button that drafts a post — swap in your own topics.",
+          "source": "https://x.com/alex_prompter/status/2114009065198412054",
+          "promptSource": "https://x.com/alex_prompter/status/2114009077982597538",
+          "author": "@alex_prompter",
+          "likes": 122,
+          "likesAsOf": "Oct 27, 2026 HKT"
+        },
+        {
+          "title": "Monarch butterfly haute couture gown (image)",
+          "category": "Image",
+          "tool": "ChatGPT, Gemini, Grok, Midjourney, or Flux",
+          "prompt": "Generate an image A majestic haute couture gown inspired by a monarch butterfly, with flowing, wing-shaped panels extending from the shoulders to the floor. The dress is intricately detailed with vibrant orange, black, and white patterns, mimicking real butterfly wings. The fabric shimmers with delicate glitter, and the train spreads like the lower wings of a butterfly in full display. Elegant, fantasy-inspired, and regal, displayed on a mannequin under soft studio lighting with a neutral backdrop.",
+          "why": "Copy-paste Halloween / fashion image prompt: a regal monarch-butterfly gown on a mannequin. Works in any image model.",
+          "source": "https://x.com/icreatelife/status/2114441643428561232",
+          "promptSource": "https://x.com/icreatelife/status/2114441815738728860",
+          "author": "@icreatelife",
+          "likes": 167,
+          "likesAsOf": "Oct 27, 2026 HKT"
+        },
+        {
+          "title": "One-shot superbike landslide escape (video)",
+          "category": "Video",
+          "tool": "Any text-to-video AI (author used Seedance 2.5 on Runway + Topaz upscale)",
+          "prompt": "Create an ultra-photorealistic 15-second action sequence on a dangerously narrow mountain road during an active landslide. The entire scene must unfold in **ONE ABSOLUTELY UNBROKEN CONTINUOUS CAMERA SHOT**. No cuts, no hidden edits, no transitions, no time jumps, no teleporting viewpoints. The camera must move with extreme speed and precision while remaining physically continuous and believable. The action must be nonstop from the first frame through the last.    0–3 seconds: Begin with a powerful superbike already launching out of a hard uphill hairpin, the rider leaned aggressively while loose stones bounce across the road. The camera races inches beside the front wheel, then whips upward around the rider’s shoulder, revealing a mountain road ahead cracking apart as dust clouds rise from a fresh landslide.    3–6 seconds: A falling boulder smashes into the road behind the bike, sending fragments across the asphalt. The rider dodges left, then right, squeezing through a narrowing path between the cliff wall and the broken road edge. The camera performs a violent corkscrew around the motorcycle while staying locked to the movement, showing the cliff drop below and flying debris around the rider.    6–9 seconds: The road ahead has partially collapsed, creating a jagged gap over a steep ravine. The rider accelerates toward a tilted broken slab of pavement acting like a natural ramp. The camera drops low beside the rear tire as gravel sprays, then sweeps into a breathtaking side arc as the bike launches cleanly across the gap.    9–12 seconds: The motorcycle lands hard but controlled on the far side, suspension compressing violently. Immediately, a tourist SUV ahead skids sideways trying to avoid falling rocks. The rider snaps through the narrow gap between the sliding vehicle and the guardrail. The camera swings tightly around the rider’s helmet, capturing the near miss in one continuous motion.    12–15 seconds: The rider bursts out of the danger zone just as a huge wave of dust and rock collapses onto the road behind. The camera rockets backward and upward in a sweeping reveal, showing the superbike tearing away along the cliff road while the entire damaged section crumbles into the valley.    Make everything feel brutally real: authentic suspension movement, true road grip, realistic airborne timing, believable rider posture, rockfall physics, violent wind, debris, engine scream, and terrifying mountain scale. EXACTLY 15 SECONDS. ONE SINGLE UNINTERRUPTED CONTINUOUS SHOT.",
+          "why": "A timed 15-second continuous-shot action prompt: superbike vs landslide on a mountain road. Paste into a video model that handles long motion prompts.",
+          "source": "https://x.com/umesh_ai/status/2113902881191739858",
+          "promptSource": "https://x.com/umesh_ai/status/2113902884211609825",
+          "author": "@umesh_ai",
+          "likes": 188,
+          "likesAsOf": "Oct 27, 2026 HKT"
+        },
+        {
+          "title": "End-of-day Claude Code session review",
+          "category": "Coding",
+          "tool": "Claude Code (paste your session transcript)",
+          "prompt": "whenever you're done building for the day, hand Claude the transcript of the session and ask it to find:\n\n- where you struggled\n- how you could have done it better\n- what skills you could build to improve your workflow\n\nthen build those skills before your next session... so every day starts from a better setup than the last one",
+          "why": "After a coding session, paste the transcript with this ask so Claude finds where you struggled, better approaches, and skills to practice before tomorrow.",
+          "source": "https://x.com/EXM7777/status/2112544617707327774",
+          "author": "@EXM7777",
+          "likes": 247,
+          "likesAsOf": "Oct 27, 2026 HKT"
         }
       ]
     }

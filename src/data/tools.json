@@ -4173,5 +4173,169 @@
       "updatedAt": null
     },
     "logo": "/logos/manyagents.png"
+  },
+  {
+    "slug": "justblogged",
+    "name": "JustBlogged",
+    "url": "https://justblogged.com",
+    "affiliateUrl": null,
+    "category": "productivity",
+    "useCases": [
+      "writing",
+      "agents"
+    ],
+    "pricing": "freemium",
+    "verdict": "Hosted blogging with custom domains on the free plan, HTTPS and SEO basics included, plus an API so AI agents can publish posts. Paid tier is $9/mo ($49/yr). Simple and focused; the agent-publishing API is the interesting bit.",
+    "useThisIf": "you want a free blog on your own domain that an AI agent can post to.",
+    "alternatives": [
+      "notion"
+    ],
+    "source": "submission",
+    "addedAt": "2026-10-27",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/justblogged.png"
+  },
+  {
+    "slug": "effectcraft",
+    "name": "EffectCraft",
+    "url": "https://github.com/storytold/effectcraft",
+    "affiliateUrl": null,
+    "category": "design",
+    "useCases": [
+      "design",
+      "video"
+    ],
+    "pricing": "open-source",
+    "verdict": "Open-source motion graphics and compositing tool written from scratch in Rust, from the ArtCraft team (~8K GitHub stars). Graph editor, effects, 3D space; macOS builds on GitHub releases. Early (v0.6) — check render/export for finished work.",
+    "useThisIf": "you want a free, open-source After Effects-style tool to experiment with motion and VFX.",
+    "alternatives": [
+      "artcraft",
+      "runway"
+    ],
+    "source": "submission",
+    "addedAt": "2026-10-27",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/effectcraft.png"
+  },
+  {
+    "slug": "freemusictools",
+    "name": "FreeMusicTools",
+    "url": "https://freemusictools.app",
+    "affiliateUrl": null,
+    "category": "audio",
+    "useCases": [
+      "audio"
+    ],
+    "pricing": "free",
+    "verdict": "Free, no-signup audio tools that run in the browser: nightcore, sped up, slowed + reverb, 8D, pitch shifter, MP3→MIDI, audio visualizer, MP3 tag editor. Brand-new site; handy for quick edits without installing anything.",
+    "useThisIf": "you need a quick slowed/sped-up/8D edit or MP3 tag fix without uploading to a sketchy app.",
+    "alternatives": [
+      "descript",
+      "suno"
+    ],
+    "source": "submission",
+    "addedAt": "2026-10-27",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/freemusictools.png"
+  },
+  {
+    "slug": "novasynth",
+    "name": "NovaSynth",
+    "url": "https://noveum.ai/en/novasynth",
+    "affiliateUrl": null,
+    "category": "agents",
+    "useCases": [
+      "agents",
+      "coding"
+    ],
+    "pricing": "paid",
+    "verdict": "Noveum.ai's simulator that throws synthetic callers and chat users at your voice/chat agents to break them before customers do, alongside their tracing and eval tools. Free trial, demo-led sales; aimed at teams shipping voice AI.",
+    "useThisIf": "you ship a voice or chat agent and want automated adversarial test calls before launch.",
+    "alternatives": [
+      "elevenlabs"
+    ],
+    "source": "submission",
+    "addedAt": "2026-10-27",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/novasynth.png"
+  },
+  {
+    "slug": "cleanline-coloring",
+    "name": "CleanLine Coloring",
+    "url": "https://cleanlinecoloring.com",
+    "affiliateUrl": null,
+    "category": "fun",
+    "useCases": [
+      "design",
+      "fun"
+    ],
+    "pricing": "freemium",
+    "verdict": "Turn a text idea or a photo into clean printable line-art coloring pages, plus a library of free themed printables. Niche but does one thing well — great for parents and teachers.",
+    "useThisIf": "you want a custom printable coloring page from a photo or idea.",
+    "alternatives": [
+      "ideogram"
+    ],
+    "source": "submission",
+    "addedAt": "2026-10-27",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/cleanline-coloring.png"
+  },
+  {
+    "slug": "viraljury",
+    "name": "ViralJury",
+    "url": "https://viraljury.net",
+    "affiliateUrl": null,
+    "category": "video",
+    "useCases": [
+      "video",
+      "marketing"
+    ],
+    "pricing": "freemium",
+    "verdict": "Reviews short-form video drafts before you post: hook, pacing, caption timing and payoff, returned as timestamped edits. Honest about not predicting views. Free self-test to try.",
+    "useThisIf": "you want structured feedback on a Reel/Short/TikTok before uploading.",
+    "alternatives": [
+      "opusclip",
+      "capcut"
+    ],
+    "source": "submission",
+    "addedAt": "2026-10-27",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/viraljury.png"
   }
 ]

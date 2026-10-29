@@ -4472,5 +4472,147 @@
       "updatedAt": null
     },
     "logo": "/logos/spacesheep.png"
+  },
+  {
+    "slug": "dedica",
+    "name": "Dedica",
+    "url": "https://getdedica.com",
+    "affiliateUrl": null,
+    "category": "agents",
+    "useCases": [
+      "agents",
+      "marketing"
+    ],
+    "pricing": "freemium",
+    "verdict": "Free site score that checks whether AI agents can actually use your website (discovery, access, usability, payments), then sells a one-time fix kit of markdown files for Claude Code, Codex, Cursor or Copilot. #1 on Product Hunt on Oct 28 with 125 checks. Overlaps with GEO/SEO audits; the edge is agent navigation failures (bot checks, JS-only pages, missing OpenAPI/MCP) plus handable fix files.",
+    "useThisIf": "you want agents like Muse, ChatGPT or Claude to browse, compare and sign up on your site, and you need concrete fixes to hand a coding agent.",
+    "alternatives": [
+      "strawberry",
+      "exa-3"
+    ],
+    "source": "producthunt",
+    "addedAt": "2026-10-29",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/dedica.png"
+  },
+  {
+    "slug": "botgauge",
+    "name": "BotGauge",
+    "url": "https://www.botgauge.com",
+    "affiliateUrl": null,
+    "category": "agents",
+    "useCases": [
+      "agents",
+      "coding"
+    ],
+    "pricing": "pricing not published",
+    "verdict": "Agent red-teaming and eval platform: adaptive attacks find how agents break, full traces show prompts/tool calls, and findings become regression checks and guardrails for every release. #3 on Product Hunt on Oct 28. Aimed at engineering teams shipping RAG, support, voice or multi-agent systems. Heavier than a DIY eval script; lighter than building your own continuous red-team loop.",
+    "useThisIf": "you ship production agents and need red-team failures turned into repeatable evals before users hit them.",
+    "alternatives": [
+      "langchain",
+      "crewai"
+    ],
+    "source": "producthunt",
+    "addedAt": "2026-10-29",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/botgauge.png"
+  },
+  {
+    "slug": "openllm",
+    "name": "OpenLLM",
+    "url": "https://www.openllm.sh",
+    "affiliateUrl": null,
+    "category": "coding",
+    "useCases": [
+      "coding",
+      "productivity"
+    ],
+    "pricing": "freemium",
+    "verdict": "Local routing layer that pools your Claude, Codex, Cursor, Kimi, Grok and local (Ollama/LM Studio) subscriptions and API keys, then keeps coding agents going when one hits a limit. Free tier includes inference and shared memory across agents; Mac app or one-line install. Launched on Product Hunt around Oct 28. Overlaps with SeedRouter and BestLLMFor; the pitch is fallback chains plus shared memory without rewriting each tool's config.",
+    "useThisIf": "you juggle several LLM subscriptions for Claude Code/Codex and want automatic fallback mid-task without pasting keys into every client.",
+    "alternatives": [
+      "seedrouter",
+      "bestllmfor",
+      "claude-code"
+    ],
+    "source": "producthunt",
+    "addedAt": "2026-10-29",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/openllm.png"
+  },
+  {
+    "slug": "boltbar",
+    "name": "Boltbar",
+    "url": "https://juanluis.me/boltbar",
+    "affiliateUrl": null,
+    "category": "productivity",
+    "useCases": [
+      "productivity",
+      "coding"
+    ],
+    "pricing": "open-source",
+    "verdict": "Native macOS Spotlight-style AI chat bar (⌥ Space) for GPT and Claude, with agent mode that hands Claude Code or Codex a project under Look/Ask/Edit/Full permissions. MIT, signed/notarized, brew or DMG, optional €19 supporter license. Keys stay in Keychain; chats stay on disk. Smaller and more permission-aware than Raycast AI or a full IDE; Mac-only.",
+    "useThisIf": "you want ChatGPT/Claude from any Mac app without switching windows, and optional Claude Code/Codex with a clear permission ladder.",
+    "alternatives": [
+      "chatgpt",
+      "claude"
+    ],
+    "source": "producthunt",
+    "addedAt": "2026-10-29",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/boltbar.png"
+  },
+  {
+    "slug": "deeptutor",
+    "name": "DeepTutor",
+    "url": "https://deeptutor.info",
+    "affiliateUrl": null,
+    "category": "productivity",
+    "useCases": [
+      "productivity",
+      "chat"
+    ],
+    "pricing": "open-source",
+    "verdict": "Open-source, agent-native learning companion from HKUDS: workspaces for subjects, chat with tools/skills, notebook, mastery paths, calendar and partners. Install via PyPI, Docker, source or CLI; runs locally at 127.0.0.1:3782. Trending hard on GitHub this week. Heavier than ChatGPT study mode or a notebook LLM; you own the stack and personalization, and you operate the server.",
+    "useThisIf": "you want a self-hosted tutoring agent with notebooks, practice and long-term personalization instead of a chat tab.",
+    "alternatives": [
+      "chatgpt",
+      "claude",
+      "perplexity"
+    ],
+    "source": "github",
+    "addedAt": "2026-10-29",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/deeptutor.png"
   }
 ]

@@ -2,16 +2,25 @@
 import Base from '../layouts/Base.astro'; import Shell from '../components/Shell.astro'; import Feed from '../components/Feed.astro';
 import { trendingOnX, BUZZ_AT, hkt, getCommunities } from '../lib/data'; import { listLd, faqLd, crumbsLd } from '../lib/ld';
 const tools = trendingOnX(25); const top = tools[0];
+const answer = tools.length
+  ? `As of ${hkt(BUZZ_AT)}, the most-discussed AI tools on X are ${tools.slice(0, 5).map((t) => `${t.name} (${t.buzz.score}/100${t.buzz.mentions24h != null ? `, ${t.buzz.mentions24h} posts/24h` : ''})`).join('; ')}.`
+  : `No live buzz ranking yet. Check back after the next X scan.`;
+const description = `Trending AI tools today on X${top ? `, led by ${top.name} (${top.buzz.score}/100)` : ''}. Live X Buzz Score ranking of ${tools.length} tools, updated ${hkt(BUZZ_AT)}.`;
 const faq: [string, string][] = [
-  ['What are the trending AI tools today?', `As of ${hkt(BUZZ_AT)}, the most-discussed AI tools on X are ${tools.slice(0, 5).map((t) => `${t.name} (${t.buzz.score}/100)`).join(', ')}.`],
+  ['What are the trending AI tools today?', answer],
   ['How is "trending" measured?', 'Each tool gets a Live X Buzz Score (0-100) from post volume in the last 24h and 7 days, 24h velocity versus its prior daily average, and engagement on top posts. Full method: https://toolhype.dev/buzz'],
   ['How often is this list updated?', 'The X scan runs daily; the timestamp at the top shows the latest update.'],
 ];
 ---
-<Base title="Trending AI tools today (live X buzz ranking)" description={`The AI tools people are talking about on X right now${top ? `, led by ${top.name}` : ''}. Ranked by live X Buzz Score, updated ${hkt(BUZZ_AT)}.`} ogImage="/og/trending.png" jsonld={[listLd('Trending AI tools today', tools), faqLd(faq), crumbsLd([['Home', '/'], ['Trending AI tools today', '/trending']])]}>
+<Base title="Trending AI tools today (live X buzz ranking)" description={description} ogImage="/og/trending.png" jsonld={[listLd('Trending AI tools today', tools), faqLd(faq), crumbsLd([['Home', '/'], ['Trending AI tools today', '/trending']]), { '@context': 'https://schema.org', '@type': 'CollectionPage', name: 'Trending AI tools today', description, url: 'https://toolhype.dev/trending', dateModified: BUZZ_AT, isPartOf: { '@type': 'WebSite', name: 'toolhype', url: 'https://toolhype.dev' } }]}>
 <Shell active="buzz">
   <h1>Trending AI tools today</h1>
   <p class="muted">Ranked by <a href="/buzz">Live X Buzz Score</a>, updated {hkt(BUZZ_AT)}. Browse by category: {getCommunities().map((c, i) => <>{i ? ' · ' : ''}<a href={`/best/${c.slug}`}>best {c.name.toLowerCase()} tools</a></>)}.</p>
+  {tools.length > 0 && <div class="card answer" style="margin:.8rem 0">
+    <p style="margin:0 0 .5rem">{answer}</p>
+    <ul style="margin:0;padding-left:1.1rem">{tools.slice(0, 5).map((t) => <li><a href={`/tools/${t.slug}`}>{t.name}</a> <span class="muted">({t.buzz.score}/100 · {t.buzz.label}{t.buzz.mentions24h != null ? ` · ${t.buzz.mentions24h} posts/24h` : ''})</span>: {t.useThisIf ? `use it if ${t.useThisIf}` : t.verdict}</li>)}</ul>
+    <p class="muted" style="font-size:.75rem;margin:.5rem 0 0">Full method and table on <a href="/buzz">/buzz</a>.</p>
+  </div>}
   <ol class="card prose">{tools.map((t) => <li><a href={`/tools/${t.slug}`}><b>{t.name}</b></a> ({t.buzz.score}/100, {t.buzz.mentions24h} X posts in 24h): {t.verdict}</li>)}</ol>
   <Feed tools={tools}/>
   <section class="card prose"><h2>FAQ</h2>{faq.map(([q, a]) => <><h3>{q}</h3><p>{a}</p></>)}</section>

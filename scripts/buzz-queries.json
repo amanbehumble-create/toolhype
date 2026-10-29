@@ -158,5 +158,10 @@
   "entire": "(@GoEntire OR url:entire.com OR \"entire.com\" OR entirehq OR \"EntireDB\" OR (Entire (dohmke OR \"git forge\" OR forge OR Trails))) -is:retweet",
   "bygga": "(usebygga OR url:usebygga.com OR \"Nutlope/bygga\" OR (bygga (ikea OR nutlope OR 3D OR assembly))) -is:retweet",
   "openbot": "(@OpenBot_ OR url:openbot.run OR \"openbot.run\" OR \"nightly-labs/openbot\" OR (openbot (agents OR codex OR \"claude code\" OR desktop OR grok))) -is:retweet",
-  "spacesheep": "(spacesheep OR url:spacesheep.dev OR \"spacesheep.dev\") -is:retweet"
+  "spacesheep": "(spacesheep OR url:spacesheep.dev OR \"spacesheep.dev\") -is:retweet",
+  "dedica": "(getdedica OR url:getdedica.com OR @getdedica OR (\"Dedica\" (agent OR agents OR \"Product Hunt\" OR website OR audit))) -is:retweet",
+  "botgauge": "(botgauge OR \"bot gauge\" OR url:botgauge.com OR @botgauge OR (\"BotGauge\" (agent OR red-team OR \"red team\" OR eval))) -is:retweet",
+  "openllm": "(url:openllm.sh OR @OpenLLMsh OR @apewithllm OR \"openllm.sh\" OR (\"OpenLLM\" (Claude OR Codex OR routing OR tokens OR ProductHunt OR Product))) -is:retweet",
+  "boltbar": "(boltbar OR \"bolt bar\" OR url:juanluis.me/boltbar OR @juanluisrto boltbar OR (\"Boltbar\" (Mac OR Spotlight OR Claude))) -is:retweet",
+  "deeptutor": "(deeptutor OR \"deep tutor\" OR url:deeptutor.info OR \"HKUDS/DeepTutor\" OR (\"DeepTutor\" (tutor OR tutoring OR open-source))) -is:retweet"
 }

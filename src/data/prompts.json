@@ -580,8 +580,8 @@
     {
       "n": 4,
       "slug": "issue-4",
-      "title": "Prompt Drop #4: 15 AI prompts X actually loved (100+ likes each)",
-      "date": "2026-10-26",
+      "title": "Prompt Drop #4: 20 AI prompts X actually loved (100+ likes each)",
+      "date": "2026-10-29",
       "intro": "This week's running pool. Every prompt comes from an X post with at least 100 likes, and we checked each like count on X ourselves. Copy one, swap any [brackets] or details for your own, paste it into the AI, done. More get added through the week.",
       "rule": "Only prompts from X posts with 100+ likes (checked with X data). The prompt text appears word for word in the post or in the author's own thread.",
       "prompts": [
@@ -757,6 +757,66 @@
           "likes": 116,
           "note": "The prompt is in the author's two replies to the post (part 1 and part 2), joined here.",
           "likesAsOf": "Oct 28, 2026 HKT"
+        },
+        {
+          "title": "Fluffy 3D movie monster (fill-in-the-blanks)",
+          "category": "Image",
+          "tool": "ChatGPT, Gemini, Midjourney or Grok Imagine",
+          "prompt": "An adorable little fluffy 3D animated movie monster with a [body shape] body completely covered in thick, ultra-soft, plush [fur color] fur, realistic individual hair strands, dense velvety fluff, huge expressive [eye color] eyes, tiny legs, short furry arms, [unique features], an enormous smiling mouth filled with many perfectly clean, shiny white teeth, [facial expression], [playful pose], exaggerated cartoon proportions, innocent mischievous personality, irresistibly cuddly appearance, premium animated movie character design, detailed fur grooming, realistic subsurface lighting, soft studio illumination, full-body render, isolated on a pure white background",
+          "why": "Swap the brackets for body shape, fur/eye color, features, expression and pose. Clean white background makes it easy to use as stickers or product mockups.",
+          "source": "https://x.com/azed_ai/status/2115034792404324628",
+          "author": "azed_ai",
+          "likes": 185,
+          "likesAsOf": "Oct 29, 2026 HKT"
+        },
+        {
+          "title": "Six-scene handheld UGC ad storyboard from a product photo",
+          "category": "Video",
+          "tool": "ChatGPT (then animate in Google Flow / similar)",
+          "prompt": "Create a handheld storyboard ad for the uploaded product in six scenes.",
+          "why": "Upload a product shot, paste this one line, then feed the six scenes into a video tool. Short enough to remember; strong enough to start a UGC ad.",
+          "source": "https://x.com/favour34085/status/2114790138215797041",
+          "author": "favour34085",
+          "likes": 618,
+          "likesAsOf": "Oct 29, 2026 HKT"
+        },
+        {
+          "title": "Find the 3 habits burning your Claude Code usage",
+          "category": "Coding",
+          "tool": "Claude Code (or Codex — see note)",
+          "prompt": "Change nothing until I say yes. Write a small script to scan my Claude Code session logs in ~/.claude/projects from the last 7 days, using the token counts recorded in them; don't read the raw files into context. Find the 3 habits that burned the most usage, like reading whole files, dumping long test or build output, spawning subagents, or keeping one session going for hours. For each, work out roughly what share of my usage it took and write one rule that would stop it. When I say yes, add the rules to the instruction file this project actually loads: CLAUDE.md if there is one, otherwise AGENTS.md. Never print secrets.",
+          "why": "Paste into Claude Code when you keep hitting limits. It audits the last week of sessions and only writes rules after you approve. On Codex, swap the product name, use ~/.codex/sessions, and put rules in AGENTS.md only.",
+          "source": "https://x.com/Voxyz_ai/status/2114416707385073819",
+          "author": "Voxyz_ai",
+          "likes": 471,
+          "likesAsOf": "Oct 29, 2026 HKT",
+          "note": "Author's Codex variant: swap Claude Code for Codex, use ~/.codex/sessions, write rules to AGENTS.md only."
+        },
+        {
+          "title": "Grok Bot Command Centre that updates every morning",
+          "category": "Writing",
+          "tool": "Grok Bot (Pages)",
+          "prompt": "Build me a Page called Command Centre: every Bot I have, what each one did in the last 24 hours, what it's waiting on me for, and anything that failed. Update it every morning at 7.",
+          "why": "One line that turns Grok Bot into a daily ops dashboard for all your bots. Swap the update time if 7am isn't your start.",
+          "source": "https://x.com/alex_prompter/status/2115356646306365741",
+          "author": "alex_prompter",
+          "likes": 743,
+          "likesAsOf": "Oct 29, 2026 HKT",
+          "promptSource": "https://x.com/alex_prompter/status/2115356658121707566",
+          "note": "Prompt text is in the author's thread reply; like count is from the parent post (743)."
+        },
+        {
+          "title": "15s one-shot motocross escape through a collapsing factory",
+          "category": "Video",
+          "tool": "Seedance / Runway / Kling-class video models",
+          "prompt": "EPIC MOTORCYCLE ESCAPE: CATASTROPHIC INDUSTRIAL DESTRUCTION\nCreate an ultra-photorealistic, ferociously fast, EXACTLY 15-SECOND cinematic motorcycle escape through a vast abandoned industrial complex undergoing a catastrophic chain-reaction collapse.\nOne elite motocross rider accelerates with explosive, progressively increasing speed while enormous explosions, collapsing factories, falling steel structures, fireballs, and towering dust clouds erupt BEHIND the speeding motorcycle.\nThe camera behaves like an extraordinarily agile, high-speed cinematic FPV drone, racing ALL AROUND the motorcycle while continuously revealing the spectacular destruction from different perspectives.\nMake this feel like the most breathtaking motorcycle escape sequence in a Hollywood blockbuster.\nEXACTLY 15 SECONDS. ONE COMPLETELY UNINTERRUPTED PHYSICAL CAMERA TAKE. ZERO CUTS, TRANSITIONS, HIDDEN EDITS, TIME SKIPS, SPEED RAMPS, OR SLOW MOTION.\nCRITICAL CAMERA DIRECTION\nTHE CAMERA MUST NEVER REMAIN FIXED BEHIND THE MOTORCYCLE.\nIt constantly changes position, angle, altitude, distance, and viewing direction through spectacular but physically connected movements.\nUse aggressive low tracking, fast partial and full moving orbits, front-facing backward pursuit, rapid lateral sweeps, vertical ascents, dramatic diving descents, an under-motorcycle jump passage, and enormous aerial reveals of the collapsing environment.\nThe camera must repeatedly overtake the motorcycle and face backward, capturing the rider charging toward the lens with gigantic explosions and buildings collapsing behind.\nAlternate between intimate wheel-level shots, dynamic front-three-quarter views, sweeping side profiles, elevated orbits, and breathtaking wide shots revealing the enormous scale of the catastrophe.\nNever hold any camera angle for too long. Every second must introduce fresh perspective, dramatic parallax, and changing surroundings.\nAll movements flow through genuine three-dimensional space. No teleporting, instant perspective changes, flying through objects, or impossible camera geometry.\nThe motorcycle remains readable and recognizable while the catastrophe unfolds visibly in the background.\nMOTORCYCLE AND RIDER\nOne experienced adult motocross rider wearing a charcoal helmet, clear goggles, muted red racing jersey, protective trousers, boots, and gloves.\nOne high-performance contemporary off-road motorcycle with a white front number plate, black saddle, narrow mudguards, spoked wheels, aggressive tires, and realistic suspension.\nPreserve the same motorcycle, rider, clothing, anatomy, and mechanical proportions throughout.\nThe rider NEVER stops, dismounts, or looks back for a dramatic pose.\nThe motorcycle is already accelerating in the first frame and becomes progressively faster throughout the sequence.\nShow believable acceleration through rapidly spinning wheels, powerful rear-wheel traction, increasing engine pitch, lengthening dust trails, increasingly fast environmental parallax, and the rider responding to acceleration forces.\nThe rider remains physically grounded, using realistic leaning, body positioning, suspension absorption, and controlled motorcycle handling.\nTHE INDUSTRIAL CATASTROPHE\nAn enormous industrial disaster spreads through the abandoned complex behind the rider.\nExplosions rupture processing equipment, ignite abandoned structures, and trigger cascading structural failures. Steel beams twist, rooftops collapse, huge industrial pipes fall, brick walls crumble, and massive clouds of smoke and dust surge upward.\nEvery explosion must feel enormous, heavy, and physically connected to the structures around it.\nThe destruction grows progressively larger, reaching a gigantic final collapse that dominates the industrial skyline.\nFireballs illuminate thick smoke. Dust shockwaves race across the factory floors. Massive steel frameworks fold under their own weight.\nKeep the riding line clear. Destruction happens behind and safely to the sides of the motorcycle, never unrealistically intersecting its path.\nNo other people, vehicles, or obstacles enter the motorcycle's escape corridor.\nEnd EXACTLY at 15 seconds with the rider STILL ACCELERATING and the camera STILL MOVING at extraordinary speed. NO STOP. NO FADE. NO FINAL POSE.",
+          "why": "Long one-shot action prompt with hard camera rules (never stuck behind the bike, no cuts). Paste into a 15s video model; shorten the middle timing blocks if your model has a lower context limit.",
+          "source": "https://x.com/umesh_ai/status/2115079998961049793",
+          "author": "umesh_ai",
+          "likes": 158,
+          "likesAsOf": "Oct 29, 2026 HKT",
+          "promptSource": "https://x.com/umesh_ai/status/2115080007995494424",
+          "note": "Full prompt is in the author's reply thread; like count from the parent post (158). Middle timing blocks condensed slightly for length; keep the camera and continuity rules intact."
         }
       ]
     }

@@ -24,7 +24,7 @@ h1,h2,h3{font-family:var(--display);letter-spacing:-.025em;line-height:1.25;marg
 .vote button{background:none;border:0;cursor:pointer;color:var(--ink-3);font-size:1.1rem;padding:.1rem .3rem;border-radius:var(--r-chip)}.vote button:hover{background:var(--hover);color:var(--cyan)}
 .vote.on button,.vote.on .n{color:var(--cyan)}.vote .n{font:600 .8125rem var(--mono)}
 .avatar{width:40px;height:40px;flex:none;border-radius:var(--r-ctl);border:1px solid var(--line);display:grid;place-items:center;font:600 1rem var(--display);background:var(--inset)}
-.post h3{font-size:1.05rem;margin:0}.post p{margin:.2rem 0 .5rem;color:var(--ink-2);font-size:.875rem}
+.post h3{font-size:1.05rem;margin:0}.post p{margin:.2rem 0 .5rem;color:var(--ink-2);font-size:.875rem;overflow-wrap:anywhere}
 .meta{display:flex;flex-wrap:wrap;gap:.35rem;align-items:center;font-size:.75rem;color:var(--ink-3)}
 .chip{padding:.1rem .5rem;border-radius:var(--r-chip);border:1px solid var(--line);font:500 .75rem var(--mono);color:var(--ink-2)}
 .chip.c{color:var(--accent-ink)}.badge{font:500 .7rem var(--pixel);letter-spacing:.05em;background:var(--cyan);color:#000;padding:.05rem .4rem;border-radius:var(--r-chip)}

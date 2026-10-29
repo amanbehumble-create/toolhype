@@ -5,8 +5,9 @@ import { getTools, byBuzz, SITE } from '../lib/data'; import { listLd } from '..
 const tools = [...getTools()].sort(byBuzz);
 const n = tools.length;
 const top = topTools(5); const names = top.map((t) => t.name);
+const desc = `${n} AI tools and software, ranked by builders and their live X Buzz Score. New tools daily, weekly Prompt Drops, head-to-head comparisons and Best-of lists.`;
 ---
-<Base jsonld={[listLd('Top AI tools on toolhype', tools), { '@context': 'https://schema.org', '@type': 'WebSite', name: SITE.name, url: Astro.site?.href }]}>
+<Base description={desc} jsonld={[listLd('Top AI tools on toolhype', tools), { '@context': 'https://schema.org', '@type': 'WebSite', name: SITE.name, url: Astro.site?.href, description: desc }]}>
 <Shell active="home">
 <section class="hero" data-track-zone="hero">
   <h1>Is <span class="blank" id="hero-word" data-words={JSON.stringify(names)} aria-hidden="true"><span class="w"></span><span class="cur"></span></span><span class="sr">an AI tool</span> worth the&nbsp;hype?</h1>

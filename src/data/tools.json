@@ -4337,5 +4337,140 @@
       "updatedAt": null
     },
     "logo": "/logos/viraljury.png"
+  },
+  {
+    "slug": "nativ",
+    "name": "Nativ",
+    "url": "https://www.neywalabs.ai/products/nativ",
+    "affiliateUrl": null,
+    "category": "chat",
+    "useCases": [
+      "chat",
+      "coding"
+    ],
+    "pricing": "open-source",
+    "verdict": "Free, MIT-licensed Mac app from Neywa Labs (founder Prince Canuma, the maker of mlx-vlm) that runs open models locally on Apple Silicon: chat with image input, a local API server for agents and dev tools, and live tokens/sec and memory stats. Launched Oct 27 as Neywa Labs came out of stealth. Private and offline once a model is downloaded; Apple Silicon only, and what you can run depends on your Mac's RAM.",
+    "useThisIf": "you have an Apple Silicon Mac and want private, offline AI chat or a local model server with no per-token bills.",
+    "alternatives": [
+      "chatgpt",
+      "claude"
+    ],
+    "source": "x",
+    "addedAt": "2026-10-28",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/nativ.png"
+  },
+  {
+    "slug": "entire",
+    "name": "Entire",
+    "url": "https://entire.com",
+    "affiliateUrl": null,
+    "category": "coding",
+    "useCases": [
+      "coding",
+      "agents"
+    ],
+    "pricing": "pricing not published",
+    "verdict": "A Git forge built for agents and humans, from former GitHub CEO Thomas Dohmke, opened to all developers on Oct 26. Trails replace the pull request with agent-scored evals (risk, slop, test coverage) on every push; Continuous Memory keeps agent sessions and prompts in the repo; and Entire claims up to 89x faster pushes than GitHub in its own benchmarks. A serious bet worth watching, but moving a team off GitHub is a big job and pricing isn't public yet.",
+    "useThisIf": "your team ships a lot of agent-written code and wants review built around evals and saved agent context instead of PR threads.",
+    "alternatives": [],
+    "source": "x",
+    "addedAt": "2026-10-28",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/entire.png"
+  },
+  {
+    "slug": "bygga",
+    "name": "Bygga",
+    "url": "https://www.usebygga.com",
+    "affiliateUrl": null,
+    "category": "fun",
+    "useCases": [
+      "fun",
+      "productivity"
+    ],
+    "pricing": "open-source",
+    "verdict": "Free, open-source (MIT) web app from Hassan El Mghari (@nutlope) that turns IKEA assembly into animated 3D steps read out loud. Type the name from the box (KALLAX, MALM, BILLY...) or snap a photo, check your parts, then follow each step and drag to see any side. 1,171 products at launch, plus paper-manual scanning powered by Together AI. Delightful and genuinely useful, but IKEA only.",
+    "useThisIf": "you're about to build IKEA furniture and the paper manual makes no sense.",
+    "alternatives": [],
+    "source": "x",
+    "addedAt": "2026-10-28",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/bygga.png"
+  },
+  {
+    "slug": "openbot",
+    "name": "OpenBot",
+    "url": "https://openbot.run",
+    "affiliateUrl": null,
+    "category": "agents",
+    "useCases": [
+      "agents",
+      "coding"
+    ],
+    "pricing": "free",
+    "verdict": "Free desktop app (macOS, Windows, Linux) that runs Codex, Claude Code, Gemini and Grok as a standing team: each agent gets its own workspace, task queue and chat, and they can message each other, share files and drive a built-in browser. Uses the ChatGPT, Claude, Gemini or Grok plan you already pay for, or your own model. #3 on GitHub trending (+777 stars) on Oct 27, the same day its iOS app hit the App Store. Source-available under PolyForm Noncommercial, so not OSI open source.",
+    "useThisIf": "you already use several coding agents and want them working side by side on your own computer.",
+    "alternatives": [
+      "manyagents",
+      "claude-code",
+      "codex"
+    ],
+    "source": "github",
+    "addedAt": "2026-10-28",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/openbot.png"
+  },
+  {
+    "slug": "spacesheep",
+    "name": "Spacesheep",
+    "url": "https://spacesheep.dev",
+    "affiliateUrl": null,
+    "category": "productivity",
+    "useCases": [
+      "productivity",
+      "agents"
+    ],
+    "pricing": "freemium",
+    "verdict": "YC F26 tool that turns your AI's output into a shareable 'space': an interactive doc, live dashboard, mockup or small app. Tell Claude Code, Codex, Cursor, ChatGPT or Grok to 'use spacesheep.dev', share the result, then tag @spacesheep in a comment to fix that exact spot, with every version kept. #4 on Product Hunt on Oct 27 and free to start. Overlaps with Claude Artifacts; the edge is working across agents plus team comments.",
+    "useThisIf": "you want agent-made docs and dashboards your team can open, comment on and have the AI fix in place.",
+    "alternatives": [
+      "notion",
+      "gamma"
+    ],
+    "source": "producthunt",
+    "addedAt": "2026-10-28",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/spacesheep.png"
   }
 ]

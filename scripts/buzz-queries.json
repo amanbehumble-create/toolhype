@@ -53,7 +53,7 @@
   "midjourney": "(midjourney OR url:midjourney.com) -is:retweet",
   "ideogram": "(ideogram OR url:ideogram.ai) -is:retweet",
   "canva": "(canva OR url:canva.com) -is:retweet",
-  "figma": "(figma OR url:figma.com) -is:retweet -\u30d5\u30a3\u30ae\u30e5\u30a2 -figure -figures -\u306d\u3093\u3069\u308d\u3044\u3069 -\u4e88\u7d04 -fate",
+  "figma": "(figma OR url:figma.com) -is:retweet -フィギュア -figure -figures -ねんどろいど -予約 -fate",
   "runway": "(runwayml OR \"runway gen\" OR \"runway aleph\" OR @runwayml OR url:runwayml.com) -is:retweet",
   "pika": "(\"pika labs\" OR \"pika art\" OR @pika_labs OR url:pika.art) -is:retweet",
   "heygen": "(heygen OR url:heygen.com) -is:retweet",
@@ -70,7 +70,7 @@
   "magic-patterns": "(\"magic patterns\" OR magicpatterns OR MagicOS OR url:magicpatterns.com) -is:retweet",
   "codex": "(\"openai codex\" OR \"codex cli\" OR \"codex app\" OR @OpenAIDevs codex OR url:chatgpt.com/codex) -is:retweet",
   "mirror-mirror-ai": "(\"mirror mirror ai\" OR mirrormirrorai OR @mirrormirror_ai OR url:mirrormirrorai.com) -is:retweet",
-  "1in8b": "(\"1 in 8 billion\" OR 1in8b OR url:1in8b.life OR (\"80\u5104\u5206\u306e1\" (\u30b2\u30fc\u30e0 OR \u30ac\u30c1\u30e3 OR \u4eba\u751f OR \u914d\u4fe1 OR \u30d7\u30ec\u30a4))) -is:retweet",
+  "1in8b": "(\"1 in 8 billion\" OR 1in8b OR url:1in8b.life OR (\"80億分の1\" (ゲーム OR ガチャ OR 人生 OR 配信 OR プレイ))) -is:retweet",
   "rea": "(\"morluto/rea\" OR morluto OR url:\"github.com/morluto/rea\") -is:retweet",
   "nemotron": "nemotron -is:retweet",
   "krea": "(\"krea 3\" OR krea3 OR @krea_ai) -is:retweet",
@@ -153,5 +153,10 @@
   "freemusictools": "(freemusictools OR url:freemusictools.app) -is:retweet",
   "novasynth": "(novasynth OR url:noveum.ai) -is:retweet",
   "cleanline-coloring": "(url:cleanlinecoloring.com OR \"cleanline coloring\") -is:retweet",
-  "viraljury": "(viraljury OR url:viraljury.net) -is:retweet"
+  "viraljury": "(viraljury OR url:viraljury.net) -is:retweet",
+  "nativ": "(\"Neywa Labs\" OR neywalabs OR @Neywalabs OR url:neywalabs.ai OR \"Blaizzy/nativ\" OR (nativ (mlx OR \"local ai\" OR offline OR \"apple silicon\"))) -is:retweet",
+  "entire": "(@GoEntire OR url:entire.com OR \"entire.com\" OR entirehq OR \"EntireDB\" OR (Entire (dohmke OR \"git forge\" OR forge OR Trails))) -is:retweet",
+  "bygga": "(usebygga OR url:usebygga.com OR \"Nutlope/bygga\" OR (bygga (ikea OR nutlope OR 3D OR assembly))) -is:retweet",
+  "openbot": "(@OpenBot_ OR url:openbot.run OR \"openbot.run\" OR \"nightly-labs/openbot\" OR (openbot (agents OR codex OR \"claude code\" OR desktop OR grok))) -is:retweet",
+  "spacesheep": "(spacesheep OR url:spacesheep.dev OR \"spacesheep.dev\") -is:retweet"
 }

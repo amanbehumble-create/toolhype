@@ -5,7 +5,7 @@ export const appLd = (t: Tool) => ({
   '@context': 'https://schema.org', '@type': 'SoftwareApplication', name: t.name, url: t.url, sameAs: t.url,
   mainEntityOfPage: toolUrl(t), applicationCategory: t.category, description: t.verdict, operatingSystem: 'Web',
   ...(t.logo ? { image: base() + t.logo } : {}), datePublished: t.addedAt,
-  ...(t.pricing === 'paid' ? {} : { offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD', category: t.pricing } }),
+  ...(['free', 'freemium', 'open-source'].includes(t.pricing) ? { offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD', category: t.pricing } } : {}),
 });
 export const listLd = (name: string, tools: Tool[]) => ({
   '@context': 'https://schema.org', '@type': 'ItemList', name, numberOfItems: tools.length,

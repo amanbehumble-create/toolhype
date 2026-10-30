@@ -4614,5 +4614,257 @@
       "updatedAt": null
     },
     "logo": "/logos/deeptutor.png"
+  },
+  {
+    "slug": "layoza",
+    "name": "Layoza",
+    "url": "https://github.com/layoza/layoza",
+    "affiliateUrl": null,
+    "category": "design",
+    "useCases": [
+      "design",
+      "coding"
+    ],
+    "pricing": "open-source",
+    "verdict": "MIT-licensed local MCP server and agent skills that make Claude Code, Cursor, Codex and OpenCode design like a UI/UX team: site design DNA, motion that fits the brief, and live Chromium QA for WCAG 2.2 and Core Web Vitals.",
+    "useThisIf": "your AI coding agent ships working but bland frontends and you want design rules and real browser QA built in.",
+    "alternatives": [],
+    "source": "submission",
+    "addedAt": "2026-10-30",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/layoza.png"
+  },
+  {
+    "slug": "agentweb",
+    "name": "AgentWeb",
+    "url": "https://agentweb.live/",
+    "affiliateUrl": null,
+    "category": "agents",
+    "useCases": [
+      "agents",
+      "coding"
+    ],
+    "pricing": "freemium",
+    "verdict": "Real-world data for AI agents: web search, a 128M+ business directory across 195 countries and 37 agent tools via REST and MCP. Works with OpenClaw, LM Studio and other MCP clients; free API key to start.",
+    "useThisIf": "your agent or local model needs live web and business lookups without wiring up several APIs.",
+    "alternatives": [],
+    "source": "submission",
+    "addedAt": "2026-10-30",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/agentweb.png"
+  },
+  {
+    "slug": "lemon-code",
+    "name": "Lemon Code",
+    "url": "https://lemoncode.ai/",
+    "affiliateUrl": null,
+    "category": "coding",
+    "useCases": [
+      "coding",
+      "agents"
+    ],
+    "pricing": "free",
+    "verdict": "Free coding agent that writes, runs and tests code in your browser or on Mac, and can automate workflows across GitHub, Slack, Linear and Jira.",
+    "useThisIf": "you want a no-cost coding agent to try before paying for Cursor or Claude Code.",
+    "alternatives": [
+      "cursor",
+      "claude-code"
+    ],
+    "source": "submission",
+    "addedAt": "2026-10-30",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/lemon-code.png"
+  },
+  {
+    "slug": "tokenrip",
+    "name": "Tokenrip",
+    "url": "https://tokenrip.com/",
+    "affiliateUrl": null,
+    "category": "agents",
+    "useCases": [
+      "agents",
+      "productivity"
+    ],
+    "pricing": "freemium",
+    "verdict": "Shared workspace your AI agents work from: Claude, ChatGPT, Codex and Grok connect over MCP, share context and hand off tasks, and you approve only what needs you. Free to start; Starter is $39/mo billed yearly.",
+    "useThisIf": "you run several AI agents and are tired of re-explaining context to each one.",
+    "alternatives": [],
+    "source": "submission",
+    "addedAt": "2026-10-30",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/tokenrip.png"
+  },
+  {
+    "slug": "connectvault",
+    "name": "ConnectVault",
+    "url": "https://connectvault.ai/",
+    "affiliateUrl": null,
+    "category": "productivity",
+    "useCases": [
+      "productivity",
+      "marketing"
+    ],
+    "pricing": "freemium",
+    "verdict": "AI relationship CRM: scans business cards, remembers who you met, and its ARIA agent drafts follow-ups and meeting prep. Android and web, India-first UPI billing; free Starter plan with 50 credits a month.",
+    "useThisIf": "you meet lots of people at events and lose track of follow-ups.",
+    "alternatives": [],
+    "source": "submission",
+    "addedAt": "2026-10-30",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/connectvault.png"
+  },
+  {
+    "slug": "greatarrow",
+    "name": "GreatArrow.ai",
+    "url": "https://www.greatarrow.ai/",
+    "affiliateUrl": null,
+    "category": "productivity",
+    "useCases": [
+      "productivity",
+      "agents"
+    ],
+    "pricing": "paid",
+    "verdict": "One private workspace per client that puts their Gmail, Calendar, Drive and meeting notes into Claude, ChatGPT or Cursor, turns meeting notes into tasks and shows sources for answers. 14-day free trial, then $39 or $119 a month.",
+    "useThisIf": "you're a consultant or agency copy-pasting client context into your AI every day.",
+    "alternatives": [],
+    "source": "submission",
+    "addedAt": "2026-10-30",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/greatarrow.png"
+  },
+  {
+    "slug": "riffwise",
+    "name": "Riffwise",
+    "url": "https://riffwise.app/",
+    "affiliateUrl": null,
+    "category": "writing",
+    "useCases": [
+      "writing",
+      "marketing"
+    ],
+    "pricing": "freemium",
+    "verdict": "Chrome extension that drafts replies for social posts, chats and email in your own voice; you review every word and it never posts for you. Free plan with 40 generations a month.",
+    "useThisIf": "you reply a lot on X, LinkedIn or email and want a first draft that sounds like you.",
+    "alternatives": [],
+    "source": "submission",
+    "addedAt": "2026-10-30",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/riffwise.png"
+  },
+  {
+    "slug": "videobgremover",
+    "name": "VideoBGRemover",
+    "url": "https://videobgremover.net/",
+    "affiliateUrl": null,
+    "category": "video",
+    "useCases": [
+      "video",
+      "design"
+    ],
+    "pricing": "freemium",
+    "verdict": "Removes video backgrounds online while keeping motion and sound; preview transparent or swap in a new scene. Free to try, with paid plans plus an API and MCP server.",
+    "useThisIf": "you need a green-screen effect on a clip without a green screen or an editor.",
+    "alternatives": [],
+    "source": "submission",
+    "addedAt": "2026-10-30",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/videobgremover.png"
+  },
+  {
+    "slug": "tempburn",
+    "name": "Tempburn",
+    "url": "https://tempburn.com/",
+    "affiliateUrl": null,
+    "category": "productivity",
+    "useCases": [
+      "productivity"
+    ],
+    "pricing": "free",
+    "verdict": "One-click burner email inbox with no signup; messages last up to 8 days and the inbox is tied to your browser session. New site (domain registered Oct 2026).",
+    "useThisIf": "you want to try a tool or grab a download without handing over your real email.",
+    "alternatives": [],
+    "source": "submission",
+    "addedAt": "2026-10-30",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/tempburn.png"
+  },
+  {
+    "slug": "emailwish",
+    "name": "Emailwish",
+    "url": "https://www.emailwish.com/",
+    "affiliateUrl": null,
+    "category": "marketing",
+    "useCases": [
+      "marketing",
+      "writing"
+    ],
+    "pricing": "freemium",
+    "verdict": "Email marketing for Shopify and WooCommerce stores built on a customer data platform, with AI-written campaigns, automations, popups and reviews. Free plan; paid from $35/mo.",
+    "useThisIf": "you run a small online store and want Klaviyo-style email flows at a lower price.",
+    "alternatives": [],
+    "source": "submission",
+    "addedAt": "2026-10-30",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/emailwish.png"
   }
 ]

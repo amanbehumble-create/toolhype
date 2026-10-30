@@ -819,6 +819,50 @@
           "note": "Full prompt is in the author's reply thread; like count from the parent post (158). Middle timing blocks condensed slightly for length; keep the camera and continuity rules intact."
         }
       ]
+    },
+    {
+      "n": 5,
+      "slug": "issue-5",
+      "title": "Prompt Drop #5: 3 AI prompts X actually loved (100+ likes each)",
+      "date": "2026-10-31",
+      "intro": "Fresh issue for the week. Every prompt comes from an X post with at least 100 likes, and we checked each like count on X ourselves. Copy one, swap any [brackets] or details for your own, paste it into the AI, done. More get added through the week.",
+      "rule": "Only prompts from X posts with 100+ likes (checked with X data). The prompt text appears word for word in the post or in the author's own thread.",
+      "prompts": [
+        {
+          "title": "Pixar-style 3D remake of any cartoon character",
+          "category": "Image",
+          "tool": "Any image AI (ChatGPT / Gemini / Midjourney / Grok)",
+          "prompt": "A premium Pixar-style 3D reinterpretation of [Samurai Jack character], preserving the iconic character design, recognizable facial features, signature hairstyle, [distinctive outfit], [weapon or accessory], [facial expression], [dynamic pose], stylized angular proportions translated into rounded yet sculptural 3D forms, expressive animated facial features, realistic skin textures, detailed fabric materials, cinematic character lighting, high-end 3D animation rendering, polished textures, full-body composition, isolated on a pure white background",
+          "why": "Swap the [brackets] for any character you love. It keeps the iconic look but rebuilds it as a rounded, polished 3D figure on a clean white background.",
+          "source": "https://x.com/azed_ai/status/2116121954382139842",
+          "author": "@azed_ai",
+          "likes": 128,
+          "likesAsOf": "Oct 31, 2026 HKT"
+        },
+        {
+          "title": "Tiny cloud creature in a sunny bedroom (30s video)",
+          "category": "Video",
+          "tool": "Kling or any text-to-video AI",
+          "prompt": "Create a 30-second ultra-realistic cinematic fantasy video featuring a completely original miniature cloud creature in a charming countryside bedroom.\n\nScene 1 (0–7 seconds): A tiny floating cloud creature with fluffy white fur, pale blue eyes, tiny dangling feet, and miniature translucent wings drifts above a wooden bedside table. Soft morning sunlight enters through linen curtains while dust particles shimmer in the air.\n\nScene 2 (7–14 seconds): A young woman wearing a peach-colored cardigan and a cream skirt enters the room. The little cloud follows her curiously, hovering above her head. Suddenly, it sneezes and releases a tiny shower of sparkling raindrops onto her hair.\n\nScene 3 (14–23 seconds): The woman looks surprised before smiling and holding out her hands. The cloud becomes excited and accidentally creates a miniature rainbow inside the room. Tiny floating droplets turn into glowing bubbles that gently drift around the furniture.\n\nScene 4 (23–30 seconds): The cloud settles onto the woman's head like a fluffy hat. It produces one final tiny raindrop that lands on its own nose. The creature crosses its eyes trying to look at the drop, then giggles silently as a miniature rainbow appears above it.\n\nVisual style: Original imaginary creature, realistic fluffy cloud texture, expressive blue eyes, physically believable water droplets, soft volumetric sunlight, realistic reflections, pastel color palette, detailed fabric textures, cinematic close-ups, natural character animation, smooth camera movements.\n\nDuration: 30 seconds. Aspect ratio: 16:9. 4K cinematic quality. Preserve the same creature and woman across all scenes. No text, subtitles, logos, or watermark. Use original designs only.",
+          "why": "A ready-made four-scene story with timings, style and continuity rules, so the creature and the woman stay the same across all 30 seconds.",
+          "source": "https://x.com/Strength04_X/status/2114623188202402063",
+          "author": "@Strength04_X",
+          "likes": 155,
+          "likesAsOf": "Oct 31, 2026 HKT"
+        },
+        {
+          "title": "Halloween pets vs the doorbell monster (15s video)",
+          "category": "Video",
+          "tool": "Seedance or any video AI that takes reference images",
+          "prompt": "Duration exactly 15 seconds, vertical 16:9 Photorealistic Halloween pet comedy. Use @image1 for the exact black-robed orange kitten, @image2 for the exact white-ghost Chihuahua and @image3 as the haunted house reference. Maintain consistent character appearance.\n\nFixed doorbell camera overlooking a decorated Halloween porch at night. Orange jack-o-lanterns glow beside the door, purple lights flicker, and dry leaves move in a gentle breeze.\n\n0–3s: The kitten walks upright toward the door, dragging its toy scythe. The Chihuahua follows with its pumpkin bucket. The kitten stretches up and rings the doorbell using the scythe handle.\n\n3–6s: The door opens, revealing a giant animatronic monster with glowing green eyes. Its head suddenly turns toward the pets and its arms rise dramatically. The kitten jumps backward, while the Chihuahua stares blankly.\n\n6–9s: The kitten regains its confidence, marches forward and raises its tiny scythe at the monster. The monster suddenly recoils, pretending to be frightened. The kitten proudly places one paw on its chest.\n\n9–12s: The monster removes its scary mask, revealing a friendly person underneath. They laugh and pour colorful wrapped candy into the Chihuahua's pumpkin bucket. The kitten receives a tiny candy and proudly bows.\n\n12–15s: The monster joins them for a silly group pose. The kitten waves its scythe like a champion. The Chihuahua slowly turns toward the camera with its usual dazed expression as a pumpkin beside the door flickers.\n\nStyle: Realistic fur, funny facial reactions, natural motion, warm porch lighting, vivid orange Halloween pumpkins, continuous fixed security-camera shot. No morphing, no extra limbs, no cuts, no text, no watermark.",
+          "why": "Upload photos of your own pets as @image1 and @image2. The fixed doorbell-camera shot and second-by-second beats make it feel like a real porch clip.",
+          "source": "https://x.com/Strength04_X/status/2115663176566259858",
+          "author": "@Strength04_X",
+          "likes": 177,
+          "likesAsOf": "Oct 31, 2026 HKT",
+          "note": "Full prompt is in the author's reply thread; like count from the parent post."
+        }
+      ]
     }
   ]
 }

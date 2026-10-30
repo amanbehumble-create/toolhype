@@ -143,6 +143,8 @@
  "moli": "https://github.com/lexmount/moli",
  "llama-app": "https://llama.app/",
  "hibi": "https://www.hibi.garden/",
+ "soldfetch": "https://soldfetch.com/",
+ "pius-bot": "https://products.ai/",
  "pomerado": "https://pomerado.ai",
  "strawberry": "https://strawberrybrowser.com",
  "surgepix": "https://surgepix.ai",
@@ -163,5 +165,10 @@
  "botgauge": "https://www.botgauge.com",
  "openllm": "https://www.openllm.sh",
  "boltbar": "https://juanluis.me/boltbar",
- "deeptutor": "https://deeptutor.info"
+ "deeptutor": "https://deeptutor.info",
+ "empacer": "https://empacer.com",
+ "scape": "https://scape.app/",
+ "floot": "https://floot.com",
+ "radar": "https://radarhq.io",
+ "notch-metrics": "https://notchmetrics.com"
 }

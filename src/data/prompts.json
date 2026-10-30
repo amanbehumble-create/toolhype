@@ -823,11 +823,66 @@
     {
       "n": 5,
       "slug": "issue-5",
-      "title": "Prompt Drop #5: 3 AI prompts X actually loved (100+ likes each)",
-      "date": "2026-10-31",
+      "title": "Prompt Drop #5: 8 AI prompts X actually loved (100+ likes each)",
+      "date": "2026-10-30",
       "intro": "Fresh issue for the week. Every prompt comes from an X post with at least 100 likes, and we checked each like count on X ourselves. Copy one, swap any [brackets] or details for your own, paste it into the AI, done. More get added through the week.",
       "rule": "Only prompts from X posts with 100+ likes (checked with X data). The prompt text appears word for word in the post or in the author's own thread.",
       "prompts": [
+        {
+          "title": "Stop-motion movie character (fill-in-the-blanks)",
+          "category": "Image",
+          "tool": "Any image AI (Gemini / ChatGPT / Midjourney / Grok)",
+          "prompt": "A highly detailed 3D stop-motion animated movie character design of [character], [age], [cultural background], featuring [body proportions], [distinctive facial features], [hairstyle], [facial expression], wearing [outfit] with [fabric textures and details], [footwear], standing in [pose] with a charming, expressive personality, stylized cartoon facial proportions combined with realistic anatomy, distinctive character silhouette, slightly exaggerated features, playful imperfections, intricate fabric fibers, realistic material wear, rich tactile textures, handcrafted puppet aesthetic, sophisticated material layering, original animated film character design, cinematic 3D rendering, soft studio lighting, full-body composition, clean white background",
+          "why": "Swap the [brackets] for your character. The stop-motion / puppet texture language keeps results looking handcrafted instead of generic 3D.",
+          "source": "https://x.com/azed_ai/status/2115760081585553630",
+          "author": "@azed_ai",
+          "likes": 343,
+          "likesAsOf": "Oct 30, 2026 HKT"
+        },
+        {
+          "title": "Exploding food-core commercial shot",
+          "category": "Image",
+          "tool": "Any image AI",
+          "prompt": "Exploding [food item] filled with [filling], split into two pieces as [filling action], [outer texture] exterior, exposed [internal layers], crumbs and particles frozen mid-air, clean [background], professional studio lighting, realistic food textures, sharp focus, high-end commercial food photography, premium advertising aesthetic",
+          "why": "A short fill-in template for the classic mid-burst food ad look without writing a full lighting brief.",
+          "source": "https://x.com/azed_ai/status/2107788046167105839",
+          "author": "@azed_ai",
+          "likes": 200,
+          "likesAsOf": "Oct 30, 2026 HKT"
+        },
+        {
+          "title": "Fresh café flatlay food photo",
+          "category": "Image",
+          "tool": "Any image AI",
+          "prompt": "Photorealistic top-down shot of [food] with [drink] in a stylish café setting, cheerful fresh atmosphere, [color1] and [color2] palette, elegant food styling, natural textures, soft daylight, subtle shadows, premium editorial food photography, ARRI Alexa look, crisp details, 8K realism",
+          "why": "Four brackets and you get a top-down café flatlay with a consistent editorial look.",
+          "source": "https://x.com/azed_ai/status/2107063271648100604",
+          "author": "@azed_ai",
+          "likes": 119,
+          "likesAsOf": "Oct 30, 2026 HKT"
+        },
+        {
+          "title": "Rewrite any draft with Churchill's 1940 Brevity memo",
+          "category": "Writing",
+          "tool": "ChatGPT / Claude / Grok / Gemini",
+          "prompt": "I want to rewrite this using Churchill's 1940 Brevity memo. He told his government their reports were far too long, and asked for short, crisp paragraphs with the details moved to the end. Rewrite my draft with:\n\n→ the main point in the first line\n→ short, crisp paragraphs\n→ every number and detail moved to the end\n→ every woolly phrase cut or replaced with one word\n\nDon't lose a single fact. My draft [PASTE IT]",
+          "why": "Paste any long email or doc. Forces the point up front and parks the numbers at the end — good before you hit send.",
+          "source": "https://x.com/alex_prompter/status/2106761323392757831",
+          "author": "@alex_prompter",
+          "likes": 138,
+          "likesAsOf": "Oct 30, 2026 HKT"
+        },
+        {
+          "title": "Ocean-to-clifftop one-shot camera rise (video)",
+          "category": "Video",
+          "tool": "Any text-to-video AI (author used a Seedance-class model)",
+          "prompt": "The camera begins very low near the surging ocean waves, close to the water’s surface, as the sea crashes violently against the jagged rocks. It then shoots upward very fast in a smooth, continuous cinematic motion, rapidly climbing along the rugged cliffside and rising higher and higher at speed. The ascent should feel powerful, direct, and dramatic, with a strong sense of rapid vertical movement and increasing scale. The camera keeps rising fast until it reaches a very high position directly above the lone man standing at the cliff’s edge. From this extreme top-down view, the camera looks straight down at him, clearly showing the top of his head, while keeping both the cliff and the crashing sea waves visible in the frame. Bright sunlight illuminates the entire scene with crisp, clear visibility, vivid natural colors, sparkling water, and sharply defined rock textures under a clear blue sky. The overall visual feels cinematic, expansive, and powerful, with dramatic speed, great height, and a striking sense of scale.",
+          "why": "One continuous vertical move from waves to a top-down cliff shot — paste as-is when you want scale and speed without writing a shot list.",
+          "source": "https://x.com/umesh_ai/status/2110989134521372748",
+          "author": "@umesh_ai",
+          "likes": 159,
+          "likesAsOf": "Oct 30, 2026 HKT"
+        },
         {
           "title": "Pixar-style 3D remake of any cartoon character",
           "category": "Image",

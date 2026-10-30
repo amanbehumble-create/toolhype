@@ -163,5 +163,12 @@
   "botgauge": "(botgauge OR \"bot gauge\" OR url:botgauge.com OR @botgauge OR (\"BotGauge\" (agent OR red-team OR \"red team\" OR eval))) -is:retweet",
   "openllm": "(url:openllm.sh OR @OpenLLMsh OR @apewithllm OR \"openllm.sh\" OR (\"OpenLLM\" (Claude OR Codex OR routing OR tokens OR ProductHunt OR Product))) -is:retweet",
   "boltbar": "(boltbar OR \"bolt bar\" OR url:juanluis.me/boltbar OR @juanluisrto boltbar OR (\"Boltbar\" (Mac OR Spotlight OR Claude))) -is:retweet",
-  "deeptutor": "(deeptutor OR \"deep tutor\" OR url:deeptutor.info OR \"HKUDS/DeepTutor\" OR (\"DeepTutor\" (tutor OR tutoring OR open-source))) -is:retweet"
+  "deeptutor": "(deeptutor OR \"deep tutor\" OR url:deeptutor.info OR \"HKUDS/DeepTutor\" OR (\"DeepTutor\" (tutor OR tutoring OR open-source))) -is:retweet",
+  "soldfetch": "(soldfetch OR url:soldfetch.com OR \"SoldFetch\") -is:retweet",
+  "pius-bot": "(\"Pius Bot\" OR piusbot OR url:products.ai OR (\"products.ai\" (shopping OR assistant OR Pius))) -is:retweet",
+  "empacer": "(empacer OR url:empacer.com OR @empacer OR (\"Empacer\" (voice OR business OR ProductHunt OR \"Product Hunt\"))) -is:retweet",
+  "scape": "((scape.app OR url:scape.app OR \"Scape\" (inbox OR email OR \"Product Hunt\" OR ProductHunt OR Atlar)) OR (\"Scape\" \"intelligent inbox\")) -is:retweet",
+  "floot": "(floot OR url:floot.com OR @floot OR (\"Floot\" (ChatGPT OR Claude OR connector OR app))) -is:retweet",
+  "radar": "((radarhq OR url:radarhq.io OR \"skyhook-io/radar\" OR (\"Radar\" (Kubernetes OR K8s OR MCP OR \"Product Hunt\"))) OR kubectl radar) -is:retweet",
+  "notch-metrics": "(\"Notch Metrics\" OR notchmetrics OR url:notchmetrics.com OR (\"notch\" (Stripe OR MRR OR MacBook) metrics)) -is:retweet"
 }

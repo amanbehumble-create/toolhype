@@ -4,16 +4,25 @@ import { getTools, byBuzz, BUZZ_AT, hkt, LABEL, velText } from '../lib/data';
 import { listLd, faqLd, crumbsLd } from '../lib/ld';
 const live = getTools().filter((t) => t.buzz.status === 'live').sort(byBuzz);
 const pending = getTools().filter((t) => t.buzz.status !== 'live');
+const answer = live.length
+  ? `As of ${hkt(BUZZ_AT)}, the highest Live X Buzz Scores are ${live.slice(0, 5).map((t) => `${t.name} (${t.buzz.score}/100, ${LABEL[t.buzz.label!] || t.buzz.label})`).join('; ')}.`
+  : `No live buzz scores yet. Check back after the next X scan.`;
+const description = `How toolhype's 0-100 X Buzz Score is calculated from real X post counts, velocity and engagement${live[0] ? `, led by ${live[0].name} (${live[0].buzz.score}/100)` : ''}. Full leaderboard of ${live.length} tools, updated ${hkt(BUZZ_AT)}.`;
 const faq = faqLd([
+  ['What are the top buzz scores right now?', answer],
   ['What is the Live X Buzz Score?', 'A 0–100 score for each tool on toolhype, built from public X data: post volume over 7 days, velocity (last 24h vs the prior 6-day average), and engagement from a sample of top posts. Paid placements never change it.'],
   ['How often does the Buzz Score update?', 'Scores refresh with our daily X scan. The leaderboard on /buzz shows when it was last updated in Hong Kong time.'],
   ['What do Hype, Rising, Steady and Quiet mean?', 'Hype: velocity ≥ 2× with 20+ posts in 24h, or a sampled post with 5,000+ likes this week. Rising: velocity ≥ 1.3×. Steady: 50+ posts a week. Quiet: everything else.'],
 ]);
 ---
-<Base title="Live X Buzz Score: how we rank hype on X" description="How toolhype's 0-100 X Buzz Score is calculated from real X post counts, velocity and engagement, plus the full leaderboard." jsonld={[crumbsLd([['Home', '/'], ['Live X Buzz Score', '/buzz']]), listLd('X Buzz Score leaderboard', live), faq]}>
+<Base title="Live X Buzz Score: how we rank hype on X" description={description} jsonld={[crumbsLd([['Home', '/'], ['Live X Buzz Score', '/buzz']]), listLd('X Buzz Score leaderboard', live), faq, { '@context': 'https://schema.org', '@type': 'CollectionPage', name: 'Live X Buzz Score', description, url: 'https://toolhype.dev/buzz', dateModified: BUZZ_AT, isPartOf: { '@type': 'WebSite', name: 'toolhype', url: 'https://toolhype.dev' } }]}>
 <Shell><article class="card prose">
 <h1>Live X Buzz Score</h1>
 <p class="muted">Updated {hkt(BUZZ_AT)}. Every number here comes from public X data. Nothing is estimated, and paid placements never change it.</p>
+{live.length > 0 && <div class="card answer" style="margin:.8rem 0">
+<p style="margin:0 0 .5rem">{answer}</p>
+<ul style="margin:0;padding-left:1.2rem">{live.slice(0,5).map((t) => <li><a href={`/tools/${t.slug}#buzz`}>{t.name}</a> — {t.buzz.score}/100 ({LABEL[t.buzz.label!] || t.buzz.label})</li>)}</ul>
+</div>}
 <h2>How it works</h2>
 <ol>
 <li><b>One precise query per tool.</b> Brand names, the official handle and the domain (<code>url:</code>), with retweets removed and ambiguous words avoided. Each query is listed below.</li>

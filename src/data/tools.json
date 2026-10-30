@@ -4866,5 +4866,145 @@
       "updatedAt": null
     },
     "logo": "/logos/emailwish.png"
+  },
+  {
+    "slug": "empacer",
+    "name": "Empacer",
+    "url": "https://empacer.com",
+    "affiliateUrl": null,
+    "category": "productivity",
+    "useCases": [
+      "productivity",
+      "marketing"
+    ],
+    "pricing": "freemium",
+    "verdict": "Voice-first business assistant for small-business owners: three setup questions lock in your business context, then spoken requests become drafts for customer replies, social posts, invoices and plans — nothing sends without your approval. #1 on Product Hunt on Oct 29. Closer to a hands-free ops aide than ChatGPT with a voice mode; Mac/desktop workflows and deep integrations still matter less than “say it, approve it.”",
+    "useThisIf": "you run a small business and want AI drafts from voice notes without re-explaining your shop in every chat.",
+    "alternatives": [
+      "chatgpt",
+      "claude"
+    ],
+    "source": "producthunt",
+    "addedAt": "2026-10-30",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/empacer.png"
+  },
+  {
+    "slug": "scape",
+    "name": "Scape",
+    "url": "https://scape.app/",
+    "affiliateUrl": null,
+    "category": "productivity",
+    "useCases": [
+      "productivity",
+      "chat"
+    ],
+    "pricing": "pricing not published",
+    "verdict": "Desktop AI email client that prioritizes what needs attention, drafts contextual replies from email plus meeting/calendar/attachment context, and records meetings locally on Mac without a bot joining the call. #2 on Product Hunt on Oct 29. Heavier than Superhuman-style triage add-ons; you switch inboxes rather than bolt AI onto Gmail.",
+    "useThisIf": "your work lives in email and you want an inbox that drafts replies and follow-ups from meetings without a meeting bot.",
+    "alternatives": [
+      "chatgpt",
+      "claude"
+    ],
+    "source": "producthunt",
+    "addedAt": "2026-10-30",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/scape.png"
+  },
+  {
+    "slug": "floot",
+    "name": "Floot",
+    "url": "https://floot.com",
+    "affiliateUrl": null,
+    "category": "coding",
+    "useCases": [
+      "coding",
+      "productivity"
+    ],
+    "pricing": "freemium",
+    "verdict": "Connector that plugs into Claude, ChatGPT or Cursor so you describe an app in chat and get a full-stack app with database, logins, hosting and a live URL — including iOS/Android store publish after one Apple/Google sign-in. #3 on Product Hunt on Oct 29 (Floot in ChatGPT). AI tokens come from your existing chat plan; Floot handles build/host. Overlaps with Lovable/Bolt; the pitch is staying inside the chat you already use plus app-store ship.",
+    "useThisIf": "you want a real hosted app (and optionally store builds) from Claude/ChatGPT without leaving the chat or paying separate AI credits.",
+    "alternatives": [
+      "lovable",
+      "bolt",
+      "cursor"
+    ],
+    "source": "producthunt",
+    "addedAt": "2026-10-30",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/floot.png"
+  },
+  {
+    "slug": "radar",
+    "name": "Radar",
+    "url": "https://radarhq.io",
+    "affiliateUrl": null,
+    "category": "coding",
+    "useCases": [
+      "coding",
+      "agents"
+    ],
+    "pricing": "open-source",
+    "verdict": "Open-source Kubernetes UI plus MCP server (Apache-2.0, skyhook-io/radar): topology, events, Helm, GitOps, live traffic and audits for humans, and the same view for coding agents via MCP so “Investigate” can root-cause without blind kubectl. #8 on Product Hunt on Oct 29; OSS free forever, Radar Cloud adds fleets/alerts. Stronger agent surface than a plain dashboard; you still need cluster access and K8s literacy.",
+    "useThisIf": "you run Kubernetes and want your coding agent the same live cluster picture you see in a UI, not just kubectl dumps.",
+    "alternatives": [
+      "cursor",
+      "claude-code"
+    ],
+    "source": "producthunt",
+    "addedAt": "2026-10-30",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/radar.png"
+  },
+  {
+    "slug": "notch-metrics",
+    "name": "Notch Metrics",
+    "url": "https://notchmetrics.com",
+    "affiliateUrl": null,
+    "category": "productivity",
+    "useCases": [
+      "productivity",
+      "coding"
+    ],
+    "pricing": "paid",
+    "verdict": "Native Apple-silicon Mac app that puts Stripe/Polar/Paddle/Shopify/etc. revenue, MRR and subscriber widgets in the MacBook notch, with MCP so a coding agent can author custom metrics. #4 on Product Hunt on Oct 29; 7-day trial then $9/mo or $49/yr. Niche and Mac-only versus a browser dashboard; keys stay server-side encrypted.",
+    "useThisIf": "you are on a notched MacBook and want live MRR/revenue from Stripe and friends without opening a dashboard.",
+    "alternatives": [
+      "boltbar"
+    ],
+    "source": "producthunt",
+    "addedAt": "2026-10-30",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/notch-metrics.png"
   }
 ]

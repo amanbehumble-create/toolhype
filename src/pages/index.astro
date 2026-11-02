@@ -1,5 +1,5 @@
 ---
-import Base from '../layouts/Base.astro'; import Shell from '../components/Shell.astro'; import Feed from '../components/Feed.astro';
+import Base from '../layouts/Base.astro'; import Shell from '../components/Shell.astro'; import Feed from '../components/Feed.astro'; import Showcase from '../components/Showcase.astro';
 import { getTools, byBuzz, SITE } from '../lib/data'; import { listLd } from '../lib/ld'; import { topTools } from '../lib/top';
 // Default ranking is purely by X Buzz Score (no recency boost, no ?feature influence).
 const tools = [...getTools()].sort(byBuzz);
@@ -14,6 +14,7 @@ const desc = `${n} AI tools and software, ranked by builders and their live X Bu
   <p class="sub">{n} AI tools ranked by live X buzz. See what's actually hyped right now, and why.</p>
   <label class="term"><span class="gt" aria-hidden="true">&gt;</span><input id="hero-q" data-track="hero:search" type="search" autocomplete="off" placeholder={`type a tool… (${n})`} aria-label="Search AI tools"/></label>
 </section>
+<Showcase />
 <Feed tools={tools} live/></Shell>
 </Base>
 <style is:global>
@@ -25,7 +26,7 @@ const desc = `${n} AI tools and software, ranked by builders and their live X Bu
 @keyframes bl{50%{opacity:0}}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
 .sub{font:400 .875rem/1.5 var(--mono);color:var(--ink-2);margin:1.1rem auto 1.6rem;max-width:44rem}
-.term{display:flex;align-items:center;gap:.6rem;max-width:36rem;margin:0 auto;padding:.85rem 1rem;border:1px solid var(--line-strong);border-radius:10px;background:var(--surface);cursor:text}
+.term{display:flex;align-items:center;gap:.6rem;max-width:36rem;margin:0 auto;padding:.85rem 1rem;border:1px solid var(--line-strong);border-radius:10px;background:var(--surface);cursor:text;box-shadow:0 1px 2px color-mix(in srgb,var(--ink) 5%,transparent),0 12px 32px color-mix(in srgb,var(--ink) 4%,transparent)}
 .term:focus-within{border-color:var(--cyan);box-shadow:0 0 0 3px color-mix(in srgb,var(--cyan) 20%,transparent)}
 .gt{font:700 1rem var(--mono);color:var(--accent-ink)}
 .term input{flex:1;min-width:0;border:0;outline:0;background:transparent;font:400 .9375rem var(--mono);color:var(--ink)}

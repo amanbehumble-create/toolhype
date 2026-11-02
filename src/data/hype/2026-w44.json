@@ -1,0 +1,116 @@
+{
+ "week": "2026-w44",
+ "computedAt": "2026-10-30T16:01:41.368Z",
+ "rows": [
+  {
+   "slug": "wispr-flow",
+   "name": "Wispr Flow",
+   "score": 70,
+   "mentions7d": 2981,
+   "mentions24h": 1158,
+   "velocity": 3.81,
+   "label": "hype",
+   "verdict": "Voice dictation that works in every app and cleans up your words as you speak.",
+   "why": "2,981 X posts in 7 days (1158 in the last 24h, 3.81x velocity)."
+  },
+  {
+   "slug": "chatgpt",
+   "name": "ChatGPT",
+   "score": 67,
+   "mentions7d": 243185,
+   "mentions24h": 35988,
+   "velocity": 1.04,
+   "label": "steady",
+   "verdict": "The default general assistant; strong all-rounder with a huge plugin and GPT ecosystem.",
+   "why": "243,185 X posts in 7 days (35988 in the last 24h, 1.04x velocity); top post by @OpenAIDevs got 958 likes."
+  },
+  {
+   "slug": "claude",
+   "name": "Claude",
+   "score": 65,
+   "mentions7d": 60174,
+   "mentions24h": 10243,
+   "velocity": 1.23,
+   "label": "steady",
+   "verdict": "Excellent for long documents, writing and careful coding help.",
+   "why": "60,174 X posts in 7 days (10243 in the last 24h, 1.23x velocity); top post by @Mohiniuni got 115 likes."
+  },
+  {
+   "slug": "claude-code",
+   "name": "Claude Code",
+   "score": 64,
+   "mentions7d": 82886,
+   "mentions24h": 13899,
+   "velocity": 1.21,
+   "label": "steady",
+   "verdict": "Terminal-based coding agent that edits and runs your repo.",
+   "why": "82,886 X posts in 7 days (13899 in the last 24h, 1.21x velocity)."
+  },
+  {
+   "slug": "grok",
+   "name": "Grok",
+   "score": 61,
+   "mentions7d": 450520,
+   "mentions24h": 67112,
+   "velocity": 1.05,
+   "label": "steady",
+   "verdict": "xAI's assistant with native, real-time access to X.",
+   "why": "450,520 X posts in 7 days (67112 in the last 24h, 1.05x velocity); top post by @WildVariable01 got 32 likes."
+  },
+  {
+   "slug": "canva",
+   "name": "Canva",
+   "score": 60,
+   "mentions7d": 72581,
+   "mentions24h": 11148,
+   "velocity": 1.09,
+   "label": "steady",
+   "verdict": "Design for everyone with Magic Studio AI features.",
+   "why": "72,581 X posts in 7 days (11148 in the last 24h, 1.09x velocity)."
+  },
+  {
+   "slug": "kimi",
+   "name": "Kimi",
+   "score": 60,
+   "mentions7d": 24128,
+   "mentions24h": 1181,
+   "velocity": 0.31,
+   "label": "steady",
+   "verdict": "Moonshot AI's assistant, now running Kimi K3.1 Pro (released Oct 23, 2026): a 2.8T-parameter open-weight MoE with a 1M-token context, strong at long coding sessions, agent tasks and 3D/Blender work at a low cost per task. Use it free in the Kimi web/app or via Kimi Code and the API. ~11k X posts in a week; claims of matching top US models still need independent checks.",
+   "why": "24,128 X posts in 7 days (1181 in the last 24h, 0.31x velocity); top post by @arena got 1,015 likes."
+  },
+  {
+   "slug": "gemini",
+   "name": "Gemini",
+   "score": 55,
+   "mentions7d": 12110,
+   "mentions24h": 2271,
+   "velocity": 1.38,
+   "label": "rising",
+   "verdict": "Google's assistant, best if you live in Gmail, Docs and Drive.",
+   "why": "12,110 X posts in 7 days (2271 in the last 24h, 1.38x velocity)."
+  },
+  {
+   "slug": "figma",
+   "name": "Figma",
+   "score": 53,
+   "mentions7d": 11684,
+   "mentions24h": 1722,
+   "velocity": 1.04,
+   "label": "steady",
+   "verdict": "Collaborative design standard with built-in AI features.",
+   "why": "11,684 X posts in 7 days (1722 in the last 24h, 1.04x velocity); top post by @shingo2000 got 111 likes."
+  },
+  {
+   "slug": "capcut",
+   "name": "CapCut",
+   "score": 53,
+   "mentions7d": 52636,
+   "mentions24h": 6558,
+   "velocity": 0.85,
+   "label": "steady",
+   "verdict": "Free-ish short-form editor with AI captions and effects.",
+   "why": "52,636 X posts in 7 days (6558 in the last 24h, 0.85x velocity)."
+  }
+ ]
+}

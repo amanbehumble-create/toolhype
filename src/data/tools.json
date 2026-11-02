@@ -5006,5 +5006,181 @@
       "updatedAt": null
     },
     "logo": "/logos/notch-metrics.png"
+  },
+  {
+    "slug": "specsight",
+    "name": "Specsight",
+    "url": "https://specsight.app",
+    "affiliateUrl": null,
+    "category": "productivity",
+    "useCases": [
+      "productivity",
+      "writing"
+    ],
+    "pricing": "paid",
+    "verdict": "Product observability that learns features from your codebase and turns every ship into plain-language updates for sales, support and marketing — #1 on Product Hunt Oct 31 (314 upvotes). Read-only setup; Standard from €150/mo with a 7-day trial. Overlaps with release-note tools; the pitch is a living product map from code, not docs you write.",
+    "useThisIf": "your team ships AI-fast and Product/Sales/Support keep falling behind on what actually changed.",
+    "alternatives": [
+      "notion",
+      "mintlify-autopilot"
+    ],
+    "source": "producthunt",
+    "addedAt": "2026-11-02",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/specsight.png"
+  },
+  {
+    "slug": "telemetry-dev",
+    "name": "telemetry.dev",
+    "url": "https://telemetry.dev",
+    "affiliateUrl": null,
+    "category": "agents",
+    "useCases": [
+      "agents",
+      "productivity"
+    ],
+    "pricing": "freemium",
+    "verdict": "LLM observability for AI agents: one trace per run with model/tool spans, tokens, cost and errors, plus prompt evals on the same data. #3 Product of the Day Oct 31. Free plan 30k ingestion units/mo, TypeScript/Python SDKs or OpenTelemetry. Closer to LangSmith/Helicone than a coding agent — for teams debugging agent loops and spend.",
+    "useThisIf": "you run agents in production and need traces, cost and failure alerts without bolting together logs.",
+    "alternatives": [
+      "langchain",
+      "crewai",
+      "composio-instant"
+    ],
+    "source": "producthunt",
+    "addedAt": "2026-11-02",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/telemetry-dev.png"
+  },
+  {
+    "slug": "ski",
+    "name": "SKI",
+    "url": "https://justski.it",
+    "affiliateUrl": null,
+    "category": "coding",
+    "useCases": [
+      "coding",
+      "agents"
+    ],
+    "pricing": "freemium",
+    "verdict": "Voice-first Mac coding harness: talk to Claude Code, Codex, Cursor and OpenCode in parallel, hear when any agent needs you, with git/worktrees and irreversible-step gates. #2 on Product Hunt Oct 31 (~298 upvotes). Free to start; Pro for always-on agent fleets. Neutral across model vendors — your accounts, code stays local.",
+    "useThisIf": "you run several coding agents at once and want voice talkback instead of alt-tabbing through terminals.",
+    "alternatives": [
+      "claude-code",
+      "codex",
+      "cursor",
+      "orca"
+    ],
+    "source": "producthunt",
+    "addedAt": "2026-11-02",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/ski.png"
+  },
+  {
+    "slug": "backenly",
+    "name": "Backenly",
+    "url": "https://backenly.com",
+    "affiliateUrl": null,
+    "category": "coding",
+    "useCases": [
+      "coding",
+      "agents"
+    ],
+    "pricing": "freemium",
+    "verdict": "Open-source autonomous backend for coding agents over MCP: Postgres, auth, storage, functions and realtime, plus a self-healing loop that fixes safe issues every minute and holds destructive changes for you. Apache-2.0 self-host or Cloud (Free permanent backend; Pro $25/mo). Competes with Supabase/Firebase on who operates the backend after the agent builds it.",
+    "useThisIf": "your coding agent needs a real backend that keeps repairing itself without you babysitting indexes and RLS.",
+    "alternatives": [
+      "bolt",
+      "lovable",
+      "composio-instant"
+    ],
+    "source": "producthunt",
+    "addedAt": "2026-11-02",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/backenly.png"
+  },
+  {
+    "slug": "agentmash",
+    "name": "agentmash",
+    "url": "https://agentmash.dev",
+    "affiliateUrl": null,
+    "category": "agents",
+    "useCases": [
+      "agents",
+      "coding"
+    ],
+    "pricing": "freemium",
+    "verdict": "Open-source multiplayer layer for team coding agents: shared context so Claude Code, Codex, Cursor and Gemini CLI warn each other before overlapping edits, @mention teammate agents, and sync skills/chats. Launched on Product Hunt Nov 1 (#4-ish that day). Code stays on your machines; the room sees paths/diffs, not your keys. Built for teams where solo agent demos fail.",
+    "useThisIf": "multiple people run coding agents on one repo and keep stepping on each other's uncommitted files.",
+    "alternatives": [
+      "claude-code",
+      "cursor",
+      "openswarm",
+      "orca"
+    ],
+    "source": "producthunt",
+    "addedAt": "2026-11-02",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/agentmash.png"
+  },
+  {
+    "slug": "termy",
+    "name": "Termy",
+    "url": "https://apptermy.com",
+    "affiliateUrl": null,
+    "category": "coding",
+    "useCases": [
+      "coding",
+      "productivity"
+    ],
+    "pricing": "freemium",
+    "verdict": "Mac notch terminal for Claude Code and Codex: live working/needs-you/done status from real hooks, Allow/Deny in the notch, persistent sessions, Agent Office and Whisper dictation on Pro. Free; Pro $4.99 one-time. Needs macOS 26 (notch optional — menu bar works). Overlaps with SKI on agent UX; Termy is the drop-down terminal, not a voice harness.",
+    "useThisIf": "you live in Claude Code/Codex on a MacBook and want status + approvals without leaving the notch.",
+    "alternatives": [
+      "ski",
+      "claude-code",
+      "codex",
+      "notch-metrics"
+    ],
+    "source": "producthunt",
+    "addedAt": "2026-11-02",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/termy.png"
   }
 ]

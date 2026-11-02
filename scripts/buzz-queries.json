@@ -170,5 +170,21 @@
   "scape": "((scape.app OR url:scape.app OR \"Scape\" (inbox OR email OR \"Product Hunt\" OR ProductHunt OR Atlar)) OR (\"Scape\" \"intelligent inbox\")) -is:retweet",
   "floot": "(floot OR url:floot.com OR @floot OR (\"Floot\" (ChatGPT OR Claude OR connector OR app))) -is:retweet",
   "radar": "((radarhq OR url:radarhq.io OR \"skyhook-io/radar\" OR (\"Radar\" (Kubernetes OR K8s OR MCP OR \"Product Hunt\"))) OR kubectl radar) -is:retweet",
-  "notch-metrics": "(\"Notch Metrics\" OR notchmetrics OR url:notchmetrics.com OR (\"notch\" (Stripe OR MRR OR MacBook) metrics)) -is:retweet"
+  "notch-metrics": "(\"Notch Metrics\" OR notchmetrics OR url:notchmetrics.com OR (\"notch\" (Stripe OR MRR OR MacBook) metrics)) -is:retweet",
+  "specsight": "(specsight OR url:specsight.app OR @specsight OR \"Specsight\") -is:retweet",
+  "telemetry-dev": "(url:telemetry.dev OR \"telemetry.dev\" OR \"telemetry-dev\" OR @telemetry_dev OR (\"telemetry.dev\" (agent OR agents OR LLM OR observability))) -is:retweet",
+  "ski": "((justski.it OR url:justski.it OR \"SKI\" (\"coding harness\" OR \"voice-first\" OR \"voice first\" OR \"Claude Code\" OR Codex)) OR (\"SKI\" notch coding)) -is:retweet",
+  "backenly": "(backenly OR url:backenly.com OR \"Backenly\") -is:retweet",
+  "agentmash": "(agentmash OR url:agentmash.dev OR \"agent mash\" OR @agentmash) -is:retweet",
+  "termy": "(apptermy OR url:apptermy.com OR \"Termy\" (notch OR \"Claude Code\" OR Codex OR MacBook)) -is:retweet",
+  "layoza": "(layoza OR \"layoza/layoza\" OR (\"Layoza\" (MCP OR design OR Claude OR Cursor OR agent))) -is:retweet",
+  "agentweb": "(agentweb OR url:agentweb.live OR \"AgentWeb\") -is:retweet",
+  "lemon-code": "(lemon-code OR url:lemoncode.ai OR \"Lemon Code\") -is:retweet",
+  "tokenrip": "(tokenrip OR url:tokenrip.com OR \"Tokenrip\") -is:retweet",
+  "connectvault": "(connectvault OR url:connectvault.ai OR \"ConnectVault\") -is:retweet",
+  "greatarrow": "(greatarrow OR url:greatarrow.ai OR \"GreatArrow.ai\") -is:retweet",
+  "riffwise": "(riffwise OR url:riffwise.app OR \"Riffwise\") -is:retweet",
+  "videobgremover": "(videobgremover OR url:videobgremover.net OR \"VideoBGRemover\") -is:retweet",
+  "tempburn": "(tempburn OR url:tempburn.com OR \"Tempburn\") -is:retweet",
+  "emailwish": "(emailwish OR url:emailwish.com OR \"Emailwish\") -is:retweet"
 }

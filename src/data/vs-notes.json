@@ -17,7 +17,7 @@
       ],
       [
         "Cheapest paid plan",
-        "Starter: \u20ac20/month billed annually",
+        "Starter: €20/month billed annually",
         "Professional: $19.99/month billed annually for 750 tasks ($29.99 billed monthly)"
       ],
       [
@@ -54,7 +54,7 @@
     "faq": [
       [
         "Is n8n cheaper than Zapier?",
-        "It depends on your workflows. n8n Cloud starts at \u20ac20/month (billed annually) and charges per full workflow run; Zapier Professional starts at $19.99/month (billed annually) for 750 tasks, and every successful action step uses a task. For long multi-step workflows n8n usually works out cheaper, and self-hosted n8n Community Edition is free. Prices checked Oct 20, 2026."
+        "It depends on your workflows. n8n Cloud starts at €20/month (billed annually) and charges per full workflow run; Zapier Professional starts at $19.99/month (billed annually) for 750 tasks, and every successful action step uses a task. For long multi-step workflows n8n usually works out cheaper, and self-hosted n8n Community Edition is free. Prices checked Oct 20, 2026."
       ],
       [
         "Can I self-host Zapier like n8n?",
@@ -172,7 +172,7 @@
     "title": "Cursor vs GitHub Copilot (2026): pricing, agents & which to pick",
     "description": "Cursor vs GitHub Copilot compared with checked Oct 2026 pricing: Cursor is sold on The X Subscription (Plus $8, Premium $30, Super $100, Ultra $200/mo). Copilot Pro is $10/mo, Pro+ $39/mo, Max $100/mo with GitHub AI Credits.",
     "checked": "Oct 22, 2026 HKT",
-    "bottomLine": "Pick GitHub Copilot if you already live in GitHub issues/PRs and want the cheapest paid coding assistant (Pro $10/mo) with unlimited completions. Pick Cursor (The X Subscription Premium $30/mo or higher) if you want an agent-first IDE with cloud agents, Origin code hosting and Bugbot\u2014know that third-party models on Cursor bill at API list price from prepaid credit, and Plus ($8) is Grok models only.",
+    "bottomLine": "Pick GitHub Copilot if you already live in GitHub issues/PRs and want the cheapest paid coding assistant (Pro $10/mo) with unlimited completions. Pick Cursor (The X Subscription Premium $30/mo or higher) if you want an agent-first IDE with cloud agents, Origin code hosting and Bugbot—know that third-party models on Cursor bill at API list price from prepaid credit, and Plus ($8) is Grok models only.",
     "rows": [
       [
         "Cheapest paid individual plan",
@@ -181,7 +181,7 @@
       ],
       [
         "Higher individual tiers",
-        "Super $100/mo (15\u00d7 Plus usage); Ultra $200/mo (50\u00d7 Plus)",
+        "Super $100/mo (15× Plus usage); Ultra $200/mo (50× Plus)",
         "Pro+ $39/mo; Max $100/mo"
       ],
       [
@@ -212,7 +212,7 @@
       [
         "Legacy note",
         "Older Hobby/Pro/Pro+/Ultra Cursor plans still work for existing subscribers; new customers get The X Subscription",
-        "Plans use AI Credits; amounts and flex allotments can change\u2014check github.com/features/copilot/plans"
+        "Plans use AI Credits; amounts and flex allotments can change—check github.com/features/copilot/plans"
       ]
     ],
     "faq": [
@@ -248,7 +248,7 @@
     "title": "Claude Code vs OpenAI Codex (2026): pricing, limits & which to pick",
     "description": "Claude Code vs OpenAI Codex with checked Oct 2026 pricing: Claude Code needs Claude Pro ($20/mo, $17 annual) or Max (from $100). Codex has a Free and Go ($8) tier in the desktop app; full CLI/IDE/cloud starts at Plus $20/mo.",
     "checked": "Oct 26, 2026 HKT",
-    "bottomLine": "Pick OpenAI Codex if you already pay for ChatGPT or want to try a coding agent for $0\u2013$8 first: Plus ($20/mo) unlocks Codex on the web, CLI, IDE and iOS plus GitHub code review and Slack. Pick Claude Code if you live in the terminal and want Anthropic's Opus/Sonnet models: it is included from Claude Pro ($20/mo, or $17/mo billed yearly), with Max ($100+) for all-day sessions. Both bill heavy use beyond plan limits at API rates.",
+    "bottomLine": "Pick OpenAI Codex if you already pay for ChatGPT or want to try a coding agent for $0–$8 first: Plus ($20/mo) unlocks Codex on the web, CLI, IDE and iOS plus GitHub code review and Slack. Pick Claude Code if you live in the terminal and want Anthropic's Opus/Sonnet models: it is included from Claude Pro ($20/mo, or $17/mo billed yearly), with Max ($100+) for all-day sessions. Both bill heavy use beyond plan limits at API rates.",
     "rows": [
       [
         "Cheapest way in",
@@ -308,6 +308,77 @@
       [
         "OpenAI Codex pricing",
         "https://developers.openai.com/codex/pricing"
+      ]
+    ]
+  },
+  "lovable-vs-bolt": {
+    "title": "Lovable vs Bolt.new (2026): which AI app builder to pick",
+    "description": "Lovable vs Bolt.new compared with checked Nov 2026 positioning: both turn prompts into full-stack web apps. Lovable leans product polish and iteration; Bolt.new (StackBlitz) ships in-browser with instant preview.",
+    "checked": "Nov 2, 2026 HKT",
+    "bottomLine": "Pick Bolt.new if you want an in-browser StackBlitz preview and a fast path from prompt to runnable web app without leaving the tab. Pick Lovable if you care more about polished product iteration, design taste and shipping a fuller app surface. Both are freemium vibe-coding builders that overlap with v0 and Floot; neither replaces a team IDE like Cursor for large repos.",
+    "rows": [
+      [
+        "Best for",
+        "Polished full-stack apps from chat with strong design defaults",
+        "In-browser web apps with instant StackBlitz preview"
+      ],
+      [
+        "Where it runs",
+        "Lovable web app (lovable.dev)",
+        "Bolt.new in the browser on StackBlitz"
+      ],
+      [
+        "Typical output",
+        "Hosted app you iterate in chat",
+        "Runnable project you can keep editing in-browser"
+      ],
+      [
+        "Pricing shape",
+        "Freemium with paid usage tiers (check current plans on site)",
+        "Freemium with paid usage tiers (check current plans on site)"
+      ],
+      [
+        "Feels closest to",
+        "v0 + a product designer in the loop",
+        "StackBlitz + an AI that scaffolds the whole project"
+      ],
+      [
+        "Weak spot",
+        "Less of a raw IDE for huge existing codebases",
+        "Can feel more “demo web app” than finished product polish"
+      ],
+      [
+        "Good next step",
+        "Try the same prompt in both; keep the one whose first draft matches your taste",
+        "Same — compare first-run UX, not marketing pages"
+      ]
+    ],
+    "faq": [
+      [
+        "Is Lovable free?",
+        "Lovable offers a free tier with limits; heavier use needs a paid plan. Check lovable.dev for current quotas."
+      ],
+      [
+        "Is Bolt.new free?",
+        "Bolt.new has a free tier; heavier generation needs paid credits. Check bolt.new for current limits."
+      ],
+      [
+        "Lovable vs Bolt vs v0?",
+        "v0 (Vercel) is strongest for UI components and Next.js-shaped fronts. Lovable and Bolt aim at fuller apps. Use v0 when the UI is the product; use Lovable/Bolt when you want backend-ish pieces too."
+      ],
+      [
+        "Can either replace Cursor?",
+        "No. For large existing repos, Cursor/Claude Code/Codex still win. These builders shine for greenfield prompts."
+      ]
+    ],
+    "sources": [
+      [
+        "Lovable",
+        "https://lovable.dev"
+      ],
+      [
+        "Bolt.new",
+        "https://bolt.new"
       ]
     ]
   }

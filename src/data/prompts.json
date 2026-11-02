@@ -823,8 +823,8 @@
     {
       "n": 5,
       "slug": "issue-5",
-      "title": "Prompt Drop #5: 8 AI prompts X actually loved (100+ likes each)",
-      "date": "2026-10-30",
+      "title": "Prompt Drop #5: 14 AI prompts X actually loved (100+ likes each)",
+      "date": "2026-11-02",
       "intro": "Fresh issue for the week. Every prompt comes from an X post with at least 100 likes, and we checked each like count on X ourselves. Copy one, swap any [brackets] or details for your own, paste it into the AI, done. More get added through the week.",
       "rule": "Only prompts from X posts with 100+ likes (checked with X data). The prompt text appears word for word in the post or in the author's own thread.",
       "prompts": [
@@ -916,6 +916,80 @@
           "likes": 177,
           "likesAsOf": "Oct 31, 2026 HKT",
           "note": "Full prompt is in the author's reply thread; like count from the parent post."
+        },
+        {
+          "title": "Loose watercolor wash of any subject",
+          "category": "Image",
+          "tool": "Midjourney, ChatGPT image, Ideogram or Flux",
+          "prompt": "Abstract watercolor wash of a [subject], loose oversized brushstrokes, broad flowing color shapes, minimal detail, soft pigment bleeding, expressive wet-on-wet texture, simplified forms, airy composition, no linework, no outlines, white background",
+          "why": "Short and forgiving: swap [subject] for a bird, city or face and you get soft painterly shapes instead of a stiff illustration.",
+          "source": "https://x.com/azed_ai/status/2116848755362484477",
+          "author": "@azed_ai",
+          "likes": 364,
+          "likesAsOf": "2026-11-02 HKT"
+        },
+        {
+          "title": "Fluffy toothy 3D movie monster",
+          "category": "Image",
+          "tool": "ChatGPT image, Midjourney or any 3D-style image model",
+          "prompt": "An adorable little fluffy 3D animated movie monster with a [body shape] body completely covered in thick, ultra-soft, plush [fur color] fur, realistic individual hair strands, dense velvety fluff, huge expressive [eye color] eyes, tiny legs, short furry arms, [unique features], an enormous smiling mouth filled with many perfectly clean, shiny white teeth, [facial expression], [playful pose], exaggerated cartoon proportions, innocent mischievous personality, irresistibly cuddly appearance, premium animated movie character design, detailed fur grooming, realistic subsurface lighting, soft studio illumination, full-body render, isolated on a pure white background",
+          "why": "Fill the brackets once (round body, teal fur, amber eyes) and you get a consistent cute-monster character sheet vibe.",
+          "source": "https://x.com/azed_ai/status/2115034792404324628",
+          "author": "@azed_ai",
+          "likes": 191,
+          "likesAsOf": "2026-11-02 HKT"
+        },
+        {
+          "title": "Turn what you know into 10 sellable services",
+          "category": "Productivity",
+          "tool": "Claude, ChatGPT or Gemini",
+          "prompt": "Adopt the role of a former consultant who's helped hundreds of people turn what they already know into their first paid service. Give me 10 services I could sell this month, ranked by how fast I could start. For each one, name who pays and what they pay today, and link your sources.\n\nWhat I know and what people ask me for help with: [DETAILS]",
+          "why": "Paste real skills and asks into [DETAILS]. Ranking by speed-to-start beats a vague \"business ideas\" brainstorm.",
+          "source": "https://x.com/alex_prompter/status/2116923270209687816",
+          "promptSource": "https://x.com/alex_prompter/status/2116923282356384051",
+          "author": "@alex_prompter",
+          "likes": 447,
+          "note": "Prompt is reply #1 under the main post; likes are for the main post.",
+          "likesAsOf": "2026-11-02 HKT"
+        },
+        {
+          "title": "Kill a weak idea with a 20-post demand check",
+          "category": "Productivity",
+          "tool": "Claude, ChatGPT or Gemini (with web search if available)",
+          "prompt": "Adopt the role of a market researcher who kills weak ideas before anyone wastes money on them. Find 20 real public posts where people ask for my idea or complain about not having it. Build a table with the link, their exact words and what they already tried. If you can't find 20, tell me the idea is weak.\n\nMy idea: [IDEA]",
+          "why": "Forces evidence before you build. If the model can't find 20 real posts, you get a clear stop signal.",
+          "source": "https://x.com/alex_prompter/status/2116923270209687816",
+          "promptSource": "https://x.com/alex_prompter/status/2116923294180143466",
+          "author": "@alex_prompter",
+          "likes": 447,
+          "note": "Prompt is reply #2 under the main post; likes are for the main post.",
+          "likesAsOf": "2026-11-02 HKT"
+        },
+        {
+          "title": "Weekly review that only cares about the numbers",
+          "category": "Productivity",
+          "tool": "Claude, ChatGPT or Gemini",
+          "prompt": "Adopt the role of a business coach who only cares about what the numbers say. Tell me what to keep, drop and test next. Build a one-page plan for next week with 3 tasks a day.\n\nThis week's replies, payments and failures: [DETAILS]",
+          "why": "Drop messy week notes into [DETAILS] and get a keep/drop/test plan plus a concrete daily task list.",
+          "source": "https://x.com/alex_prompter/status/2116923270209687816",
+          "promptSource": "https://x.com/alex_prompter/status/2116923366372528167",
+          "author": "@alex_prompter",
+          "likes": 447,
+          "note": "Prompt is reply #8 under the main post; likes are for the main post.",
+          "likesAsOf": "2026-11-02 HKT"
+        },
+        {
+          "title": "Scarlet superbike alpine disaster aerial (15s)",
+          "category": "Video",
+          "tool": "Seedance / Runway or similar video AI",
+          "prompt": "ULTRA-PHOTOREALISTIC, 15 seconds, one continuous aerial shot. A scarlet superbike accelerates along a broad alpine road toward a clear bedrock ridge. Keep the camera moving 25–220 meters above the road, entirely in open valley air. Fixed sunrise ignites snow, emerald firs, crimson freight wagons, and wet black rock.  Seven disasters overlap around the rider. A colossal snow avalanche pours from the upper mountain while giant firs topple inward from the opposite shoulder. Empty freight wagons tear away from an elevated railway, a frozen waterfall shatters above the road, and a ruptured penstock fires a white torrent across the route. Sections of pavement peel into the gorge while the railway's immense central span sinks over the exit.  Begin in a fast diagonal pursuit, climbing into true overhead as trees, wagons, ice, and snow invade the same aerial frame. Dive to 30 meters through clear valley air: an ice slab strikes two meters beside the motorcycle while a wagon crushes the road eight meters behind and the water jet slams the abandoned lane beside it.  The rider keeps accelerating through the narrowing corridor. Sweep around the valley flank as falling trees cast moving shadows across the bike and the avalanche fills the background without hiding the vehicle.  For the climax, the rider clears the descending span with one meter above the helmet while the shoulder collapses behind and a pine crashes six meters from the rear tire. Rise into a distant aerial as the motorcycle reaches the stable ridge and snow, steel, trees, and whitewater collide below. Crushing weight, chaotic overlap, continuous geography. No cuts or slow motion.",
+          "why": "Copy-paste ready for a continuous aerial action shot. Dense constraints (no cuts, fixed sunrise, exact distances) keep the model from cutting away.",
+          "source": "https://x.com/umesh_ai/status/2116743444442013813",
+          "promptSource": "https://x.com/umesh_ai/status/2116743448116301854",
+          "author": "@umesh_ai",
+          "likes": 852,
+          "note": "Prompt is in the author's first reply; likes are for the main post.",
+          "likesAsOf": "2026-11-02 HKT"
         }
       ]
     }

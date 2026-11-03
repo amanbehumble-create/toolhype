@@ -5182,5 +5182,117 @@
       "updatedAt": null
     },
     "logo": "/logos/termy.png"
+  },
+  {
+    "affiliateUrl": null,
+    "addedAt": "2026-11-03",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "slug": "xmind-agent",
+    "name": "Xmind Agent (Xmind 2027)",
+    "url": "https://xmind.com/ai",
+    "category": "productivity",
+    "useCases": [
+      "productivity",
+      "writing"
+    ],
+    "pricing": "freemium",
+    "verdict": "Xmind 2027 (launched Oct 28 2026, on Product Hunt Nov 1) adds a chat agent inside the 20-year-old mind-map app: start from a thought, PDF, webpage or YouTube link and refine the map by talking. Also ships an Xmind MCP server and ChatGPT plugin so Claude/ChatGPT can read and edit your maps. Web, desktop and Android now; iOS 'coming soon'. Agent features sit behind Xmind's paid plans beyond the free tier.",
+    "useThisIf": "you already think in mind maps and want AI to research and restructure them, or want Claude/ChatGPT to work off a map you built.",
+    "alternatives": [
+      "chatgpt",
+      "claude"
+    ],
+    "source": "producthunt",
+    "logo": "/logos/xmind-agent.png"
+  },
+  {
+    "affiliateUrl": null,
+    "addedAt": "2026-11-03",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "slug": "agent-inbox",
+    "name": "Agent Inbox",
+    "url": "https://www.agentinbox.md",
+    "category": "agents",
+    "useCases": [
+      "agents",
+      "coding"
+    ],
+    "pricing": "freemium",
+    "verdict": "From the Novu team (PH launch Nov 1 2026): one command (npx @agentinbox/cli setup) gives your agent its own email address, Telegram bot and Slack app sharing one inbox. Agents can send updates or ask/approve/choose and block until a human answers; works over CLI or MCP from Claude Code, Cursor, etc. Starts as a no-account free demo; you claim it with login. Useful human-in-the-loop plumbing, but your agent is now emailing real people, so set contact rules first.",
+    "useThisIf": "your long-running agent needs to ping you for approvals on Telegram/Slack/email instead of waiting in a terminal.",
+    "alternatives": [
+      "claude-code",
+      "n8n"
+    ],
+    "source": "producthunt",
+    "logo": "/logos/agent-inbox.png"
+  },
+  {
+    "affiliateUrl": null,
+    "addedAt": "2026-11-03",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "slug": "friday-work",
+    "name": "Friday",
+    "url": "https://www.tryfridaywork.com",
+    "category": "coding",
+    "useCases": [
+      "coding",
+      "agents"
+    ],
+    "pricing": "open-source",
+    "verdict": "Free MIT desktop app (macOS/Windows/Linux; PH launch Nov 1 2026) that runs Claude Code, Codex, Cursor, Gemini CLI, Copilot and ~10 more agents side by side on your own plans. A lead agent splits work into a task board, others pick tasks, finished tasks get cross-checked, and when one tool hits its usage limit the task is handed to another with a record of what was done. No account, local only. It doesn't raise anyone's limits; it just routes around them.",
+    "useThisIf": "you pay for two or more coding agents and keep losing momentum when Claude Code hits its 5-hour limit.",
+    "alternatives": [
+      "agentmash",
+      "claude-code",
+      "codex"
+    ],
+    "source": "producthunt",
+    "logo": "/logos/friday-work.png"
+  },
+  {
+    "affiliateUrl": null,
+    "addedAt": "2026-11-03",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "slug": "agent-desktop",
+    "name": "agent-desktop (Vercel Labs)",
+    "url": "https://github.com/vercel-labs/agent-desktop",
+    "category": "agents",
+    "useCases": [
+      "agents",
+      "coding"
+    ],
+    "pricing": "open-source",
+    "verdict": "Apache-2.0 CLI + C library from Vercel Labs for computer use via the OS accessibility tree, not screenshots: snapshot an app, get JSON refs for every clickable element, act on a ref, snapshot again. macOS/Windows/Linux, npm install -g agent-desktop. v1.0.2 shipped Oct 30 2026 and it was #1 on GitHub trending Nov 3 (~2.3K stars in a day, ~9.7K total). Developer tool; snapshots can contain private screen content.",
+    "useThisIf": "you're building an agent that has to drive real desktop apps and want something faster and more reliable than pixel clicking.",
+    "alternatives": [
+      "claude-code"
+    ],
+    "source": "github",
+    "logo": "/logos/agent-desktop.png"
   }
 ]

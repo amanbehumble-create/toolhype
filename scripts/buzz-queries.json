@@ -22,7 +22,7 @@
   "inferock": "(inferock OR \"inferock-bench\") -is:retweet",
   "retriever-ai": "(rtrvr OR \"rtrvr.ai\" OR url:rtrvr.ai) -is:retweet",
   "articos": "(articos OR url:articos.com) -is:retweet",
-  "opencode": "(opencode OR \"open code\" sst OR url:opencode.ai) -is:retweet",
+  "opencode": "(opencode OR url:opencode.ai OR @opencode OR (\"open code\" sst)) -is:retweet",
   "indra": "(\"datalab-to/indra\" OR (indra datalab)) -is:retweet",
   "solid-glass": "(\"deeplethe/solid-glass\" OR url:deeplethe.github.io OR (\"solid-glass\" (design OR shadcn OR css OR ui OR theme)) OR (\"solid glass\" (\"design system\" OR shadcn OR tailwind))) -is:retweet",
   "reso-ai": "(\"reso ai\" OR resollm OR url:resollm.ai) -is:retweet",
@@ -186,5 +186,9 @@
   "riffwise": "(riffwise OR url:riffwise.app OR \"Riffwise\") -is:retweet",
   "videobgremover": "(videobgremover OR url:videobgremover.net OR \"VideoBGRemover\") -is:retweet",
   "tempburn": "(tempburn OR url:tempburn.com OR \"Tempburn\") -is:retweet",
-  "emailwish": "(emailwish OR url:emailwish.com OR \"Emailwish\") -is:retweet"
+  "emailwish": "(emailwish OR url:emailwish.com OR \"Emailwish\") -is:retweet",
+  "xmind-agent": "(\"Xmind Agent\" OR \"Xmind 2027\" OR \"Xmind MCP\" OR url:xmind.com/ai) -is:retweet",
+  "agent-inbox": "(\"agentinbox\" OR url:agentinbox.md OR \"@agentinbox/cli\" OR (\"Agent Inbox\" novu)) -is:retweet",
+  "friday-work": "(tryfridaywork OR url:tryfridaywork.com OR (\"Friday Work\" (claude OR codex OR agent OR agents))) -is:retweet",
+  "agent-desktop": "(url:\"github.com/vercel-labs/agent-desktop\" OR url:agent-browser.dev OR \"vercel-labs/agent-desktop\" OR (\"agent-desktop\" (vercel OR cli OR npm OR accessibility))) -is:retweet"
 }

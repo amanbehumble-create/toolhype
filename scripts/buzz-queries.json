@@ -22,7 +22,7 @@
   "inferock": "(inferock OR \"inferock-bench\") -is:retweet",
   "retriever-ai": "(rtrvr OR \"rtrvr.ai\" OR url:rtrvr.ai) -is:retweet",
   "articos": "(articos OR url:articos.com) -is:retweet",
-  "opencode": "(opencode OR url:opencode.ai OR @opencode OR (\"open code\" sst)) -is:retweet",
+  "opencode": "(opencode OR \"open code\" sst OR url:opencode.ai) -is:retweet",
   "indra": "(\"datalab-to/indra\" OR (indra datalab)) -is:retweet",
   "solid-glass": "(\"deeplethe/solid-glass\" OR url:deeplethe.github.io OR (\"solid-glass\" (design OR shadcn OR css OR ui OR theme)) OR (\"solid glass\" (\"design system\" OR shadcn OR tailwind))) -is:retweet",
   "reso-ai": "(\"reso ai\" OR resollm OR url:resollm.ai) -is:retweet",
@@ -190,5 +190,9 @@
   "xmind-agent": "(\"Xmind Agent\" OR \"Xmind 2027\" OR \"Xmind MCP\" OR url:xmind.com/ai) -is:retweet",
   "agent-inbox": "(\"agentinbox\" OR url:agentinbox.md OR \"@agentinbox/cli\" OR (\"Agent Inbox\" novu)) -is:retweet",
   "friday-work": "(tryfridaywork OR url:tryfridaywork.com OR (\"Friday Work\" (claude OR codex OR agent OR agents))) -is:retweet",
-  "agent-desktop": "(url:\"github.com/vercel-labs/agent-desktop\" OR url:agent-browser.dev OR \"vercel-labs/agent-desktop\" OR (\"agent-desktop\" (vercel OR cli OR npm OR accessibility))) -is:retweet"
+  "agent-desktop": "(url:\"github.com/vercel-labs/agent-desktop\" OR url:agent-browser.dev OR \"vercel-labs/agent-desktop\" OR (\"agent-desktop\" (vercel OR cli OR npm OR accessibility))) -is:retweet",
+  "hackertube": "(hackertube OR \"hacker tube\" OR url:hackertube.org) -is:retweet",
+  "dsh-superagent": "(\"dsh-superagent\" OR (deepseek (\"super-agent\" OR \"super agent\" OR superagent))) -is:retweet",
+  "open-bot-avatar": "(\"open bot avatar\" OR \"open-bot-avatar\" OR (dom_scholz avatar)) -is:retweet",
+  "treg": "(url:treg.to OR @treg_ai OR \"superdesigndev/treg\" OR (treg (clay OR gtm OR leads OR mcp))) -is:retweet"
 }

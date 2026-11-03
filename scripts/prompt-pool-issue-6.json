@@ -1,0 +1,29 @@
+{
+  "_note": "Staging pool for Prompt Drop #6 (week of Nov 2 2026). Not rendered on the site; move into src/data/prompts.json as issue-6 once it has ~8+ prompts. Rule: X posts with 100+ likes, prompt text word for word in the post.",
+  "n": 6,
+  "slug": "issue-6",
+  "prompts": [
+    {
+      "title": "Loose watercolor painting of anything",
+      "category": "Image",
+      "tool": "Any image AI (ChatGPT / Gemini / Midjourney / Grok)",
+      "prompt": "Abstract watercolor wash of a [subject], loose oversized brushstrokes, broad flowing color shapes, minimal detail, soft pigment bleeding, expressive wet-on-wet texture, simplified forms, airy composition, no linework, no outlines, white background",
+      "why": "Swap [subject] for a pet, city or object. 'No linework, no outlines' is what stops the AI from drawing a cartoon and keeps it looking like real wet paint.",
+      "source": "https://x.com/azed_ai/status/2116848755362484477",
+      "author": "@azed_ai",
+      "likes": 684,
+      "likesAsOf": "Nov 3, 2026 HKT"
+    },
+    {
+      "title": "Paper cut-out storybook character",
+      "category": "Image",
+      "tool": "Any image AI (ChatGPT / Gemini / Midjourney / Grok)",
+      "prompt": "Paper cut-out animation of a [subject] [simple action], full-body character, layered paper shapes, handmade paper texture, visible cut edges, soft shadows between layers, flat colorful paper tones, slightly imperfect handcrafted details, minimal paper-collage scenery, charming folk story aesthetic, gentle stop-motion feel, poetic children’s book atmosphere, clean white background",
+      "why": "Fill in two blanks, e.g. 'a fox' + 'reading a book'. 'Visible cut edges' and 'soft shadows between layers' sell the handmade paper look.",
+      "source": "https://x.com/azed_ai/status/2117209128850563445",
+      "author": "@azed_ai",
+      "likes": 140,
+      "likesAsOf": "Nov 3, 2026 HKT"
+    }
+  ]
+}

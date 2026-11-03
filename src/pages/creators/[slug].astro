@@ -16,7 +16,7 @@ const faq: [string, string][] = [
   ['Are follower counts live?', `No. They are a snapshot from ${pack.asOf}.`],
 ];
 ---
-{p && <Base title={`${title}: ${ess.length} essentials + a new creator daily`} description={`${ess.length} essential X creators for builders, writers and thinkers: ${top.join(', ')} and more, with one-line summaries, and a new creator unlocked every day until Dec 31.`} jsonld={[creatorsItemListLd(title, ess), faqLd(faq), crumbsLd([['Home', '/'], ['X Creators', '/creators'], [`Starter Pack #${p.n}`, `/creators/${p.slug}`]])]}>
+{p && <Base title={`${ess.length} best ${pack.title.replace(/ creators on X$/i, '').replace(/^./, (m) => m.toLowerCase())} creators on X (Starter Pack #${p.n})`} description={`${ess.length} essential X creators for builders, writers and thinkers: ${top.join(', ')} and more, with one-line summaries, and a new creator unlocked every day until Dec 31.`} jsonld={[creatorsItemListLd(title, ess), faqLd(faq), crumbsLd([['Home', '/'], ['X Creators', '/creators'], [`Starter Pack #${p.n}`, `/creators/${p.slug}`]])]}>
 <BadgeStyles />
 <Shell active="creators"><article class="card prose cr-page">
   <p class="muted"><a href="/creators">X Creators</a> › Starter Pack #{p.n}</p>

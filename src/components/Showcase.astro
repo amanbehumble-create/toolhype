@@ -74,7 +74,8 @@ const line = (t: (typeof top)[number]) => {
     </a>
 
     <div class="tile tile-sub">
-      <h2 class="tc"><b>Get the newsletter on <span class="sub-mark">Substack</span>.</b> <span>AI tools and prompts worth trying, weekly-ish.</span></h2>
+      <h2 class="tc"><b>Subscribe on <span class="sub-mark">Substack</span>.</b></h2>
+      <p class="sub-line">Sharing ideas on marketing, internet culture, and the next big opportunities worth paying attention to</p>
       <form class="sub-form" data-track="sub:substack" action={SUBSTACK_SUBSCRIBE} method="get" target="_blank" rel="noopener">
         <input class="field" type="email" name="email" placeholder="you@email.com" autocomplete="email" required aria-label="Email" />
         <input type="hidden" name="utm_source" value="toolhype" />
@@ -129,7 +130,8 @@ const line = (t: (typeof top)[number]) => {
 :global([data-theme="dark"]) .paper{box-shadow:0 12px 24px rgba(0,0,0,.45),0 0 0 1px rgba(255,255,255,.08)}
 
 .tc b .sub-mark{color:#ff6719;font-weight:650}
-.sub-form{display:flex;gap:8px;align-items:center;margin-top:10px}
+.sub-line{margin:.2rem 0 0;color:var(--ink-2);font:400 1rem/1.3 var(--sans);text-wrap:pretty}
+.sub-form{display:flex;gap:8px;align-items:center;margin-top:8px}
 .sub-form .field{width:auto;flex:1;min-width:0;margin:0;font-size:1rem}
 .sub-go{flex:none;background:#ff6719;border-color:#ff6719;color:#141414;font-weight:650}
 .sub-go:hover{background:#e85d10;border-color:#e85d10;color:#141414}

@@ -1,7 +1,11 @@
 ---
 // Compact homepage bento. Live X Buzz cycles the top 5 (the still list is the
-// reduced-motion poster). Prompt Drop and X creators sit beside it. Vs/best
-// and the logo strip are gone: they repeated the same tools. Real data only.
+// reduced-motion poster). Prompt Drop sits beside the Substack signup; X
+// creators stays in the grid. Vs/best and the logo strip are gone: they
+// repeated the same tools.
+// Subscribe hands off to the publication behind @amanbehumble. Substack's
+// /subscribe page reads ?email= and prefills the field (no secret, no iframe).
+// Real data only.
 import { getTools, byBuzz, LABEL } from '../lib/data';
 import { getIssues } from '../lib/prompts';
 import { essentials } from '../lib/creators';
@@ -11,6 +15,7 @@ const top = [...getTools()].filter((t) => t.buzz.status === 'live' && t.buzz.sco
 const issue = getIssues()[0];
 const prompt = issue?.prompts[0];
 const essentialsLive = essentials().length;
+const SUBSTACK_SUBSCRIBE = 'https://amanbehumble.substack.com/subscribe';
 const compact = (n: number) => (n >= 1000 ? `${(n / 1000).toFixed(1).replace(/\.0$/, '')}k` : String(n));
 const line = (t: (typeof top)[number]) => {
   const bits = [LABEL[t.buzz.label || ''] || '', t.buzz.mentions24h ? `${compact(t.buzz.mentions24h)} posts in 24h` : ''].filter(Boolean);
@@ -50,6 +55,15 @@ const line = (t: (typeof top)[number]) => {
       </ol>
     </a>
 
+    <a class="tile tile-creators" href="/creators">
+      <h2 class="tc"><b>X creators.</b> <span>A new pass unlocks daily.</span></h2>
+      <div class="stat">
+        <div class="stat-n">{essentialsLive}</div>
+        <i class="stat-rule" aria-hidden="true"></i>
+        <div class="stat-l">essentials live</div>
+      </div>
+    </a>
+
     <a class="tile tile-drop" href={`/prompts/${issue.slug}`}>
       <h2 class="tc"><b>Prompt Drop.</b> <span>{issue.prompts.length} prompts this week.</span></h2>
       <div class="paper">
@@ -59,24 +73,29 @@ const line = (t: (typeof top)[number]) => {
       </div>
     </a>
 
-    <a class="tile tile-creators" href="/creators">
-      <h2 class="tc"><b>X creators.</b> <span>A new pass unlocks daily.</span></h2>
-      <div class="stat">
-        <div class="stat-n">{essentialsLive}</div>
-        <i class="stat-rule" aria-hidden="true"></i>
-        <div class="stat-l">essentials live</div>
-      </div>
-    </a>
+    <div class="tile tile-sub">
+      <h2 class="tc"><b>Subscribe on <span class="sub-mark">Substack</span>.</b></h2>
+      <p class="sub-line">Sharing ideas on marketing, internet culture, and the next big opportunities worth paying attention to</p>
+      <form class="sub-form" data-track="sub:substack" action={SUBSTACK_SUBSCRIBE} method="get" target="_blank" rel="noopener">
+        <input class="field" type="email" name="email" placeholder="you@email.com" autocomplete="email" required aria-label="Email" />
+        <input type="hidden" name="utm_source" value="toolhype" />
+        <input type="hidden" name="utm_medium" value="homepage" />
+        <button class="btn sub-go" type="submit">Subscribe</button>
+      </form>
+    </div>
   </div>
 </section>
 )}
 <style>
 .show{container-type:inline-size;margin:0 0 .85rem}
-.show-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;align-items:stretch}
-.tile-buzz{grid-column:1 / -1}
+.show-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;align-items:stretch;grid-template-areas:"buzz creators" "drop sub"}
+.tile-buzz{grid-area:buzz}
+.tile-creators{grid-area:creators}
+.tile-drop{grid-area:drop}
+.tile-sub{grid-area:sub;container:subtile / inline-size}
 .tile{display:flex;flex-direction:column;align-items:stretch;min-width:0;background:var(--surface);border:1px solid var(--line);border-radius:var(--r-card);padding:14px 14px 12px;color:inherit;text-decoration:none;transition:border-color .18s var(--ease),box-shadow .18s var(--ease)}
-a.tile:hover{color:inherit;border-color:var(--line-strong);box-shadow:0 10px 24px color-mix(in srgb,var(--ink) 6%,transparent)}
-.show a:focus-visible{outline:2px solid var(--cyan);outline-offset:3px}
+.tile:hover{color:inherit;border-color:var(--line-strong);box-shadow:0 10px 24px color-mix(in srgb,var(--ink) 6%,transparent)}
+.show a:focus-visible,.sub-go:focus-visible{outline:2px solid var(--cyan);outline-offset:3px}
 .tc{margin:0;font:400 1rem/1.3 var(--sans);letter-spacing:0;color:var(--ink)}
 .tc b{font-family:var(--display);font-weight:650;letter-spacing:-.02em}
 .tc span{color:var(--ink-2);font-weight:400}
@@ -87,6 +106,7 @@ a.tile:hover{color:inherit;border-color:var(--line-strong);box-shadow:0 10px 24p
 .buzz-slide img,.buzz-list img{background:#fff;border:1px solid var(--line);object-fit:contain;box-sizing:border-box}
 .buzz-slide img{grid-area:logo;width:36px;height:36px;border-radius:10px;padding:3px}
 .buzz-name{grid-area:name;font:650 1rem/1.2 var(--display);letter-spacing:-.02em}
+.buzz-slide .buzz-name{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .buzz-meta{grid-area:meta;font:500 .72rem/1.3 var(--mono);color:var(--ink-2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .buzz-num{grid-area:score;justify-self:end;font:800 2.5rem/.9 var(--display);letter-spacing:-.045em;font-variant-numeric:tabular-nums;white-space:nowrap}
 .buzz-num span{margin-left:.3rem;font:500 .75rem/1 var(--mono);letter-spacing:0;color:var(--ink-3)}
@@ -109,6 +129,16 @@ a.tile:hover{color:inherit;border-color:var(--line-strong);box-shadow:0 10px 24p
 .paper-c{margin-top:6px;font:500 .72rem/1.3 var(--mono);color:#616161}
 :global([data-theme="dark"]) .paper{box-shadow:0 12px 24px rgba(0,0,0,.45),0 0 0 1px rgba(255,255,255,.08)}
 
+.tc b .sub-mark{color:#ff6719;font-weight:650}
+.sub-line{margin:.2rem 0 0;color:var(--ink-2);font:400 1rem/1.3 var(--sans);text-wrap:pretty}
+.sub-form{display:flex;gap:8px;align-items:center;margin-top:8px}
+.sub-form .field{width:auto;flex:1;min-width:0;margin:0;font-size:1rem}
+.sub-go{flex:none;background:#ff6719;border-color:#ff6719;color:#141414;font-weight:650}
+.sub-go:hover{background:#e85d10;border-color:#e85d10;color:#141414}
+@container subtile (max-width:250px){
+  .sub-form{flex-direction:column;align-items:stretch}
+  .sub-go{justify-content:center}
+}
 .stat{margin-top:8px}
 .stat-n{font:800 3.15rem/.85 var(--display);letter-spacing:-.045em;font-variant-numeric:tabular-nums}
 .stat-rule{display:block;width:1.75rem;height:3px;margin:6px 0 4px;border-radius:99px;background:var(--cyan);transform-origin:left center}
@@ -125,12 +155,13 @@ a.tile:hover{color:inherit;border-color:var(--line-strong);box-shadow:0 10px 24p
 @media (prefers-reduced-motion:reduce){
   .buzz-cycle{display:none}
   .buzz-list{display:grid}
+  .show-grid{grid-template-areas:"buzz buzz" "drop creators" "sub sub"}
   .paper{animation:none;transform:rotate(-1.25deg)}
   .stat-rule{animation:none;transform:none}
   .tile{transition:border-color .15s var(--ease)}
 }
 @container (max-width:520px){
-  .show-grid{grid-template-columns:1fr}
+  .show-grid{grid-template-columns:1fr;grid-template-areas:"buzz" "drop" "sub" "creators"}
   .buzz-num{font-size:2.15rem}
 }
 </style>

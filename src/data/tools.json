@@ -5182,5 +5182,116 @@
       "updatedAt": null
     },
     "logo": "/logos/termy.png"
+  },
+  {
+    "slug": "hackertube",
+    "name": "HackerTube",
+    "url": "https://hackertube.org",
+    "affiliateUrl": null,
+    "category": "fun",
+    "useCases": [
+      "fun",
+      "productivity"
+    ],
+    "pricing": "free",
+    "verdict": "Andrej Karpathy's weekend hack: Claude filtered 43M Hacker News comments from 20 years down to the 6,454 YouTube videos HN keeps recommending, served as a clean, login-free YouTube alternative (state lives in your browser, thumbnails are mid-video frames, plus a 'Longs' tab). Built in about 2 hours with Claude Code and Opus 5.5; the comment-analysis data is a downloadable zip so you can have your own agent build a variant. His Nov 1 launch post passed 50k likes and 42k bookmarks. It's a curated watch list, not a full YouTube replacement: no search across all of YouTube, no subscriptions.",
+    "useThisIf": "you want smart, ad-free video picks without an algorithm or account, or a real example of what one person can ship with Claude Code in an afternoon.",
+    "alternatives": [
+      "claude-code",
+      "perplexity"
+    ],
+    "source": "x",
+    "addedAt": "2026-11-04",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/hackertube.png"
+  },
+  {
+    "slug": "dsh-superagent",
+    "name": "DeepSeek Super-agent",
+    "url": "https://github.com/deepseek-ai/dsh-superagent-prototype",
+    "affiliateUrl": null,
+    "category": "coding",
+    "useCases": [
+      "coding",
+      "agents"
+    ],
+    "pricing": "open-source",
+    "verdict": "DeepSeek Harness team's MIT-licensed prototype of a proactive coding agent: a resident Router watches GitHub and chat events and hands work to isolated Workers that reproduce bugs and open PRs on their own, with a design write-up on when the agent should act and when to stay quiet. About 16k GitHub stars within days of its Oct 31 release and wide coverage framing it as DeepSeek's answer to Claude Code. It's labelled a prototype: expect to self-host and wire it up yourself, not a polished product.",
+    "useThisIf": "you run a repo or dev group chat and want to experiment with an always-on agent that picks up issues without being asked.",
+    "alternatives": [
+      "claude-code",
+      "codex",
+      "opencode",
+      "openbot"
+    ],
+    "source": "x",
+    "addedAt": "2026-11-04",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/dsh-superagent.png"
+  },
+  {
+    "slug": "open-bot-avatar",
+    "name": "Open Bot Avatar",
+    "url": "https://dominikscholz.github.io/open-bot-avatar/",
+    "affiliateUrl": null,
+    "category": "design",
+    "useCases": [
+      "design",
+      "agents"
+    ],
+    "pricing": "open-source",
+    "verdict": "Open-source (MIT) JSON spec plus a zero-dependency renderer for cute animated agent avatars: one SVG shape plus eye positions becomes a character that follows the cursor and switches between idle, thinking and happy states, with a studio of ready-made bots (cat, ghost, mug, star, wizard hat). Dominik Scholz open-sourced it on Nov 2 after his hand-made Grok Bot avatars went viral; the launch post hit ~2k likes and 1.5k bookmarks. A design asset kit, not an app. Ignore the unofficial pump.fun coin some accounts attached to it; it isn't part of the project.",
+    "useThisIf": "you're building an agent, bot or chat UI and want it to have a friendly animated face without hiring an illustrator.",
+    "alternatives": [],
+    "source": "x",
+    "addedAt": "2026-11-04",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/open-bot-avatar.png"
+  },
+  {
+    "slug": "treg",
+    "name": "Treg",
+    "url": "https://treg.to",
+    "affiliateUrl": null,
+    "category": "marketing",
+    "useCases": [
+      "marketing",
+      "agents"
+    ],
+    "pricing": "freemium",
+    "verdict": "One MCP server and one key for 4,100+ agent tools across 123 providers (people search, email enrichment, SEO, ads, social and scraping data) billed per call at the provider's own rate with 0% markup, so you can build lead lists from inside Claude Code or Codex instead of paying for Clay or Apollo seats. The Nov 2 'open-source Clay killer' launch drew ~800 likes and 1k bookmarks; their own example run found 20 verified emails for 27 people for $0.58. Repo is public (superdesigndev/treg) but the license isn't a standard OSI one, and the data calls cost money after a $1 free credit.",
+    "useThisIf": "you do outbound or GTM work in a coding agent and want pay-as-you-go enrichment instead of a monthly data-tool subscription.",
+    "alternatives": [
+      "claude-code",
+      "codex"
+    ],
+    "source": "x",
+    "addedAt": "2026-11-04",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/treg.png"
   }
 ]

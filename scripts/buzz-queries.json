@@ -186,5 +186,9 @@
   "riffwise": "(riffwise OR url:riffwise.app OR \"Riffwise\") -is:retweet",
   "videobgremover": "(videobgremover OR url:videobgremover.net OR \"VideoBGRemover\") -is:retweet",
   "tempburn": "(tempburn OR url:tempburn.com OR \"Tempburn\") -is:retweet",
-  "emailwish": "(emailwish OR url:emailwish.com OR \"Emailwish\") -is:retweet"
+  "emailwish": "(emailwish OR url:emailwish.com OR \"Emailwish\") -is:retweet",
+  "hackertube": "(hackertube OR \"hacker tube\" OR url:hackertube.org) -is:retweet",
+  "dsh-superagent": "(\"dsh-superagent\" OR (deepseek (\"super-agent\" OR \"super agent\" OR superagent))) -is:retweet",
+  "open-bot-avatar": "(\"open bot avatar\" OR \"open-bot-avatar\" OR (dom_scholz avatar)) -is:retweet",
+  "treg": "(url:treg.to OR @treg_ai OR \"superdesigndev/treg\" OR (treg (clay OR gtm OR leads OR mcp))) -is:retweet"
 }

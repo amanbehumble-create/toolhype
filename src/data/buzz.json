@@ -1,5 +1,5 @@
 {
- "computedAt": "2026-11-02T01:21:39.264Z",
+ "computedAt": "2026-11-03T17:19:43.344Z",
  "method": "v1",
  "tools": {
   "inbox-zero": {
@@ -874,33 +874,33 @@
   "opencode": {
    "status": "live",
    "query": "(opencode OR \"open code\" sst OR url:opencode.ai) -is:retweet",
-   "mentions24h": 2078,
-   "mentions7d": 14336,
-   "priorDailyAvg": 2043,
-   "velocity": 1.02,
+   "mentions24h": 1513,
+   "mentions7d": 14368,
+   "priorDailyAvg": 2142.5,
+   "velocity": 0.71,
    "daily": [
-    1483,
-    1469,
-    1391,
-    1632,
-    3190,
-    3093,
-    2078
+    1418,
+    1511,
+    2096,
+    3783,
+    2496,
+    1551,
+    1513
    ],
-   "peakDay": 3190,
-   "peakDaysAgo": 2,
+   "peakDay": 3783,
+   "peakDaysAgo": 3,
    "sample": {
     "posts": 25,
-    "likes": 1597,
-    "reposts": 66,
-    "replies": 58
+    "likes": 21,
+    "reposts": 0,
+    "replies": 5
    },
    "parts": {
     "volume": 41.6,
-    "velocity": 0.4,
-    "engagement": 16.4
+    "velocity": 0,
+    "engagement": 8.8
    },
-   "score": 58,
+   "score": 50,
    "label": "steady",
    "viral": false,
    "topPosts": [
@@ -917,7 +917,7 @@
      "quotes": 13
     }
    ],
-   "computedAt": "2026-11-02T01:21:39.264Z"
+   "computedAt": "2026-11-03T17:19:43.344Z"
   },
   "indra": {
    "status": "live",
@@ -1228,33 +1228,33 @@
   "chatgpt": {
    "status": "live",
    "query": "(chatgpt OR url:chatgpt.com) -is:retweet",
-   "mentions24h": 31588,
-   "mentions7d": 241994,
-   "priorDailyAvg": 35067.7,
-   "velocity": 0.9,
+   "mentions24h": 35055,
+   "mentions7d": 239940,
+   "priorDailyAvg": 34147.5,
+   "velocity": 1.03,
    "daily": [
-    35611,
-    34678,
-    37333,
-    38111,
-    33771,
-    30902,
-    31588
+    34918,
+    38931,
+    35263,
+    31865,
+    30652,
+    33256,
+    35055
    ],
-   "peakDay": 38111,
-   "peakDaysAgo": 3,
+   "peakDay": 38931,
+   "peakDaysAgo": 5,
    "sample": {
     "posts": 25,
-    "likes": 988,
-    "reposts": 78,
-    "replies": 99
+    "likes": 1499,
+    "reposts": 137,
+    "replies": 189
    },
    "parts": {
     "volume": 50,
-    "velocity": 0,
-    "engagement": 15.9
+    "velocity": 0.5,
+    "engagement": 16.9
    },
-   "score": 66,
+   "score": 67,
    "label": "steady",
    "viral": false,
    "topPosts": [
@@ -1264,11 +1264,23 @@
      "author": "OpenAIDevs",
      "text": "Start building:\n\n1. Claim your API credits in ChatGPT billing: https://t.co/i7PkKniYRF\n\n2. Use the OpenAI Developers plugin in ChatGPT or Codex to create an API key and start your next project:\nhttps://t.co/A7PuLpjqnb",
      "created_at": "2026-10-28T23:17:16.000Z",
-     "likes": 969,
-     "reposts": 78,
-     "replies": 89,
-     "views": 311895,
-     "quotes": 53
+     "likes": 975,
+     "reposts": 76,
+     "replies": 92,
+     "views": 317427,
+     "quotes": 54
+    },
+    {
+     "id": "2116342498910146716",
+     "url": "https://x.com/gaoyy9/status/2116342498910146716",
+     "author": "gaoyy9",
+     "text": "真正的 0 元购 ChatGPT Team 48 个月！ 再放几个通用优惠码，手快有，手慢无 👇\n💡 关于很多人卡在选不了 1 席位： 刚进页面标准席位默认是 5，趁页面刚加载时，迅速用键盘改成 1 就行。操作不难，多刷新试几次就能卡成功！\nhttps://t.co/MEevgcCcXi\nhttps://t.co/yyA9eMywM1\nhttps://t.co/ibPkeP0GBh https://t.co/wi1l8z5aLM",
+     "created_at": "2026-10-31T01:32:26.000Z",
+     "likes": 242,
+     "reposts": 28,
+     "replies": 72,
+     "views": 74859,
+     "quotes": 5
     },
     {
      "id": "2115639942982635680",
@@ -1279,149 +1291,137 @@
      "likes": 229,
      "reposts": 30,
      "replies": 3,
-     "views": 34671,
+     "views": 35728,
      "quotes": 6
-    },
-    {
-     "id": "2115610195053220343",
-     "url": "https://x.com/dotey/status/2115610195053220343",
-     "author": "dotey",
-     "text": "【领取方法】\n1. 在 ChatGPT 账单中领取您的 API 积分：https://t.co/Rl9T0odVM8\n\n2. 在 ChatGPT 或 Codex 中使用 OpenAI 开发者插件创建 API 密钥并开始您的下一个项目：\nhttps://t.co/nS7JVVRRhE\n\n注意：按比例计算从今天到续订的间隔，比如我按比例这个月只有$75",
-     "created_at": "2026-10-29T01:02:31.000Z",
-     "likes": 23,
-     "reposts": 2,
-     "replies": 8,
-     "views": 11040,
-     "quotes": 2
     }
    ],
-   "computedAt": "2026-11-02T01:21:39.264Z"
+   "computedAt": "2026-11-03T17:19:43.344Z"
   },
   "claude": {
    "status": "live",
    "query": "(\"claude ai\" OR \"claude.ai\" OR @claudeai OR (claude anthropic)) -is:retweet",
-   "mentions24h": 6756,
-   "mentions7d": 69143,
-   "priorDailyAvg": 10397.8,
-   "velocity": 0.65,
+   "mentions24h": 7513,
+   "mentions7d": 65385,
+   "priorDailyAvg": 9645.3,
+   "velocity": 0.78,
    "daily": [
-    10134,
-    8797,
-    9329,
-    9550,
-    12294,
-    12283,
-    6756
+    9017,
+    8485,
+    10222,
+    13797,
+    8873,
+    7478,
+    7513
    ],
-   "peakDay": 12294,
-   "peakDaysAgo": 2,
+   "peakDay": 13797,
+   "peakDaysAgo": 3,
    "sample": {
     "posts": 25,
-    "likes": 743,
-    "reposts": 215,
-    "replies": 56
+    "likes": 493,
+    "reposts": 180,
+    "replies": 54
    },
    "parts": {
-    "volume": 48.4,
+    "volume": 48.2,
     "velocity": 0,
-    "engagement": 15.9
+    "engagement": 15.3
    },
-   "score": 64,
+   "score": 63,
    "label": "steady",
    "viral": false,
    "topPosts": [
+    {
+     "id": "2116371426051792936",
+     "url": "https://x.com/Tanaypawar27/status/2116371426051792936",
+     "author": "Tanaypawar27",
+     "text": "Best FREE COURSES to learn CLAUDE\n\n1. Mastering Claude Code: From Setup to Real Projects\nhttps://t.co/G186Fdd5jh\n\n2. Anthropic: AI Fundamentals with Claude\nhttps://t.co/6ezPZKkIrp\n\n3. Claude Code in Action\nhttps://t.co/N",
+     "created_at": "2026-10-31T03:27:22.000Z",
+     "likes": 53,
+     "reposts": 19,
+     "replies": 9,
+     "views": 20880,
+     "quotes": 0
+    },
     {
      "id": "2115376362169229513",
      "url": "https://x.com/Mohiniuni/status/2115376362169229513",
      "author": "Mohiniuni",
      "text": "Claude FULL COURSE 1 HOUR (Build &amp; Automate Anything)\n\n13 FREE Claude AI Courses with Certificates 🎓:\n\n1. Anthropic: AI Fundamentals with Claude https://t.co/v7v6cnCNuK\n\n2. AI Collaboration with Claude\nhttps://t.co/",
      "created_at": "2026-10-28T09:33:21.000Z",
-     "likes": 116,
+     "likes": 115,
      "reposts": 42,
      "replies": 7,
-     "views": 3106,
-     "quotes": 0
-    },
-    {
-     "id": "2116561468271595547",
-     "url": "https://x.com/Mohiniuni/status/2116561468271595547",
-     "author": "Mohiniuni",
-     "text": "Best FREE COURSES to learn CLAUDE\n\n1. Mastering Claude Code: From Setup to Real Projects\nhttps://t.co/KdfcYHcOxc\n\n2. Anthropic: AI Fundamentals with Claude\nhttps://t.co/v7v6cnCNuK\n\n3. Claude Code in Action\nhttps://t.co/x",
-     "created_at": "2026-10-31T16:02:32.000Z",
-     "likes": 122,
-     "reposts": 28,
-     "replies": 7,
-     "views": 2462,
+     "views": 3142,
      "quotes": 0
     }
    ],
-   "computedAt": "2026-11-02T01:21:39.264Z"
+   "computedAt": "2026-11-03T17:19:43.344Z"
   },
   "gemini": {
    "status": "live",
    "query": "(\"google gemini\" OR \"gemini app\" OR @GeminiApp OR url:gemini.google.com) -is:retweet",
-   "mentions24h": 2519,
-   "mentions7d": 13871,
-   "priorDailyAvg": 1892,
-   "velocity": 1.33,
+   "mentions24h": 1411,
+   "mentions7d": 14273,
+   "priorDailyAvg": 2143.7,
+   "velocity": 0.66,
    "daily": [
-    1360,
-    1445,
-    2342,
-    2607,
-    1945,
-    1653,
-    2519
+    1619,
+    2939,
+    2174,
+    1829,
+    2469,
+    1832,
+    1411
    ],
-   "peakDay": 2607,
-   "peakDaysAgo": 3,
+   "peakDay": 2939,
+   "peakDaysAgo": 5,
    "sample": {
-    "posts": 25,
-    "likes": 14,
-    "reposts": 4,
-    "replies": 10
+    "posts": 24,
+    "likes": 16,
+    "reposts": 0,
+    "replies": 5
    },
    "parts": {
-    "volume": 41.4,
-    "velocity": 5.1,
-    "engagement": 8.4
+    "volume": 41.5,
+    "velocity": 0,
+    "engagement": 7.2
    },
-   "score": 55,
-   "label": "rising",
+   "score": 49,
+   "label": "steady",
    "viral": false,
    "topPosts": [],
-   "computedAt": "2026-11-02T01:21:39.264Z"
+   "computedAt": "2026-11-03T17:19:43.344Z"
   },
   "grok": {
    "status": "live",
    "query": "(grok OR url:grok.com) -is:retweet -\"@grok is this true\" -is:reply",
-   "mentions24h": 66424,
-   "mentions7d": 488732,
-   "priorDailyAvg": 70384.7,
-   "velocity": 0.94,
+   "mentions24h": 71980,
+   "mentions7d": 490123,
+   "priorDailyAvg": 69690.5,
+   "velocity": 1.03,
    "daily": [
-    70247,
-    63338,
-    67789,
-    70126,
-    78333,
-    72475,
-    66424
+    67752,
+    69444,
+    66741,
+    81578,
+    65987,
+    66641,
+    71980
    ],
-   "peakDay": 78333,
-   "peakDaysAgo": 2,
+   "peakDay": 81578,
+   "peakDaysAgo": 3,
    "sample": {
     "posts": 25,
-    "likes": 36,
-    "reposts": 4,
-    "replies": 19
+    "likes": 58,
+    "reposts": 5,
+    "replies": 21
    },
    "parts": {
     "volume": 50,
-    "velocity": 0,
-    "engagement": 9.7
+    "velocity": 0.5,
+    "engagement": 10.4
    },
-   "score": 60,
+   "score": 61,
    "label": "steady",
    "viral": false,
    "topPosts": [
@@ -1431,14 +1431,14 @@
      "author": "WildVariable01",
      "text": "Grok Bot出现新的邀请福利：：新用户点链接可免费用 Premium 两周。\n\n要绑卡，到期会自动续，不想留记得提前取消。\n\n目前中国大陆被邀请人暂不支持。\n\n下面是几个链接，都可以试下，如果不行，那大概率是不行了\nhttps://t.co/4zgEBSTVzK\nhttps://t.co/ZXDPa68tUE\nhttps://t.co/ii4DmybJae https://t.co/mUN1VXZEEK",
      "created_at": "2026-10-29T03:03:13.000Z",
-     "likes": 32,
+     "likes": 31,
      "reposts": 4,
      "replies": 3,
-     "views": 12408,
+     "views": 13500,
      "quotes": 1
     }
    ],
-   "computedAt": "2026-11-02T01:21:39.264Z"
+   "computedAt": "2026-11-03T17:19:43.344Z"
   },
   "perplexity": {
    "status": "live",
@@ -1583,37 +1583,37 @@
   "claude-code": {
    "status": "live",
    "query": "(\"claude code\" OR claudecode) -is:retweet",
-   "mentions24h": 11911,
-   "mentions7d": 87416,
-   "priorDailyAvg": 12584.2,
-   "velocity": 0.95,
+   "mentions24h": 13843,
+   "mentions7d": 89237,
+   "priorDailyAvg": 12565.7,
+   "velocity": 1.1,
    "daily": [
-    11911,
-    12416,
-    12077,
-    12251,
-    14789,
-    12061,
-    11911
+    12003,
+    12029,
+    13993,
+    13082,
+    11459,
+    12828,
+    13843
    ],
-   "peakDay": 14789,
-   "peakDaysAgo": 2,
+   "peakDay": 13993,
+   "peakDaysAgo": 4,
    "sample": {
     "posts": 25,
-    "likes": 73,
-    "reposts": 18,
-    "replies": 18
+    "likes": 76,
+    "reposts": 20,
+    "replies": 21
    },
    "parts": {
-    "volume": 49.4,
-    "velocity": 0,
-    "engagement": 11.1
+    "volume": 49.5,
+    "velocity": 1.7,
+    "engagement": 11.3
    },
-   "score": 60,
+   "score": 62,
    "label": "steady",
    "viral": false,
    "topPosts": [],
-   "computedAt": "2026-11-02T01:21:39.264Z"
+   "computedAt": "2026-11-03T17:19:43.344Z"
   },
   "aider": {
    "status": "live",
@@ -2088,37 +2088,37 @@
   "canva": {
    "status": "live",
    "query": "(canva OR url:canva.com) -is:retweet",
-   "mentions24h": 9243,
-   "mentions7d": 69276,
-   "priorDailyAvg": 10005.5,
-   "velocity": 0.92,
+   "mentions24h": 10566,
+   "mentions7d": 68944,
+   "priorDailyAvg": 9729.7,
+   "velocity": 1.09,
    "daily": [
-    10558,
-    10102,
-    10329,
-    10749,
-    10145,
-    8150,
-    9243
+    10251,
+    10155,
+    10828,
+    8141,
+    9136,
+    9867,
+    10566
    ],
-   "peakDay": 10749,
-   "peakDaysAgo": 3,
+   "peakDay": 10828,
+   "peakDaysAgo": 4,
    "sample": {
     "posts": 24,
-    "likes": 49,
-    "reposts": 13,
-    "replies": 24
+    "likes": 82,
+    "reposts": 29,
+    "replies": 17
    },
    "parts": {
     "volume": 48.4,
-    "velocity": 0,
-    "engagement": 10.7
+    "velocity": 1.6,
+    "engagement": 11.5
    },
-   "score": 59,
+   "score": 61,
    "label": "steady",
    "viral": false,
    "topPosts": [],
-   "computedAt": "2026-11-02T01:21:39.264Z"
+   "computedAt": "2026-11-03T17:19:43.344Z"
   },
   "figma": {
    "status": "live",
@@ -2333,37 +2333,37 @@
   "capcut": {
    "status": "live",
    "query": "(capcut OR url:capcut.com) -is:retweet",
-   "mentions24h": 5788,
-   "mentions7d": 48342,
-   "priorDailyAvg": 7092.3,
-   "velocity": 0.82,
+   "mentions24h": 5509,
+   "mentions7d": 44256,
+   "priorDailyAvg": 6457.8,
+   "velocity": 0.85,
    "daily": [
-    7740,
-    7051,
-    7937,
-    6972,
-    6529,
-    6325,
-    5788
+    7729,
+    7243,
+    6400,
+    6668,
+    5553,
+    5154,
+    5509
    ],
-   "peakDay": 7937,
-   "peakDaysAgo": 4,
+   "peakDay": 7729,
+   "peakDaysAgo": 6,
    "sample": {
-    "posts": 22,
-    "likes": 31,
-    "reposts": 12,
-    "replies": 13
+    "posts": 25,
+    "likes": 51,
+    "reposts": 22,
+    "replies": 20
    },
    "parts": {
-    "volume": 46.8,
+    "volume": 46.5,
     "velocity": 0,
-    "engagement": 9.9
+    "engagement": 11
    },
    "score": 57,
    "label": "steady",
    "viral": false,
    "topPosts": [],
-   "computedAt": "2026-11-02T01:21:39.264Z"
+   "computedAt": "2026-11-03T17:19:43.344Z"
   },
   "elevenlabs": {
    "status": "live",
@@ -7167,6 +7167,222 @@
   "emailwish": {
    "status": "pending",
    "query": "(emailwish OR url:emailwish.com OR \"Emailwish\") -is:retweet"
+  },
+  "hackertube": {
+   "status": "live",
+   "query": "(hackertube OR \"hacker tube\" OR url:hackertube.org) -is:retweet",
+   "mentions24h": 408,
+   "mentions7d": 2183,
+   "priorDailyAvg": 295.8,
+   "velocity": 1.38,
+   "daily": [
+    0,
+    0,
+    0,
+    0,
+    378,
+    1397,
+    408
+   ],
+   "peakDay": 1397,
+   "peakDaysAgo": 1,
+   "sample": {
+    "posts": 26,
+    "likes": 50657,
+    "reposts": 7,
+    "replies": 2186
+   },
+   "parts": {
+    "volume": 33.4,
+    "velocity": 5.8,
+    "engagement": 23.8
+   },
+   "score": 63,
+   "label": "hype",
+   "viral": true,
+   "topPosts": [
+    {
+     "id": "2116957135661945283",
+     "url": "https://x.com/karpathy/status/2116957135661945283",
+     "author": "karpathy",
+     "text": "Weekend hack: HackerTube. I was annoyed with YouTube's recommendations so I had Claude filter down 43M comments over 20 years of HN to 6,454 videos that keep being recommended. *Significantly* better viewing experience, ",
+     "created_at": "2026-11-01T18:14:46.000Z",
+     "likes": 50333,
+     "reposts": 0,
+     "replies": 2158,
+     "views": 4774436,
+     "quotes": 1693
+    },
+    {
+     "id": "2116785470218924500",
+     "url": "https://x.com/parsecranberry/status/2116785470218924500",
+     "author": "parsecranberry",
+     "text": "karpathy built 'hacker tube' and it all so bad... https://t.co/D9SYAKu4uJ",
+     "created_at": "2026-11-01T06:52:38.000Z",
+     "likes": 278,
+     "reposts": 5,
+     "replies": 22,
+     "views": 90381,
+     "quotes": 3
+    }
+   ],
+   "computedAt": "2026-11-03T17:19:43.344Z"
+  },
+  "dsh-superagent": {
+   "status": "live",
+   "query": "(\"dsh-superagent\" OR (deepseek (\"super-agent\" OR \"super agent\" OR superagent))) -is:retweet",
+   "mentions24h": 522,
+   "mentions7d": 3551,
+   "priorDailyAvg": 504.8,
+   "velocity": 1.03,
+   "daily": [
+    0,
+    0,
+    0,
+    227,
+    1440,
+    1362,
+    522
+   ],
+   "peakDay": 1440,
+   "peakDaysAgo": 2,
+   "sample": {
+    "posts": 25,
+    "likes": 174,
+    "reposts": 10,
+    "replies": 34
+   },
+   "parts": {
+    "volume": 35.5,
+    "velocity": 0.5,
+    "engagement": 12.2
+   },
+   "score": 48,
+   "label": "steady",
+   "viral": false,
+   "topPosts": [
+    {
+     "id": "2116509335719211216",
+     "url": "https://x.com/leo114119/status/2116509335719211216",
+     "author": "leo114119",
+     "text": "Super-agent 设计探索：迈向更自主的 Agent 系统\n\ndeepseek开源dsh-superagent-prototype\n\nDeepseek 永远站在开源阵营的最前端。。。\n\n梁圣 V5\n\nhttps://t.co/uVBJNpoyab",
+     "created_at": "2026-10-31T12:35:23.000Z",
+     "likes": 81,
+     "reposts": 1,
+     "replies": 16,
+     "views": 11677,
+     "quotes": 3
+    }
+   ],
+   "computedAt": "2026-11-03T17:19:43.344Z"
+  },
+  "open-bot-avatar": {
+   "status": "live",
+   "query": "(\"open bot avatar\" OR \"open-bot-avatar\" OR (dom_scholz avatar)) -is:retweet",
+   "mentions24h": 29,
+   "mentions7d": 121,
+   "priorDailyAvg": 15.3,
+   "velocity": 1.89,
+   "daily": [
+    0,
+    0,
+    0,
+    63,
+    24,
+    5,
+    29
+   ],
+   "peakDay": 63,
+   "peakDaysAgo": 3,
+   "sample": {
+    "posts": 25,
+    "likes": 2002,
+    "reposts": 1,
+    "replies": 68
+   },
+   "parts": {
+    "volume": 20.9,
+    "velocity": 8.5,
+    "engagement": 16.7
+   },
+   "score": 46,
+   "label": "rising",
+   "viral": false,
+   "topPosts": [
+    {
+     "id": "2117307304395636772",
+     "url": "https://x.com/dom_scholz/status/2117307304395636772",
+     "author": "dom_scholz",
+     "text": "my animated bot avatars are OSS now!\n\nintroducing:  🐱 Open Bot Avatar\n\na JSON spec and renderer for interactive agent avatars\n\neverything open source &amp; MIT licensed, excited to see what you build with it! https://t.",
+     "created_at": "2026-11-02T17:26:13.000Z",
+     "likes": 1981,
+     "reposts": 0,
+     "replies": 57,
+     "views": 77607,
+     "quotes": 24
+    }
+   ],
+   "computedAt": "2026-11-03T17:19:43.344Z"
+  },
+  "treg": {
+   "status": "live",
+   "query": "(url:treg.to OR @treg_ai OR \"superdesigndev/treg\" OR (treg (clay OR gtm OR leads OR mcp))) -is:retweet",
+   "mentions24h": 136,
+   "mentions7d": 880,
+   "priorDailyAvg": 124,
+   "velocity": 1.1,
+   "daily": [
+    104,
+    63,
+    239,
+    90,
+    32,
+    216,
+    136
+   ],
+   "peakDay": 239,
+   "peakDaysAgo": 4,
+   "sample": {
+    "posts": 26,
+    "likes": 1244,
+    "reposts": 25,
+    "replies": 226
+   },
+   "parts": {
+    "volume": 29.4,
+    "velocity": 1.7,
+    "engagement": 16.4
+   },
+   "score": 48,
+   "label": "steady",
+   "viral": false,
+   "topPosts": [
+    {
+     "id": "2117240513862738341",
+     "url": "https://x.com/treg_ai/status/2117240513862738341",
+     "author": "treg_ai",
+     "text": "Introducing OpenSource Clay killer  \n\n- 85% cheaper than clay\n- Most accurate on people-search bench \n- 25x faster \n- Run GTM directly in claude code or codex  \n\nTry at https://t.co/D2eDbgiLu0 \n\nRepo link below 👇 https:",
+     "created_at": "2026-11-02T13:00:49.000Z",
+     "likes": 785,
+     "reposts": 0,
+     "replies": 87,
+     "views": 98915,
+     "quotes": 73
+    },
+    {
+     "id": "2115496542694162800",
+     "url": "https://x.com/salesxsaas/status/2115496542694162800",
+     "author": "salesxsaas",
+     "text": "I can’t keep track of how many of these GTM search &amp; enrichment tools there are now\nClay\nGojiBerry\nColdIQ\nGetLeads\nOrigami\nDataCrust\nProspeo\nDatabar\nPersona\nFreckle\nTreg\nExa\n\nThe list goes on 50+\n\nWho you like best? ",
+     "created_at": "2026-10-28T17:30:54.000Z",
+     "likes": 90,
+     "reposts": 2,
+     "replies": 31,
+     "views": 12063,
+     "quotes": 1
+    }
+   ],
+   "computedAt": "2026-11-03T17:19:43.344Z"
   }
  }
 }

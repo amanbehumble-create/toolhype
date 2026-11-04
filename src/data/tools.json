@@ -1378,8 +1378,8 @@
       "agents"
     ],
     "pricing": "open-source",
-    "verdict": "Open-source AI pair programming in your terminal, git-aware.",
-    "useThisIf": "you want open-source and bring-your-own model.",
+    "verdict": "Open-source (Apache-2.0) AI pair programmer that runs in your terminal and edits files in your git repo, committing each change so you can review or undo it. Bring your own model: Claude, GPT, DeepSeek or local models. ~50K GitHub stars; the last tagged release was v0.86.0 in Aug 2025, so it moves slower than Claude Code or Codex now.",
+    "useThisIf": "you want a free, git-native coding assistant in the terminal and are happy to plug in your own API key or local model.",
     "alternatives": [
       "claude-code",
       "cursor"
@@ -5405,5 +5405,109 @@
     ],
     "source": "github",
     "logo": "/logos/agent-desktop.png"
+  },
+  {
+    "affiliateUrl": null,
+    "addedAt": "2026-11-04",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "source": "github",
+    "slug": "claude-mem",
+    "name": "claude-mem",
+    "url": "https://github.com/thedotmack/claude-mem",
+    "category": "coding",
+    "useCases": [
+      "coding",
+      "agents"
+    ],
+    "pricing": "open-source",
+    "verdict": "Apache-2.0 plugin that gives coding agents memory across sessions: it records what the agent did, compresses it with AI, and injects the relevant bits into the next session. Works with Claude Code, Codex, Gemini, Copilot, OpenCode and more. v15.9.0 shipped Nov 2 2026; ~1.1K stars in a day on GitHub trending Nov 4 (~112K total). Stored session logs can include code and secrets, so check what it keeps.",
+    "useThisIf": "you keep re-explaining your project to Claude Code or Codex every new session.",
+    "alternatives": [
+      "claude-code"
+    ],
+    "logo": "/logos/claude-mem.png"
+  },
+  {
+    "affiliateUrl": null,
+    "addedAt": "2026-11-04",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "source": "github",
+    "slug": "colibri",
+    "name": "Colibri",
+    "url": "https://github.com/JustVugg/colibri",
+    "category": "coding",
+    "useCases": [
+      "coding",
+      "chat"
+    ],
+    "pricing": "open-source",
+    "verdict": "Apache-2.0 inference engine in C for running big mixture-of-experts models on ordinary hardware: hot experts live on the GPU (CUDA/Vulkan), warm ones in RAM, cold ones stream from NVMe. v2.1.0 shipped Oct 31 2026; ~800 stars in a day on GitHub trending Nov 4 (~47K total). For tinkerers with a decent GPU and fast SSD, expect slower speeds than full-VRAM setups.",
+    "useThisIf": "you want to run a frontier-size open MoE model locally without buying a GPU cluster.",
+    "alternatives": [],
+    "logo": "/logos/colibri.png"
+  },
+  {
+    "affiliateUrl": null,
+    "addedAt": "2026-11-04",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "source": "github",
+    "slug": "hex-dictation",
+    "name": "Hex (Anomaly)",
+    "url": "https://github.com/anomalyco/hex",
+    "category": "productivity",
+    "useCases": [
+      "productivity",
+      "writing"
+    ],
+    "pricing": "open-source",
+    "verdict": "MIT-licensed local voice dictation for Mac, Windows and Linux from Anomaly (the team behind OpenCode): hold a key, talk, and text lands in any app, with speech recognition running on your machine. v3.3.0 shipped Nov 2 2026; ~400 stars in a day on GitHub trending Nov 4 (~4.6K total). A free, private alternative to paid dictation apps; accuracy depends on the local model you choose.",
+    "useThisIf": "you want Wispr-style dictation without sending your voice to the cloud or paying a subscription.",
+    "alternatives": [],
+    "logo": "/logos/hex-dictation.png"
+  },
+  {
+    "affiliateUrl": null,
+    "addedAt": "2026-11-04",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "source": "github",
+    "slug": "worktrunk",
+    "name": "Worktrunk",
+    "url": "https://worktrunk.dev",
+    "category": "coding",
+    "useCases": [
+      "coding",
+      "agents"
+    ],
+    "pricing": "open-source",
+    "verdict": "CLI for Git worktrees built for running several AI coding agents in parallel: create, switch, merge and clean up a worktree per agent with short commands. Open source (github.com/max-sixty/worktrunk), v0.81.0 released Oct 20 2026; ~440 stars in a day on GitHub trending Nov 4 (~10.5K total). Assumes you are comfortable with git and the terminal.",
+    "useThisIf": "you run two or more Claude Code/Codex sessions at once and keep tripping over each other's branches.",
+    "alternatives": [
+      "claude-code"
+    ],
+    "logo": "/logos/worktrunk.png"
   }
 ]

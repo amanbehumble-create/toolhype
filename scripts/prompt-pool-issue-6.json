@@ -1,5 +1,5 @@
 {
-  "_note": "Staging pool for Prompt Drop #6 (week of Nov 2 2026). Not rendered on the site; move into src/data/prompts.json as issue-6 once it has ~8+ prompts. Rule: X posts with 100+ likes, prompt text word for word in the post.",
+  "_note": "Staging pool for this week's newsletter (Substack; formerly Prompt Drop #6) (week of Nov 2 2026). Not rendered on the site; move into src/data/prompts.json as issue-6 once it has ~8+ prompts. Rule: X posts with 100+ likes, prompt text word for word in the post.",
   "n": 6,
   "slug": "issue-6",
   "prompts": [
@@ -24,6 +24,17 @@
       "author": "@azed_ai",
       "likes": 140,
       "likesAsOf": "Nov 3, 2026 HKT"
+    },
+    {
+      "title": "Cinematic 3D fantasy character",
+      "category": "Image",
+      "tool": "Any image AI (ChatGPT / Gemini / Midjourney / Grok)",
+      "prompt": "A cinematic 3D full-body render of [fantasy character], wearing [armor design] assembled from salvaged robotic parts, [facial features], [hairstyle], carrying [weapon], distressed fabrics, corroded metal plating, exposed mechanisms, intricate mechanical details, battle-worn appearance, realistic PBR textures, stylized realism, dramatic studio lighting, Unreal Engine 5 quality, clean white background",
+      "why": "Fill the five blanks (e.g. an elf knight, a samurai helmet, a long bow). The material words like corroded metal and PBR textures are what make it look like a game render instead of a cartoon.",
+      "source": "https://x.com/azed_ai/status/2117572559399170451",
+      "author": "@azed_ai",
+      "likes": 118,
+      "likesAsOf": "Nov 4, 2026 HKT"
     }
   ]
 }

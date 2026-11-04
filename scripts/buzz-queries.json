@@ -194,5 +194,9 @@
   "hackertube": "(hackertube OR \"hacker tube\" OR url:hackertube.org) -is:retweet",
   "dsh-superagent": "(\"dsh-superagent\" OR (deepseek (\"super-agent\" OR \"super agent\" OR superagent))) -is:retweet",
   "open-bot-avatar": "(\"open bot avatar\" OR \"open-bot-avatar\" OR (dom_scholz avatar)) -is:retweet",
-  "treg": "(url:treg.to OR @treg_ai OR \"superdesigndev/treg\" OR (treg (clay OR gtm OR leads OR mcp))) -is:retweet"
+  "treg": "(url:treg.to OR @treg_ai OR \"superdesigndev/treg\" OR (treg (clay OR gtm OR leads OR mcp))) -is:retweet",
+  "claude-mem": "(\"claude-mem\" OR url:claude-mem.ai OR \"thedotmack/claude-mem\") -is:retweet",
+  "colibri": "(\"JustVugg/colibri\" OR (colibri (moe OR \"inference engine\" OR nvme OR experts))) -is:retweet",
+  "hex-dictation": "(\"anomalyco/hex\" OR url:anoma.ly/hex OR ((hex anomaly) (dictation OR voice))) -is:retweet",
+  "worktrunk": "(worktrunk OR url:worktrunk.dev OR \"max-sixty/worktrunk\") -is:retweet"
 }

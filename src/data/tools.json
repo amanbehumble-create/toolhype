@@ -1654,8 +1654,8 @@
       "design"
     ],
     "pricing": "paid",
-    "verdict": "Top-tier aesthetic image generation.",
-    "useThisIf": "image quality and style matter most.",
+    "verdict": "Image generation via Discord and the Midjourney web app: strong at stylized, artistic stills with a distinctive look. Plans from Basic (~$10/mo) up; no official public API. Still a top pick for concept art and moodboards when you want that Midjourney aesthetic over photoreal defaults.",
+    "useThisIf": "you want stylized AI images with Midjourney's look and are fine working in Discord or their web app rather than an API.",
     "alternatives": [
       "ideogram",
       "canva"
@@ -5509,5 +5509,259 @@
       "claude-code"
     ],
     "logo": "/logos/worktrunk.png"
+  },
+  {
+    "slug": "wanaka",
+    "name": "Wanaka",
+    "url": "https://wanaka.app",
+    "affiliateUrl": null,
+    "category": "fun",
+    "useCases": [
+      "fun",
+      "video"
+    ],
+    "pricing": "freemium",
+    "verdict": "AI-native 3D game engine (Wanaka Studio 1.0): describe a game, build and remix it in a browser workspace with models, rigging, gameplay and sound, then publish a shareable multiplayer link — no Unity and no code required. Free to start; Product Hunt #1 on Nov 4 2026 with a strong official launch post (~680 likes). Still early: results depend on how well the agent interprets your brief.",
+    "useThisIf": "you want to prototype a playable 3D multiplayer game from a one-line idea and share a browser link without learning Unity.",
+    "alternatives": [
+      "strawberry",
+      "hackertube"
+    ],
+    "source": "producthunt",
+    "addedAt": "2026-11-05",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/wanaka.png"
+  },
+  {
+    "slug": "openmail",
+    "name": "OpenMail",
+    "url": "https://openmail.sh",
+    "affiliateUrl": null,
+    "category": "agents",
+    "useCases": [
+      "agents",
+      "productivity"
+    ],
+    "pricing": "freemium",
+    "verdict": "Email API and inboxes built for AI agents: create addresses via API or CLI, send/receive in real time, parse attachments, and use webhooks so agents can sign up for services and read mail like a human. Free tier (3 inboxes, 3,000 emails/mo); Pro from €9/mo + usage. On Product Hunt Nov 4 2026; also used in open-source EveryApp stacks. You still own deliverability and abuse risk for anything the agent sends.",
+    "useThisIf": "your agent needs its own inbox to register for tools, receive OTPs or talk to humans over email without sharing your personal address.",
+    "alternatives": [
+      "agent-inbox",
+      "floot"
+    ],
+    "source": "producthunt",
+    "addedAt": "2026-11-05",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/openmail.png"
+  },
+  {
+    "slug": "impeccable",
+    "name": "Impeccable",
+    "url": "https://impeccable.style",
+    "affiliateUrl": null,
+    "category": "design",
+    "useCases": [
+      "design",
+      "coding"
+    ],
+    "pricing": "open-source",
+    "verdict": "Open-source (Apache-2.0) design vocabulary and skill pack for coding agents: npx impeccable install, then /impeccable polish|critique|audit|bolder and 20+ other commands that steer UI away from Inter-gradient 'AI slop'. Works with Claude Code, Cursor, Codex, Copilot and many more; ~103K GitHub stars (pbakaus/impeccable) with active Nov 2026 updates. Strongest when you point it at an existing page; greenfield pages still need a clear brief.",
+    "useThisIf": "your coding agent keeps shipping beige cards, purple gradients and nested boxes and you want named design moves plus a deterministic slop checker.",
+    "alternatives": [
+      "solid-glass",
+      "diagram-design",
+      "layoza"
+    ],
+    "source": "github",
+    "addedAt": "2026-11-05",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/impeccable.png"
+  },
+  {
+    "slug": "ponytail",
+    "name": "Ponytail",
+    "url": "https://ponytail.dev",
+    "affiliateUrl": null,
+    "category": "coding",
+    "useCases": [
+      "coding",
+      "agents"
+    ],
+    "pricing": "open-source",
+    "verdict": "Open-source (MIT) agent skill that pushes coding agents to write the least code that works — 'lazy senior' style. Ponytail 5 claims −53% code, −41% time, −26% cost vs the same Claude Code agent on 39 tasks (maintainer benchmark). Install via npm/skill for ~20 agents; ~185K GitHub stars (DietrichGebert/ponytail). Benchmarks are maintainer-run; treat them as directional, not a guarantee for your repo.",
+    "useThisIf": "your agent over-engineers every ticket and you want a ruleset that prefers small diffs, tests on risky logic, and deleting code.",
+    "alternatives": [
+      "claude-code",
+      "engineer-skills"
+    ],
+    "source": "github",
+    "addedAt": "2026-11-05",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/ponytail.png"
+  },
+  {
+    "slug": "cloudbrowser",
+    "name": "Cloudbrowser",
+    "url": "https://cloudbrowser.tv",
+    "affiliateUrl": null,
+    "category": "agents",
+    "useCases": [
+      "agents",
+      "coding"
+    ],
+    "pricing": "freemium",
+    "verdict": "Managed persistent Chrome for AI agents: isolated cloud browsers with saved login state, CDP connect, live view, plus fork/pause/resume. Free plan is 1 browser-hour/month; Basic $20/mo (250 hours) and Pro $99/mo. Submitted to toolhype Nov 4 2026; domain registered Oct 29 2026 so the product is very new — verify uptime and data handling before putting production credentials in a session.",
+    "useThisIf": "you need agents to keep logged-in browser state across runs and drive pages over CDP without hosting Chromium yourself.",
+    "alternatives": [
+      "strawberry",
+      "agent-desktop"
+    ],
+    "source": "submission",
+    "addedAt": "2026-11-05",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/cloudbrowser.png"
+  },
+  {
+    "slug": "pragor",
+    "name": "Pragor",
+    "url": "https://pragor.net",
+    "affiliateUrl": null,
+    "category": "agents",
+    "useCases": [
+      "agents",
+      "productivity"
+    ],
+    "pricing": "freemium",
+    "verdict": "Operations board for teams of AI agents and humans: run CrewAI/LangGraph/AutoGen (or custom) agents on one board with human-in-the-loop approvals, durable memory, MCP server and an audit trail. Free during public beta (generous limits); activity-event billing later with launch discounts. Submitted Nov 3 2026. Provider-agnostic — you still bring models and agent code.",
+    "useThisIf": "you already build agents in several frameworks and need one place for approvals, memory and who-did-what logging.",
+    "alternatives": [
+      "agent-inbox",
+      "openswarm"
+    ],
+    "source": "submission",
+    "addedAt": "2026-11-05",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/pragor.png"
+  },
+  {
+    "slug": "pudding",
+    "name": "Pudding",
+    "url": "https://pudding.teatak.com",
+    "affiliateUrl": null,
+    "category": "productivity",
+    "useCases": [
+      "productivity",
+      "chat"
+    ],
+    "pricing": "free",
+    "verdict": "Free desktop AI workspace (Windows/macOS) from Teatak: connect leading models, keep separate conversations, and use a built-in browser plus file/command tools, Studio docs/tables, scheduled tasks and plugins. Free for personal and commercial use; you bring your own model API keys. Submitted Nov 1 2026. Desktop install required — not a browser-only chat UI.",
+    "useThisIf": "you want one local app that mixes chat, browser, files and scheduled agent tasks across multiple model providers.",
+    "alternatives": [
+      "chatgpt",
+      "claude",
+      "floot"
+    ],
+    "source": "submission",
+    "addedAt": "2026-11-05",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/pudding.png"
+  },
+  {
+    "slug": "what-sells-next",
+    "name": "What Sells Next",
+    "url": "https://whatsellsnext.com",
+    "affiliateUrl": null,
+    "category": "marketing",
+    "useCases": [
+      "marketing",
+      "productivity"
+    ],
+    "pricing": "freemium",
+    "verdict": "Product-idea and listing helper for Etsy makers: discover ideas that match your skills/materials, check live market evidence and asking prices, then plan the make and prepare a listing. Idea checks are free without signup; deeper workflow sits behind an account. Submitted Nov 3 2026. Focused on physical handmade goods — not a general ecommerce research suite.",
+    "useThisIf": "you sell handmade goods on Etsy and want evidence-backed next-product ideas plus listing prep in one flow.",
+    "alternatives": [
+      "riff",
+      "soldfetch"
+    ],
+    "source": "submission",
+    "addedAt": "2026-11-05",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/what-sells-next.png"
+  },
+  {
+    "slug": "audience-analysis",
+    "name": "Audience Analysis",
+    "url": "https://audienceanalysis.ai",
+    "affiliateUrl": null,
+    "category": "marketing",
+    "useCases": [
+      "marketing",
+      "productivity"
+    ],
+    "pricing": "freemium",
+    "verdict": "AI audience panels for product and pricing validation: build personas, ask questions, surface objections before you build. 750 free trial credits; paid plans from $9.99/mo (Starter) and $29.99/mo (Growth). Domain since 2024; submitted Nov 3 2026. Synthetic panels are a research aid — not a substitute for talking to real customers.",
+    "useThisIf": "you want a quick AI stand-in audience to pressure-test a product idea, price or pitch before real user interviews.",
+    "alternatives": [
+      "empacer",
+      "soldfetch"
+    ],
+    "source": "submission",
+    "addedAt": "2026-11-05",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/audience-analysis.png"
   }
 ]

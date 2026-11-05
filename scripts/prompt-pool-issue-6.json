@@ -35,6 +35,61 @@
       "author": "@azed_ai",
       "likes": 118,
       "likesAsOf": "Nov 4, 2026 HKT"
+    },
+    {
+      "title": "Expressive ink wash painting",
+      "category": "Image",
+      "tool": "Any image AI (ChatGPT / Gemini / Midjourney / Grok)",
+      "prompt": "An expressive traditional ink wash painting of [subject], featuring [distinctive details], [pose or action], flowing black ink, delicate gray washes, organic brushstrokes, dramatic ink bleeding, subtle watercolor diffusion, textured rice paper, minimalist composition, elegant negative space, traditional sumi-e aesthetics, handcrafted artistic imperfections, clean white background",
+      "why": "Fill [subject], details and pose. 'Ink bleeding' + 'sumi-e' keep it painterly; 'clean white background' stops busy scenery from eating the brushwork.",
+      "source": "https://x.com/azed_ai/status/2117934163030614318",
+      "author": "@azed_ai",
+      "likes": 166,
+      "likesAsOf": "Nov 5, 2026 HKT"
+    },
+    {
+      "title": "Stop-motion movie character",
+      "category": "Image",
+      "tool": "Any image AI (ChatGPT / Gemini / Midjourney / Grok)",
+      "prompt": "A highly detailed 3D stop-motion animated movie character design of [character], [age], [cultural background], featuring [body proportions], [distinctive facial features], [hairstyle], [facial expression], wearing [outfit] with [fabric textures and details], [footwear], standing in [pose] with a charming, expressive personality, stylized cartoon facial proportions combined with realistic anatomy, distinctive character silhouette, slightly exaggerated features, playful imperfections, intricate fabric fibers, realistic material wear, rich tactile textures, handcrafted puppet aesthetic, sophisticated material layering, original animated film character design, cinematic 3D rendering, soft studio lighting, full-body composition, clean white background",
+      "why": "Lots of blanks, but 'handcrafted puppet aesthetic' and 'playful imperfections' are what sell the stop-motion look instead of smooth CGI.",
+      "source": "https://x.com/azed_ai/status/2115760081585553630",
+      "author": "@azed_ai",
+      "likes": 577,
+      "likesAsOf": "Nov 5, 2026 HKT"
+    },
+    {
+      "title": "Pixar-style 3D character reinterpretation",
+      "category": "Image",
+      "tool": "Any image AI (ChatGPT / Gemini / Midjourney / Grok)",
+      "prompt": "A premium Pixar-style 3D reinterpretation of [Samurai Jack character], preserving the iconic character design, recognizable facial features, signature hairstyle, [distinctive outfit], [weapon or accessory], [facial expression], [dynamic pose], stylized angular proportions translated into rounded yet sculptural 3D forms, expressive animated facial features, realistic skin textures, detailed fabric materials, cinematic character lighting, high-end 3D animation rendering, polished textures, full-body composition, isolated on a pure white background",
+      "why": "Swap the bracketed character for any flat/2D design you love. 'Angular proportions translated into rounded yet sculptural 3D forms' is the key phrase that keeps the original silhouette while going Pixar-round.",
+      "source": "https://x.com/azed_ai/status/2116121954382139842",
+      "author": "@azed_ai",
+      "likes": 311,
+      "likesAsOf": "Nov 5, 2026 HKT"
+    },
+    {
+      "title": "Expressive Chinese ink (Qi Baishi-style)",
+      "category": "Image",
+      "tool": "Any image AI (ChatGPT / Gemini / Midjourney / Grok)",
+      "prompt": "A colorful Chinese ink painting of [subject], inspired by Qi Baishi's expressive brushwork, minimalist abstract composition, bold continuous brushstrokes, thick expressive ink lines, vibrant watercolor accents, exaggerated anatomy, [dramatic pose], [satirical facial expression], animated cartoon personality, playful distortion, dynamic perspective, humorous philosophical undertones, traditional Chinese freehand painting aesthetic, visible ink bleeding, organic brush textures, expressive movement, generous negative space, pure white background",
+      "why": "Name a subject and a satirical expression. Qi Baishi + 'playful distortion' pushes bold ink comedy instead of a stiff textbook ink wash.",
+      "source": "https://x.com/azed_ai/status/2113587252714729605",
+      "author": "@azed_ai",
+      "likes": 192,
+      "likesAsOf": "Nov 5, 2026 HKT"
+    },
+    {
+      "title": "Fluffy toothy 3D monster",
+      "category": "Image",
+      "tool": "Any image AI (ChatGPT / Gemini / Midjourney / Grok)",
+      "prompt": "An adorable little fluffy 3D animated movie monster with a [body shape] body completely covered in thick, ultra-soft, plush [fur color] fur, realistic individual hair strands, dense velvety fluff, huge expressive [eye color] eyes, tiny legs, short furry arms, [unique features], an enormous smiling mouth filled with many perfectly clean, shiny white teeth, [facial expression], [playful pose], exaggerated cartoon proportions, innocent mischievous personality, irresistibly cuddly appearance, premium animated movie character design, detailed fur grooming, realistic subsurface lighting, soft studio illumination, full-body render, isolated on a pure white background",
+      "why": "Pick body shape, fur color and eye color. The huge clean teeth + tiny legs combo is what makes it cute-scary instead of a generic furry blob.",
+      "source": "https://x.com/azed_ai/status/2115034792404324628",
+      "author": "@azed_ai",
+      "likes": 191,
+      "likesAsOf": "Nov 5, 2026 HKT"
     }
   ]
 }

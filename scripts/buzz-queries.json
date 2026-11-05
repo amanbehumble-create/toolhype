@@ -198,5 +198,14 @@
   "claude-mem": "(\"claude-mem\" OR url:claude-mem.ai OR \"thedotmack/claude-mem\") -is:retweet",
   "colibri": "(\"JustVugg/colibri\" OR (colibri (moe OR \"inference engine\" OR nvme OR experts))) -is:retweet",
   "hex-dictation": "(\"anomalyco/hex\" OR url:anoma.ly/hex OR ((hex anomaly) (dictation OR voice))) -is:retweet",
-  "worktrunk": "(worktrunk OR url:worktrunk.dev OR \"max-sixty/worktrunk\") -is:retweet"
+  "worktrunk": "(worktrunk OR url:worktrunk.dev OR \"max-sixty/worktrunk\") -is:retweet",
+  "wanaka": "(wanaka OR wanaka.app OR @wanakaofficial OR \"Wanaka Studio\") -is:retweet",
+  "openmail": "(openmail.sh OR @openmailsh OR (\"OpenMail\" (agent OR email OR inbox OR ProductHunt))) -is:retweet",
+  "impeccable": "(impeccable.style OR \"pbakaus/impeccable\" OR (impeccable (\"coding agent\" OR \"claude code\" OR cursor OR slop OR design)) OR npx impeccable) -is:retweet",
+  "ponytail": "(ponytail.dev OR \"DietrichGebert/ponytail\" OR (\"Ponytail\" (\"claude code\" OR agent OR skill OR lazy))) -is:retweet",
+  "cloudbrowser": "(cloudbrowser OR url:cloudbrowser.tv OR (\"cloud browser\" (CDP OR agents OR agent))) -is:retweet",
+  "pragor": "(pragor OR pragor.net OR \"Pragor\" (agent OR agents OR MCP)) -is:retweet",
+  "pudding": "(pudding.teatak OR teatak pudding OR (\"Pudding\" (Teatak OR \"desktop AI\" OR workspace))) -is:retweet",
+  "what-sells-next": "(whatsellsnext OR \"What Sells Next\" OR url:whatsellsnext.com) -is:retweet",
+  "audience-analysis": "(audienceanalysis.ai OR \"Audience Analysis\" (AI OR personas OR panel)) -is:retweet"
 }

@@ -207,5 +207,13 @@
   "pragor": "(pragor OR pragor.net OR \"Pragor\" (agent OR agents OR MCP)) -is:retweet",
   "pudding": "(pudding.teatak OR teatak pudding OR (\"Pudding\" (Teatak OR \"desktop AI\" OR workspace))) -is:retweet",
   "what-sells-next": "(whatsellsnext OR \"What Sells Next\" OR url:whatsellsnext.com) -is:retweet",
-  "audience-analysis": "(audienceanalysis.ai OR \"Audience Analysis\" (AI OR personas OR panel)) -is:retweet"
+  "audience-analysis": "(audienceanalysis.ai OR \"Audience Analysis\" (AI OR personas OR panel)) -is:retweet",
+  "shareofask": "(shareofask OR url:shareofask.com OR \"ShareOfAsk\") -is:retweet",
+  "sandbox0": "(sandbox0 OR url:sandbox0.ai OR @sandbox0 OR \"Sandbox0\") -is:retweet",
+  "transcript-dock": "(transcriptdock OR \"Transcript Dock\" OR url:transcriptdock.com) -is:retweet",
+  "ohmate": "(ohmate OR \"Oh!Mate\" OR url:ohmate.online OR @ohmate_ai) -is:retweet",
+  "rerun": "(rerun.build OR url:rerun.build OR (\"Rerun\" (coworkers OR \"AI coworkers\" OR self-host)) OR @ClementJanssens) -is:retweet",
+  "living-brain": "(\"Living Brain\" OR livingbrain.com OR url:livingbrain.com OR ChatAndBuild living) -is:retweet",
+  "rainbrand": "(rainbrand OR url:rainbrand.com OR \"Rainbrand\") -is:retweet",
+  "hallmark": "(usehallmark OR Nutlope hallmark OR \"hallmark\" (skill OR \"anti-slop\" OR \"AI slop\") OR url:usehallmark.com) -is:retweet"
 }

@@ -1924,8 +1924,8 @@
       "video"
     ],
     "pricing": "freemium",
-    "verdict": "Realistic text-to-speech and voice cloning.",
-    "useThisIf": "you need natural voiceovers.",
+    "verdict": "Realistic text-to-speech and voice cloning, plus music, sound effects and voice agents. Free monthly credits; paid plans from $6/mo. Speech-to-text and dubbing sit in the same ElevenCreative studio, ElevenAgents covers voice or chat, and the same stack is on the API (Eleven v4 is the current emotive speech model). Free is 10,000 shared credits a month; Starter is $6/mo after a $1 first month and adds instant voice cloning plus a commercial license; Creator is $22/mo ($11 first month) and adds professional voice cloning. One credit pool covers speech, music and effects, so long audio spends it fast. Clone only a voice you own or have explicit consent to use — ElevenLabs states someone else's voice needs permission.",
+    "useThisIf": "you need natural voiceovers, a consented voice clone, music or sound effects, or a voice agent, and you can work inside a shared monthly credit pool.",
     "alternatives": [
       "descript"
     ],
@@ -5763,5 +5763,240 @@
       "updatedAt": null
     },
     "logo": "/logos/audience-analysis.png"
+  },
+  {
+    "slug": "shareofask",
+    "name": "ShareOfAsk",
+    "url": "https://www.shareofask.com",
+    "affiliateUrl": null,
+    "category": "marketing",
+    "useCases": [
+      "marketing",
+      "productivity"
+    ],
+    "pricing": "freemium",
+    "verdict": "AI visibility tracking for brands and agencies: ask ChatGPT, Claude, Gemini, Grok and Google AI Overviews the questions buyers ask, then see whether your brand appears, which competitors are named, citation sources and ranked Actions. Free Scan checks 10 questions across 3 models (no card); Starter $49/mo (1 workspace) and Growth $199/mo (3 workspaces); MCP included on every plan. Domain since Dec 2025; submitted Nov 5 2026. Synthetic AI answers are a research signal — not a substitute for real search analytics or customer interviews.",
+    "useThisIf": "you need evidence of how AI assistants name your brand vs competitors on buyer questions, with shareable Actions for content fixes.",
+    "alternatives": [
+      "audience-analysis",
+      "perplexity",
+      "empacer"
+    ],
+    "source": "submission",
+    "addedAt": "2026-11-06",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/shareofask.png"
+  },
+  {
+    "slug": "sandbox0",
+    "name": "Sandbox0",
+    "url": "https://sandbox0.ai",
+    "affiliateUrl": null,
+    "category": "agents",
+    "useCases": [
+      "agents",
+      "coding"
+    ],
+    "pricing": "paid",
+    "verdict": "Managed agent sandboxes with a persistent writable RootFS: install tools, keep /usr and /home across checkpoints, pause compute between tasks and resume on demand. Cloud billed by the second (~$0.015/GiB-hour compute, $0.02/GiB-month retained storage); $5 free credit after card for eligible new users. Python SDK and s0 CLI; self-hosting discontinued, BYOC planned. Domain since Dec 2025; same team as Cloudbrowser (zuch@sandbox0.ai). Submitted Nov 5 2026. Pay-as-you-go cloud — watch idle running sandboxes so they do not burn compute.",
+    "useThisIf": "you need isolated cloud computers for long-running agents that must keep installed software and files without paying for always-on CPUs.",
+    "alternatives": [
+      "cloudbrowser",
+      "agent-desktop",
+      "pragor"
+    ],
+    "source": "submission",
+    "addedAt": "2026-11-06",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/sandbox0.png"
+  },
+  {
+    "slug": "transcript-dock",
+    "name": "Transcript Dock",
+    "url": "https://www.transcriptdock.com",
+    "affiliateUrl": null,
+    "category": "coding",
+    "useCases": [
+      "coding",
+      "video",
+      "agents"
+    ],
+    "pricing": "freemium",
+    "verdict": "One transcript API for YouTube/TikTok captions (1 credit), optional AI transcription for uploads and direct media (2 credits/started minute), plus Instagram Reels on paid plans. Exports JSON/SRT/VTT/TXT free; webhooks and MCP for agents; 50 free credits/month, paid packs ~$6–8 per 1k credits. Domain registered Oct 1 2026 (young) but product docs, privacy/terms and API look real. Submitted Nov 5 2026. Caption-first — AI transcription is paid and regional launch is single-region.",
+    "useThisIf": "you are building products or agents that need timed video transcripts from links without stitching multiple caption scrapers.",
+    "alternatives": [
+      "descript",
+      "dadan",
+      "api-market"
+    ],
+    "source": "submission",
+    "addedAt": "2026-11-06",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/transcript-dock.png"
+  },
+  {
+    "slug": "ohmate",
+    "name": "Oh!Mate",
+    "url": "https://ohmate.online",
+    "affiliateUrl": null,
+    "category": "productivity",
+    "useCases": [
+      "productivity",
+      "writing"
+    ],
+    "pricing": "freemium",
+    "verdict": "Desktop AI workspace (Windows/macOS/Linux) for Word, Excel, PowerPoint and PDF work: sources stay authorized, outputs land in a separate working directory, and actions are auditable with confirmation for risky writes. Free tier with limited credits; Plus from $15/mo (500 credits/7 days); contact business@gradiant.chat. Submitted Nov 3 2026. Local-first office agent — not a browser chat; install required, and public privacy/terms pages were thin on the marketing site at review time.",
+    "useThisIf": "you want an agent that edits real Office files on your machine with visible plans and permission prompts instead of paste-into-chat workflows.",
+    "alternatives": [
+      "pudding",
+      "traxly",
+      "agent-desktop"
+    ],
+    "source": "submission",
+    "addedAt": "2026-11-06",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/ohmate.png"
+  },
+  {
+    "slug": "rerun",
+    "name": "Rerun",
+    "url": "https://rerun.build",
+    "affiliateUrl": null,
+    "category": "agents",
+    "useCases": [
+      "agents",
+      "productivity",
+      "marketing"
+    ],
+    "pricing": "freemium",
+    "verdict": "AI coworkers that run on the ChatGPT or Claude subscription you already pay for (or OpenRouter/API keys/Rerun credits), with a private always-on machine, 3,000+ tool integrations, schedules/triggers and human approval before consequential actions. Plans from $29/mo for 5 coworkers; open-source AGPL-3.0 and self-hostable (github.com/rerun-build/rerun). Product Hunt #2 on Nov 5 2026 (~194 upvotes). Coworkers are autonomous agents — keep approvals on for spend, outbound email and deletes.",
+    "useThisIf": "you want scheduled AI teammates that click real apps and ship work overnight without building your own agent harness.",
+    "alternatives": [
+      "agent-desktop",
+      "pudding",
+      "claude"
+    ],
+    "source": "product-hunt",
+    "addedAt": "2026-11-06",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/rerun.png"
+  },
+  {
+    "slug": "living-brain",
+    "name": "Living Brain",
+    "url": "https://livingbrain.com",
+    "affiliateUrl": null,
+    "category": "agents",
+    "useCases": [
+      "agents",
+      "productivity"
+    ],
+    "pricing": "freemium",
+    "verdict": "Interoperable persistent memory layer for agents: API, SDK, CLI and MCP so knowledge carries across ChatGPT, Claude, Gemini, Cursor and custom tools. Claims strong LoCoMo/LongMemEval-S token savings in their internal evals; Workspace plan with shared monthly credits (intro $80 then $50) and API usage from a prepaid balance (~$5 start). Docs at docs.livingbrain.com; GitHub ChatAndBuild/livingbrain. Product Hunt Nov 5 2026. Memory quality still depends on your workload — treat their leaderboard claims as vendor-reported.",
+    "useThisIf": "you need one memory store that multiple models and agent harnesses can read via MCP/API instead of re-pasting context each chat.",
+    "alternatives": [
+      "claude-mem",
+      "the-brains",
+      "context-mode"
+    ],
+    "source": "product-hunt",
+    "addedAt": "2026-11-06",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/living-brain.png"
+  },
+  {
+    "slug": "rainbrand",
+    "name": "Rainbrand",
+    "url": "https://www.rainbrand.com",
+    "affiliateUrl": null,
+    "category": "marketing",
+    "useCases": [
+      "marketing",
+      "design",
+      "agents"
+    ],
+    "pricing": "paid",
+    "verdict": "Brand context layer for agents: maintain guidelines, logos, fonts and voice in one place, then serve task-specific Briefs and Reviews over MCP/API to ChatGPT, Claude, Claude Code, Cursor and product embeddings. Plus from $20/mo (1 seat), Pro from $35/mo (unlimited seats); docs at docs.rainbrand.com. Domain since 2017; Product Hunt Nov 5 2026 (~104 upvotes). Credit-metered brand ops — not a full design suite; generation still happens in your own tools or their AI Gateway.",
+    "useThisIf": "your agents and creative tools keep drifting off-brand and you want one shared brand brain with review checks before assets ship.",
+    "alternatives": [
+      "canva",
+      "impeccable",
+      "audience-analysis"
+    ],
+    "source": "product-hunt",
+    "addedAt": "2026-11-06",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/rainbrand.png"
+  },
+  {
+    "slug": "hallmark",
+    "name": "Hallmark",
+    "url": "https://www.usehallmark.com",
+    "affiliateUrl": null,
+    "category": "design",
+    "useCases": [
+      "design",
+      "coding"
+    ],
+    "pricing": "open-source",
+    "verdict": "Anti-AI-slop design skill for Claude Code, Cursor, Codex and OpenCode (MIT, by Together AI): picks from fifty themes, builds pages around the visitor job, and lints in a real browser for common machine-made tells. Free and open source (`npx skills add`); custom themes on request. GitHub Nutlope/hallmark (~49k stars, trending Nov 2026). A skill/plugin — not a hosted design app; quality still depends on the host coding agent.",
+    "useThisIf": "your coding agent keeps shipping generic AI landing pages and you want a stricter design skill with theme catalog and browser lint gates.",
+    "alternatives": [
+      "impeccable",
+      "ponytail",
+      "canva"
+    ],
+    "source": "github",
+    "addedAt": "2026-11-06",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/hallmark.png"
   }
 ]

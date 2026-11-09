@@ -4773,7 +4773,7 @@
     "name": "Riffwise",
     "url": "https://riffwise.app/",
     "affiliateUrl": null,
-    "category": "writing",
+    "category": "marketing",
     "useCases": [
       "writing",
       "marketing"
@@ -5998,5 +5998,149 @@
       "updatedAt": null
     },
     "logo": "/logos/hallmark.png"
+  },
+  {
+    "slug": "astryx",
+    "name": "Astryx",
+    "url": "https://astryx.atmeta.com",
+    "affiliateUrl": null,
+    "category": "design",
+    "useCases": [
+      "design",
+      "coding"
+    ],
+    "pricing": "open-source",
+    "verdict": "Meta's open-source (MIT) React design system, now in beta: 150+ accessible components built on React 19 and StyleX, with customizable themes and docs written so coding agents can use it. Meta says it grew inside the company over eight years and powers 13,000+ internal apps. GitHub meta/astryx has about 16.8K stars and was on GitHub Trending on Nov 8, 2026. It is a developer component library, not a no-code design tool, and beta APIs may still change.",
+    "useThisIf": "you build React apps (alone or with a coding agent) and want a large, accessible, themeable component set instead of assembling one yourself.",
+    "alternatives": [
+      "hallmark",
+      "impeccable",
+      "v0"
+    ],
+    "source": "github",
+    "addedAt": "2026-11-09",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/astryx.png"
+  },
+  {
+    "slug": "agent-browser",
+    "name": "agent-browser",
+    "url": "https://agent-browser.dev",
+    "affiliateUrl": null,
+    "category": "agents",
+    "useCases": [
+      "agents",
+      "coding"
+    ],
+    "pricing": "open-source",
+    "verdict": "Vercel Labs' open-source (Apache 2.0) native Rust CLI that gives an AI agent a browser: it returns each page as a compact accessibility-tree snapshot with element refs like @e1, and the agent clicks and types one shell command at a time. Install with npm or Homebrew. GitHub vercel-labs/agent-browser has about 47.6K stars and was on GitHub Trending on Nov 8, 2026. A CLI for developers and agents, not a consumer app, and it downloads Chrome for Testing on first run.",
+    "useThisIf": "your coding or ops agent needs to browse and fill in real web pages and you want a lightweight shell tool instead of a heavy browser framework.",
+    "alternatives": [
+      "cloudbrowser",
+      "agent-desktop",
+      "claude-code"
+    ],
+    "source": "github",
+    "addedAt": "2026-11-09",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/agent-browser.png"
+  },
+  {
+    "slug": "iart",
+    "name": "iArt",
+    "url": "https://www.iart.ai",
+    "affiliateUrl": null,
+    "category": "video",
+    "useCases": [
+      "video",
+      "design"
+    ],
+    "pricing": "freemium",
+    "verdict": "Browser tool that turns a prompt, images, a PDF or a web link into an animated motion-graphics video (logo animation, kinetic type, diagrams), with AI voiceover and background music, then exports MP4. Free plan gives a $2 signup credit; Pro is $20/mo (1080p, no watermark, 3 cloned voices, commercial rights) and Ultra $50/mo (4K). Submitted by the maker Nov 2026; passed our read-only safety check (domain since 2020, HTTPS, terms and privacy pages, clear pricing). Credit-based, so heavy use costs more than the sticker price; it makes motion graphics, not live-action video.",
+    "useThisIf": "you want animated explainers, logo stings or text-on-screen clips without learning After Effects.",
+    "alternatives": [
+      "wemotion",
+      "hyperframes",
+      "canva"
+    ],
+    "source": "submission",
+    "addedAt": "2026-11-09",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/iart.png"
+  },
+  {
+    "slug": "influ",
+    "name": "INFLU",
+    "url": "https://influ.site",
+    "affiliateUrl": null,
+    "category": "marketing",
+    "useCases": [
+      "marketing"
+    ],
+    "pricing": "freemium",
+    "verdict": "Instagram fashion-creator discovery: it tracks creators, scores growth adjusted for account size, and shows rising names before their rates climb, with trend and brand radars and a documented API. A free archive runs 30 days behind; real-time feed, extras and API sit on paid plans. London-based, submitted by the maker Nov 2026 and passed our read-only safety check (domain since 2025, HTTPS, privacy/terms/DPA pages, no card to start). Fashion and Instagram only, and its growth scores are its own model, not Instagram data you can verify.",
+    "useThisIf": "you are a fashion brand or agency hunting small Instagram creators who are about to take off.",
+    "alternatives": [
+      "audience-analysis",
+      "what-sells-next",
+      "reso-ai"
+    ],
+    "source": "submission",
+    "addedAt": "2026-11-09",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/influ.png"
+  },
+  {
+    "slug": "peerbrush",
+    "name": "PeerBrush",
+    "url": "https://peerbrush.com",
+    "affiliateUrl": null,
+    "category": "design",
+    "useCases": [
+      "design",
+      "agents"
+    ],
+    "pricing": "open-source",
+    "verdict": "Free, open-source (GPL v3) desktop painting and layered raster editor (Rust) for Windows, macOS and Linux where a connected AI agent can edit the same document as you via MCP, with each edit marked by who made it and agents able to reserve a layer or region. GitHub Deftr0y/PeerBrush has about 12 stars and the domain is only about a month old, so treat it as an early, actively developed project (v0.30.1, Microsoft Store build). It passed our read-only safety check (GPL source on GitHub, signed macOS build, no payments). Not yet a Photoshop replacement.",
+    "useThisIf": "you paint or edit images and want to try an editor built so you and an AI agent can work on the same layers at once.",
+    "alternatives": [
+      "krea",
+      "comfyui",
+      "artcraft"
+    ],
+    "source": "submission",
+    "addedAt": "2026-11-09",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/peerbrush.png"
   }
 ]

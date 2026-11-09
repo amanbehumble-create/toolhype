@@ -1,0 +1,116 @@
+{
+ "week": "2026-w45",
+ "computedAt": "2026-11-06T01:20:03.932Z",
+ "rows": [
+  {
+   "slug": "chatgpt",
+   "name": "ChatGPT",
+   "score": 67,
+   "mentions7d": 237365,
+   "mentions24h": 38934,
+   "velocity": 1.18,
+   "label": "steady",
+   "verdict": "The default general assistant; strong all-rounder with a huge plugin and GPT ecosystem.",
+   "why": "237,365 X posts in 7 days (38934 in the last 24h, 1.18x velocity); top post by @gaoyy9 got 239 likes."
+  },
+  {
+   "slug": "kimi",
+   "name": "Kimi",
+   "score": 67,
+   "mentions7d": 7710,
+   "mentions24h": 1992,
+   "velocity": 2.09,
+   "label": "hype",
+   "verdict": "Moonshot AI's assistant, now running Kimi K3.1 Pro (released Oct 23, 2026): a 2.8T-parameter open-weight MoE with a 1M-token context, strong at long coding sessions, agent tasks and 3D/Blender work at a low cost per task. Use it free in the Kimi web/app or via Kimi Code and the API. ~11k X posts in a week; claims of matching top US models still need independent checks.",
+   "why": "7,710 X posts in 7 days (1992 in the last 24h, 2.09x velocity); top post by @teortaxesTex got 287 likes."
+  },
+  {
+   "slug": "1in8b",
+   "name": "80億分の1 (1 in 8 Billion)",
+   "score": 66,
+   "mentions7d": 2602,
+   "mentions24h": 810,
+   "velocity": 2.71,
+   "label": "hype",
+   "verdict": "A free browser life simulator. You are born as a random baby somewhere on Earth and live one whole life (30-90 min), driven by real UN, World Bank and WHO stats for 172 countries.",
+   "why": "2,602 X posts in 7 days (810 in the last 24h, 2.71x velocity); top post by @tannsannenn got 134 likes."
+  },
+  {
+   "slug": "claude-haiku-5-5",
+   "name": "Claude Haiku 5.5",
+   "score": 64,
+   "mentions7d": 1927,
+   "mentions24h": 507,
+   "velocity": 2.14,
+   "label": "hype",
+   "verdict": "Anthropic's fastest small model, pitched for high-volume tasks and coding subagents.",
+   "why": "1,927 X posts in 7 days (507 in the last 24h, 2.14x velocity); top post by @xsmryze got 1,619 likes."
+  },
+  {
+   "slug": "claude",
+   "name": "Claude",
+   "score": 64,
+   "mentions7d": 61759,
+   "mentions24h": 8620,
+   "velocity": 0.97,
+   "label": "steady",
+   "verdict": "Excellent for long documents, writing and careful coding help.",
+   "why": "61,759 X posts in 7 days (8620 in the last 24h, 0.97x velocity); top post by @Mohiniuni got 122 likes."
+  },
+  {
+   "slug": "canva",
+   "name": "Canva",
+   "score": 64,
+   "mentions7d": 73023,
+   "mentions24h": 11686,
+   "velocity": 1.14,
+   "label": "steady",
+   "verdict": "Design for everyone with Magic Studio AI features.",
+   "why": "73,023 X posts in 7 days (11686 in the last 24h, 1.14x velocity)."
+  },
+  {
+   "slug": "claude-code",
+   "name": "Claude Code",
+   "score": 62,
+   "mentions7d": 92815,
+   "mentions24h": 14079,
+   "velocity": 1.07,
+   "label": "steady",
+   "verdict": "Terminal-based coding agent that edits and runs your repo.",
+   "why": "92,815 X posts in 7 days (14079 in the last 24h, 1.07x velocity)."
+  },
+  {
+   "slug": "notion",
+   "name": "Notion",
+   "score": 62,
+   "mentions7d": 7662,
+   "mentions24h": 1971,
+   "velocity": 2.08,
+   "label": "hype",
+   "verdict": "All-in-one workspace with Notion AI for docs and Q&A.",
+   "why": "7,662 X posts in 7 days (1971 in the last 24h, 2.08x velocity)."
+  },
+  {
+   "slug": "base44",
+   "name": "Base44",
+   "score": 62,
+   "mentions7d": 3454,
+   "mentions24h": 871,
+   "velocity": 2.02,
+   "label": "hype",
+   "verdict": "No-code AI app builder (owned by Wix): describe an app in plain English and get a working web app with database, login and hosting built in.",
+   "why": "3,454 X posts in 7 days (871 in the last 24h, 2.02x velocity)."
+  },
+  {
+   "slug": "perplexity",
+   "name": "Perplexity",
+   "score": 59,
+   "mentions7d": 8280,
+   "mentions24h": 1532,
+   "velocity": 1.36,
+   "label": "rising",
+   "verdict": "Answer engine with citations; fast research instead of ten blue links.",
+   "why": "8,280 X posts in 7 days (1532 in the last 24h, 1.36x velocity)."
+  }
+ ]
+}

@@ -992,6 +992,93 @@
           "likesAsOf": "2026-11-02 HKT"
         }
       ]
+    },
+    {
+      "n": 6,
+      "slug": "issue-6",
+      "title": "Prompt Drop #6: 7 AI prompts X actually loved (100+ likes each)",
+      "date": "2026-11-09",
+      "intro": "Every prompt here comes from an X post with at least 100 likes, and we checked each like count on X ourselves. All are from the last week and easy for beginners: copy one, swap the [brackets] for your own details, paste it into the AI, done.",
+      "rule": "Only prompts from X posts with 100+ likes (checked with X data). The prompt text appears word for word in the post or in the author's own thread.",
+      "prompts": [
+        {
+          "title": "Paper cut-out storybook character",
+          "category": "Image",
+          "tool": "Any image AI (ChatGPT / Gemini / Midjourney / Grok)",
+          "prompt": "Paper cut-out animation of a [subject] [simple action], full-body character, layered paper shapes, handmade paper texture, visible cut edges, soft shadows between layers, flat colorful paper tones, slightly imperfect handcrafted details, minimal paper-collage scenery, charming folk story aesthetic, gentle stop-motion feel, poetic children’s book atmosphere, clean white background",
+          "why": "Fill in two blanks, e.g. 'a fox' + 'reading a book'. 'Visible cut edges' and 'soft shadows between layers' sell the handmade paper look.",
+          "source": "https://x.com/azed_ai/status/2117209128850563445",
+          "author": "@azed_ai",
+          "likes": 140,
+          "likesAsOf": "Nov 3, 2026 HKT"
+        },
+        {
+          "title": "Cinematic 3D fantasy character",
+          "category": "Image",
+          "tool": "Any image AI (ChatGPT / Gemini / Midjourney / Grok)",
+          "prompt": "A cinematic 3D full-body render of [fantasy character], wearing [armor design] assembled from salvaged robotic parts, [facial features], [hairstyle], carrying [weapon], distressed fabrics, corroded metal plating, exposed mechanisms, intricate mechanical details, battle-worn appearance, realistic PBR textures, stylized realism, dramatic studio lighting, Unreal Engine 5 quality, clean white background",
+          "why": "Fill the five blanks (e.g. an elf knight, a samurai helmet, a long bow). The material words like corroded metal and PBR textures are what make it look like a game render instead of a cartoon.",
+          "source": "https://x.com/azed_ai/status/2117572559399170451",
+          "author": "@azed_ai",
+          "likes": 118,
+          "likesAsOf": "Nov 4, 2026 HKT"
+        },
+        {
+          "title": "Expressive ink wash painting",
+          "category": "Image",
+          "tool": "Any image AI (ChatGPT / Gemini / Midjourney / Grok)",
+          "prompt": "An expressive traditional ink wash painting of [subject], featuring [distinctive details], [pose or action], flowing black ink, delicate gray washes, organic brushstrokes, dramatic ink bleeding, subtle watercolor diffusion, textured rice paper, minimalist composition, elegant negative space, traditional sumi-e aesthetics, handcrafted artistic imperfections, clean white background",
+          "why": "Fill [subject], details and pose. 'Ink bleeding' + 'sumi-e' keep it painterly; 'clean white background' stops busy scenery from eating the brushwork.",
+          "source": "https://x.com/azed_ai/status/2117934163030614318",
+          "author": "@azed_ai",
+          "likes": 166,
+          "likesAsOf": "Nov 5, 2026 HKT"
+        },
+        {
+          "title": "60-second animated explainer in one HTML file",
+          "category": "Coding",
+          "tool": "Claude (Opus 5.5)",
+          "prompt": "<context>I want a 60-second animated explainer about [TOPIC] to post on X and LinkedIn. I have no editing software and no animation skills.</context>\n<task>Write a short script and shot list first: 8 to 12 shots, with what's on screen, the on-screen text and the timing for each. Then build the whole video as one HTML file with three.js, with every shot animated, smooth transitions and background music and sound effects made with the Web Audio API.</task>\n<rules>Keep on-screen text to 8 words or fewer per shot so it reads on a phone. Use one colour palette and one font throughout so it looks like a brand film. Make it 1080x1080 so it fits every feed.</rules>\n<output>One HTML file that plays the full video when opened, with a Record button that saves it as a video file I can upload.</output>\n<input>[TOPIC]</input>",
+          "why": "Swap [TOPIC] for your product or idea. Paste into Claude Opus 5.5 — you get a playable HTML explainer with no editing apps.",
+          "source": "https://x.com/alex_prompter/status/2118373033413132706",
+          "author": "@alex_prompter",
+          "likes": 794,
+          "likesAsOf": "Nov 6, 2026 HKT"
+        },
+        {
+          "title": "Reimagine a page with imagegen, then implement it",
+          "category": "Coding",
+          "tool": "Codex (Sol/Astra) or Claude Code",
+          "prompt": "Use imagegen to reimagine this page, then implement it.",
+          "why": "Point your coding agent at a page (or paste a screenshot). Imagegen drafts the look first, then the agent builds it — short enough to try in one chat.",
+          "source": "https://x.com/Voxyz_ai/status/2118327475294097710",
+          "author": "@Voxyz_ai",
+          "likes": 535,
+          "likesAsOf": "Nov 6, 2026 HKT"
+        },
+        {
+          "title": "Attention audit for your posts and offers",
+          "category": "Productivity",
+          "tool": "ChatGPT / Claude / Grok / Gemini",
+          "prompt": "Adopt the role of a growth auditor who has watched talented people with great products earn nothing because nobody saw them. You judge a business by who knows about it, not by how good it is. You also know an AI's default is to polish the product and ignore distribution, which is how good work stays invisible.\n\nYour mission: find out how much attention my work actually captures today and where it leaks. Koe writes: \"Getting a million views on one tweet or reel is useless if the rest of your posts get a thousand views a pop.\" Before any output, think step by step: who sees my work, how often, and what they do next.\n\n---\n\nPHASE 1: The Evidence\n\nGive me three things:\n\nWhat you sell or want to sell, in one sentence.\nYour last 20 posts with their views.\nWhere your last 5 customers or opportunities came from.\n\n→ Type \"continue\"\n\nPHASE 2: The Reach Gap\n\nThe difference between my best post and my typical post, and what that says about my brand versus my content.\n\n→ Type \"continue\"\n\nPHASE 3: The Leaks\n\nWhere attention arrives and dies: no follow-up, no offer, no reason to come back. I name each leak.\n\n→ Type \"continue\"\n\nPHASE 4: The Fix\n\nThe one change to my posting this month that turns one-off views into people who come back.\n\n→ Type \"complete\" for your attention audit.",
+          "why": "Paste real post stats when it asks. Type continue between phases. Ends with one concrete posting fix instead of a vague growth pep talk.",
+          "source": "https://x.com/alex_prompter/status/2117893361046786169",
+          "author": "@alex_prompter",
+          "likes": 612,
+          "likesAsOf": "Nov 6, 2026 HKT"
+        },
+        {
+          "title": "Brand interview that builds your intellectual signature",
+          "category": "Writing",
+          "tool": "ChatGPT / Claude / Grok / Gemini",
+          "prompt": "Adopt the role of a brand strategist who refuses to write a word for a client until the onboarding interview is done. You've seen hundreds of founders post generic content because nobody ever asked them the right questions. You also know an AI's default is to invent a brand from a job title, which is how everyone ends up sounding the same.\n\nYour mission: interview me and build the brand document every future draft will start from. Koe writes: \"Almost nobody accounts for brand strategy.\" Before any output, think step by step: who I help, what I've lived through, what I believe that others don't.\n\n---\n\nPHASE 1: The Reader\n\nGive me three things:\n\nOne real person you want to help, described in detail.\nWhat they say when they complain to a friend, in their words.\nWhat they've already tried that didn't work.\n\n→ Type \"continue\"\n\nPHASE 2: The Story\n\nAsk me, one question at a time, about the moment things changed for me and what I've built, tried and failed at.\n\n→ Type \"continue\"\n\nPHASE 3: The Beliefs\n\nWhat I believe that most people in my space don't, the advice I think is wrong, and the way of living I want to help people escape.\n\n→ Type \"continue\"\n\nPHASE 4: The Document\n\nMy full brand document on one page, using only my answers.\n\n→ Type \"complete\" for your brand document.",
+          "why": "Answer honestly through the four phases. You get a one-page brand doc from your words — reuse it before every draft so the AI stops inventing a generic founder voice.",
+          "source": "https://x.com/alex_prompter/status/2117893361046786169",
+          "author": "@alex_prompter",
+          "likes": 612,
+          "likesAsOf": "Nov 6, 2026 HKT"
+        }
+      ]
     }
   ]
 }

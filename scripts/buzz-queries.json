@@ -215,5 +215,10 @@
   "rerun": "(rerun.build OR url:rerun.build OR (\"Rerun\" (coworkers OR \"AI coworkers\" OR self-host)) OR @ClementJanssens) -is:retweet",
   "living-brain": "(\"Living Brain\" OR livingbrain.com OR url:livingbrain.com OR ChatAndBuild living) -is:retweet",
   "rainbrand": "(rainbrand OR url:rainbrand.com OR \"Rainbrand\") -is:retweet",
-  "hallmark": "(usehallmark OR Nutlope hallmark OR \"hallmark\" (skill OR \"anti-slop\" OR \"AI slop\") OR url:usehallmark.com) -is:retweet"
+  "hallmark": "(usehallmark OR Nutlope hallmark OR \"hallmark\" (skill OR \"anti-slop\" OR \"AI slop\") OR url:usehallmark.com) -is:retweet",
+  "astryx": "(url:astryx.atmeta.com OR \"meta/astryx\" OR \"astryx design\" OR (astryx (meta OR \"design system\" OR react))) -is:retweet",
+  "agent-browser": "(url:agent-browser.dev OR \"vercel-labs/agent-browser\" OR \"agent-browser\" (\"ai agent\" OR cli OR vercel OR browser)) -is:retweet",
+  "iart": "(url:iart.ai OR \"iart.ai\" OR (iart \"motion graphics\")) -is:retweet",
+  "influ": "(url:influ.site OR \"influ.site\" OR (influ (\"fashion creators\" OR \"fashion influencers\"))) -is:retweet",
+  "peerbrush": "(peerbrush OR \"peer brush\" OR url:peerbrush.com OR \"Deftr0y/PeerBrush\") -is:retweet"
 }

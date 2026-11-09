@@ -1,8 +1,9 @@
 ---
+import { crumbsLd } from '../lib/ld';
 import Base from '../layouts/Base.astro'; import Shell from '../components/Shell.astro'; import ShareBar from '../components/ShareBar.astro';
 const stripe = import.meta.env.PUBLIC_STRIPE_FEATURED_LINK;
 ---
-<Base title="Submit a tool / Get featured" description="List your AI tool on toolhype for free, or get a featured spot in front of builders and marketers.">
+<Base title="Submit a tool / Get featured" description="List your AI tool on toolhype for free, or get a featured spot in front of builders and marketers." jsonld={[crumbsLd([['Home', '/'], ['Submit a tool', '/submit']]), {'@context': 'https://schema.org', '@type': 'WebPage', name: 'Submit a tool to toolhype', description: 'List your AI tool on toolhype for free, or get a featured spot in front of builders and marketers.', url: `https://toolhype.dev/submit`, isPartOf: {'@type': 'WebSite', name: 'toolhype', url: 'https://toolhype.dev'}}]}>
 <Shell><div class="prose"><h1>Submit your tool</h1>
 <div class="sharecta" data-track-zone="submit-share"><span class="muted">Know a maker who should be listed? Send them the free submit page.</span><ShareBar path="/submit" text="Built an AI tool? Submit it free to toolhype.dev, the AI tools directory ranked by buzz on X 🚀" track="submit-page" label="Share the submit page" /></div>
 <style>.sharecta{display:flex;gap:.6rem 1rem;flex-wrap:wrap;align-items:center;justify-content:space-between;margin:.2rem 0 1rem}.sharecta .muted{font-size:.9rem}#subshare{margin-top:.8rem;padding:.8rem 1rem;border:1px solid var(--line,rgba(127,127,127,.3));border-radius:14px}#subshare[hidden]{display:none}#subshare p{margin:0 0 .5rem}</style>

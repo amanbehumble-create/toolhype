@@ -1,0 +1,29 @@
+{
+  "_note": "Staging pool for the next newsletter issue (#7, week of Nov 9 2026). Not rendered on the site; move into src/data/prompts.json as issue-7 once it has ~8+ prompts. Rule: X posts with 100+ likes, prompt text word for word in the post. Skipped on purpose: prompts that recreate real celebrities or copyrighted film characters, and prompts that only live in replies or images. Reddit RSS/JSON returned 403/429 on Nov 10, so no Reddit sources yet.",
+  "n": 7,
+  "slug": "issue-7",
+  "prompts": [
+    {
+      "title": "Notion-style black-and-white character illustration",
+      "category": "Image",
+      "tool": "Any image AI (ChatGPT / Gemini / Midjourney / Grok)",
+      "prompt": "A minimalist black-and-white editorial illustration of [subject], wearing [outfit], [performing action], with [facial expression], expressive body language, clean hand-drawn outlines, simplified geometric shapes, https://t.co/XI5kCuIeCH",
+      "why": "Fill in the four brackets (who, what they wear, what they are doing, their face) and you get the clean doodle look Notion uses on its pages. Good for blog headers, slides and profile pics.",
+      "source": "https://x.com/azed_ai/status/2119746593574580396",
+      "author": "@azed_ai",
+      "likes": 138,
+      "likesAsOf": "Nov 10, 2026 HKT"
+    },
+    {
+      "title": "30-second domino chain-reaction spectacle (video)",
+      "category": "Video",
+      "tool": "Seedance 2.5 or any text-to-video AI with audio",
+      "prompt": "Create a completely original 30-second ultra-photorealistic cinematic spectacle featuring an enormous city-wide domino experiment during a beautiful sunny afternoon.\n\nSTORY: A young engineer attempts to activate the world's largest domino chain reaction, but one unexpected object changes the entire experiment.\n\nSCENE 1 (0–5s):\nA huge public plaza is filled with thousands of colorful oversized domino blocks arranged across streets, stairs, fountains and specially designed platforms. A young engineer named Leo stands beside a control table.\n\nLEO: \"Ladies and gentlemen, today we're breaking a world record!\"\nREPORTER: \"How long did it take to build all this?\"\nLEO: \"Six months. And hopefully only thirty seconds to destroy it!\"\n\nSCENE 2 (5–10s):\nThe reporter approaches the starting domino. A large crowd watches with excitement.\n\nREPORTER: \"Are you absolutely sure this will work?\"\nLEO: \"Every single block has been checked. Let's begin!\"\n\nSCENE 3 (10–15s):\nLeo gently pushes the first giant domino. Thousands of blocks begin falling in a spectacular sequence through the plaza. The camera follows the chain reaction through different angles.\n\nCROWD: \"WOW!\"\nREPORTER: \"Look at that! It's actually working!\"\n\nSCENE 4 (15–20s):\nThe domino chain reaches a large fountain. One final block hits a specially designed lever, activating a hidden mechanical platform. Suddenly, a gigantic colorful inflatable ball rises into the air.\n\nLEO: \"Wait! That wasn't part of the plan!\"\nREPORTER: \"What did you just activate?\"\n\nSCENE 5 (20–25s):\nThe giant inflatable ball rolls down a ramp and accidentally knocks over another line of enormous domino blocks. The chain reaction continues across the plaza.\n\nLEO: \"Oh no! There's another sequence!\"\nREPORTER: \"You planned two records in one day?\"\n\nSCENE 6 (25–30s):\nThe final domino hits a giant button. Hundreds of colorful water fountains activate simultaneously, creating a spectacular synchronized water display. The entire crowd cheers.\n\nLEO: \"Okay... I'll admit that was better than my original plan!\"\nREPORTER: \"That's the best accident I've ever witnessed!\"\n\nEnd with a breathtaking aerial view of the colorful plaza and synchronized fountains.\n\nVISUAL QUALITY: Photorealistic large-scale engineering spectacle, bright natural daylight, detailed colorful domino blocks, physically accurate collisions, realistic object momentum, water simulations, dynamic cinematic camera movements, 4K.\n\nAUDIO: Natural English conversations, accurate lip-sync, excited crowd reactions, domino impacts, rolling ball sounds, mechanical lever clicks, fountain water, cheering and energetic original orchestral music. Sound effects must synchronize precisely with every falling block.\n\nIMPORTANT: Maintain continuous physical domino motion with believable collision physics. Original installation design, original characters and story. No existing movie references, no copyrighted characters, no narration, no subtitles, no cartoon appearance.",
+      "why": "A full shot-by-shot script: six 5-second scenes with dialogue, then separate VISUAL QUALITY and AUDIO blocks. Copy the structure and swap the story to script your own short video.",
+      "source": "https://x.com/Strength04_X/status/2119679079112978723",
+      "author": "@Strength04_X",
+      "likes": 149,
+      "likesAsOf": "Nov 10, 2026 HKT"
+    }
+  ]
+}

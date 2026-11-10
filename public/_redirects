@@ -1,3 +1,4 @@
+/agents /grok-bot-agents 301
 /grok-bot-agents/research-agent /grok-bot-agents 301
 /grok-bot-agents/spam-call-scrubber /grok-bot-agents 301
 /grok-bot-agents/junk-mail-scrubber /grok-bot-agents 301

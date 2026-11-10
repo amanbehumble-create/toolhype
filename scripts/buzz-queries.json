@@ -220,5 +220,13 @@
   "agent-browser": "(url:agent-browser.dev OR \"vercel-labs/agent-browser\" OR \"agent-browser\" (\"ai agent\" OR cli OR vercel OR browser)) -is:retweet",
   "iart": "(url:iart.ai OR \"iart.ai\" OR (iart \"motion graphics\")) -is:retweet",
   "influ": "(url:influ.site OR \"influ.site\" OR (influ (\"fashion creators\" OR \"fashion influencers\"))) -is:retweet",
-  "peerbrush": "(peerbrush OR \"peer brush\" OR url:peerbrush.com OR \"Deftr0y/PeerBrush\") -is:retweet"
+  "peerbrush": "(peerbrush OR \"peer brush\" OR url:peerbrush.com OR \"Deftr0y/PeerBrush\") -is:retweet",
+  "spacefast": "(url:spacefast.com OR \"spacefast.com\" OR @SpacefastHQ OR (spacefast (automattic OR deploy OR hosting OR agent OR claude OR chatgpt))) -is:retweet",
+  "gbrain": "(url:gbrain.io OR \"garrytan/gbrain\" OR \"gbrain.io\" OR (gbrain (garry OR agent OR memory OR hermes OR openclaw OR mcp))) -is:retweet",
+  "expo-exact": "(\"expo/exact\" OR (exact (expo OR @expo OR cheever) (rust OR native OR contract OR agent OR framework))) -is:retweet",
+  "kolect": "(url:kolect.ai OR \"kolect.ai\" OR (kolect (creator OR creators OR influencer OR tiktok))) -is:retweet",
+  "pomelu": "(url:royan.se OR \"ateymoori/pomelu\" OR (pomelu (hermes OR agent OR app OR android))) -is:retweet",
+  "orano": "(url:oranoai.com OR oranoai OR @oranoai OR (orano (reels OR \"saved videos\" OR \"ai app\" OR summaries))) -is:retweet",
+  "pdfeditor-ae": "(url:pdfeditor.ae OR \"pdfeditor.ae\") -is:retweet",
+  "pawline": "(url:pawline.inc OR \"pawline.inc\" OR (pawline (pet OR pets OR vet OR app))) -is:retweet"
 }

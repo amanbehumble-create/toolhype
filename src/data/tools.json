@@ -5900,7 +5900,7 @@
       "pudding",
       "claude"
     ],
-    "source": "product-hunt",
+    "source": "producthunt",
     "addedAt": "2026-11-06",
     "featured": false,
     "buzz": {
@@ -5929,7 +5929,7 @@
       "the-brains",
       "context-mode"
     ],
-    "source": "product-hunt",
+    "source": "producthunt",
     "addedAt": "2026-11-06",
     "featured": false,
     "buzz": {
@@ -5959,7 +5959,7 @@
       "impeccable",
       "audience-analysis"
     ],
-    "source": "product-hunt",
+    "source": "producthunt",
     "addedAt": "2026-11-06",
     "featured": false,
     "buzz": {
@@ -6142,5 +6142,235 @@
       "updatedAt": null
     },
     "logo": "/logos/peerbrush.png"
+  },
+  {
+    "slug": "spacefast",
+    "name": "Spacefast",
+    "url": "https://spacefast.com",
+    "affiliateUrl": null,
+    "category": "coding",
+    "useCases": [
+      "coding",
+      "agents"
+    ],
+    "pricing": "freemium",
+    "verdict": "Hosting for whatever your AI builds: connect it to ChatGPT, Claude, Cursor, Codex or other agents (official plugins, MCP server, API, or `npx spacefast publish`) and the agent can publish a static site or web app with a MySQL database, custom domain and a permanent URL for every version, with rollbacks. New company spun out of Automattic (WordPress.com, Tumblr) and opened to everyone on Nov 9, 2026. Free Personal plan with $1 of usage a month and no card; Go $5/mo and Pro $15/mo add usage, backups and team seats. Built-in app login is still 'coming soon', and it is a host, not a builder: your own AI still writes the code.",
+    "useThisIf": "your AI already built you a site or small app and you want it online with a database and a link, without learning hosting.",
+    "alternatives": [
+      "lovable",
+      "replit",
+      "base44"
+    ],
+    "source": "x",
+    "addedAt": "2026-11-10",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/spacefast.png"
+  },
+  {
+    "slug": "gbrain",
+    "name": "GBrain",
+    "url": "https://github.com/garrytan/gbrain",
+    "affiliateUrl": null,
+    "category": "agents",
+    "useCases": [
+      "agents",
+      "productivity"
+    ],
+    "pricing": "open-source",
+    "verdict": "Garry Tan's MIT-licensed memory layer for the agent you already use: it stores facts with their sources, lets you correct or withdraw them, and serves the same memory to Codex, Claude Code, Hermes, OpenClaw and other MCP clients. Starts keyless with keyword search; semantic search and background enrichment are optional add-ons. GitHub garrytan/gbrain has about 32K stars and was on GitHub Trending on Nov 10, 2026; gbrain.io is optional paid hosting. Self-hosting is a developer setup (CLI, MCP, Tailscale for remote access), and its opinions are one person's workflow.",
+    "useThisIf": "you run your own coding or personal agent and want one memory you control that carries across all of them.",
+    "alternatives": [
+      "living-brain",
+      "claude-mem",
+      "the-brains"
+    ],
+    "source": "github",
+    "addedAt": "2026-11-10",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/gbrain.png"
+  },
+  {
+    "slug": "expo-exact",
+    "name": "Exact (by Expo)",
+    "url": "https://github.com/expo/exact",
+    "affiliateUrl": null,
+    "category": "coding",
+    "useCases": [
+      "coding",
+      "agents"
+    ],
+    "pricing": "open-source",
+    "verdict": "Expo's new MIT-licensed cross-platform app runtime written in Rust: you describe the UI in a small declarative language called Contract and the same app runs natively on web, macOS, iOS and Linux, with an agent driver so a coding agent can build, run, screenshot and test it on each platform. Previewed by Expo co-founder Charlie Cheever on Nov 9, 2026; the repo (expo/exact, ~900 stars) was created Nov 2. Pre-alpha: needs a Mac with Xcode, Rust and Bun, first native builds take ~13 minutes, and it sits alongside React Native rather than replacing it.",
+    "useThisIf": "you are a developer curious about agent-built native apps and happy to test pre-alpha tooling.",
+    "alternatives": [
+      "claude-code",
+      "codex",
+      "lovable"
+    ],
+    "source": "x",
+    "addedAt": "2026-11-10",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/expo-exact.png"
+  },
+  {
+    "slug": "kolect",
+    "name": "Kolect",
+    "url": "https://www.kolect.ai",
+    "affiliateUrl": null,
+    "category": "marketing",
+    "useCases": [
+      "marketing"
+    ],
+    "pricing": "freemium",
+    "verdict": "Creator-marketing platform for ecommerce brands and agencies: search 300M+ TikTok, Instagram and YouTube creators in plain English, get lookalike shortlists, and vet them with free fake-follower, engagement-rate and influencer-rate calculators plus a Chrome extension. It also mines Reddit for product pain points and builds brand reports on competitors in search and AI answers. Hong Kong-based, domain since Dec 2024, claims 150+ brands including a SHEIN case study (vendor-reported). Free tools to start; paid plans and credit packs for search, plus a done-for-you managed tier. Submitted by the team; passed our read-only safety check (HTTPS, privacy/terms, real contact).",
+    "useThisIf": "you run influencer campaigns for a product brand and want to find and vet creators faster than scrolling profiles.",
+    "alternatives": [
+      "influ",
+      "audience-analysis",
+      "reso-ai"
+    ],
+    "source": "submission",
+    "addedAt": "2026-11-10",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/kolect.png"
+  },
+  {
+    "slug": "pomelu",
+    "name": "Pomelu",
+    "url": "https://royan.se/pomelu",
+    "affiliateUrl": null,
+    "category": "agents",
+    "useCases": [
+      "agents",
+      "productivity"
+    ],
+    "pricing": "open-source",
+    "verdict": "Free, open-source (Apache-2.0) Flutter phone app for chatting with your own self-hosted Hermes Agent gateway: replies stream as Markdown, and voice notes, file uploads and tool approvals work in the chat. No Pomelu server, account or tracking; it talks only to your gateway. Android 10+ on Google Play or as a checksummed APK on GitHub (ateymoori/pomelu, ~8 stars, v1.0.4 on Nov 2, 2026); iOS listed as coming. An unofficial app by Swedish company Royan AB, clearly marked as not affiliated with Nous Research. Passed our read-only safety check. Useless unless you already run Hermes Agent.",
+    "useThisIf": "you already self-host Hermes Agent and want to talk to it from your phone.",
+    "alternatives": [
+      "openbot",
+      "claude-duet",
+      "manus"
+    ],
+    "source": "submission",
+    "addedAt": "2026-11-10",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/pomelu.png"
+  },
+  {
+    "slug": "orano",
+    "name": "ORANO",
+    "url": "https://oranoai.com",
+    "affiliateUrl": null,
+    "category": "productivity",
+    "useCases": [
+      "productivity",
+      "agents"
+    ],
+    "pricing": "freemium",
+    "verdict": "Share a saved Reel, TikTok, YouTube video, article or PDF and ORANO watches the visuals, transcribes the speech and reads on-screen text, then hands back a summary, key takeaways and next steps in a searchable library. iPhone, iPad and Android apps (App Store listing since Jul 2026, no ratings yet) plus a web app; an optional MCP connection ($5/month) lets your own AI agent search and add to the library. Free to download with an optional in-app Pro subscription. Submitted by the team; passed our read-only safety check (HTTPS, privacy and terms, domain since Jul 2026). New and unproven: summaries are only as good as the video.",
+    "useThisIf": "you save dozens of how-to videos and never go back to them.",
+    "alternatives": [
+      "perplexity",
+      "notion",
+      "glimpse"
+    ],
+    "source": "submission",
+    "addedAt": "2026-11-10",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/orano.png"
+  },
+  {
+    "slug": "pdfeditor-ae",
+    "name": "PDFEditor.ae",
+    "url": "https://www.pdfeditor.ae/tool/ai-summary",
+    "affiliateUrl": null,
+    "category": "productivity",
+    "useCases": [
+      "productivity"
+    ],
+    "pricing": "freemium",
+    "verdict": "UAE-built browser PDF toolkit whose AI tool lets you summarise a PDF or ask questions about it in Arabic or English, with each answer linked to the source page; scanned pages are OCR'd on your device and only the text of the pages you pick is sent to the AI after you agree. Also edits, signs, merges and converts PDFs. Free for 3 tasks a day without sign-up (files deleted after 24h); Pro AED 35/month or AED 19/month billed yearly. Submitted by the team; passed our read-only safety check (HTTPS, privacy page, contact form). No published terms page we could find, and AI answers still need checking against the page.",
+    "useThisIf": "you need to read or check a long Arabic or English PDF and want answers you can trace back to the page.",
+    "alternatives": [
+      "perplexity",
+      "fileaify",
+      "notion"
+    ],
+    "source": "submission",
+    "addedAt": "2026-11-10",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/pdfeditor-ae.png"
+  },
+  {
+    "slug": "pawline",
+    "name": "PawLine",
+    "url": "https://www.pawline.inc",
+    "affiliateUrl": null,
+    "category": "productivity",
+    "useCases": [
+      "productivity",
+      "chat"
+    ],
+    "pricing": "freemium",
+    "verdict": "AI pet-care companion for pets and livestock: pet profiles, medication reminders, daily health notes and an assistant for animal-care questions, plus vet and pet-place discovery and health-record sharing on iPhone and iPad (also a web app). By Pawline LLC; on the App Store since Feb 2026 with a 5.0 rating from about 36 ratings. Free to download with subscription options in the app. Submitted by the team; passed our read-only safety check (HTTPS, privacy and terms, support email). It gives guidance, not a diagnosis: for anything urgent, call a vet.",
+    "useThisIf": "you juggle medications and health notes for several pets or animals and want them in one place with quick answers.",
+    "alternatives": [
+      "chatgpt",
+      "claude",
+      "perplexity"
+    ],
+    "source": "submission",
+    "addedAt": "2026-11-10",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/pawline.png"
   }
 ]

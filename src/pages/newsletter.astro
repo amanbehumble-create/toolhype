@@ -1,8 +1,13 @@
 ---
 import { crumbsLd } from '../lib/ld';
+import { getIssues } from '../lib/prompts';
 import Base from '../layouts/Base.astro'; import Shell from '../components/Shell.astro'; import Subscribe from '../components/Subscribe.astro';
+const issues = getIssues();
+const DESC = 'A free weekly email with the new AI tools worth trying (from Product Hunt, GitHub and X) plus copy-paste AI prompts X loved. Read every past Prompt Drop issue free.';
 ---
-<Base title="The weekly drop newsletter" description="A free weekly email with the new AI tools worth trying, from Product Hunt, GitHub and X." jsonld={[crumbsLd([['Home', '/'], ['The weekly drop newsletter', '/newsletter']]), {'@context': 'https://schema.org', '@type': 'WebPage', name: 'The weekly drop newsletter', description: 'A free weekly email with the new AI tools worth trying, from Product Hunt, GitHub and X.', url: `https://toolhype.dev/newsletter`, isPartOf: {'@type': 'WebSite', name: 'toolhype', url: 'https://toolhype.dev'}}]}>
+<Base title="The weekly drop newsletter" description={DESC} jsonld={[crumbsLd([['Home', '/'], ['The weekly drop newsletter', '/newsletter']]), {'@context': 'https://schema.org', '@type': 'WebPage', name: 'The weekly drop newsletter', description: DESC, url: `https://toolhype.dev/newsletter`, isPartOf: {'@type': 'WebSite', name: 'toolhype', url: 'https://toolhype.dev'}, hasPart: issues.map((i) => ({ '@type': 'CreativeWork', name: i.title, url: `https://toolhype.dev/prompts/${i.slug}`, datePublished: i.date }))}]}>
 <Shell><div class="prose"><h1>The weekly drop</h1><p>Every week: the new AI tools and software worth your time, what people on X are saying about them, and one useful stack tip. Free, takes 3 minutes to read.</p>
 <div class="card"><h2>Join free</h2><Subscribe place="newsletter-page" /></div>
+<h2>Past issues</h2><p class="muted">Each issue's copy-paste prompts are free to read on the site, with a link to the original X post.</p>
+<ul>{issues.map((i) => <li><a href={`/prompts/${i.slug}`}>{i.title}</a> <span class="muted">({i.date})</span></li>)}</ul>
 <h2>Sample issue</h2><p class="muted">See <a href="/new">New this week</a>. Each issue is built from that page.</p></div></Shell></Base>

@@ -504,7 +504,7 @@
   {
     "slug": "gemini-4-argon",
     "name": "Gemini 4 Argon",
-    "url": "https://deepmind.google/models/gemini/",
+    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
     "affiliateUrl": null,
     "category": "chat",
     "useCases": [
@@ -512,11 +512,12 @@
       "coding"
     ],
     "pricing": "paid",
-    "verdict": "Google DeepMind's frontier model for hard science, coding and long-horizon work, available to Google AI Pro and Ultra subscribers.",
-    "useThisIf": "you pay for Google AI Pro or Ultra and want the newest Gemini for long tasks.",
+    "verdict": "Google DeepMind frontier model for deep, real-world work in coding, finance, legal, cybersecurity and science, released in Oct 2026 with a 1M-token combined input/output limit in the Gemini API. In the Gemini app and AI Mode in Search for Google AI Pro and Ultra subscribers, in Antigravity for Ultra, and on the paid Gemini API tier at an introductory $2 in / $10 out per million tokens (cached input 95% off) until Nov 30, 2026, then $4 / $20. Its successor Gemini 4 Carbon (Nov 10) scores higher on long tasks but is Ultra-only in the app, so Argon is still the strongest Gemini on the Pro plan.",
+    "useThisIf": "you pay for Google AI Pro and want the strongest Gemini you can use without moving up to Ultra.",
     "alternatives": [
-      "gemini",
-      "claude"
+      "gemini-4-carbon",
+      "claude-fable-5-2",
+      "gemini"
     ],
     "source": "hackernews",
     "addedAt": "2026-10-17",
@@ -2329,6 +2330,7 @@
     "verdict": "Meta open-weight release of its Muse Spark model: an 816B mixture-of-experts with 42B active params, billed as the most capable US open-weight model to date.",
     "useThisIf": "you want a frontier-class open model to self-host for agentic work, for example on an M5 Ultra Mac Studio.",
     "alternatives": [
+      "muse-ember",
       "nemotron",
       "chatgpt"
     ],
@@ -6372,5 +6374,240 @@
       "updatedAt": null
     },
     "logo": "/logos/pawline.png"
+  },
+  {
+    "slug": "claude-fable-5-2",
+    "name": "Claude Fable 5.2",
+    "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+    "affiliateUrl": null,
+    "category": "chat",
+    "useCases": [
+      "chat",
+      "coding",
+      "agents"
+    ],
+    "pricing": "paid (in Claude Pro/Max)",
+    "verdict": "Anthropic's upgrade to its top model for hard technical work, released Nov 9, 2026. Anthropic says it beats Fable 5.1 on coding, reasoning and vision, runs up to 30% faster and is cheaper on the API ($8 in / $40 out per million tokens, model id claude-fable-5-2), with an optional fast mode. Its launch examples include designing working electronics and helping solve two open black-hole physics problems. Fable is the safeguarded version available to all users; the same model without those cyber/bio limits (Mythos 5.2) is gated behind verification programs. On Pro plans Fable counts toward up to 50% of weekly usage, so heavy use still means Max or the API. The benchmark claims are Anthropic's own.",
+    "useThisIf": "you have a big coding, research or finance task that smaller models keep fumbling and you already pay for Claude.",
+    "alternatives": [
+      "claude",
+      "gemini-4-carbon",
+      "chatgpt"
+    ],
+    "source": "x",
+    "addedAt": "2026-11-11",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/claude-fable-5-2.png"
+  },
+  {
+    "slug": "gemini-4-carbon",
+    "name": "Gemini 4 Carbon",
+    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+    "affiliateUrl": null,
+    "category": "chat",
+    "useCases": [
+      "chat",
+      "coding",
+      "agents"
+    ],
+    "pricing": "paid",
+    "verdict": "Google's new frontier model, rolled out Nov 10, 2026, a few weeks after Gemini 4 Argon. Built for long, multi-step work in software engineering, cybersecurity and science; Google reports leading scores on security benchmarks such as SEC-bench Pro (88.2%). Available in the Gemini API and AI Studio (model gemini-4-carbon) at an introductory $2 in / $10 out per million tokens, rising to $4 / $20 later, and to Google AI Ultra subscribers in the Gemini app, AI Mode in Search and Antigravity. Not on the cheaper consumer plans yet, and the benchmark numbers are Google's own.",
+    "useThisIf": "you build on the Gemini API or pay for Google AI Ultra and want the strongest Gemini for long coding or security tasks.",
+    "alternatives": [
+      "gemini-4-argon",
+      "claude-fable-5-2",
+      "gemini"
+    ],
+    "source": "x",
+    "addedAt": "2026-11-11",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/gemini-4-carbon.png"
+  },
+  {
+    "slug": "muse-ember",
+    "name": "Muse Ember",
+    "url": "https://research.meta.ai/blog/muse-ember",
+    "affiliateUrl": null,
+    "category": "agents",
+    "useCases": [
+      "agents",
+      "coding",
+      "chat"
+    ],
+    "pricing": "paid",
+    "verdict": "Meta's smallest and cheapest model, released Nov 9, 2026: built for the repetitive work agents do all day (tool calls in sequence, routing, test runs, small code fixes) with a 1M-token context window and up to 512K output tokens. $0.10 in / $0.50 out per million tokens on the Meta Model API (muse-ember-1.0), also in Muse Code, Google Cloud, OpenRouter and OpenCode. Artificial Analysis puts it about level with Claude Haiku 5.5 at roughly a third of the cost per task. A small model: use it for high-volume steps, not your hardest reasoning.",
+    "useThisIf": "you run agents or pipelines that make thousands of small calls and want to cut the bill.",
+    "alternatives": [
+      "claude-haiku-5-5",
+      "muse-spark",
+      "gemini"
+    ],
+    "source": "x",
+    "addedAt": "2026-11-11",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/muse-ember.png"
+  },
+  {
+    "slug": "muxflow",
+    "name": "Muxflow",
+    "url": "https://github.com/gal064/muxflow",
+    "affiliateUrl": null,
+    "category": "coding",
+    "useCases": [
+      "coding",
+      "agents"
+    ],
+    "pricing": "open-source",
+    "verdict": "Open-source (MIT) desktop and Android app that turns tmux into an IDE for coding agents: sessions live on your machine or a remote host over your normal SSH config, and you get pings on desktop or phone when Claude Code, Codex or pi finishes or is stuck on a question. You can reply by voice, paste screenshots into a remote pane, browse and edit files, commit with Git and forward ports. Linux and Apple Silicon Mac builds plus an Android APK (sideloaded, not on Google Play). Solo-developer project started Sep 2026, about 46 GitHub stars and near-daily releases (v0.1.31 on Nov 9). Submitted by the developer; passed our read-only safety check (official GitHub releases with SHA256 checksums, MIT license). Early and moving fast, so expect rough edges.",
+    "useThisIf": "you leave coding agents running on a server and want to know the moment one needs you, even away from your desk.",
+    "alternatives": [
+      "orca",
+      "termy",
+      "worktrunk"
+    ],
+    "source": "submission",
+    "addedAt": "2026-11-11",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/muxflow.png"
+  },
+  {
+    "slug": "akii-seo-optimizer",
+    "name": "Akii SEO & AI Search Optimizer",
+    "url": "https://github.com/akii-technologies-ltd/akii-seo-ai-search-optimizer",
+    "affiliateUrl": null,
+    "category": "marketing",
+    "useCases": [
+      "marketing",
+      "coding"
+    ],
+    "pricing": "open-source",
+    "verdict": "Free, MIT-licensed Claude Code plugin (12 skills, 5 agents, 3 commands) that audits a site for SEO, checks links, plans content and keywords, writes JSON-LD and llms.txt, and estimates how visible a brand is in ChatGPT, Gemini, Perplexity and Google AI Overviews. It runs on your own Claude Code session, so it uses your Claude usage. By Akii Technologies (Austria), about 80 GitHub stars. Submitted by the team; passed our read-only safety check (HTTPS, privacy and terms, readable source). Know before installing: it sends a small anonymous telemetry ping once a day and adds 'powered by Akii' links to its outputs; both can be turned off with env vars documented in the README. The AI-visibility numbers are estimates, not data from the engines.",
+    "useThisIf": "you already use Claude Code and want a quick SEO and AI-search checkup on your site without paying for an SEO suite.",
+    "alternatives": [
+      "openseo",
+      "dedica",
+      "claude-code"
+    ],
+    "source": "submission",
+    "addedAt": "2026-11-11",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/akii-seo-optimizer.png"
+  },
+  {
+    "slug": "agentseo",
+    "name": "AgentSEO",
+    "url": "https://www.agentseo.dev",
+    "affiliateUrl": null,
+    "category": "marketing",
+    "useCases": [
+      "marketing",
+      "agents",
+      "coding"
+    ],
+    "pricing": "freemium",
+    "verdict": "SEO research API built for AI agents: keyword ideas and clustering, competitor and backlink data, SERP and rank tracking, content gaps and briefs, and tracking of brand mentions in AI answers, served as compact JSON through REST, a hosted MCP server and SDKs (guides for Claude Desktop, Codex, n8n, OpenClaw). Free Hobby tier with 100 one-time credits and no card; Starter $9/month (2,000 credits), Pro $49, Agency $149, with hard caps instead of overage bills. Run by Joy Technologies LLC (Wyoming). Submitted by the team; passed our read-only safety check (HTTPS, privacy and terms, team email). Launched in 2026, so data depth versus Semrush or Ahrefs is unproven.",
+    "useThisIf": "you are building an agent or n8n flow that needs keyword and ranking data without scraping Google yourself.",
+    "alternatives": [
+      "openseo",
+      "treg",
+      "akii-seo-optimizer"
+    ],
+    "source": "submission",
+    "addedAt": "2026-11-11",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/agentseo.png"
+  },
+  {
+    "slug": "posthut",
+    "name": "PostHut",
+    "url": "https://posthut.app",
+    "affiliateUrl": null,
+    "category": "marketing",
+    "useCases": [
+      "marketing",
+      "writing"
+    ],
+    "pricing": "paid",
+    "verdict": "Write a post once from a rough idea, have AI rewrite it in your own voice (it learns from your past writing), tweak it per network and publish or schedule to X, LinkedIn, Instagram, TikTok, Facebook and Reddit from one composer, with a calendar and per-post analytics. In English, Spanish and Portuguese. No free plan: €5 a month per connected account (€50 a year), with a 7-day trial that needs a card. Run by an independent developer in Madrid (Pere Gregori, trading as Posthut). Submitted by the maker; passed our read-only safety check (HTTPS, privacy and terms, support email). New in 2026 and small, so check that it supports the exact post types you need before paying.",
+    "useThisIf": "you post the same idea to several networks every week and want one place to write, adapt and schedule it.",
+    "alternatives": [
+      "riffwise",
+      "justblogged",
+      "chatgpt"
+    ],
+    "source": "submission",
+    "addedAt": "2026-11-11",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/posthut.png"
+  },
+  {
+    "slug": "redstone-markets",
+    "name": "Redstone",
+    "url": "https://redstonemarkets.com",
+    "affiliateUrl": null,
+    "category": "productivity",
+    "useCases": [
+      "productivity"
+    ],
+    "pricing": "freemium",
+    "verdict": "Free return and risk analytics for US stocks and ETFs (about 2,900 stocks and 1,200 ETFs, per the team): total returns with dividends reinvested, Sharpe, drawdown, beta and other risk metrics, side-by-side comparisons, backtests, screeners and ranking pages, all browsable without an account. Build and optimize your own portfolios or clone model ones; on the free Starter plan (5 portfolios) every portfolio you make is public, Plus $15/month and Pro $50/month add more portfolios, optimizations and private ones. It is analytics on past data, not trading signals, and says clearly it is not investment advice. Submitted by the team; passed our read-only safety check (HTTPS, privacy and terms, support email, domain since Dec 2024).",
+    "useThisIf": "you want to compare a few ETFs or test a portfolio mix on real historical returns before you invest.",
+    "alternatives": [
+      "perplexity",
+      "chatgpt",
+      "gemini"
+    ],
+    "source": "submission",
+    "addedAt": "2026-11-11",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/redstone-markets.png"
   }
 ]

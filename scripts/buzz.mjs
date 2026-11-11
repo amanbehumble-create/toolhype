@@ -33,7 +33,7 @@ for (const [slug, query] of Object.entries(queries)) {
   const daily = Array.from({ length: 7 }, (_, k) => buckets.filter((b) => {
     const t = new Date(b.end).getTime(); return t > end - (7 - k) * 864e5 && t <= end - (6 - k) * 864e5; }).reduce((a, b) => a + b.tweet_count, 0));
   // engagement sample
-  let sample = 0, likes = 0, reposts = 0, replies = 0, top = [];
+  let sample = 0, likes = 0, reposts = 0, replies = 0, top = [], sampleAsOf = now.toISOString();
   const pf = `${rawDir}/${slug}.posts.txt`;
   // <slug>.extra.txt: optional get_posts_by_ids result for known posts that match the query (e.g. a viral post the
   // relevancy sample missed). Merged into the sample and de-duplicated by id.
@@ -47,6 +47,13 @@ for (const [slug, query] of Object.entries(queries)) {
     sample = posts.length;
     for (const x of posts) { likes += x.likes; reposts += x.reposts; replies += x.replies; }
     top = selectTop(slug, query, [...posts, ...((prev.tools[slug] || {}).topPosts || [])], now); // high-engagement + relevant only (docs/buzz-top-posts.md)
+  } else if (prev.tools[slug]?.sample && prev.tools[slug].query === query) {
+    // Counts-only refresh: no new post sample was fetched, so keep the last engagement sample and its top posts
+    // (still age-filtered by selectTop) instead of zeroing engagement and dropping the score ~10-15 points.
+    const ps = prev.tools[slug];
+    ({ posts: sample, likes, reposts, replies } = ps.sample);
+    top = selectTop(slug, query, ps.topPosts || [], now);
+    sampleAsOf = ps.sampleAsOf || ps.computedAt;
   }
   const eng = likes + 3 * reposts + 2 * replies + top.reduce((a, b) => a + b.quotes, 0) * 2;
   // Score: volume (0-50) + velocity spike (0-25) + engagement (0-25)
@@ -60,7 +67,7 @@ for (const [slug, query] of Object.entries(queries)) {
   const label = (velocity >= 2 && m24 >= 20) || viral ? 'hype' : velocity >= 1.3 && m24 >= 5 ? 'rising' : m7 >= 50 ? 'steady' : 'quiet';
   tools[slug] = { status: 'live', query, mentions24h: m24, mentions7d: m7, priorDailyAvg: +priorAvg.toFixed(1), velocity, daily, peakDay, peakDaysAgo: 6 - peakIdx,
     sample: { posts: sample, likes, reposts, replies }, parts: { volume: +vol.toFixed(1), velocity: +vel.toFixed(1), engagement: +en.toFixed(1) },
-    score, label, viral, topPosts: top, computedAt: now.toISOString() };
+    score, label, viral, topPosts: top, sampleAsOf, computedAt: now.toISOString() };
 }
 fs.writeFileSync(outFile, JSON.stringify({ computedAt: now.toISOString(), method: 'v1', tools }, null, 1));
 const live = Object.entries(tools).filter(([, t]) => t.status === 'live').sort((a, b) => b[1].score - a[1].score);

@@ -17,7 +17,7 @@
  "orkas": "https://orkas.ai",
  "wemotion": "https://wemotion.ai",
  "batchrate": "https://batchrate.ai",
- "gemini-4-argon": "https://deepmind.google/models/gemini/",
+ "gemini-4-argon": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
  "muse-wonder": "https://research.meta.ai/blog/muse-wonder",
  "glm-legal": "https://z.ai/blog/glm-legal",
  "artcraft": "https://getartcraft.com",
@@ -228,5 +228,13 @@
  "pomelu": "https://royan.se/pomelu",
  "orano": "https://oranoai.com",
  "pdfeditor-ae": "https://www.pdfeditor.ae/tool/ai-summary",
- "pawline": "https://www.pawline.inc"
+ "pawline": "https://www.pawline.inc",
+ "claude-fable-5-2": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+ "gemini-4-carbon": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+ "muse-ember": "https://research.meta.ai/blog/muse-ember",
+ "muxflow": "https://github.com/gal064/muxflow",
+ "akii-seo-optimizer": "https://github.com/akii-technologies-ltd/akii-seo-ai-search-optimizer",
+ "agentseo": "https://www.agentseo.dev",
+ "posthut": "https://posthut.app",
+ "redstone-markets": "https://redstonemarkets.com"
 }

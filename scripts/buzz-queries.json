@@ -228,5 +228,13 @@
   "pomelu": "(url:royan.se OR \"ateymoori/pomelu\" OR (pomelu (hermes OR agent OR app OR android))) -is:retweet",
   "orano": "(url:oranoai.com OR oranoai OR @oranoai OR (orano (reels OR \"saved videos\" OR \"ai app\" OR summaries))) -is:retweet",
   "pdfeditor-ae": "(url:pdfeditor.ae OR \"pdfeditor.ae\") -is:retweet",
-  "pawline": "(url:pawline.inc OR \"pawline.inc\" OR (pawline (pet OR pets OR vet OR app))) -is:retweet"
+  "pawline": "(url:pawline.inc OR \"pawline.inc\" OR (pawline (pet OR pets OR vet OR app))) -is:retweet",
+  "claude-fable-5-2": "(\"fable 5.2\" OR \"claude-fable-5-2\" OR \"claude fable\") -is:retweet",
+  "gemini-4-carbon": "(\"gemini 4 carbon\" OR \"gemini-4-carbon\" OR \"gemini carbon\") -is:retweet",
+  "muse-ember": "(\"muse ember\" OR \"muse-ember\") -is:retweet",
+  "muxflow": "(muxflow OR \"gal064/muxflow\") -is:retweet",
+  "akii-seo-optimizer": "(\"akii-seo-ai-search-optimizer\" OR \"akii seo\" OR url:akii.com OR \"akii-technologies-ltd\") -is:retweet",
+  "agentseo": "(agentseo OR url:agentseo.dev OR \"agentseo.dev\") -is:retweet",
+  "posthut": "(posthut OR url:posthut.app OR \"posthut.app\") -is:retweet",
+  "redstone-markets": "(url:redstonemarkets.com OR \"redstonemarkets.com\" OR @redstonemarkets) -is:retweet"
 }

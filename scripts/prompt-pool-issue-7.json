@@ -1,5 +1,5 @@
 {
-  "_note": "Staging pool for the next newsletter issue (#7, week of Nov 9 2026). Not rendered on the site; move into src/data/prompts.json as issue-7 once it has ~8+ prompts. Rule: X posts with 100+ likes, prompt text word for word in the post. Skipped on purpose: prompts that recreate real celebrities or copyrighted film characters, and prompts that only live in replies or images. Reddit RSS/JSON returned 403/429 on Nov 10, so no Reddit sources yet.",
+  "_note": "Staging pool for the next newsletter issue (#7, week of Nov 9 2026). Not rendered on the site; move into src/data/prompts.json as issue-7 once it has ~8+ prompts. Rule: X posts with 100+ likes, prompt text word for word in the post. Skipped on purpose: prompts that recreate real celebrities or copyrighted film characters, and prompts that only live in replies or images. Reddit RSS/JSON returned 403/429 on Nov 10, so no Reddit sources yet. Nov 11 run: 1 new prompt (AlexFinn, 108 likes). Skipped: crypto trading-bot \"paste this before bed\" posts (unsafe), prompts that only live in image alt text, and posts under 100 likes. Reddit JSON still 403; the r/ChatGPTPromptGenius handoff-note prompt was readable but has no X post with 100+ likes, so it is not eligible under the rules.",
   "n": 7,
   "slug": "issue-7",
   "prompts": [
@@ -24,6 +24,17 @@
       "author": "@Strength04_X",
       "likes": 149,
       "likesAsOf": "Nov 10, 2026 HKT"
+    },
+    {
+      "title": "Ask your AI how to lighten your mental load",
+      "category": "Productivity",
+      "tool": "Any AI assistant or agent that remembers you (ChatGPT, Claude, Grok, Gemini)",
+      "prompt": "My goal for working with you is to lighten my cognitive load. I want to get more work done, but with less effort on my part. Based on what you know about me and what we do together, what are some things we can do, systems we can implement, subagents we can build, or routines we can create to accomplish this goal?",
+      "why": "Instead of asking for one task, you ask the AI to look back at everything it knows about you and suggest routines and automations. Works best in an assistant with memory or past chats; in a fresh chat, first tell it what your week looks like.",
+      "source": "https://x.com/AlexFinn/status/2120316818132984120",
+      "author": "@AlexFinn",
+      "likes": 108,
+      "likesAsOf": "Nov 11, 2026 HKT"
     }
   ]
 }

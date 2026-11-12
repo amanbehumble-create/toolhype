@@ -1521,6 +1521,7 @@
     "verdict": "Fair-code workflow automation with AI agent nodes; self-hostable.",
     "useThisIf": "you want Zapier-style automations you control.",
     "alternatives": [
+      "nod",
       "zapier",
       "make"
     ],
@@ -1951,10 +1952,11 @@
       "audio"
     ],
     "pricing": "freemium",
-    "verdict": "Generate full songs with vocals from a prompt.",
-    "useThisIf": "you need music or jingles fast.",
+    "verdict": "Make full songs with vocals and lyrics from a text prompt, in the browser or the iOS and Android apps. The newest model is v6 (fuller vocals, tighter arrangements), and beyond one-shot songs you can remix, split stems, sing with your own recorded voice and train custom models on your recordings; Premier adds Suno Studio, a browser DAW with MIDI and effects. Free gives 50 credits a day on the free models, but no song downloads, no commercial rights and no stem separation. Pro is $10/mo ($8 billed yearly) for 2,500 credits, 20 downloads a month and commercial use; Premier is $30/mo ($24 yearly) for 10,000 credits and 60 downloads. Subscription credits do not roll over. Read the commercial-use terms before releasing songs, and don't prompt for real artists' voices.",
+    "useThisIf": "you want a catchy song, jingle or demo in minutes without playing an instrument, and you are fine paying $10/mo once you need downloads or commercial use.",
     "alternatives": [
-      "elevenlabs"
+      "elevenlabs",
+      "freemusictools"
     ],
     "source": "seed",
     "addedAt": "2023-12-20",
@@ -6609,5 +6611,179 @@
       "updatedAt": null
     },
     "logo": "/logos/redstone-markets.png"
+  },
+  {
+    "slug": "minimax-h3-image",
+    "name": "MiniMax H3-Image",
+    "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3-Image",
+    "affiliateUrl": null,
+    "category": "design",
+    "useCases": [
+      "design",
+      "marketing"
+    ],
+    "pricing": "open-weight",
+    "verdict": "MiniMax's open-weight image generation and editing model, released Nov 10, 2026. One checkpoint does text-to-image and editing with up to 16 reference images, at about 16-megapixel (4K-class) output; MiniMax says a 4K image takes around 10 seconds. The weights are on Hugging Face under MiniMax's own community license (not Apache/MIT, and some uses need separate written permission), and the diffusion transformer alone is 33.1B parameters, so self-hosting means a data-center GPU such as an H200 or RTX PRO 6000. Easier routes: the MiniMax API, Hailuo AI and MiniMax Code, with 50% off 16MP+ images during launch week. Its launch post passed 4,700 likes on X. The speed and quality claims are MiniMax's own.",
+    "useThisIf": "you make product shots, ad creative or posters and want a strong open model you can run yourself or call cheaply by API.",
+    "alternatives": [
+      "midjourney",
+      "ideogram",
+      "krea"
+    ],
+    "source": "x",
+    "addedAt": "2026-11-12",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/minimax-h3-image.png"
+  },
+  {
+    "slug": "scribe-v3",
+    "name": "ElevenLabs Scribe v3",
+    "url": "https://elevenlabs.io/blog/scribe-v3",
+    "affiliateUrl": null,
+    "category": "audio",
+    "useCases": [
+      "audio",
+      "productivity"
+    ],
+    "pricing": "paid (ElevenLabs plans / API)",
+    "verdict": "ElevenLabs' new speech-to-text models, launched Nov 10, 2026: Scribe v3 for recorded audio and Scribe v3 Live for realtime (ElevenLabs quotes a median latency of about 150 ms). ElevenLabs says v3 makes 27% fewer word errors than Scribe v2 across 102 languages, and Live makes 43% fewer errors than v2 Realtime and now labels who said what. New controls include up to 1,000 keyterms (names, jargon), plain-English formatting rules and digits-vs-words for numbers. It is now the default in the ElevenLabs app and is on the API as scribe_v3 / scribe_v3_live, with Zero Retention Mode and EU/India/Singapore data residency for enterprise. The accuracy figures are ElevenLabs' own benchmarks.",
+    "useThisIf": "you transcribe meetings, interviews or calls with several speakers and background noise, or build a voice agent.",
+    "alternatives": [
+      "elevenlabs",
+      "granola",
+      "wispr-flow"
+    ],
+    "source": "producthunt",
+    "addedAt": "2026-11-12",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/scribe-v3.png"
+  },
+  {
+    "slug": "nod",
+    "name": "Nod by n8n",
+    "url": "https://nod.n8n.io/",
+    "affiliateUrl": null,
+    "category": "agents",
+    "useCases": [
+      "agents",
+      "productivity"
+    ],
+    "pricing": "open-source",
+    "verdict": "Open-source (Apache 2.0) personal agent from n8n Labs, launched Nov 11, 2026 as a research preview. It runs on your own Mac (macOS 14+), Windows 11 (preview) or server, with its own browser, and does errands across Gmail, Slack, Notion, Drive, Calendar and real websites: call briefs, chasing invoices, cancelling trials, watching a page for changes. Free; you bring the model (OpenAI, Anthropic, Google, OpenRouter, your ChatGPT Plus/Pro plan, or a local model via Ollama or LM Studio) and it shows estimated model costs. It checks each action against your rules and asks before it sends, pays or cancels. n8n reports 98% task completion on 226 test errands with GPT-6.1 Sol; those are its own tests. You do not need n8n to use it. Giving any agent your logins is a real risk, so start with low-stakes accounts.",
+    "useThisIf": "you want a self-hosted assistant that does web errands for you and asks before it acts.",
+    "alternatives": [
+      "manus",
+      "n8n",
+      "agent-desktop"
+    ],
+    "source": "x",
+    "addedAt": "2026-11-12",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/nod.png"
+  },
+  {
+    "slug": "kite",
+    "name": "Kite",
+    "url": "https://kite.new/",
+    "affiliateUrl": null,
+    "category": "design",
+    "useCases": [
+      "design",
+      "coding",
+      "agents"
+    ],
+    "pricing": "freemium",
+    "verdict": "Agent-first design canvas where you and your AI agents edit the same design: screens, sites and brand assets stored as one HTML/CSS file. Connect Claude, ChatGPT, Cursor, Codex or any MCP client through its hosted MCP with no API key to copy; Kite runs no model of its own, so you use the agent plan you already pay for. Agents read your design system (variables, components, written rules) before they draw. Supports components, variants, variable modes and Figma paste both ways. Web app plus Mac and Windows apps (v0.1.18). Free plan: 3 files and 200 agent actions a day; Pro $20 per editor a month ($16 yearly); Team $35. Small, new team (domain registered Jan 2026). Submitted by the maker; passed our read-only safety check (HTTPS, privacy and terms, installers served from its own download domain, real contact).",
+    "useThisIf": "you already design with Claude or Cursor and want them to work on a real canvas that follows your design system.",
+    "alternatives": [
+      "figma",
+      "magic-patterns",
+      "v0"
+    ],
+    "source": "submission",
+    "addedAt": "2026-11-12",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/kite.png"
+  },
+  {
+    "slug": "compare-two-lists",
+    "name": "Compare Two Lists",
+    "url": "https://comparetwolists.net/",
+    "affiliateUrl": null,
+    "category": "productivity",
+    "useCases": [
+      "productivity"
+    ],
+    "pricing": "free",
+    "verdict": "Small free browser tool: paste two lists or import TXT, CSV or Excel (up to about 100,000 rows a list), and it shows what is only in A, only in B, in both, and the duplicates, with options to trim spaces and ignore case. Lists are compared in your browser tab, with no sign-up. Includes guides for Excel, Google Sheets and Instagram follower exports. Not an AI tool, just a handy one; run by one independent maintainer. Submitted by the maker; passed our read-only safety check (HTTPS, privacy and terms, real contact, no ads or wallet prompts).",
+    "useThisIf": "you need to diff two email lists, SKUs or follower exports quickly without writing a spreadsheet formula.",
+    "alternatives": [
+      "notion",
+      "fileaify"
+    ],
+    "source": "submission",
+    "addedAt": "2026-11-12",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/compare-two-lists.png"
+  },
+  {
+    "slug": "contentrocket",
+    "name": "ContentRocket",
+    "url": "https://contentrocket.io/en/",
+    "affiliateUrl": null,
+    "category": "marketing",
+    "useCases": [
+      "marketing",
+      "video",
+      "writing"
+    ],
+    "pricing": "paid",
+    "verdict": "Done-for-you content service from the Dutch agency Brixxs, not a self-serve app: each month they produce SEO articles, a YouTube video and a short per topic with AI, a specialist in the Netherlands reviews it, you approve it in their app, and they publish it to WordPress and YouTube. From €129 a month excl. VAT for 5 sets, cancel monthly; €219 for 10 and €319 for 15. Mainly for Dutch small businesses (site and pricing are Dutch-first). They say plainly that they cannot guarantee Google rankings or ChatGPT citations. Submitted by the agency; passed our read-only safety check (domain since 2022, privacy and terms, real company contact).",
+    "useThisIf": "you run a small business, have no time to write, and want a steady stream of articles and videos someone else checks and posts.",
+    "alternatives": [
+      "jasper",
+      "justblogged",
+      "opusclip"
+    ],
+    "source": "submission",
+    "addedAt": "2026-11-12",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/contentrocket.png"
   }
 ]

@@ -1,5 +1,5 @@
 {
-  "_note": "Staging pool for the next newsletter issue (#7, week of Nov 9 2026). Not rendered on the site; move into src/data/prompts.json as issue-7 once it has ~8+ prompts. Rule: X posts with 100+ likes, prompt text word for word in the post. Skipped on purpose: prompts that recreate real celebrities or copyrighted film characters, and prompts that only live in replies or images. Reddit RSS/JSON returned 403/429 on Nov 10, so no Reddit sources yet. Nov 11 run: 1 new prompt (AlexFinn, 108 likes). Skipped: crypto trading-bot \"paste this before bed\" posts (unsafe), prompts that only live in image alt text, and posts under 100 likes. Reddit JSON still 403; the r/ChatGPTPromptGenius handoff-note prompt was readable but has no X post with 100+ likes, so it is not eligible under the rules.",
+  "_note": "Staging pool for the next newsletter issue (#7, week of Nov 9 2026). Not rendered on the site; move into src/data/prompts.json as issue-7 once it has ~8+ prompts. Rule: X posts with 100+ likes, prompt text word for word in the post. Skipped on purpose: prompts that recreate real celebrities or copyrighted film characters, and prompts that only live in replies or images. Reddit RSS/JSON returned 403/429 on Nov 10, so no Reddit sources yet. Nov 11 run: 1 new prompt (AlexFinn, 108 likes). Skipped: crypto trading-bot \"paste this before bed\" posts (unsafe), prompts that only live in image alt text, and posts under 100 likes. Reddit JSON still 403; the r/ChatGPTPromptGenius handoff-note prompt was readable but has no X post with 100+ likes, so it is not eligible under the rules. Nov 12 run: 1 new prompt (@LearnWithBishal, 149 likes; prompt is in the author's own first reply). Updated @AlexFinn likes (now 1,028). Skipped: a second Strength04_X 30-second video script (same template as the domino prompt already here), a 'next-gen open-world crime game' hurricane prompt (leans on GTA's look), and posts whose prompt is only in an image. Reddit JSON still 403 (RSS readable now, but Reddit posts need a 100+ like X post to qualify).",
   "n": 7,
   "slug": "issue-7",
   "prompts": [
@@ -33,8 +33,20 @@
       "why": "Instead of asking for one task, you ask the AI to look back at everything it knows about you and suggest routines and automations. Works best in an assistant with memory or past chats; in a fresh chat, first tell it what your week looks like.",
       "source": "https://x.com/AlexFinn/status/2120316818132984120",
       "author": "@AlexFinn",
-      "likes": 108,
-      "likesAsOf": "Nov 11, 2026 HKT"
+      "likes": 1028,
+      "likesAsOf": "Nov 12, 2026 HKT"
+    },
+    {
+      "title": "Industrial robotic hand with blueprint drawings",
+      "category": "Image",
+      "tool": "MiniMax H3-Image or any image AI (ChatGPT / Gemini / Midjourney / Grok)",
+      "prompt": "I want to create a realistic industrial robotic hand, the kind you'd see in an actual engineering lab. Give it a rugged yellow-and-black metal body, detailed mechanical joints, visible bolts and thick black braided cables running through the arm. Show it from a dramatic angle, with a few clean blueprint drawings on the side showing how the fingers and joints are assembled. Keep the background dark and cinematic, with realistic workshop lighting. Make it look like a professionally photographed engineering prototype, not an AI-generated concept. Keep the layout clean and avoid unnecessary details.",
+      "why": "Written in plain sentences, not keyword soup: it says what the object is, what it is made of, the camera angle, the extra blueprint panels, the lighting and the look to avoid. Swap the robotic hand for any product or gadget to get a product-shot-plus-diagram image.",
+      "source": "https://x.com/LearnWithBishal/status/2120472890890236324",
+      "promptSource": "https://x.com/LearnWithBishal/status/2120472895029915713",
+      "author": "@LearnWithBishal",
+      "likes": 149,
+      "likesAsOf": "Nov 12, 2026 HKT"
     }
   ]
 }

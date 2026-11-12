@@ -236,5 +236,11 @@
  "akii-seo-optimizer": "https://github.com/akii-technologies-ltd/akii-seo-ai-search-optimizer",
  "agentseo": "https://www.agentseo.dev",
  "posthut": "https://posthut.app",
- "redstone-markets": "https://redstonemarkets.com"
+ "redstone-markets": "https://redstonemarkets.com",
+ "minimax-h3-image": "https://huggingface.co/MiniMaxAI/MiniMax-H3-Image",
+ "scribe-v3": "https://elevenlabs.io/blog/scribe-v3",
+ "nod": "https://nod.n8n.io/",
+ "kite": "https://kite.new/",
+ "compare-two-lists": "https://comparetwolists.net/",
+ "contentrocket": "https://contentrocket.io/en/"
 }

@@ -236,5 +236,11 @@
   "akii-seo-optimizer": "(\"akii-seo-ai-search-optimizer\" OR \"akii seo\" OR url:akii.com OR \"akii-technologies-ltd\") -is:retweet",
   "agentseo": "(agentseo OR url:agentseo.dev OR \"agentseo.dev\") -is:retweet",
   "posthut": "(posthut OR url:posthut.app OR \"posthut.app\") -is:retweet",
-  "redstone-markets": "(url:redstonemarkets.com OR \"redstonemarkets.com\" OR @redstonemarkets) -is:retweet"
+  "redstone-markets": "(url:redstonemarkets.com OR \"redstonemarkets.com\" OR @redstonemarkets) -is:retweet",
+  "minimax-h3-image": "(\"h3-image\" OR \"h3 image\" OR \"MiniMax-H3-Image\" OR #H3Image) -is:retweet",
+  "scribe-v3": "(((\"scribe v3\" OR \"scribe v3 live\") (elevenlabs OR @ElevenLabs OR transcription OR \"speech to text\" OR stt)) OR \"scribe_v3\" OR \"scribe_v3_live\") -is:retweet",
+  "nod": "((nod (n8n OR @n8n_io) (agent OR \"open source\" OR open-source OR personal)) OR url:nod.n8n.io OR \"nod.n8n.io\" OR \"n8n-io/nod\") -is:retweet",
+  "kite": "(url:kite.new OR \"kite.new\" OR @kitedotnew) -is:retweet",
+  "compare-two-lists": "(url:comparetwolists.net OR comparetwolists) -is:retweet",
+  "contentrocket": "(url:contentrocket.io OR \"contentrocket.io\" OR (contentrocket (seo OR content OR brixxs))) -is:retweet"
 }

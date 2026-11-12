@@ -18,7 +18,7 @@ const ld = [
 ];
 const others = allWeeks().filter((x) => x.week !== h.week);
 ---
-<Base title={`Most hyped AI tools this week (${W}, ${range})`} description={tldr} ogImage="/og/trending.png" jsonld={ld}>
+<Base title={latest ? `Most hyped AI tools this week (${W}, ${range})` : `Most hyped AI tools in ${W} (${range})`} description={tldr} ogImage="/og/trending.png" jsonld={ld}>
 <Shell active="buzz"><article class="card prose">
   <h1>Most hyped AI tools {latest ? 'this week' : `in ${W}`}</h1>
   <p class="muted">{W} · {range} · data updated {hkt(h.computedAt)}{latest && <> · permalink <a href={`/hype/${h.week}`}>/hype/{h.week}</a></>}</p>

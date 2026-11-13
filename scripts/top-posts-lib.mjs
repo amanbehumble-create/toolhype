@@ -43,10 +43,12 @@ function rawKeywords(query) {
   return [...k];
 }
 // now: reference time; posts older than MAX_AGE_DAYS are dropped so carried-over posts don't outlive the 7-day window.
+// X API post text comes HTML-escaped (&amp; &lt; &gt;); Astro escapes again on render, so decode once here.
+export const unescapeX = (s = '') => s.replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&amp;/g, '&');
 export function selectTop(slug, query, posts, now = Date.now()) {
   const kw = keywords(query, slug), ex = EXCLUDE[slug], cutoff = +new Date(now) - MAX_AGE_DAYS * 864e5;
   const seen = new Set();
-  return posts.filter((p) => {
+  return posts.map((p) => p && { ...p, text: unescapeX(p.text) }).filter((p) => {
     if (!p || seen.has(p.id)) return false; seen.add(p.id);
     if (p.created_at && +new Date(p.created_at) < cutoff) return false;
     const t = (p.text || '').toLowerCase();

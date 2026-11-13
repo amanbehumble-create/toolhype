@@ -242,5 +242,11 @@
   "nod": "((nod (n8n OR @n8n_io) (agent OR \"open source\" OR open-source OR personal)) OR url:nod.n8n.io OR \"nod.n8n.io\" OR \"n8n-io/nod\") -is:retweet",
   "kite": "(url:kite.new OR \"kite.new\" OR @kitedotnew) -is:retweet",
   "compare-two-lists": "(url:comparetwolists.net OR comparetwolists) -is:retweet",
-  "contentrocket": "(url:contentrocket.io OR \"contentrocket.io\" OR (contentrocket (seo OR content OR brixxs))) -is:retweet"
+  "contentrocket": "(url:contentrocket.io OR \"contentrocket.io\" OR (contentrocket (seo OR content OR brixxs))) -is:retweet",
+  "world-labs-atlas": "((atlas (\"world labs\" OR worldlabs OR @theworldlabs OR viewfinder OR \"world model\")) OR url:atlas.worldlabs.ai OR \"atlas.worldlabs.ai\") -is:retweet",
+  "taan": "(url:taan.ai OR \"taan.ai\" OR @taan_ai OR \"taan v1\" OR \"taan v1-preview\") -is:retweet",
+  "plurai-simulation": "(plurai OR url:plurai.ai OR \"plurai.ai\") -is:retweet",
+  "look-atlas": "(url:lookatlas.com OR lookatlas OR \"lookatlas.com\") -is:retweet",
+  "keep-or-toss": "(url:kot.apiespresso.com OR \"kot.apiespresso.com\" OR apiespresso OR (\"keep or toss\" (windows OR files OR photos OR app))) -is:retweet",
+  "audioeditdesk": "(url:audioeditdesk.com OR audioeditdesk) -is:retweet"
 }

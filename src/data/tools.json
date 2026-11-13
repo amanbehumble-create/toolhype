@@ -1899,10 +1899,12 @@
       "marketing"
     ],
     "pricing": "freemium",
-    "verdict": "Free-ish short-form editor with AI captions and effects.",
-    "useThisIf": "you make TikToks, Reels and Shorts.",
+    "verdict": "ByteDance's video editor for short-form clips, on phone, desktop and the web. The free plan covers basic editing and free templates, which is why most TikTok, Reels and Shorts creators start here. Paid plans add premium templates and effects, 1 TB of cloud storage and monthly AI credits for the AI features, including video generation with ByteDance's Seedance 2.5 and the cheaper Seedance 2.0 Mini, billed per second of video. CapCut's pricing page lists Pro at US$19.99 (1,200 AI credits a month) and Ultra at US$79 (8,645 credits), with extra credits for sale; it says these are reference prices and your final price depends on your account, region and platform. New users can try Pro free for 7 days without a card. Some templates and effects need Pro, so check before you build a whole edit around one.",
+    "useThisIf": "you make TikToks, Reels or Shorts and want fast captions, trending templates and effects without learning a pro editor.",
     "alternatives": [
-      "descript"
+      "descript",
+      "opusclip",
+      "higgsfield"
     ],
     "source": "seed",
     "addedAt": "2020-04-01",
@@ -6785,5 +6787,175 @@
       "updatedAt": null
     },
     "logo": "/logos/contentrocket.png"
+  },
+  {
+    "slug": "world-labs-atlas",
+    "name": "World Labs Atlas",
+    "url": "https://atlas.worldlabs.ai/",
+    "affiliateUrl": null,
+    "category": "design",
+    "useCases": [
+      "design",
+      "video"
+    ],
+    "pricing": "pricing not published",
+    "verdict": "World Labs' world model, opened to everyone on Nov 12, 2026 after a partner-only preview since September. Two web apps sit on top of it: Viewfinder builds an explorable 3D world from a single image or reconstructs a real place from up to 64 photos, and Chisel lets you block out a scene with simple 3D shapes and style it from a text prompt or reference images, with an agent doing the edits. You export spatially consistent images, camera-path video clips or 3D Gaussian splats, and World Labs also opened the API endpoints behind both apps so your own tools or agents can call them. It is closed and hosted (no weights), you need to sign up, and World Labs has not published Atlas pricing, quotas or commercial-use terms yet, so check them before client work. Its launch post passed 1,400 likes on X.",
+    "useThisIf": "you do previs, game blockouts, VFX backgrounds or architecture mockups and want a walkable 3D scene from a photo or a rough layout.",
+    "alternatives": [
+      "comfyui",
+      "krea",
+      "midjourney"
+    ],
+    "source": "x",
+    "addedAt": "2026-11-13",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/world-labs-atlas.png"
+  },
+  {
+    "slug": "taan",
+    "name": "Taan",
+    "url": "https://taan.ai/",
+    "affiliateUrl": null,
+    "category": "audio",
+    "useCases": [
+      "audio",
+      "video"
+    ],
+    "pricing": "paid",
+    "verdict": "Music model from a Y Combinator startup, launched Nov 12, 2026 as Taan v1-preview, built to score video rather than write pop songs. Upload a video, a script or a reference track (or hum a melody, give it MIDI or name exact notes) and it writes an original track that follows the cuts and your timing notes, like '8 seconds of tension, a 2-second pause, then uplifting'. You can change one instrument or one section without regenerating the whole piece, and download MP3, WAV and separate stems. There is a web app plus an MCP server and API, so Claude Code or Codex can direct the music. The preview only does orchestral and cinematic music. Creator is $15/mo (25 minutes of music, commercial rights) and Agency $45/mo (60 minutes); we did not see a free plan. Its launch post passed 360 likes and 160K views on X.",
+    "useThisIf": "you edit videos or trailers and are tired of rerolling AI music until the drop lands on the cut.",
+    "alternatives": [
+      "suno",
+      "elevenlabs",
+      "freemusictools"
+    ],
+    "source": "x",
+    "addedAt": "2026-11-13",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/taan.png"
+  },
+  {
+    "slug": "plurai-simulation",
+    "name": "Plurai Simulation",
+    "url": "https://plurai.ai/",
+    "affiliateUrl": null,
+    "category": "agents",
+    "useCases": [
+      "agents",
+      "coding"
+    ],
+    "pricing": "freemium",
+    "verdict": "Agent-testing tool from Plurai, launched Nov 11, 2026 and #1 on Product Hunt the next day; the founder's launch post passed 1,000 likes and 1.7M views on X. You run one command inside Claude Code, Codex or GitHub Copilot, and it builds a sandboxed copy of your agent's world from your code: fake users with different personalities, synthetic documents, and mocked tools, APIs and databases that never touch production. The agent runs through those scenarios, and the checks look at what it actually did (did the refund really happen?), not just what it said. Failures come back with the conversation that shows the bug and a suggested fix, and real production failures can be replayed from the step where they broke. Free gives a one-time allowance (2 agent setups, 3 runs, 10 sandbox hours); Base is $60/mo, with pay-as-you-go above that only if you set an overage limit. Plurai's '82% fewer failures' figure is its own.",
+    "useThisIf": "you ship a customer-facing AI agent and want to find its worst bugs before your users do.",
+    "alternatives": [
+      "botgauge",
+      "telemetry-dev"
+    ],
+    "source": "producthunt",
+    "addedAt": "2026-11-13",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/plurai-simulation.png"
+  },
+  {
+    "slug": "look-atlas",
+    "name": "Look Atlas",
+    "url": "https://www.lookatlas.com/",
+    "affiliateUrl": null,
+    "category": "design",
+    "useCases": [
+      "design",
+      "marketing"
+    ],
+    "pricing": "paid",
+    "verdict": "AI product photo studio for fashion and jewelry shops, from the US company NeuraReach LLC. Upload product photos (plus close-ups of stitching, fabric, hardware or stone settings) and its AI art director plans the lighting, styling, pose and framing, then puts the item on AI-generated models or in campaign scenes. It also does ghost-mannequin shots, clothing mockups and short product videos, and paid plans include touch-ups by a human retoucher. The first shoot is free, with 15 watermarked 2K images. Starter is $49/mo for about 40 photos, Pro $99/mo for about 100 photos and 20 human touch-ups, Business $399/mo for unlimited photos and 4K; yearly billing gives 2 months free. There is also a Shopify app. Submitted by the maker; passed our read-only safety check (domain since Oct 2025, privacy, terms and refund policy, real company address and support email).",
+    "useThisIf": "you sell clothes or jewelry online and need on-model catalog and campaign photos without booking a shoot.",
+    "alternatives": [
+      "mirror-mirror-ai",
+      "krea",
+      "canva"
+    ],
+    "source": "submission",
+    "addedAt": "2026-11-13",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/look-atlas.png"
+  },
+  {
+    "slug": "keep-or-toss",
+    "name": "Keep or Toss",
+    "url": "https://kot.apiespresso.com/",
+    "affiliateUrl": null,
+    "category": "productivity",
+    "useCases": [
+      "productivity"
+    ],
+    "pricing": "paid",
+    "verdict": "Small Windows app for clearing a huge backlog of photos, videos, RAW files or PDFs: it shows one file at a time and you press right arrow to keep, left to toss, or a key to send it to one of up to five folders you pick. Nothing is deleted; tossed files go to a hidden .KeepOrToss_deleted folder you empty yourself, files are never overwritten, and every decision can be undone. The next file is preloaded, so a 2,000-file folder takes about an evening. Not AI, and everything stays on your PC with no account. One-time price: $4.99 for one file category, $14.99 for two, $19.99 for all including RAW, with 2 device activations and a 60-day refund through Lemon Squeezy. Windows only for now. Made by a solo developer (API Espresso); the installer is code-signed and served from the maker's own domain. Submitted by the maker; passed our read-only safety check.",
+    "useThisIf": "your Downloads folder or photo drive has thousands of unsorted files and you keep putting off cleaning it.",
+    "alternatives": [
+      "compare-two-lists",
+      "inbox-zero"
+    ],
+    "source": "submission",
+    "addedAt": "2026-11-13",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/keep-or-toss.png"
+  },
+  {
+    "slug": "audioeditdesk",
+    "name": "AudioEditDesk",
+    "url": "https://audioeditdesk.com/",
+    "affiliateUrl": null,
+    "category": "audio",
+    "useCases": [
+      "audio",
+      "productivity"
+    ],
+    "pricing": "free",
+    "verdict": "Free browser audio editor for quick jobs: trim a clip, change the volume, normalize loudness (LUFS), add fades or reverb, make a slowed + reverb version, convert OGG or M4A to MP3, or change the bitrate, then export MP3 or WAV. Your audio is processed in your browser, not uploaded, and you don't need an account. It opens MP3, WAV, M4A and OGG files up to about 500 MB on desktop. It is not a multitrack editor and has no batch processing. The site is in English, Spanish, Portuguese, Japanese and Korean. New site (domain registered Oct 2026). Submitted by the maker; passed our read-only safety check (privacy and terms, contact email, no sign-up or payment).",
+    "useThisIf": "you need to trim or convert one audio file right now without installing Audacity or making an account.",
+    "alternatives": [
+      "elevenlabs",
+      "freemusictools"
+    ],
+    "source": "submission",
+    "addedAt": "2026-11-13",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/audioeditdesk.png"
   }
 ]

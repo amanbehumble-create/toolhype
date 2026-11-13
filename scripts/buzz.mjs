@@ -2,11 +2,13 @@
 // Live X Buzz Score builder.
 // Inputs (fetched by the daily-ops agent via the public X API reads, see scripts/buzz-queries.json):
 //   <rawDir>/<slug>.counts.txt  -> get_posts_counts_recent(query, granularity=hour)  (last 7 days)
+//                                   (granularity=day with end_time at the last UTC midnight also works: then mentions24h is
+//                                   the last full UTC day. Use it when hourly results are too big for the tool output.)
 //   <rawDir>/<slug>.posts.txt   -> search_posts_all(query, sort_order=relevancy, max_results<=25, start_time=now-7d,
 //                                   post.fields=public_metrics,created_at, expansions=author_id, user.fields=username)
 // Output: src/data/buzz.json  (raw inputs + computed score). Usage: node scripts/buzz.mjs [rawDir]
 import fs from 'node:fs';
-import { selectTop } from './top-posts-lib.mjs';
+import { selectTop, unescapeX } from './top-posts-lib.mjs';
 const rawDir = process.argv[2] || '/workspace/buzzraw';
 const queries = JSON.parse(fs.readFileSync(new URL('./buzz-queries.json', import.meta.url)));
 const outFile = new URL('../src/data/buzz.json', import.meta.url);
@@ -17,6 +19,8 @@ const json = (f) => { const s = fs.readFileSync(f, 'utf8'); const i = s.indexOf(
     if (str) { if (esc) esc = false; else if (c === '\\') esc = true; else if (c === '"') str = false; continue; }
     if (c === '"') str = true; else if (c === '{') d++; else if (c === '}' && --d === 0) return JSON.parse(s.slice(i, j + 1)); } };
 
+// Cut post text at a word boundary and mark the cut, instead of stopping mid-word with no ellipsis.
+const clip = (t, n = 220) => (t.length <= n ? t : t.slice(0, n).replace(/\s+\S*$/, '') + '…');
 const now = new Date();
 const tools = {};
 for (const [slug, query] of Object.entries(queries)) {
@@ -42,8 +46,8 @@ for (const [slug, query] of Object.entries(queries)) {
     const ps = [pf, ef].filter((f) => fs.existsSync(f)).map(json);
     const p = { data: [...new Map(ps.flatMap((x) => x.data || []).map((x) => [x.id, x])).values()], includes: { users: ps.flatMap((x) => x.includes?.users || []) } }; const users = Object.fromEntries((p.includes?.users || []).map((u) => [u.id, u.username]));
     const posts = (p.data || []).map((x) => ({ id: x.id, url: x.url || `https://x.com/i/status/${x.id}`, author: users[x.author_id] || null,
-      text: (x.text || '').slice(0, 220), created_at: x.created_at, likes: x.public_metrics?.like_count || 0,
-      reposts: x.public_metrics?.retweet_count || 0, replies: x.public_metrics?.reply_count || 0, views: x.public_metrics?.impression_count ?? null, quotes: x.public_metrics?.quote_count || 0 }));
+      text: clip(x.note_tweet?.text || x.text || ''), created_at: x.created_at, likes: x.public_metrics?.like_count || 0,
+      reposts: x.public_metrics?.retweet_count ?? x.public_metrics?.repost_count ?? 0, replies: x.public_metrics?.reply_count || 0, views: x.public_metrics?.impression_count ?? null, quotes: x.public_metrics?.quote_count || 0 }));
     sample = posts.length;
     for (const x of posts) { likes += x.likes; reposts += x.reposts; replies += x.replies; }
     top = selectTop(slug, query, [...posts, ...((prev.tools[slug] || {}).topPosts || [])], now); // high-engagement + relevant only (docs/buzz-top-posts.md)
@@ -69,6 +73,7 @@ for (const [slug, query] of Object.entries(queries)) {
     sample: { posts: sample, likes, reposts, replies }, parts: { volume: +vol.toFixed(1), velocity: +vel.toFixed(1), engagement: +en.toFixed(1) },
     score, label, viral, topPosts: top, sampleAsOf, computedAt: now.toISOString() };
 }
+for (const t of Object.values(tools)) if (t.topPosts) t.topPosts = t.topPosts.map((x) => ({ ...x, text: unescapeX(x.text) })); // also clean carried-over entries
 fs.writeFileSync(outFile, JSON.stringify({ computedAt: now.toISOString(), method: 'v1', tools }, null, 1));
 const live = Object.entries(tools).filter(([, t]) => t.status === 'live').sort((a, b) => b[1].score - a[1].score);
 for (const [s, t] of live) console.log(s.padEnd(18), t.score, t.label, t.mentions24h, t.mentions7d, t.velocity);

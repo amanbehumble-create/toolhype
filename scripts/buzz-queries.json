@@ -248,5 +248,13 @@
   "plurai-simulation": "(plurai OR url:plurai.ai OR \"plurai.ai\") -is:retweet",
   "look-atlas": "(url:lookatlas.com OR lookatlas OR \"lookatlas.com\") -is:retweet",
   "keep-or-toss": "(url:kot.apiespresso.com OR \"kot.apiespresso.com\" OR apiespresso OR (\"keep or toss\" (windows OR files OR photos OR app))) -is:retweet",
-  "audioeditdesk": "(url:audioeditdesk.com OR audioeditdesk) -is:retweet"
+  "audioeditdesk": "(url:audioeditdesk.com OR audioeditdesk) -is:retweet",
+  "gemini-4-hydrogen": "(\"gemini 4 hydrogen\" OR \"gemini-4-hydrogen\" OR \"gemini hydrogen\" OR #GeminiHydrogen) -is:retweet",
+  "claude-meetings": "(\"claude meetings\" OR (claude (\"google meet\" OR \"meeting participant\") (beta OR anthropic OR @AnthropicAI))) -is:retweet",
+  "rakazo": "(rakazo OR url:rakazo.com OR \"rakazo.com\" OR \"elie222/rakazo\") -is:retweet",
+  "selvedge": "(url:selvedge.sh OR \"selvedge.sh\" OR \"masondelan/selvedge\" OR (selvedge (mcp OR agent OR agents OR \"claude code\" OR codex OR cli))) -is:retweet",
+  "omophub": "(omophub OR url:omophub.com OR \"omophub.com\") -is:retweet",
+  "nowah": "(url:nowah.xyz OR \"nowah.xyz\" OR @nowah OR (nowah (travel OR trip OR flights OR app))) -is:retweet",
+  "bpm-finder": "(url:bpmfinder.io OR \"bpmfinder.io\") -is:retweet",
+  "creepless": "(creepless OR url:creepless.online OR \"creepless.online\") -is:retweet"
 }

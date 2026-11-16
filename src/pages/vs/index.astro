@@ -1,14 +1,33 @@
 ---
 import Base from '../../layouts/Base.astro'; import Shell from '../../components/Shell.astro';
-import { getPairs } from '../../lib/geo'; import { crumbsLd } from '../../lib/ld';
+import { getPairs, type Pair } from '../../lib/geo'; import { crumbsLd, faqLd } from '../../lib/ld'; import { BUZZ_AT, hkt } from '../../lib/data';
+import notes from '../../data/vs-notes.json';
 const pairs = getPairs();
+const N = notes as Record<string, { checked?: string }>;
+// Group pairs by what they're for, so the hub reads like a guide instead of a flat list (category of the first tool).
+const TOPIC: Record<string, string> = { chat: 'AI chatbots and assistants', coding: 'AI coding tools', agents: 'AI agents and automation', design: 'AI design and image tools', video: 'AI video tools', audio: 'AI music and voice tools', productivity: 'Productivity', marketing: 'Marketing' };
+const groups = [...new Set(pairs.map((p) => p.a.category))].map((c) => ({ c, name: TOPIC[c] ?? c, items: pairs.filter((p) => p.a.category === c) }))
+  .sort((x, y) => (Object.keys(TOPIC).indexOf(x.c) + 99) % 99 - (Object.keys(TOPIC).indexOf(y.c) + 99) % 99);
+const sc = (t: Pair['a']) => (t.buzz.status === 'live' ? t.buzz.score ?? 0 : null);
+const lead = (p: Pair) => { const a = sc(p.a), b = sc(p.b); if (a == null || b == null) return null; if (a === b) return `tied on X buzz (${a}/100)`; const [w, l, ws, ls] = a > b ? [p.a, p.b, a, b] : [p.b, p.a, b, a]; return `${w.name} leads on X buzz, ${ws} vs ${ls}`; };
+const gaps = pairs.filter((p) => sc(p.a) != null && sc(p.b) != null).map((p) => ({ p, gap: Math.abs(sc(p.a)! - sc(p.b)!) })).sort((x, y) => y.gap - x.gap);
+const close = [...gaps].reverse().slice(0, 3).map((g) => `${g.p.a.name} vs ${g.p.b.name}`);
+const checked = pairs.filter((p) => N[p.slug]?.checked);
+const faq: [string, string][] = [
+  ['Which AI tool comparisons does toolhype have?', `${pairs.length} side-by-side comparisons, including ${pairs.slice(0, 5).map((p) => `${p.a.name} vs ${p.b.name}`).join(', ')}. Each covers pricing, what each tool is best at, who should pick which, and a live X Buzz Score.`],
+  ['How does toolhype compare AI tools?', `Every page puts both tools in one table (pricing, category, use cases, X buzz) with a plain-English verdict. ${checked.length ? `${checked.length} pages (${checked.map((p) => `${p.a.name} vs ${p.b.name}`).join(', ')}) also have hand-checked pricing notes with the date they were checked.` : ''} Buzz scores come from public X posts and were last updated ${hkt(BUZZ_AT)}.`],
+  ...(close.length ? [['Which AI tool matchups are closest right now?', `By X buzz, the tightest races are ${close.join(', ')}. Buzz shows what people are talking about this week, not which tool is better, so read the verdict on each page too.`] as [string, string]] : []),
+];
 const ld = {
   '@context': 'https://schema.org', '@type': 'ItemList', name: 'AI tool comparisons',
   numberOfItems: pairs.length,
   itemListElement: pairs.map((p, i) => ({ '@type': 'ListItem', position: i + 1, name: `${p.a.name} vs ${p.b.name}`, url: `https://toolhype.dev/vs/${p.slug}` })),
 };
 ---
-<Base title="AI tool comparisons (X vs Y)" description={`Side-by-side comparisons of ${pairs.length} popular AI tool pairs: ChatGPT vs Claude, Cursor vs GitHub Copilot, Kimi vs Claude and more, with pricing, use cases and live X buzz.`} jsonld={[ld, crumbsLd([['Home', '/'], ['Comparisons', '/vs']])]}>
-<Shell active="vs"><article class="card prose"><h1>AI tool comparisons</h1><p class="answer"><b>Short answer:</b> pick a pair below for a side-by-side table of pricing, use cases and live X buzz, plus a plain-English verdict on which to use. {pairs.length} comparisons live now.</p>
-<ul>{pairs.map((p) => <li><a href={`/vs/${p.slug}`}><b>{p.a.name} vs {p.b.name}</b></a> ({p.a.category === p.b.category ? p.a.category : `${p.a.category} / ${p.b.category}`})</li>)}</ul>
+<Base title="AI tool comparisons (X vs Y)" description={`Side-by-side comparisons of ${pairs.length} popular AI tool pairs: ChatGPT vs Claude, Cursor vs GitHub Copilot, Kimi vs Claude and more, with pricing, use cases and live X buzz.`} jsonld={[ld, faqLd(faq), crumbsLd([['Home', '/'], ['Comparisons', '/vs']])]}>
+<Shell active="vs"><article class="card prose"><h1>AI tool comparisons</h1><p class="answer"><b>Short answer:</b> pick a pair below for a side-by-side table of pricing, use cases and live X buzz, plus a plain-English verdict on which to use. {pairs.length} comparisons live now, grouped by what the tools are for.</p>
+{groups.map((g) => <><h2>{g.name}</h2><ul>{g.items.map((p) => { const l = lead(p); return <li><a href={`/vs/${p.slug}`}><b>{p.a.name} vs {p.b.name}</b></a>{p.a.category !== p.b.category && <span class="muted"> ({p.a.category} / {p.b.category})</span>}{l && <span class="muted"> · {l}</span>}{N[p.slug]?.checked && <span class="muted"> · pricing checked {N[p.slug].checked}</span>}</li>; })}</ul></>)}
+<p class="muted" style="font-size:.8rem">X buzz updated {hkt(BUZZ_AT)}. Buzz measures how much people are posting about a tool this week; it isn't a quality score. <a href="/buzz">How the score works</a></p>
+<h2>FAQ</h2>{faq.map(([q, a]) => <><h3>{q}</h3><p>{a}</p></>)}
+<p>More: <a href="/best">best AI tools by category</a> · <a href="/trending">trending AI tools today</a> · <a href="/new">new this week</a></p>
 </article></Shell></Base>

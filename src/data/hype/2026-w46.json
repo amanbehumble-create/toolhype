@@ -1,0 +1,116 @@
+{
+ "week": "2026-w46",
+ "computedAt": "2026-11-13T01:27:35.934Z",
+ "rows": [
+  {
+   "slug": "gemini",
+   "name": "Gemini",
+   "score": 70,
+   "mentions7d": 13767,
+   "mentions24h": 3837,
+   "velocity": 2.29,
+   "label": "hype",
+   "verdict": "Google's assistant, best if you live in Gmail, Docs and Drive.",
+   "why": "13,767 X posts in 7 days (3837 in the last 24h, 2.29x velocity); top post by @TJeparskis got 475 likes."
+  },
+  {
+   "slug": "claude-fable-5-2",
+   "name": "Claude Fable 5.2",
+   "score": 66,
+   "mentions7d": 67310,
+   "mentions24h": 9634,
+   "velocity": 0.99,
+   "label": "hype",
+   "verdict": "Anthropic's upgrade to its top model for hard technical work, released Nov 9, 2026. Anthropic says it beats Fable 5.1 on coding, reasoning and vision, runs up to 30% faster and is cheaper on the API ($8 in / $40 out per million tokens, model id claude-fable-5-2), with an optional fast mode. Its launch examples include designing working electronics and helping solve two open black-hole physics problems. Fable is the safeguarded version available to all users; the same model without those cyber/bio limits (Mythos 5.2) is gated behind verification programs. On Pro plans Fable counts toward up to 50% of weekly usage, so heavy use still means Max or the API. The benchmark claims are Anthropic's own.",
+   "why": "67,310 X posts in 7 days (9634 in the last 24h, 0.99x velocity); top post by @claudeai got 39,142 likes."
+  },
+  {
+   "slug": "claude",
+   "name": "Claude",
+   "score": 64,
+   "mentions7d": 73842,
+   "mentions24h": 11039,
+   "velocity": 1.04,
+   "label": "steady",
+   "verdict": "Excellent for long documents, writing and careful coding help.",
+   "why": "73,842 X posts in 7 days (11039 in the last 24h, 1.04x velocity)."
+  },
+  {
+   "slug": "nod",
+   "name": "Nod by n8n",
+   "score": 63,
+   "mentions7d": 477,
+   "mentions24h": 158,
+   "velocity": 2.93,
+   "label": "hype",
+   "verdict": "Open-source (Apache 2.0) personal agent from n8n Labs, launched Nov 11, 2026 as a research preview. It runs on your own Mac (macOS 14+), Windows 11 (preview) or server, with its own browser, and does errands across Gmail, Slack, Notion, Drive, Calendar and real websites: call briefs, chasing invoices, cancelling trials, watching a page for changes. Free; you bring the model (OpenAI, Anthropic, Google, OpenRouter, your ChatGPT Plus/Pro plan, or a local model via Ollama or LM Studio) and it shows estimated model costs. It checks each action against your rules and asks before it sends, pays or cancels. n8n reports 98% task completion on 226 test errands with GPT-6.1 Sol; those are its own tests. You do not need n8n to use it. Giving any agent your logins is a real risk, so start with low-stakes accounts.",
+   "why": "477 X posts in 7 days (158 in the last 24h, 2.93x velocity); top post by @n8n_io got 1,351 likes."
+  },
+  {
+   "slug": "taan",
+   "name": "Taan",
+   "score": 63,
+   "mentions7d": 181,
+   "mentions24h": 180,
+   "velocity": 180,
+   "label": "hype",
+   "verdict": "Music model from a Y Combinator startup, launched Nov 12, 2026 as Taan v1-preview, built to score video rather than write pop songs. Upload a video, a script or a reference track (or hum a melody, give it MIDI or name exact notes) and it writes an original track that follows the cuts and your timing notes, like '8 seconds of tension, a 2-second pause, then uplifting'. You can change one instrument or one section without regenerating the whole piece, and download MP3, WAV and separate stems. There is a web app plus an MCP server and API, so Claude Code or Codex can direct the music. The preview only does orchestral and cinematic music. Creator is $15/mo (25 minutes of music, commercial rights) and Agency $45/mo (60 minutes); we did not see a free plan. Its launch post passed 360 likes and 160K views on X.",
+   "why": "181 X posts in 7 days (180 in the last 24h, 180x velocity); top post by @mp3addi got 364 likes."
+  },
+  {
+   "slug": "claude-code",
+   "name": "Claude Code",
+   "score": 62,
+   "mentions7d": 83311,
+   "mentions24h": 10786,
+   "velocity": 0.88,
+   "label": "steady",
+   "verdict": "Terminal-based coding agent that edits and runs your repo.",
+   "why": "83,311 X posts in 7 days (10786 in the last 24h, 0.88x velocity)."
+  },
+  {
+   "slug": "plurai-simulation",
+   "name": "Plurai Simulation",
+   "score": 62,
+   "mentions7d": 363,
+   "mentions24h": 120,
+   "velocity": 2.92,
+   "label": "hype",
+   "verdict": "Agent-testing tool from Plurai, launched Nov 11, 2026 and #1 on Product Hunt the next day; the founder's launch post passed 1,000 likes and 1.7M views on X. You run one command inside Claude Code, Codex or GitHub Copilot, and it builds a sandboxed copy of your agent's world from your code: fake users with different personalities, synthetic documents, and mocked tools, APIs and databases that never touch production. The agent runs through those scenarios, and the checks look at what it actually did (did the refund really happen?), not just what it said. Failures come back with the conversation that shows the bug and a suggested fix, and real production failures can be replayed from the step where they broke. Free gives a one-time allowance (2 agent setups, 3 runs, 10 sandbox hours); Base is $60/mo, with pay-as-you-go above that only if you set an overage limit. Plurai's '82% fewer failures' figure is its own.",
+   "why": "363 X posts in 7 days (120 in the last 24h, 2.92x velocity); top post by @ilan_kadar got 1,090 likes."
+  },
+  {
+   "slug": "minimax-h3-image",
+   "name": "MiniMax H3-Image",
+   "score": 61,
+   "mentions7d": 4984,
+   "mentions24h": 876,
+   "velocity": 1.26,
+   "label": "steady",
+   "verdict": "MiniMax's open-weight image generation and editing model, released Nov 10, 2026. One checkpoint does text-to-image and editing with up to 16 reference images, at about 16-megapixel (4K-class) output; MiniMax says a 4K image takes around 10 seconds. The weights are on Hugging Face under MiniMax's own community license (not Apache/MIT, and some uses need separate written permission), and the diffusion transformer alone is 33.1B parameters, so self-hosting means a data-center GPU such as an H200 or RTX PRO 6000. Easier routes: the MiniMax API, Hailuo AI and MiniMax Code, with 50% off 16MP+ images during launch week. Its launch post passed 4,700 likes on X. The speed and quality claims are MiniMax's own.",
+   "why": "4,984 X posts in 7 days (876 in the last 24h, 1.26x velocity); top post by @MiniMax_AI got 4,779 likes."
+  },
+  {
+   "slug": "scribe-v3",
+   "name": "ElevenLabs Scribe v3",
+   "score": 61,
+   "mentions7d": 430,
+   "mentions24h": 132,
+   "velocity": 2.62,
+   "label": "hype",
+   "verdict": "ElevenLabs' new speech-to-text models, launched Nov 10, 2026: Scribe v3 for recorded audio and Scribe v3 Live for realtime (ElevenLabs quotes a median latency of about 150 ms). ElevenLabs says v3 makes 27% fewer word errors than Scribe v2 across 102 languages, and Live makes 43% fewer errors than v2 Realtime and now labels who said what. New controls include up to 1,000 keyterms (names, jargon), plain-English formatting rules and digits-vs-words for numbers. It is now the default in the ElevenLabs app and is on the API as scribe_v3 / scribe_v3_live, with Zero Retention Mode and EU/India/Singapore data residency for enterprise. The accuracy figures are ElevenLabs' own benchmarks.",
+   "why": "430 X posts in 7 days (132 in the last 24h, 2.62x velocity); top post by @ElevenLabs got 717 likes."
+  },
+  {
+   "slug": "grok",
+   "name": "Grok",
+   "score": 60,
+   "mentions7d": 407769,
+   "mentions24h": 63166,
+   "velocity": 1.08,
+   "label": "steady",
+   "verdict": "xAI's assistant with native, real-time access to X.",
+   "why": "407,769 X posts in 7 days (63166 in the last 24h, 1.08x velocity)."
+  }
+ ]
+}

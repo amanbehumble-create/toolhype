@@ -1079,6 +1079,72 @@
           "likesAsOf": "Nov 6, 2026 HKT"
         }
       ]
+    },
+    {
+      "n": 7,
+      "slug": "issue-7",
+      "title": "Prompt Drop #7: 5 AI prompts X actually loved (100+ likes each)",
+      "date": "2026-11-16",
+      "intro": "Every prompt here comes from an X post with at least 100 likes, and we checked each like count on X ourselves. All are from the week of Nov 9 and easy for beginners: copy one, swap the [brackets] for your own details, paste it into the AI, done.",
+      "rule": "Only prompts from X posts with 100+ likes (checked with X data). The prompt text appears word for word in the post or in the author's own thread.",
+      "prompts": [
+        {
+          "title": "Ask your AI how to lighten your mental load",
+          "category": "Productivity",
+          "tool": "Any AI assistant or agent that remembers you (ChatGPT, Claude, Grok, Gemini)",
+          "prompt": "My goal for working with you is to lighten my cognitive load. I want to get more work done, but with less effort on my part. Based on what you know about me and what we do together, what are some things we can do, systems we can implement, subagents we can build, or routines we can create to accomplish this goal?",
+          "why": "Instead of asking for one task, you ask the AI to look back at everything it knows about you and suggest routines and automations. Works best in an assistant with memory or past chats; in a fresh chat, first tell it what your week looks like.",
+          "source": "https://x.com/AlexFinn/status/2120316818132984120",
+          "author": "@AlexFinn",
+          "likes": 1078,
+          "likesAsOf": "Nov 16, 2026 HKT"
+        },
+        {
+          "title": "Get past the generic answer: ask for the spread",
+          "category": "Chat",
+          "tool": "Claude (works in ChatGPT, Gemini or Grok too)",
+          "prompt": "Give me 20 very different options. For each one, tell me how likely another AI would give it to me. The last two must be under 10%.",
+          "why": "Chatbots default to the most likely answer, which is also the one everyone else gets. Paste this after any brainstorm (names, gift ideas, post hooks, business ideas) and it has to spread out, rate how predictable each idea is, and end with two genuinely unusual ones.",
+          "source": "https://x.com/rubenhassid/status/2120486708387143989",
+          "author": "@rubenhassid",
+          "likes": 401,
+          "likesAsOf": "Nov 16, 2026 HKT"
+        },
+        {
+          "title": "Notion-style black-and-white character illustration",
+          "category": "Image",
+          "tool": "Any image AI (ChatGPT / Gemini / Midjourney / Grok)",
+          "prompt": "A minimalist black-and-white editorial illustration of [subject], wearing [outfit], [performing action], with [facial expression], expressive body language, clean hand-drawn outlines, simplified geometric shapes, flat monochrome fills, subtle whimsical details, Notion-inspired illustration style, modern vector aesthetic, balanced composition, clean white background",
+          "why": "Fill in the four brackets (who, what they wear, what they are doing, their face) and you get the clean doodle look Notion uses on its pages. Good for blog headers, slides and profile pics.",
+          "source": "https://x.com/azed_ai/status/2119746593574580396",
+          "author": "@azed_ai",
+          "likes": 175,
+          "likesAsOf": "Nov 16, 2026 HKT"
+        },
+        {
+          "title": "Industrial robotic hand with blueprint drawings",
+          "category": "Image",
+          "tool": "MiniMax H3-Image or any image AI (ChatGPT / Gemini / Midjourney / Grok)",
+          "prompt": "I want to create a realistic industrial robotic hand, the kind you'd see in an actual engineering lab. Give it a rugged yellow-and-black metal body, detailed mechanical joints, visible bolts and thick black braided cables running through the arm. Show it from a dramatic angle, with a few clean blueprint drawings on the side showing how the fingers and joints are assembled. Keep the background dark and cinematic, with realistic workshop lighting. Make it look like a professionally photographed engineering prototype, not an AI-generated concept. Keep the layout clean and avoid unnecessary details.",
+          "why": "Written in plain sentences, not keyword soup: it says what the object is, what it is made of, the camera angle, the extra blueprint panels, the lighting and the look to avoid. Swap the robotic hand for any product or gadget to get a product-shot-plus-diagram image.",
+          "source": "https://x.com/LearnWithBishal/status/2120472890890236324",
+          "promptSource": "https://x.com/LearnWithBishal/status/2120472895029915713",
+          "author": "@LearnWithBishal",
+          "likes": 148,
+          "likesAsOf": "Nov 16, 2026 HKT"
+        },
+        {
+          "title": "30-second domino chain-reaction spectacle (video)",
+          "category": "Video",
+          "tool": "Seedance 2.5 or any text-to-video AI with audio",
+          "prompt": "Create a completely original 30-second ultra-photorealistic cinematic spectacle featuring an enormous city-wide domino experiment during a beautiful sunny afternoon.\n\nSTORY: A young engineer attempts to activate the world's largest domino chain reaction, but one unexpected object changes the entire experiment.\n\nSCENE 1 (0–5s):\nA huge public plaza is filled with thousands of colorful oversized domino blocks arranged across streets, stairs, fountains and specially designed platforms. A young engineer named Leo stands beside a control table.\n\nLEO: \"Ladies and gentlemen, today we're breaking a world record!\"\nREPORTER: \"How long did it take to build all this?\"\nLEO: \"Six months. And hopefully only thirty seconds to destroy it!\"\n\nSCENE 2 (5–10s):\nThe reporter approaches the starting domino. A large crowd watches with excitement.\n\nREPORTER: \"Are you absolutely sure this will work?\"\nLEO: \"Every single block has been checked. Let's begin!\"\n\nSCENE 3 (10–15s):\nLeo gently pushes the first giant domino. Thousands of blocks begin falling in a spectacular sequence through the plaza. The camera follows the chain reaction through different angles.\n\nCROWD: \"WOW!\"\nREPORTER: \"Look at that! It's actually working!\"\n\nSCENE 4 (15–20s):\nThe domino chain reaches a large fountain. One final block hits a specially designed lever, activating a hidden mechanical platform. Suddenly, a gigantic colorful inflatable ball rises into the air.\n\nLEO: \"Wait! That wasn't part of the plan!\"\nREPORTER: \"What did you just activate?\"\n\nSCENE 5 (20–25s):\nThe giant inflatable ball rolls down a ramp and accidentally knocks over another line of enormous domino blocks. The chain reaction continues across the plaza.\n\nLEO: \"Oh no! There's another sequence!\"\nREPORTER: \"You planned two records in one day?\"\n\nSCENE 6 (25–30s):\nThe final domino hits a giant button. Hundreds of colorful water fountains activate simultaneously, creating a spectacular synchronized water display. The entire crowd cheers.\n\nLEO: \"Okay... I'll admit that was better than my original plan!\"\nREPORTER: \"That's the best accident I've ever witnessed!\"\n\nEnd with a breathtaking aerial view of the colorful plaza and synchronized fountains.\n\nVISUAL QUALITY: Photorealistic large-scale engineering spectacle, bright natural daylight, detailed colorful domino blocks, physically accurate collisions, realistic object momentum, water simulations, dynamic cinematic camera movements, 4K.\n\nAUDIO: Natural English conversations, accurate lip-sync, excited crowd reactions, domino impacts, rolling ball sounds, mechanical lever clicks, fountain water, cheering and energetic original orchestral music. Sound effects must synchronize precisely with every falling block.\n\nIMPORTANT: Maintain continuous physical domino motion with believable collision physics. Original installation design, original characters and story. No existing movie references, no copyrighted characters, no narration, no subtitles, no cartoon appearance.",
+          "why": "A full shot-by-shot script: six 5-second scenes with dialogue, then separate VISUAL QUALITY and AUDIO blocks. Copy the structure and swap the story to script your own short video.",
+          "source": "https://x.com/Strength04_X/status/2119679079112978723",
+          "author": "@Strength04_X",
+          "likes": 158,
+          "likesAsOf": "Nov 16, 2026 HKT"
+        }
+      ]
     }
   ]
 }

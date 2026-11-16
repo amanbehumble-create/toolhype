@@ -14,10 +14,29 @@ const vs = pairsFor(t.slug);
 const cat = getCommunity(t.useCases[0]) ?? getCommunity(t.category);
 const related = [...new Set(t.useCases.flatMap(toolsIn))].filter((x) => x.slug !== t.slug && !t.alternatives.includes(x.slug)).sort(byBuzz).slice(0, 6);
 const altNames = [...alts, ...related].slice(0, 4).map((x) => x.name);
+// Plain-language answer to "Is X free?" (feeds the FAQ block and FAQPage JSON-LD); the verdict carries exact prices.
+const freeAnswer = (t: Tool) => {
+  const p = t.pricing;
+  if (p === 'free') return `Yes. ${t.name} is free to use.`;
+  if (p === 'freemium') return `${t.name} has a free plan or free tier, with paid plans for more usage or features. See the verdict above for current prices.`;
+  if (p === 'open-source') return `Yes. ${t.name} is open source, so you can use and self-host it for free. Any hosted version or the AI model it calls may cost extra.`;
+  if (p === 'open-weight') return `${t.name} has open weights you can download and run yourself for free (check the license). Hosted API access is usually paid.`;
+  if (p === 'pricing not published') return `${t.name} doesn't publish its pricing yet.`;
+  const inPlan = p.match(/^paid \((?:in )?(.*)\)$/)?.[1];
+  if (inPlan) return `No. ${t.name} is paid; it comes with ${inPlan}.`;
+  return `No. ${t.name} is a paid tool. See the verdict above for prices and any free trial.`;
+};
+// "a" vs "an" before the pricing word ("an open-source …", "a freemium …").
+const art = (w: string) => (/^[aeiou]/i.test(w) ? 'an' : 'a');
+// Short "what kind of tool" phrase: "an open-source coding AI tool", or "a chat AI tool (pricing not published)" when the pricing
+// value isn't a single adjective, instead of "a pricing not published chat AI tool".
+const noun = `${cat ? cat.name.toLowerCase().replace(/\bai\b/g, 'AI') : t.category} ${t.category === 'crypto' ? 'app' : 'AI tool'}`;
+const paidIn = t.pricing.match(/^paid \((.*)\)$/)?.[1];
+const kind = /^(free|freemium|paid|open-source|open-weight)$/.test(t.pricing) ? `${art(t.pricing)} ${t.pricing} ${noun}` : paidIn ? `a paid ${noun} (${paidIn})` : `${art(noun)} ${noun} (${t.pricing})`;
 const faq: [string, string][] = [
   [`What is ${t.name}?`, t.verdict],
   [`Who should use ${t.name}?`, `Use ${t.name} if ${t.useThisIf}`],
-  [`Is ${t.name} free?`, t.pricing === 'paid' ? `${t.name} is a paid tool.` : `${t.name} is listed as ${t.pricing}.`],
+  [`Is ${t.name} free?`, freeAnswer(t)],
   ...(altNames.length ? [[`What are alternatives to ${t.name}?`, `Alternatives include ${altNames.join(', ')}.`] as [string, string]] : []),
 ];
 ---
@@ -25,7 +44,7 @@ const faq: [string, string][] = [
 <Shell><article class="card prose">
   <div style="display:flex;gap:1rem;align-items:center"><div class="vote" data-vote={t.slug}><button aria-label="Upvote">▲</button><span class="n">0</span></div>
   {t.logo ? <img class="avatar logo" src={t.logo} alt={`${t.name} logo`} width="56" height="56" /> : <div class="avatar">{t.name[0]}</div>}<h1 style="margin:0">{t.name}</h1></div>
-  <p class="answer"><b>In short:</b> {t.name} is a {t.pricing} {cat ? cat.name.toLowerCase() : t.category} {t.category === 'crypto' ? 'app' : 'AI tool'}. {t.verdict}{t.buzz.status === 'live' ? ` X Buzz Score: ${t.buzz.score}/100 (${t.buzz.mentions7d?.toLocaleString('en-US')} posts in 7 days).` : ''}</p>
+  <p class="answer"><b>In short:</b> {t.name} is {kind}. {t.verdict}{t.buzz.status === 'live' ? ` X Buzz Score: ${t.buzz.score}/100 (${t.buzz.mentions7d?.toLocaleString('en-US')} posts in 7 days).` : ''}</p>
   <p><b>Verdict:</b> {t.verdict}</p>{t.riskNote && <p class="muted"><b>Note:</b> {t.riskNote}</p>}<p><b>Use this if</b> {t.useThisIf}</p>
   <div class="meta">{t.useCases.filter((c) => getCommunity(c)).map((c) => <a class="chip c" href={`/c/${c}`}>c/{c}</a>)}<span class="chip">{t.pricing}</span></div>
   <p><a class="btn primary" data-track="visit:tool-page" href={goUrl(t, '/tools/' + t.slug)} rel={t.affiliateUrl ? 'sponsored nofollow noopener' : 'nofollow noopener'} target="_blank">Visit {t.name} →</a></p>

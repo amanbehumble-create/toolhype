@@ -6957,5 +6957,234 @@
       "updatedAt": null
     },
     "logo": "/logos/audioeditdesk.png"
+  },
+  {
+    "slug": "gemini-4-hydrogen",
+    "name": "Gemini 4 Hydrogen",
+    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+    "affiliateUrl": null,
+    "category": "chat",
+    "useCases": [
+      "chat",
+      "coding",
+      "agents"
+    ],
+    "pricing": "freemium",
+    "verdict": "Google's fast, cheaper Gemini 4 model, released Nov 12, 2026, for everyday coding and agent work. Google pitches it as the quick 'execution' model next to Gemini 4 Carbon and Argon, which do the deep planning. It has four thinking levels and a 1M-token context window. In the API it costs a flat $1.50 in / $7.50 out per million tokens. Google says it beats Argon on the Artificial Analysis Intelligence Index (51 vs 50 at its default setting), but that is Google's own claim. It is also the new model behind Google Search, it shows up in the Gemini app model menu (free users get it when auto-selection picks it), and Antigravity's new Orchestrator mode for Pro/Ultra pairs it with Carbon.",
+    "useThisIf": "you want a fast, cheaper Gemini 4 for coding agents or high-volume API calls and don't need Carbon-level reasoning on every step.",
+    "alternatives": [
+      "gemini-4-carbon",
+      "gemini-4-argon",
+      "claude-haiku-5-5"
+    ],
+    "source": "producthunt + x",
+    "addedAt": "2026-11-16",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/gemini-4-hydrogen.png"
+  },
+  {
+    "slug": "claude-meetings",
+    "name": "Claude Meetings",
+    "url": "https://claude.com/resources/articles/claude-meetings",
+    "affiliateUrl": null,
+    "category": "productivity",
+    "useCases": [
+      "productivity",
+      "agents"
+    ],
+    "pricing": "paid",
+    "verdict": "Anthropic's beta that brings Claude into your video call as a visible participant (announced Nov 10, rolling out from Nov 12, 2026). You can ask it questions out loud or in the chat, it writes the notes and action items, and it can build docs and whiteboards with you during the call. Afterwards the transcript, summary and files are saved on a meeting page in claude.ai. It only works with Google Meet so far, and only on Claude Team and Enterprise plans, not Pro or Max. It saves a transcript, not audio. By default it won't join calls with outside guests. Notes and answers are free during the beta, and docs made in calls are free until Feb 10, 2027.",
+    "useThisIf": "your team already pays for Claude Team or Enterprise, meets on Google Meet, and wants the plan or doc started during the call instead of after it.",
+    "alternatives": [
+      "granola",
+      "claude",
+      "claude-duet"
+    ],
+    "source": "producthunt",
+    "addedAt": "2026-11-16",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/claude-meetings.png"
+  },
+  {
+    "slug": "rakazo",
+    "name": "Rakazo",
+    "url": "https://rakazo.com/",
+    "affiliateUrl": null,
+    "category": "agents",
+    "useCases": [
+      "agents",
+      "productivity"
+    ],
+    "pricing": "open-source",
+    "verdict": "Open-source (Apache-2.0) app for running a team of AI bots on your own machine, from Elie Steinbock, who also makes Inbox Zero. It launched on Product Hunt Nov 15, 2026 and has about 8.6k GitHub stars. You give each bot a job (inbox manager, sales outreach, expense matching, coding agent and so on) with readable routines, approval rules and its own sandboxed computer. You can chat with the bots from Slack, Teams, iMessage, WhatsApp or Telegram, or from the iOS and Android apps. You bring your own model and API keys. Self-hosting is free; the hosted version is $15/mo ($12/mo yearly) with a 7-day trial, and pricier tiers add more computer hours. It's a young project, so test the approval rules before you let a bot send email for you.",
+    "useThisIf": "you want always-on agent 'teammates' like the hosted agent apps but on your own hardware, with your own model keys and audit logs.",
+    "alternatives": [
+      "openbot",
+      "manus",
+      "inbox-zero"
+    ],
+    "source": "producthunt",
+    "addedAt": "2026-11-16",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/rakazo.png"
+  },
+  {
+    "slug": "selvedge",
+    "name": "Selvedge",
+    "url": "https://github.com/masondelan/selvedge",
+    "affiliateUrl": null,
+    "category": "coding",
+    "useCases": [
+      "coding",
+      "agents"
+    ],
+    "pricing": "open-source",
+    "verdict": "Free, MIT-licensed command-line tool and local MCP server that gives AI coding agents a memory of past decisions. You or your agent save why an approach was chosen, what was rejected and what would change your mind, tied to a function, database column, API route or dependency. In the next session the agent can look that up before editing. Everything stays in a SQLite file in your repo's .selvedge folder, with no account and no LLM calls. It works with any agent that supports MCP or has shell access. Install it with uv (Python 3.11+). There is also an optional GitHub Action that posts recorded reasons on pull requests. It is a small project (v0.3.18, about 26 GitHub stars) and only remembers what you save; it doesn't check whether those notes are still true. Submitted by the maintainer; passed our read-only safety check (public MIT repo since Apr 2026, PyPI releases, docs site).",
+    "useThisIf": "you switch between Claude Code, Codex or Cursor sessions and keep re-explaining why the code is the way it is.",
+    "alternatives": [
+      "claude-mem",
+      "context-mode",
+      "gbrain"
+    ],
+    "source": "submission",
+    "addedAt": "2026-11-16",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/selvedge.png"
+  },
+  {
+    "slug": "omophub",
+    "name": "OMOPHub",
+    "url": "https://omophub.com/",
+    "affiliateUrl": null,
+    "category": "coding",
+    "useCases": [
+      "coding",
+      "productivity"
+    ],
+    "pricing": "freemium",
+    "verdict": "Hosted API for medical vocabularies, for healthcare data teams that work with OHDSI/OMOP. You get search, mapping and hierarchies across SNOMED CT, ICD-10, LOINC, RxNorm and 120+ more vocabularies (11M+ concepts) without running your own ATHENA database. It has Python, R and TypeScript SDKs, a FHIR terminology service, a FHIR-to-OMOP resolver and an MCP server so AI agents can look up codes. Lookups don't involve patient data. The free plan is 3,000 calls a month; Pro is $39/mo (50k calls, full semantic search, bulk operations), with Scale ($79) and Business ($149) above that. A niche tool for clinical coding and ETL work, not something for general users. Submitted by the maker; passed our read-only safety check (domain since Oct 2025, privacy policy, terms, security and contact pages).",
+    "useThisIf": "you build OMOP ETL pipelines or healthcare AI and are tired of hosting and updating ATHENA vocabularies yourself.",
+    "alternatives": [
+      "exa-3",
+      "composio-instant"
+    ],
+    "source": "submission",
+    "addedAt": "2026-11-16",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/omophub.png"
+  },
+  {
+    "slug": "nowah",
+    "name": "Nowah",
+    "url": "https://nowah.xyz/",
+    "affiliateUrl": null,
+    "category": "productivity",
+    "useCases": [
+      "productivity",
+      "agents"
+    ],
+    "pricing": "freemium",
+    "verdict": "AI travel agent app for iPhone and Android: describe a trip in one chat and it searches live flights, books them (you confirm and pay, for example with Apple Pay) and builds an itinerary. You can also paste a TikTok, Instagram or YouTube travel reel and it pulls out the places and lays them on a day-by-day map. It also does visa checks, price alerts, flight tracking and eSIMs. You get 25 free messages at sign-up (one chat turn is one message). Pro is $24.99/mo, or $79 for the first year and $199/year after that, with no message limit for normal use. It books real tickets, so check fares and fare rules before you confirm. Submitted by the maker; passed our read-only safety check (domain since Dec 2025, privacy and terms, support and contact emails).",
+    "useThisIf": "you plan trips from saved reels and want flights, visa checks and the itinerary in one chat instead of five tabs.",
+    "alternatives": [
+      "manus",
+      "perplexity"
+    ],
+    "source": "submission",
+    "addedAt": "2026-11-16",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/nowah.png"
+  },
+  {
+    "slug": "bpm-finder",
+    "name": "BPM Finder",
+    "url": "https://bpmfinder.io/",
+    "affiliateUrl": null,
+    "category": "audio",
+    "useCases": [
+      "audio"
+    ],
+    "pricing": "freemium",
+    "verdict": "Free in-browser tool that estimates a song's tempo (BPM) and key. Your file is analyzed on your device, not uploaded, and you don't need an account. It accepts audio up to 10 minutes or video up to 5 minutes (100 MB). It shows half-time and double-time options plus beat positions, so you can check the result by ear. The paid part is a separate 'Studio' with song recognition and AI music generation that uses credits: 20 free credits, then $10 to $66/mo billed yearly. The BPM check itself is free. New site (domain registered Sep 2026). Submitted by the maker; passed our read-only safety check (privacy and terms pages, no sign-up needed for the free tool).",
+    "useThisIf": "you DJ, edit short videos or make beats and just need a song's BPM and key fast without installing anything.",
+    "alternatives": [
+      "audioeditdesk",
+      "freemusictools",
+      "suno"
+    ],
+    "source": "submission",
+    "addedAt": "2026-11-16",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/bpm-finder.png"
+  },
+  {
+    "slug": "creepless",
+    "name": "Creepless",
+    "url": "https://creepless.online/",
+    "affiliateUrl": null,
+    "category": "productivity",
+    "useCases": [
+      "productivity",
+      "marketing"
+    ],
+    "pricing": "freemium",
+    "verdict": "Scope-creep tool for agencies and freelancers. Each client gets a private request link with no login. An AI 'referee' checks every request against the scope you signed and marks it included, extra or needs review. Extra work becomes a quote the client approves before you start, and the dashboard tracks how much unpaid work you avoided. It connects to Slack, Gmail and Stripe. Free forever for 2 clients and 20 AI checks a month. Paid plans are priced by number of clients, for example Studio at $29/mo billed yearly ($39 monthly) for up to 40 clients. New product (domain registered Sep 2026), so the AI's verdicts are a starting point, not a contract ruling. Submitted by the maker; passed our read-only safety check (privacy and terms, contact email, free tier with no card).",
+    "useThisIf": "you run client retainers and keep doing 'quick extra' tasks for free because saying no feels awkward.",
+    "alternatives": [
+      "notion",
+      "zapier"
+    ],
+    "source": "submission",
+    "addedAt": "2026-11-16",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/creepless.png"
   }
 ]

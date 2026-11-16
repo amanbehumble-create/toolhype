@@ -1,0 +1,53 @@
+{
+ "_note": "Staging pool for the next newsletter issue (#8, week of Nov 16 2026). Not rendered on the site; move into src/data/prompts.json as issue-8 once it has ~8+ prompts. Same rule as issue 7: X posts with 100+ likes, prompt text word for word in the post (or the author's own note/first reply). Issue 7 (week of Nov 9) is still unpublished with 5 prompts in scripts/prompt-pool-issue-7.json. Nov 16 run: 1 eligible X prompt (@noahkagan 'stop, keep, finish', 143 likes). Reddit JSON is still 403, but the r/ChatGPTPromptGenius top-of-week RSS is readable; three safe, copy-paste prompts from there are parked in 'candidates' (upvotes can't be read, so they don't meet the 100+ rule yet; the author discloses they make the AI Toolbox extension, but the prompts work by hand in any chatbot). Skipped: Nano Banana prompts recreating real celebrities (Glenajenner accounts, 300-1,600 likes), 'Don't copy and paste from ChatGPT' threads whose prompts live only in replies or images, @noahkagan 'work the weekend' (65 likes) and 'unclaimed money' (37 likes) prompts (under 100), a joke 'hack the world bank' prompt, and a quant-trading prompt (finance advice, unsafe for beginners).",
+ "n": 8,
+ "slug": "issue-8",
+ "prompts": [
+  {
+   "title": "Audit what you shipped: stop, keep, finish",
+   "category": "Chat",
+   "tool": "Claude (works in ChatGPT, Gemini or Grok with chat history or a project)",
+   "prompt": "Look at everything I shipped since [date] and every message I sent you. For each change: what number was it supposed to move, did it move, and what did I never check? Rank what I should stop, keep and finish.",
+   "why": "If you've been building or posting a lot with AI, this makes it grade the work against results instead of effort. Swap in a date and run it in the chat or project where the work happened. Noah Kagan found only 4 of 67 shipped changes clearly moved a number, and two winning tests he'd never acted on.",
+   "source": "https://x.com/noahkagan/status/2121379356207464887",
+   "author": "@noahkagan",
+   "likes": 143,
+   "likesAsOf": "Nov 16, 2026 HKT"
+  }
+ ],
+ "candidates": [
+  {
+   "title": "Black Friday deal check: must-haves before the listing",
+   "category": "Chat",
+   "tool": "ChatGPT with web search (works in Claude, Gemini or Grok with search on)",
+   "prompt": "I'm thinking about buying a {{item}} on Black Friday. Before I show you any deal, ask me up to 5 short questions about how I'll actually use it, what I own now that does the same job, and what made me start looking. Then write a list of 3 must-haves and 3 things I'd be paying for but won't use. Don't recommend any product or brand yet.",
+   "why": "Step 1 of a 4-prompt chain (the post also has prompts for the listing, a price check at 3+ stores, and a buy/wait/skip verdict). Writing must-haves before the AI sees the cart stops it from just agreeing the deal is good. Black Friday is Nov 27.",
+   "source": "https://www.reddit.com/r/ChatGPTPromptGenius/comments/1xw19mc/asking_chatgpt_is_this_a_good_black_friday_deal/",
+   "author": "u/Ok_Negotiation_2587",
+   "likes": null,
+   "likesAsOf": "Reddit upvotes not readable (JSON 403); top of r/ChatGPTPromptGenius this week, posted Nov 14, 2026"
+  },
+  {
+   "title": "Save the version that finally worked",
+   "category": "Chat",
+   "tool": "ChatGPT (works in any chatbot)",
+   "prompt": "We went back and forth a lot in this chat before something actually worked. Write me the final working version, as if I'm doing this from scratch next time.\nOnly include what worked in the end. Leave out every attempt we dropped, unless skipping it is a mistake I'd likely make again. Then add it as a one-line warning.\nKeep exact values: commands, settings, numbers, names, amounts.\nIf a step depends on something specific to my setup, say so in brackets.\nIf you're not sure which version we ended on, ask me instead of guessing.\nEnd with one line: the thing that finally made it work.",
+   "why": "Paste it before you close a long troubleshooting chat (a router setup, a spreadsheet formula, a recipe) and you get one clean message to save instead of scrolling through 12 failed attempts later.",
+   "source": "https://www.reddit.com/r/ChatGPTPromptGenius/comments/1xv8npw/the_answer_that_finally_worked_in_a_long_chatgpt/",
+   "author": "u/Ok_Negotiation_2587",
+   "likes": null,
+   "likesAsOf": "Reddit upvotes not readable (JSON 403); top of r/ChatGPTPromptGenius this week, posted Nov 13, 2026"
+  },
+  {
+   "title": "Name your chat so you can find it in six months",
+   "category": "Chat",
+   "tool": "ChatGPT (works in Claude, Gemini or Grok)",
+   "prompt": "Give this chat a title I'll actually find again in six months.\nRules:\n6 words max\nstart with the specific thing: the project, client, product, file or error. not the type of help I asked for\nnever use words like help, question, request, discussion, assistance, ideas\nif the chat ended up somewhere different from where it started, name where it ended up\nThen give me 3 words or short phrases from this chat that I'd probably never type in any other chat, like a name, a number, an error code or an unusual term. Those are what I'll search for later.",
+   "why": "Auto titles like 'Email draft' are useless later. Paste this at the end of any chat worth keeping, then rename the chat from the sidebar; the 3 rare words are what sidebar search will actually find.",
+   "source": "https://www.reddit.com/r/ChatGPTPromptGenius/comments/1xuhyx9/chatgpt_names_your_chats_after_the_kind_of_help/",
+   "author": "u/Ok_Negotiation_2587",
+   "likes": null,
+   "likesAsOf": "Reddit upvotes not readable (JSON 403); top of r/ChatGPTPromptGenius this week, posted Nov 12, 2026"
+  }
+ ]
+}

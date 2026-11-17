@@ -16,7 +16,7 @@ const toolWord = n === 1 ? 'tool' : 'tools';
 const verb = n === 1 ? 'is' : 'are';
 const answer = n ? `The best ${AI}${toolWord} for ${label} right now ${verb} ${top.map((t) => `${t.name} (${t.pricing}, X buzz ${sc(t)})`).join(', ')}, ranked by live X buzz across ${n} ${toolWord} toolhype tracks.` : 'No tools listed yet.';
 const faq: [string, string][] = [
-  [`What is the best ${AI}tool for ${label}?`, tools.length ? `${top[0].name} leads on live X buzz (${sc(top[0])}). ${top[0].verdict} Runners-up: ${top.slice(1).map((t) => t.name).join(' and ')}.` : 'No tools listed yet.'],
+  [`What is the best ${AI}tool for ${label}?`, tools.length ? `${top[0].name} leads on live X buzz (${sc(top[0])}). ${top[0].verdict}${top.length > 1 ? ` Runners-up: ${top.slice(1).map((t) => t.name).join(' and ')}.` : ''}` : 'No tools listed yet.'],
   [`Are there free ${AI}tools for ${label}?`, free.length ? `Yes: ${free.slice(0, 6).map((t) => `${t.name} (${t.pricing})`).join(', ')}.` : 'All tools listed here are currently paid.'],
   [`How does toolhype rank ${label} tools?`, `By the Live X Buzz Score (0-100), which measures how much each tool is discussed on X over the last 7 days, refreshed daily (last update ${hkt(BUZZ_AT)}). Featured listings are labelled and never affect ranking.`],
   ...(pairs.length ? [[`How do the top ${label} tools compare?`, `See side-by-side comparisons: ${pairs.map((p) => `${p.a.name} vs ${p.b.name}`).join(', ')}.`] as [string, string]] : []),

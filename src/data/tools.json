@@ -867,9 +867,13 @@
       "agents"
     ],
     "pricing": "paid",
-    "verdict": "Tests messaging and landing pages against simulated buyer personas from inside your agent.",
-    "useThisIf": "you want quick directional feedback on positioning before real user tests.",
-    "alternatives": [],
+    "verdict": "AI user-research platform that builds synthetic buyer personas from your site and interviews them, then returns a report in about 30 minutes. Plans are Lite at $29/mo (1,200 credits, about 3 studies), Starter at $79/mo (3,000 credits, about 7) and Pro at $199/mo (8,000 credits, about 20, with white-label reports). A study uses about 400 credits. Every plan has a 14-day trial with 900 credits (about two studies) and no card required; Starter and Pro also advertise limited-time bonus credits. It has an MCP so you can run a study from Claude, ChatGPT or Cursor. Articos claims 86% theme recall versus expert teams across 46 studies (its own validation against published Baymard and Nielsen Norman work) and says it should sit alongside real interviews, not replace them.",
+    "useThisIf": "you need fast, cheap directional feedback on messaging, positioning or a landing page before you spend on real user interviews.",
+    "alternatives": [
+      "audience-analysis",
+      "shareofask",
+      "what-sells-next"
+    ],
     "source": "producthunt",
     "addedAt": "2026-10-13",
     "featured": false,
@@ -879,7 +883,7 @@
       "mentions7d": null,
       "updatedAt": null
     },
-    "logo": null
+    "logo": "/logos/articos.png"
   },
   {
     "slug": "opencode",
@@ -7186,5 +7190,210 @@
       "updatedAt": null
     },
     "logo": "/logos/creepless.png"
+  },
+  {
+    "slug": "qwen4-max",
+    "name": "Qwen4-Max",
+    "url": "https://www.qwencloud.com/models/qwen4-max",
+    "affiliateUrl": null,
+    "category": "chat",
+    "useCases": [
+      "chat",
+      "coding",
+      "agents"
+    ],
+    "pricing": "paid (QwenCloud API)",
+    "verdict": "Alibaba's new flagship Qwen model, released Nov 16, 2026: a 2.4-trillion-parameter sparse MoE that activates 71 billion parameters per token, with native vision (text, image and video in) and a 1M-token context window. On QwenCloud the API (model id qwen4-max) lists at $1.50 in / $4.50 out per million tokens internationally; cached input reads are $0.075, and the Singapore table includes a 1 million token free quota. Alibaba also put it on QwenWork and QwenStudio, and the official @Alibaba_Qwen account said it was live the same day on OpenRouter, Vercel's AI Gateway and Novita. The press release says it beats Qwen3.8-Max on Alibaba's own Work360 benchmark with fewer tokens and about 60% lower average cost per task; treat those as vendor numbers. Open-weight Qwen4 models are promised later; Qwen4-Max itself is not open-weight.",
+    "useThisIf": "you want a cheaper multimodal flagship for coding, long agent jobs or document and video understanding, and you're fine using Alibaba's API or apps.",
+    "alternatives": [
+      "kimi",
+      "gemini-4-carbon",
+      "claude-fable-5-2"
+    ],
+    "source": "x",
+    "addedAt": "2026-11-17",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/qwen4-max.png"
+  },
+  {
+    "slug": "hy4-flash",
+    "name": "Tencent Hy4 Flash",
+    "url": "https://www.tencent.com/tencent-launches-hy4-flash-to-power-high-speed-cost-efficient-ai-deployment-for-everyday-workflows/",
+    "affiliateUrl": null,
+    "category": "chat",
+    "useCases": [
+      "chat",
+      "productivity",
+      "agents"
+    ],
+    "pricing": "paid (Tencent Cloud TokenHub / apps)",
+    "verdict": "Tencent's cheapest Hy model, released Nov 16, 2026: 224 billion total parameters (including 64 billion Engram parameters) with 12 billion active, multimodal input and a 1M-token context window. Official API list pricing is about $0.070 in / $0.281 out per million tokens, and $0.003 for cached input. It is available on Tencent Cloud TokenHub, WorkBuddy, Yuanbao, WeCom, QQ, ima and Marvis, with OpenRouter said to be coming soon. From launch through Nov 30, 2026, Tencent is offering Hy4 flash for free on WorkBuddy and 50% off standard TokenHub pricing. Tencent says it slightly outperforms the larger Hy4 Preview on its internal WorkIndex office tasks at a much lower per-task cost, and that an 85-person internal blind test scored close to Claude Haiku 5.5; those are Tencent's own evaluations. The company plans to open-source Hy4 flash later; it is not open-weight today. Tencent still recommends full Hy4 for long software-engineering jobs.",
+    "useThisIf": "you want a fast, cheap model for everyday office work like decks, docs and simple computer-use, and you can use Tencent's apps or API.",
+    "alternatives": [
+      "claude-haiku-5-5",
+      "gemini-4-hydrogen",
+      "muse-ember"
+    ],
+    "source": "x",
+    "addedAt": "2026-11-17",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/hy4-flash.png"
+  },
+  {
+    "slug": "liquid-d1-2",
+    "name": "Liquid AI d1.2",
+    "url": "https://www.liquid.ai/blog/d1-2",
+    "affiliateUrl": null,
+    "category": "productivity",
+    "useCases": [
+      "productivity",
+      "agents"
+    ],
+    "pricing": "paid (Liquid API)",
+    "verdict": "Liquid AI's new decision models, released Nov 16, 2026: d1.2 and d1.2-ultra now take text, images and audio and return typed, probability-calibrated answers (values, spans, bounding boxes, numeric ranges, multi-label choices), including \"not found\" instead of a guess. Both are on the Liquid API (console.liquid.ai; model ids d1.2 and d1.2-ultra) and bill input tokens only: $0.02 per million for d1.2 and $0.042 for d1.2-ultra. An image is billed as 1.5 tokens per 32x32-pixel patch at the text rate. Liquid says d1.2-ultra scores 75 and ranks first on the Artificial Analysis Decision Index v2.1; accuracy on the five new tasks (for example 98% reading receipt values on CORD/SROIE) is from Liquid's own internal tests. The launch post says the models are coming to OpenRouter and Vercel soon. This is an extraction and decision API, not a general chat app.",
+    "useThisIf": "you need calibrated, structured answers from invoices, photos or audio (amounts, pii spans, boxes, counts) through an API, not a chatbot.",
+    "alternatives": [
+      "chatgpt",
+      "gemini",
+      "perplexity"
+    ],
+    "source": "x",
+    "addedAt": "2026-11-17",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/liquid-d1-2.png"
+  },
+  {
+    "slug": "agent-barn",
+    "name": "Agent Barn",
+    "url": "https://agentbarn.dev/",
+    "affiliateUrl": null,
+    "category": "agents",
+    "useCases": [
+      "agents",
+      "productivity"
+    ],
+    "pricing": "open-source",
+    "verdict": "Open-source (Apache-2.0) control plane for running AI agents on your own Kubernetes cluster, from AAI Labs in Lithuania. Your team talks to agents in Slack, Teams, Telegram, Discord or email; agents can use Jira, GitHub, Confluence and other tools; conversations, tool calls, logs and costs are recorded. Self-hosting with Helm is free; hosted Cloud is $20/month for one agent or $100/month for four, with included usage and prepaid top-ups, and a one-week supervised pilot is $500. A $0 Telegram plan is listed but marked coming soon. The public GitHub repo (aai-labs/agent-barn, about 111 stars) matches the site, and this was submitted by the maker; passed our read-only safety check (domain since May 2026, privacy, terms, refund policy, and contact at hello@aai-labs.com).",
+    "useThisIf": "you want a self-hosted Kubernetes control plane for agents your team can talk to in Slack or Teams, with costs and audit logs in one place.",
+    "alternatives": [
+      "rakazo",
+      "openbot",
+      "n8n"
+    ],
+    "source": "submission",
+    "addedAt": "2026-11-17",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/agent-barn.png"
+  },
+  {
+    "slug": "swarm-school",
+    "name": "Swarm School",
+    "url": "https://swarm.school/",
+    "affiliateUrl": null,
+    "category": "agents",
+    "useCases": [
+      "agents",
+      "chat"
+    ],
+    "pricing": "freemium",
+    "verdict": "Independent directory of ready-made Grok Bot templates, plus plain-English setup guides. The site claims 8,000+ bots you can search and add to your own Grok Bot account; the library itself is free. Swarm School is explicit that it is not affiliated with, endorsed or sponsored by xAI or Cursor, and it points people to get Grok Bot from xAI (their guide says Grok Bot is included on xAI's Premium plan from $30/month). Optional Custom Bot work is name-your-price and is not charged until you accept. It is a new site (domain registered Oct 22, 2026), the bot count is their claim rather than a count we verified, and this was submitted by the maker; passed our read-only safety check (clear unofficial disclaimers, privacy, terms, refunds, and a contact form).",
+    "useThisIf": "you use Grok Bot and want a large, unofficial library of ready-made bot templates and setup guides, not an official xAI product.",
+    "alternatives": [
+      "openswarm",
+      "grok",
+      "openbot"
+    ],
+    "source": "submission",
+    "addedAt": "2026-11-17",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/swarm-school.png"
+  },
+  {
+    "slug": "botsdothat-bot-builder",
+    "name": "BotsDoThat Bot Builder",
+    "url": "https://botsdothat.com/bot-instructions/",
+    "affiliateUrl": null,
+    "category": "agents",
+    "useCases": [
+      "agents",
+      "productivity"
+    ],
+    "pricing": "free",
+    "verdict": "Free, no-account builder that turns a short description of a job (a weekly plan, an email draft, or a quote comparison) into instructions you copy into ChatGPT, Claude, Gemini, Grok or a similar chat. The page is clear that it does not call a model, does not run or book anything, and that what you type stays in the browser tab unless you copy or download it. The rest of the site is a sourced catalogue of real AI-agent use cases (131 use cases and 12 blueprints as of Nov 16, 2026) from editor Nik Schultz. The builder is free; an optional newsletter and labeled sponsorships fund the site. It is a new site (domain registered Oct 22, 2026) and was submitted by the maker; passed our read-only safety check (privacy policy, about page, contact hello@botsdothat.com).",
+    "useThisIf": "you want copy-paste instructions for a chat you already use, without signing up or letting a hosted agent run the job for you.",
+    "alternatives": [
+      "openbot",
+      "chatgpt",
+      "rakazo"
+    ],
+    "source": "submission",
+    "addedAt": "2026-11-17",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/botsdothat-bot-builder.png"
+  },
+  {
+    "slug": "loyaltty",
+    "name": "Loyaltty",
+    "url": "https://www.loyaltty.com/",
+    "affiliateUrl": null,
+    "category": "marketing",
+    "useCases": [
+      "marketing",
+      "productivity"
+    ],
+    "pricing": "freemium",
+    "verdict": "QR promotions and digital stamp cards for local merchants, with optional Reach (social posts), Convert (stamps and points) and Engage (SMS, WhatsApp and email) modules. Acquire (digital deals) is advertised as free forever; paid modules are shown at a promotional $19/month (usually $29) each, or $49/month for the All Platforms bundle (usually $97), or $99/month with setup help. A no-card trial is advertised, but the pricing page says both 7-day and 30-day, so check the checkout terms. The product looks real (domain since June 2023, app-store links, Milpitas, CA phone and email), but legal naming is messy: About says Gold Loyalty LLC, the privacy policy also refers to Gold Loyaltty, Inc., the footer says it is powered by SmartOrbit Private Limited, and it was submitted from press@flashcrafter.ai rather than a loyaltty.com address. Passed our read-only safety check as a distinct product, not a spam clone.",
+    "useThisIf": "you run a local shop or cafe and want QR deals and digital stamp cards, with optional social and messaging add-ons.",
+    "alternatives": [
+      "emailwish",
+      "treg",
+      "posthut"
+    ],
+    "source": "submission",
+    "addedAt": "2026-11-17",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/loyaltty.png"
   }
 ]

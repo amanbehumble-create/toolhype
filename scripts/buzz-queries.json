@@ -256,5 +256,12 @@
   "omophub": "(omophub OR url:omophub.com OR \"omophub.com\") -is:retweet",
   "nowah": "(url:nowah.xyz OR \"nowah.xyz\" OR @nowah OR (nowah (travel OR trip OR flights OR app))) -is:retweet",
   "bpm-finder": "(url:bpmfinder.io OR \"bpmfinder.io\") -is:retweet",
-  "creepless": "(creepless OR url:creepless.online OR \"creepless.online\") -is:retweet"
+  "creepless": "(creepless OR url:creepless.online OR \"creepless.online\") -is:retweet",
+  "qwen4-max": "(\"Qwen4-Max\" OR \"Qwen 4 Max\" OR \"qwen4-max\" OR #Qwen4Max) -is:retweet",
+  "hy4-flash": "(\"Hy4 flash\" OR \"Hy4 Flash\" OR \"hy4-flash\" OR \"Hy4flash\" OR \"Hy4-Flash\") -is:retweet",
+  "liquid-d1-2": "((\"d1.2\" OR \"d1.2-ultra\" OR \"d1-2\") (\"Liquid AI\" OR LiquidAI OR @LiquidAI OR \"decision model\")) OR \"liquid d1.2\" -is:retweet",
+  "agent-barn": "(\"Agent Barn\" OR agentbarn OR url:agentbarn.dev OR \"agentbarn.dev\" OR \"aai-labs/agent-barn\") -is:retweet",
+  "swarm-school": "(\"Swarm School\" OR url:swarm.school OR \"swarm.school\") -is:retweet",
+  "botsdothat-bot-builder": "(\"BotsDoThat\" OR \"Bots Do That\" OR url:botsdothat.com OR \"botsdothat.com\") -is:retweet",
+  "loyaltty": "(Loyaltty OR url:loyaltty.com OR \"loyaltty.com\") -is:retweet"
 }

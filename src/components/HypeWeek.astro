@@ -1,9 +1,11 @@
 ---
 import Base from '../layouts/Base.astro'; import Shell from './Shell.astro';
-import { hkt } from '../lib/data'; import { weekRange, allWeeks, type HypeWeek } from '../lib/geo'; import { faqLd, crumbsLd } from '../lib/ld';
+import { hkt } from '../lib/data'; import { weekRange, allWeeks, currentHype, type HypeWeek } from '../lib/geo'; import { faqLd, crumbsLd } from '../lib/ld';
 const { h, latest = false } = Astro.props as { h: HypeWeek; latest?: boolean };
 const site = import.meta.env.SITE || 'https://toolhype.dev';
 const range = weekRange(h.week); const r = h.rows; const W = h.week.toUpperCase().replace('-', ' ');
+// The live week's permalink shows the same content as /hype until the week is frozen, so it canonicalizes to /hype.
+const live = !latest && h.week === currentHype().week;
 const path = latest ? '/hype' : `/hype/${h.week}`;
 const tldr = r.length ? `The most hyped AI tool on X this week (${range}) is ${r[0].name} with a Buzz Score of ${r[0].score}/100, followed by ${r.slice(1, 3).map((x) => `${x.name} (${x.score})`).join(' and ')}.` : 'No data yet.';
 const faq: [string, string][] = [
@@ -18,7 +20,7 @@ const ld = [
 ];
 const others = allWeeks().filter((x) => x.week !== h.week);
 ---
-<Base title={latest ? `Most hyped AI tools this week (${W}, ${range})` : `Most hyped AI tools in ${W} (${range})`} description={tldr} ogImage="/og/trending.png" jsonld={ld}>
+<Base title={latest ? `Most hyped AI tools this week (${W}, ${range})` : `Most hyped AI tools in ${W} (${range})`} description={tldr} ogImage="/og/trending.png" jsonld={ld} canonicalPath={live ? '/hype' : undefined}>
 <Shell active="buzz"><article class="card prose">
   <h1>Most hyped AI tools {latest ? 'this week' : `in ${W}`}</h1>
   <p class="muted">{W} · {range} · data updated {hkt(h.computedAt)}{latest && <> · permalink <a href={`/hype/${h.week}`}>/hype/{h.week}</a></>}</p>

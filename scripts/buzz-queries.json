@@ -38,7 +38,7 @@
   "perplexity": "(perplexity OR @perplexity_ai OR url:perplexity.ai) -is:retweet",
   "cursor": "(\"cursor ai\" OR @cursor_ai OR url:cursor.com OR \"cursor ide\" OR \"cursor agent\") -is:retweet",
   "github-copilot": "(\"github copilot\" OR @GitHubCopilot) -is:retweet",
-  "windsurf": "(windsurf (ai OR ide OR code OR editor) OR @windsurf OR url:windsurf.com) -is:retweet",
+  "windsurf": "((windsurf (ai OR ide OR code OR editor OR cognition OR devin)) OR @windsurf OR url:windsurf.com OR \"devin desktop\") -is:retweet",
   "claude-code": "(\"claude code\" OR claudecode) -is:retweet",
   "aider": "(\"aider chat\" OR url:aider.chat OR (aider coding)) -is:retweet",
   "v0": "(\"v0.dev\" OR \"v0 by vercel\" OR url:v0.dev OR url:v0.app OR @v0) -is:retweet",
@@ -263,5 +263,14 @@
   "agent-barn": "(\"Agent Barn\" OR agentbarn OR url:agentbarn.dev OR \"agentbarn.dev\" OR \"aai-labs/agent-barn\") -is:retweet",
   "swarm-school": "(\"Swarm School\" OR url:swarm.school OR \"swarm.school\") -is:retweet",
   "botsdothat-bot-builder": "(\"BotsDoThat\" OR \"Bots Do That\" OR url:botsdothat.com OR \"botsdothat.com\") -is:retweet",
-  "loyaltty": "(Loyaltty OR url:loyaltty.com OR \"loyaltty.com\") -is:retweet"
+  "loyaltty": "(Loyaltty OR url:loyaltty.com OR \"loyaltty.com\") -is:retweet",
+  "gpt-6-2-astra": "(\"gpt-6.2 astra\" OR \"gpt-6.2-astra\" OR \"gpt 6.2 astra\" OR \"6.2 astra\") -is:retweet",
+  "gpt-6-2-sol": "(\"gpt-6.2 sol\" OR \"gpt-6.2-sol\" OR \"gpt 6.2 sol\" OR \"6.2 sol\") -is:retweet",
+  "kling-image-4": "(\"kling image 4.0\" OR \"kling image 4\" OR \"kling-image-4\" OR \"kling-image@4.0\" OR (\"image 4.0\" (kling OR @Kling_ai))) -is:retweet",
+  "rankspot": "(url:rankspot.ai OR \"rankspot.ai\" OR @rankspotai OR (rankspot (seo OR mcp OR agent OR agents OR \"product hunt\"))) -is:retweet",
+  "seshka": "(url:seshka.dev OR \"seshka.dev\" OR \"jigjoy-ai/seshka\" OR (seshka (claude OR \"claude code\" OR macos OR \"menu bar\"))) -is:retweet",
+  "skillbox": "(url:skillbox.so OR \"skillbox.so\" OR @skillbox_so) -is:retweet",
+  "ordogrid": "(ordogrid OR url:ordogrid.com) -is:retweet",
+  "kahrbon": "(kahrbon OR url:kahrbon.com) -is:retweet",
+  "ai-cost": "(url:aicost.tools OR \"aicost.tools\") -is:retweet"
 }

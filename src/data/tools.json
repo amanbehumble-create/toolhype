@@ -1318,7 +1318,7 @@
   },
   {
     "slug": "windsurf",
-    "name": "Windsurf",
+    "name": "Windsurf (now Devin Desktop)",
     "url": "https://windsurf.com",
     "affiliateUrl": null,
     "category": "coding",
@@ -1327,10 +1327,12 @@
       "agents"
     ],
     "pricing": "freemium",
-    "verdict": "Agentic IDE focused on keeping you in flow.",
-    "useThisIf": "you want a Cursor alternative.",
+    "verdict": "AI code editor from Cognition, renamed from Windsurf to Devin Desktop on June 2, 2026 (it was called Codeium before that). It's the same VS Code-style editor with Tab completions and the same plans, but it now opens on an 'Agent Command Center': a Kanban board where you run and review several coding agents at once, locally or in the cloud. Through the open Agent Client Protocol (ACP) it can also run Codex, Claude Agent, OpenCode and other ACP agents next to Cognition's own Devin and SWE models. Free gives unlimited Tab completions and inline edits with a light agent quota; Pro is $20/mo (frontier models from OpenAI, Anthropic, Google and others, plus Devin Cloud agents); Max is $200/mo for much higher quotas; Teams is a flat $80/mo for up to 100 members on shared credits. Quotas refresh daily and weekly, and you can buy extra usage at API prices. If your company allowlists apps, note the app is now named Devin, not Windsurf.",
+    "useThisIf": "you want one editor where you can run and review several AI coding agents side by side, not just autocomplete, and like Cursor-style pricing with a real free tier.",
     "alternatives": [
       "cursor",
+      "claude-code",
+      "codex",
       "github-copilot"
     ],
     "source": "seed",
@@ -7395,5 +7397,262 @@
       "updatedAt": null
     },
     "logo": "/logos/loyaltty.png"
+  },
+  {
+    "slug": "gpt-6-2-astra",
+    "name": "GPT-6.2 Astra",
+    "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
+    "affiliateUrl": null,
+    "category": "chat",
+    "useCases": [
+      "chat",
+      "coding",
+      "agents"
+    ],
+    "pricing": "paid (in ChatGPT plans)",
+    "verdict": "OpenAI's new top model for hard professional work, released Nov 17, 2026. OpenAI says it makes slides, spreadsheets and documents that follow your templates more closely and 'read less like AI', and that it writes cleaner code, especially for websites, games and 3D design. It's in ChatGPT Work and Codex for Plus, Pro, Enterprise and Edu users (not the free plan), and in the API as gpt-6.2-astra at $8 in / $40 out per million tokens, 20% less than GPT-6 Astra. Artificial Analysis puts it second on its Intelligence Index, just behind Claude Fable 5.2. Early testers on X report mixed results on long tasks, and OpenAI's system card says it was more likely than its predecessor to leave out obstacles when reporting its work, so check what it tells you it did.",
+    "useThisIf": "you pay for ChatGPT or the API and want OpenAI's strongest model for long documents, decks, frontends or research.",
+    "alternatives": [
+      "chatgpt",
+      "claude-fable-5-2",
+      "gemini-4-carbon"
+    ],
+    "source": "x",
+    "addedAt": "2026-11-18",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/gpt-6-2-astra.png"
+  },
+  {
+    "slug": "gpt-6-2-sol",
+    "name": "GPT-6.2 Sol",
+    "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
+    "affiliateUrl": null,
+    "category": "chat",
+    "useCases": [
+      "chat",
+      "coding",
+      "agents"
+    ],
+    "pricing": "paid (in ChatGPT plans)",
+    "verdict": "OpenAI's faster, cheaper everyday model, released Nov 17, 2026 alongside GPT-6.2 Astra. OpenAI says it is smarter and more token-efficient than GPT-6.1 Sol, handles multistep agent workflows well, and that many OpenAI staff use it as their default. It's in ChatGPT Work and Codex for Plus, Pro, Enterprise and Edu users, and Pro 200 subscribers get the Ultrafast mode with Sol for the first time. In the API it's gpt-6.2-sol at the same price as 6.1 Sol: $2 in / $10 out per million tokens ($0.10 cached input), about a fifth of Astra's token price. The quality claims are OpenAI's own.",
+    "useThisIf": "you want a quick, cheaper OpenAI model for daily chat, coding help or high-volume agent calls and don't need Astra on every step.",
+    "alternatives": [
+      "gpt-6-2-astra",
+      "gemini-4-hydrogen",
+      "chatgpt"
+    ],
+    "source": "x",
+    "addedAt": "2026-11-18",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/gpt-6-2-sol.png"
+  },
+  {
+    "slug": "kling-image-4",
+    "name": "Kling Image 4.0",
+    "url": "https://kling.ai/blog/kling-image-4-stunningly-realistic-sharp-precise",
+    "affiliateUrl": null,
+    "category": "design",
+    "useCases": [
+      "design",
+      "marketing"
+    ],
+    "pricing": "freemium",
+    "verdict": "Kling AI's new image model, launched Nov 17, 2026 in Kling's web studio and via API. Its headline features are native 8K output (up to 8192×8192 for square images), text inside images of up to 2,000 characters in seven languages, and sets of up to 10 matching images from one prompt, for storyboards or product shots. It can also lay out a whole tall e-commerce product page or website mockup as one image. It's aimed at very photo-like results, including skin and fabric detail. Kling says it's available to all users of its studio, which runs on credits with paid plans; API billing now counts reference images as well as outputs, and 8K costs more than 2K. Don't use it to make realistic images of real people without their consent.",
+    "useThisIf": "you make ads, posters, product pages or storyboards and need sharp, high-resolution images with lots of readable text.",
+    "alternatives": [
+      "kling-ai",
+      "midjourney",
+      "ideogram"
+    ],
+    "source": "x",
+    "addedAt": "2026-11-18",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/kling-image-4.png"
+  },
+  {
+    "slug": "rankspot",
+    "name": "RankSpot",
+    "url": "https://www.rankspot.ai/",
+    "affiliateUrl": null,
+    "category": "marketing",
+    "useCases": [
+      "marketing",
+      "agents"
+    ],
+    "pricing": "paid",
+    "verdict": "SEO and AI-search tool you run from your own AI chat. Connect its MCP server to Claude, ChatGPT, Cursor or n8n and your agent can pull keyword, backlink and 'which brands does ChatGPT name' data, write and publish articles (it supports WordPress), find editors' emails and send backlink pitches from your own mailbox, and draft Reddit replies for you to post. Nothing goes out until you approve it. There's no subscription: reading your data is free, an article costs $3, an AI-visibility check $0.004, an email found $0.065 and an email sent $0.025, and top-ups start at $10 with $1 of free credit to try it. It was #1 on Product Hunt on Nov 17, 2026. Mass outreach and AI-written articles can hurt your reputation if you send them unchecked, so read every pitch and post before you approve it.",
+    "useThisIf": "you already use Claude or ChatGPT daily and want it to do SEO and AI-search work, paying per article or check instead of $500+ a month in SEO tools.",
+    "alternatives": [
+      "agentseo",
+      "openseo",
+      "akii-seo-optimizer"
+    ],
+    "source": "producthunt",
+    "addedAt": "2026-11-18",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/rankspot.png"
+  },
+  {
+    "slug": "seshka",
+    "name": "seshka",
+    "url": "https://www.seshka.dev/",
+    "affiliateUrl": null,
+    "category": "coding",
+    "useCases": [
+      "coding"
+    ],
+    "pricing": "open-source",
+    "verdict": "Free, MIT-licensed macOS menu bar app that cleans up after Claude Code. When a session ends, the dev servers, file watchers and emulators it started often keep running. seshka lists them grouped by session, with port, memory and age, and kills them in one click, telling you how much memory you got back. It can also end idle Claude Code sessions by hand or after a time limit you set; you bring them back with claude --resume. Needs macOS 14 or later. It's a brand-new project from the JigJoy team (repo created Nov 13, 2026, under 10 GitHub stars, #9 on Product Hunt Nov 17), so expect rough edges.",
+    "useThisIf": "you run several Claude Code sessions on a Mac and keep finding old dev servers hogging ports and memory.",
+    "alternatives": [
+      "claude-code",
+      "worktrunk",
+      "termy"
+    ],
+    "source": "producthunt",
+    "addedAt": "2026-11-18",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/seshka.png"
+  },
+  {
+    "slug": "skillbox",
+    "name": "Skillbox",
+    "url": "https://skillbox.so/",
+    "affiliateUrl": null,
+    "category": "coding",
+    "useCases": [
+      "coding",
+      "agents"
+    ],
+    "pricing": "freemium",
+    "verdict": "One library for your AI agent skills, kept in sync across Claude Code, Cursor and Codex on your machines. You import skills from your computer, GitHub or GitLab, or add public ones from its Explore page. Skillbox remembers where each came from, follows updates from the source and, per the maker, scans new versions for prompt injection and leaked secrets before they reach your machine. You pick which skills are active everywhere and which only inside one project. Free covers up to 3 devices and 100 followed sources; Individual is £6.99/mo (7-day trial) and adds context trimming and Skillbox AI; Team is £12.99 per active member a month. There's a Mac app. New product (domain registered Sep 2026). Submitted by the maker; passed our read-only safety check (privacy, terms, DPA and trust pages, support email, Product Hunt listing).",
+    "useThisIf": "you've collected a pile of agent skills and lose track of which copy is current in which tool.",
+    "alternatives": [
+      "engineer-skills",
+      "claude-mem",
+      "context-mode"
+    ],
+    "source": "submission",
+    "addedAt": "2026-11-18",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/skillbox.png"
+  },
+  {
+    "slug": "ordogrid",
+    "name": "OrdoGrid",
+    "url": "https://ordogrid.com/en/invoice-import",
+    "affiliateUrl": null,
+    "category": "productivity",
+    "useCases": [
+      "productivity"
+    ],
+    "pricing": "freemium",
+    "verdict": "Belgian invoicing software built around Peppol, the e-invoicing network Belgian businesses now have to use. The free plan receives unlimited Peppol invoices and sends one a month. Starter (€9/mo excl. VAT) sends unlimited invoices plus quotes, credit notes and recurring invoices. Business (€59/mo excl. VAT, 14-day trial) adds the AI part: it reads supplier PDFs that contain real text and suggests the parties, date, amount and reference, then you review them before they're matched to bank transactions. It doesn't OCR scanned paper and doesn't approve bookkeeping on its own, which the maker states plainly. Also has bank reconciliation, project invoicing, an API and free no-account tools (Belgian VAT and IBAN checkers, invoice templates). Mostly useful if you invoice in Belgium. Submitted by the maker; passed our read-only safety check (domain since Aug 2025, privacy policy, contact email, clear pricing).",
+    "useThisIf": "you're a Belgian freelancer or small business that needs Peppol e-invoicing and wants supplier PDFs turned into draft entries.",
+    "alternatives": [
+      "creepless"
+    ],
+    "source": "submission",
+    "addedAt": "2026-11-18",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/ordogrid.png"
+  },
+  {
+    "slug": "kahrbon",
+    "name": "Kahrbon",
+    "url": "https://kahrbon.com/",
+    "affiliateUrl": null,
+    "category": "productivity",
+    "useCases": [
+      "productivity"
+    ],
+    "pricing": "pricing not published",
+    "verdict": "Workplace app for office managers on Microsoft 365 (Google Workspace also connects). It combines visitor check-in (a tablet kiosk in the lobby, host email and Teams alerts on arrival, visit log, watchlist by email) with a Note Taker that joins Teams calls: AssemblyAI transcribes with speaker labels and Claude drafts the minutes, decisions and action items. There are also add-ons for meeting briefs, proposals and email signatures. 15-day free trial, no card. Prices aren't published, you have to talk to sales. Recording calls and logging visitors means you need consent and a privacy notice in your office. Submitted by the maker; passed our read-only safety check (domain since 2017, Kahrbon, Inc. privacy policy, terms, GDPR and contact pages).",
+    "useThisIf": "you run an office on Microsoft 365 and want visitor sign-in and Teams meeting notes in one tool instead of two.",
+    "alternatives": [
+      "claude-meetings",
+      "granola"
+    ],
+    "source": "submission",
+    "addedAt": "2026-11-18",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/kahrbon.png"
+  },
+  {
+    "slug": "ai-cost",
+    "name": "AI//COST",
+    "url": "https://aicost.tools/",
+    "affiliateUrl": null,
+    "category": "coding",
+    "useCases": [
+      "coding",
+      "agents"
+    ],
+    "pricing": "free",
+    "verdict": "Free site that compares LLM API prices, with no sign-up. It tracks about 350 models from 35 providers, says every rate is read from the vendor's own price page and stamped with the date, and has calculators that estimate what an agent really costs per task or per month once you count prompt caching, cached-read rates, growing context and batch discounts. It also runs its own 'AI Cost Bench' (82 tasks across 10 models, scored per dollar). Useful for quick back-of-envelope math, but check the vendor's page before you commit budget, since prices change weekly. Submitted from a Gmail address rather than the site's own domain, but the site has its own contact addresses, an about page, privacy and terms. Passed our read-only safety check (domain since May 2026, no sign-up or payment).",
+    "useThisIf": "you're picking a model for an agent and want to know the real monthly bill, not just the per-token list price.",
+    "alternatives": [
+      "bestllmfor",
+      "ai-compare-ninja",
+      "seedrouter"
+    ],
+    "source": "submission",
+    "addedAt": "2026-11-18",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/ai-cost.png"
   }
 ]

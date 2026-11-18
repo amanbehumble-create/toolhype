@@ -4,15 +4,16 @@ import '@fontsource-variable/funnel-display';
 import '@fontsource-variable/geist-mono';
 import '../styles.css';
 import { SITE } from '../lib/data';
-interface Props { title?: string; description?: string; jsonld?: object[]; ogType?: string; noindex?: boolean; ogImage?: string }
-const { title, description: d0 = SITE.tagline, jsonld = [], ogType = 'website', noindex = false, ogImage = '/og/default.png' } = Astro.props;
+interface Props { title?: string; description?: string; jsonld?: object[]; ogType?: string; noindex?: boolean; ogImage?: string; canonicalPath?: string }
+const { title, description: d0 = SITE.tagline, jsonld = [], ogType = 'website', noindex = false, ogImage = '/og/default.png', canonicalPath } = Astro.props;
 const ogImg = new URL(ogImage, Astro.site);
 const description = d0.length > 160 ? d0.slice(0, 157).replace(/\s+\S*$/, '') + '…' : d0;
 const full = title ? (title.length > 50 ? title : `${title} · ${SITE.name}`) : `${SITE.name} — ${SITE.tagline}`;
 let path = Astro.url.pathname.replace(/\.html$/, '');
 if (path === '/index' || path === '') path = '/';
 else path = path.replace(/\/$/, '');
-const canonical = new URL(path, Astro.site);
+// canonicalPath: point a duplicate page at its main URL (e.g. the live week's /hype/<week> permalink → /hype).
+const canonical = new URL(canonicalPath ?? path, Astro.site);
 ---
 <!doctype html><html lang="en"><head>
 <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>

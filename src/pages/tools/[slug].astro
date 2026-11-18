@@ -33,6 +33,11 @@ const art = (w: string) => (/^[aeiou]/i.test(w) ? 'an' : 'a');
 const noun = `${cat ? cat.name.toLowerCase().replace(/\bai\b/g, 'AI') : t.category} ${t.category === 'crypto' ? 'app' : 'AI tool'}`;
 const paidIn = t.pricing.match(/^paid \((.*)\)$/)?.[1];
 const kind = /^(free|freemium|paid|open-source|open-weight)$/.test(t.pricing) ? `${art(t.pricing)} ${t.pricing} ${noun}` : paidIn ? `a paid ${noun} (${paidIn})` : `${art(noun)} ${noun} (${t.pricing})`;
+// "In short" answer box: the verdict's first sentence (two if the first is very short) instead of repeating the
+// whole verdict, which is shown in full right below it.
+const cut = (v: string, from = 0): number => { const re = /[.!?]["')]?\s+(?=[A-Z0-9"'(])/g; re.lastIndex = from; let m;
+  while ((m = re.exec(v))) { if (!/\b(e\.g|i\.e|vs|Inc|Ltd|Co|Mr|Ms|Dr|St|approx|U\.S)\.$/.test(v.slice(0, m.index + 1))) return m.index + m[0].trimEnd().length; } return v.length; };
+const lead = ((i) => (i < 60 ? t.verdict.slice(0, cut(t.verdict, i)) : t.verdict.slice(0, i)))(cut(t.verdict)).trim();
 const faq: [string, string][] = [
   [`What is ${t.name}?`, t.verdict],
   [`Who should use ${t.name}?`, `Use ${t.name} if ${t.useThisIf}`],
@@ -44,7 +49,7 @@ const faq: [string, string][] = [
 <Shell><article class="card prose">
   <div style="display:flex;gap:1rem;align-items:center"><div class="vote" data-vote={t.slug}><button aria-label="Upvote">▲</button><span class="n">0</span></div>
   {t.logo ? <img class="avatar logo" src={t.logo} alt={`${t.name} logo`} width="56" height="56" /> : <div class="avatar">{t.name[0]}</div>}<h1 style="margin:0">{t.name}</h1></div>
-  <p class="answer"><b>In short:</b> {t.name} is {kind}. {t.verdict}{t.buzz.status === 'live' ? ` X Buzz Score: ${t.buzz.score}/100 (${t.buzz.mentions7d?.toLocaleString('en-US')} posts in 7 days).` : ''}</p>
+  <p class="answer"><b>In short:</b> {t.name} is {kind}. {lead}{t.buzz.status === 'live' ? ` X Buzz Score: ${t.buzz.score}/100 (${t.buzz.mentions7d?.toLocaleString('en-US')} posts in 7 days).` : ''}</p>
   <p><b>Verdict:</b> {t.verdict}</p>{t.riskNote && <p class="muted"><b>Note:</b> {t.riskNote}</p>}<p><b>Use this if</b> {t.useThisIf}</p>
   <div class="meta">{t.useCases.filter((c) => getCommunity(c)).map((c) => <a class="chip c" href={`/c/${c}`}>c/{c}</a>)}<span class="chip">{t.pricing}</span></div>
   <p><a class="btn primary" data-track="visit:tool-page" href={goUrl(t, '/tools/' + t.slug)} rel={t.affiliateUrl ? 'sponsored nofollow noopener' : 'nofollow noopener'} target="_blank">Visit {t.name} →</a></p>

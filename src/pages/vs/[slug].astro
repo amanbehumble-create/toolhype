@@ -35,12 +35,12 @@ const rows: [string, string, string][] = [
   <h1>{a.name} vs {b.name}</h1><p class="muted">Updated {new Date(BUZZ_AT).toLocaleDateString("en-US", { month: "long", year: "numeric", timeZone: "Asia/Hong_Kong" })}</p>
   <p><b>Short answer:</b> {notes?.bottomLine ? <>{notes.bottomLine} </> : <>{summary} </>}{buzzLine}</p>
   {notes && <><h2>Key differences (checked {notes.checked})</h2>
-  <table><thead><tr><th></th><th>{a.name}</th><th>{b.name}</th></tr></thead>
-  <tbody>{notes.rows.map(([k, x, y]) => <tr><th scope="row">{k}</th><td>{x}</td><td>{y}</td></tr>)}</tbody></table>
+  <div style="overflow-x:auto"><table><thead><tr><th></th><th>{a.name}</th><th>{b.name}</th></tr></thead>
+  <tbody>{notes.rows.map(([k, x, y]) => <tr><th scope="row">{k}</th><td>{x}</td><td>{y}</td></tr>)}</tbody></table></div>
   <p class="muted" style="font-size:.85rem">Sources: {notes.sources.map(([n, u], i) => <>{i ? ' · ' : ''}<a href={u} rel="noopener nofollow" target="_blank">{n}</a></>)}. Prices change, so check the official pages before you buy.</p>
   <h2>At a glance</h2></>}
-  <table><thead><tr><th></th><th><a href={`/tools/${a.slug}`}>{a.name}</a></th><th><a href={`/tools/${b.slug}`}>{b.name}</a></th></tr></thead>
-  <tbody>{rows.map(([k, x, y]) => <tr><th scope="row">{k}</th><td>{x}</td><td>{y}</td></tr>)}</tbody></table>
+  <div style="overflow-x:auto"><table><thead><tr><th></th><th><a href={`/tools/${a.slug}`}>{a.name}</a></th><th><a href={`/tools/${b.slug}`}>{b.name}</a></th></tr></thead>
+  <tbody>{rows.map(([k, x, y]) => <tr><th scope="row">{k}</th><td>{x}</td><td>{y}</td></tr>)}</tbody></table></div>
   {shared.length > 0 && <p>Both are used for: {shared.map((c, i) => <>{i ? ', ' : ''}<a href={`/best/${c}`}>{c}</a></>)}.</p>}
   <h2>FAQ</h2>{faq.map(([q, x]) => <><h3>{q}</h3><p>{x}</p></>)}
   <p class="muted">Data from toolhype's listings and the daily X scan (updated {hkt(BUZZ_AT)}). <a href="/vs">More comparisons</a> · <a href="/hype">Most hyped this week</a></p>

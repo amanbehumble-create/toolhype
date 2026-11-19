@@ -1,155 +1,223 @@
 {
- "_note": "Staging pool for the next newsletter issue (#8, week of Nov 16 2026). Not rendered on the site; move into src/data/prompts.json as issue-8 once it has ~8+ prompts. Same rule as issue 7: X posts with 100+ likes, prompt text word for word in the post (or the author's own note/first reply). Issue 7 (week of Nov 9) is still unpublished with 5 prompts in scripts/prompt-pool-issue-7.json. Nov 16 run: 1 eligible X prompt (@noahkagan 'stop, keep, finish', then 143 likes). Reddit JSON is still 403, but the r/ChatGPTPromptGenius top-of-week RSS is readable; three safe, copy-paste prompts from there are parked in 'candidates' (upvotes can't be read, so they don't meet the 100+ rule yet; the author discloses they make the AI Toolbox extension, but the prompts work by hand in any chatbot). Nov 17 HKT run: re-checked @noahkagan 'stop, keep, finish' (now 144 likes). Added 5 eligible X prompts: @umesh_ai one-shot speeder chase (601 likes; prompt is in the author's first reply), @Voxyz_ai Claude Code Mode audit (247 likes; 'Don't modify anything yet'), @azed_ai minimalist full-body cartoon (162 likes; full text is in the note), @Strength04_X F1 vs fighter jet 30s (162 likes; full text is in the note), and @noahkagan weekly changelog (130 likes, posted Nov 11, missed in the Nov 16 pass). X search does not honor min_likes, so like counts were checked on each post. Skipped: @wangai_johnn Mercor resume (421 likes) — visible text is cut off and the images are the finished resume, not the rest of the prompt; @rubenhassid '17 hours to use Fable 5.2' (289 likes) — prompt lives in an image/link, and the countdown framing is the same kind of time-pressure post issue 7 skipped; @LearnWithBishal 'playable shooter from one prompt' (233 likes) — demo only, no prompt in the post; a second @Strength04_X 30s script, 'unexpected friendship in the wild' (144 likes) — same shot-by-shot template as the F1 prompt already here; @noahkagan 'work the weekend' (still 65 likes) and 'unclaimed money' (still 37 likes); @Strength04_X espresso ad (96 likes, still under 100); @Voxyz_ai coordinator skill (80 likes, under 100 and not beginner-friendly); @thetrackk Grok Bot idea prompt (57 likes, prompt appears to be in an image); a jailbreak-prompt-hub post (59 likes, unsafe); @LearnWithBishal 8-photoshoot thread (prompts are in replies, but the parent has only 10 likes). Reddit JSON still 403 (old.reddit too). Kept the original 3 r/ChatGPTPromptGenius candidates and added 3 more from this week's RSS, still unverified upvotes: a Nov 16 reusable {{blanks}} prompt from the same author, plus a character-sheet template (u/Simple_Armadillo4215; they disclose a paid pack, the front-view template in the post is free) and a standalone-Shorts prompt (u/Willing_Being9956) for author diversity. Left out of candidates: the handoff-note prompt (already reviewed in the issue 7 run, same author), a timely Custom GPT retirement chain (same author; already adding their new weekly prompt), a Thanksgiving dinner schedule that is one person's exact menu, jailbreak/copyright-bypass threads, and posts that were questions rather than copy-paste prompts. Nov 18 HKT run: added @Voxyz_ai pre-launch legal check for vibe-coded apps (719 likes; prompt quoted in full in the post's note). Skipped: a WEEX crypto-fortune giveaway prompt (109 likes, crypto promo), @alicehan_ai cocktail-hour portrait (166 likes; prompt only in replies, glamour portrait), @techhalla 'Karate Kid but it's 1971' (289 likes; recreates a film/real actors, no prompt in the post), @AlexFinn GPT-6.2 posts (benchmarks, no prompt). Reddit RSS/JSON returned 403/429 this run; a 3-prompt 'make it find its own AI tells, then fix only those lines' chain was seen at the top of r/ChatGPTPromptGenius today but its post URL and author couldn't be read, so it is not added.",
- "n": 8,
- "slug": "issue-8",
- "prompts": [
-  {
-   "title": "Audit what you shipped: stop, keep, finish",
-   "category": "Chat",
-   "tool": "Claude (works in ChatGPT, Gemini or Grok with chat history or a project)",
-   "prompt": "Look at everything I shipped since [date] and every message I sent you. For each change: what number was it supposed to move, did it move, and what did I never check? Rank what I should stop, keep and finish.",
-   "why": "If you've been building or posting a lot with AI, this makes it grade the work against results instead of effort. Swap in a date and run it in the chat or project where the work happened. Noah Kagan found only 4 of 67 shipped changes clearly moved a number, and two winning tests he'd never acted on.",
-   "source": "https://x.com/noahkagan/status/2121379356207464887",
-   "author": "@noahkagan",
-   "likes": 144,
-   "likesAsOf": "Nov 17, 2026 HKT"
-  },
-  {
-   "title": "One-shot speeder chase across a cliff city (video)",
-   "category": "Video",
-   "tool": "Any text-to-video AI (author used MiniMax / Hailuo-class models; also works in Seedance, Kling or Grok video)",
-   "prompt": "Speeder chase across a cliff city (single continuous shot) From a monumental cliffside city carved into stone, the camera dives toward a tiny streak of light ripping along a narrow ledge-road. Lock-on: a speeder hugging the wall at insane speed. The camera slingshots ahead, whips back, then drops tight to the rear thrusters: heat haze, grit snapping off the ledge, warning lights flashing. A collapsing balcony rains debris; the rider snaps a last-inch swerve under a falling arch, then threads through hanging laundry lines and open windows in one fluid line. The camera darts through the same openings, staying glued to the motion. One final bend and sudden calm: the camera blasts outward into a reveal of the city opening onto a boundless waterfall-fed valley, mist turning into rainbow.",
-   "why": "One continuous camera move: dive, lock onto the speeder, whip around, thread debris and windows, then pull out over a waterfall valley. Paste as-is; the no-cut motion is what keeps it one shot.",
-   "source": "https://x.com/umesh_ai/status/2121866754213421377",
-   "promptSource": "https://x.com/umesh_ai/status/2121866758805979445",
-   "author": "@umesh_ai",
-   "likes": 601,
-   "likesAsOf": "Nov 17, 2026 HKT",
-   "note": "The prompt is in the author's first reply to the post."
-  },
-  {
-   "title": "Find which Claude Code jobs should use Code Mode",
-   "category": "Coding",
-   "tool": "Claude Code (Fable 5.2 or later), with Anthropic's Code Mode guide pasted or linked",
-   "prompt": "Read this guide, then review my user and project Claude Code settings, my environment variables, and the transcripts of this project's last 20 sessions in ~/.claude/projects. Find three kinds of things: work I keep repeating that takes many related tool calls, like the same change across many files, searches whose results need filtering, or commands that could run at the same time; settings that stop Code Mode from starting, like an API key helper, agent teams, OpenTelemetry export or DISABLE_TELEMETRY; and, among my own hooks and those that come with plugins, PreToolUse hooks that would refuse tool calls in Code Mode and UserPromptSubmit hooks that would hold back code output.\n\nFor each one, point to the session, setting or hook, explain its impact, and suggest the smallest change needed. Rank the work you found by how many round trips Code Mode would save, biggest savings at the top. Show me the recommendations first. Don't modify anything yet.",
-   "why": "Paste this into Claude Code along with Anthropic's Code Mode guide (linked in the post). It only reviews your recent sessions, settings and hooks — it will not change anything until you say so — and ranks which repetitive jobs would save the most round trips.",
-   "source": "https://x.com/Voxyz_ai/status/2121951349718053297",
-   "author": "@Voxyz_ai",
-   "likes": 247,
-   "likesAsOf": "Nov 17, 2026 HKT"
-  },
-  {
-   "title": "Minimalist full-body cartoon character",
-   "category": "Image",
-   "tool": "Any image AI (ChatGPT / Gemini / Midjourney / Grok)",
-   "prompt": "A minimalist full-body cartoon illustration of [subject] on a clean white background, wearing [outfit], [doing action], with [facial expression], cute rounded proportions, simple flat shapes, tiny oval black eyes, clean curved mouth, soft [color1] and [color2] palette, subtle hand-drawn details, modern vector-style aesthetic",
-   "why": "Fill in the subject, outfit, action, expression and two colors. Tiny oval eyes, flat shapes and a clean white background give you a simple sticker or character look you can reuse.",
-   "source": "https://x.com/azed_ai/status/2122282551628931254",
-   "author": "@azed_ai",
-   "likes": 162,
-   "likesAsOf": "Nov 17, 2026 HKT"
-  },
-  {
-   "title": "30-second F1 vs fighter jet speed challenge (video)",
-   "category": "Video",
-   "tool": "Seedance 2.5 or any text-to-video AI with audio",
-   "prompt": "Create an exactly 30-second ultra-photorealistic live-action extreme racing commercial.\n\nTITLE: The Ultimate Speed Challenge\n\nFORMAT: 16:9, 4K, high-end motorsport commercial quality.\n\nMAIN VEHICLE:\nOne bright red Formula racing car with black aerodynamic wings, visible racing number 07, black tires and a professional helmeted driver.\n\nSECOND VEHICLE:\nOne modern grey fighter jet with realistic aerodynamic design and twin-engine exhaust.\n\nMaintain identical vehicle designs throughout.\n\nLOCATION:\nA massive professional racing circuit connected to a long airport runway. Bright sunny sky, grandstands, spectators and distant mountains.\n\nSCENE AND TIMING:\n\n0–5 SECONDS:\nA bright red Formula racing car waits at the starting line. Inside the cockpit, the driver adjusts his helmet and grips the steering wheel.\n\nAUDIO: Engine revving, crowd cheering and racing announcer.\n\nANNOUNCER DIALOGUE:\n\"Today, speed meets the impossible!\"\n\n5–10 SECONDS:\nA grey fighter jet rolls onto the parallel runway. Its engines roar as it prepares for takeoff.\n\nThe driver looks toward the jet.\n\nDRIVER DIALOGUE:\n\"Let's see what you've got!\"\n\n10–16 SECONDS:\nThe race begins. The Formula car accelerates rapidly along the racing track. The fighter jet takes off from the parallel runway.\n\nCAMERA: Low-angle tracking shot beside the car, followed by an aerial shot showing both vehicles accelerating.\n\nAUDIO: Powerful racing engine, jet turbines and crowd excitement.\n\n16–22 SECONDS:\nThe Formula car speeds through a sharp racing corner while the fighter jet flies low and safely above its parallel runway. Both maintain incredible speed.\n\nANNOUNCER DIALOGUE:\n\"They're neck and neck! This is unbelievable!\"\n\n22–26 SECONDS:\nThe fighter jet gains a slight lead in the air. The Formula car approaches the finish line at maximum speed.\n\nCAMERA: Dynamic side-by-side cinematic shot.\n\n26–30 SECONDS:\nBoth vehicles cross their respective finish lines almost simultaneously.\n\nThe driver raises one gloved hand in celebration while the jet performs a smooth climb into the blue sky.\n\nDRIVER DIALOGUE:\n\"Okay... that was close!\"\n\nENDING:\nEpic aerial wide shot of the racing circuit and fighter jet disappearing into the distance.\n\nAUDIO DESIGN:\nAuthentic racing engine sounds, jet turbine roar, tire friction, wind, crowd cheering, racing announcer and perfectly synchronized dialogue.\n\nVISUAL QUALITY:\nUltra-realistic motorsport photography, accurate vehicle proportions, realistic speed and motion blur, detailed carbon-fiber surfaces, natural daylight and cinematic aerial camera movements.\n\nSTRICT CONSISTENCY:\nOne red Formula racing car and one grey fighter jet. Preserve vehicle colors, designs and racing number. Keep both vehicles on their separate parallel tracks and runway. No vehicle duplication, no impossible transformations, no sudden location changes.",
-   "why": "A full 30-second shot list with two vehicles, announcer and driver lines, and a consistency block so the red car and grey jet don't morph. Copy the structure and swap the vehicles or track to script your own short.",
-   "source": "https://x.com/Strength04_X/status/2121498278198194482",
-   "author": "@Strength04_X",
-   "likes": 162,
-   "likesAsOf": "Nov 17, 2026 HKT"
-  },
-  {
-   "title": "Weekly changelog from what you actually merged",
-   "category": "Coding",
-   "tool": "Claude Code with GitHub connected",
-   "prompt": "Every Friday, check everything we merged on GitHub. Skip internal fixes. For each new feature or change a customer would notice, write one line in plain words: what changed, why it's valuable to them, and a link to it if there is one. Put today's date on top. Add the entry to /changelog, newest on top.",
-   "why": "Paste it into Claude Code with GitHub connected and it writes a dated, customer-facing changelog from what you merged. Noah's TidyCal page went from 60 Google impressions to 3,437 in 3 weeks with this weekly habit.",
-   "source": "https://x.com/noahkagan/status/2120536555370451031",
-   "author": "@noahkagan",
-   "likes": 130,
-   "likesAsOf": "Nov 17, 2026 HKT"
-  },
-  {
-   "title": "Pre-launch legal check for a vibe-coded app",
-   "category": "Coding",
-   "tool": "Claude Code (works in Cursor, Codex or any coding agent with access to your repo)",
-   "prompt": "Check my app for: missing age gate, externally loaded fonts, session replay without consent, marketing emails without unsubscribe and address, renewal terms not beside the subscribe button and no DMCA agent. Fix what you can and list what I need to do myself.",
-   "why": "Run it in your project before you launch. It makes the agent look for six common gaps (kids' sign-ups, Google Fonts sending visitor IPs, session recording without consent, unsubscribe links, subscription renewal terms, DMCA agent) and split what it can fix from what you have to do. The fines in the post are the author's summary, not legal advice; check the rules where you operate.",
-   "source": "https://x.com/Voxyz_ai/status/2122736531701977117",
-   "author": "@Voxyz_ai",
-   "likes": 719,
-   "likesAsOf": "Nov 18, 2026 HKT",
-   "note": "The full prompt is in the post's long-form text (note)."
-  }
- ],
- "candidates": [
-  {
-   "title": "Black Friday deal check: must-haves before the listing",
-   "category": "Chat",
-   "tool": "ChatGPT with web search (works in Claude, Gemini or Grok with search on)",
-   "prompt": "I'm thinking about buying a {{item}} on Black Friday. Before I show you any deal, ask me up to 5 short questions about how I'll actually use it, what I own now that does the same job, and what made me start looking. Then write a list of 3 must-haves and 3 things I'd be paying for but won't use. Don't recommend any product or brand yet.",
-   "why": "Step 1 of a 4-prompt chain (the post also has prompts for the listing, a price check at 3+ stores, and a buy/wait/skip verdict). Writing must-haves before the AI sees the cart stops it from just agreeing the deal is good. Black Friday is Nov 27.",
-   "source": "https://www.reddit.com/r/ChatGPTPromptGenius/comments/1xw19mc/asking_chatgpt_is_this_a_good_black_friday_deal/",
-   "author": "u/Ok_Negotiation_2587",
-   "likes": null,
-   "likesAsOf": "Reddit upvotes not readable (JSON 403); top of r/ChatGPTPromptGenius this week, posted Nov 14, 2026"
-  },
-  {
-   "title": "Save the version that finally worked",
-   "category": "Chat",
-   "tool": "ChatGPT (works in any chatbot)",
-   "prompt": "We went back and forth a lot in this chat before something actually worked. Write me the final working version, as if I'm doing this from scratch next time.\nOnly include what worked in the end. Leave out every attempt we dropped, unless skipping it is a mistake I'd likely make again. Then add it as a one-line warning.\nKeep exact values: commands, settings, numbers, names, amounts.\nIf a step depends on something specific to my setup, say so in brackets.\nIf you're not sure which version we ended on, ask me instead of guessing.\nEnd with one line: the thing that finally made it work.",
-   "why": "Paste it before you close a long troubleshooting chat (a router setup, a spreadsheet formula, a recipe) and you get one clean message to save instead of scrolling through 12 failed attempts later.",
-   "source": "https://www.reddit.com/r/ChatGPTPromptGenius/comments/1xv8npw/the_answer_that_finally_worked_in_a_long_chatgpt/",
-   "author": "u/Ok_Negotiation_2587",
-   "likes": null,
-   "likesAsOf": "Reddit upvotes not readable (JSON 403); top of r/ChatGPTPromptGenius this week, posted Nov 13, 2026"
-  },
-  {
-   "title": "Name your chat so you can find it in six months",
-   "category": "Chat",
-   "tool": "ChatGPT (works in Claude, Gemini or Grok)",
-   "prompt": "Give this chat a title I'll actually find again in six months.\nRules:\n6 words max\nstart with the specific thing: the project, client, product, file or error. not the type of help I asked for\nnever use words like help, question, request, discussion, assistance, ideas\nif the chat ended up somewhere different from where it started, name where it ended up\nThen give me 3 words or short phrases from this chat that I'd probably never type in any other chat, like a name, a number, an error code or an unusual term. Those are what I'll search for later.",
-   "why": "Auto titles like 'Email draft' are useless later. Paste this at the end of any chat worth keeping, then rename the chat from the sidebar; the 3 rare words are what sidebar search will actually find.",
-   "source": "https://www.reddit.com/r/ChatGPTPromptGenius/comments/1xuhyx9/chatgpt_names_your_chats_after_the_kind_of_help/",
-   "author": "u/Ok_Negotiation_2587",
-   "likes": null,
-   "likesAsOf": "Reddit upvotes not readable (JSON 403); top of r/ChatGPTPromptGenius this week, posted Nov 12, 2026"
-  },
-  {
-   "title": "Turn a finished weekly chat into a reusable {{blanks}} prompt",
-   "category": "Chat",
-   "tool": "ChatGPT (works in Claude, Gemini or Grok)",
-   "prompt": "I'll do this same task again with different details. Look at this whole chat and write the one prompt I should have sent at the start, so next time the first answer is already the final one.\n\nTurn every correction I made along the way into an instruction inside the prompt. Use my wording where you can. Anything that will change next time (names, dates, numbers, the text I paste in) becomes a blank written like {{client_name}}. Everything that stays the same gets written out in full. If I showed you an example of what I wanted, keep its structure as the format to follow, not its content. Don't add rules I never asked for. Under the prompt, list each blank with one line on what goes in it. Then tell me the one instruction you're least sure belongs in there, and why.",
-   "why": "Paste it at the end of a chat where you finally got a weekly task right (a report, a listing, a client email). It writes one reusable prompt with {{blanks}} for the parts that change, and flags the instruction it is least sure about so last week's one-off doesn't get baked in. The post also has a short follow-up if the first test run is off. Posted Nov 16.",
-   "source": "https://www.reddit.com/r/ChatGPTPromptGenius/comments/1xxpcew/if_you_explain_the_same_task_to_chatgpt_every/",
-   "author": "u/Ok_Negotiation_2587",
-   "likes": null,
-   "likesAsOf": "Reddit upvotes not readable (JSON 403); top of r/ChatGPTPromptGenius this week, posted Nov 16, 2026"
-  },
-  {
-   "title": "Character sheet that keeps the same actor across shots",
-   "category": "Image",
-   "tool": "Any image or video AI that accepts a reference image (ChatGPT, Kling, Seedance, etc.)",
-   "prompt": "Character reference sheet, [style anchor — e.g. \"cinematic photorealism, muted teal-and-amber grade\"]. Character: [age, face, hair, build — your fixed description]. Wearing: [fixed outfit, word for word]. Distinctive item: [e.g. a brass lantern]. Front view, full body, plain grey background, even neutral lighting, neutral expression, high detail.",
-   "why": "Generate the front view first, then reuse these description blocks word-for-word in every later shot so the character doesn't quietly change face. The author discloses they sell a fuller pack; this front-view template is the free one in the post.",
-   "source": "https://www.reddit.com/r/ChatGPTPromptGenius/comments/1xwrwjq/the_character_sheet_prompt_that_kept_the_same/",
-   "author": "u/Simple_Armadillo4215",
-   "likes": null,
-   "likesAsOf": "Reddit upvotes not readable (JSON 403); top of r/ChatGPTPromptGenius this week, posted Nov 15, 2026"
-  },
-  {
-   "title": "Find 5 standalone Shorts in a long video",
-   "category": "Chat",
-   "tool": "ChatGPT, Claude, Gemini or Grok",
-   "prompt": "Here is a transcript or detailed notes from my long video: [PASTE]. Find up to 5 moments that can stand alone in about 30 seconds. For each one: quote the exact line, name the self-contained payoff, and write a hook that does not mention \"my full video\" or \"part of a longer video\". Rank them by how little leftover context they need. If a moment only works with a previous explanation, drop it or add one context sentence and mark it as \"needs setup\". Viewer test: for the top 3, rank them by which one a stranger would stop scrolling for, with one line on why each of the others loses. Don't: open with \"in this video\"; start with the result or the mistake, not the topic.",
-   "why": "Paste a transcript and it picks moments that make sense without watching the original, with a hook that doesn't say 'part of a longer video'. Built to reject clips that only work with 'as I said earlier.'",
-   "source": "https://www.reddit.com/r/ChatGPTPromptGenius/comments/1xtjnhi/how_do_you_get_5_standalone_shorts_out_of_one/",
-   "author": "u/Willing_Being9956",
-   "likes": null,
-   "likesAsOf": "Reddit upvotes not readable (JSON 403); top of r/ChatGPTPromptGenius this week, posted Nov 11, 2026"
-  }
- ]
+  "_note": "Staging pool for the next newsletter issue (#8, week of Nov 16 2026). Not rendered on the site; move into src/data/prompts.json as issue-8 once it has ~8+ prompts. Same rule as issue 7: X posts with 100+ likes, prompt text word for word in the post (or the author's own note/first reply). Issue 7 (week of Nov 9) is still unpublished with 5 prompts in scripts/prompt-pool-issue-7.json. Nov 16 run: 1 eligible X prompt (@noahkagan 'stop, keep, finish', then 143 likes). Reddit JSON is still 403, but the r/ChatGPTPromptGenius top-of-week RSS is readable; three safe, copy-paste prompts from there are parked in 'candidates' (upvotes can't be read, so they don't meet the 100+ rule yet; the author discloses they make the AI Toolbox extension, but the prompts work by hand in any chatbot). Nov 17 HKT run: re-checked @noahkagan 'stop, keep, finish' (now 144 likes). Added 5 eligible X prompts: @umesh_ai one-shot speeder chase (601 likes; prompt is in the author's first reply), @Voxyz_ai Claude Code Mode audit (247 likes; 'Don't modify anything yet'), @azed_ai minimalist full-body cartoon (162 likes; full text is in the note), @Strength04_X F1 vs fighter jet 30s (162 likes; full text is in the note), and @noahkagan weekly changelog (130 likes, posted Nov 11, missed in the Nov 16 pass). X search does not honor min_likes, so like counts were checked on each post. Skipped: @wangai_johnn Mercor resume (421 likes) — visible text is cut off and the images are the finished resume, not the rest of the prompt; @rubenhassid '17 hours to use Fable 5.2' (289 likes) — prompt lives in an image/link, and the countdown framing is the same kind of time-pressure post issue 7 skipped; @LearnWithBishal 'playable shooter from one prompt' (233 likes) — demo only, no prompt in the post; a second @Strength04_X 30s script, 'unexpected friendship in the wild' (144 likes) — same shot-by-shot template as the F1 prompt already here; @noahkagan 'work the weekend' (still 65 likes) and 'unclaimed money' (still 37 likes); @Strength04_X espresso ad (96 likes, still under 100); @Voxyz_ai coordinator skill (80 likes, under 100 and not beginner-friendly); @thetrackk Grok Bot idea prompt (57 likes, prompt appears to be in an image); a jailbreak-prompt-hub post (59 likes, unsafe); @LearnWithBishal 8-photoshoot thread (prompts are in replies, but the parent has only 10 likes). Reddit JSON still 403 (old.reddit too). Kept the original 3 r/ChatGPTPromptGenius candidates and added 3 more from this week's RSS, still unverified upvotes: a Nov 16 reusable {{blanks}} prompt from the same author, plus a character-sheet template (u/Simple_Armadillo4215; they disclose a paid pack, the front-view template in the post is free) and a standalone-Shorts prompt (u/Willing_Being9956) for author diversity. Left out of candidates: the handoff-note prompt (already reviewed in the issue 7 run, same author), a timely Custom GPT retirement chain (same author; already adding their new weekly prompt), a Thanksgiving dinner schedule that is one person's exact menu, jailbreak/copyright-bypass threads, and posts that were questions rather than copy-paste prompts. Nov 18 HKT run: added @Voxyz_ai pre-launch legal check for vibe-coded apps (719 likes; prompt quoted in full in the post's note). Skipped: a WEEX crypto-fortune giveaway prompt (109 likes, crypto promo), @alicehan_ai cocktail-hour portrait (166 likes; prompt only in replies, glamour portrait), @techhalla 'Karate Kid but it's 1971' (289 likes; recreates a film/real actors, no prompt in the post), @AlexFinn GPT-6.2 posts (benchmarks, no prompt). Reddit RSS/JSON returned 403/429 this run; a 3-prompt 'make it find its own AI tells, then fix only those lines' chain was seen at the top of r/ChatGPTPromptGenius today but its post URL and author couldn't be read, so it is not added. Nov 19 HKT run: re-checked the existing 7 official prompts (likes as of Nov 19, 2026 HKT): @umesh_ai speeder chase 601→624, @Voxyz_ai Code Mode 247→250, @azed_ai cartoon 162→198, @Strength04_X F1 162→203, @Voxyz_ai legal check 719→1136; @noahkagan stop/keep/finish stayed 144 and weekly changelog stayed 130. Added 6 eligible X prompts: @Voxyz_ai six Fable 5.2 copy-paste prompts (4806 likes; prompts are in the author's thread replies), @Voxyz_ai Codex vs GPT-6.2 guide review (976 likes, posted Nov 18; full prompt in the note), @Voxyz_ai screenshot-every-page UI rebuild (716 likes), @Voxyz_ai name the code smell (203 likes), @azed_ai 19th-century botanical scientific illustration (132 likes; full text in the note), and @alex_prompter seven Art of War battle-plan prompts (118 likes; full text in reply notes). Four of the six new entries are from @Voxyz_ai (the pool already had two); they stay in the staging pool and can be thinned when issue 8 is published. Skipped: @Lyelac_ jailbreak hub (663 likes), @51bodila trading-agent get-rich post (137), @Voxyz_ai Herdr overnight setup (405, not beginner-friendly) and coordinator update (167, not standalone), @umesh_ai hyperbike chase (159, same one-shot disaster-city template as the pooled speeder chase), and @azed_ai chalkboard diagram (87 likes, under 100; full prompt is in the note). Reddit: no new candidates and no promotions (top-of-week RSS 404, other RSS 429, JSON 403); the existing 6 Reddit candidates stay parked with unverified upvotes.",
+  "n": 13,
+  "slug": "issue-8",
+  "prompts": [
+    {
+      "title": "Audit what you shipped: stop, keep, finish",
+      "category": "Chat",
+      "tool": "Claude (works in ChatGPT, Gemini or Grok with chat history or a project)",
+      "prompt": "Look at everything I shipped since [date] and every message I sent you. For each change: what number was it supposed to move, did it move, and what did I never check? Rank what I should stop, keep and finish.",
+      "why": "If you've been building or posting a lot with AI, this makes it grade the work against results instead of effort. Swap in a date and run it in the chat or project where the work happened. Noah Kagan found only 4 of 67 shipped changes clearly moved a number, and two winning tests he'd never acted on.",
+      "source": "https://x.com/noahkagan/status/2121379356207464887",
+      "author": "@noahkagan",
+      "likes": 144,
+      "likesAsOf": "Nov 19, 2026 HKT"
+    },
+    {
+      "title": "One-shot speeder chase across a cliff city (video)",
+      "category": "Video",
+      "tool": "Any text-to-video AI (author used MiniMax / Hailuo-class models; also works in Seedance, Kling or Grok video)",
+      "prompt": "Speeder chase across a cliff city (single continuous shot) From a monumental cliffside city carved into stone, the camera dives toward a tiny streak of light ripping along a narrow ledge-road. Lock-on: a speeder hugging the wall at insane speed. The camera slingshots ahead, whips back, then drops tight to the rear thrusters: heat haze, grit snapping off the ledge, warning lights flashing. A collapsing balcony rains debris; the rider snaps a last-inch swerve under a falling arch, then threads through hanging laundry lines and open windows in one fluid line. The camera darts through the same openings, staying glued to the motion. One final bend and sudden calm: the camera blasts outward into a reveal of the city opening onto a boundless waterfall-fed valley, mist turning into rainbow.",
+      "why": "One continuous camera move: dive, lock onto the speeder, whip around, thread debris and windows, then pull out over a waterfall valley. Paste as-is; the no-cut motion is what keeps it one shot.",
+      "source": "https://x.com/umesh_ai/status/2121866754213421377",
+      "promptSource": "https://x.com/umesh_ai/status/2121866758805979445",
+      "author": "@umesh_ai",
+      "likes": 624,
+      "likesAsOf": "Nov 19, 2026 HKT",
+      "note": "The prompt is in the author's first reply to the post."
+    },
+    {
+      "title": "Find which Claude Code jobs should use Code Mode",
+      "category": "Coding",
+      "tool": "Claude Code (Fable 5.2 or later), with Anthropic's Code Mode guide pasted or linked",
+      "prompt": "Read this guide, then review my user and project Claude Code settings, my environment variables, and the transcripts of this project's last 20 sessions in ~/.claude/projects. Find three kinds of things: work I keep repeating that takes many related tool calls, like the same change across many files, searches whose results need filtering, or commands that could run at the same time; settings that stop Code Mode from starting, like an API key helper, agent teams, OpenTelemetry export or DISABLE_TELEMETRY; and, among my own hooks and those that come with plugins, PreToolUse hooks that would refuse tool calls in Code Mode and UserPromptSubmit hooks that would hold back code output.\n\nFor each one, point to the session, setting or hook, explain its impact, and suggest the smallest change needed. Rank the work you found by how many round trips Code Mode would save, biggest savings at the top. Show me the recommendations first. Don't modify anything yet.",
+      "why": "Paste this into Claude Code along with Anthropic's Code Mode guide (linked in the post). It only reviews your recent sessions, settings and hooks — it will not change anything until you say so — and ranks which repetitive jobs would save the most round trips.",
+      "source": "https://x.com/Voxyz_ai/status/2121951349718053297",
+      "author": "@Voxyz_ai",
+      "likes": 250,
+      "likesAsOf": "Nov 19, 2026 HKT"
+    },
+    {
+      "title": "Minimalist full-body cartoon character",
+      "category": "Image",
+      "tool": "Any image AI (ChatGPT / Gemini / Midjourney / Grok)",
+      "prompt": "A minimalist full-body cartoon illustration of [subject] on a clean white background, wearing [outfit], [doing action], with [facial expression], cute rounded proportions, simple flat shapes, tiny oval black eyes, clean curved mouth, soft [color1] and [color2] palette, subtle hand-drawn details, modern vector-style aesthetic",
+      "why": "Fill in the subject, outfit, action, expression and two colors. Tiny oval eyes, flat shapes and a clean white background give you a simple sticker or character look you can reuse.",
+      "source": "https://x.com/azed_ai/status/2122282551628931254",
+      "author": "@azed_ai",
+      "likes": 198,
+      "likesAsOf": "Nov 19, 2026 HKT"
+    },
+    {
+      "title": "30-second F1 vs fighter jet speed challenge (video)",
+      "category": "Video",
+      "tool": "Seedance 2.5 or any text-to-video AI with audio",
+      "prompt": "Create an exactly 30-second ultra-photorealistic live-action extreme racing commercial.\n\nTITLE: The Ultimate Speed Challenge\n\nFORMAT: 16:9, 4K, high-end motorsport commercial quality.\n\nMAIN VEHICLE:\nOne bright red Formula racing car with black aerodynamic wings, visible racing number 07, black tires and a professional helmeted driver.\n\nSECOND VEHICLE:\nOne modern grey fighter jet with realistic aerodynamic design and twin-engine exhaust.\n\nMaintain identical vehicle designs throughout.\n\nLOCATION:\nA massive professional racing circuit connected to a long airport runway. Bright sunny sky, grandstands, spectators and distant mountains.\n\nSCENE AND TIMING:\n\n0–5 SECONDS:\nA bright red Formula racing car waits at the starting line. Inside the cockpit, the driver adjusts his helmet and grips the steering wheel.\n\nAUDIO: Engine revving, crowd cheering and racing announcer.\n\nANNOUNCER DIALOGUE:\n\"Today, speed meets the impossible!\"\n\n5–10 SECONDS:\nA grey fighter jet rolls onto the parallel runway. Its engines roar as it prepares for takeoff.\n\nThe driver looks toward the jet.\n\nDRIVER DIALOGUE:\n\"Let's see what you've got!\"\n\n10–16 SECONDS:\nThe race begins. The Formula car accelerates rapidly along the racing track. The fighter jet takes off from the parallel runway.\n\nCAMERA: Low-angle tracking shot beside the car, followed by an aerial shot showing both vehicles accelerating.\n\nAUDIO: Powerful racing engine, jet turbines and crowd excitement.\n\n16–22 SECONDS:\nThe Formula car speeds through a sharp racing corner while the fighter jet flies low and safely above its parallel runway. Both maintain incredible speed.\n\nANNOUNCER DIALOGUE:\n\"They're neck and neck! This is unbelievable!\"\n\n22–26 SECONDS:\nThe fighter jet gains a slight lead in the air. The Formula car approaches the finish line at maximum speed.\n\nCAMERA: Dynamic side-by-side cinematic shot.\n\n26–30 SECONDS:\nBoth vehicles cross their respective finish lines almost simultaneously.\n\nThe driver raises one gloved hand in celebration while the jet performs a smooth climb into the blue sky.\n\nDRIVER DIALOGUE:\n\"Okay... that was close!\"\n\nENDING:\nEpic aerial wide shot of the racing circuit and fighter jet disappearing into the distance.\n\nAUDIO DESIGN:\nAuthentic racing engine sounds, jet turbine roar, tire friction, wind, crowd cheering, racing announcer and perfectly synchronized dialogue.\n\nVISUAL QUALITY:\nUltra-realistic motorsport photography, accurate vehicle proportions, realistic speed and motion blur, detailed carbon-fiber surfaces, natural daylight and cinematic aerial camera movements.\n\nSTRICT CONSISTENCY:\nOne red Formula racing car and one grey fighter jet. Preserve vehicle colors, designs and racing number. Keep both vehicles on their separate parallel tracks and runway. No vehicle duplication, no impossible transformations, no sudden location changes.",
+      "why": "A full 30-second shot list with two vehicles, announcer and driver lines, and a consistency block so the red car and grey jet don't morph. Copy the structure and swap the vehicles or track to script your own short.",
+      "source": "https://x.com/Strength04_X/status/2121498278198194482",
+      "author": "@Strength04_X",
+      "likes": 203,
+      "likesAsOf": "Nov 19, 2026 HKT"
+    },
+    {
+      "title": "Weekly changelog from what you actually merged",
+      "category": "Coding",
+      "tool": "Claude Code with GitHub connected",
+      "prompt": "Every Friday, check everything we merged on GitHub. Skip internal fixes. For each new feature or change a customer would notice, write one line in plain words: what changed, why it's valuable to them, and a link to it if there is one. Put today's date on top. Add the entry to /changelog, newest on top.",
+      "why": "Paste it into Claude Code with GitHub connected and it writes a dated, customer-facing changelog from what you merged. Noah's TidyCal page went from 60 Google impressions to 3,437 in 3 weeks with this weekly habit.",
+      "source": "https://x.com/noahkagan/status/2120536555370451031",
+      "author": "@noahkagan",
+      "likes": 130,
+      "likesAsOf": "Nov 19, 2026 HKT"
+    },
+    {
+      "title": "Pre-launch legal check for a vibe-coded app",
+      "category": "Coding",
+      "tool": "Claude Code (works in Cursor, Codex or any coding agent with access to your repo)",
+      "prompt": "Check my app for: missing age gate, externally loaded fonts, session replay without consent, marketing emails without unsubscribe and address, renewal terms not beside the subscribe button and no DMCA agent. Fix what you can and list what I need to do myself.",
+      "why": "Run it in your project before you launch. It makes the agent look for six common gaps (kids' sign-ups, Google Fonts sending visitor IPs, session recording without consent, unsubscribe links, subscription renewal terms, DMCA agent) and split what it can fix from what you have to do. The fines in the post are the author's summary, not legal advice; check the rules where you operate.",
+      "source": "https://x.com/Voxyz_ai/status/2122736531701977117",
+      "author": "@Voxyz_ai",
+      "likes": 1136,
+      "likesAsOf": "Nov 19, 2026 HKT",
+      "note": "The full prompt is in the post's long-form text (note)."
+    },
+    {
+      "title": "Six copy-paste prompts so Fable 5.2 doesn't work like an intern",
+      "category": "Coding",
+      "tool": "Claude Code (Fable 5.2 or later)",
+      "prompt": "1. The State Machine Hunter\n\n\"Find all of the implicit state machines in my app. Make the best decision that will elevate all three: the user experience (UX), developer experience (DX), and agent experience (AX) always, without breaking anything.\"\n\n2. The Open-Source Scout\n\n\"Don't write an unfamiliar feature from scratch. Search GitHub for open-source projects, compare their approaches, then start.\"\n\n3. The Bug Triager\n\n\"Rate each bug from 1 to 10 on how often it would happen and how bad it would be. If the two scores multiplied are below 5, just file it as an issue and leave the code alone. Do not design for rare or future cases nobody asked about.\"\n\nTune the threshold of 5 to your project.\n\n4. The Closer\n\n\"Finish the whole job before you stop. Don't offer to continue: continue. Ask me before you delete anything. End with a recap for someone who saw none of the work: key points first, plain words.\"\n\n5. The CI Auditor\n\n\"Audit this repo's CI: Use gh to pull the last 150 CI runs and split each job's time into three parts: waiting in the queue for a machine, setup (checkout, installing dependencies, restoring the cache), and actually running the task. List the 5 slowest jobs and how many seconds each part takes. Give me the report first. Don't change anything.\"\n\n6. The Rebuilder\n\n\"If you were starting over today with the same goal, what would you still need to keep?\"",
+      "why": "A 4,806-like thread with six short prompts you can paste as-is. Start with The Closer or The Rebuilder if you're new; The CI Auditor needs the GitHub CLI (`gh`).",
+      "source": "https://x.com/Voxyz_ai/status/2122011755240984607",
+      "promptSource": "https://x.com/Voxyz_ai/status/2122011755513561314",
+      "author": "@Voxyz_ai",
+      "likes": 4806,
+      "likesAsOf": "Nov 19, 2026 HKT"
+    },
+    {
+      "title": "Review your Codex setup against OpenAI's GPT-6.2 guide",
+      "category": "Coding",
+      "tool": "Codex with GPT-6.2 Astra, started with `codex --search`, plus the two OpenAI guide links from the post",
+      "prompt": "Read these two pages. If you can't get the actual text, stop and tell me:\nhttps://developers.openai.com/codex/models\nhttps://learn.chatgpt.com/guides/prompting-gpt-6-2-astra\n\nThen review my Codex setup against them: ~/.codex/config.toml, ~/.codex/AGENTS.md, and the AGENTS.md files and skills in my project. Find three kinds of problems:\n1. A model or effort level that doesn't fit the work. Flag Astra as my default model, or a default effort above Extra High. Use the guides: Sol for everyday coding, Medium for a quick survey, High for tracing one cause across several systems, Extra High only when several causes interact.\n2. Parallel work with no instructions. For work that can run in parallel, check whether the matching skill or AGENTS.md says to use subagents, and when.\n3. Too much in AGENTS.md. Flag anything Codex can work out from the code, tests and docs, and routine decisions made on its behalf.\n\nFor each issue, quote my setting and the matching line from the guide, explain what it costs and where it will go wrong, and suggest the smallest change, written as config I can paste.\n\nThen look at this project's code and recent commits and give me a table: which kinds of work here fit Sol or Astra, and at which effort level.\n\nLast, tell me where to check my Codex usage and how to run one task from my backlog on both Sol and Astra to compare what each one uses.\n\nShow me the recommendations first. Don't change anything yet.",
+      "why": "Paste this into Codex after starting with `codex --search` so it can fetch the two official GPT-6.2 guides. It only reviews your config and AGENTS.md, suggests the smallest pasteable fixes, and will not change anything yet.",
+      "source": "https://x.com/Voxyz_ai/status/2123038513352622087",
+      "author": "@Voxyz_ai",
+      "likes": 976,
+      "likesAsOf": "Nov 19, 2026 HKT"
+    },
+    {
+      "title": "Screenshot every page, then rebuild the UI system",
+      "category": "Coding",
+      "tool": "Claude Code with Chrome (`claude --chrome`) and `/advisor fable` (Opus builds, Fable 5.2 reviews)",
+      "prompt": "Run my app, open every page in Chrome yourself and screenshot it. List the 5 biggest hierarchy and density problems first. Then define a spacing scale, type scale and max 5 color tokens. Rebuild using only those. No gradients. Screenshot at 1440 and 390, fix what looks off",
+      "why": "Launch Chrome in Claude Code, run /advisor fable, then paste this. It screenshots your app, lists the 5 biggest hierarchy and density problems, then rebuilds with a tight spacing, type and 5-color system, and checks 1440 and 390 widths.",
+      "source": "https://x.com/Voxyz_ai/status/2121981549713457427",
+      "author": "@Voxyz_ai",
+      "likes": 716,
+      "likesAsOf": "Nov 19, 2026 HKT"
+    },
+    {
+      "title": "Name the code smell before you tidy up",
+      "category": "Coding",
+      "tool": "Claude Code (also works in Cursor, Codex or any coding agent on your repo)",
+      "prompt": "• One function is too long → \"Find functions that are too long and split them with Extract Function.\"\n• You make the same fix in several places → \"Find duplicated code and merge it into one function.\"\n• You can't tell what something does from its name → \"Find names that don't say what they mean and rename them.\"",
+      "why": "Instead of 'clean up this code,' name the smell. Three copy-paste lines for long functions, duplicated code, and names that don't say what they mean.",
+      "source": "https://x.com/Voxyz_ai/status/2122041949796409754",
+      "author": "@Voxyz_ai",
+      "likes": 203,
+      "likesAsOf": "Nov 19, 2026 HKT"
+    },
+    {
+      "title": "19th-century botanical scientific illustration",
+      "category": "Image",
+      "tool": "Any image AI (ChatGPT / Gemini / Midjourney / Grok)",
+      "prompt": "A detailed botanical study of [plant or botanical subject], illustrated in the style of 19th-century natural history journals, delicate ink linework, hand-painted watercolor, realistic botanical textures, natural pigments, detailed anatomical cross-sections, magnified specimen studies, fine leader lines, handwritten Latin labels in sepia ink, elegant scientific plate composition, antique scholarly aesthetic, clean white background",
+      "why": "Fill in the plant or botanical subject. Ink linework, watercolor, cross-sections and handwritten Latin labels on a clean white background give you a natural-history plate look.",
+      "source": "https://x.com/azed_ai/status/2123008355056943177",
+      "author": "@azed_ai",
+      "likes": 132,
+      "likesAsOf": "Nov 19, 2026 HKT"
+    },
+    {
+      "title": "Seven Art of War prompts that build your battle plan",
+      "category": "Writing",
+      "tool": "Claude (also works in ChatGPT, Gemini or Grok)",
+      "prompt": "1) Know your enemy\n\n\"If you know the enemy and know yourself, you need not fear the result of a hundred battles.\"\n\n<context>I compete with a handful of businesses and I only half know what they're doing.</context>\n<task>Research my top 5 competitors' pricing, offers, best-selling products, marketing channels and what their customers complain about. Build a competitor dashboard with a side-by-side table and the one weakness each of them can't easily fix.</task>\n<rules>Link every fact. Say when information isn't public instead of guessing.</rules>\n<output>The dashboard page and my 3 biggest openings.</output>\n<input>My business and my competitors [ ]</input>\n\n2) Win before you fight\n\n\"The victorious strategist only seeks battle after the victory has been won.\"\n\n<context>I'm about to launch something and I don't know if anyone will pay for it.</context>\n<task>Design a test that proves demand before I build it. Write the offer, build a one-page pre-sale page with a waitlist or deposit button and set the number of sign-ups that means go.</task>\n<rules>Keep the test under $100 and 14 days. Tell me what result means I should stop.</rules>\n<output>The pre-sale page, the go or stop number and a 14-day test plan.</output>\n<input>What I want to launch [ ]</input>\n\n3) Attack where they're unprepared\n\n\"Attack him where he is unprepared, appear where you are not expected.\"\n\n<context>My competitors are bigger than me, so I can't beat them head on.</context>\n<task>Read my competitors' 1 and 2 star reviews and find the 5 problems customers keep complaining about. Build an opportunity map that ranks each gap by size and how fast I could fill it, with a headline I could use for each.</task>\n<rules>Quote real reviews as evidence. Skip gaps that need more money than I have.</rules>\n<output>The opportunity map and the gap to go after first.</output>\n<input>My business and my competitors [ ]</input>\n\n4) Calculate before the battle\n\n\"The general who wins a battle makes many calculations in his temple ere the battle is fought.\"\n\n<context>I'm about to make a big move like a price change, a new product or a new market.</context>\n<task>War-game it. Show me how each competitor is likely to respond, the best case, the worst case and the numbers behind each. Build a one-page decision sheet with the move I should make.</task>\n<rules>Use my real numbers. Flag every assumption so I can check it.</rules>\n<output>The decision sheet and the first step to take this week.</output>\n<input>The move and my numbers [ ]</input>\n\n5) Be like water\n\n\"Water shapes its course according to the nature of the ground over which it flows.\"\n\n<context>My positioning sounds the same as everyone else in my market.</context>\n<task>Map where every competitor sits on price and who they serve. Find the empty spot nobody owns and rewrite my homepage headline, offer and pricing to fit it.</task>\n<rules>Base the map on what competitors actually say on their sites. Keep my offer honest.</rules>\n<output>The positioning map and the rewritten homepage section.</output>\n<input>My business and my competitors [ ]</input>\n\n6) Win without fighting\n\n\"Supreme excellence consists in breaking the enemy's resistance without fighting.\"\n\n<context>Some of the businesses I compete with could be more useful to me as partners.</context>\n<task>Find 10 businesses that serve my customers without competing with me. Rank them by fit and build an outreach sheet with a short partnership offer and a personal first message for each.</task>\n<rules>Every offer must benefit both sides. Keep each message under 80 words.</rules>\n<output>The outreach sheet ready to send.</output>\n<input>My business and my ideal customer [ ]</input>\n\n7) Strike fast\n\n\"Let your plans be dark and impenetrable as night, and when you move, fall like a thunderbolt.\"\n\n<context>I always announce things too early and launch too slowly.</context>\n<task>Build a 14-day launch plan that stays quiet until day 10, then hits every channel at once. Include the daily tasks, the content for each channel and the offer that closes the launch.</task>\n<rules>Fit it to a team of one. Front-load everything that can be prepared in advance.</rules>\n<output>The launch calendar page and the day 1 to-do list.</output>\n<input>What I'm launching and my channels [ ]</input>",
+      "why": "Seven Claude prompts, one per Sun Tzu rule, each with context/task/rules/output/input blocks. Fill in your business in the [ ] at the bottom of each. Good starter: 2) Win before you fight (a 14-day demand test under $100).",
+      "source": "https://x.com/alex_prompter/status/2121996706636304582",
+      "promptSource": "https://x.com/alex_prompter/status/2121996718996898056",
+      "author": "@alex_prompter",
+      "likes": 118,
+      "likesAsOf": "Nov 19, 2026 HKT"
+    }
+  ],
+  "candidates": [
+    {
+      "title": "Black Friday deal check: must-haves before the listing",
+      "category": "Chat",
+      "tool": "ChatGPT with web search (works in Claude, Gemini or Grok with search on)",
+      "prompt": "I'm thinking about buying a {{item}} on Black Friday. Before I show you any deal, ask me up to 5 short questions about how I'll actually use it, what I own now that does the same job, and what made me start looking. Then write a list of 3 must-haves and 3 things I'd be paying for but won't use. Don't recommend any product or brand yet.",
+      "why": "Step 1 of a 4-prompt chain (the post also has prompts for the listing, a price check at 3+ stores, and a buy/wait/skip verdict). Writing must-haves before the AI sees the cart stops it from just agreeing the deal is good. Black Friday is Nov 27.",
+      "source": "https://www.reddit.com/r/ChatGPTPromptGenius/comments/1xw19mc/asking_chatgpt_is_this_a_good_black_friday_deal/",
+      "author": "u/Ok_Negotiation_2587",
+      "likes": null,
+      "likesAsOf": "Reddit upvotes not readable (JSON 403); top of r/ChatGPTPromptGenius this week, posted Nov 14, 2026"
+    },
+    {
+      "title": "Save the version that finally worked",
+      "category": "Chat",
+      "tool": "ChatGPT (works in any chatbot)",
+      "prompt": "We went back and forth a lot in this chat before something actually worked. Write me the final working version, as if I'm doing this from scratch next time.\nOnly include what worked in the end. Leave out every attempt we dropped, unless skipping it is a mistake I'd likely make again. Then add it as a one-line warning.\nKeep exact values: commands, settings, numbers, names, amounts.\nIf a step depends on something specific to my setup, say so in brackets.\nIf you're not sure which version we ended on, ask me instead of guessing.\nEnd with one line: the thing that finally made it work.",
+      "why": "Paste it before you close a long troubleshooting chat (a router setup, a spreadsheet formula, a recipe) and you get one clean message to save instead of scrolling through 12 failed attempts later.",
+      "source": "https://www.reddit.com/r/ChatGPTPromptGenius/comments/1xv8npw/the_answer_that_finally_worked_in_a_long_chatgpt/",
+      "author": "u/Ok_Negotiation_2587",
+      "likes": null,
+      "likesAsOf": "Reddit upvotes not readable (JSON 403); top of r/ChatGPTPromptGenius this week, posted Nov 13, 2026"
+    },
+    {
+      "title": "Name your chat so you can find it in six months",
+      "category": "Chat",
+      "tool": "ChatGPT (works in Claude, Gemini or Grok)",
+      "prompt": "Give this chat a title I'll actually find again in six months.\nRules:\n6 words max\nstart with the specific thing: the project, client, product, file or error. not the type of help I asked for\nnever use words like help, question, request, discussion, assistance, ideas\nif the chat ended up somewhere different from where it started, name where it ended up\nThen give me 3 words or short phrases from this chat that I'd probably never type in any other chat, like a name, a number, an error code or an unusual term. Those are what I'll search for later.",
+      "why": "Auto titles like 'Email draft' are useless later. Paste this at the end of any chat worth keeping, then rename the chat from the sidebar; the 3 rare words are what sidebar search will actually find.",
+      "source": "https://www.reddit.com/r/ChatGPTPromptGenius/comments/1xuhyx9/chatgpt_names_your_chats_after_the_kind_of_help/",
+      "author": "u/Ok_Negotiation_2587",
+      "likes": null,
+      "likesAsOf": "Reddit upvotes not readable (JSON 403); top of r/ChatGPTPromptGenius this week, posted Nov 12, 2026"
+    },
+    {
+      "title": "Turn a finished weekly chat into a reusable {{blanks}} prompt",
+      "category": "Chat",
+      "tool": "ChatGPT (works in Claude, Gemini or Grok)",
+      "prompt": "I'll do this same task again with different details. Look at this whole chat and write the one prompt I should have sent at the start, so next time the first answer is already the final one.\n\nTurn every correction I made along the way into an instruction inside the prompt. Use my wording where you can. Anything that will change next time (names, dates, numbers, the text I paste in) becomes a blank written like {{client_name}}. Everything that stays the same gets written out in full. If I showed you an example of what I wanted, keep its structure as the format to follow, not its content. Don't add rules I never asked for. Under the prompt, list each blank with one line on what goes in it. Then tell me the one instruction you're least sure belongs in there, and why.",
+      "why": "Paste it at the end of a chat where you finally got a weekly task right (a report, a listing, a client email). It writes one reusable prompt with {{blanks}} for the parts that change, and flags the instruction it is least sure about so last week's one-off doesn't get baked in. The post also has a short follow-up if the first test run is off. Posted Nov 16.",
+      "source": "https://www.reddit.com/r/ChatGPTPromptGenius/comments/1xxpcew/if_you_explain_the_same_task_to_chatgpt_every/",
+      "author": "u/Ok_Negotiation_2587",
+      "likes": null,
+      "likesAsOf": "Reddit upvotes not readable (JSON 403); top of r/ChatGPTPromptGenius this week, posted Nov 16, 2026"
+    },
+    {
+      "title": "Character sheet that keeps the same actor across shots",
+      "category": "Image",
+      "tool": "Any image or video AI that accepts a reference image (ChatGPT, Kling, Seedance, etc.)",
+      "prompt": "Character reference sheet, [style anchor — e.g. \"cinematic photorealism, muted teal-and-amber grade\"]. Character: [age, face, hair, build — your fixed description]. Wearing: [fixed outfit, word for word]. Distinctive item: [e.g. a brass lantern]. Front view, full body, plain grey background, even neutral lighting, neutral expression, high detail.",
+      "why": "Generate the front view first, then reuse these description blocks word-for-word in every later shot so the character doesn't quietly change face. The author discloses they sell a fuller pack; this front-view template is the free one in the post.",
+      "source": "https://www.reddit.com/r/ChatGPTPromptGenius/comments/1xwrwjq/the_character_sheet_prompt_that_kept_the_same/",
+      "author": "u/Simple_Armadillo4215",
+      "likes": null,
+      "likesAsOf": "Reddit upvotes not readable (JSON 403); top of r/ChatGPTPromptGenius this week, posted Nov 15, 2026"
+    },
+    {
+      "title": "Find 5 standalone Shorts in a long video",
+      "category": "Chat",
+      "tool": "ChatGPT, Claude, Gemini or Grok",
+      "prompt": "Here is a transcript or detailed notes from my long video: [PASTE]. Find up to 5 moments that can stand alone in about 30 seconds. For each one: quote the exact line, name the self-contained payoff, and write a hook that does not mention \"my full video\" or \"part of a longer video\". Rank them by how little leftover context they need. If a moment only works with a previous explanation, drop it or add one context sentence and mark it as \"needs setup\". Viewer test: for the top 3, rank them by which one a stranger would stop scrolling for, with one line on why each of the others loses. Don't: open with \"in this video\"; start with the result or the mistake, not the topic.",
+      "why": "Paste a transcript and it picks moments that make sense without watching the original, with a hook that doesn't say 'part of a longer video'. Built to reject clips that only work with 'as I said earlier.'",
+      "source": "https://www.reddit.com/r/ChatGPTPromptGenius/comments/1xtjnhi/how_do_you_get_5_standalone_shorts_out_of_one/",
+      "author": "u/Willing_Being9956",
+      "likes": null,
+      "likesAsOf": "Reddit upvotes not readable (JSON 403); top of r/ChatGPTPromptGenius this week, posted Nov 11, 2026"
+    }
+  ]
 }

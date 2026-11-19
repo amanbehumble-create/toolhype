@@ -515,6 +515,7 @@
     "verdict": "Google DeepMind frontier model for deep, real-world work in coding, finance, legal, cybersecurity and science, released in Oct 2026 with a 1M-token combined input/output limit in the Gemini API. In the Gemini app and AI Mode in Search for Google AI Pro and Ultra subscribers, in Antigravity for Ultra, and on the paid Gemini API tier at an introductory $2 in / $10 out per million tokens (cached input 95% off) until Nov 30, 2026, then $4 / $20. Its successor Gemini 4 Carbon (Nov 10) scores higher on long tasks but is Ultra-only in the app, so Argon is still the strongest Gemini on the Pro plan.",
     "useThisIf": "you pay for Google AI Pro and want the strongest Gemini you can use without moving up to Ultra.",
     "alternatives": [
+      "gemini-4-neon",
       "gemini-4-carbon",
       "claude-fable-5-2",
       "gemini"
@@ -1190,6 +1191,7 @@
     "verdict": "Google's assistant, best if you live in Gmail, Docs and Drive.",
     "useThisIf": "you're deep in Google Workspace.",
     "alternatives": [
+      "gemini-4-neon",
       "chatgpt",
       "claude"
     ],
@@ -1794,13 +1796,17 @@
     "affiliateUrl": null,
     "category": "video",
     "useCases": [
-      "video"
+      "video",
+      "design",
+      "audio"
     ],
     "pricing": "freemium",
-    "verdict": "Fun, fast text/image-to-video with effects.",
-    "useThisIf": "you make short playful social clips.",
+    "verdict": "Pika is now a multi-model creative studio for video, image and audio, not only the original Pika text-to-video model. The web app (pika.art) includes Video Studio, Image Studio and Music/Speech/SFX studios, and can run third-party models such as Kling 4.0, Seedance 2.5, Wan 3.0 and Nano Banana alongside Pika's own H3 Flex and Pika 2.5. The Free plan can use all models with purchased credit packs, two video jobs and two image or audio jobs at once, and no watermark, but no commercial license. Starter is $10/month ($8/month billed annually) for 600 credits; Creator is $35/month ($28/month billed annually) for 2,600 credits and a commercial license; Fancy starts at $95/month ($76/month billed annually) for 8,550 credits. You can also buy one-time credit packs. Prices checked Nov 19, 2026 on Pika's pricing page.",
+    "useThisIf": "you want one web studio for short videos, images and audio and prefer a credit-based plan that can also run models like Kling or Seedance, not just Pika's own.",
     "alternatives": [
-      "runway"
+      "runway",
+      "kling-ai",
+      "capcut"
     ],
     "source": "seed",
     "addedAt": "2023-11-28",
@@ -6430,6 +6436,7 @@
     "verdict": "Google's new frontier model, rolled out Nov 10, 2026, a few weeks after Gemini 4 Argon. Built for long, multi-step work in software engineering, cybersecurity and science; Google reports leading scores on security benchmarks such as SEC-bench Pro (88.2%). Available in the Gemini API and AI Studio (model gemini-4-carbon) at an introductory $2 in / $10 out per million tokens, rising to $4 / $20 later, and to Google AI Ultra subscribers in the Gemini app, AI Mode in Search and Antigravity. Not on the cheaper consumer plans yet, and the benchmark numbers are Google's own.",
     "useThisIf": "you build on the Gemini API or pay for Google AI Ultra and want the strongest Gemini for long coding or security tasks.",
     "alternatives": [
+      "gemini-4-neon",
       "gemini-4-argon",
       "claude-fable-5-2",
       "gemini"
@@ -6979,6 +6986,7 @@
     "verdict": "Google's fast, cheaper Gemini 4 model, released Nov 12, 2026, for everyday coding and agent work. Google pitches it as the quick 'execution' model next to Gemini 4 Carbon and Argon, which do the deep planning. It has four thinking levels and a 1M-token context window. In the API it costs a flat $1.50 in / $7.50 out per million tokens. Google says it beats Argon on the Artificial Analysis Intelligence Index (51 vs 50 at its default setting), but that is Google's own claim. It is also the new model behind Google Search, it shows up in the Gemini app model menu (free users get it when auto-selection picks it), and Antigravity's new Orchestrator mode for Pro/Ultra pairs it with Carbon.",
     "useThisIf": "you want a fast, cheaper Gemini 4 for coding agents or high-volume API calls and don't need Carbon-level reasoning on every step.",
     "alternatives": [
+      "gemini-4-neon",
       "gemini-4-carbon",
       "gemini-4-argon",
       "claude-haiku-5-5"
@@ -7654,5 +7662,181 @@
       "updatedAt": null
     },
     "logo": "/logos/ai-cost.png"
+  },
+  {
+    "slug": "tastestack",
+    "name": "Taste Stack",
+    "url": "https://tastestack.dev/",
+    "affiliateUrl": null,
+    "category": "coding",
+    "useCases": [
+      "coding",
+      "agents",
+      "design"
+    ],
+    "pricing": "freemium",
+    "verdict": "A catalog of visual 'tastes' — typography, spacing, color and layout skills — that you install once so Claude Code, Codex, Cursor, Gemini CLI and other agents reuse the same look on the next screen. The public catalog also covers launch videos, social images and slide decks. Four tastes (Swiss, Midnight, Soft Depth, House Blend) are free with an account so you can try the full install flow; any other taste is $3.99 once, including future versions; Taste Stack Pro is $12.99/month or $83.88/year for the whole catalog. It does not include an agent or model subscription. Operated by Mini Motion AI LLC. The tastestack.dev domain was registered 7 Nov 2026 (12 days old at review). Submitted by the maker; passed our read-only safety check (privacy, terms, refunds, hello@tastestack.dev, Stripe, no wallet or impersonation).",
+    "useThisIf": "you want your coding agent to carry a consistent visual style from a homepage or deck into the next screen, without inventing typography from scratch each time.",
+    "alternatives": [
+      "skillbox",
+      "engineer-skills",
+      "context-mode"
+    ],
+    "source": "submission",
+    "addedAt": "2026-11-19",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/tastestack.png"
+  },
+  {
+    "slug": "pawgroove",
+    "name": "PawGroove",
+    "url": "https://pawgroove.org/",
+    "affiliateUrl": null,
+    "category": "video",
+    "useCases": [
+      "video",
+      "fun"
+    ],
+    "pricing": "freemium",
+    "verdict": "A browser studio that turns one dog photo into a short vertical dance or themed clip, plus photo packs, stickers and GIFs. The live template library (11 dog-only templates at review, including Dog + Backup Dancers, Kung Fu Dog and a silent 'Hi' meme) shows generated examples. Eligible new accounts may get 10 one-time welcome credits for one 480p video or a 2-image preview, with network and daily limits; paid packs are $4.99 for 50 credits or $9.99 for 120 credits, with no subscription, and paid videos are 720p. A video costs 10 credits, a full pack 20, a 2-image preview 10. Music can be added later on supported templates (the Hi clip stays silent). The acceptable-use policy tells people to keep images of people out of uploads; we did not find a real-person face-swap or dance-trend mode. Contact is only the operator Gmail on the legal pages; checkout still showed 'Checking payment availability…' at review, so we did not confirm payments were live. Submitted by the maker; passed our read-only safety check (privacy, terms, AUP, HTTPS, 24-day-old domain).",
+    "useThisIf": "you want a short AI dance or themed clip of your dog, and you are fine with variable likeness and no third-party trend music included.",
+    "alternatives": [
+      "pawline",
+      "pika",
+      "runway"
+    ],
+    "source": "submission",
+    "addedAt": "2026-11-19",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/pawgroove.png"
+  },
+  {
+    "slug": "gemini-4-neon",
+    "name": "Gemini 4 Neon",
+    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
+    "affiliateUrl": null,
+    "category": "chat",
+    "useCases": [
+      "chat",
+      "coding",
+      "agents"
+    ],
+    "pricing": "paid",
+    "verdict": "Google's 18 Nov 2026 Gemini 4 model, aimed at fast end-to-end software engineering, knowledge work and science. API price is $3 in / $15 out per million tokens ($0.15 cached input) with a 1M-token context window. It is rolling out in the Gemini API and AI Studio on the paid tier, in Gemini for business, and to Google AI Pro and Ultra subscribers in Antigravity and the Gemini app — not described as a free-tier default. Google reports a 61 on the Artificial Analysis Intelligence Index at its xhigh thinking level and #1 on that firm's Coding Agent Index; treat those as Google's claims. In Antigravity it can also orchestrate parallel Gemini 4 Hydrogen subagents.",
+    "useThisIf": "you already pay for the Gemini API or Google AI Pro/Ultra and want a faster frontier Gemini 4 for long coding or agent jobs, between Hydrogen and Carbon.",
+    "alternatives": [
+      "gemini-4-carbon",
+      "gemini-4-hydrogen",
+      "gemini-4-argon",
+      "gpt-6-2-astra"
+    ],
+    "source": "hackernews",
+    "addedAt": "2026-11-19",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/gemini-4-neon.png"
+  },
+  {
+    "slug": "genie-4",
+    "name": "Genie 4",
+    "url": "https://labs.google/projectgenie",
+    "affiliateUrl": null,
+    "category": "design",
+    "useCases": [
+      "design",
+      "fun"
+    ],
+    "pricing": "paid (in Google AI Ultra)",
+    "verdict": "Google DeepMind's interactive world model, opened to eligible Google AI Ultra subscribers on 18 Nov 2026 inside Project Genie at labs.google/projectgenie. You generate a world in the browser, walk around in it, and type a new prompt mid-session to change weather, characters or action; Genie 4 also adds real-time native audio. A Project Genie agent helps set up a world from a conversation, and a community gallery lets people browse and remix published worlds. Google AI Pro members can only join the waitlist for now. Genie 3 stays in the model picker, with sessions extended to up to 3 minutes (from 60 seconds) plus world chaining and 360° panorama seeds.",
+    "useThisIf": "you already pay for Google AI Ultra and want to generate and edit an interactive world in the browser, not just a video clip.",
+    "alternatives": [
+      "world-labs-atlas",
+      "runway",
+      "pika"
+    ],
+    "source": "hackernews",
+    "addedAt": "2026-11-19",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/genie-4.png"
+  },
+  {
+    "slug": "s-space",
+    "name": "S.Space",
+    "url": "https://s.space/",
+    "affiliateUrl": null,
+    "category": "agents",
+    "useCases": [
+      "agents",
+      "productivity"
+    ],
+    "pricing": "freemium",
+    "verdict": "A shared workspace for a team and the AI agents each person already uses (the pitch names Claude Code and Codex, from any vendor). Agents and people sit in the same room, hand work to each other, and share memory in the room's Commons so a brief is not re-explained to every agent. Sutando, their local/open-source personal agent, can also run on your machine; privacy policy says that path keeps instructions and files on the device when you use your own model subscription. Operated by AG2AI, Inc. in Seattle (the AutoGen / AG2 team). Product Hunt listed it as free to start on 18 Nov 2026, where it was #1 with a score of 309 at our check; the makers said on that thread that billing is per person, not per agent, with plans starting at $19/month and a 30-day trial of the top plan. We did not see those prices rendered on the marketing homepage (the HTML is a short loading shell).",
+    "useThisIf": "your team already runs different coding agents and wants one room where those agents can hand off work and share context, with you approving what matters.",
+    "alternatives": [
+      "claude-code",
+      "openswarm",
+      "crewai"
+    ],
+    "source": "producthunt",
+    "addedAt": "2026-11-19",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/s-space.png"
+  },
+  {
+    "slug": "waldo",
+    "name": "Waldo",
+    "url": "https://wherobots.com/products/waldo/",
+    "affiliateUrl": null,
+    "category": "agents",
+    "useCases": [
+      "agents",
+      "productivity"
+    ],
+    "pricing": "freemium",
+    "verdict": "A geospatial data agent from Wherobots, the team behind Apache Sedona, now in public preview (launched 18 Nov 2026). You ask about physical-world data (satellite imagery, geometries, first-party spatial data); Waldo plans and runs the analysis, maps the result, and can schedule it as a pipeline on an Iceberg-compatible platform you already use. Waldo tokens are included at no extra cost in the free trial and in Wherobots Professional, but they are limited; you pay for the WherobotsDB and RasterFlow compute the agent uses. Professional starts with a 14-day trial of up to $95 in usage, then a $95/month prepaid-credit minimum. On Product Hunt's 18 Nov 2026 board it was #4 with a score of 199 at our check.",
+    "useThisIf": "you already work with large spatial or satellite data and want an agent that can both analyze it and leave you a scheduled pipeline, not just a chat answer.",
+    "alternatives": [
+      "claude-code",
+      "gemini"
+    ],
+    "source": "producthunt",
+    "addedAt": "2026-11-19",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/waldo.png"
   }
 ]

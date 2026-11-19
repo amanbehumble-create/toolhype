@@ -1,5 +1,5 @@
 {
- "computedAt": "2026-11-18T01:18:02.114Z",
+ "computedAt": "2026-11-19T01:39:01.133Z",
  "method": "v1",
  "tools": {
   "inbox-zero": {
@@ -285,21 +285,21 @@
   "gemini-4-argon": {
    "status": "live",
    "query": "(\"gemini 4 argon\" OR \"gemini-4-argon\") -is:retweet",
-   "mentions24h": 461,
-   "mentions7d": 3833,
-   "priorDailyAvg": 566.7,
-   "velocity": 0.81,
+   "mentions24h": 409,
+   "mentions7d": 3593,
+   "priorDailyAvg": 536.2,
+   "velocity": 0.76,
    "daily": [
-    626,
-    751,
+    730,
     649,
     467,
     418,
     461,
-    461
+    459,
+    409
    ],
-   "peakDay": 751,
-   "peakDaysAgo": 5,
+   "peakDay": 730,
+   "peakDaysAgo": 6,
    "sample": {
     "posts": 25,
     "likes": 416,
@@ -307,16 +307,16 @@
     "replies": 62
    },
    "parts": {
-    "volume": 35.8,
+    "volume": 35.6,
     "velocity": 0,
     "engagement": 13.9
    },
-   "score": 50,
+   "score": 49,
    "label": "steady",
    "viral": false,
    "topPosts": [],
    "sampleAsOf": "2026-11-11T01:25:06.913Z",
-   "computedAt": "2026-11-18T01:18:02.114Z"
+   "computedAt": "2026-11-19T01:39:01.133Z"
   },
   "muse-wonder": {
    "status": "live",
@@ -826,20 +826,20 @@
   "opencode": {
    "status": "live",
    "query": "(opencode OR \"open code\" sst OR url:opencode.ai) -is:retweet",
-   "mentions24h": 2526,
-   "mentions7d": 11131,
-   "priorDailyAvg": 1445.9,
-   "velocity": 1.75,
+   "mentions24h": 3210,
+   "mentions7d": 12603,
+   "priorDailyAvg": 1581.8,
+   "velocity": 2.03,
    "daily": [
-    1637,
-    1405,
+    1317,
     1271,
     974,
     1079,
     2239,
-    2526
+    2513,
+    3210
    ],
-   "peakDay": 2526,
+   "peakDay": 3210,
    "peakDaysAgo": 0,
    "sample": {
     "posts": 25,
@@ -848,16 +848,16 @@
     "replies": 32
    },
    "parts": {
-    "volume": 40.5,
-    "velocity": 10.1,
+    "volume": 41,
+    "velocity": 12.8,
     "engagement": 12.3
    },
-   "score": 63,
-   "label": "rising",
+   "score": 66,
+   "label": "hype",
    "viral": false,
    "topPosts": [],
    "sampleAsOf": "2026-11-11T01:25:06.913Z",
-   "computedAt": "2026-11-18T01:18:02.114Z"
+   "computedAt": "2026-11-19T01:39:01.133Z"
   },
   "indra": {
    "status": "live",
@@ -1072,21 +1072,21 @@
   "claude-haiku-5-5": {
    "status": "live",
    "query": "(\"haiku 5.5\" OR \"claude-haiku-5-5\") -is:retweet",
-   "mentions24h": 389,
-   "mentions7d": 2682,
-   "priorDailyAvg": 385.4,
-   "velocity": 1.01,
+   "mentions24h": 311,
+   "mentions7d": 2521,
+   "priorDailyAvg": 372.2,
+   "velocity": 0.84,
    "daily": [
-    452,
-    361,
+    342,
     266,
     311,
     292,
     611,
-    389
+    388,
+    311
    ],
    "peakDay": 611,
-   "peakDaysAgo": 1,
+   "peakDaysAgo": 2,
    "sample": {
     "posts": 24,
     "likes": 2471,
@@ -1094,8 +1094,8 @@
     "replies": 122
    },
    "parts": {
-    "volume": 34.3,
-    "velocity": 0.2,
+    "volume": 34,
+    "velocity": 0,
     "engagement": 17.7
    },
    "score": 52,
@@ -1103,7 +1103,7 @@
    "viral": false,
    "topPosts": [],
    "sampleAsOf": "2026-11-09T01:12:43.408Z",
-   "computedAt": "2026-11-18T01:18:02.114Z"
+   "computedAt": "2026-11-19T01:39:01.133Z"
   },
   "openswarm": {
    "status": "live",
@@ -1143,21 +1143,21 @@
   "chatgpt": {
    "status": "live",
    "query": "(chatgpt OR url:chatgpt.com) -is:retweet",
-   "mentions24h": 37791,
-   "mentions7d": 234675,
-   "priorDailyAvg": 33082.6,
-   "velocity": 1.14,
+   "mentions24h": 36570,
+   "mentions7d": 235273,
+   "priorDailyAvg": 33462.6,
+   "velocity": 1.09,
    "daily": [
-    34017,
-    33027,
+    31317,
     34703,
     31157,
     29828,
-    34152,
-    37791
+    34145,
+    37553,
+    36570
    ],
-   "peakDay": 37791,
-   "peakDaysAgo": 0,
+   "peakDay": 37553,
+   "peakDaysAgo": 1,
    "sample": {
     "posts": 25,
     "likes": 124,
@@ -1166,34 +1166,34 @@
    },
    "parts": {
     "volume": 50,
-    "velocity": 2.4,
+    "velocity": 1.6,
     "engagement": 11.7
    },
-   "score": 64,
+   "score": 63,
    "label": "steady",
    "viral": false,
    "topPosts": [],
    "sampleAsOf": "2026-11-17T01:28:28.794Z",
-   "computedAt": "2026-11-18T01:18:02.114Z"
+   "computedAt": "2026-11-19T01:39:01.133Z"
   },
   "claude": {
    "status": "live",
    "query": "(\"claude ai\" OR \"claude.ai\" OR @claudeai OR (claude anthropic)) -is:retweet",
-   "mentions24h": 8084,
-   "mentions7d": 63963,
-   "priorDailyAvg": 9389.3,
-   "velocity": 0.86,
+   "mentions24h": 8377,
+   "mentions7d": 60099,
+   "priorDailyAvg": 8710.3,
+   "velocity": 0.96,
    "daily": [
-    11574,
-    10986,
+    10360,
     12019,
     7109,
     6569,
-    7622,
-    8084
+    7621,
+    8044,
+    8377
    ],
    "peakDay": 12019,
-   "peakDaysAgo": 4,
+   "peakDaysAgo": 5,
    "sample": {
     "posts": 25,
     "likes": 247,
@@ -1201,7 +1201,7 @@
     "replies": 84
    },
    "parts": {
-    "volume": 48.1,
+    "volume": 47.8,
     "velocity": 0,
     "engagement": 14.2
    },
@@ -1210,26 +1210,26 @@
    "viral": false,
    "topPosts": [],
    "sampleAsOf": "2026-11-12T01:17:09.804Z",
-   "computedAt": "2026-11-18T01:18:02.114Z"
+   "computedAt": "2026-11-19T01:39:01.133Z"
   },
   "gemini": {
    "status": "live",
    "query": "(\"google gemini\" OR \"gemini app\" OR @GeminiApp OR url:gemini.google.com) -is:retweet",
-   "mentions24h": 2507,
-   "mentions7d": 18720,
-   "priorDailyAvg": 2724.3,
-   "velocity": 0.92,
+   "mentions24h": 3292,
+   "mentions7d": 19747,
+   "priorDailyAvg": 2771.1,
+   "velocity": 1.19,
    "daily": [
-    2156,
-    3821,
+    3729,
     4079,
     2295,
     1856,
     2006,
-    2507
+    2490,
+    3292
    ],
    "peakDay": 4079,
-   "peakDaysAgo": 4,
+   "peakDaysAgo": 5,
    "sample": {
     "posts": 25,
     "likes": 489,
@@ -1237,35 +1237,35 @@
     "replies": 55
    },
    "parts": {
-    "volume": 42.7,
-    "velocity": 0,
+    "volume": 43,
+    "velocity": 3.1,
     "engagement": 14
    },
-   "score": 57,
+   "score": 60,
    "label": "steady",
    "viral": false,
    "topPosts": [],
    "sampleAsOf": "2026-11-11T01:25:06.913Z",
-   "computedAt": "2026-11-18T01:18:02.114Z"
+   "computedAt": "2026-11-19T01:39:01.133Z"
   },
   "grok": {
    "status": "live",
    "query": "(grok OR url:grok.com) -is:retweet -\"@grok is this true\" -is:reply",
-   "mentions24h": 54206,
-   "mentions7d": 414021,
-   "priorDailyAvg": 60460.5,
-   "velocity": 0.9,
+   "mentions24h": 51195,
+   "mentions7d": 402574,
+   "priorDailyAvg": 59174.2,
+   "velocity": 0.87,
    "daily": [
-    58614,
-    62246,
+    58993,
     65391,
     58573,
     54363,
-    60628,
-    54206
+    60612,
+    53447,
+    51195
    ],
    "peakDay": 65391,
-   "peakDaysAgo": 4,
+   "peakDaysAgo": 5,
    "sample": {
     "posts": 25,
     "likes": 26,
@@ -1282,26 +1282,26 @@
    "viral": false,
    "topPosts": [],
    "sampleAsOf": "2026-11-17T01:28:28.794Z",
-   "computedAt": "2026-11-18T01:18:02.114Z"
+   "computedAt": "2026-11-19T01:39:01.133Z"
   },
   "perplexity": {
    "status": "live",
    "query": "(perplexity OR @perplexity_ai OR url:perplexity.ai) -is:retweet",
-   "mentions24h": 1965,
-   "mentions7d": 9610,
-   "priorDailyAvg": 1284.7,
-   "velocity": 1.53,
+   "mentions24h": 1725,
+   "mentions7d": 9930,
+   "priorDailyAvg": 1381.8,
+   "velocity": 1.25,
    "daily": [
-    1316,
-    1380,
+    1304,
     1493,
     1172,
     955,
-    1329,
-    1965
+    1328,
+    1953,
+    1725
    ],
-   "peakDay": 1965,
-   "peakDaysAgo": 0,
+   "peakDay": 1953,
+   "peakDaysAgo": 1,
    "sample": {
     "posts": 24,
     "likes": 97,
@@ -1309,35 +1309,35 @@
     "replies": 32
    },
    "parts": {
-    "volume": 39.8,
-    "velocity": 7.7,
+    "volume": 40,
+    "velocity": 4,
     "engagement": 12.5
    },
-   "score": 60,
-   "label": "rising",
+   "score": 57,
+   "label": "steady",
    "viral": false,
    "topPosts": [],
    "sampleAsOf": "2026-11-11T01:25:06.913Z",
-   "computedAt": "2026-11-18T01:18:02.114Z"
+   "computedAt": "2026-11-19T01:39:01.133Z"
   },
   "cursor": {
    "status": "live",
    "query": "(\"cursor ai\" OR @cursor_ai OR url:cursor.com OR \"cursor ide\" OR \"cursor agent\") -is:retweet",
-   "mentions24h": 953,
-   "mentions7d": 7026,
-   "priorDailyAvg": 1020.7,
-   "velocity": 0.93,
+   "mentions24h": 767,
+   "mentions7d": 6563,
+   "priorDailyAvg": 976.1,
+   "velocity": 0.79,
    "daily": [
-    1190,
-    1146,
+    1108,
     1143,
     997,
     678,
-    919,
-    953
+    918,
+    952,
+    767
    ],
-   "peakDay": 1190,
-   "peakDaysAgo": 6,
+   "peakDay": 1143,
+   "peakDaysAgo": 5,
    "sample": {
     "posts": 25,
     "likes": 8,
@@ -1345,7 +1345,7 @@
     "replies": 12
    },
    "parts": {
-    "volume": 38.5,
+    "volume": 38.2,
     "velocity": 0,
     "engagement": 7.6
    },
@@ -1354,7 +1354,7 @@
    "viral": false,
    "topPosts": [],
    "sampleAsOf": "2026-11-11T01:25:06.913Z",
-   "computedAt": "2026-11-18T01:18:02.114Z"
+   "computedAt": "2026-11-19T01:39:01.133Z"
   },
   "github-copilot": {
    "status": "live",
@@ -1394,21 +1394,21 @@
   "windsurf": {
    "status": "live",
    "query": "((windsurf (ai OR ide OR code OR editor OR cognition OR devin)) OR @windsurf OR url:windsurf.com OR \"devin desktop\") -is:retweet",
-   "mentions24h": 68,
-   "mentions7d": 477,
-   "priorDailyAvg": 68.8,
-   "velocity": 0.99,
+   "mentions24h": 61,
+   "mentions7d": 480,
+   "priorDailyAvg": 70.6,
+   "velocity": 0.86,
    "daily": [
-    54,
-    86,
+    83,
     107,
     52,
     34,
     76,
-    68
+    67,
+    61
    ],
    "peakDay": 107,
-   "peakDaysAgo": 4,
+   "peakDaysAgo": 5,
    "sample": {
     "posts": 0,
     "likes": 0,
@@ -1425,26 +1425,26 @@
    "viral": false,
    "topPosts": [],
    "sampleAsOf": "2026-11-18T01:18:02.114Z",
-   "computedAt": "2026-11-18T01:18:02.114Z"
+   "computedAt": "2026-11-19T01:39:01.133Z"
   },
   "claude-code": {
    "status": "live",
    "query": "(\"claude code\" OR claudecode) -is:retweet",
-   "mentions24h": 14336,
-   "mentions7d": 83144,
-   "priorDailyAvg": 11560.7,
-   "velocity": 1.24,
+   "mentions24h": 12197,
+   "mentions7d": 83320,
+   "priorDailyAvg": 11977.5,
+   "velocity": 1.02,
    "daily": [
-    11378,
-    10737,
+    10150,
     11947,
     11234,
     11303,
-    12209,
-    14336
+    12208,
+    14281,
+    12197
    ],
-   "peakDay": 14336,
-   "peakDaysAgo": 0,
+   "peakDay": 14281,
+   "peakDaysAgo": 1,
    "sample": {
     "posts": 25,
     "likes": 121,
@@ -1453,15 +1453,15 @@
    },
    "parts": {
     "volume": 49.2,
-    "velocity": 3.9,
+    "velocity": 0.4,
     "engagement": 12.9
    },
-   "score": 66,
+   "score": 62,
    "label": "steady",
    "viral": false,
    "topPosts": [],
    "sampleAsOf": "2026-11-12T01:17:09.804Z",
-   "computedAt": "2026-11-18T01:18:02.114Z"
+   "computedAt": "2026-11-19T01:39:01.133Z"
   },
   "aider": {
    "status": "live",
@@ -1746,21 +1746,21 @@
   "langchain": {
    "status": "live",
    "query": "(langchain OR langgraph OR url:langchain.com) -is:retweet",
-   "mentions24h": 424,
-   "mentions7d": 3891,
-   "priorDailyAvg": 582.6,
-   "velocity": 0.73,
+   "mentions24h": 400,
+   "mentions7d": 3889,
+   "priorDailyAvg": 587.7,
+   "velocity": 0.68,
    "daily": [
-    379,
-    349,
+    328,
     827,
     794,
     542,
     576,
-    424
+    422,
+    400
    ],
    "peakDay": 827,
-   "peakDaysAgo": 4,
+   "peakDaysAgo": 5,
    "sample": {
     "posts": 22,
     "likes": 361,
@@ -1777,7 +1777,7 @@
    "viral": false,
    "topPosts": [],
    "sampleAsOf": "2026-11-06T01:20:03.932Z",
-   "computedAt": "2026-11-18T01:18:02.114Z"
+   "computedAt": "2026-11-19T01:39:01.133Z"
   },
   "crewai": {
    "status": "live",
@@ -1887,21 +1887,21 @@
   "canva": {
    "status": "live",
    "query": "(canva OR url:canva.com) -is:retweet",
-   "mentions24h": 7326,
-   "mentions7d": 52584,
-   "priorDailyAvg": 7604.9,
+   "mentions24h": 7194,
+   "mentions7d": 51862,
+   "priorDailyAvg": 7522.4,
    "velocity": 0.96,
    "daily": [
-    7448,
-    7598,
+    7231,
     7921,
     7220,
     7311,
     7760,
-    7326
+    7225,
+    7194
    ],
    "peakDay": 7921,
-   "peakDaysAgo": 4,
+   "peakDaysAgo": 5,
    "sample": {
     "posts": 25,
     "likes": 5,
@@ -1909,7 +1909,7 @@
     "replies": 13
    },
    "parts": {
-    "volume": 47.2,
+    "volume": 47.1,
     "velocity": 0,
     "engagement": 7.7
    },
@@ -1918,26 +1918,26 @@
    "viral": false,
    "topPosts": [],
    "sampleAsOf": "2026-11-11T01:25:06.913Z",
-   "computedAt": "2026-11-18T01:18:02.114Z"
+   "computedAt": "2026-11-19T01:39:01.133Z"
   },
   "figma": {
    "status": "live",
    "query": "(figma OR url:figma.com) -is:retweet -フィギュア -figure -figures -ねんどろいど -予約 -fate",
-   "mentions24h": 1624,
-   "mentions7d": 10360,
-   "priorDailyAvg": 1468.1,
-   "velocity": 1.11,
+   "mentions24h": 1772,
+   "mentions7d": 10460,
+   "priorDailyAvg": 1463.1,
+   "velocity": 1.21,
    "daily": [
-    1611,
-    1699,
+    1643,
     1603,
     1216,
     1016,
     1591,
-    1624
+    1619,
+    1772
    ],
-   "peakDay": 1699,
-   "peakDaysAgo": 5,
+   "peakDay": 1772,
+   "peakDaysAgo": 0,
    "sample": {
     "posts": 25,
     "likes": 150,
@@ -1946,15 +1946,15 @@
    },
    "parts": {
     "volume": 40.2,
-    "velocity": 1.9,
+    "velocity": 3.4,
     "engagement": 12.1
    },
-   "score": 54,
+   "score": 56,
    "label": "steady",
    "viral": false,
    "topPosts": [],
    "sampleAsOf": "2026-11-11T01:25:06.913Z",
-   "computedAt": "2026-11-18T01:18:02.114Z"
+   "computedAt": "2026-11-19T01:39:01.133Z"
   },
   "runway": {
    "status": "live",
@@ -2134,21 +2134,21 @@
   "capcut": {
    "status": "live",
    "query": "(capcut OR url:capcut.com) -is:retweet",
-   "mentions24h": 7389,
-   "mentions7d": 47530,
-   "priorDailyAvg": 6744.9,
-   "velocity": 1.1,
+   "mentions24h": 6903,
+   "mentions7d": 46994,
+   "priorDailyAvg": 6752.8,
+   "velocity": 1.02,
    "daily": [
-    7062,
-    6490,
+    6252,
     6070,
     6754,
     6220,
-    7545,
-    7389
+    7515,
+    7280,
+    6903
    ],
-   "peakDay": 7545,
-   "peakDaysAgo": 1,
+   "peakDay": 7515,
+   "peakDaysAgo": 2,
    "sample": {
     "posts": 24,
     "likes": 77,
@@ -2156,35 +2156,35 @@
     "replies": 54
    },
    "parts": {
-    "volume": 46.8,
-    "velocity": 1.7,
+    "volume": 46.7,
+    "velocity": 0.4,
     "engagement": 11.5
    },
-   "score": 60,
+   "score": 59,
    "label": "steady",
    "viral": false,
    "topPosts": [],
    "sampleAsOf": "2026-11-11T01:25:06.913Z",
-   "computedAt": "2026-11-18T01:18:02.114Z"
+   "computedAt": "2026-11-19T01:39:01.133Z"
   },
   "elevenlabs": {
    "status": "live",
    "query": "(elevenlabs OR \"eleven labs\" OR url:elevenlabs.io) -is:retweet",
-   "mentions24h": 2220,
-   "mentions7d": 16314,
-   "priorDailyAvg": 2368.7,
-   "velocity": 0.94,
+   "mentions24h": 2253,
+   "mentions7d": 15520,
+   "priorDailyAvg": 2234.3,
+   "velocity": 1.01,
    "daily": [
-    2867,
-    3162,
+    2989,
     2382,
     1780,
     1790,
     2113,
-    2220
+    2213,
+    2253
    ],
-   "peakDay": 3162,
-   "peakDaysAgo": 5,
+   "peakDay": 2989,
+   "peakDaysAgo": 6,
    "sample": {
     "posts": 25,
     "likes": 14,
@@ -2192,8 +2192,8 @@
     "replies": 10
    },
    "parts": {
-    "volume": 42.1,
-    "velocity": 0,
+    "volume": 41.9,
+    "velocity": 0.2,
     "engagement": 7.7
    },
    "score": 50,
@@ -2201,26 +2201,26 @@
    "viral": false,
    "topPosts": [],
    "sampleAsOf": "2026-11-11T01:25:06.913Z",
-   "computedAt": "2026-11-18T01:18:02.114Z"
+   "computedAt": "2026-11-19T01:39:01.133Z"
   },
   "suno": {
    "status": "live",
    "query": "(\"suno ai\" OR @suno OR url:suno.com OR (suno song)) -is:retweet",
-   "mentions24h": 3260,
-   "mentions7d": 20613,
-   "priorDailyAvg": 2915.9,
-   "velocity": 1.12,
+   "mentions24h": 3147,
+   "mentions7d": 20912,
+   "priorDailyAvg": 2991.8,
+   "velocity": 1.05,
    "daily": [
-    2646,
-    2703,
+    2528,
     2991,
     2837,
     3082,
-    3094,
-    3260
+    3093,
+    3234,
+    3147
    ],
-   "peakDay": 3260,
-   "peakDaysAgo": 0,
+   "peakDay": 3234,
+   "peakDaysAgo": 1,
    "sample": {
     "posts": 25,
     "likes": 528,
@@ -2228,34 +2228,34 @@
     "replies": 52
    },
    "parts": {
-    "volume": 43.1,
-    "velocity": 2,
+    "volume": 43.2,
+    "velocity": 0.9,
     "engagement": 15
    },
-   "score": 60,
+   "score": 59,
    "label": "steady",
    "viral": false,
    "topPosts": [],
    "sampleAsOf": "2026-11-11T01:25:06.913Z",
-   "computedAt": "2026-11-18T01:18:02.114Z"
+   "computedAt": "2026-11-19T01:39:01.133Z"
   },
   "notion": {
    "status": "live",
    "query": "((notion (ai OR app OR page OR pages OR template OR templates OR workspace OR agent OR agents OR database OR calendar OR mail OR mcp)) OR \"notion ai\" OR @NotionHQ OR url:notion.so OR url:notion.com) -is:retweet",
-   "mentions24h": 998,
-   "mentions7d": 8223,
-   "priorDailyAvg": 1214.3,
-   "velocity": 0.82,
+   "mentions24h": 1183,
+   "mentions7d": 7643,
+   "priorDailyAvg": 1087.9,
+   "velocity": 1.09,
    "daily": [
-    1659,
-    1553,
+    1453,
     1264,
     969,
     825,
     955,
-    998
+    994,
+    1183
    ],
-   "peakDay": 1659,
+   "peakDay": 1453,
    "peakDaysAgo": 6,
    "sample": {
     "posts": 24,
@@ -2264,16 +2264,16 @@
     "replies": 14
    },
    "parts": {
-    "volume": 39.2,
-    "velocity": 0,
+    "volume": 38.8,
+    "velocity": 1.6,
     "engagement": 10
    },
-   "score": 49,
+   "score": 50,
    "label": "steady",
    "viral": false,
    "topPosts": [],
    "sampleAsOf": "2026-11-10T01:19:20.771Z",
-   "computedAt": "2026-11-18T01:18:02.114Z"
+   "computedAt": "2026-11-19T01:39:01.133Z"
   },
   "granola": {
    "status": "live",
@@ -2466,21 +2466,21 @@
   "codex": {
    "status": "live",
    "query": "(\"openai codex\" OR \"codex cli\" OR \"codex app\" OR @OpenAIDevs codex OR url:chatgpt.com/codex) -is:retweet",
-   "mentions24h": 495,
-   "mentions7d": 3403,
-   "priorDailyAvg": 488.7,
-   "velocity": 1.01,
+   "mentions24h": 634,
+   "mentions7d": 3535,
+   "priorDailyAvg": 488.6,
+   "velocity": 1.3,
    "daily": [
-    445,
-    592,
+    546,
     717,
     413,
     327,
     414,
-    495
+    484,
+    634
    ],
    "peakDay": 717,
-   "peakDaysAgo": 4,
+   "peakDaysAgo": 5,
    "sample": {
     "posts": 25,
     "likes": 25,
@@ -2488,16 +2488,16 @@
     "replies": 16
    },
    "parts": {
-    "volume": 35.3,
-    "velocity": 0.2,
+    "volume": 35.5,
+    "velocity": 4.7,
     "engagement": 8.9
    },
-   "score": 44,
-   "label": "steady",
+   "score": 49,
+   "label": "rising",
    "viral": false,
    "topPosts": [],
    "sampleAsOf": "2026-11-06T01:20:03.932Z",
-   "computedAt": "2026-11-18T01:18:02.114Z"
+   "computedAt": "2026-11-19T01:39:01.133Z"
   },
   "mirror-mirror-ai": {
    "status": "live",
@@ -2962,20 +2962,20 @@
   "kling-ai": {
    "status": "live",
    "query": "(\"kling ai\" OR klingai OR @Kling_ai OR url:klingai.com) -is:retweet",
-   "mentions24h": 850,
-   "mentions7d": 4174,
-   "priorDailyAvg": 558.7,
-   "velocity": 1.52,
+   "mentions24h": 1008,
+   "mentions7d": 4704,
+   "priorDailyAvg": 622.5,
+   "velocity": 1.62,
    "daily": [
-    469,
-    513,
+    505,
     317,
     646,
     619,
     760,
-    850
+    849,
+    1008
    ],
-   "peakDay": 850,
+   "peakDay": 1008,
    "peakDaysAgo": 0,
    "sample": {
     "posts": 25,
@@ -2984,16 +2984,16 @@
     "replies": 10
    },
    "parts": {
-    "volume": 36.2,
-    "velocity": 7.6,
+    "volume": 36.7,
+    "velocity": 8.7,
     "engagement": 8.9
    },
-   "score": 53,
+   "score": 54,
    "label": "rising",
    "viral": false,
    "topPosts": [],
    "sampleAsOf": "2026-11-10T01:19:20.771Z",
-   "computedAt": "2026-11-18T01:18:02.114Z"
+   "computedAt": "2026-11-19T01:39:01.133Z"
   },
   "genspark": {
    "status": "live",
@@ -3103,21 +3103,21 @@
   "papertrade": {
    "status": "live",
    "query": "(papertrade (hyperliquid OR perp OR perps OR 1000x OR hyperevm) OR @papertrade_xyz OR url:papertrade.xyz) -is:retweet",
-   "mentions24h": 48,
-   "mentions7d": 834,
-   "priorDailyAvg": 132.1,
-   "velocity": 0.36,
+   "mentions24h": 165,
+   "mentions7d": 863,
+   "priorDailyAvg": 117.6,
+   "velocity": 1.4,
    "daily": [
-    133,
-    26,
+    23,
     453,
     70,
     30,
     74,
-    48
+    48,
+    165
    ],
    "peakDay": 453,
-   "peakDaysAgo": 4,
+   "peakDaysAgo": 5,
    "sample": {
     "posts": 23,
     "likes": 1016,
@@ -3125,16 +3125,16 @@
     "replies": 262
    },
    "parts": {
-    "volume": 29.2,
-    "velocity": 0,
+    "volume": 29.4,
+    "velocity": 6.1,
     "engagement": 16.4
    },
-   "score": 46,
-   "label": "steady",
+   "score": 52,
+   "label": "rising",
    "viral": false,
    "topPosts": [],
    "sampleAsOf": "2026-11-06T01:20:03.932Z",
-   "computedAt": "2026-11-18T01:18:02.114Z"
+   "computedAt": "2026-11-19T01:39:01.133Z"
   },
   "orca": {
    "status": "live",
@@ -4889,21 +4889,21 @@
   "kimi": {
    "status": "live",
    "query": "(\"Kimi K3.1\" OR \"Kimi K3\" OR url:kimi.com OR @Kimi_Moonshot) -is:retweet",
-   "mentions24h": 716,
-   "mentions7d": 5160,
-   "priorDailyAvg": 746.7,
-   "velocity": 0.96,
+   "mentions24h": 519,
+   "mentions7d": 5009,
+   "priorDailyAvg": 756.1,
+   "velocity": 0.69,
    "daily": [
-    621,
-    727,
+    684,
     848,
     712,
     553,
     983,
-    716
+    710,
+    519
    ],
    "peakDay": 983,
-   "peakDaysAgo": 1,
+   "peakDaysAgo": 2,
    "sample": {
     "posts": 25,
     "likes": 431,
@@ -4911,7 +4911,7 @@
     "replies": 46
    },
    "parts": {
-    "volume": 37.1,
+    "volume": 37,
     "velocity": 0,
     "engagement": 14.1
    },
@@ -4920,7 +4920,7 @@
    "viral": false,
    "topPosts": [],
    "sampleAsOf": "2026-11-11T01:25:06.913Z",
-   "computedAt": "2026-11-18T01:18:02.114Z"
+   "computedAt": "2026-11-19T01:39:01.133Z"
   },
   "gemini-api-cli": {
    "status": "live",
@@ -5625,21 +5625,21 @@
   "openbot": {
    "status": "live",
    "query": "(@OpenBot_ OR url:openbot.run OR \"openbot.run\" OR \"nightly-labs/openbot\" OR (openbot (agents OR codex OR \"claude code\" OR desktop OR grok))) -is:retweet",
-   "mentions24h": 823,
-   "mentions7d": 3978,
-   "priorDailyAvg": 530.2,
-   "velocity": 1.55,
+   "mentions24h": 627,
+   "mentions7d": 4035,
+   "priorDailyAvg": 574,
+   "velocity": 1.09,
    "daily": [
-    543,
-    652,
+    625,
     558,
     326,
     352,
     724,
-    823
+    823,
+    627
    ],
    "peakDay": 823,
-   "peakDaysAgo": 0,
+   "peakDaysAgo": 1,
    "sample": {
     "posts": 25,
     "likes": 34,
@@ -5647,16 +5647,16 @@
     "replies": 32
    },
    "parts": {
-    "volume": 36,
-    "velocity": 7.9,
+    "volume": 36.1,
+    "velocity": 1.6,
     "engagement": 10
    },
-   "score": 54,
-   "label": "rising",
+   "score": 48,
+   "label": "steady",
    "viral": false,
    "topPosts": [],
    "sampleAsOf": "2026-11-11T01:25:06.913Z",
-   "computedAt": "2026-11-18T01:18:02.114Z"
+   "computedAt": "2026-11-19T01:39:01.133Z"
   },
   "spacesheep": {
    "status": "live",
@@ -6882,20 +6882,20 @@
   "hackertube": {
    "status": "live",
    "query": "(hackertube OR \"hacker tube\" OR url:hackertube.org) -is:retweet",
-   "mentions24h": 9,
-   "mentions7d": 81,
-   "priorDailyAvg": 12.1,
-   "velocity": 0.74,
+   "mentions24h": 5,
+   "mentions7d": 67,
+   "priorDailyAvg": 10.4,
+   "velocity": 0.48,
    "daily": [
-    19,
     13,
     11,
     10,
     12,
     7,
-    9
+    9,
+    5
    ],
-   "peakDay": 19,
+   "peakDay": 13,
    "peakDaysAgo": 6,
    "sample": {
     "posts": 25,
@@ -6904,16 +6904,16 @@
     "replies": 27
    },
    "parts": {
-    "volume": 19.1,
+    "volume": 18.3,
     "velocity": 0,
     "engagement": 13
    },
-   "score": 32,
+   "score": 31,
    "label": "steady",
    "viral": false,
    "topPosts": [],
    "sampleAsOf": "2026-11-06T01:20:03.932Z",
-   "computedAt": "2026-11-18T01:18:02.114Z"
+   "computedAt": "2026-11-19T01:39:01.133Z"
   },
   "dsh-superagent": {
    "status": "live",
@@ -7168,20 +7168,20 @@
    "status": "live",
    "query": "(worktrunk OR url:worktrunk.dev OR \"max-sixty/worktrunk\") -is:retweet",
    "mentions24h": 2,
-   "mentions7d": 44,
-   "priorDailyAvg": 7.1,
-   "velocity": 0.28,
+   "mentions7d": 30,
+   "priorDailyAvg": 4.7,
+   "velocity": 0.42,
    "daily": [
-    15,
-    7,
+    6,
     7,
     2,
     7,
     4,
+    2,
     2
    ],
-   "peakDay": 15,
-   "peakDaysAgo": 6,
+   "peakDay": 7,
+   "peakDaysAgo": 5,
    "sample": {
     "posts": 25,
     "likes": 14,
@@ -7189,16 +7189,16 @@
     "replies": 18
    },
    "parts": {
-    "volume": 16.5,
+    "volume": 14.9,
     "velocity": 0,
     "engagement": 8.7
    },
-   "score": 25,
+   "score": 24,
    "label": "quiet",
    "viral": false,
    "topPosts": [],
    "sampleAsOf": "2026-11-06T01:20:03.932Z",
-   "computedAt": "2026-11-18T01:18:02.114Z"
+   "computedAt": "2026-11-19T01:39:01.133Z"
   },
   "wanaka": {
    "status": "live",
@@ -8325,20 +8325,20 @@
   "claude-fable-5-2": {
    "status": "live",
    "query": "(\"fable 5.2\" OR \"claude-fable-5-2\" OR \"claude fable\") -is:retweet",
-   "mentions24h": 6288,
-   "mentions7d": 56046,
-   "priorDailyAvg": 8360.9,
-   "velocity": 0.75,
+   "mentions24h": 6496,
+   "mentions7d": 46700,
+   "priorDailyAvg": 6771.8,
+   "velocity": 0.96,
    "daily": [
-    15202,
-    9595,
+    8983,
     6805,
     6074,
     6128,
     5954,
-    6288
+    6260,
+    6496
    ],
-   "peakDay": 15202,
+   "peakDay": 8983,
    "peakDaysAgo": 6,
    "sample": {
     "posts": 25,
@@ -8347,7 +8347,7 @@
     "replies": 47
    },
    "parts": {
-    "volume": 47.5,
+    "volume": 46.7,
     "velocity": 0,
     "engagement": 12.9
    },
@@ -8381,25 +8381,25 @@
     }
    ],
    "sampleAsOf": "2026-11-17T01:28:28.794Z",
-   "computedAt": "2026-11-18T01:18:02.114Z"
+   "computedAt": "2026-11-19T01:39:01.133Z"
   },
   "gemini-4-carbon": {
    "status": "live",
    "query": "(\"gemini 4 carbon\" OR \"gemini-4-carbon\" OR \"gemini carbon\") -is:retweet",
-   "mentions24h": 1305,
-   "mentions7d": 14398,
-   "priorDailyAvg": 2200.1,
-   "velocity": 0.59,
+   "mentions24h": 1484,
+   "mentions7d": 10322,
+   "priorDailyAvg": 1488.4,
+   "velocity": 1,
    "daily": [
-    5357,
-    2418,
+    2224,
     1465,
     1290,
     1277,
-    1286,
-    1305
+    1285,
+    1297,
+    1484
    ],
-   "peakDay": 5357,
+   "peakDay": 2224,
    "peakDaysAgo": 6,
    "sample": {
     "posts": 25,
@@ -8408,34 +8408,34 @@
     "replies": 81
    },
    "parts": {
-    "volume": 41.6,
+    "volume": 40.1,
     "velocity": 0,
     "engagement": 14.1
    },
-   "score": 56,
+   "score": 54,
    "label": "steady",
    "viral": false,
    "topPosts": [],
    "sampleAsOf": "2026-11-12T01:17:09.804Z",
-   "computedAt": "2026-11-18T01:18:02.114Z"
+   "computedAt": "2026-11-19T01:39:01.133Z"
   },
   "muse-ember": {
    "status": "live",
    "query": "(\"muse ember\" OR \"muse-ember\") -is:retweet",
-   "mentions24h": 108,
-   "mentions7d": 1293,
-   "priorDailyAvg": 199.1,
-   "velocity": 0.54,
+   "mentions24h": 80,
+   "mentions7d": 844,
+   "priorDailyAvg": 128.7,
+   "velocity": 0.62,
    "daily": [
-    507,
-    233,
+    211,
     130,
     88,
     105,
     122,
-    108
+    108,
+    80
    ],
-   "peakDay": 507,
+   "peakDay": 211,
    "peakDaysAgo": 6,
    "sample": {
     "posts": 25,
@@ -8444,16 +8444,16 @@
     "replies": 189
    },
    "parts": {
-    "volume": 31.1,
+    "volume": 29.3,
     "velocity": 0,
     "engagement": 18
    },
-   "score": 49,
+   "score": 47,
    "label": "steady",
    "viral": false,
    "topPosts": [],
    "sampleAsOf": "2026-11-12T01:17:09.804Z",
-   "computedAt": "2026-11-18T01:18:02.114Z"
+   "computedAt": "2026-11-19T01:39:01.133Z"
   },
   "muxflow": {
    "status": "live",
@@ -8638,20 +8638,20 @@
   "minimax-h3-image": {
    "status": "live",
    "query": "(\"h3-image\" OR \"h3 image\" OR \"MiniMax-H3-Image\" OR #H3Image) -is:retweet",
-   "mentions24h": 224,
-   "mentions7d": 4363,
-   "priorDailyAvg": 695.5,
-   "velocity": 0.32,
+   "mentions24h": 205,
+   "mentions7d": 2725,
+   "priorDailyAvg": 424.5,
+   "velocity": 0.48,
    "daily": [
-    1758,
-    873,
+    789,
     539,
     382,
     266,
     321,
-    224
+    223,
+    205
    ],
-   "peakDay": 1758,
+   "peakDay": 789,
    "peakDaysAgo": 6,
    "sample": {
     "posts": 26,
@@ -8660,16 +8660,16 @@
     "replies": 483
    },
    "parts": {
-    "volume": 36.4,
+    "volume": 34.4,
     "velocity": 0,
     "engagement": 19.3
    },
-   "score": 56,
+   "score": 54,
    "label": "steady",
    "viral": false,
    "topPosts": [],
    "sampleAsOf": "2026-11-12T01:17:09.804Z",
-   "computedAt": "2026-11-18T01:18:02.114Z"
+   "computedAt": "2026-11-19T01:39:01.133Z"
   },
   "scribe-v3": {
    "status": "live",
@@ -9183,21 +9183,21 @@
   "gemini-4-hydrogen": {
    "status": "live",
    "query": "(\"gemini 4 hydrogen\" OR \"gemini-4-hydrogen\" OR \"gemini hydrogen\" OR #GeminiHydrogen) -is:retweet",
-   "mentions24h": 1431,
-   "mentions7d": 18752,
-   "priorDailyAvg": 2910.8,
-   "velocity": 0.49,
+   "mentions24h": 1386,
+   "mentions7d": 19856,
+   "priorDailyAvg": 3110.5,
+   "velocity": 0.45,
    "daily": [
-    266,
-    4080,
+    4073,
     6548,
     2807,
     1900,
     1720,
-    1431
+    1422,
+    1386
    ],
    "peakDay": 6548,
-   "peakDaysAgo": 4,
+   "peakDaysAgo": 5,
    "sample": {
     "posts": 25,
     "likes": 186,
@@ -9205,7 +9205,7 @@
     "replies": 22
    },
    "parts": {
-    "volume": 42.7,
+    "volume": 43,
     "velocity": 0,
     "engagement": 12.1
    },
@@ -9214,7 +9214,7 @@
    "viral": false,
    "topPosts": [],
    "sampleAsOf": "2026-11-16T01:13:07.823Z",
-   "computedAt": "2026-11-18T01:18:02.114Z"
+   "computedAt": "2026-11-19T01:39:01.133Z"
   },
   "claude-meetings": {
    "status": "live",
@@ -9255,21 +9255,21 @@
   "rakazo": {
    "status": "live",
    "query": "(rakazo OR url:rakazo.com OR \"rakazo.com\" OR \"elie222/rakazo\") -is:retweet",
-   "mentions24h": 44,
-   "mentions7d": 329,
-   "priorDailyAvg": 47.9,
-   "velocity": 0.92,
+   "mentions24h": 35,
+   "mentions7d": 312,
+   "priorDailyAvg": 46.7,
+   "velocity": 0.75,
    "daily": [
-    50,
-    27,
+    25,
     23,
     18,
     85,
     82,
-    44
+    44,
+    35
    ],
    "peakDay": 85,
-   "peakDaysAgo": 2,
+   "peakDaysAgo": 3,
    "sample": {
     "posts": 25,
     "likes": 101,
@@ -9277,16 +9277,16 @@
     "replies": 34
    },
    "parts": {
-    "volume": 25.2,
+    "volume": 25,
     "velocity": 0,
     "engagement": 11.4
    },
-   "score": 37,
+   "score": 36,
    "label": "steady",
    "viral": false,
    "topPosts": [],
    "sampleAsOf": "2026-11-16T01:13:07.823Z",
-   "computedAt": "2026-11-18T01:18:02.114Z"
+   "computedAt": "2026-11-19T01:39:01.133Z"
   },
   "selvedge": {
    "status": "live",
@@ -9471,21 +9471,21 @@
   "qwen4-max": {
    "status": "live",
    "query": "(\"Qwen4-Max\" OR \"Qwen 4 Max\" OR \"qwen4-max\" OR #Qwen4Max) -is:retweet",
-   "mentions24h": 2092,
-   "mentions7d": 11218,
-   "priorDailyAvg": 1533.2,
-   "velocity": 1.36,
+   "mentions24h": 770,
+   "mentions7d": 9668,
+   "priorDailyAvg": 1498.7,
+   "velocity": 0.51,
    "daily": [
-    2192,
-    914,
+    792,
     355,
     202,
     184,
-    5279,
-    2092
+    5278,
+    2087,
+    770
    ],
-   "peakDay": 5279,
-   "peakDaysAgo": 1,
+   "peakDay": 5278,
+   "peakDaysAgo": 2,
    "sample": {
     "posts": 25,
     "likes": 174,
@@ -9493,47 +9493,47 @@
     "replies": 81
    },
    "parts": {
-    "volume": 40.5,
-    "velocity": 5.5,
+    "volume": 39.9,
+    "velocity": 0,
     "engagement": 12.8
    },
-   "score": 59,
-   "label": "rising",
+   "score": 53,
+   "label": "steady",
    "viral": false,
    "topPosts": [],
    "sampleAsOf": "2026-11-17T01:28:28.794Z",
-   "computedAt": "2026-11-18T01:18:02.114Z"
+   "computedAt": "2026-11-19T01:39:01.133Z"
   },
   "hy4-flash": {
    "status": "live",
    "query": "(\"Hy4 flash\" OR \"Hy4 Flash\" OR \"hy4-flash\" OR \"Hy4flash\" OR \"Hy4-Flash\") -is:retweet",
-   "mentions24h": 896,
-   "mentions7d": 2164,
-   "priorDailyAvg": 213,
-   "velocity": 4.21,
+   "mentions24h": 1037,
+   "mentions7d": 3197,
+   "priorDailyAvg": 363.8,
+   "velocity": 2.85,
    "daily": [
-    3,
     0,
     1,
     0,
     5,
     1259,
-    896
+    895,
+    1037
    ],
    "peakDay": 1259,
-   "peakDaysAgo": 1,
+   "peakDaysAgo": 2,
    "sample": {
-    "posts": 25,
-    "likes": 496,
-    "reposts": 111,
-    "replies": 116
+    "posts": 24,
+    "likes": 333,
+    "reposts": 95,
+    "replies": 94
    },
    "parts": {
-    "volume": 33.4,
-    "velocity": 25,
-    "engagement": 15.1
+    "volume": 35,
+    "velocity": 18.9,
+    "engagement": 14.6
    },
-   "score": 73,
+   "score": 69,
    "label": "hype",
    "viral": false,
    "topPosts": [
@@ -9548,65 +9548,89 @@
      "replies": 37,
      "views": 62926,
      "quotes": 1
+    },
+    {
+     "id": "2122598839899337148",
+     "url": "https://x.com/tenctcloud_Intl/status/2122598839899337148",
+     "author": "tenctcloud_Intl",
+     "text": "Six identical requests. 2:12 vs 6:25.\n\nHy4 Flash vs Hy4 in WorkBuddy — same inputs, one run each, every result passed the same checks. Flash finished in a third of the time.\n\nQuick tasks → Hy4 Flash. \nHard problems →…",
+     "created_at": "2026-11-17T07:52:54.000Z",
+     "likes": 136,
+     "reposts": 78,
+     "replies": 67,
+     "views": 30475,
+     "quotes": 4
+    },
+    {
+     "id": "2122913625228857626",
+     "url": "https://x.com/TencentAI_News/status/2122913625228857626",
+     "author": "TencentAI_News",
+     "text": "🔓Hy4 flash weights are now open\n\nGet Hy4 flash, Hy4 flash-FP8, and Hy4 flash Base:\n-GitHub:https://t.co/IG8zm9UQJb\n-GGUF:https://t.co/NQwii3SVlS\n👀Hy4 weights next https://t.co/hAocjHjju7",
+     "created_at": "2026-11-18T04:43:44.000Z",
+     "likes": 113,
+     "reposts": 11,
+     "replies": 3,
+     "views": 43223,
+     "quotes": 4
     }
    ],
-   "sampleAsOf": "2026-11-17T01:28:28.794Z",
-   "computedAt": "2026-11-18T01:18:02.114Z"
+   "sampleAsOf": "2026-11-19T01:39:01.133Z",
+   "computedAt": "2026-11-19T01:39:01.133Z"
   },
   "liquid-d1-2": {
    "status": "live",
    "query": "((\"d1.2\" OR \"d1.2-ultra\" OR \"d1-2\") (\"Liquid AI\" OR LiquidAI OR @LiquidAI OR \"decision model\")) OR \"liquid d1.2\" -is:retweet",
-   "mentions24h": 259,
-   "mentions7d": 640,
-   "priorDailyAvg": 64,
-   "velocity": 4.05,
+   "mentions24h": 40,
+   "mentions7d": 677,
+   "priorDailyAvg": 107.3,
+   "velocity": 0.37,
    "daily": [
-    0,
     0,
     0,
     0,
     0,
     381,
-    259
+    256,
+    40
    ],
    "peakDay": 381,
-   "peakDaysAgo": 1,
+   "peakDaysAgo": 2,
    "sample": {
-    "posts": 25,
-    "likes": 22,
-    "reposts": 33,
-    "replies": 14
+    "posts": 24,
+    "likes": 139,
+    "reposts": 101,
+    "replies": 10
    },
    "parts": {
-    "volume": 28.1,
-    "velocity": 25,
-    "engagement": 10.9
+    "volume": 28.3,
+    "velocity": 0,
+    "engagement": 13.3
    },
-   "score": 64,
-   "label": "hype",
+   "score": 42,
+   "label": "steady",
    "viral": false,
    "topPosts": [],
-   "sampleAsOf": "2026-11-17T01:28:28.794Z",
-   "computedAt": "2026-11-18T01:18:02.114Z"
+   "sampleAsOf": "2026-11-19T01:39:01.133Z",
+   "computedAt": "2026-11-19T01:39:01.133Z"
   },
   "agent-barn": {
    "status": "live",
    "query": "(\"Agent Barn\" OR agentbarn OR url:agentbarn.dev OR \"agentbarn.dev\" OR \"aai-labs/agent-barn\") -is:retweet",
-   "mentions24h": 1,
-   "mentions7d": 2,
+   "mentions24h": 0,
+   "mentions7d": 1,
    "priorDailyAvg": 0.2,
-   "velocity": 1,
+   "velocity": 0,
    "daily": [
+    0,
+    0,
+    0,
+    0,
+    0,
     1,
-    0,
-    0,
-    0,
-    0,
-    0,
-    1
+    0
    ],
    "peakDay": 1,
-   "peakDaysAgo": 6,
+   "peakDaysAgo": 1,
    "sample": {
     "posts": 1,
     "likes": 1,
@@ -9614,35 +9638,35 @@
     "replies": 0
    },
    "parts": {
-    "volume": 4.8,
+    "volume": 3,
     "velocity": 0,
     "engagement": 1.5
    },
-   "score": 6,
+   "score": 5,
    "label": "quiet",
    "viral": false,
    "topPosts": [],
    "sampleAsOf": "2026-11-17T01:28:28.794Z",
-   "computedAt": "2026-11-18T01:18:02.114Z"
+   "computedAt": "2026-11-19T01:39:01.133Z"
   },
   "swarm-school": {
    "status": "live",
    "query": "(\"Swarm School\" OR url:swarm.school OR \"swarm.school\") -is:retweet",
-   "mentions24h": 26,
+   "mentions24h": 11,
    "mentions7d": 74,
-   "priorDailyAvg": 8.1,
-   "velocity": 3.22,
+   "priorDailyAvg": 10.6,
+   "velocity": 1.04,
    "daily": [
-    10,
-    12,
+    11,
     8,
     3,
     1,
     14,
-    26
+    26,
+    11
    ],
    "peakDay": 26,
-   "peakDaysAgo": 0,
+   "peakDaysAgo": 1,
    "sample": {
     "posts": 16,
     "likes": 1,
@@ -9651,34 +9675,34 @@
    },
    "parts": {
     "volume": 18.8,
-    "velocity": 15.1,
+    "velocity": 0.4,
     "engagement": 1.5
    },
-   "score": 35,
-   "label": "hype",
+   "score": 21,
+   "label": "steady",
    "viral": false,
    "topPosts": [],
    "sampleAsOf": "2026-11-17T01:28:28.794Z",
-   "computedAt": "2026-11-18T01:18:02.114Z"
+   "computedAt": "2026-11-19T01:39:01.133Z"
   },
   "botsdothat-bot-builder": {
    "status": "live",
    "query": "(\"BotsDoThat\" OR \"Bots Do That\" OR url:botsdothat.com OR \"botsdothat.com\") -is:retweet",
-   "mentions24h": 5,
+   "mentions24h": 4,
    "mentions7d": 39,
-   "priorDailyAvg": 5.7,
-   "velocity": 0.88,
+   "priorDailyAvg": 5.9,
+   "velocity": 0.68,
    "daily": [
-    4,
     5,
     6,
     6,
     6,
     7,
-    5
+    5,
+    4
    ],
    "peakDay": 7,
-   "peakDaysAgo": 1,
+   "peakDaysAgo": 2,
    "sample": {
     "posts": 0,
     "likes": 0,
@@ -9695,26 +9719,26 @@
    "viral": false,
    "topPosts": [],
    "sampleAsOf": "2026-11-17T01:28:28.794Z",
-   "computedAt": "2026-11-18T01:18:02.114Z"
+   "computedAt": "2026-11-19T01:39:01.133Z"
   },
   "loyaltty": {
    "status": "live",
    "query": "(Loyaltty OR url:loyaltty.com OR \"loyaltty.com\") -is:retweet",
-   "mentions24h": 8,
-   "mentions7d": 37,
-   "priorDailyAvg": 4.9,
-   "velocity": 1.64,
+   "mentions24h": 4,
+   "mentions7d": 40,
+   "priorDailyAvg": 6.1,
+   "velocity": 0.66,
    "daily": [
-    1,
     4,
     6,
     5,
     8,
     5,
-    8
+    8,
+    4
    ],
    "peakDay": 8,
-   "peakDaysAgo": 2,
+   "peakDaysAgo": 3,
    "sample": {
     "posts": 0,
     "likes": 0,
@@ -9722,47 +9746,47 @@
     "replies": 0
    },
    "parts": {
-    "volume": 15.8,
-    "velocity": 4.3,
+    "volume": 16.1,
+    "velocity": 0,
     "engagement": 0
    },
-   "score": 20,
-   "label": "rising",
+   "score": 16,
+   "label": "quiet",
    "viral": false,
    "topPosts": [],
    "sampleAsOf": "2026-11-17T01:28:28.794Z",
-   "computedAt": "2026-11-18T01:18:02.114Z"
+   "computedAt": "2026-11-19T01:39:01.133Z"
   },
   "gpt-6-2-astra": {
    "status": "live",
    "query": "(\"gpt-6.2 astra\" OR \"gpt-6.2-astra\" OR \"gpt 6.2 astra\" OR \"6.2 astra\") -is:retweet",
-   "mentions24h": 6486,
-   "mentions7d": 9444,
-   "priorDailyAvg": 496.9,
-   "velocity": 13.05,
+   "mentions24h": 9679,
+   "mentions7d": 18555,
+   "priorDailyAvg": 1494.8,
+   "velocity": 6.48,
    "daily": [
-    485,
-    767,
+    741,
     498,
     379,
     411,
     418,
-    6486
+    6429,
+    9679
    ],
-   "peakDay": 6486,
+   "peakDay": 9679,
    "peakDaysAgo": 0,
    "sample": {
     "posts": 16,
-    "likes": 35334,
-    "reposts": 3430,
-    "replies": 2146
+    "likes": 868,
+    "reposts": 35,
+    "replies": 155
    },
    "parts": {
-    "volume": 39.8,
+    "volume": 42.7,
     "velocity": 25,
-    "engagement": 23.7
+    "engagement": 19.4
    },
-   "score": 88,
+   "score": 87,
    "label": "hype",
    "viral": true,
    "topPosts": [
@@ -9796,46 +9820,46 @@
      "author": "TokenGremlin",
      "text": "GPT-6.2 Astra > Fable 5.2\n\nAnd yes, this is an output from GPT-6.2 Astra in early access. https://t.co/h3H6CNiPfS",
      "created_at": "2026-11-14T12:49:45.000Z",
-     "likes": 788,
+     "likes": 794,
      "reposts": 29,
-     "replies": 107,
-     "views": 72268,
+     "replies": 106,
+     "views": 76776,
      "quotes": 5
     }
    ],
-   "sampleAsOf": "2026-11-18T01:18:02.114Z",
-   "computedAt": "2026-11-18T01:18:02.114Z"
+   "sampleAsOf": "2026-11-19T01:39:01.133Z",
+   "computedAt": "2026-11-19T01:39:01.133Z"
   },
   "gpt-6-2-sol": {
    "status": "live",
    "query": "(\"gpt-6.2 sol\" OR \"gpt-6.2-sol\" OR \"gpt 6.2 sol\" OR \"6.2 sol\") -is:retweet",
-   "mentions24h": 2937,
-   "mentions7d": 4495,
-   "priorDailyAvg": 261.7,
-   "velocity": 11.22,
+   "mentions24h": 4574,
+   "mentions7d": 8784,
+   "priorDailyAvg": 709,
+   "velocity": 6.45,
    "daily": [
-    258,
-    431,
+    420,
     260,
     228,
     205,
     176,
-    2937
+    2921,
+    4574
    ],
-   "peakDay": 2937,
+   "peakDay": 4574,
    "peakDaysAgo": 0,
    "sample": {
-    "posts": 27,
-    "likes": 9543,
-    "reposts": 488,
-    "replies": 985
+    "posts": 25,
+    "likes": 272,
+    "reposts": 8,
+    "replies": 233
    },
    "parts": {
-    "volume": 36.5,
+    "volume": 39.4,
     "velocity": 25,
-    "engagement": 20.6
+    "engagement": 15.3
    },
-   "score": 82,
+   "score": 80,
    "label": "hype",
    "viral": true,
    "topPosts": [
@@ -9869,46 +9893,46 @@
      "author": "lingo24",
      "text": "我去！！\n\n原来 GPT 6.2 Sol 真的把 opus 5.5 蒸馏了\n\n日常测试 GPT 6.2 Sol 灰度，去验指纹发现验证出来的是 Claude Opus 5.5。\n\n怪不得之前流出的灰度效果和 Opus 那么像🤣🤣 https://t.co/mcvdUjqaOe",
      "created_at": "2026-11-15T16:11:19.000Z",
-     "likes": 85,
+     "likes": 87,
      "reposts": 4,
      "replies": 52,
-     "views": 42842,
+     "views": 45294,
      "quotes": 4
     }
    ],
-   "sampleAsOf": "2026-11-18T01:18:02.114Z",
-   "computedAt": "2026-11-18T01:18:02.114Z"
+   "sampleAsOf": "2026-11-19T01:39:01.133Z",
+   "computedAt": "2026-11-19T01:39:01.133Z"
   },
   "kling-image-4": {
    "status": "live",
    "query": "(\"kling image 4.0\" OR \"kling image 4\" OR \"kling-image-4\" OR \"kling-image@4.0\" OR (\"image 4.0\" (kling OR @Kling_ai))) -is:retweet",
-   "mentions24h": 182,
-   "mentions7d": 201,
-   "priorDailyAvg": 3.2,
-   "velocity": 57.02,
+   "mentions24h": 378,
+   "mentions7d": 578,
+   "priorDailyAvg": 33.7,
+   "velocity": 11.22,
    "daily": [
-    0,
     0,
     0,
     0,
     2,
     17,
-    182
+    181,
+    378
    ],
-   "peakDay": 182,
+   "peakDay": 378,
    "peakDaysAgo": 0,
    "sample": {
     "posts": 25,
-    "likes": 808,
-    "reposts": 93,
-    "replies": 99
+    "likes": 861,
+    "reposts": 95,
+    "replies": 118
    },
    "parts": {
-    "volume": 23.1,
+    "volume": 27.6,
     "velocity": 25,
-    "engagement": 15.6
+    "engagement": 15.8
    },
-   "score": 64,
+   "score": 68,
    "label": "hype",
    "viral": false,
    "topPosts": [
@@ -9916,12 +9940,12 @@
      "id": "2122343937977581924",
      "url": "https://x.com/Kling_ai/status/2122343937977581924",
      "author": "Kling_ai",
-     "text": "Stunningly realistic.\nSharp. \nPrecise.\n\nKling Image 4.0 is coming soon. Stay tuned.",
+     "text": "Stunningly realistic.\nSharp. \nPrecise.\n\nKling Image 4.0 is coming soon. Stay tuned. https://t.co/7o0RscMLM3",
      "created_at": "2026-11-16T15:00:00.000Z",
-     "likes": 615,
+     "likes": 624,
      "reposts": 61,
-     "replies": 81,
-     "views": 99756,
+     "replies": 82,
+     "views": 101618,
      "quotes": 23
     },
     {
@@ -9930,10 +9954,10 @@
      "author": "CharaspowerAI",
      "text": "Okay… AI image generation is getting SCARY realistic. 🤯🔥\nI just pushed Kling Image 4.0 through a series of real-world creative tests.\nFrom animals to full advertising visuals, the results genuinely surprised me.\nAll…",
      "created_at": "2026-11-17T15:49:17.000Z",
-     "likes": 19,
+     "likes": 25,
      "reposts": 2,
-     "replies": 3,
-     "views": 77239,
+     "replies": 5,
+     "views": 79146,
      "quotes": 0
     },
     {
@@ -9943,33 +9967,33 @@
      "text": "Si tu imagen de IA sigue teniendo cara de IA, no la uses.\n\nKling Image 4.0 es la primera que he visto que realmente parece una foto.\n\nHe estado explorando Kling Image 4.0 y me ha llamado la atención el nivel de detalle…",
      "created_at": "2026-11-17T17:10:58.000Z",
      "likes": 24,
-     "reposts": 16,
+     "reposts": 7,
      "replies": 8,
-     "views": 68740,
+     "views": 69515,
      "quotes": 0
     }
    ],
-   "sampleAsOf": "2026-11-18T01:18:02.114Z",
-   "computedAt": "2026-11-18T01:18:02.114Z"
+   "sampleAsOf": "2026-11-19T01:39:01.133Z",
+   "computedAt": "2026-11-19T01:39:01.133Z"
   },
   "rankspot": {
    "status": "live",
    "query": "(url:rankspot.ai OR \"rankspot.ai\" OR @rankspotai OR (rankspot (seo OR mcp OR agent OR agents OR \"product hunt\"))) -is:retweet",
-   "mentions24h": 14,
-   "mentions7d": 15,
-   "priorDailyAvg": 0.2,
-   "velocity": 14,
+   "mentions24h": 11,
+   "mentions7d": 26,
+   "priorDailyAvg": 2.5,
+   "velocity": 4.35,
    "daily": [
     0,
     0,
     0,
     0,
-    0,
     1,
-    14
+    14,
+    11
    ],
    "peakDay": 14,
-   "peakDaysAgo": 0,
+   "peakDaysAgo": 1,
    "sample": {
     "posts": 15,
     "likes": 12,
@@ -9977,34 +10001,34 @@
     "replies": 20
    },
    "parts": {
-    "volume": 12,
-    "velocity": 14.7,
+    "volume": 14.3,
+    "velocity": 13.5,
     "engagement": 8.7
    },
-   "score": 35,
+   "score": 37,
    "label": "rising",
    "viral": false,
    "topPosts": [],
    "sampleAsOf": "2026-11-18T01:18:02.114Z",
-   "computedAt": "2026-11-18T01:18:02.114Z"
+   "computedAt": "2026-11-19T01:39:01.133Z"
   },
   "seshka": {
    "status": "live",
    "query": "(url:seshka.dev OR \"seshka.dev\" OR \"jigjoy-ai/seshka\" OR (seshka (claude OR \"claude code\" OR macos OR \"menu bar\"))) -is:retweet",
-   "mentions24h": 7,
-   "mentions7d": 7,
-   "priorDailyAvg": 0,
-   "velocity": 7,
+   "mentions24h": 11,
+   "mentions7d": 18,
+   "priorDailyAvg": 1.2,
+   "velocity": 9.33,
    "daily": [
     0,
     0,
     0,
     0,
     0,
-    0,
-    7
+    7,
+    11
    ],
-   "peakDay": 7,
+   "peakDay": 11,
    "peakDaysAgo": 0,
    "sample": {
     "posts": 7,
@@ -10013,35 +10037,35 @@
     "replies": 12
    },
    "parts": {
-    "volume": 9,
-    "velocity": 11.3,
+    "volume": 12.8,
+    "velocity": 13.5,
     "engagement": 7.9
    },
-   "score": 28,
+   "score": 34,
    "label": "rising",
    "viral": false,
    "topPosts": [],
    "sampleAsOf": "2026-11-18T01:18:02.114Z",
-   "computedAt": "2026-11-18T01:18:02.114Z"
+   "computedAt": "2026-11-19T01:39:01.133Z"
   },
   "skillbox": {
    "status": "live",
    "query": "(url:skillbox.so OR \"skillbox.so\" OR @skillbox_so) -is:retweet",
-   "mentions24h": 11,
-   "mentions7d": 77,
-   "priorDailyAvg": 11.1,
-   "velocity": 0.99,
+   "mentions24h": 12,
+   "mentions7d": 73,
+   "priorDailyAvg": 10.3,
+   "velocity": 1.17,
    "daily": [
-    16,
     2,
     18,
     9,
     0,
     21,
-    11
+    11,
+    12
    ],
    "peakDay": 21,
-   "peakDaysAgo": 1,
+   "peakDaysAgo": 2,
    "sample": {
     "posts": 25,
     "likes": 41,
@@ -10049,16 +10073,16 @@
     "replies": 2
    },
    "parts": {
-    "volume": 18.9,
-    "velocity": 0,
+    "volume": 18.7,
+    "velocity": 1.6,
     "engagement": 9.2
    },
-   "score": 28,
+   "score": 29,
    "label": "steady",
    "viral": false,
    "topPosts": [],
    "sampleAsOf": "2026-11-18T01:18:02.114Z",
-   "computedAt": "2026-11-18T01:18:02.114Z"
+   "computedAt": "2026-11-19T01:39:01.133Z"
   },
   "ordogrid": {
    "status": "live",
@@ -10094,26 +10118,26 @@
    "viral": false,
    "topPosts": [],
    "sampleAsOf": "2026-11-18T01:18:02.114Z",
-   "computedAt": "2026-11-18T01:18:02.114Z"
+   "computedAt": "2026-11-19T01:39:01.133Z"
   },
   "kahrbon": {
    "status": "live",
    "query": "(kahrbon OR url:kahrbon.com) -is:retweet",
-   "mentions24h": 4,
+   "mentions24h": 0,
    "mentions7d": 4,
-   "priorDailyAvg": 0,
-   "velocity": 4,
+   "priorDailyAvg": 0.7,
+   "velocity": 0,
    "daily": [
     0,
     0,
     0,
     0,
     0,
-    0,
-    4
+    4,
+    0
    ],
    "peakDay": 4,
-   "peakDaysAgo": 0,
+   "peakDaysAgo": 1,
    "sample": {
     "posts": 3,
     "likes": 6,
@@ -10122,34 +10146,34 @@
    },
    "parts": {
     "volume": 7,
-    "velocity": 8.7,
+    "velocity": 0,
     "engagement": 5.2
    },
-   "score": 21,
+   "score": 12,
    "label": "quiet",
    "viral": false,
    "topPosts": [],
    "sampleAsOf": "2026-11-18T01:18:02.114Z",
-   "computedAt": "2026-11-18T01:18:02.114Z"
+   "computedAt": "2026-11-19T01:39:01.133Z"
   },
   "ai-cost": {
    "status": "live",
    "query": "(url:aicost.tools OR \"aicost.tools\") -is:retweet",
-   "mentions24h": 1,
+   "mentions24h": 0,
    "mentions7d": 1,
-   "priorDailyAvg": 0,
-   "velocity": 1,
+   "priorDailyAvg": 0.2,
+   "velocity": 0,
    "daily": [
     0,
     0,
     0,
     0,
     0,
-    0,
-    1
+    1,
+    0
    ],
    "peakDay": 1,
-   "peakDaysAgo": 0,
+   "peakDaysAgo": 1,
    "sample": {
     "posts": 0,
     "likes": 0,
@@ -10166,7 +10190,236 @@
    "viral": false,
    "topPosts": [],
    "sampleAsOf": "2026-11-18T01:18:02.114Z",
-   "computedAt": "2026-11-18T01:18:02.114Z"
+   "computedAt": "2026-11-19T01:39:01.133Z"
+  },
+  "tastestack": {
+   "status": "live",
+   "query": "(tastestack OR \"taste stack\" OR url:tastestack.dev OR \"tastestack.dev\") -is:retweet",
+   "mentions24h": 0,
+   "mentions7d": 0,
+   "priorDailyAvg": 0,
+   "velocity": 0,
+   "daily": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "peakDay": 0,
+   "peakDaysAgo": 6,
+   "sample": {
+    "posts": 0,
+    "likes": 0,
+    "reposts": 0,
+    "replies": 0
+   },
+   "parts": {
+    "volume": 0,
+    "velocity": 0,
+    "engagement": 0
+   },
+   "score": 0,
+   "label": "quiet",
+   "viral": false,
+   "topPosts": [],
+   "sampleAsOf": "2026-11-19T01:39:01.133Z",
+   "computedAt": "2026-11-19T01:39:01.133Z"
+  },
+  "pawgroove": {
+   "status": "live",
+   "query": "(pawgroove OR url:pawgroove.org OR \"pawgroove.org\") -is:retweet",
+   "mentions24h": 0,
+   "mentions7d": 0,
+   "priorDailyAvg": 0,
+   "velocity": 0,
+   "daily": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "peakDay": 0,
+   "peakDaysAgo": 6,
+   "sample": {
+    "posts": 0,
+    "likes": 0,
+    "reposts": 0,
+    "replies": 0
+   },
+   "parts": {
+    "volume": 0,
+    "velocity": 0,
+    "engagement": 0
+   },
+   "score": 0,
+   "label": "quiet",
+   "viral": false,
+   "topPosts": [],
+   "sampleAsOf": "2026-11-19T01:39:01.133Z",
+   "computedAt": "2026-11-19T01:39:01.133Z"
+  },
+  "gemini-4-neon": {
+   "status": "live",
+   "query": "(\"gemini 4 neon\" OR \"gemini-4-neon\" OR \"gemini neon\") -is:retweet",
+   "mentions24h": 3391,
+   "mentions7d": 3649,
+   "priorDailyAvg": 43.5,
+   "velocity": 78.02,
+   "daily": [
+    4,
+    1,
+    3,
+    1,
+    82,
+    167,
+    3391
+   ],
+   "peakDay": 3391,
+   "peakDaysAgo": 0,
+   "sample": {
+    "posts": 25,
+    "likes": 648,
+    "reposts": 34,
+    "replies": 57
+   },
+   "parts": {
+    "volume": 35.6,
+    "velocity": 25,
+    "engagement": 14.9
+   },
+   "score": 76,
+   "label": "hype",
+   "viral": false,
+   "topPosts": [
+    {
+     "id": "2122421307656602040",
+     "url": "https://x.com/aitrackerbot/status/2122421307656602040",
+     "author": "aitrackerbot",
+     "text": "GEMINI 4 NEON 👀\n\nA model called gemini-4-neon has surfaced in the Gemini web app's code from Google. For now it's only a code reference, with no public access. https://t.co/737tbgXd1x",
+     "created_at": "2026-11-16T20:07:27.000Z",
+     "likes": 405,
+     "reposts": 22,
+     "replies": 27,
+     "views": 125233,
+     "quotes": 44
+    }
+   ],
+   "sampleAsOf": "2026-11-19T01:39:01.133Z",
+   "computedAt": "2026-11-19T01:39:01.133Z"
+  },
+  "genie-4": {
+   "status": "live",
+   "query": "((\"genie 4\" OR \"Genie 4\" OR \"project genie\" OR \"Project Genie\" OR projectgenie) (google OR deepmind OR gemini OR ultra)) OR url:labs.google/projectgenie -is:retweet",
+   "mentions24h": 778,
+   "mentions7d": 969,
+   "priorDailyAvg": 32.2,
+   "velocity": 24.18,
+   "daily": [
+    20,
+    18,
+    10,
+    22,
+    34,
+    87,
+    778
+   ],
+   "peakDay": 778,
+   "peakDaysAgo": 0,
+   "sample": {
+    "posts": 25,
+    "likes": 65,
+    "reposts": 22,
+    "replies": 18
+   },
+   "parts": {
+    "volume": 29.9,
+    "velocity": 25,
+    "engagement": 11.1
+   },
+   "score": 66,
+   "label": "hype",
+   "viral": false,
+   "topPosts": [],
+   "sampleAsOf": "2026-11-19T01:39:01.133Z",
+   "computedAt": "2026-11-19T01:39:01.133Z"
+  },
+  "s-space": {
+   "status": "live",
+   "query": "(\"S.Space\" OR url:s.space OR \"s.space\" OR (\"S Space\" (AutoGen OR AG2 OR AG2AI OR agents))) -is:retweet",
+   "mentions24h": 26,
+   "mentions7d": 43,
+   "priorDailyAvg": 2.9,
+   "velocity": 9.08,
+   "daily": [
+    8,
+    2,
+    0,
+    0,
+    5,
+    2,
+    26
+   ],
+   "peakDay": 26,
+   "peakDaysAgo": 0,
+   "sample": {
+    "posts": 25,
+    "likes": 66,
+    "reposts": 10,
+    "replies": 18
+   },
+   "parts": {
+    "volume": 16.4,
+    "velocity": 17.9,
+    "engagement": 10.6
+   },
+   "score": 45,
+   "label": "hype",
+   "viral": false,
+   "topPosts": [],
+   "sampleAsOf": "2026-11-19T01:39:01.133Z",
+   "computedAt": "2026-11-19T01:39:01.133Z"
+  },
+  "waldo": {
+   "status": "live",
+   "query": "((Waldo (Wherobots OR geospatial OR Sedona OR \"spatial data\")) OR url:wherobots.com OR @wherobots) -is:retweet",
+   "mentions24h": 19,
+   "mentions7d": 19,
+   "priorDailyAvg": 0,
+   "velocity": 19,
+   "daily": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    19
+   ],
+   "peakDay": 19,
+   "peakDaysAgo": 0,
+   "sample": {
+    "posts": 19,
+    "likes": 15,
+    "reposts": 1,
+    "replies": 15
+   },
+   "parts": {
+    "volume": 13,
+    "velocity": 16.3,
+    "engagement": 8.5
+   },
+   "score": 38,
+   "label": "rising",
+   "viral": false,
+   "topPosts": [],
+   "sampleAsOf": "2026-11-19T01:39:01.133Z",
+   "computedAt": "2026-11-19T01:39:01.133Z"
   }
  }
 }

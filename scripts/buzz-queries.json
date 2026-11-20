@@ -259,7 +259,7 @@
   "creepless": "(creepless OR url:creepless.online OR \"creepless.online\") -is:retweet",
   "qwen4-max": "(\"Qwen4-Max\" OR \"Qwen 4 Max\" OR \"qwen4-max\" OR #Qwen4Max) -is:retweet",
   "hy4-flash": "(\"Hy4 flash\" OR \"Hy4 Flash\" OR \"hy4-flash\" OR \"Hy4flash\" OR \"Hy4-Flash\") -is:retweet",
-  "liquid-d1-2": "((\"d1.2\" OR \"d1.2-ultra\" OR \"d1-2\") (\"Liquid AI\" OR LiquidAI OR @LiquidAI OR \"decision model\")) OR \"liquid d1.2\" -is:retweet",
+  "liquid-d1-2": "(((\"d1.2\" OR \"d1.2-ultra\" OR \"d1-2\") (\"Liquid AI\" OR LiquidAI OR @LiquidAI OR \"decision model\")) OR \"liquid d1.2\") -is:retweet",
   "agent-barn": "(\"Agent Barn\" OR agentbarn OR url:agentbarn.dev OR \"agentbarn.dev\" OR \"aai-labs/agent-barn\") -is:retweet",
   "swarm-school": "(\"Swarm School\" OR url:swarm.school OR \"swarm.school\") -is:retweet",
   "botsdothat-bot-builder": "(\"BotsDoThat\" OR \"Bots Do That\" OR url:botsdothat.com OR \"botsdothat.com\") -is:retweet",
@@ -276,7 +276,11 @@
   "tastestack": "(tastestack OR \"taste stack\" OR url:tastestack.dev OR \"tastestack.dev\") -is:retweet",
   "pawgroove": "(pawgroove OR url:pawgroove.org OR \"pawgroove.org\") -is:retweet",
   "gemini-4-neon": "(\"gemini 4 neon\" OR \"gemini-4-neon\" OR \"gemini neon\") -is:retweet",
-  "genie-4": "((\"genie 4\" OR \"Genie 4\" OR \"project genie\" OR \"Project Genie\" OR projectgenie) (google OR deepmind OR gemini OR ultra)) OR url:labs.google/projectgenie -is:retweet",
+  "genie-4": "((\"genie 4\" OR \"project genie\" OR projectgenie) (google OR deepmind OR gemini OR ultra)) -is:retweet",
   "s-space": "(\"S.Space\" OR url:s.space OR \"s.space\" OR (\"S Space\" (AutoGen OR AG2 OR AG2AI OR agents))) -is:retweet",
-  "waldo": "((Waldo (Wherobots OR geospatial OR Sedona OR \"spatial data\")) OR url:wherobots.com OR @wherobots) -is:retweet"
+  "waldo": "((Waldo (Wherobots OR geospatial OR Sedona OR \"spatial data\")) OR url:wherobots.com OR @wherobots) -is:retweet",
+  "testsprite": "(testsprite OR url:testsprite.com) -is:retweet",
+  "tabstack": "(tabstack OR url:tabstack.ai OR \"Mozilla-Ocho/tabstack\") -is:retweet",
+  "vercel-board": "(\"vercel board\" OR \"@vercel/board\" OR \"vercel/board\" OR (vercel board (agents OR agent OR swarm OR swarms OR \"software factory\"))) -is:retweet",
+  "forgesprite": "(forgesprite OR url:forgesprite.com) -is:retweet"
 }

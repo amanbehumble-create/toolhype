@@ -30,7 +30,10 @@ const freeAnswer = (t: Tool) => {
 const art = (w: string) => (/^[aeiou]/i.test(w) ? 'an' : 'a');
 // Short "what kind of tool" phrase: "an open-source coding AI tool", or "a chat AI tool (pricing not published)" when the pricing
 // value isn't a single adjective, instead of "a pricing not published chat AI tool".
-const noun = `${cat ? cat.name.toLowerCase().replace(/\bai\b/g, 'AI') : t.category} ${t.category === 'crypto' ? 'app' : 'AI tool'}`;
+// Communities whose name already says "AI" or "assistant" get their own phrase, so the answer box doesn't read
+// "an AI agents AI tool" or "a chat assistants AI tool".
+const NOUN: Record<string, string> = { agents: 'AI agent tool', chat: 'AI chat assistant', crypto: 'crypto app' };
+const noun = NOUN[cat?.slug ?? t.category] ?? `${cat ? cat.name.toLowerCase() : t.category} AI tool`;
 const paidIn = t.pricing.match(/^paid \((.*)\)$/)?.[1];
 const kind = /^(free|freemium|paid|open-source|open-weight)$/.test(t.pricing) ? `${art(t.pricing)} ${t.pricing} ${noun}` : paidIn ? `a paid ${noun} (${paidIn})` : `${art(noun)} ${noun} (${t.pricing})`;
 // "In short" answer box: the verdict's first sentence (two if the first is very short) instead of repeating the

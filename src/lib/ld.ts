@@ -1,9 +1,14 @@
 import type { Tool } from './data';
 const base = () => import.meta.env.SITE || 'https://toolhype.dev';
 export const toolUrl = (t: Tool) => `${base()}/tools/${t.slug}`;
+// schema.org applicationCategory values Google recognizes for SoftwareApplication rich results, instead of our own
+// category slugs ("coding", "chat"), which it ignores.
+const APP_CAT: Record<string, string> = { coding: 'DeveloperApplication', agents: 'DeveloperApplication', design: 'DesignApplication',
+  video: 'MultimediaApplication', audio: 'MultimediaApplication', productivity: 'BusinessApplication', marketing: 'BusinessApplication',
+  chat: 'CommunicationApplication', fun: 'EntertainmentApplication', crypto: 'FinanceApplication' };
 export const appLd = (t: Tool) => ({
   '@context': 'https://schema.org', '@type': 'SoftwareApplication', name: t.name, url: t.url, sameAs: t.url,
-  mainEntityOfPage: toolUrl(t), applicationCategory: t.category, description: t.verdict, operatingSystem: 'Web',
+  mainEntityOfPage: toolUrl(t), applicationCategory: APP_CAT[t.category] ?? 'UtilitiesApplication', applicationSubCategory: t.category, description: t.verdict, operatingSystem: 'Web',
   ...(t.logo ? { image: base() + t.logo } : {}), datePublished: t.addedAt,
   ...(['free', 'freemium', 'open-source'].includes(t.pricing) ? { offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD', category: t.pricing } } : {}),
 });

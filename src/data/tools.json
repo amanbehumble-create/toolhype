@@ -1884,10 +1884,12 @@
       "audio"
     ],
     "pricing": "freemium",
-    "verdict": "Edit video and podcasts by editing the transcript.",
-    "useThisIf": "you edit talking content and podcasts.",
+    "verdict": "Video and podcast editor where you edit the recording by editing its transcript: delete a sentence in the text and it's cut from the video. Its AI co-editor, Underlord, can do edits for you on request, and the built-in AI tools include Studio Sound (cleans up audio), Remove Filler Words, Eye Contact, green screen, automatic clips for social, captions in 25 transcription languages, and AI voice clones that can re-say a fixed line. It also records your screen and remote guests (Rooms) and has an API and MCP server so other AI tools can edit through it. The free plan gives 60 media minutes a month, 720p exports and 100 one-time AI credits. Paid plans export without a watermark: Hobbyist $16/mo billed yearly ($24 monthly) with 10 media hours and 400 AI credits a month at 1080p; Creator $24/mo yearly ($35 monthly) with 30 hours, 800 credits, 4K and AI video generation; Business $50/mo yearly ($65 monthly) adds dubbing in 30+ languages and team brand templates (prices from descript.com/pricing, Nov 20, 2026). Media hours count everything you import or record, so long raw footage uses them up fast.",
+    "useThisIf": "you make talking-head videos, podcasts, tutorials or webinars and would rather cut by editing text than by scrubbing a timeline.",
     "alternatives": [
-      "capcut"
+      "capcut",
+      "heygen",
+      "runway"
     ],
     "source": "seed",
     "addedAt": "2017-12-01",
@@ -7838,5 +7840,121 @@
       "updatedAt": null
     },
     "logo": "/logos/waldo.png"
+  },
+  {
+    "slug": "testsprite",
+    "name": "TestSprite 4.0",
+    "url": "https://www.testsprite.com/",
+    "affiliateUrl": null,
+    "category": "coding",
+    "useCases": [
+      "coding",
+      "agents"
+    ],
+    "pricing": "freemium",
+    "verdict": "AI testing agent that checks your web app end to end after every change, whether you or a coding agent wrote it. Version 4.0, #1 on Product Hunt on Nov 19, 2026 (score 281 at our check), adds a new testing agent that remembers what your app is supposed to do and re-checks all of it on each run, with evidence for every step. It works from a chat, its open-source CLI, an IDE plugin or as an automatic test on GitHub pull requests, and covers frontend and backend tests. Free plan: 150 credits a month, one environment and auto-tests on one repo. Starter is $19/mo (first month free, 400 credits), Standard $39/mo (800 credits, three environments). The company says 150K+ developers use it; that and its 'cut testing costs by 90%' line are its own claims.",
+    "useThisIf": "you ship fast with Cursor or Claude Code and want an agent that catches what your last change broke before users do.",
+    "alternatives": [
+      "claude-code",
+      "cursor",
+      "botgauge"
+    ],
+    "source": "producthunt",
+    "addedAt": "2026-11-20",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/testsprite.png"
+  },
+  {
+    "slug": "tabstack",
+    "name": "Tabstack",
+    "url": "https://tabstack.ai/",
+    "affiliateUrl": null,
+    "category": "coding",
+    "useCases": [
+      "coding",
+      "agents"
+    ],
+    "pricing": "freemium",
+    "verdict": "Web access API for your own model or agent, built by Mozilla. One API covers three jobs: Research (searches live sources, reads the pages and returns an answer with citations), Extract (turns a URL into clean Markdown or JSON that matches your schema) and Automate (navigates a public website to finish a task; the hosted version can't log in, so use Mozilla's open-source Pilo for that). Mozilla says your data is never trained on and is private by default. New accounts get 10,000 free credits with no card, which is about 1,000 Markdown extractions or 40 quick research calls. Paid plans are $10, $99 and $499 a month. It launched on Product Hunt on Nov 19, 2026, though the API itself has been around since at least September.",
+    "useThisIf": "you're building an agent that needs to read or research the live web and you'd rather not run your own browsers, scrapers and citation logic.",
+    "alternatives": [
+      "retriever-ai",
+      "cloudbrowser",
+      "agent-browser"
+    ],
+    "source": "producthunt",
+    "addedAt": "2026-11-20",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/tabstack.png"
+  },
+  {
+    "slug": "vercel-board",
+    "name": "Vercel Board",
+    "url": "https://vercel.com/blog/introducing-vercel-board",
+    "affiliateUrl": null,
+    "category": "agents",
+    "useCases": [
+      "agents",
+      "coding"
+    ],
+    "pricing": "freemium",
+    "verdict": "A shared message board where several AI agents (and people) coordinate work, launched by Vercel on Nov 18, 2026 as an experimental feature on all Vercel plans, including the free Hobby plan; Vercel hasn't published separate pricing for it. Each board has channels and threads; agents claim tasks, post updates, renew a time lease on what they're working on and mark tasks done with a link to their pull request, using the vercel board CLI or a JavaScript SDK. It syncs two ways with Slack and GitHub, supports task dependencies, and can wake an agent when someone replies. Vercel says it works across Claude Code, Codex, OpenCode, LangChain and others, and that it rebuilt v0's internal 'software factory' on it. It's labeled experimental, so expect changes.",
+    "useThisIf": "you run more than one coding agent at a time and need one shared place for who's doing what, instead of Markdown files and Slack threads.",
+    "alternatives": [
+      "agent-barn",
+      "swarm-school",
+      "claude-code"
+    ],
+    "source": "x",
+    "addedAt": "2026-11-20",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/vercel-board.png"
+  },
+  {
+    "slug": "forgesprite",
+    "name": "ForgeSprite",
+    "url": "https://forgesprite.com/",
+    "affiliateUrl": null,
+    "category": "design",
+    "useCases": [
+      "design",
+      "fun"
+    ],
+    "pricing": "freemium",
+    "verdict": "AI generator for 2D game art: inventory items, skill icons, props, scenes and character concepts from a short brief, with an optional reference image. An agent plans the set, shows the credit cost, and you check a sample before making the rest. It also has free in-browser tools to pack PNG frames into a sprite sheet (with frame JSON) and to split existing sheets. It's honest about limits: it makes still images, not walk cycles or matching animation frames, and a '32×32' request is a target, not a guaranteed pixel grid. New visitors get 10 free credits (20 more with Google sign-in) on the basic Seedream model; Starter is $19/mo (800 credits), Pro $39/mo, Max $129/mo, or a one-time 400-credit pack for $12. Monthly credits don't roll over. Submitted by the maker; passed our read-only safety check (domain since Sep 2026, privacy, terms and refund pages, support email). The operator isn't named on the site.",
+    "useThisIf": "you're an indie game developer who needs a batch of consistent icons or props quickly and can live without animation.",
+    "alternatives": [
+      "spritefuse",
+      "midjourney",
+      "comfyui"
+    ],
+    "source": "submission",
+    "addedAt": "2026-11-20",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/forgesprite.png"
   }
 ]

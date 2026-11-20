@@ -1,5 +1,5 @@
 {
-  "_note": "Staging pool for the next newsletter issue (#8, week of Nov 16 2026). Not rendered on the site; move into src/data/prompts.json as issue-8 once it has ~8+ prompts. Same rule as issue 7: X posts with 100+ likes, prompt text word for word in the post (or the author's own note/first reply). Issue 7 (week of Nov 9) is still unpublished with 5 prompts in scripts/prompt-pool-issue-7.json. Nov 16 run: 1 eligible X prompt (@noahkagan 'stop, keep, finish', then 143 likes). Reddit JSON is still 403, but the r/ChatGPTPromptGenius top-of-week RSS is readable; three safe, copy-paste prompts from there are parked in 'candidates' (upvotes can't be read, so they don't meet the 100+ rule yet; the author discloses they make the AI Toolbox extension, but the prompts work by hand in any chatbot). Nov 17 HKT run: re-checked @noahkagan 'stop, keep, finish' (now 144 likes). Added 5 eligible X prompts: @umesh_ai one-shot speeder chase (601 likes; prompt is in the author's first reply), @Voxyz_ai Claude Code Mode audit (247 likes; 'Don't modify anything yet'), @azed_ai minimalist full-body cartoon (162 likes; full text is in the note), @Strength04_X F1 vs fighter jet 30s (162 likes; full text is in the note), and @noahkagan weekly changelog (130 likes, posted Nov 11, missed in the Nov 16 pass). X search does not honor min_likes, so like counts were checked on each post. Skipped: @wangai_johnn Mercor resume (421 likes) — visible text is cut off and the images are the finished resume, not the rest of the prompt; @rubenhassid '17 hours to use Fable 5.2' (289 likes) — prompt lives in an image/link, and the countdown framing is the same kind of time-pressure post issue 7 skipped; @LearnWithBishal 'playable shooter from one prompt' (233 likes) — demo only, no prompt in the post; a second @Strength04_X 30s script, 'unexpected friendship in the wild' (144 likes) — same shot-by-shot template as the F1 prompt already here; @noahkagan 'work the weekend' (still 65 likes) and 'unclaimed money' (still 37 likes); @Strength04_X espresso ad (96 likes, still under 100); @Voxyz_ai coordinator skill (80 likes, under 100 and not beginner-friendly); @thetrackk Grok Bot idea prompt (57 likes, prompt appears to be in an image); a jailbreak-prompt-hub post (59 likes, unsafe); @LearnWithBishal 8-photoshoot thread (prompts are in replies, but the parent has only 10 likes). Reddit JSON still 403 (old.reddit too). Kept the original 3 r/ChatGPTPromptGenius candidates and added 3 more from this week's RSS, still unverified upvotes: a Nov 16 reusable {{blanks}} prompt from the same author, plus a character-sheet template (u/Simple_Armadillo4215; they disclose a paid pack, the front-view template in the post is free) and a standalone-Shorts prompt (u/Willing_Being9956) for author diversity. Left out of candidates: the handoff-note prompt (already reviewed in the issue 7 run, same author), a timely Custom GPT retirement chain (same author; already adding their new weekly prompt), a Thanksgiving dinner schedule that is one person's exact menu, jailbreak/copyright-bypass threads, and posts that were questions rather than copy-paste prompts. Nov 18 HKT run: added @Voxyz_ai pre-launch legal check for vibe-coded apps (719 likes; prompt quoted in full in the post's note). Skipped: a WEEX crypto-fortune giveaway prompt (109 likes, crypto promo), @alicehan_ai cocktail-hour portrait (166 likes; prompt only in replies, glamour portrait), @techhalla 'Karate Kid but it's 1971' (289 likes; recreates a film/real actors, no prompt in the post), @AlexFinn GPT-6.2 posts (benchmarks, no prompt). Reddit RSS/JSON returned 403/429 this run; a 3-prompt 'make it find its own AI tells, then fix only those lines' chain was seen at the top of r/ChatGPTPromptGenius today but its post URL and author couldn't be read, so it is not added. Nov 19 HKT run: re-checked the existing 7 official prompts (likes as of Nov 19, 2026 HKT): @umesh_ai speeder chase 601→624, @Voxyz_ai Code Mode 247→250, @azed_ai cartoon 162→198, @Strength04_X F1 162→203, @Voxyz_ai legal check 719→1136; @noahkagan stop/keep/finish stayed 144 and weekly changelog stayed 130. Added 6 eligible X prompts: @Voxyz_ai six Fable 5.2 copy-paste prompts (4806 likes; prompts are in the author's thread replies), @Voxyz_ai Codex vs GPT-6.2 guide review (976 likes, posted Nov 18; full prompt in the note), @Voxyz_ai screenshot-every-page UI rebuild (716 likes), @Voxyz_ai name the code smell (203 likes), @azed_ai 19th-century botanical scientific illustration (132 likes; full text in the note), and @alex_prompter seven Art of War battle-plan prompts (118 likes; full text in reply notes). Four of the six new entries are from @Voxyz_ai (the pool already had two); they stay in the staging pool and can be thinned when issue 8 is published. Skipped: @Lyelac_ jailbreak hub (663 likes), @51bodila trading-agent get-rich post (137), @Voxyz_ai Herdr overnight setup (405, not beginner-friendly) and coordinator update (167, not standalone), @umesh_ai hyperbike chase (159, same one-shot disaster-city template as the pooled speeder chase), and @azed_ai chalkboard diagram (87 likes, under 100; full prompt is in the note). Reddit: no new candidates and no promotions (top-of-week RSS 404, other RSS 429, JSON 403); the existing 6 Reddit candidates stay parked with unverified upvotes.",
+  "_note": "Staging pool for the next newsletter issue (#8, week of Nov 16 2026). Not rendered on the site; move into src/data/prompts.json as issue-8 once it has ~8+ prompts. Same rule as issue 7: X posts with 100+ likes, prompt text word for word in the post (or the author's own note/first reply). Issue 7 (week of Nov 9) is still unpublished with 5 prompts in scripts/prompt-pool-issue-7.json. Nov 16 run: 1 eligible X prompt (@noahkagan 'stop, keep, finish', then 143 likes). Reddit JSON is still 403, but the r/ChatGPTPromptGenius top-of-week RSS is readable; three safe, copy-paste prompts from there are parked in 'candidates' (upvotes can't be read, so they don't meet the 100+ rule yet; the author discloses they make the AI Toolbox extension, but the prompts work by hand in any chatbot). Nov 17 HKT run: re-checked @noahkagan 'stop, keep, finish' (now 144 likes). Added 5 eligible X prompts: @umesh_ai one-shot speeder chase (601 likes; prompt is in the author's first reply), @Voxyz_ai Claude Code Mode audit (247 likes; 'Don't modify anything yet'), @azed_ai minimalist full-body cartoon (162 likes; full text is in the note), @Strength04_X F1 vs fighter jet 30s (162 likes; full text is in the note), and @noahkagan weekly changelog (130 likes, posted Nov 11, missed in the Nov 16 pass). X search does not honor min_likes, so like counts were checked on each post. Skipped: @wangai_johnn Mercor resume (421 likes) — visible text is cut off and the images are the finished resume, not the rest of the prompt; @rubenhassid '17 hours to use Fable 5.2' (289 likes) — prompt lives in an image/link, and the countdown framing is the same kind of time-pressure post issue 7 skipped; @LearnWithBishal 'playable shooter from one prompt' (233 likes) — demo only, no prompt in the post; a second @Strength04_X 30s script, 'unexpected friendship in the wild' (144 likes) — same shot-by-shot template as the F1 prompt already here; @noahkagan 'work the weekend' (still 65 likes) and 'unclaimed money' (still 37 likes); @Strength04_X espresso ad (96 likes, still under 100); @Voxyz_ai coordinator skill (80 likes, under 100 and not beginner-friendly); @thetrackk Grok Bot idea prompt (57 likes, prompt appears to be in an image); a jailbreak-prompt-hub post (59 likes, unsafe); @LearnWithBishal 8-photoshoot thread (prompts are in replies, but the parent has only 10 likes). Reddit JSON still 403 (old.reddit too). Kept the original 3 r/ChatGPTPromptGenius candidates and added 3 more from this week's RSS, still unverified upvotes: a Nov 16 reusable {{blanks}} prompt from the same author, plus a character-sheet template (u/Simple_Armadillo4215; they disclose a paid pack, the front-view template in the post is free) and a standalone-Shorts prompt (u/Willing_Being9956) for author diversity. Left out of candidates: the handoff-note prompt (already reviewed in the issue 7 run, same author), a timely Custom GPT retirement chain (same author; already adding their new weekly prompt), a Thanksgiving dinner schedule that is one person's exact menu, jailbreak/copyright-bypass threads, and posts that were questions rather than copy-paste prompts. Nov 18 HKT run: added @Voxyz_ai pre-launch legal check for vibe-coded apps (719 likes; prompt quoted in full in the post's note). Skipped: a WEEX crypto-fortune giveaway prompt (109 likes, crypto promo), @alicehan_ai cocktail-hour portrait (166 likes; prompt only in replies, glamour portrait), @techhalla 'Karate Kid but it's 1971' (289 likes; recreates a film/real actors, no prompt in the post), @AlexFinn GPT-6.2 posts (benchmarks, no prompt). Reddit RSS/JSON returned 403/429 this run; a 3-prompt 'make it find its own AI tells, then fix only those lines' chain was seen at the top of r/ChatGPTPromptGenius today but its post URL and author couldn't be read, so it is not added. Nov 19 HKT run: re-checked the existing 7 official prompts (likes as of Nov 19, 2026 HKT): @umesh_ai speeder chase 601→624, @Voxyz_ai Code Mode 247→250, @azed_ai cartoon 162→198, @Strength04_X F1 162→203, @Voxyz_ai legal check 719→1136; @noahkagan stop/keep/finish stayed 144 and weekly changelog stayed 130. Added 6 eligible X prompts: @Voxyz_ai six Fable 5.2 copy-paste prompts (4806 likes; prompts are in the author's thread replies), @Voxyz_ai Codex vs GPT-6.2 guide review (976 likes, posted Nov 18; full prompt in the note), @Voxyz_ai screenshot-every-page UI rebuild (716 likes), @Voxyz_ai name the code smell (203 likes), @azed_ai 19th-century botanical scientific illustration (132 likes; full text in the note), and @alex_prompter seven Art of War battle-plan prompts (118 likes; full text in reply notes). Four of the six new entries are from @Voxyz_ai (the pool already had two); they stay in the staging pool and can be thinned when issue 8 is published. Skipped: @Lyelac_ jailbreak hub (663 likes), @51bodila trading-agent get-rich post (137), @Voxyz_ai Herdr overnight setup (405, not beginner-friendly) and coordinator update (167, not standalone), @umesh_ai hyperbike chase (159, same one-shot disaster-city template as the pooled speeder chase), and @azed_ai chalkboard diagram (87 likes, under 100; full prompt is in the note). Reddit: no new candidates and no promotions (top-of-week RSS 404, other RSS 429, JSON 403); the existing 6 Reddit candidates stay parked with unverified upvotes. Nov 20 HKT run: re-checked all 13 pooled prompts (likes as of Nov 20, 2026 HKT): @noahkagan 144→145, @umesh_ai 624→625, @Voxyz_ai 250→248, @azed_ai 198→199, @Strength04_X 203→199, @Voxyz_ai 1136→1146, @Voxyz_ai 4806→4809, @Voxyz_ai 976→1131, @Voxyz_ai 716→715, @azed_ai 132→178. No new eligible prompts: X searches for copy-paste prompts posted since Nov 18 found nothing with 100+ likes and the full prompt in the post or the author's replies. Skipped: @Arvin010717 Gemini 4 Argon visual (478 likes) — the prompt isn't in the post or the author's replies; @Voxyz_ai Claude Code Opus 5.5 + Fable 5.2 advisor session setup (105 likes) — not beginner-friendly, the post text stops mid-list, and the pool already has five @Voxyz_ai entries; @iamtanzil_ 15 design resources (110 likes) — a link list, not a prompt; @DuaFatimaAi photo-to-video steps (73 likes) and @ElevenCreative 2000s game-trailer guide (69 likes) — under 100 and the prompts sit behind images/links; several paid prompt-pack ads (0–3 likes). Reddit: r/ChatGPTPromptGenius top-of-day RSS 404, r/PromptEngineering, r/ChatGPT and r/ClaudeAI RSS 429, so no Reddit candidates were added or promoted.",
   "n": 13,
   "slug": "issue-8",
   "prompts": [
@@ -11,8 +11,8 @@
       "why": "If you've been building or posting a lot with AI, this makes it grade the work against results instead of effort. Swap in a date and run it in the chat or project where the work happened. Noah Kagan found only 4 of 67 shipped changes clearly moved a number, and two winning tests he'd never acted on.",
       "source": "https://x.com/noahkagan/status/2121379356207464887",
       "author": "@noahkagan",
-      "likes": 144,
-      "likesAsOf": "Nov 19, 2026 HKT"
+      "likes": 145,
+      "likesAsOf": "Nov 20, 2026 HKT"
     },
     {
       "title": "One-shot speeder chase across a cliff city (video)",
@@ -23,8 +23,8 @@
       "source": "https://x.com/umesh_ai/status/2121866754213421377",
       "promptSource": "https://x.com/umesh_ai/status/2121866758805979445",
       "author": "@umesh_ai",
-      "likes": 624,
-      "likesAsOf": "Nov 19, 2026 HKT",
+      "likes": 625,
+      "likesAsOf": "Nov 20, 2026 HKT",
       "note": "The prompt is in the author's first reply to the post."
     },
     {
@@ -35,8 +35,8 @@
       "why": "Paste this into Claude Code along with Anthropic's Code Mode guide (linked in the post). It only reviews your recent sessions, settings and hooks — it will not change anything until you say so — and ranks which repetitive jobs would save the most round trips.",
       "source": "https://x.com/Voxyz_ai/status/2121951349718053297",
       "author": "@Voxyz_ai",
-      "likes": 250,
-      "likesAsOf": "Nov 19, 2026 HKT"
+      "likes": 248,
+      "likesAsOf": "Nov 20, 2026 HKT"
     },
     {
       "title": "Minimalist full-body cartoon character",
@@ -46,8 +46,8 @@
       "why": "Fill in the subject, outfit, action, expression and two colors. Tiny oval eyes, flat shapes and a clean white background give you a simple sticker or character look you can reuse.",
       "source": "https://x.com/azed_ai/status/2122282551628931254",
       "author": "@azed_ai",
-      "likes": 198,
-      "likesAsOf": "Nov 19, 2026 HKT"
+      "likes": 199,
+      "likesAsOf": "Nov 20, 2026 HKT"
     },
     {
       "title": "30-second F1 vs fighter jet speed challenge (video)",
@@ -57,8 +57,8 @@
       "why": "A full 30-second shot list with two vehicles, announcer and driver lines, and a consistency block so the red car and grey jet don't morph. Copy the structure and swap the vehicles or track to script your own short.",
       "source": "https://x.com/Strength04_X/status/2121498278198194482",
       "author": "@Strength04_X",
-      "likes": 203,
-      "likesAsOf": "Nov 19, 2026 HKT"
+      "likes": 199,
+      "likesAsOf": "Nov 20, 2026 HKT"
     },
     {
       "title": "Weekly changelog from what you actually merged",
@@ -69,7 +69,7 @@
       "source": "https://x.com/noahkagan/status/2120536555370451031",
       "author": "@noahkagan",
       "likes": 130,
-      "likesAsOf": "Nov 19, 2026 HKT"
+      "likesAsOf": "Nov 20, 2026 HKT"
     },
     {
       "title": "Pre-launch legal check for a vibe-coded app",
@@ -79,8 +79,8 @@
       "why": "Run it in your project before you launch. It makes the agent look for six common gaps (kids' sign-ups, Google Fonts sending visitor IPs, session recording without consent, unsubscribe links, subscription renewal terms, DMCA agent) and split what it can fix from what you have to do. The fines in the post are the author's summary, not legal advice; check the rules where you operate.",
       "source": "https://x.com/Voxyz_ai/status/2122736531701977117",
       "author": "@Voxyz_ai",
-      "likes": 1136,
-      "likesAsOf": "Nov 19, 2026 HKT",
+      "likes": 1146,
+      "likesAsOf": "Nov 20, 2026 HKT",
       "note": "The full prompt is in the post's long-form text (note)."
     },
     {
@@ -92,8 +92,8 @@
       "source": "https://x.com/Voxyz_ai/status/2122011755240984607",
       "promptSource": "https://x.com/Voxyz_ai/status/2122011755513561314",
       "author": "@Voxyz_ai",
-      "likes": 4806,
-      "likesAsOf": "Nov 19, 2026 HKT"
+      "likes": 4809,
+      "likesAsOf": "Nov 20, 2026 HKT"
     },
     {
       "title": "Review your Codex setup against OpenAI's GPT-6.2 guide",
@@ -103,8 +103,8 @@
       "why": "Paste this into Codex after starting with `codex --search` so it can fetch the two official GPT-6.2 guides. It only reviews your config and AGENTS.md, suggests the smallest pasteable fixes, and will not change anything yet.",
       "source": "https://x.com/Voxyz_ai/status/2123038513352622087",
       "author": "@Voxyz_ai",
-      "likes": 976,
-      "likesAsOf": "Nov 19, 2026 HKT"
+      "likes": 1131,
+      "likesAsOf": "Nov 20, 2026 HKT"
     },
     {
       "title": "Screenshot every page, then rebuild the UI system",
@@ -114,8 +114,8 @@
       "why": "Launch Chrome in Claude Code, run /advisor fable, then paste this. It screenshots your app, lists the 5 biggest hierarchy and density problems, then rebuilds with a tight spacing, type and 5-color system, and checks 1440 and 390 widths.",
       "source": "https://x.com/Voxyz_ai/status/2121981549713457427",
       "author": "@Voxyz_ai",
-      "likes": 716,
-      "likesAsOf": "Nov 19, 2026 HKT"
+      "likes": 715,
+      "likesAsOf": "Nov 20, 2026 HKT"
     },
     {
       "title": "Name the code smell before you tidy up",
@@ -126,7 +126,7 @@
       "source": "https://x.com/Voxyz_ai/status/2122041949796409754",
       "author": "@Voxyz_ai",
       "likes": 203,
-      "likesAsOf": "Nov 19, 2026 HKT"
+      "likesAsOf": "Nov 20, 2026 HKT"
     },
     {
       "title": "19th-century botanical scientific illustration",
@@ -136,8 +136,8 @@
       "why": "Fill in the plant or botanical subject. Ink linework, watercolor, cross-sections and handwritten Latin labels on a clean white background give you a natural-history plate look.",
       "source": "https://x.com/azed_ai/status/2123008355056943177",
       "author": "@azed_ai",
-      "likes": 132,
-      "likesAsOf": "Nov 19, 2026 HKT"
+      "likes": 178,
+      "likesAsOf": "Nov 20, 2026 HKT"
     },
     {
       "title": "Seven Art of War prompts that build your battle plan",
@@ -149,7 +149,7 @@
       "promptSource": "https://x.com/alex_prompter/status/2121996718996898056",
       "author": "@alex_prompter",
       "likes": 118,
-      "likesAsOf": "Nov 19, 2026 HKT"
+      "likesAsOf": "Nov 20, 2026 HKT"
     }
   ],
   "candidates": [

@@ -282,5 +282,9 @@
   "testsprite": "(testsprite OR url:testsprite.com) -is:retweet",
   "tabstack": "(tabstack OR url:tabstack.ai OR \"Mozilla-Ocho/tabstack\") -is:retweet",
   "vercel-board": "(\"vercel board\" OR \"@vercel/board\" OR \"vercel/board\" OR (vercel board (agents OR agent OR swarm OR swarms OR \"software factory\"))) -is:retweet",
-  "forgesprite": "(forgesprite OR url:forgesprite.com) -is:retweet"
+  "forgesprite": "(forgesprite OR url:forgesprite.com) -is:retweet",
+  "saparo": "(url:saparo.ai OR \"saparo.ai\" OR @saparo2026 OR (saparo (shopping OR agent OR deals OR coupon OR coupons OR cashback OR \"product hunt\" OR chrome OR \"black friday\"))) -is:retweet",
+  "tripmojo": "(tripmojo OR url:tripmojo.ai OR \"tripmojo.ai\") -is:retweet",
+  "ai-context-flow": "(\"AI Context Flow\" OR \"aicontextflow\" OR url:plurality.network OR @PluralityWeb3) -is:retweet",
+  "omi-cli": "(\"omi cli\" OR \"omi-cli\" OR \"@builditomi/cli\" OR url:cli.builditomi.com OR (builditomi (cli OR terminal))) -is:retweet"
 }

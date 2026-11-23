@@ -2042,14 +2042,16 @@
     "affiliateUrl": null,
     "category": "marketing",
     "useCases": [
-      "marketing"
+      "marketing",
+      "productivity"
     ],
     "pricing": "paid",
-    "verdict": "AI marketing copy platform with brand voice.",
-    "useThisIf": "a marketing team needs on-brand copy at scale.",
+    "verdict": "AI content platform built for marketing teams rather than solo writers. Its core is Canvas, an editor for briefs, campaigns, blog posts, emails, ads and social copy, backed by 'Jasper IQ': you upload brand voice examples, a style guide, visual guidelines, product knowledge and audience profiles, and every output is checked against them. On top sit marketing agents for research, SEO and GEO (tracking how your brand shows up in AI answer engines like ChatGPT and Perplexity), translation and campaign workflows, plus a Chrome/Edge extension that brings it into Gmail, Google Docs, WordPress, HubSpot and LinkedIn. Pro is $69 per seat a month, or $59 billed yearly, with one seat, 2 brand voices, 5 knowledge assets and 3 audiences, and a 7-day free trial. Business is custom-priced (12-month minimum) and adds unlimited brand voices and knowledge, a no-code custom agent builder, Jasper Grid for content at scale, the GEO, translation and deep-research agents, API access, SSO and admin controls. Some agent and GEO actions use credits on top of seats. There's no free plan, and for one person writing occasional copy ChatGPT or Claude with a saved style guide gets you most of the way for less (prices from jasper.ai/pricing, Nov 23, 2026).",
+    "useThisIf": "you run a marketing team that has to keep many people and channels on one brand voice, and you want brand rules, product facts and approvals in one shared tool.",
     "alternatives": [
       "copy-ai",
-      "chatgpt"
+      "chatgpt",
+      "claude"
     ],
     "source": "seed",
     "addedAt": "2021-02-01",
@@ -7956,5 +7958,121 @@
       "updatedAt": null
     },
     "logo": "/logos/forgesprite.png"
+  },
+  {
+    "slug": "saparo",
+    "name": "Saparo",
+    "url": "https://saparo.ai/",
+    "affiliateUrl": null,
+    "category": "agents",
+    "useCases": [
+      "agents",
+      "productivity"
+    ],
+    "pricing": "free",
+    "verdict": "AI shopping agent, mainly a Chrome extension, that works out the cheapest way to buy something from U.S. stores. Tell it the item (or drop a product link) and it checks the same product in your size across stores, then stacks promo codes, cashback portals such as Rakuten, card rewards, memberships and gift-card routes, and ranks the options by total cost including shipping and tax. It throws out expired codes before you try them. It can prepare the checkout, but you approve the plan and pay on the store's own page, and Saparo says it doesn't keep your card number unless you choose to save it. During the beta it's free: 300 credits on signup (about five full shopping tasks), then 60 credits each day you come back, with no card needed. U.S. stores only for now. It was #1 on Product Hunt on Nov 20, 2026 (score 344 at our check).",
+    "useThisIf": "you shop at U.S. online stores and want one agent to check coupons, cashback and card offers together before you pay, especially around Black Friday.",
+    "alternatives": [
+      "perplexity",
+      "chatgpt",
+      "genspark"
+    ],
+    "source": "producthunt",
+    "addedAt": "2026-11-23",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/saparo.png"
+  },
+  {
+    "slug": "tripmojo",
+    "name": "Tripmojo",
+    "url": "https://tripmojo.ai/",
+    "affiliateUrl": null,
+    "category": "productivity",
+    "useCases": [
+      "productivity",
+      "agents"
+    ],
+    "pricing": "free",
+    "verdict": "Travel app for iOS and Android that builds one shared trip from your booking emails. Connect Gmail or forward a confirmation (or snap a photo or drop a PDF) and it reads the flight, hotel, train, car or activity. Its AI travel agent, Mojo, works inside the group chat: it answers questions, runs polls and finds places. On travel day it tries to check you in, saves your boarding pass, flags delays and gate changes, and tells you when to leave; during the trip it keeps the plan current and splits expenses. The app is free and the company sells travel eSIMs on the side. It claims 12,000+ travellers and a 4.8 rating from 194 reviews; its example trips lean toward India. It was #2 on Product Hunt on Nov 20, 2026 (score 314 at our check).",
+    "useThisIf": "you're organizing a group trip and want bookings, plans, polls and shared costs in one free app instead of a group chat plus a spreadsheet.",
+    "alternatives": [
+      "chatgpt",
+      "perplexity",
+      "manus"
+    ],
+    "source": "producthunt",
+    "addedAt": "2026-11-23",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/tripmojo.png"
+  },
+  {
+    "slug": "ai-context-flow",
+    "name": "AI Context Flow",
+    "url": "https://plurality.network/ai-context-flow/",
+    "affiliateUrl": null,
+    "category": "productivity",
+    "useCases": [
+      "productivity",
+      "agents"
+    ],
+    "pricing": "freemium",
+    "verdict": "One shared memory for all your AI tools, from Plurality Network. Save something in Claude and ChatGPT, Gemini, Cursor or any other MCP client can use it next time, through its MCP server or a Chrome extension that pastes saved context into AI chat sites. Version 2.0 launched on Product Hunt on Nov 21, 2026 (#2 that day) and adds buckets (keep memory separate per project, client or brand, and choose who can see each one), full version history so you can roll back when an agent overwrites something, and a Memory Studio for editing it all in one place. Free: a daily credit allowance (the site lists both 100 and 200 a day) and 50 MB of memory, with the MCP server included. Plus is $10/mo or $99/yr (1,500 credits a day, 500 MB); Pro is $20/mo or $199/yr (5,000 credits a day, 5 GB, premium models). It says context is end-to-end encrypted. The company has a web3 background (buckets can be shared by email or wallet address), but no token is needed to use it.",
+    "useThisIf": "you switch between several AI assistants and coding agents and are tired of re-explaining the same project or client to each one.",
+    "alternatives": [
+      "claude-mem",
+      "gbrain",
+      "living-brain"
+    ],
+    "source": "producthunt",
+    "addedAt": "2026-11-23",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/ai-context-flow.png"
+  },
+  {
+    "slug": "omi-cli",
+    "name": "Omi CLI",
+    "url": "https://cli.builditomi.com/",
+    "affiliateUrl": null,
+    "category": "coding",
+    "useCases": [
+      "coding",
+      "agents"
+    ],
+    "pricing": "freemium",
+    "verdict": "Terminal coding agent from BuildItOmi. It reads your repo, plans, edits files with diffs you approve, runs your commands and tests and keeps fixing until they pass, and can check your app in a real browser. Parallel subagents work in separate git worktrees and are merged back file by file (conflicts get standard markers, never a silent winner); background agents keep going after you close the terminal, and cloud agents can open pull requests. 'Auto' picks a model for each turn from 13 mostly cheaper models (DeepSeek, Gemini Flash, GLM, gpt-oss and others), or you can bring your own key or run a local model through Ollama. A --sandbox mode keeps commands inside the project with no network on macOS and Linux. Free plan with limits that refill every 5 hours and weekly; Pro $20/mo, Pro+ $60/mo, Max $200/mo. Launched on Product Hunt on Nov 22, 2026 (#8 that day). Frontier models like Claude and GPT aren't in the included list.",
+    "useThisIf": "you want a Claude Code-style terminal agent that runs on cheaper models, with diff approval and worktree subagents, and a free tier to try it.",
+    "alternatives": [
+      "claude-code",
+      "codex",
+      "opencode"
+    ],
+    "source": "producthunt",
+    "addedAt": "2026-11-23",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/omi-cli.png"
   }
 ]

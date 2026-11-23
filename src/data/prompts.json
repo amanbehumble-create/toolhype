@@ -1145,6 +1145,97 @@
           "likesAsOf": "Nov 16, 2026 HKT"
         }
       ]
+    },
+    {
+      "n": 8,
+      "slug": "issue-8",
+      "title": "Prompt Drop #8: 7 AI prompts X actually loved (100+ likes each)",
+      "date": "2026-11-23",
+      "intro": "Every prompt here comes from an X post with at least 100 likes, and we checked each like count on X ourselves. All were posted Nov 14–18 and are easy to try: copy one, swap the [brackets] for your own details, paste it into the AI, done.",
+      "rule": "Only prompts from X posts with 100+ likes (checked with X data). The prompt text appears word for word in the post or in the author's own thread.",
+      "prompts": [
+        {
+          "title": "Six copy-paste prompts so Fable 5.2 doesn't work like an intern",
+          "category": "Coding",
+          "tool": "Claude Code (Fable 5.2 or later)",
+          "prompt": "1. The State Machine Hunter\n\n\"Find all of the implicit state machines in my app. Make the best decision that will elevate all three: the user experience (UX), developer experience (DX), and agent experience (AX) always, without breaking anything.\"\n\n2. The Open-Source Scout\n\n\"Don't write an unfamiliar feature from scratch. Search GitHub for open-source projects, compare their approaches, then start.\"\n\n3. The Bug Triager\n\n\"Rate each bug from 1 to 10 on how often it would happen and how bad it would be. If the two scores multiplied are below 5, just file it as an issue and leave the code alone. Do not design for rare or future cases nobody asked about.\"\n\nTune the threshold of 5 to your project.\n\n4. The Closer\n\n\"Finish the whole job before you stop. Don't offer to continue: continue. Ask me before you delete anything. End with a recap for someone who saw none of the work: key points first, plain words.\"\n\n5. The CI Auditor\n\n\"Audit this repo's CI: Use gh to pull the last 150 CI runs and split each job's time into three parts: waiting in the queue for a machine, setup (checkout, installing dependencies, restoring the cache), and actually running the task. List the 5 slowest jobs and how many seconds each part takes. Give me the report first. Don't change anything.\"\n\n6. The Rebuilder\n\n\"If you were starting over today with the same goal, what would you still need to keep?\"",
+          "why": "A 4,800+-like thread with six short prompts you can paste as-is. Start with The Closer or The Rebuilder if you're new; The CI Auditor needs the GitHub CLI (`gh`).",
+          "source": "https://x.com/Voxyz_ai/status/2122011755240984607",
+          "promptSource": "https://x.com/Voxyz_ai/status/2122011755513561314",
+          "author": "@Voxyz_ai",
+          "likes": 4811,
+          "likesAsOf": "Nov 23, 2026 HKT"
+        },
+        {
+          "title": "Pre-launch legal check for a vibe-coded app",
+          "category": "Coding",
+          "tool": "Claude Code (works in Cursor, Codex or any coding agent with access to your repo)",
+          "prompt": "Check my app for: missing age gate, externally loaded fonts, session replay without consent, marketing emails without unsubscribe and address, renewal terms not beside the subscribe button and no DMCA agent. Fix what you can and list what I need to do myself.",
+          "why": "Run it in your project before you launch. It makes the agent look for six common gaps (kids' sign-ups, Google Fonts sending visitor IPs, session recording without consent, unsubscribe links, subscription renewal terms, DMCA agent) and split what it can fix from what you have to do. The fines in the post are the author's summary, not legal advice; check the rules where you operate.",
+          "source": "https://x.com/Voxyz_ai/status/2122736531701977117",
+          "author": "@Voxyz_ai",
+          "likes": 1147,
+          "likesAsOf": "Nov 23, 2026 HKT",
+          "note": "The full prompt is in the post's long-form text (note)."
+        },
+        {
+          "title": "One-shot speeder chase across a cliff city (video)",
+          "category": "Video",
+          "tool": "Any text-to-video AI (author used MiniMax / Hailuo-class models; also works in Seedance, Kling or Grok video)",
+          "prompt": "Speeder chase across a cliff city (single continuous shot) From a monumental cliffside city carved into stone, the camera dives toward a tiny streak of light ripping along a narrow ledge-road. Lock-on: a speeder hugging the wall at insane speed. The camera slingshots ahead, whips back, then drops tight to the rear thrusters: heat haze, grit snapping off the ledge, warning lights flashing. A collapsing balcony rains debris; the rider snaps a last-inch swerve under a falling arch, then threads through hanging laundry lines and open windows in one fluid line. The camera darts through the same openings, staying glued to the motion. One final bend and sudden calm: the camera blasts outward into a reveal of the city opening onto a boundless waterfall-fed valley, mist turning into rainbow.",
+          "why": "One continuous camera move: dive, lock onto the speeder, whip around, thread debris and windows, then pull out over a waterfall valley. Paste as-is; the no-cut motion is what keeps it one shot.",
+          "source": "https://x.com/umesh_ai/status/2121866754213421377",
+          "promptSource": "https://x.com/umesh_ai/status/2121866758805979445",
+          "author": "@umesh_ai",
+          "likes": 631,
+          "likesAsOf": "Nov 23, 2026 HKT",
+          "note": "The prompt is in the author's first reply to the post."
+        },
+        {
+          "title": "30-second F1 vs fighter jet speed challenge (video)",
+          "category": "Video",
+          "tool": "Seedance 2.5 or any text-to-video AI with audio",
+          "prompt": "Create an exactly 30-second ultra-photorealistic live-action extreme racing commercial.\n\nTITLE: The Ultimate Speed Challenge\n\nFORMAT: 16:9, 4K, high-end motorsport commercial quality.\n\nMAIN VEHICLE:\nOne bright red Formula racing car with black aerodynamic wings, visible racing number 07, black tires and a professional helmeted driver.\n\nSECOND VEHICLE:\nOne modern grey fighter jet with realistic aerodynamic design and twin-engine exhaust.\n\nMaintain identical vehicle designs throughout.\n\nLOCATION:\nA massive professional racing circuit connected to a long airport runway. Bright sunny sky, grandstands, spectators and distant mountains.\n\nSCENE AND TIMING:\n\n0–5 SECONDS:\nA bright red Formula racing car waits at the starting line. Inside the cockpit, the driver adjusts his helmet and grips the steering wheel.\n\nAUDIO: Engine revving, crowd cheering and racing announcer.\n\nANNOUNCER DIALOGUE:\n\"Today, speed meets the impossible!\"\n\n5–10 SECONDS:\nA grey fighter jet rolls onto the parallel runway. Its engines roar as it prepares for takeoff.\n\nThe driver looks toward the jet.\n\nDRIVER DIALOGUE:\n\"Let's see what you've got!\"\n\n10–16 SECONDS:\nThe race begins. The Formula car accelerates rapidly along the racing track. The fighter jet takes off from the parallel runway.\n\nCAMERA: Low-angle tracking shot beside the car, followed by an aerial shot showing both vehicles accelerating.\n\nAUDIO: Powerful racing engine, jet turbines and crowd excitement.\n\n16–22 SECONDS:\nThe Formula car speeds through a sharp racing corner while the fighter jet flies low and safely above its parallel runway. Both maintain incredible speed.\n\nANNOUNCER DIALOGUE:\n\"They're neck and neck! This is unbelievable!\"\n\n22–26 SECONDS:\nThe fighter jet gains a slight lead in the air. The Formula car approaches the finish line at maximum speed.\n\nCAMERA: Dynamic side-by-side cinematic shot.\n\n26–30 SECONDS:\nBoth vehicles cross their respective finish lines almost simultaneously.\n\nThe driver raises one gloved hand in celebration while the jet performs a smooth climb into the blue sky.\n\nDRIVER DIALOGUE:\n\"Okay... that was close!\"\n\nENDING:\nEpic aerial wide shot of the racing circuit and fighter jet disappearing into the distance.\n\nAUDIO DESIGN:\nAuthentic racing engine sounds, jet turbine roar, tire friction, wind, crowd cheering, racing announcer and perfectly synchronized dialogue.\n\nVISUAL QUALITY:\nUltra-realistic motorsport photography, accurate vehicle proportions, realistic speed and motion blur, detailed carbon-fiber surfaces, natural daylight and cinematic aerial camera movements.\n\nSTRICT CONSISTENCY:\nOne red Formula racing car and one grey fighter jet. Preserve vehicle colors, designs and racing number. Keep both vehicles on their separate parallel tracks and runway. No vehicle duplication, no impossible transformations, no sudden location changes.",
+          "why": "A full 30-second shot list with two vehicles, announcer and driver lines, and a consistency block so the red car and grey jet don't morph. Copy the structure and swap the vehicles or track to script your own short.",
+          "source": "https://x.com/Strength04_X/status/2121498278198194482",
+          "author": "@Strength04_X",
+          "likes": 324,
+          "likesAsOf": "Nov 23, 2026 HKT"
+        },
+        {
+          "title": "Minimalist full-body cartoon character",
+          "category": "Image",
+          "tool": "Any image AI (ChatGPT / Gemini / Midjourney / Grok)",
+          "prompt": "A minimalist full-body cartoon illustration of [subject] on a clean white background, wearing [outfit], [doing action], with [facial expression], cute rounded proportions, simple flat shapes, tiny oval black eyes, clean curved mouth, soft [color1] and [color2] palette, subtle hand-drawn details, modern vector-style aesthetic",
+          "why": "Fill in the subject, outfit, action, expression and two colors. Tiny oval eyes, flat shapes and a clean white background give you a simple sticker or character look you can reuse.",
+          "source": "https://x.com/azed_ai/status/2122282551628931254",
+          "author": "@azed_ai",
+          "likes": 201,
+          "likesAsOf": "Nov 23, 2026 HKT"
+        },
+        {
+          "title": "19th-century botanical scientific illustration",
+          "category": "Image",
+          "tool": "Any image AI (ChatGPT / Gemini / Midjourney / Grok)",
+          "prompt": "A detailed botanical study of [plant or botanical subject], illustrated in the style of 19th-century natural history journals, delicate ink linework, hand-painted watercolor, realistic botanical textures, natural pigments, detailed anatomical cross-sections, magnified specimen studies, fine leader lines, handwritten Latin labels in sepia ink, elegant scientific plate composition, antique scholarly aesthetic, clean white background",
+          "why": "Fill in the plant or botanical subject. Ink linework, watercolor, cross-sections and handwritten Latin labels on a clean white background give you a natural-history plate look.",
+          "source": "https://x.com/azed_ai/status/2123008355056943177",
+          "author": "@azed_ai",
+          "likes": 181,
+          "likesAsOf": "Nov 23, 2026 HKT"
+        },
+        {
+          "title": "Audit what you shipped: stop, keep, finish",
+          "category": "Chat",
+          "tool": "Claude (works in ChatGPT, Gemini or Grok with chat history or a project)",
+          "prompt": "Look at everything I shipped since [date] and every message I sent you. For each change: what number was it supposed to move, did it move, and what did I never check? Rank what I should stop, keep and finish.",
+          "why": "If you've been building or posting a lot with AI, this makes it grade the work against results instead of effort. Swap in a date and run it in the chat or project where the work happened. Noah Kagan found only 4 of 67 shipped changes clearly moved a number, and two winning tests he'd never acted on.",
+          "source": "https://x.com/noahkagan/status/2121379356207464887",
+          "author": "@noahkagan",
+          "likes": 145,
+          "likesAsOf": "Nov 23, 2026 HKT"
+        }
+      ]
     }
   ]
 }

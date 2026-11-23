@@ -12,3 +12,8 @@
 /grok-bot-agents/mv-forge /grok-bot-agents 301
 /grok-bot-agents/highlight-reel /grok-bot-agents 301
 /grok-bot-agents/motion-director /grok-bot-agents 301
+/feed /rss.xml 301
+/feed.xml /rss.xml 301
+/rss /rss.xml 301
+/atom.xml /rss.xml 301
+/index.xml /rss.xml 301

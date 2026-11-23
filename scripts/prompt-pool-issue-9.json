@@ -1,0 +1,30 @@
+{
+  "_note": "Staging pool for the next newsletter issue (#9, week of Nov 23 2026). Not rendered on the site; move into src/data/prompts.json as issue-9 once it has ~8+ prompts. Same rules as issues 7-8 (docs/prompt-drop.md): X posts with 100+ likes, prompt text word for word in the post (or the author's own note/first reply). Issue 8 (week of Nov 16) is staged with 13 prompts in scripts/prompt-pool-issue-8.json for the weekly publish. Nov 23 HKT run: added 2 prompts from @rubenhassid's 'taught my mom Claude' lesson post (327 likes, posted Nov 21; both prompts are word for word in the note text). Skipped: @CodeByPoonam 'edit your videos with Gemini' (378 likes) - the prompt is only in the image; @umesh_ai stone-colossus Seedance chase (154 likes, prompt in the author's first reply) - same one-shot cinematic chase template as the @umesh_ai prompt already in issue 8; @Strength04_X GTA 6 commentary (179 likes) and @hasantoxr GTA police-chase trailer (118 likes) - CapCut sponsored posts, no standalone prompt; @techhalla 16 Midjourney prompts (157 likes) - prompts are inside the images; @ThatUrhoboGirl street-fashion JSON (89 likes) and @ifioknkem trend-scan prompt (59 likes) - under 100; @alex_prompter forgotten-subscriptions prompt (20 likes) - under 100. Reddit: r/ChatGPTPromptGenius top-of-week RSS 404; r/PromptEngineering, r/ChatGPT and r/ClaudeAI RSS 429, so no Reddit candidates.",
+  "n": 9,
+  "slug": "issue-9",
+  "prompts": [
+    {
+      "title": "Plan first, build later",
+      "category": "Chat",
+      "tool": "Claude (works the same in ChatGPT, Gemini or Grok)",
+      "prompt": "Goal: a step-by-step plan for [your goal]. Don't build it yet.\n\nContext: [what you have, what you want at the end, your limits: budget, deadline, what's off-limits]\n\nIf you need more context, ask me questions.",
+      "why": "A safe way to start any new chat about a bigger task. Asking for a plan and telling the AI not to build yet stops it from rushing into a long answer that misses your limits, and the last line invites it to ask you questions first. Fill in the brackets with your own goal and limits.",
+      "source": "https://x.com/rubenhassid/status/2124110591866613936",
+      "author": "@rubenhassid",
+      "likes": 327,
+      "likesAsOf": "Nov 23, 2026 HKT"
+    },
+    {
+      "title": "Hand off a long chat to a fresh one",
+      "category": "Productivity",
+      "tool": "Claude (works in ChatGPT, Gemini or Grok; swap the model name)",
+      "prompt": "Write a brief so a new chat on Claude Opus 5.5 can take over this work. It won't see this chat or your thinking. Write it for a smart reader who saw none of this. Plain words. Copy the exact names, numbers, dates, links and file names from this chat. Only the final version of anything we changed. Add nothing we didn't say.",
+      "why": "Long chats get slower and sloppier. Paste this at the end of one, then start a new chat with the brief it writes so nothing important gets lost. The 'add nothing we didn't say' line keeps the AI from inventing details. Change 'Claude Opus 5.5' to whatever model you'll use next.",
+      "source": "https://x.com/rubenhassid/status/2124110591866613936",
+      "author": "@rubenhassid",
+      "likes": 327,
+      "likesAsOf": "Nov 23, 2026 HKT"
+    }
+  ],
+  "candidates": []
+}

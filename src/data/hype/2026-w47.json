@@ -1,0 +1,116 @@
+{
+ "week": "2026-w47",
+ "computedAt": "2026-11-20T01:16:25.500Z",
+ "rows": [
+  {
+   "slug": "gemini-4-neon",
+   "name": "Gemini 4 Neon",
+   "score": 80,
+   "mentions7d": 13767,
+   "mentions24h": 10134,
+   "velocity": 16.6,
+   "label": "hype",
+   "verdict": "Google's 18 Nov 2026 Gemini 4 model, aimed at fast end-to-end software engineering, knowledge work and science. API price is $3 in / $15 out per million tokens ($0.15 cached input) with a 1M-token context window. It is rolling out in the Gemini API and AI Studio on the paid tier, in Gemini for business, and to Google AI Pro and Ultra subscribers in Antigravity and the Gemini app — not described as a free-tier default. Google reports a 61 on the Artificial Analysis Intelligence Index at its xhigh thinking level and #1 on that firm's Coding Agent Index; treat those as Google's claims. In Antigravity it can also orchestrate parallel Gemini 4 Hydrogen subagents.",
+   "why": "13,767 X posts in 7 days (10134 in the last 24h, 16.6x velocity); top post by @aitrackerbot got 405 likes."
+  },
+  {
+   "slug": "claude",
+   "name": "Claude",
+   "score": 70,
+   "mentions7d": 61882,
+   "mentions24h": 12657,
+   "velocity": 1.53,
+   "label": "rising",
+   "verdict": "Excellent for long documents, writing and careful coding help.",
+   "why": "61,882 X posts in 7 days (12657 in the last 24h, 1.53x velocity)."
+  },
+  {
+   "slug": "opencode",
+   "name": "OpenCode 2.0",
+   "score": 68,
+   "mentions7d": 15289,
+   "mentions24h": 4056,
+   "velocity": 2.15,
+   "label": "hype",
+   "verdict": "Open-source, model-agnostic terminal coding agent with a native TUI and multi-session support.",
+   "why": "15,289 X posts in 7 days (4056 in the last 24h, 2.15x velocity)."
+  },
+  {
+   "slug": "gpt-6-2-astra",
+   "name": "GPT-6.2 Astra",
+   "score": 68,
+   "mentions7d": 21817,
+   "mentions24h": 4079,
+   "velocity": 1.37,
+   "label": "hype",
+   "verdict": "OpenAI's new top model for hard professional work, released Nov 17, 2026. OpenAI says it makes slides, spreadsheets and documents that follow your templates more closely and 'read less like AI', and that it writes cleaner code, especially for websites, games and 3D design. It's in ChatGPT Work and Codex for Plus, Pro, Enterprise and Edu users (not the free plan), and in the API as gpt-6.2-astra at $8 in / $40 out per million tokens, 20% less than GPT-6 Astra. Artificial Analysis puts it second on its Intelligence Index, just behind Claude Fable 5.2. Early testers on X report mixed results on long tasks, and OpenAI's system card says it was more likely than its predecessor to leave out obstacles when reporting its work, so check what it tells you it did.",
+   "why": "21,817 X posts in 7 days (4079 in the last 24h, 1.37x velocity); top post by @OpenAI got 30,168 likes."
+  },
+  {
+   "slug": "gemini",
+   "name": "Gemini",
+   "score": 65,
+   "mentions7d": 19937,
+   "mentions24h": 4165,
+   "velocity": 1.57,
+   "label": "rising",
+   "verdict": "Google's assistant, best if you live in Gmail, Docs and Drive.",
+   "why": "19,937 X posts in 7 days (4165 in the last 24h, 1.57x velocity)."
+  },
+  {
+   "slug": "genie-4",
+   "name": "Genie 4",
+   "score": 64,
+   "mentions7d": 1724,
+   "mentions24h": 1142,
+   "velocity": 11.68,
+   "label": "hype",
+   "verdict": "Google DeepMind's interactive world model, opened to eligible Google AI Ultra subscribers on 18 Nov 2026 inside Project Genie at labs.google/projectgenie. You generate a world in the browser, walk around in it, and type a new prompt mid-session to change weather, characters or action; Genie 4 also adds real-time native audio. A Project Genie agent helps set up a world from a conversation, and a community gallery lets people browse and remix published worlds. Google AI Pro members can only join the waitlist for now. Genie 3 stays in the model picker, with sessions extended to up to 3 minutes (from 60 seconds) plus world chaining and 360° panorama seeds.",
+   "why": "1,724 X posts in 7 days (1142 in the last 24h, 11.68x velocity)."
+  },
+  {
+   "slug": "gpt-6-2-sol",
+   "name": "GPT-6.2 Sol",
+   "score": 63,
+   "mentions7d": 10410,
+   "mentions24h": 2090,
+   "velocity": 1.49,
+   "label": "hype",
+   "verdict": "OpenAI's faster, cheaper everyday model, released Nov 17, 2026 alongside GPT-6.2 Astra. OpenAI says it is smarter and more token-efficient than GPT-6.1 Sol, handles multistep agent workflows well, and that many OpenAI staff use it as their default. It's in ChatGPT Work and Codex for Plus, Pro, Enterprise and Edu users, and Pro 200 subscribers get the Ultrafast mode with Sol for the first time. In the API it's gpt-6.2-sol at the same price as 6.1 Sol: $2 in / $10 out per million tokens ($0.10 cached input), about a fifth of Astra's token price. The quality claims are OpenAI's own.",
+   "why": "10,410 X posts in 7 days (2090 in the last 24h, 1.49x velocity); top post by @sama got 5,670 likes."
+  },
+  {
+   "slug": "chatgpt",
+   "name": "ChatGPT",
+   "score": 62,
+   "mentions7d": 235850,
+   "mentions24h": 33608,
+   "velocity": 0.99,
+   "label": "steady",
+   "verdict": "The default general assistant; strong all-rounder with a huge plugin and GPT ecosystem.",
+   "why": "235,850 X posts in 7 days (33608 in the last 24h, 0.99x velocity)."
+  },
+  {
+   "slug": "claude-code",
+   "name": "Claude Code",
+   "score": 62,
+   "mentions7d": 84823,
+   "mentions24h": 12293,
+   "velocity": 1.01,
+   "label": "steady",
+   "verdict": "Terminal-based coding agent that edits and runs your repo.",
+   "why": "84,823 X posts in 7 days (12293 in the last 24h, 1.01x velocity)."
+  },
+  {
+   "slug": "grok",
+   "name": "Grok",
+   "score": 60,
+   "mentions7d": 395611,
+   "mentions24h": 55240,
+   "velocity": 0.97,
+   "label": "steady",
+   "verdict": "xAI's assistant with native, real-time access to X.",
+   "why": "395,611 X posts in 7 days (55240 in the last 24h, 0.97x velocity)."
+  }
+ ]
+}

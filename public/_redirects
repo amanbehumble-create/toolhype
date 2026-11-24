@@ -17,3 +17,4 @@
 /rss /rss.xml 301
 /atom.xml /rss.xml 301
 /index.xml /rss.xml 301
+/tools / 301

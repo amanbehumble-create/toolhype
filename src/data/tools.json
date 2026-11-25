@@ -151,12 +151,12 @@
       "productivity"
     ],
     "pricing": "freemium",
-    "verdict": "AI employee that lives in Slack and Microsoft Teams, connects to 9,800+ tools and runs tasks on its own, including scheduled automations and proactive suggestions based on how your team works. Its Product Hunt launch scored 700+ this week. Free to start with up to $100 in credits; the Team plan is $100/month.",
-    "useThisIf": "your team already lives in Slack or Teams and you want an agent that picks up reports, research and recurring ops work there instead of in yet another app.",
+    "verdict": "AI employee that lives in Slack, Microsoft Teams and Discord, connects to more than 9,000 tools, and takes a business outcome rather than a single ticket: it can open pull requests on GitHub, GitLab or Bitbucket (Viktor Code) and also do the non-technical work beside the code, such as a customer note or a pricing-page change. Free to start with up to $100 in credits, no credit card; those credits do not expire and every feature is unlocked. Team plans are billed on shared monthly credits, not per seat: $50 for 20,000 credits, $75 for 30,000, or $100 for 40,000 (the listed most-popular plan), with unused credits rolling over; higher credit packs go up from there, and Enterprise is custom. It is built for outcomes that can take hours or days, not a quick one-line edit in your editor.",
+    "useThisIf": "your team already lives in Slack or Teams and you want one agent that can ship the code and the surrounding ops work for a business goal, not only a repo-level coding assistant.",
     "alternatives": [
+      "claude-code",
       "manus",
-      "zapier",
-      "n8n"
+      "windsurf"
     ],
     "source": "producthunt",
     "addedAt": "2026-10-19",
@@ -1217,11 +1217,12 @@
       "marketing"
     ],
     "pricing": "freemium",
-    "verdict": "xAI's assistant with native, real-time access to X.",
-    "useThisIf": "you need what's happening on X right now.",
+    "verdict": "xAI's assistant at grok.com and in the iOS and Android apps, with a free tier and paid plans through The X Subscription. It can chat, search the live web and X, show its reasoning, generate images and short videos in the same thread (Imagine), talk by voice, read files and images, and, on higher plans, run several agents in parallel on harder questions. You sign in with an X or email account; history syncs across devices. Free is limited. Plus is $8/month ($80/year) and includes Grok Chat, Voice, Imagine and Build, plus Cursor and X Premium features, but not Grok Bot. Premium is $30/month ($300/year) with 4x the Plus usage pool, Grok Bot, the latest Grok models, faster replies, image and video generation, and cloud agents. Super is $100/month ($1,000/year) with 15x Plus usage, 1080p 15-second videos and priority access; Ultra is $200/month ($2,000/year) with 50x Plus usage. Usage is a shared weekly pool across Grok and Cursor; you can buy top-ups or wait for the refresh. Existing SuperGrok, Cursor and X Premium plans still work if you do not switch. It is no longer only an X-search chatbot, though live X integration is still a main difference from ChatGPT or Claude.",
+    "useThisIf": "you want one assistant that can search the live web and X, generate images or short videos, and — on Premium and up — run Grok Bots, especially if you already use X.",
     "alternatives": [
       "perplexity",
-      "chatgpt"
+      "chatgpt",
+      "claude"
     ],
     "source": "seed",
     "addedAt": "2023-11-04",
@@ -1638,7 +1639,7 @@
       "coding"
     ],
     "pricing": "freemium",
-    "verdict": "Open-source Python framework for multi-agent systems, plus a hosted Studio for building and running them. You define Crews \u2014 teams of role-playing agents that divide up a task \u2014 and Flows, which are event-driven workflows that keep state, branch, and hand a step to a Crew when it needs one. The framework is what most tutorials mean by CrewAI; you bring your own model keys and run it in your own code. The company also sells a hosted platform at crewai.com: a visual editor, GitHub integration, and a Free plan with 50 workflow executions a month. Enterprise is custom (SSO, RBAC, PII redaction, and deploy on CrewAI cloud, a VPC, or your own infrastructure). The site says it is used by 65% of the Fortune 500 and that 450 million agentic workflows run on it a month; those are the company's figures. Coding-agent skills to scaffold a project can be installed with npx skills add crewaiinc/skills.",
+    "verdict": "Open-source Python framework for multi-agent systems, plus a hosted Studio for building and running them. You define Crews — teams of role-playing agents that divide up a task — and Flows, which are event-driven workflows that keep state, branch, and hand a step to a Crew when it needs one. The framework is what most tutorials mean by CrewAI; you bring your own model keys and run it in your own code. The company also sells a hosted platform at crewai.com: a visual editor, GitHub integration, and a Free plan with 50 workflow executions a month. Enterprise is custom (SSO, RBAC, PII redaction, and deploy on CrewAI cloud, a VPC, or your own infrastructure). The site says it is used by 65% of the Fortune 500 and that 450 million agentic workflows run on it a month; those are the company's figures. Coding-agent skills to scaffold a project can be installed with npx skills add crewaiinc/skills.",
     "useThisIf": "you want several specialized agents to collaborate on a task, either in your own Python app or in a hosted visual editor, and you're ready to start from the open-source framework or the free Studio plan.",
     "alternatives": [
       "langchain",
@@ -1944,7 +1945,7 @@
       "video"
     ],
     "pricing": "freemium",
-    "verdict": "Realistic text-to-speech and voice cloning, plus music, sound effects and voice agents. Free monthly credits; paid plans from $6/mo. Speech-to-text and dubbing sit in the same ElevenCreative studio, ElevenAgents covers voice or chat, and the same stack is on the API (Eleven v4 is the current emotive speech model). Free is 10,000 shared credits a month; Starter is $6/mo after a $1 first month and adds instant voice cloning plus a commercial license; Creator is $22/mo ($11 first month) and adds professional voice cloning. One credit pool covers speech, music and effects, so long audio spends it fast. Clone only a voice you own or have explicit consent to use \u2014 ElevenLabs states someone else's voice needs permission.",
+    "verdict": "Realistic text-to-speech and voice cloning, plus music, sound effects and voice agents. Free monthly credits; paid plans from $6/mo. Speech-to-text and dubbing sit in the same ElevenCreative studio, ElevenAgents covers voice or chat, and the same stack is on the API (Eleven v4 is the current emotive speech model). Free is 10,000 shared credits a month; Starter is $6/mo after a $1 first month and adds instant voice cloning plus a commercial license; Creator is $22/mo ($11 first month) and adds professional voice cloning. One credit pool covers speech, music and effects, so long audio spends it fast. Clone only a voice you own or have explicit consent to use — ElevenLabs states someone else's voice needs permission.",
     "useThisIf": "you need natural voiceovers, a consented voice clone, music or sound effects, or a voice agent, and you can work inside a shared monthly credit pool.",
     "alternatives": [
       "descript"
@@ -2233,7 +2234,7 @@
   },
   {
     "slug": "1in8b",
-    "name": "80\u5104\u5206\u306e1 (1 in 8 Billion)",
+    "name": "80億分の1 (1 in 8 Billion)",
     "url": "https://1in8b.life/ja/",
     "affiliateUrl": null,
     "category": "fun",
@@ -2407,7 +2408,7 @@
       "agents"
     ],
     "pricing": "free",
-    "verdict": "Open-source 3D animation engine for agents: Manim-compatible Python API on a Rust+wgpu core, ~90\u00d7 faster than ManimCE, pip install and go.",
+    "verdict": "Open-source 3D animation engine for agents: Manim-compatible Python API on a Rust+wgpu core, ~90× faster than ManimCE, pip install and go.",
     "useThisIf": "you (or your coding agent) need fast math/3D explainer videos from Python without a heavy Manim install.",
     "alternatives": [
       "runway",
@@ -2465,7 +2466,7 @@
       "chat"
     ],
     "pricing": "freemium",
-    "verdict": "AI learning coach for ages 6\u201316 that coaches writing, speaking and thinking via voice + missions (companion Raku) instead of handing kids finished answers.",
+    "verdict": "AI learning coach for ages 6–16 that coaches writing, speaking and thinking via voice + missions (companion Raku) instead of handing kids finished answers.",
     "useThisIf": "you want kids practicing how to think and write with AI, not copy-pasting homework answers.",
     "alternatives": [
       "chatgpt",
@@ -2854,7 +2855,7 @@
   },
   {
     "slug": "harness-2",
-    "name": "Harness\u00b2",
+    "name": "Harness²",
     "url": "https://github.com/google-research/harness2",
     "affiliateUrl": null,
     "category": "agents",
@@ -2863,7 +2864,7 @@
       "coding"
     ],
     "pricing": "open-source",
-    "verdict": "Google Cloud AI Research open-source framework (PH Oct 20\u201321, 2026; paper arXiv:2610.14224) that recursively improves an agent\u2019s harness\u2014prompts, tools, memory, skills\u2014while keeping model weights fixed. Uses Propose\u2013Probe\u2013Compose without ground-truth labels; reported gains up to +11.5 on WorkBuddy-Bench (vendor/paper numbers). Different from the existing Harness command-center product.",
+    "verdict": "Google Cloud AI Research open-source framework (PH Oct 20–21, 2026; paper arXiv:2610.14224) that recursively improves an agent’s harness—prompts, tools, memory, skills—while keeping model weights fixed. Uses Propose–Probe–Compose without ground-truth labels; reported gains up to +11.5 on WorkBuddy-Bench (vendor/paper numbers). Different from the existing Harness command-center product.",
     "useThisIf": "you run coding or office agents and want the scaffolding around a frozen model to self-improve across tasks.",
     "alternatives": [
       "harness",
@@ -2891,7 +2892,7 @@
       "design"
     ],
     "pricing": "open-source",
-    "verdict": "Open weights released Oct 20, 2026 by Nuva Lab \u00d7 FastVideo (Hao AI Lab): distilled MiniMax H3 for reference-to-video with synced audio. Takes text plus up to 9 images, 3 videos and 3 audio refs; outputs 5\u201315s at 24 fps. BF16 and ComfyUI builds on Hugging Face; hosted options via Reactor/Nuva. Needs serious GPU VRAM for local runs; MiniMax-H3 community license applies.",
+    "verdict": "Open weights released Oct 20, 2026 by Nuva Lab × FastVideo (Hao AI Lab): distilled MiniMax H3 for reference-to-video with synced audio. Takes text plus up to 9 images, 3 videos and 3 audio refs; outputs 5–15s at 24 fps. BF16 and ComfyUI builds on Hugging Face; hosted options via Reactor/Nuva. Needs serious GPU VRAM for local runs; MiniMax-H3 community license applies.",
     "useThisIf": "you want Seedance-style omni-reference video with audio and will run open weights or a hosted API instead of a closed proprietary clip tool.",
     "alternatives": [
       "kling-ai",
@@ -2920,7 +2921,7 @@
       "agents"
     ],
     "pricing": "paid",
-    "verdict": "Exa\u2019s Oct 19, 2026 search API upgrade for AI agents: larger embeddings, Dynamic Highlights GA (vendor says ~95% fewer tokens than full page text), expanded index (products, local businesses, live data), plus Exa Lite at $4 per 1,000 requests (Auto $7). Exa claims first place on eight self-reported benchmarks; treat those as vendor numbers. API-only\u2014no consumer chat UI.",
+    "verdict": "Exa’s Oct 19, 2026 search API upgrade for AI agents: larger embeddings, Dynamic Highlights GA (vendor says ~95% fewer tokens than full page text), expanded index (products, local businesses, live data), plus Exa Lite at $4 per 1,000 requests (Auto $7). Exa claims first place on eight self-reported benchmarks; treat those as vendor numbers. API-only—no consumer chat UI.",
     "useThisIf": "you are wiring web search into an agent and care about retrieval quality and cost per thousand calls more than a chat answer box.",
     "alternatives": [
       "perplexity",
@@ -2948,7 +2949,7 @@
       "coding"
     ],
     "pricing": "paid",
-    "verdict": "Always-on docs agent from Mintlify (announced Oct 20, 2026; PH launch same window): watches code, Slack, trackers, tickets and feature flags, drafts updates, and opens pull requests for human review\u2014nothing publishes until someone merges. Learns tone from merged/closed PRs. Beta on Pro and Enterprise; each PR costs 250 Mintlify credits, empty runs are free.",
+    "verdict": "Always-on docs agent from Mintlify (announced Oct 20, 2026; PH launch same window): watches code, Slack, trackers, tickets and feature flags, drafts updates, and opens pull requests for human review—nothing publishes until someone merges. Learns tone from merged/closed PRs. Beta on Pro and Enterprise; each PR costs 250 Mintlify credits, empty runs are free.",
     "useThisIf": "your docs drift every sprint and you already use Mintlify and want PRs that update pages instead of another chatbot tab.",
     "alternatives": [
       "notion",
@@ -2976,7 +2977,7 @@
       "productivity"
     ],
     "pricing": "freemium",
-    "verdict": "Product Hunt #1 on Oct 21, 2026: AI design studio for physical goods\u2014pins, stickers, gift boxes, brand kits\u2014with editable layers, live 3D previews, cut lines, bleed and dielines, plus Illustrator handoff. Browser and Windows desktop. You still refine by pointing at details; it is not a one-click factory.",
+    "verdict": "Product Hunt #1 on Oct 21, 2026: AI design studio for physical goods—pins, stickers, gift boxes, brand kits—with editable layers, live 3D previews, cut lines, bleed and dielines, plus Illustrator handoff. Browser and Windows desktop. You still refine by pointing at details; it is not a one-click factory.",
     "useThisIf": "you want real printable files (not flat AI mockups) for small-run merch or packaging and will spend a few minutes directing the edits.",
     "alternatives": [
       "canva",
@@ -3032,7 +3033,7 @@
       "coding"
     ],
     "pricing": "freemium",
-    "verdict": "Product Hunt #2 on Oct 21, 2026: shared interaction layer so humans and heterogeneous coding/enterprise agents can collaborate in real time with governance\u2014discovery, delegation and trust instead of brittle point-to-point glue. Desktop for multi-agent work plus a developer view of coding-agent collaboration. Still early infrastructure; you bring your own agents.",
+    "verdict": "Product Hunt #2 on Oct 21, 2026: shared interaction layer so humans and heterogeneous coding/enterprise agents can collaborate in real time with governance—discovery, delegation and trust instead of brittle point-to-point glue. Desktop for multi-agent work plus a developer view of coding-agent collaboration. Still early infrastructure; you bring your own agents.",
     "useThisIf": "you run several coding or enterprise agents that need to talk to each other and to people without hand-wiring every handoff.",
     "alternatives": [
       "langchain",
@@ -3060,7 +3061,7 @@
       "agents"
     ],
     "pricing": "open-source",
-    "verdict": "Product Hunt launch Oct 21, 2026: turns public talks, essays and posts from founders/CEOs/investors into searchable MCP servers for Claude, Cursor, ChatGPT or Codex\u2014every answer cites a source link. ~37 brains at launch, free MIT, unofficial and not affiliated with the people. Coverage is only what those people published publicly.",
+    "verdict": "Product Hunt launch Oct 21, 2026: turns public talks, essays and posts from founders/CEOs/investors into searchable MCP servers for Claude, Cursor, ChatGPT or Codex—every answer cites a source link. ~37 brains at launch, free MIT, unofficial and not affiliated with the people. Coverage is only what those people published publicly.",
     "useThisIf": "you want cited advice in the style of specific public founders inside your MCP client, not another uncited chat persona.",
     "alternatives": [
       "perplexity",
@@ -3088,7 +3089,7 @@
       "coding"
     ],
     "pricing": "open-source",
-    "verdict": "Open-source iOS-native runtime (npm: phone-use) so AI agents observe accessibility trees, tap real UI elements, verify screen state, and compile successful routes into replayable skills\u2014CLI, SDK or MCP. Cloud/simulator iPhone environments; early X buzz Oct 21\u201322, 2026. Still niche: you need an agent stack and iOS runtime access, not a consumer chat app.",
+    "verdict": "Open-source iOS-native runtime (npm: phone-use) so AI agents observe accessibility trees, tap real UI elements, verify screen state, and compile successful routes into replayable skills—CLI, SDK or MCP. Cloud/simulator iPhone environments; early X buzz Oct 21–22, 2026. Still niche: you need an agent stack and iOS runtime access, not a consumer chat app.",
     "useThisIf": "you are building agents that must drive native iOS apps (Uber, Notes, Settings) without brittle screenshot-only vision loops.",
     "alternatives": [
       "composio-instant"
@@ -3115,7 +3116,7 @@
       "agents"
     ],
     "pricing": "freemium",
-    "verdict": "Infinite-canvas \"OS\" where apps, teammates and AI agents share one whiteboard\u2014lead agent spins up helpers, you can correct them mid-run, results land in sheets on the canvas. Free plan; Pro $10/mo, Team $20/mo; agent runs cost $0.02 per use from credit packs starting at $25. Ambitious all-in-one, so expect a learning curve versus a plain doc or whiteboard.",
+    "verdict": "Infinite-canvas \"OS\" where apps, teammates and AI agents share one whiteboard—lead agent spins up helpers, you can correct them mid-run, results land in sheets on the canvas. Free plan; Pro $10/mo, Team $20/mo; agent runs cost $0.02 per use from credit packs starting at $25. Ambitious all-in-one, so expect a learning curve versus a plain doc or whiteboard.",
     "useThisIf": "you want agents and teammates working side by side on one visual canvas instead of juggling chat tabs and docs.",
     "alternatives": [
       "notion",
@@ -3143,7 +3144,7 @@
       "marketing"
     ],
     "pricing": "paid",
-    "verdict": "Edits or replaces text inside an image while keeping the original font, color and background\u2014screenshots, posters, signs, thumbnails, translations. First edit free, then from $5.99. Its own comparison notes rotated or arched text is not supported.",
+    "verdict": "Edits or replaces text inside an image while keeping the original font, color and background—screenshots, posters, signs, thumbnails, translations. First edit free, then from $5.99. Its own comparison notes rotated or arched text is not supported.",
     "useThisIf": "you need to fix a typo, price or headline baked into an image and do not have the source file.",
     "alternatives": [
       "canva",
@@ -3171,7 +3172,7 @@
       "coding"
     ],
     "pricing": "freemium",
-    "verdict": "Search engine over 312K+ free icons from 227 open-source sets; copy SVG or React/Vue code, restyle in Icon Studio, and pull icons via API, CLI or MCP so coding agents can fetch them. Pro is listed at $7/month or $79 once. The icons themselves are open-source sets you could find elsewhere\u2014the value is search plus agent access.",
+    "verdict": "Search engine over 312K+ free icons from 227 open-source sets; copy SVG or React/Vue code, restyle in Icon Studio, and pull icons via API, CLI or MCP so coding agents can fetch them. Pro is listed at $7/month or $79 once. The icons themselves are open-source sets you could find elsewhere—the value is search plus agent access.",
     "useThisIf": "you want your coding agent (or you) to find and drop in consistent open-source icons without hunting across icon sites.",
     "alternatives": [
       "figma",
@@ -3199,7 +3200,7 @@
       "coding"
     ],
     "pricing": "paid",
-    "verdict": "One project key gives a coding agent a backend: model gateway across xAI/OpenAI/Google/Anthropic/DeepSeek (OpenAI-compatible), sign-in, database and storage, set up via skill + CLI. No monthly fee\u2014pay-as-you-go wallet, $5 credit after CLI link, calls billed at catalog model prices. New and small; locking an agent app to one young provider is the real tradeoff.",
+    "verdict": "One project key gives a coding agent a backend: model gateway across xAI/OpenAI/Google/Anthropic/DeepSeek (OpenAI-compatible), sign-in, database and storage, set up via skill + CLI. No monthly fee—pay-as-you-go wallet, $5 credit after CLI link, calls billed at catalog model prices. New and small; locking an agent app to one young provider is the real tradeoff.",
     "useThisIf": "you want Codex/Claude Code to ship an agent app with models, auth, DB and storage behind a single key and wallet.",
     "alternatives": [
       "replit",
@@ -3255,7 +3256,7 @@
       "video"
     ],
     "pricing": "open-source",
-    "verdict": "Self-hosted, single-admin AI creation canvas (MIT): text, images, video and audio are cards on one canvas, 6 media adapters, deployed with one Docker Compose command. Repo github.com/grayrepo-byte/Agenvas is brand new (created Sep 2026, a handful of stars)\u2014promising but early; you bring your own model keys.",
+    "verdict": "Self-hosted, single-admin AI creation canvas (MIT): text, images, video and audio are cards on one canvas, 6 media adapters, deployed with one Docker Compose command. Repo github.com/grayrepo-byte/Agenvas is brand new (created Sep 2026, a handful of stars)—promising but early; you bring your own model keys.",
     "useThisIf": "you want a private, self-hosted canvas for AI media generation instead of a hosted creative SaaS.",
     "alternatives": [
       "comfyui",
@@ -3282,7 +3283,7 @@
       "productivity"
     ],
     "pricing": "paid",
-    "verdict": "Upload a photo, screenshot or PDF of a schedule and get editable events (up to 100 per conversion, recurring series expanded) as one ICS file to import anywhere. One free conversion without an account, two more credits with Google sign-in, then one-time packs: $9.90/30, $19.90/100, $39.90/300 credits\u2014no subscription. Site does not say who makes it.",
+    "verdict": "Upload a photo, screenshot or PDF of a schedule and get editable events (up to 100 per conversion, recurring series expanded) as one ICS file to import anywhere. One free conversion without an account, two more credits with Google sign-in, then one-time packs: $9.90/30, $19.90/100, $39.90/300 credits—no subscription. Site does not say who makes it.",
     "useThisIf": "you keep retyping school, sports or class schedules from photos into your calendar.",
     "alternatives": [
       "notion"
@@ -3309,7 +3310,7 @@
       "design"
     ],
     "pricing": "free",
-    "verdict": "Deadline kit for office work: one .deepcell file links spreadsheets, reports, slides and cheat sheets so changing an assumption updates the rest, then export to PPT/PDF/XLSX/DOC. Free for individuals (no account to try; free account keeps files past 30 days) with CLI and MCP; Teams coming soon, Enterprise custom. Brand-new format\u2014great if numbers and narrative keep drifting apart; less useful if you only need a one-off deck.",
+    "verdict": "Deadline kit for office work: one .deepcell file links spreadsheets, reports, slides and cheat sheets so changing an assumption updates the rest, then export to PPT/PDF/XLSX/DOC. Free for individuals (no account to try; free account keeps files past 30 days) with CLI and MCP; Teams coming soon, Enterprise custom. Brand-new format—great if numbers and narrative keep drifting apart; less useful if you only need a one-off deck.",
     "useThisIf": "you build models and decks under deadline and hate re-copying the same number into slides and memos.",
     "alternatives": [
       "gamma",
@@ -3337,7 +3338,7 @@
       "productivity"
     ],
     "pricing": "paid (in Claude Pro/Max)",
-    "verdict": "Anthropic's proactive agent app (research preview): morning briefs from connected apps, background work on its own cloud VM, and approval gates before send/pay/delete. Included for US Pro and Max on the waitlist; shares Claude usage limits and runs on Opus 5.5. Early and US-only\u2014personal errands are weaker, and you can't watch its browser yet.",
+    "verdict": "Anthropic's proactive agent app (research preview): morning briefs from connected apps, background work on its own cloud VM, and approval gates before send/pay/delete. Included for US Pro and Max on the waitlist; shares Claude usage limits and runs on Opus 5.5. Early and US-only—personal errands are weaker, and you can't watch its browser yet.",
     "useThisIf": "you're already on Claude Pro/Max in the US and want an always-on agent that brings you priorities instead of waiting for a chat.",
     "alternatives": [
       "claude",
@@ -3366,7 +3367,7 @@
       "agents"
     ],
     "pricing": "free",
-    "verdict": "Runtime bug and vuln hunter: learns how to run your app, builds a production-like sandbox with services stubbed, then only files defects it can reproduce with a failing test. Free during beta (no card). Complements AI code review\u2014it catches what a diff miss; still early, so treat findings as a second pass before you auto-merge.",
+    "verdict": "Runtime bug and vuln hunter: learns how to run your app, builds a production-like sandbox with services stubbed, then only files defects it can reproduce with a failing test. Free during beta (no card). Complements AI code review—it catches what a diff miss; still early, so treat findings as a second pass before you auto-merge.",
     "useThisIf": "code review and E2E still miss user-path bugs and you want reproducible runtime defects, not another static AI comment pile.",
     "alternatives": [
       "github-copilot",
@@ -3423,7 +3424,7 @@
       "productivity"
     ],
     "pricing": "freemium",
-    "verdict": "AI video workspace: screen/meeting recording, transcript editing, step-by-step guides, interactive polls/CTAs/lead forms, plus Dadan MCP for Claude/ChatGPT/Cursor. Free: 25 videos, 2 GB, 720p, 10 AI credits/month; Lite $8/mo annual ($14 monthly), Pro $14/mo annual ($24 monthly), Business $14/seat annual (min 3). Loom-class competitor with more lead-gen chrome\u2014pricing jumps if you need long meeting recording or unlimited AI.",
+    "verdict": "AI video workspace: screen/meeting recording, transcript editing, step-by-step guides, interactive polls/CTAs/lead forms, plus Dadan MCP for Claude/ChatGPT/Cursor. Free: 25 videos, 2 GB, 720p, 10 AI credits/month; Lite $8/mo annual ($14 monthly), Pro $14/mo annual ($24 monthly), Business $14/seat annual (min 3). Loom-class competitor with more lead-gen chrome—pricing jumps if you need long meeting recording or unlimited AI.",
     "useThisIf": "you want Loom-style async video plus guides and lead forms in one place, ideally wired into your AI assistant via MCP.",
     "alternatives": [
       "descript",
@@ -3452,7 +3453,7 @@
       "productivity"
     ],
     "pricing": "free",
-    "verdict": "Chrome extension that turns your saved point into a fresh, post-specific reply on X, LinkedIn, Facebook and Instagram, plus DM answers and your own posts. Runs on Chrome's built-in on-device AI and never posts for you\u2014you review and send. Brand new (launched October 2026), so expect rough edges.",
+    "verdict": "Chrome extension that turns your saved point into a fresh, post-specific reply on X, LinkedIn, Facebook and Instagram, plus DM answers and your own posts. Runs on Chrome's built-in on-device AI and never posts for you—you review and send. Brand new (launched October 2026), so expect rough edges.",
     "useThisIf": "you reply a lot on social to get noticed and want each reply tailored to the post without pasting into ChatGPT.",
     "alternatives": [
       "chatgpt",
@@ -3480,7 +3481,7 @@
       "chat"
     ],
     "pricing": "free",
-    "verdict": "Free, no-signup research site comparing ~970 AI tools by task, with sourced prices, plan limits and free-tier details by region, plus subscription/API cost calculators and a prompt and skills library. Deliberately not a ranking\u2014it orders by task match. German-first, with English and other languages.",
+    "verdict": "Free, no-signup research site comparing ~970 AI tools by task, with sourced prices, plan limits and free-tier details by region, plus subscription/API cost calculators and a prompt and skills library. Deliberately not a ranking—it orders by task match. German-first, with English and other languages.",
     "useThisIf": "you want to check what an AI tool actually costs and limits in your region before signing up.",
     "alternatives": [
       "perplexity",
@@ -3620,7 +3621,7 @@
       "audio"
     ],
     "pricing": "freemium",
-    "verdict": "Desktop virtual office for Mac and Windows: walk up to a colleague to talk, meet in rooms, share screens, and end every call with on-device transcripts, decisions and tasks (no meeting bot). Rent is billed by floor area (~$0.29/m\u00b2/mo yearly), people free; 14-day trial, no card. Optional timesheet tracker; public beta.",
+    "verdict": "Desktop virtual office for Mac and Windows: walk up to a colleague to talk, meet in rooms, share screens, and end every call with on-device transcripts, decisions and tasks (no meeting bot). Rent is billed by floor area (~$0.29/m²/mo yearly), people free; 14-day trial, no card. Optional timesheet tracker; public beta.",
     "useThisIf": "your remote team wants a persistent office with walkie-talkie proximity chat and automatic meeting notes without a bot joining the call.",
     "alternatives": [
       "deepcell",
@@ -3675,7 +3676,7 @@
       "design"
     ],
     "pricing": "freemium",
-    "verdict": "Upload a photo of your real room (and optional product/material references), describe the change, and get a realistic AI redesign that keeps layout and windows intact\u2014furniture swaps, paint, kitchens, bathrooms, yards. Focused on decision-ready previews before you buy or renovate. Domain registered Sep 2026; brand new.",
+    "verdict": "Upload a photo of your real room (and optional product/material references), describe the change, and get a realistic AI redesign that keeps layout and windows intact—furniture swaps, paint, kitchens, bathrooms, yards. Focused on decision-ready previews before you buy or renovate. Domain registered Sep 2026; brand new.",
     "useThisIf": "you want to see how a sofa, paint color or layout would look in your actual room before committing.",
     "alternatives": [
       "canva",
@@ -3760,7 +3761,7 @@
       "video"
     ],
     "pricing": "paid",
-    "verdict": "Prepaid multi-model API: one key for image, video and language models (Seedance, Nano Banana, GPT Image, Kling, Claude, GPT-6 and more). Pay only for delivered results from a USD balance\u2014no subscription, failed requests free. Docs, llms.txt per model, and guides for Claude Code/Codex/ComfyUI/n8n.",
+    "verdict": "Prepaid multi-model API: one key for image, video and language models (Seedance, Nano Banana, GPT Image, Kling, Claude, GPT-6 and more). Pay only for delivered results from a USD balance—no subscription, failed requests free. Docs, llms.txt per model, and guides for Claude Code/Codex/ComfyUI/n8n.",
     "useThisIf": "you want one prepaid key across many image/video/LLM vendors instead of juggling separate accounts and subscriptions.",
     "alternatives": [
       "composio-instant",
@@ -4064,7 +4065,7 @@
       "coding"
     ],
     "pricing": "open-source",
-    "verdict": "YC F26 open-source harness that turns any website into an API/MCP for agents in minutes, without brittle browser automation. Claims 2\u20134\u00d7 speed and much lower cost vs browser agents on its own benchmarks (~930 GitHub stars; free signup + paid plans). Still early (launched Oct 25, 2026), so expect breakage when sites change layout or add CAPTCHAs.",
+    "verdict": "YC F26 open-source harness that turns any website into an API/MCP for agents in minutes, without brittle browser automation. Claims 2–4× speed and much lower cost vs browser agents on its own benchmarks (~930 GitHub stars; free signup + paid plans). Still early (launched Oct 25, 2026), so expect breakage when sites change layout or add CAPTCHAs.",
     "useThisIf": "you need agents to use sites that have no public API and browser agents are too slow or flaky.",
     "alternatives": [
       "moli",
@@ -4122,7 +4123,7 @@
       "marketing"
     ],
     "pricing": "freemium",
-    "verdict": "Generate images, decks, carousels and posters with AI, then edit every layer and export a publish-ready file \u2014 less \"one-shot image,\" more design tool. Hit Product Hunt (~213 upvotes) in the last couple of days. Early product; layer editing is the hook vs pure Midjourney/Ideogram one-shots, but depth of controls and export quality still need real-world testing.",
+    "verdict": "Generate images, decks, carousels and posters with AI, then edit every layer and export a publish-ready file — less \"one-shot image,\" more design tool. Hit Product Hunt (~213 upvotes) in the last couple of days. Early product; layer editing is the hook vs pure Midjourney/Ideogram one-shots, but depth of controls and export quality still need real-world testing.",
     "useThisIf": "you want AI visuals you can still tweak layer-by-layer before publishing.",
     "alternatives": [
       "midjourney",
@@ -4180,7 +4181,7 @@
       "agents"
     ],
     "pricing": "freemium",
-    "verdict": "Native Mac app (macOS 14+) that runs a team of Claude Code and Codex agents in one window: one tab per agent, an orchestrator per project, and a live web/iOS preview beside the chat. Free 14-day trial, no card; requires Claude Code. Handy if you already juggle multiple coding agents and hate switching terminals \u2014 Mac-only and early (v1.3.x).",
+    "verdict": "Native Mac app (macOS 14+) that runs a team of Claude Code and Codex agents in one window: one tab per agent, an orchestrator per project, and a live web/iOS preview beside the chat. Free 14-day trial, no card; requires Claude Code. Handy if you already juggle multiple coding agents and hate switching terminals — Mac-only and early (v1.3.x).",
     "useThisIf": "you run several Claude Code/Codex agents on a Mac and want one orchestrated window with a live preview.",
     "alternatives": [
       "claude-code",
@@ -4236,7 +4237,7 @@
       "video"
     ],
     "pricing": "open-source",
-    "verdict": "Open-source motion graphics and compositing tool written from scratch in Rust, from the ArtCraft team (~8K GitHub stars). Graph editor, effects, 3D space; macOS builds on GitHub releases. Early (v0.6) \u2014 check render/export for finished work.",
+    "verdict": "Open-source motion graphics and compositing tool written from scratch in Rust, from the ArtCraft team (~8K GitHub stars). Graph editor, effects, 3D space; macOS builds on GitHub releases. Early (v0.6) — check render/export for finished work.",
     "useThisIf": "you want a free, open-source After Effects-style tool to experiment with motion and VFX.",
     "alternatives": [
       "artcraft",
@@ -4263,7 +4264,7 @@
       "audio"
     ],
     "pricing": "free",
-    "verdict": "Free, no-signup audio tools that run in the browser: nightcore, sped up, slowed + reverb, 8D, pitch shifter, MP3\u2192MIDI, audio visualizer, MP3 tag editor. Brand-new site; handy for quick edits without installing anything.",
+    "verdict": "Free, no-signup audio tools that run in the browser: nightcore, sped up, slowed + reverb, 8D, pitch shifter, MP3→MIDI, audio visualizer, MP3 tag editor. Brand-new site; handy for quick edits without installing anything.",
     "useThisIf": "you need a quick slowed/sped-up/8D edit or MP3 tag fix without uploading to a sketchy app.",
     "alternatives": [
       "descript",
@@ -4318,7 +4319,7 @@
       "fun"
     ],
     "pricing": "freemium",
-    "verdict": "Turn a text idea or a photo into clean printable line-art coloring pages, plus a library of free themed printables. Niche but does one thing well \u2014 great for parents and teachers.",
+    "verdict": "Turn a text idea or a photo into clean printable line-art coloring pages, plus a library of free themed printables. Niche but does one thing well — great for parents and teachers.",
     "useThisIf": "you want a custom printable coloring page from a photo or idea.",
     "alternatives": [
       "ideogram"
@@ -4593,7 +4594,7 @@
       "coding"
     ],
     "pricing": "open-source",
-    "verdict": "Native macOS Spotlight-style AI chat bar (\u2325 Space) for GPT and Claude, with agent mode that hands Claude Code or Codex a project under Look/Ask/Edit/Full permissions. MIT, signed/notarized, brew or DMG, optional \u20ac19 supporter license. Keys stay in Keychain; chats stay on disk. Smaller and more permission-aware than Raycast AI or a full IDE; Mac-only.",
+    "verdict": "Native macOS Spotlight-style AI chat bar (⌥ Space) for GPT and Claude, with agent mode that hands Claude Code or Codex a project under Look/Ask/Edit/Full permissions. MIT, signed/notarized, brew or DMG, optional €19 supporter license. Keys stay in Keychain; chats stay on disk. Smaller and more permission-aware than Raycast AI or a full IDE; Mac-only.",
     "useThisIf": "you want ChatGPT/Claude from any Mac app without switching windows, and optional Claude Code/Codex with a clear permission ladder.",
     "alternatives": [
       "chatgpt",
@@ -4902,7 +4903,7 @@
       "marketing"
     ],
     "pricing": "freemium",
-    "verdict": "Voice-first business assistant for small-business owners: three setup questions lock in your business context, then spoken requests become drafts for customer replies, social posts, invoices and plans \u2014 nothing sends without your approval. #1 on Product Hunt on Oct 29. Closer to a hands-free ops aide than ChatGPT with a voice mode; Mac/desktop workflows and deep integrations still matter less than \u201csay it, approve it.\u201d",
+    "verdict": "Voice-first business assistant for small-business owners: three setup questions lock in your business context, then spoken requests become drafts for customer replies, social posts, invoices and plans — nothing sends without your approval. #1 on Product Hunt on Oct 29. Closer to a hands-free ops aide than ChatGPT with a voice mode; Mac/desktop workflows and deep integrations still matter less than “say it, approve it.”",
     "useThisIf": "you run a small business and want AI drafts from voice notes without re-explaining your shop in every chat.",
     "alternatives": [
       "chatgpt",
@@ -4958,7 +4959,7 @@
       "productivity"
     ],
     "pricing": "freemium",
-    "verdict": "Connector that plugs into Claude, ChatGPT or Cursor so you describe an app in chat and get a full-stack app with database, logins, hosting and a live URL \u2014 including iOS/Android store publish after one Apple/Google sign-in. #3 on Product Hunt on Oct 29 (Floot in ChatGPT). AI tokens come from your existing chat plan; Floot handles build/host. Overlaps with Lovable/Bolt; the pitch is staying inside the chat you already use plus app-store ship.",
+    "verdict": "Connector that plugs into Claude, ChatGPT or Cursor so you describe an app in chat and get a full-stack app with database, logins, hosting and a live URL — including iOS/Android store publish after one Apple/Google sign-in. #3 on Product Hunt on Oct 29 (Floot in ChatGPT). AI tokens come from your existing chat plan; Floot handles build/host. Overlaps with Lovable/Bolt; the pitch is staying inside the chat you already use plus app-store ship.",
     "useThisIf": "you want a real hosted app (and optionally store builds) from Claude/ChatGPT without leaving the chat or paying separate AI credits.",
     "alternatives": [
       "lovable",
@@ -4987,7 +4988,7 @@
       "agents"
     ],
     "pricing": "open-source",
-    "verdict": "Open-source Kubernetes UI plus MCP server (Apache-2.0, skyhook-io/radar): topology, events, Helm, GitOps, live traffic and audits for humans, and the same view for coding agents via MCP so \u201cInvestigate\u201d can root-cause without blind kubectl. #8 on Product Hunt on Oct 29; OSS free forever, Radar Cloud adds fleets/alerts. Stronger agent surface than a plain dashboard; you still need cluster access and K8s literacy.",
+    "verdict": "Open-source Kubernetes UI plus MCP server (Apache-2.0, skyhook-io/radar): topology, events, Helm, GitOps, live traffic and audits for humans, and the same view for coding agents via MCP so “Investigate” can root-cause without blind kubectl. #8 on Product Hunt on Oct 29; OSS free forever, Radar Cloud adds fleets/alerts. Stronger agent surface than a plain dashboard; you still need cluster access and K8s literacy.",
     "useThisIf": "you run Kubernetes and want your coding agent the same live cluster picture you see in a UI, not just kubectl dumps.",
     "alternatives": [
       "cursor",
@@ -5042,7 +5043,7 @@
       "writing"
     ],
     "pricing": "paid",
-    "verdict": "Product observability that learns features from your codebase and turns every ship into plain-language updates for sales, support and marketing \u2014 #1 on Product Hunt Oct 31 (314 upvotes). Read-only setup; Standard from \u20ac150/mo with a 7-day trial. Overlaps with release-note tools; the pitch is a living product map from code, not docs you write.",
+    "verdict": "Product observability that learns features from your codebase and turns every ship into plain-language updates for sales, support and marketing — #1 on Product Hunt Oct 31 (314 upvotes). Read-only setup; Standard from €150/mo with a 7-day trial. Overlaps with release-note tools; the pitch is a living product map from code, not docs you write.",
     "useThisIf": "your team ships AI-fast and Product/Sales/Support keep falling behind on what actually changed.",
     "alternatives": [
       "notion",
@@ -5070,7 +5071,7 @@
       "productivity"
     ],
     "pricing": "freemium",
-    "verdict": "LLM observability for AI agents: one trace per run with model/tool spans, tokens, cost and errors, plus prompt evals on the same data. #3 Product of the Day Oct 31. Free plan 30k ingestion units/mo, TypeScript/Python SDKs or OpenTelemetry. Closer to LangSmith/Helicone than a coding agent \u2014 for teams debugging agent loops and spend.",
+    "verdict": "LLM observability for AI agents: one trace per run with model/tool spans, tokens, cost and errors, plus prompt evals on the same data. #3 Product of the Day Oct 31. Free plan 30k ingestion units/mo, TypeScript/Python SDKs or OpenTelemetry. Closer to LangSmith/Helicone than a coding agent — for teams debugging agent loops and spend.",
     "useThisIf": "you run agents in production and need traces, cost and failure alerts without bolting together logs.",
     "alternatives": [
       "langchain",
@@ -5099,7 +5100,7 @@
       "agents"
     ],
     "pricing": "freemium",
-    "verdict": "Voice-first Mac coding harness: talk to Claude Code, Codex, Cursor and OpenCode in parallel, hear when any agent needs you, with git/worktrees and irreversible-step gates. #2 on Product Hunt Oct 31 (~298 upvotes). Free to start; Pro for always-on agent fleets. Neutral across model vendors \u2014 your accounts, code stays local.",
+    "verdict": "Voice-first Mac coding harness: talk to Claude Code, Codex, Cursor and OpenCode in parallel, hear when any agent needs you, with git/worktrees and irreversible-step gates. #2 on Product Hunt Oct 31 (~298 upvotes). Free to start; Pro for always-on agent fleets. Neutral across model vendors — your accounts, code stays local.",
     "useThisIf": "you run several coding agents at once and want voice talkback instead of alt-tabbing through terminals.",
     "alternatives": [
       "claude-code",
@@ -5188,7 +5189,7 @@
       "productivity"
     ],
     "pricing": "freemium",
-    "verdict": "Mac notch terminal for Claude Code and Codex: live working/needs-you/done status from real hooks, Allow/Deny in the notch, persistent sessions, Agent Office and Whisper dictation on Pro. Free; Pro $4.99 one-time. Needs macOS 26 (notch optional \u2014 menu bar works). Overlaps with SKI on agent UX; Termy is the drop-down terminal, not a voice harness.",
+    "verdict": "Mac notch terminal for Claude Code and Codex: live working/needs-you/done status from real hooks, Allow/Deny in the notch, persistent sessions, Agent Office and Whisper dictation on Pro. Free; Pro $4.99 one-time. Needs macOS 26 (notch optional — menu bar works). Overlaps with SKI on agent UX; Termy is the drop-down terminal, not a voice harness.",
     "useThisIf": "you live in Claude Code/Codex on a MacBook and want status + approvals without leaving the notch.",
     "alternatives": [
       "ski",
@@ -5545,7 +5546,7 @@
       "video"
     ],
     "pricing": "freemium",
-    "verdict": "AI-native 3D game engine (Wanaka Studio 1.0): describe a game, build and remix it in a browser workspace with models, rigging, gameplay and sound, then publish a shareable multiplayer link \u2014 no Unity and no code required. Free to start; Product Hunt #1 on Nov 4 2026 with a strong official launch post (~680 likes). Still early: results depend on how well the agent interprets your brief.",
+    "verdict": "AI-native 3D game engine (Wanaka Studio 1.0): describe a game, build and remix it in a browser workspace with models, rigging, gameplay and sound, then publish a shareable multiplayer link — no Unity and no code required. Free to start; Product Hunt #1 on Nov 4 2026 with a strong official launch post (~680 likes). Still early: results depend on how well the agent interprets your brief.",
     "useThisIf": "you want to prototype a playable 3D multiplayer game from a one-line idea and share a browser link without learning Unity.",
     "alternatives": [
       "strawberry",
@@ -5573,7 +5574,7 @@
       "productivity"
     ],
     "pricing": "freemium",
-    "verdict": "Email API and inboxes built for AI agents: create addresses via API or CLI, send/receive in real time, parse attachments, and use webhooks so agents can sign up for services and read mail like a human. Free tier (3 inboxes, 3,000 emails/mo); Pro from \u20ac9/mo + usage. On Product Hunt Nov 4 2026; also used in open-source EveryApp stacks. You still own deliverability and abuse risk for anything the agent sends.",
+    "verdict": "Email API and inboxes built for AI agents: create addresses via API or CLI, send/receive in real time, parse attachments, and use webhooks so agents can sign up for services and read mail like a human. Free tier (3 inboxes, 3,000 emails/mo); Pro from €9/mo + usage. On Product Hunt Nov 4 2026; also used in open-source EveryApp stacks. You still own deliverability and abuse risk for anything the agent sends.",
     "useThisIf": "your agent needs its own inbox to register for tools, receive OTPs or talk to humans over email without sharing your personal address.",
     "alternatives": [
       "agent-inbox",
@@ -5630,7 +5631,7 @@
       "agents"
     ],
     "pricing": "open-source",
-    "verdict": "Open-source (MIT) agent skill that pushes coding agents to write the least code that works \u2014 'lazy senior' style. Ponytail 5 claims \u221253% code, \u221241% time, \u221226% cost vs the same Claude Code agent on 39 tasks (maintainer benchmark). Install via npm/skill for ~20 agents; ~185K GitHub stars (DietrichGebert/ponytail). Benchmarks are maintainer-run; treat them as directional, not a guarantee for your repo.",
+    "verdict": "Open-source (MIT) agent skill that pushes coding agents to write the least code that works — 'lazy senior' style. Ponytail 5 claims −53% code, −41% time, −26% cost vs the same Claude Code agent on 39 tasks (maintainer benchmark). Install via npm/skill for ~20 agents; ~185K GitHub stars (DietrichGebert/ponytail). Benchmarks are maintainer-run; treat them as directional, not a guarantee for your repo.",
     "useThisIf": "your agent over-engineers every ticket and you want a ruleset that prefers small diffs, tests on risky logic, and deleting code.",
     "alternatives": [
       "claude-code",
@@ -5658,7 +5659,7 @@
       "coding"
     ],
     "pricing": "freemium",
-    "verdict": "Managed persistent Chrome for AI agents: isolated cloud browsers with saved login state, CDP connect, live view, plus fork/pause/resume. Free plan is 1 browser-hour/month; Basic $20/mo (250 hours) and Pro $99/mo. Submitted to toolhype Nov 4 2026; domain registered Oct 29 2026 so the product is very new \u2014 verify uptime and data handling before putting production credentials in a session.",
+    "verdict": "Managed persistent Chrome for AI agents: isolated cloud browsers with saved login state, CDP connect, live view, plus fork/pause/resume. Free plan is 1 browser-hour/month; Basic $20/mo (250 hours) and Pro $99/mo. Submitted to toolhype Nov 4 2026; domain registered Oct 29 2026 so the product is very new — verify uptime and data handling before putting production credentials in a session.",
     "useThisIf": "you need agents to keep logged-in browser state across runs and drive pages over CDP without hosting Chromium yourself.",
     "alternatives": [
       "strawberry",
@@ -5686,7 +5687,7 @@
       "productivity"
     ],
     "pricing": "freemium",
-    "verdict": "Operations board for teams of AI agents and humans: run CrewAI/LangGraph/AutoGen (or custom) agents on one board with human-in-the-loop approvals, durable memory, MCP server and an audit trail. Free during public beta (generous limits); activity-event billing later with launch discounts. Submitted Nov 3 2026. Provider-agnostic \u2014 you still bring models and agent code.",
+    "verdict": "Operations board for teams of AI agents and humans: run CrewAI/LangGraph/AutoGen (or custom) agents on one board with human-in-the-loop approvals, durable memory, MCP server and an audit trail. Free during public beta (generous limits); activity-event billing later with launch discounts. Submitted Nov 3 2026. Provider-agnostic — you still bring models and agent code.",
     "useThisIf": "you already build agents in several frameworks and need one place for approvals, memory and who-did-what logging.",
     "alternatives": [
       "agent-inbox",
@@ -5714,7 +5715,7 @@
       "chat"
     ],
     "pricing": "free",
-    "verdict": "Free desktop AI workspace (Windows/macOS) from Teatak: connect leading models, keep separate conversations, and use a built-in browser plus file/command tools, Studio docs/tables, scheduled tasks and plugins. Free for personal and commercial use; you bring your own model API keys. Submitted Nov 1 2026. Desktop install required \u2014 not a browser-only chat UI.",
+    "verdict": "Free desktop AI workspace (Windows/macOS) from Teatak: connect leading models, keep separate conversations, and use a built-in browser plus file/command tools, Studio docs/tables, scheduled tasks and plugins. Free for personal and commercial use; you bring your own model API keys. Submitted Nov 1 2026. Desktop install required — not a browser-only chat UI.",
     "useThisIf": "you want one local app that mixes chat, browser, files and scheduled agent tasks across multiple model providers.",
     "alternatives": [
       "chatgpt",
@@ -5743,7 +5744,7 @@
       "productivity"
     ],
     "pricing": "freemium",
-    "verdict": "Product-idea and listing helper for Etsy makers: discover ideas that match your skills/materials, check live market evidence and asking prices, then plan the make and prepare a listing. Idea checks are free without signup; deeper workflow sits behind an account. Submitted Nov 3 2026. Focused on physical handmade goods \u2014 not a general ecommerce research suite.",
+    "verdict": "Product-idea and listing helper for Etsy makers: discover ideas that match your skills/materials, check live market evidence and asking prices, then plan the make and prepare a listing. Idea checks are free without signup; deeper workflow sits behind an account. Submitted Nov 3 2026. Focused on physical handmade goods — not a general ecommerce research suite.",
     "useThisIf": "you sell handmade goods on Etsy and want evidence-backed next-product ideas plus listing prep in one flow.",
     "alternatives": [
       "riff",
@@ -5771,7 +5772,7 @@
       "productivity"
     ],
     "pricing": "freemium",
-    "verdict": "AI audience panels for product and pricing validation: build personas, ask questions, surface objections before you build. 750 free trial credits; paid plans from $9.99/mo (Starter) and $29.99/mo (Growth). Domain since 2024; submitted Nov 3 2026. Synthetic panels are a research aid \u2014 not a substitute for talking to real customers.",
+    "verdict": "AI audience panels for product and pricing validation: build personas, ask questions, surface objections before you build. 750 free trial credits; paid plans from $9.99/mo (Starter) and $29.99/mo (Growth). Domain since 2024; submitted Nov 3 2026. Synthetic panels are a research aid — not a substitute for talking to real customers.",
     "useThisIf": "you want a quick AI stand-in audience to pressure-test a product idea, price or pitch before real user interviews.",
     "alternatives": [
       "empacer",
@@ -5799,7 +5800,7 @@
       "productivity"
     ],
     "pricing": "freemium",
-    "verdict": "AI visibility tracking for brands and agencies: ask ChatGPT, Claude, Gemini, Grok and Google AI Overviews the questions buyers ask, then see whether your brand appears, which competitors are named, citation sources and ranked Actions. Free Scan checks 10 questions across 3 models (no card); Starter $49/mo (1 workspace) and Growth $199/mo (3 workspaces); MCP included on every plan. Domain since Dec 2025; submitted Nov 5 2026. Synthetic AI answers are a research signal \u2014 not a substitute for real search analytics or customer interviews.",
+    "verdict": "AI visibility tracking for brands and agencies: ask ChatGPT, Claude, Gemini, Grok and Google AI Overviews the questions buyers ask, then see whether your brand appears, which competitors are named, citation sources and ranked Actions. Free Scan checks 10 questions across 3 models (no card); Starter $49/mo (1 workspace) and Growth $199/mo (3 workspaces); MCP included on every plan. Domain since Dec 2025; submitted Nov 5 2026. Synthetic AI answers are a research signal — not a substitute for real search analytics or customer interviews.",
     "useThisIf": "you need evidence of how AI assistants name your brand vs competitors on buyer questions, with shareable Actions for content fixes.",
     "alternatives": [
       "audience-analysis",
@@ -5828,7 +5829,7 @@
       "coding"
     ],
     "pricing": "paid",
-    "verdict": "Managed agent sandboxes with a persistent writable RootFS: install tools, keep /usr and /home across checkpoints, pause compute between tasks and resume on demand. Cloud billed by the second (~$0.015/GiB-hour compute, $0.02/GiB-month retained storage); $5 free credit after card for eligible new users. Python SDK and s0 CLI; self-hosting discontinued, BYOC planned. Domain since Dec 2025; same team as Cloudbrowser (zuch@sandbox0.ai). Submitted Nov 5 2026. Pay-as-you-go cloud \u2014 watch idle running sandboxes so they do not burn compute.",
+    "verdict": "Managed agent sandboxes with a persistent writable RootFS: install tools, keep /usr and /home across checkpoints, pause compute between tasks and resume on demand. Cloud billed by the second (~$0.015/GiB-hour compute, $0.02/GiB-month retained storage); $5 free credit after card for eligible new users. Python SDK and s0 CLI; self-hosting discontinued, BYOC planned. Domain since Dec 2025; same team as Cloudbrowser (zuch@sandbox0.ai). Submitted Nov 5 2026. Pay-as-you-go cloud — watch idle running sandboxes so they do not burn compute.",
     "useThisIf": "you need isolated cloud computers for long-running agents that must keep installed software and files without paying for always-on CPUs.",
     "alternatives": [
       "cloudbrowser",
@@ -5858,7 +5859,7 @@
       "agents"
     ],
     "pricing": "freemium",
-    "verdict": "One transcript API for YouTube/TikTok captions (1 credit), optional AI transcription for uploads and direct media (2 credits/started minute), plus Instagram Reels on paid plans. Exports JSON/SRT/VTT/TXT free; webhooks and MCP for agents; 50 free credits/month, paid packs ~$6\u20138 per 1k credits. Domain registered Oct 1 2026 (young) but product docs, privacy/terms and API look real. Submitted Nov 5 2026. Caption-first \u2014 AI transcription is paid and regional launch is single-region.",
+    "verdict": "One transcript API for YouTube/TikTok captions (1 credit), optional AI transcription for uploads and direct media (2 credits/started minute), plus Instagram Reels on paid plans. Exports JSON/SRT/VTT/TXT free; webhooks and MCP for agents; 50 free credits/month, paid packs ~$6–8 per 1k credits. Domain registered Oct 1 2026 (young) but product docs, privacy/terms and API look real. Submitted Nov 5 2026. Caption-first — AI transcription is paid and regional launch is single-region.",
     "useThisIf": "you are building products or agents that need timed video transcripts from links without stitching multiple caption scrapers.",
     "alternatives": [
       "descript",
@@ -5887,7 +5888,7 @@
       "writing"
     ],
     "pricing": "freemium",
-    "verdict": "Desktop AI workspace (Windows/macOS/Linux) for Word, Excel, PowerPoint and PDF work: sources stay authorized, outputs land in a separate working directory, and actions are auditable with confirmation for risky writes. Free tier with limited credits; Plus from $15/mo (500 credits/7 days); contact business@gradiant.chat. Submitted Nov 3 2026. Local-first office agent \u2014 not a browser chat; install required, and public privacy/terms pages were thin on the marketing site at review time.",
+    "verdict": "Desktop AI workspace (Windows/macOS/Linux) for Word, Excel, PowerPoint and PDF work: sources stay authorized, outputs land in a separate working directory, and actions are auditable with confirmation for risky writes. Free tier with limited credits; Plus from $15/mo (500 credits/7 days); contact business@gradiant.chat. Submitted Nov 3 2026. Local-first office agent — not a browser chat; install required, and public privacy/terms pages were thin on the marketing site at review time.",
     "useThisIf": "you want an agent that edits real Office files on your machine with visible plans and permission prompts instead of paste-into-chat workflows.",
     "alternatives": [
       "pudding",
@@ -5917,7 +5918,7 @@
       "marketing"
     ],
     "pricing": "freemium",
-    "verdict": "AI coworkers that run on the ChatGPT or Claude subscription you already pay for (or OpenRouter/API keys/Rerun credits), with a private always-on machine, 3,000+ tool integrations, schedules/triggers and human approval before consequential actions. Plans from $29/mo for 5 coworkers; open-source AGPL-3.0 and self-hostable (github.com/rerun-build/rerun). Product Hunt #2 on Nov 5 2026 (~194 upvotes). Coworkers are autonomous agents \u2014 keep approvals on for spend, outbound email and deletes.",
+    "verdict": "AI coworkers that run on the ChatGPT or Claude subscription you already pay for (or OpenRouter/API keys/Rerun credits), with a private always-on machine, 3,000+ tool integrations, schedules/triggers and human approval before consequential actions. Plans from $29/mo for 5 coworkers; open-source AGPL-3.0 and self-hostable (github.com/rerun-build/rerun). Product Hunt #2 on Nov 5 2026 (~194 upvotes). Coworkers are autonomous agents — keep approvals on for spend, outbound email and deletes.",
     "useThisIf": "you want scheduled AI teammates that click real apps and ship work overnight without building your own agent harness.",
     "alternatives": [
       "agent-desktop",
@@ -5946,7 +5947,7 @@
       "productivity"
     ],
     "pricing": "freemium",
-    "verdict": "Interoperable persistent memory layer for agents: API, SDK, CLI and MCP so knowledge carries across ChatGPT, Claude, Gemini, Cursor and custom tools. Claims strong LoCoMo/LongMemEval-S token savings in their internal evals; Workspace plan with shared monthly credits (intro $80 then $50) and API usage from a prepaid balance (~$5 start). Docs at docs.livingbrain.com; GitHub ChatAndBuild/livingbrain. Product Hunt Nov 5 2026. Memory quality still depends on your workload \u2014 treat their leaderboard claims as vendor-reported.",
+    "verdict": "Interoperable persistent memory layer for agents: API, SDK, CLI and MCP so knowledge carries across ChatGPT, Claude, Gemini, Cursor and custom tools. Claims strong LoCoMo/LongMemEval-S token savings in their internal evals; Workspace plan with shared monthly credits (intro $80 then $50) and API usage from a prepaid balance (~$5 start). Docs at docs.livingbrain.com; GitHub ChatAndBuild/livingbrain. Product Hunt Nov 5 2026. Memory quality still depends on your workload — treat their leaderboard claims as vendor-reported.",
     "useThisIf": "you need one memory store that multiple models and agent harnesses can read via MCP/API instead of re-pasting context each chat.",
     "alternatives": [
       "claude-mem",
@@ -5976,7 +5977,7 @@
       "agents"
     ],
     "pricing": "paid",
-    "verdict": "Brand context layer for agents: maintain guidelines, logos, fonts and voice in one place, then serve task-specific Briefs and Reviews over MCP/API to ChatGPT, Claude, Claude Code, Cursor and product embeddings. Plus from $20/mo (1 seat), Pro from $35/mo (unlimited seats); docs at docs.rainbrand.com. Domain since 2017; Product Hunt Nov 5 2026 (~104 upvotes). Credit-metered brand ops \u2014 not a full design suite; generation still happens in your own tools or their AI Gateway.",
+    "verdict": "Brand context layer for agents: maintain guidelines, logos, fonts and voice in one place, then serve task-specific Briefs and Reviews over MCP/API to ChatGPT, Claude, Claude Code, Cursor and product embeddings. Plus from $20/mo (1 seat), Pro from $35/mo (unlimited seats); docs at docs.rainbrand.com. Domain since 2017; Product Hunt Nov 5 2026 (~104 upvotes). Credit-metered brand ops — not a full design suite; generation still happens in your own tools or their AI Gateway.",
     "useThisIf": "your agents and creative tools keep drifting off-brand and you want one shared brand brain with review checks before assets ship.",
     "alternatives": [
       "canva",
@@ -6005,7 +6006,7 @@
       "coding"
     ],
     "pricing": "open-source",
-    "verdict": "Anti-AI-slop design skill for Claude Code, Cursor, Codex and OpenCode (MIT, by Together AI): picks from fifty themes, builds pages around the visitor job, and lints in a real browser for common machine-made tells. Free and open source (`npx skills add`); custom themes on request. GitHub Nutlope/hallmark (~49k stars, trending Nov 2026). A skill/plugin \u2014 not a hosted design app; quality still depends on the host coding agent.",
+    "verdict": "Anti-AI-slop design skill for Claude Code, Cursor, Codex and OpenCode (MIT, by Together AI): picks from fifty themes, builds pages around the visitor job, and lints in a real browser for common machine-made tells. Free and open source (`npx skills add`); custom themes on request. GitHub Nutlope/hallmark (~49k stars, trending Nov 2026). A skill/plugin — not a hosted design app; quality still depends on the host coding agent.",
     "useThisIf": "your coding agent keeps shipping generic AI landing pages and you want a stricter design skill with theme catalog and browser lint gates.",
     "alternatives": [
       "impeccable",
@@ -6587,7 +6588,7 @@
       "writing"
     ],
     "pricing": "paid",
-    "verdict": "Write a post once from a rough idea, have AI rewrite it in your own voice (it learns from your past writing), tweak it per network and publish or schedule to X, LinkedIn, Instagram, TikTok, Facebook and Reddit from one composer, with a calendar and per-post analytics. In English, Spanish and Portuguese. No free plan: \u20ac5 a month per connected account (\u20ac50 a year), with a 7-day trial that needs a card. Run by an independent developer in Madrid (Pere Gregori, trading as Posthut). Submitted by the maker; passed our read-only safety check (HTTPS, privacy and terms, support email). New in 2026 and small, so check that it supports the exact post types you need before paying.",
+    "verdict": "Write a post once from a rough idea, have AI rewrite it in your own voice (it learns from your past writing), tweak it per network and publish or schedule to X, LinkedIn, Instagram, TikTok, Facebook and Reddit from one composer, with a calendar and per-post analytics. In English, Spanish and Portuguese. No free plan: €5 a month per connected account (€50 a year), with a 7-day trial that needs a card. Run by an independent developer in Madrid (Pere Gregori, trading as Posthut). Submitted by the maker; passed our read-only safety check (HTTPS, privacy and terms, support email). New in 2026 and small, so check that it supports the exact post types you need before paying.",
     "useThisIf": "you post the same idea to several networks every week and want one place to write, adapt and schedule it.",
     "alternatives": [
       "riffwise",
@@ -6789,7 +6790,7 @@
       "writing"
     ],
     "pricing": "paid",
-    "verdict": "Done-for-you content service from the Dutch agency Brixxs, not a self-serve app: each month they produce SEO articles, a YouTube video and a short per topic with AI, a specialist in the Netherlands reviews it, you approve it in their app, and they publish it to WordPress and YouTube. From \u20ac129 a month excl. VAT for 5 sets, cancel monthly; \u20ac219 for 10 and \u20ac319 for 15. Mainly for Dutch small businesses (site and pricing are Dutch-first). They say plainly that they cannot guarantee Google rankings or ChatGPT citations. Submitted by the agency; passed our read-only safety check (domain since 2022, privacy and terms, real company contact).",
+    "verdict": "Done-for-you content service from the Dutch agency Brixxs, not a self-serve app: each month they produce SEO articles, a YouTube video and a short per topic with AI, a specialist in the Netherlands reviews it, you approve it in their app, and they publish it to WordPress and YouTube. From €129 a month excl. VAT for 5 sets, cancel monthly; €219 for 10 and €319 for 15. Mainly for Dutch small businesses (site and pricing are Dutch-first). They say plainly that they cannot guarantee Google rankings or ChatGPT citations. Submitted by the agency; passed our read-only safety check (domain since 2022, privacy and terms, real company contact).",
     "useThisIf": "you run a small business, have no time to write, and want a steady stream of articles and videos someone else checks and posts.",
     "alternatives": [
       "jasper",
@@ -7483,7 +7484,7 @@
       "marketing"
     ],
     "pricing": "freemium",
-    "verdict": "Kling AI's new image model, launched Nov 17, 2026 in Kling's web studio and via API. Its headline features are native 8K output (up to 8192\u00d78192 for square images), text inside images of up to 2,000 characters in seven languages, and sets of up to 10 matching images from one prompt, for storyboards or product shots. It can also lay out a whole tall e-commerce product page or website mockup as one image. It's aimed at very photo-like results, including skin and fabric detail. Kling says it's available to all users of its studio, which runs on credits with paid plans; API billing now counts reference images as well as outputs, and 8K costs more than 2K. Don't use it to make realistic images of real people without their consent.",
+    "verdict": "Kling AI's new image model, launched Nov 17, 2026 in Kling's web studio and via API. Its headline features are native 8K output (up to 8192×8192 for square images), text inside images of up to 2,000 characters in seven languages, and sets of up to 10 matching images from one prompt, for storyboards or product shots. It can also lay out a whole tall e-commerce product page or website mockup as one image. It's aimed at very photo-like results, including skin and fabric detail. Kling says it's available to all users of its studio, which runs on credits with paid plans; API billing now counts reference images as well as outputs, and 8K costs more than 2K. Don't use it to make realistic images of real people without their consent.",
     "useThisIf": "you make ads, posters, product pages or storyboards and need sharp, high-resolution images with lots of readable text.",
     "alternatives": [
       "kling-ai",
@@ -7569,7 +7570,7 @@
       "agents"
     ],
     "pricing": "freemium",
-    "verdict": "One library for your AI agent skills, kept in sync across Claude Code, Cursor and Codex on your machines. You import skills from your computer, GitHub or GitLab, or add public ones from its Explore page. Skillbox remembers where each came from, follows updates from the source and, per the maker, scans new versions for prompt injection and leaked secrets before they reach your machine. You pick which skills are active everywhere and which only inside one project. Free covers up to 3 devices and 100 followed sources; Individual is \u00a36.99/mo (7-day trial) and adds context trimming and Skillbox AI; Team is \u00a312.99 per active member a month. There's a Mac app. New product (domain registered Sep 2026). Submitted by the maker; passed our read-only safety check (privacy, terms, DPA and trust pages, support email, Product Hunt listing).",
+    "verdict": "One library for your AI agent skills, kept in sync across Claude Code, Cursor and Codex on your machines. You import skills from your computer, GitHub or GitLab, or add public ones from its Explore page. Skillbox remembers where each came from, follows updates from the source and, per the maker, scans new versions for prompt injection and leaked secrets before they reach your machine. You pick which skills are active everywhere and which only inside one project. Free covers up to 3 devices and 100 followed sources; Individual is £6.99/mo (7-day trial) and adds context trimming and Skillbox AI; Team is £12.99 per active member a month. There's a Mac app. New product (domain registered Sep 2026). Submitted by the maker; passed our read-only safety check (privacy, terms, DPA and trust pages, support email, Product Hunt listing).",
     "useThisIf": "you've collected a pile of agent skills and lose track of which copy is current in which tool.",
     "alternatives": [
       "engineer-skills",
@@ -7597,7 +7598,7 @@
       "productivity"
     ],
     "pricing": "freemium",
-    "verdict": "Belgian invoicing software built around Peppol, the e-invoicing network Belgian businesses now have to use. The free plan receives unlimited Peppol invoices and sends one a month. Starter (\u20ac9/mo excl. VAT) sends unlimited invoices plus quotes, credit notes and recurring invoices. Business (\u20ac59/mo excl. VAT, 14-day trial) adds the AI part: it reads supplier PDFs that contain real text and suggests the parties, date, amount and reference, then you review them before they're matched to bank transactions. It doesn't OCR scanned paper and doesn't approve bookkeeping on its own, which the maker states plainly. Also has bank reconciliation, project invoicing, an API and free no-account tools (Belgian VAT and IBAN checkers, invoice templates). Mostly useful if you invoice in Belgium. Submitted by the maker; passed our read-only safety check (domain since Aug 2025, privacy policy, contact email, clear pricing).",
+    "verdict": "Belgian invoicing software built around Peppol, the e-invoicing network Belgian businesses now have to use. The free plan receives unlimited Peppol invoices and sends one a month. Starter (€9/mo excl. VAT) sends unlimited invoices plus quotes, credit notes and recurring invoices. Business (€59/mo excl. VAT, 14-day trial) adds the AI part: it reads supplier PDFs that contain real text and suggests the parties, date, amount and reference, then you review them before they're matched to bank transactions. It doesn't OCR scanned paper and doesn't approve bookkeeping on its own, which the maker states plainly. Also has bank reconciliation, project invoicing, an API and free no-account tools (Belgian VAT and IBAN checkers, invoice templates). Mostly useful if you invoice in Belgium. Submitted by the maker; passed our read-only safety check (domain since Aug 2025, privacy policy, contact email, clear pricing).",
     "useThisIf": "you're a Belgian freelancer or small business that needs Peppol e-invoicing and wants supplier PDFs turned into draft entries.",
     "alternatives": [
       "creepless"
@@ -7681,7 +7682,7 @@
       "design"
     ],
     "pricing": "freemium",
-    "verdict": "A catalog of visual 'tastes' \u2014 typography, spacing, color and layout skills \u2014 that you install once so Claude Code, Codex, Cursor, Gemini CLI and other agents reuse the same look on the next screen. The public catalog also covers launch videos, social images and slide decks. Four tastes (Swiss, Midnight, Soft Depth, House Blend) are free with an account so you can try the full install flow; any other taste is $3.99 once, including future versions; Taste Stack Pro is $12.99/month or $83.88/year for the whole catalog. It does not include an agent or model subscription. Operated by Mini Motion AI LLC. The tastestack.dev domain was registered 7 Nov 2026 (12 days old at review). Submitted by the maker; passed our read-only safety check (privacy, terms, refunds, hello@tastestack.dev, Stripe, no wallet or impersonation).",
+    "verdict": "A catalog of visual 'tastes' — typography, spacing, color and layout skills — that you install once so Claude Code, Codex, Cursor, Gemini CLI and other agents reuse the same look on the next screen. The public catalog also covers launch videos, social images and slide decks. Four tastes (Swiss, Midnight, Soft Depth, House Blend) are free with an account so you can try the full install flow; any other taste is $3.99 once, including future versions; Taste Stack Pro is $12.99/month or $83.88/year for the whole catalog. It does not include an agent or model subscription. Operated by Mini Motion AI LLC. The tastestack.dev domain was registered 7 Nov 2026 (12 days old at review). Submitted by the maker; passed our read-only safety check (privacy, terms, refunds, hello@tastestack.dev, Stripe, no wallet or impersonation).",
     "useThisIf": "you want your coding agent to carry a consistent visual style from a homepage or deck into the next screen, without inventing typography from scratch each time.",
     "alternatives": [
       "skillbox",
@@ -7710,7 +7711,7 @@
       "fun"
     ],
     "pricing": "freemium",
-    "verdict": "A browser studio that turns one dog photo into a short vertical dance or themed clip, plus photo packs, stickers and GIFs. The live template library (11 dog-only templates at review, including Dog + Backup Dancers, Kung Fu Dog and a silent 'Hi' meme) shows generated examples. Eligible new accounts may get 10 one-time welcome credits for one 480p video or a 2-image preview, with network and daily limits; paid packs are $4.99 for 50 credits or $9.99 for 120 credits, with no subscription, and paid videos are 720p. A video costs 10 credits, a full pack 20, a 2-image preview 10. Music can be added later on supported templates (the Hi clip stays silent). The acceptable-use policy tells people to keep images of people out of uploads; we did not find a real-person face-swap or dance-trend mode. Contact is only the operator Gmail on the legal pages; checkout still showed 'Checking payment availability\u2026' at review, so we did not confirm payments were live. Submitted by the maker; passed our read-only safety check (privacy, terms, AUP, HTTPS, 24-day-old domain).",
+    "verdict": "A browser studio that turns one dog photo into a short vertical dance or themed clip, plus photo packs, stickers and GIFs. The live template library (11 dog-only templates at review, including Dog + Backup Dancers, Kung Fu Dog and a silent 'Hi' meme) shows generated examples. Eligible new accounts may get 10 one-time welcome credits for one 480p video or a 2-image preview, with network and daily limits; paid packs are $4.99 for 50 credits or $9.99 for 120 credits, with no subscription, and paid videos are 720p. A video costs 10 credits, a full pack 20, a 2-image preview 10. Music can be added later on supported templates (the Hi clip stays silent). The acceptable-use policy tells people to keep images of people out of uploads; we did not find a real-person face-swap or dance-trend mode. Contact is only the operator Gmail on the legal pages; checkout still showed 'Checking payment availability…' at review, so we did not confirm payments were live. Submitted by the maker; passed our read-only safety check (privacy, terms, AUP, HTTPS, 24-day-old domain).",
     "useThisIf": "you want a short AI dance or themed clip of your dog, and you are fine with variable likeness and no third-party trend music included.",
     "alternatives": [
       "pawline",
@@ -7740,7 +7741,7 @@
       "agents"
     ],
     "pricing": "paid",
-    "verdict": "Google's 18 Nov 2026 Gemini 4 model, aimed at fast end-to-end software engineering, knowledge work and science. API price is $3 in / $15 out per million tokens ($0.15 cached input) with a 1M-token context window. It is rolling out in the Gemini API and AI Studio on the paid tier, in Gemini for business, and to Google AI Pro and Ultra subscribers in Antigravity and the Gemini app \u2014 not described as a free-tier default. Google reports a 61 on the Artificial Analysis Intelligence Index at its xhigh thinking level and #1 on that firm's Coding Agent Index; treat those as Google's claims. In Antigravity it can also orchestrate parallel Gemini 4 Hydrogen subagents.",
+    "verdict": "Google's 18 Nov 2026 Gemini 4 model, aimed at fast end-to-end software engineering, knowledge work and science. API price is $3 in / $15 out per million tokens ($0.15 cached input) with a 1M-token context window. It is rolling out in the Gemini API and AI Studio on the paid tier, in Gemini for business, and to Google AI Pro and Ultra subscribers in Antigravity and the Gemini app — not described as a free-tier default. Google reports a 61 on the Artificial Analysis Intelligence Index at its xhigh thinking level and #1 on that firm's Coding Agent Index; treat those as Google's claims. In Antigravity it can also orchestrate parallel Gemini 4 Hydrogen subagents.",
     "useThisIf": "you already pay for the Gemini API or Google AI Pro/Ultra and want a faster frontier Gemini 4 for long coding or agent jobs, between Hydrogen and Carbon.",
     "alternatives": [
       "gemini-4-carbon",
@@ -7770,7 +7771,7 @@
       "fun"
     ],
     "pricing": "paid (in Google AI Ultra)",
-    "verdict": "Google DeepMind's interactive world model, opened to eligible Google AI Ultra subscribers on 18 Nov 2026 inside Project Genie at labs.google/projectgenie. You generate a world in the browser, walk around in it, and type a new prompt mid-session to change weather, characters or action; Genie 4 also adds real-time native audio. A Project Genie agent helps set up a world from a conversation, and a community gallery lets people browse and remix published worlds. Google AI Pro members can only join the waitlist for now. Genie 3 stays in the model picker, with sessions extended to up to 3 minutes (from 60 seconds) plus world chaining and 360\u00b0 panorama seeds.",
+    "verdict": "Google DeepMind's interactive world model, opened to eligible Google AI Ultra subscribers on 18 Nov 2026 inside Project Genie at labs.google/projectgenie. You generate a world in the browser, walk around in it, and type a new prompt mid-session to change weather, characters or action; Genie 4 also adds real-time native audio. A Project Genie agent helps set up a world from a conversation, and a community gallery lets people browse and remix published worlds. Google AI Pro members can only join the waitlist for now. Genie 3 stays in the model picker, with sessions extended to up to 3 minutes (from 60 seconds) plus world chaining and 360° panorama seeds.",
     "useThisIf": "you already pay for Google AI Ultra and want to generate and edit an interactive world in the browser, not just a video clip.",
     "alternatives": [
       "world-labs-atlas",
@@ -7943,7 +7944,7 @@
       "fun"
     ],
     "pricing": "freemium",
-    "verdict": "AI generator for 2D game art: inventory items, skill icons, props, scenes and character concepts from a short brief, with an optional reference image. An agent plans the set, shows the credit cost, and you check a sample before making the rest. It also has free in-browser tools to pack PNG frames into a sprite sheet (with frame JSON) and to split existing sheets. It's honest about limits: it makes still images, not walk cycles or matching animation frames, and a '32\u00d732' request is a target, not a guaranteed pixel grid. New visitors get 10 free credits (20 more with Google sign-in) on the basic Seedream model; Starter is $19/mo (800 credits), Pro $39/mo, Max $129/mo, or a one-time 400-credit pack for $12. Monthly credits don't roll over. Submitted by the maker; passed our read-only safety check (domain since Sep 2026, privacy, terms and refund pages, support email). The operator isn't named on the site.",
+    "verdict": "AI generator for 2D game art: inventory items, skill icons, props, scenes and character concepts from a short brief, with an optional reference image. An agent plans the set, shows the credit cost, and you check a sample before making the rest. It also has free in-browser tools to pack PNG frames into a sprite sheet (with frame JSON) and to split existing sheets. It's honest about limits: it makes still images, not walk cycles or matching animation frames, and a '32×32' request is a target, not a guaranteed pixel grid. New visitors get 10 free credits (20 more with Google sign-in) on the basic Seedream model; Starter is $19/mo (800 credits), Pro $39/mo, Max $129/mo, or a one-time 400-credit pack for $12. Monthly credits don't roll over. Submitted by the maker; passed our read-only safety check (domain since Sep 2026, privacy, terms and refund pages, support email). The operator isn't named on the site.",
     "useThisIf": "you're an indie game developer who needs a batch of consistent icons or props quickly and can live without animation.",
     "alternatives": [
       "spritefuse",
@@ -8088,7 +8089,7 @@
       "marketing"
     ],
     "pricing": "freemium",
-    "verdict": "AI video generator for brands that starts from a public website URL or a one-sentence idea. In Motion mode it builds a motion-graphics video from the site's real logo, colors, copy and screenshots, with a generated score and optional narration, and you change it in chat; paid plans go up to 10\u201390 seconds. Film mode (open to every account since Oct 9, 2026) writes a live-action commercial of 5\u201345 seconds in 16:9 or 9:16, at up to 4K, with voiceover, sound and music. It is not an avatar-presenter tool or a timeline editor, and it is not Motion by Mosaic (motion.so). Free: 6 credits once, enough to generate and preview one watermarked video or film of up to 10 seconds; exporting a 1080p or 4K file needs a subscription or any credit pack (packs start at $15, no subscription, credits do not expire). Pro is $29/month for 100 credits; Max $99/month for 500; Ultra $950/month for 5,000. As of Nov 24, 2026, the first month of Pro or Max is 50% off until Dec 1, 2026, 11:59 PM Pacific. It was #3 on Product Hunt on Nov 23, 2026 (score 234 at our check).",
+    "verdict": "AI video generator for brands that starts from a public website URL or a one-sentence idea. In Motion mode it builds a motion-graphics video from the site's real logo, colors, copy and screenshots, with a generated score and optional narration, and you change it in chat; paid plans go up to 10–90 seconds. Film mode (open to every account since Oct 9, 2026) writes a live-action commercial of 5–45 seconds in 16:9 or 9:16, at up to 4K, with voiceover, sound and music. It is not an avatar-presenter tool or a timeline editor, and it is not Motion by Mosaic (motion.so). Free: 6 credits once, enough to generate and preview one watermarked video or film of up to 10 seconds; exporting a 1080p or 4K file needs a subscription or any credit pack (packs start at $15, no subscription, credits do not expire). Pro is $29/month for 100 credits; Max $99/month for 500; Ultra $950/month for 5,000. As of Nov 24, 2026, the first month of Pro or Max is 50% off until Dec 1, 2026, 11:59 PM Pacific. It was #3 on Product Hunt on Nov 23, 2026 (score 234 at our check).",
     "useThisIf": "you need a launch, demo or brand film from a product page and would rather paste a URL than storyboard or edit a timeline.",
     "alternatives": [
       "heygen",
@@ -8146,7 +8147,7 @@
       "coding"
     ],
     "pricing": "freemium",
-    "verdict": "AI SRE from Coreplane that watches logs, metrics and traces, opens an issue when something drifts from the learned baseline, investigates across code, deploys and telemetry, and opens a pull request with a fix. It also scans active, deployed GitHub and GitLab repos for known CVEs, checks pull requests for production impact before you merge, and can group overnight alerts and investigate real incidents. You can ask it from Claude Code, Cursor, Codex or any MCP client, from Slack, or over a REST API (reads are unlimited on every plan). Free forever: one cloud account, one team member, 10 impact assessments a month, and a monthly credit allowance, with no card. Paid plans start at Starter $80/month or $64/month billed yearly (16\u00d7 Free's credits, two cloud accounts), then Team $200, Business $500, Scale $800, Premium $2,000 and Ultimate $5,000 per month (yearly prices are 20% less). Enterprise is custom (bring your own model key or cloud); a human answers at boris@coreplane.ai. It was #6 on Product Hunt on Nov 23, 2026 (score 126 at our check).",
+    "verdict": "AI SRE from Coreplane that watches logs, metrics and traces, opens an issue when something drifts from the learned baseline, investigates across code, deploys and telemetry, and opens a pull request with a fix. It also scans active, deployed GitHub and GitLab repos for known CVEs, checks pull requests for production impact before you merge, and can group overnight alerts and investigate real incidents. You can ask it from Claude Code, Cursor, Codex or any MCP client, from Slack, or over a REST API (reads are unlimited on every plan). Free forever: one cloud account, one team member, 10 impact assessments a month, and a monthly credit allowance, with no card. Paid plans start at Starter $80/month or $64/month billed yearly (16× Free's credits, two cloud accounts), then Team $200, Business $500, Scale $800, Premium $2,000 and Ultimate $5,000 per month (yearly prices are 20% less). Enterprise is custom (bring your own model key or cloud); a human answers at boris@coreplane.ai. It was #6 on Product Hunt on Nov 23, 2026 (score 126 at our check).",
     "useThisIf": "you want an agent watching production and opening a documented PR when it thinks it has a fix, and you're willing to review those PRs before they merge.",
     "alternatives": [
       "claude-code",
@@ -8175,7 +8176,7 @@
       "productivity"
     ],
     "pricing": "freemium",
-    "verdict": "AI work bots, hosted in the EU, that you describe in a sentence and that run across 1,920+ integrations (mail, calendar, CRM, helpdesk and more). They start work on their own and pause for your approval when something would go out or change a record; every question and approval lands in one inbox. The company positions this against Claude Duet (US only), ChatGPT's scheduled tasks (not on Pro or Plus in Europe) and Gemini's Tasks (not in Europe). Every login gets 300 trial credits once, for every model, with no plan and no card. When credits run out the answer stops; it never bills extra. Personal plans (VAT included, priced for a one-person org): \u20ac20/month for 900 credits, \u20ac100/month for 4,500, or \u20ac200/month for 10,000; a year costs ten months. Team plans are \u20ac25, \u20ac125 or \u20ac250 per person per month plus VAT, with the same credit tiers pooled across the team; guests are free. Top-up is 400 credits for \u20ac10 (VAT included), valid 3 years (12 months for businesses). Bigger models use more credits per answer. It was #8 on Product Hunt on Nov 23, 2026 (score 118 at our check).",
+    "verdict": "AI work bots, hosted in the EU, that you describe in a sentence and that run across 1,920+ integrations (mail, calendar, CRM, helpdesk and more). They start work on their own and pause for your approval when something would go out or change a record; every question and approval lands in one inbox. The company positions this against Claude Duet (US only), ChatGPT's scheduled tasks (not on Pro or Plus in Europe) and Gemini's Tasks (not in Europe). Every login gets 300 trial credits once, for every model, with no plan and no card. When credits run out the answer stops; it never bills extra. Personal plans (VAT included, priced for a one-person org): €20/month for 900 credits, €100/month for 4,500, or €200/month for 10,000; a year costs ten months. Team plans are €25, €125 or €250 per person per month plus VAT, with the same credit tiers pooled across the team; guests are free. Top-up is 400 credits for €10 (VAT included), valid 3 years (12 months for businesses). Bigger models use more credits per answer. It was #8 on Product Hunt on Nov 23, 2026 (score 118 at our check).",
     "useThisIf": "you're in Europe and want bots that work across your existing tools and wait for you to approve anything that sends or changes data.",
     "alternatives": [
       "claude-duet",
@@ -8220,5 +8221,121 @@
       "updatedAt": null
     },
     "logo": "/logos/hydrilla.png"
+  },
+  {
+    "slug": "granular",
+    "name": "Granular",
+    "url": "https://granular.build/",
+    "affiliateUrl": null,
+    "category": "agents",
+    "useCases": [
+      "agents",
+      "coding"
+    ],
+    "pricing": "freemium",
+    "verdict": "Desktop workspace (Mac, and Windows in beta) for running several AI agents in parallel, with real terminals, project files, a live preview, a project brain and boss/worker agents. You bring your own Claude, Codex or Gemini subscription or API key; Granular does not mark those tokens up. It is not a model: without an AI connection the agent cannot work. Free includes 2 projects, up to 4 sessions each, one boss agent and two worker agents, and up to 3 published links. Pro lifts those limits: $12.99/month, $129/year (about $10.75/month), or $259 once for a lifetime license, usable on 2 computers, with a 30-day money-back guarantee (email hello@granular.build; the AI Add-on and credit packs are not covered). An optional Granular Hosted AI Add-on bills separately and works on Free or Pro: the same hosted models from 9 providers, with Base at $20/month for 1,600 credits, Plus $50/month for 4,000, or Max $100/month for 8,000. Those monthly credits refill every 30 days and do not carry over; one-time packs are $10 for 800 credits or $25 for 2,000 and last until you use them. Image, video and voice add-ons are listed as coming soon. It was #2 on Product Hunt on Nov 24, 2026.",
+    "useThisIf": "you want a visual desktop workspace where several coding or general agents can work in your folders, and you already pay for Claude, Codex or Gemini (or are willing to buy Granular's hosted credits).",
+    "alternatives": [
+      "orca",
+      "cursor",
+      "claude-code"
+    ],
+    "source": "producthunt",
+    "addedAt": "2026-11-25",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/granular.png"
+  },
+  {
+    "slug": "clam",
+    "name": "Clam",
+    "url": "https://useclam.ai/",
+    "affiliateUrl": null,
+    "category": "agents",
+    "useCases": [
+      "agents",
+      "productivity"
+    ],
+    "pricing": "freemium",
+    "verdict": "A permission layer between Gmail and AI agents. You write plain-English rules for what each agent may read, draft or send; Clam compiles them into Cedar policies and checks every request. Each agent gets its own Shell, a slice of the inbox rather than the whole mailbox, and Clam logs every allowed or blocked action. It does not store email content, and Google tokens stay with Clerk, its auth provider. Connectors are offered for Claude, ChatGPT, Hermes, Gemini, Muse and Grok over MCP. Gmail only, for now. A 14-day free trial of Starter needs no credit card; Starter is then $2.99/month for one mailbox and one Shell. Pro is $6.99/month for 10 Shells per mailbox, 90 days of history, 4,000 classified emails a month, plus the audit log, approvals and office hours. Sign up for annual billing before the end of 2026 and the first year is $29.90 on Starter or $69.90 on Pro. If the trial ends with no card on file, Shells stop answering and your connection is kept for 30 days. CASA AL1 was validated in Oct 2026; SOC 2 was still in audit as of our check, expected Dec 2026. It was #3 on Product Hunt on Nov 24, 2026 (the product was introduced on Nov 11).",
+    "useThisIf": "you want an agent to help with Gmail but will not hand it the whole inbox, and you are willing to write rules for each agent.",
+    "alternatives": [
+      "inbox-zero",
+      "claude",
+      "chatgpt"
+    ],
+    "source": "producthunt",
+    "addedAt": "2026-11-25",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/clam.png"
+  },
+  {
+    "slug": "claude-ship",
+    "name": "Claude Ship",
+    "url": "https://claude.com/product/claude-ship",
+    "affiliateUrl": null,
+    "category": "coding",
+    "useCases": [
+      "coding",
+      "agents"
+    ],
+    "pricing": "paid (in Claude Team/Enterprise)",
+    "verdict": "Anthropic's beta for GitHub pull requests, available on Claude Team and Enterprise plans. After a PR opens, Code Review uses multiple agents to flag issues (ranked Important, Nit or Pre-existing), with quick, standard or deep review levels and a REVIEW.md file to tune what gets flagged. PR Steward, also in beta, works on review feedback, failing checks and merge conflicts in the cloud; it can start on its own or only when someone comments @claude steward, and it is designed to leave approving and merging to your team. Claude Approvals reads a policy file in the repo and can approve routine changes where that policy allows; Anthropic recommends starting in observe mode, where it posts a decision but approves nothing. This is not a general coding agent like Claude Code: it automates review, fixes and policy-based approval on GitHub PRs. There is no separate public price; you connect a repo and set a monthly spend limit for Code Review. It was featured on Product Hunt on Nov 24, 2026.",
+    "useThisIf": "your team is already on Claude Team or Enterprise and wants Claude to review, fix and (where your policy allows) approve GitHub pull requests, with a human still in the loop for merges.",
+    "alternatives": [
+      "claude-code",
+      "cursor",
+      "github-copilot"
+    ],
+    "source": "producthunt",
+    "addedAt": "2026-11-25",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/claude-ship.png"
+  },
+  {
+    "slug": "magi-2",
+    "name": "MAGI-2",
+    "url": "https://sand.ai/blog/magi-2/",
+    "affiliateUrl": null,
+    "category": "video",
+    "useCases": [
+      "video",
+      "design"
+    ],
+    "pricing": "paid",
+    "verdict": "Sand.ai's flagship video model, launched Nov 24, 2026: a 480B-parameter mixture-of-experts (~28B active) trained on 4T tokens. It generates up to 30 seconds of native 1080p, 25 fps video with synchronized audio, including lip-synced dialogue, foley, ambience and music, in six aspect ratios. A request can take up to 20 references (10 images, 5 videos and 5 audio clips), and the model supports timeline/shot-cut control and editing of existing video. As of Nov 25, 2026 it is available only on Higgsfield and the Higgsfield API, at USD 0.08 per second of requested video (a default 5-second clip is $0.40), with generated audio included; one MAGI-2 generation can run at a time per account. Higgsfield also sells credit plans (Starter is $19/month for 270 credits; Plus and Ultra list prices and a Black Friday sale, ending Nov 26, 2026 00:00 UTC, are on higgsfield.ai/pricing). Sand.ai says an open-source release and a technical report will follow. A smaller MAGI-2 Preview (~114B) came out in August 2026.",
+    "useThisIf": "you want longer 1080p clips with native sound and multiple image, video or audio references, and you are willing to run them through Higgsfield.",
+    "alternatives": [
+      "higgsfield",
+      "runway",
+      "pika"
+    ],
+    "source": "x",
+    "addedAt": "2026-11-25",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/magi-2.png"
   }
 ]

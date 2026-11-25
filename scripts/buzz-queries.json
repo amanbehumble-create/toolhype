@@ -291,5 +291,9 @@
   "modem": "(url:modem.ai OR \"modem.ai\" OR @usemodem OR (\"modem\" (\"customer graph\" OR \"customer concern\" OR \"customer concerns\") (ai OR agent OR slack))) -is:retweet",
   "polylane": "(polylane OR url:polylane.com OR @polylane) -is:retweet",
   "chat-with-work": "(url:chatwithwork.com OR chatwithwork OR (\"chat with work\" (bot OR bots OR Europe OR \"product hunt\" OR producthunt OR RubyLLM OR @paolino)) OR (@paolino (bot OR bots) (Europe OR launch OR launched))) -is:retweet -codex -cursor",
-  "hydrilla": "(url:hydrilla.ai OR \"hydrilla.ai\" OR (\"hydrilla\" (bluefox OR blender OR \"3d\" OR \"3D\" OR \"hawan\"))) -is:retweet"
+  "hydrilla": "(url:hydrilla.ai OR \"hydrilla.ai\" OR (\"hydrilla\" (bluefox OR blender OR \"3d\" OR \"3D\" OR \"hawan\"))) -is:retweet",
+  "granular": "(url:granular.build OR \"granular.build\" OR Granular.Build OR (Granular (workspace OR \"boss agent\" OR \"coding subscription\") (Claude OR Codex OR Gemini OR agent))) -is:retweet",
+  "clam": "(url:useclam.ai OR useclam OR \"Clam AI\" OR (Clam (Gmail OR inbox OR MCP OR Shell) (agent OR agents))) -is:retweet",
+  "claude-ship": "(\"Claude Ship\" OR ClaudeShip OR url:claude.com/product/claude-ship) -is:retweet",
+  "magi-2": "((MAGI-2 OR \"MAGI 2\" OR Magi-2) (Sand OR \"sand.ai\" OR Higgsfield OR video OR 480B)) OR url:sand.ai -is:retweet"
 }

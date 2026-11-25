@@ -7,7 +7,8 @@
     "dev": "astro dev",
     "build": "node scripts/gen-go-map.mjs && astro build",
     "preview": "astro preview",
-    "scan": "node scripts/scan.mjs"
+    "scan": "node scripts/scan.mjs",
+    "check": "node scripts/validate-catalog.mjs"
   },
   "dependencies": {
     "@fontsource-variable/funnel-display": "^5.3.0",

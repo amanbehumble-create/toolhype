@@ -8337,5 +8337,325 @@
       "updatedAt": null
     },
     "logo": "/logos/magi-2.png"
+  },
+  {
+    "slug": "antigravity",
+    "name": "Google Antigravity",
+    "url": "https://antigravity.google",
+    "affiliateUrl": null,
+    "category": "coding",
+    "useCases": [
+      "coding",
+      "agents"
+    ],
+    "pricing": "freemium",
+    "verdict": "Google's agent-first development platform: a desktop app for running local agents in parallel, a terminal CLI, an agentic IDE with IDE extensions, and a Python SDK, including browser-in-the-loop checks and scheduled tasks. Individual is $0/month, with a weekly quota and Gemini 4 Hydrogen, Gemini 3.8 Flash, Claude Sonnet 4.6, Claude Opus 4.6 and GPT-OSS-120b. The pricing page says several of those models leave on 30 Nov 2026. Google AI Pro and Ultra add quotas that refresh every 5 hours and, on paid plans, Gemini 4 Neon, Gemini 4 Carbon, Orchestrator and Claude Sonnet 5.5 and Opus 5.5. Organizations can use it through Google Cloud Gemini Enterprise from $30 per seat per month, or pay-as-you-go.",
+    "useThisIf": "you want Google's agent-first app, CLI and IDE, on the free Individual tier or on a paid Google AI plan that includes Gemini 4 Neon.",
+    "alternatives": [
+      "claude-code",
+      "cursor",
+      "codex",
+      "opencode"
+    ],
+    "source": "x",
+    "addedAt": "2026-11-25",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/antigravity.png"
+  },
+  {
+    "slug": "macswarm",
+    "name": "Macswarm",
+    "url": "https://macswarm.com/",
+    "affiliateUrl": null,
+    "category": "coding",
+    "useCases": [
+      "coding",
+      "agents"
+    ],
+    "pricing": "freemium",
+    "verdict": "Cloud macOS virtual machines (Pods) on Apple silicon for Claude Code and Codex agents that need Xcode and iOS Simulators. Each developer gets one Pod. Their agents share it, with two xcodebuild slots and a small pool of pre-booted Simulators, and the Pod is destroyed 10 minutes after the last session. Uncommitted work is pushed to a rescue branch. You bring your own Claude or OpenAI account; Macswarm bills Pod-hours, not model tokens. Free is 3 Pod-hours once, with no card. Pro is $99/month for 300 Pod-hours, then $0.40 per extra hour. Team is $399/month for 1,500, then $0.30. Enterprise starts at $3,000/month.",
+    "useThisIf": "you run Claude Code or Codex from the web, Slack or a Linux cloud session and need a real macOS and Xcode environment to build and check iOS apps.",
+    "alternatives": [
+      "claude-code",
+      "codex"
+    ],
+    "source": "submission",
+    "addedAt": "2026-11-25",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/macswarm.png"
+  },
+  {
+    "slug": "vertov",
+    "name": "Vertov",
+    "url": "https://vertov.app/",
+    "affiliateUrl": null,
+    "category": "video",
+    "useCases": [
+      "video",
+      "agents",
+      "productivity"
+    ],
+    "pricing": "freemium",
+    "verdict": "Browser and Chrome-extension screen recorder for teams and agents. You can record without an account, cut the video by deleting words in the transcript, zoom or blur a detail, draft a procedure from the transcript, import Loom videos, and hand a recording to an agent over MCP or the API. Plans are priced by stored video hours, and members and viewers are free. Free keeps 180 minutes. Pro is $9/month for 25 hours, Team is $29/month for 125 hours, and Business starts at $99/month for 500 hours. The core is AGPL-3.0. The hosted app adds sharing and a choice of US or EU storage.",
+    "useThisIf": "you want Loom-style walkthroughs priced by stored hours rather than seats, and a way for an agent to read a bug recording or upload proof.",
+    "alternatives": [
+      "descript",
+      "capcut"
+    ],
+    "source": "submission",
+    "addedAt": "2026-11-25",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/vertov.png"
+  },
+  {
+    "slug": "cadprops",
+    "name": "CADProps Connector for Claude",
+    "url": "https://www.cadprops.com/connector/",
+    "affiliateUrl": null,
+    "category": "agents",
+    "useCases": [
+      "agents",
+      "design",
+      "productivity"
+    ],
+    "pricing": "freemium",
+    "verdict": "Remote MCP connector at https://www.cadprops.com/api/v1/mcp and a browser CAD viewer. You upload one file through a one-time link so Claude can read dimensions, volume and surface area, and ask for an STL or GLB conversion. CADProps accepts 92 or more extensions, including STEP, IGES, SolidWorks, CATIA, STL and DWG/DXF. Exact B-Rep measurements and approximate mesh results are labeled separately. Guest inspection needs no account: 95 MiB, deleted about an hour after upload. A free account allows 15 uploads a day and 200 MB, plus one free 7-day share link. Conversions and Pro share links use points, sold as 20 points for $6 or 80 points for $15, paid once.",
+    "useThisIf": "you work with STEP, SolidWorks or IGES parts and want Claude to inspect geometry and measurements without a desktop CAD install.",
+    "alternatives": [
+      "claude",
+      "composio-instant"
+    ],
+    "source": "submission",
+    "addedAt": "2026-11-25",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/cadprops.png"
+  },
+  {
+    "slug": "open-agent-api",
+    "name": "Open Agent API",
+    "url": "https://openagentapi.pages.dev/en/",
+    "affiliateUrl": null,
+    "category": "agents",
+    "useCases": [
+      "agents",
+      "coding"
+    ],
+    "pricing": "open-source",
+    "verdict": "Apache-2.0 self-hosted gateway that turns local coding CLIs, including Claude Code, Codex, Antigravity, OpenCode and Qoder, and local model runners such as Ollama, LM Studio, llama.cpp and vLLM, into stateful API endpoints. Existing OpenAI, Anthropic and Gemini SDK calls can target an agent by changing the base URL. It keeps project memory in SQLite with FTS5 and pauses sensitive shell or write steps at a durable approval checkpoint. It ships as a CLI, a Docker Compose service and an Electron app, and binds to localhost by default.",
+    "useThisIf": "you want existing OpenAI, Anthropic or Gemini SDK code to call a tool-using coding agent, with approval gates and local execution.",
+    "alternatives": [
+      "opencode",
+      "claude-code",
+      "codex"
+    ],
+    "source": "submission",
+    "addedAt": "2026-11-25",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/open-agent-api.png"
+  },
+  {
+    "slug": "openlegion",
+    "name": "OpenLegion",
+    "url": "https://openlegion.ai/",
+    "affiliateUrl": null,
+    "category": "agents",
+    "useCases": [
+      "agents",
+      "coding"
+    ],
+    "pricing": "pricing not published",
+    "verdict": "Hosted agent harness for multi-tenant SaaS and AI apps, in private beta. You define an agent and its tools in code. OpenLegion runs one isolated workspace per end customer, checks tool calls against policy, pauses for human approval, meters credits against a per-customer cap, keeps secrets in a vault, and sends signed receipts and webhooks. An idle workspace uses no credits. Partner pricing is shared at onboarding. No public price was listed at our check on 25 Nov 2026, and the company says it does not claim SOC 2 or ISO 27001 yet.",
+    "useThisIf": "you want customer-facing agents inside a multi-tenant product and do not want to build tenant isolation, approval queues and spend caps yourself.",
+    "alternatives": [
+      "composio-instant",
+      "langchain",
+      "n8n"
+    ],
+    "source": "submission",
+    "addedAt": "2026-11-25",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/openlegion.png"
+  },
+  {
+    "slug": "spreadsheet-to-app",
+    "name": "Spreadsheet to App",
+    "url": "https://spreadsheettoapp.ai/",
+    "affiliateUrl": null,
+    "category": "productivity",
+    "useCases": [
+      "productivity",
+      "coding"
+    ],
+    "pricing": "freemium",
+    "verdict": "AI builder that turns an Excel workbook, a CSV or a Google Sheet into a hosted web app and keeps Google Sheets as the database. Studio shows a private preview, the generated code, and the five most recent checkpoints before you publish. Formula cells stay read-only, uploaded Excel and CSV files do not keep syncing with the original file, and the data gateway does not offer per-row permissions. Free is $0 for 1 app and 1 seat, with a limited monthly AI allowance and no card. Basic is $25/month for 5 apps and 2 seats. Pro is $75/month for 20 apps, 3 seats and 5 times Basic's weekly AI allowance. Business is $125/month for 20 apps, 3 seats and no AI allowance cap. Extra seats are $5 per person per month.",
+    "useThisIf": "your team already runs inventory, a tracker or a lightweight CRM in Google Sheets or Excel and wants a web UI without moving that data into a SQL database.",
+    "alternatives": [
+      "base44",
+      "lovable",
+      "replit"
+    ],
+    "source": "submission",
+    "addedAt": "2026-11-25",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/spreadsheet-to-app.png"
+  },
+  {
+    "slug": "reelsdk",
+    "name": "ReelSDK",
+    "url": "https://reelsdk.com/",
+    "affiliateUrl": null,
+    "category": "video",
+    "useCases": [
+      "video",
+      "agents",
+      "marketing"
+    ],
+    "pricing": "freemium",
+    "verdict": "AI generator for vertical shorts, with a REST API and a local MCP server (bitgate/reelsdk-mcp) for Claude Code, Cursor and n8n. A topic, a clip or photos becomes a 9:16 MP4 with a script, scene images, voiceover, burned-in captions and music. A short up to 60 seconds is $0.30, and up to 90 seconds is $0.45. The browser tool makes 2 shorts a day with no account, and a signup includes $0.50 of credit with no card. A $4 starter pack covers 13 shorts. Creator is $9/month for 36 shorts ($0.25 each). Build is $29/month for 120 shorts. Scale is $99/month for 430 shorts. A short that fails is not charged.",
+    "useThisIf": "you want pay-as-you-go vertical video, from a browser, a REST call or an MCP coding agent.",
+    "alternatives": [
+      "heygen",
+      "opusclip",
+      "capcut"
+    ],
+    "source": "submission",
+    "addedAt": "2026-11-25",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/reelsdk.png"
+  },
+  {
+    "slug": "queststudio",
+    "name": "QuestStudio",
+    "url": "https://queststudio.io/",
+    "affiliateUrl": null,
+    "category": "design",
+    "useCases": [
+      "design",
+      "video",
+      "marketing"
+    ],
+    "pricing": "freemium",
+    "verdict": "Creative workspace for product images, short promo videos, voiceovers and music, all drawing on one credit balance. The studio lists models including FLUX 2 Pro, Seedream 5 Pro, Nano Banana 2, Nano Banana Pro, Veo 3.1, Seedance 2.5, Kling 4.0, Runway Gen-4 Turbo, Lyria 3 and MiniMax Speech 2.8. A free account includes 5 FLUX Schnell images in total, with no card. A 7-day trial with 100 credits requires a card. Starter, Pro and Studio are monthly credit plans. Their dollar prices were not on the page checked on 25 Nov 2026.",
+    "useThisIf": "you make product shots and promo clips and want image, video, voice and music models on one credit balance, with brand kits.",
+    "alternatives": [
+      "higgsfield",
+      "krea",
+      "runway"
+    ],
+    "source": "submission",
+    "addedAt": "2026-11-25",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/queststudio.png"
+  },
+  {
+    "slug": "tiquo",
+    "name": "Tiquo",
+    "url": "https://www.tiquo.co/",
+    "affiliateUrl": null,
+    "category": "productivity",
+    "useCases": [
+      "productivity",
+      "marketing"
+    ],
+    "pricing": "paid",
+    "verdict": "Hospitality operating platform that combines POS, reservations, memberships, kitchen display, inventory, Stripe payments and CRM for restaurants, hotels, spas and other venues. Tiquo AI answers questions about your numbers and suggests customer segments and campaign drafts. Starter is £59 per product or service sublocation per month for venues under £200k a year, with card rates from 1.9% + £0.22. Launch is £300, with card rates from 1.7% + £0.22. Scale is £400, with card rates from 1.2% + £0.18. Enterprise is custom. There is no free tier.",
+    "useThisIf": "you run a restaurant, hotel, spa or venue and want POS, bookings, memberships and AI reporting in one system.",
+    "alternatives": [
+      "notion",
+      "make",
+      "zapier"
+    ],
+    "source": "submission",
+    "addedAt": "2026-11-25",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/tiquo.png"
+  },
+  {
+    "slug": "aicertmock",
+    "name": "AICertMock",
+    "url": "https://aicertmock.com/",
+    "affiliateUrl": null,
+    "category": "coding",
+    "useCases": [
+      "coding",
+      "productivity"
+    ],
+    "pricing": "freemium",
+    "verdict": "Independent practice exams for Anthropic's Claude Certified Architect (CCAR-F) exam. A free 10-question diagnostic needs no login. It scores the five domains and explains the first five questions. Starter is $4.99 once, for mock exam 1 and the rest of the diagnostic explanations. Pro Pass is $9.99 once, for all three 60-question mocks (180 questions) and a wrong-answer drill. AICertMock says it is not affiliated with, endorsed by or sponsored by Anthropic. Unused passes can be refunded within 7 days, or within 14 days in the EU and EEA.",
+    "useThisIf": "you are preparing for the CCAR-F exam and want scenario questions mapped to its five domains.",
+    "alternatives": [
+      "claude-code",
+      "claude"
+    ],
+    "source": "submission",
+    "addedAt": "2026-11-25",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/aicertmock.png"
   }
 ]

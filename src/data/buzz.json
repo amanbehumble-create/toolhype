@@ -1,5 +1,5 @@
 {
- "computedAt": "2026-11-25T01:30:49.503Z",
+ "computedAt": "2026-11-25T13:30:31.781Z",
  "method": "v1",
  "tools": {
   "inbox-zero": {
@@ -9954,51 +9954,75 @@
   "gemini-4-neon": {
    "status": "live",
    "query": "(\"gemini 4 neon\" OR \"gemini-4-neon\" OR \"gemini neon\") -is:retweet",
-   "mentions24h": 4340,
-   "mentions7d": 35850,
-   "priorDailyAvg": 5386.4,
-   "velocity": 0.81,
+   "mentions24h": 4058,
+   "mentions7d": 37427,
+   "priorDailyAvg": 5567.9,
+   "velocity": 0.73,
    "daily": [
-    3218,
-    9737,
-    5186,
-    4126,
-    4523,
-    4720,
-    4340
+    8987,
+    6728,
+    4279,
+    4398,
+    4653,
+    4324,
+    4058
    ],
-   "peakDay": 9737,
-   "peakDaysAgo": 5,
+   "peakDay": 8987,
+   "peakDaysAgo": 6,
    "sample": {
-    "posts": 12,
-    "likes": 255,
-    "reposts": 30,
-    "replies": 10
+    "posts": 30,
+    "likes": 33122,
+    "reposts": 1419,
+    "replies": 1299
    },
    "parts": {
-    "volume": 45.5,
+    "volume": 45.7,
     "velocity": 0,
-    "engagement": 12.8
+    "engagement": 23
    },
-   "score": 58,
-   "label": "steady",
-   "viral": false,
+   "score": 69,
+   "label": "hype",
+   "viral": true,
    "topPosts": [
     {
-     "id": "2123201737217773826",
-     "url": "https://x.com/Msfs2000J/status/2123201737217773826",
-     "author": "Msfs2000J",
-     "text": "メタクエスト版VRシューティングゲーム「H3VR2」の弾薬についての詳細を、本日リリースのGemini 4 Neonでまとめました。\n\n#MetaQuest #VRゲーム #シューティング #h3vr2 #Gemini #Neon https://t.co/eWyBbdeDd7",
-     "created_at": "2026-11-18T23:48:35.000Z",
-     "likes": 203,
-     "reposts": 26,
-     "replies": 2,
-     "views": 8484,
-     "quotes": 0
+     "id": "2124860839572488538",
+     "url": "https://x.com/dhh/status/2124860839572488538",
+     "author": "dhh",
+     "text": "Gemini 4 Neon is indeed crazy good. Cut Omarchy boot time in half!! Big optimizations on install as well. It's a quiet cat, though. Just goes off with very little output while it's working, and then, BAM, here's…",
+     "created_at": "2026-11-23T13:41:16.000Z",
+     "likes": 15318,
+     "reposts": 573,
+     "replies": 390,
+     "views": 845528,
+     "quotes": 118
+    },
+    {
+     "id": "2124949501534171477",
+     "url": "https://x.com/dhh/status/2124949501534171477",
+     "author": "dhh",
+     "text": "I don't know how long the largesse with Gemini 4 Neon is going to last, but I literally had it running across 6 computers today as I was optimizing for machines across Intel, AMD, and NVIDIA. I didn't exhaust the…",
+     "created_at": "2026-11-23T19:33:35.000Z",
+     "likes": 9041,
+     "reposts": 233,
+     "replies": 363,
+     "views": 417448,
+     "quotes": 79
+    },
+    {
+     "id": "2123176067380711725",
+     "url": "https://x.com/antigravity/status/2123176067380711725",
+     "author": "antigravity",
+     "text": "Gemini 4 Neon is rolling out in Google Antigravity!\n\nBringing frontier-level intelligence and ranking #1 on the Artificial Analysis Coding Agent Index, Neon is rolling out today across the desktop app, CLI, and IDE…",
+     "created_at": "2026-11-18T22:06:35.000Z",
+     "likes": 3488,
+     "reposts": 268,
+     "replies": 160,
+     "views": 260648,
+     "quotes": 88
     }
    ],
-   "sampleAsOf": "2026-11-23T01:17:35.752Z",
-   "computedAt": "2026-11-25T01:30:49.503Z"
+   "sampleAsOf": "2026-11-25T13:30:31.781Z",
+   "computedAt": "2026-11-25T13:30:31.781Z"
   },
   "genie-4": {
    "status": "live",
@@ -10719,6 +10743,119 @@
    "topPosts": [],
    "sampleAsOf": "2026-11-25T01:30:49.503Z",
    "computedAt": "2026-11-25T01:30:49.503Z"
+  },
+  "antigravity": {
+   "status": "live",
+   "query": "(@antigravity OR url:antigravity.google OR \"google antigravity\" OR (antigravity (agy OR gemini OR cli OR ide OR mcp OR quota OR windsurf))) -is:retweet",
+   "mentions24h": 5954,
+   "mentions7d": 27748,
+   "priorDailyAvg": 3636.5,
+   "velocity": 1.64,
+   "daily": [
+    3596,
+    3993,
+    3697,
+    3199,
+    2850,
+    4459,
+    5954
+   ],
+   "peakDay": 5954,
+   "peakDaysAgo": 0,
+   "sample": {
+    "posts": 33,
+    "likes": 64654,
+    "reposts": 3357,
+    "replies": 4145
+   },
+   "parts": {
+    "volume": 44.4,
+    "velocity": 8.9,
+    "engagement": 24.7
+   },
+   "score": 78,
+   "label": "hype",
+   "viral": true,
+   "topPosts": [
+    {
+     "id": "2125311868168515603",
+     "url": "https://x.com/sundarpichai/status/2125311868168515603",
+     "author": "sundarpichai",
+     "text": "Neon set a new Day-1 usage record on our paid APIs and @Antigravity tokens/day are ⬆️ 82% since Argon launched (only) 6 weeks ago.\n\nIt's been great to see the reception and thanks for all the model feedback including…",
+     "created_at": "2026-11-24T19:33:30.000Z",
+     "likes": 16523,
+     "reposts": 859,
+     "replies": 765,
+     "views": 2601163,
+     "quotes": 291
+    },
+    {
+     "id": "2124960419429458207",
+     "url": "https://x.com/_mohansolo/status/2124960419429458207",
+     "author": "_mohansolo",
+     "text": "Resetting Gemini quotas for everyone on Antigravity because we’re upgrading models across tiers!\n\nPaid Pro users will now have access to Carbon and Hydrogen will be available to all users as promised!\n\nAnd as always,…",
+     "created_at": "2026-11-23T20:16:58.000Z",
+     "likes": 20106,
+     "reposts": 1109,
+     "replies": 1629,
+     "views": 1590404,
+     "quotes": 942
+    },
+    {
+     "id": "2125337132021780867",
+     "url": "https://x.com/_mohansolo/status/2125337132021780867",
+     "author": "_mohansolo",
+     "text": "We've optimized the AGY harness even more in the new release.\n\nOn Neon, it now consumes 12% less quota per task and finishes tasks 17% faster!\n\nWe are relentlessly making Antigravity better, cheaper, and faster for our…",
+     "created_at": "2026-11-24T21:13:53.000Z",
+     "likes": 6853,
+     "reposts": 217,
+     "replies": 592,
+     "views": 266144,
+     "quotes": 119
+    }
+   ],
+   "sampleAsOf": "2026-11-25T13:30:31.781Z",
+   "computedAt": "2026-11-25T13:30:31.781Z"
+  },
+  "macswarm": {
+   "status": "pending",
+   "query": "(macswarm OR url:macswarm.com) -is:retweet"
+  },
+  "vertov": {
+   "status": "pending",
+   "query": "(url:vertov.app OR \"vertov.app\" OR (vertov (screen OR recording OR loom OR mcp OR transcript))) -is:retweet"
+  },
+  "cadprops": {
+   "status": "pending",
+   "query": "(cadprops OR url:cadprops.com) -is:retweet"
+  },
+  "open-agent-api": {
+   "status": "pending",
+   "query": "(\"open agent api\" OR openagentapi OR url:openagentapi.pages.dev OR \"Open-Agent-API\") -is:retweet"
+  },
+  "openlegion": {
+   "status": "pending",
+   "query": "(openlegion OR url:openlegion.ai) -is:retweet"
+  },
+  "spreadsheet-to-app": {
+   "status": "pending",
+   "query": "(spreadsheettoapp OR url:spreadsheettoapp.ai OR \"spreadsheet to app\") -is:retweet"
+  },
+  "reelsdk": {
+   "status": "pending",
+   "query": "(reelsdk OR url:reelsdk.com OR \"bitgate/reelsdk-mcp\") -is:retweet"
+  },
+  "queststudio": {
+   "status": "pending",
+   "query": "(queststudio OR url:queststudio.io) -is:retweet"
+  },
+  "tiquo": {
+   "status": "pending",
+   "query": "(tiquo OR url:tiquo.co) -is:retweet"
+  },
+  "aicertmock": {
+   "status": "pending",
+   "query": "(aicertmock OR url:aicertmock.com OR \"ai cert mock\") -is:retweet"
   }
  }
 }

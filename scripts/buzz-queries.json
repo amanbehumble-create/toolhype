@@ -295,5 +295,16 @@
   "granular": "(url:granular.build OR \"granular.build\" OR Granular.Build OR (Granular (workspace OR \"boss agent\" OR \"coding subscription\") (Claude OR Codex OR Gemini OR agent))) -is:retweet",
   "clam": "(url:useclam.ai OR useclam OR \"Clam AI\" OR (Clam (Gmail OR inbox OR MCP OR Shell) (agent OR agents))) -is:retweet",
   "claude-ship": "(\"Claude Ship\" OR ClaudeShip OR url:claude.com/product/claude-ship) -is:retweet",
-  "magi-2": "((MAGI-2 OR \"MAGI 2\" OR Magi-2) (Sand OR \"sand.ai\" OR Higgsfield OR video OR 480B)) OR url:sand.ai -is:retweet"
+  "magi-2": "((MAGI-2 OR \"MAGI 2\" OR Magi-2) (Sand OR \"sand.ai\" OR Higgsfield OR video OR 480B)) OR url:sand.ai -is:retweet",
+  "antigravity": "(@antigravity OR url:antigravity.google OR \"google antigravity\" OR (antigravity (agy OR gemini OR cli OR ide OR mcp OR quota OR windsurf))) -is:retweet",
+  "macswarm": "(macswarm OR url:macswarm.com) -is:retweet",
+  "vertov": "(url:vertov.app OR \"vertov.app\" OR (vertov (screen OR recording OR loom OR mcp OR transcript))) -is:retweet",
+  "cadprops": "(cadprops OR url:cadprops.com) -is:retweet",
+  "open-agent-api": "(\"open agent api\" OR openagentapi OR url:openagentapi.pages.dev OR \"Open-Agent-API\") -is:retweet",
+  "openlegion": "(openlegion OR url:openlegion.ai) -is:retweet",
+  "spreadsheet-to-app": "(spreadsheettoapp OR url:spreadsheettoapp.ai OR \"spreadsheet to app\") -is:retweet",
+  "reelsdk": "(reelsdk OR url:reelsdk.com OR \"bitgate/reelsdk-mcp\") -is:retweet",
+  "queststudio": "(queststudio OR url:queststudio.io) -is:retweet",
+  "tiquo": "(tiquo OR url:tiquo.co) -is:retweet",
+  "aicertmock": "(aicertmock OR url:aicertmock.com OR \"ai cert mock\") -is:retweet"
 }

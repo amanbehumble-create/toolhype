@@ -1,5 +1,5 @@
 {
- "computedAt": "2026-11-25T13:30:31.781Z",
+ "computedAt": "2026-11-25T01:30:49.503Z",
  "method": "v1",
  "tools": {
   "inbox-zero": {
@@ -833,38 +833,75 @@
   "opencode": {
    "status": "live",
    "query": "(opencode OR \"open code\" sst OR url:opencode.ai) -is:retweet",
-   "mentions24h": 2141,
-   "mentions7d": 15248,
-   "priorDailyAvg": 2185,
-   "velocity": 0.98,
+   "mentions24h": 2226,
+   "mentions7d": 14526,
+   "priorDailyAvg": 2058.6,
+   "velocity": 1.08,
    "daily": [
-    3055,
-    4017,
-    1431,
-    1344,
-    1622,
-    1638,
-    2141
+    3945,
+    2010,
+    1284,
+    1658,
+    1440,
+    1963,
+    2226
    ],
-   "peakDay": 4017,
-   "peakDaysAgo": 5,
+   "peakDay": 3945,
+   "peakDaysAgo": 6,
    "sample": {
-    "posts": 25,
-    "likes": 211,
-    "reposts": 6,
-    "replies": 32
+    "posts": 44,
+    "likes": 55097,
+    "reposts": 2485,
+    "replies": 3772
    },
    "parts": {
-    "volume": 41.8,
-    "velocity": 0,
-    "engagement": 12.3
+    "volume": 41.6,
+    "velocity": 1.4,
+    "engagement": 24.2
    },
-   "score": 54,
+   "score": 67,
    "label": "steady",
    "viral": false,
-   "topPosts": [],
-   "sampleAsOf": "2026-11-11T01:25:06.913Z",
-   "computedAt": "2026-11-25T01:30:49.503Z"
+   "topPosts": [
+    {
+     "id": "2123631275454181856",
+     "url": "https://x.com/nonnbiri_maru/status/2123631275454181856",
+     "author": "nonnbiri_maru",
+     "text": "我が家のAI状況はこんな感じ\nOpenCodeとChatGPTは今月で解約してClaudeとGeminiだけになる予定\n常時起動予定のAIマシンは3台でMuse互換システムに2台、対話•コーディング用途に1台 https://t.co/m9Kp952jVR",
+     "created_at": "2026-11-20T04:15:25.000Z",
+     "likes": 4691,
+     "reposts": 305,
+     "replies": 44,
+     "views": 993859,
+     "quotes": 99
+    },
+    {
+     "id": "2124265178267005017",
+     "url": "https://x.com/opencode/status/2124265178267005017",
+     "author": "opencode",
+     "text": "GLM 5.3 and DeepSeek V4.1 Flash are now 60% off in OpenCode",
+     "created_at": "2026-11-21T22:14:20.000Z",
+     "likes": 4965,
+     "reposts": 147,
+     "replies": 180,
+     "views": 648729,
+     "quotes": 127
+    },
+    {
+     "id": "2123297341679554787",
+     "url": "https://x.com/opencode/status/2123297341679554787",
+     "author": "opencode",
+     "text": "whoever finds and posts a pic of dax's favorite ice cream shop in GTA6 gets 1 year of OpenCode Go for free\n\nhint he lives in Peacock Bay",
+     "created_at": "2026-11-19T06:08:29.000Z",
+     "likes": 3541,
+     "reposts": 73,
+     "replies": 1848,
+     "views": 342024,
+     "quotes": 30
+    }
+   ],
+   "sampleAsOf": "2026-11-25T13:55:41.319Z",
+   "computedAt": "2026-11-25T13:55:41.319Z"
   },
   "indra": {
    "status": "live",
@@ -1157,146 +1194,294 @@
   "chatgpt": {
    "status": "live",
    "query": "(chatgpt OR url:chatgpt.com) -is:retweet",
-   "mentions24h": 37930,
-   "mentions7d": 224931,
-   "priorDailyAvg": 31167.3,
-   "velocity": 1.22,
+   "mentions24h": 34605,
+   "mentions7d": 222586,
+   "priorDailyAvg": 31461.3,
+   "velocity": 1.1,
    "daily": [
-    33326,
-    32135,
-    32563,
-    28769,
-    27897,
-    32311,
-    37930
+    31340,
+    33051,
+    30556,
+    27904,
+    29193,
+    35937,
+    34605
    ],
-   "peakDay": 37930,
-   "peakDaysAgo": 0,
+   "peakDay": 35937,
+   "peakDaysAgo": 1,
    "sample": {
-    "posts": 25,
-    "likes": 124,
-    "reposts": 26,
-    "replies": 10
+    "posts": 48,
+    "likes": 143186,
+    "reposts": 11680,
+    "replies": 2564
    },
    "parts": {
     "volume": 50,
-    "velocity": 3.6,
-    "engagement": 11.7
+    "velocity": 1.7,
+    "engagement": 25
    },
-   "score": 65,
-   "label": "steady",
-   "viral": false,
-   "topPosts": [],
-   "sampleAsOf": "2026-11-17T01:28:28.794Z",
-   "computedAt": "2026-11-25T01:30:49.503Z"
+   "score": 77,
+   "label": "hype",
+   "viral": true,
+   "topPosts": [
+    {
+     "id": "2123521704689299683",
+     "url": "https://x.com/notede_1manen/status/2123521704689299683",
+     "author": "notede_1manen",
+     "text": "これ知って秒でChatGPT解約したわ…\n\n🇯🇵日本\n・ChatGPT：月3,000円\n・Claude：月3,000円\n・Gemini：月2,900円\n（全部で月約9,000円。年間約11万円）\n\n🇺🇸アメリカ↓",
+     "created_at": "2026-11-19T21:00:02.000Z",
+     "likes": 1979,
+     "reposts": 82,
+     "replies": 66,
+     "views": 3961739,
+     "quotes": 20
+    },
+    {
+     "id": "2124594567832084608",
+     "url": "https://x.com/slyss12/status/2124594567832084608",
+     "author": "slyss12",
+     "text": "Claude qui supprime ChatGPT. https://t.co/EZQiLWvt5i https://t.co/HDOhf0akyJ",
+     "created_at": "2026-11-22T20:03:12.000Z",
+     "likes": 31002,
+     "reposts": 1851,
+     "replies": 9,
+     "views": 270533,
+     "quotes": 3
+    },
+    {
+     "id": "2124616226936881502",
+     "url": "https://x.com/paliarrows/status/2124616226936881502",
+     "author": "paliarrows",
+     "text": "Israel’s ChatGPT prompt: “Design a national costume featuring all Palestinian national symbols” https://t.co/SEl9NCICyP",
+     "created_at": "2026-11-22T21:29:16.000Z",
+     "likes": 28542,
+     "reposts": 1509,
+     "replies": 29,
+     "views": 228023,
+     "quotes": 3
+    }
+   ],
+   "sampleAsOf": "2026-11-25T13:55:41.319Z",
+   "computedAt": "2026-11-25T13:55:41.319Z"
   },
   "claude": {
    "status": "live",
    "query": "(\"claude ai\" OR \"claude.ai\" OR @claudeai OR (claude anthropic)) -is:retweet",
-   "mentions24h": 10480,
-   "mentions7d": 62953,
-   "priorDailyAvg": 8745.7,
-   "velocity": 1.2,
+   "mentions24h": 9851,
+   "mentions7d": 63563,
+   "priorDailyAvg": 8989.5,
+   "velocity": 1.1,
    "daily": [
-    7389,
-    11265,
-    10901,
-    8815,
-    6656,
-    7447,
-    10480
+    8232,
+    11029,
+    11419,
+    7421,
+    6653,
+    8958,
+    9851
    ],
-   "peakDay": 11265,
-   "peakDaysAgo": 5,
+   "peakDay": 11419,
+   "peakDaysAgo": 4,
    "sample": {
-    "posts": 25,
-    "likes": 247,
-    "reposts": 91,
-    "replies": 84
+    "posts": 50,
+    "likes": 117561,
+    "reposts": 15855,
+    "replies": 2067
    },
    "parts": {
     "volume": 48,
-    "velocity": 3.3,
-    "engagement": 14.2
+    "velocity": 1.7,
+    "engagement": 25
    },
-   "score": 65,
-   "label": "steady",
-   "viral": false,
-   "topPosts": [],
-   "sampleAsOf": "2026-11-12T01:17:09.804Z",
-   "computedAt": "2026-11-25T01:30:49.503Z"
+   "score": 75,
+   "label": "hype",
+   "viral": true,
+   "topPosts": [
+    {
+     "id": "2123589950985933279",
+     "url": "https://x.com/Crypto_hedyEth/status/2123589950985933279",
+     "author": "Crypto_hedyEth",
+     "text": "疯了，这事儿真的离谱。\n\nAnthropic 的 CEO Dario Amodei 被问到，一个刚高中毕业的年轻人今天该做什么。\n\n他的回答：\n\n“AI 已经会干初级律师的活了。初级金融分析师的活。初级顾问的活。\n我们不能否认它也会消灭工作岗位，而且可能是大量岗位”。\n\n几分钟里，他列出了最先消失的职业，以及能让你留在牌桌上的那项技能。\n\n他的建议归结为一句话：\n\n“显然，是学会用 AI”。\n\n今年就开始学的人，不会去跟 AI…",
+     "created_at": "2026-11-20T01:31:13.000Z",
+     "likes": 10488,
+     "reposts": 2499,
+     "replies": 209,
+     "views": 2413349,
+     "quotes": 82
+    },
+    {
+     "id": "2124564542856282271",
+     "url": "https://x.com/999toba/status/2124564542856282271",
+     "author": "999toba",
+     "text": "Dos ingenieros de Anthropic pasaron 24 minutos exponiendo cada función de Claude Code que no sabías que existía y gratis.\n\nLa mayoría de las personas pasarán de largo este contenido\n\nGuarda esto para no perderlo 🏷️…",
+     "created_at": "2026-11-22T18:03:54.000Z",
+     "likes": 10858,
+     "reposts": 988,
+     "replies": 92,
+     "views": 1689725,
+     "quotes": 34
+    },
+    {
+     "id": "2124569368482730083",
+     "url": "https://x.com/txbrraa/status/2124569368482730083",
+     "author": "txbrraa",
+     "text": "yo viendo a dos ingenieros de Anthropic durante 24 minutos y dándome cuenta de que he estado usando Claude Code como un mono https://t.co/F29CImWOIK https://t.co/UCUGtbMDtu",
+     "created_at": "2026-11-22T18:23:04.000Z",
+     "likes": 12691,
+     "reposts": 557,
+     "replies": 34,
+     "views": 1258195,
+     "quotes": 8
+    }
+   ],
+   "sampleAsOf": "2026-11-25T13:55:41.319Z",
+   "computedAt": "2026-11-25T13:55:41.319Z"
   },
   "gemini": {
    "status": "live",
    "query": "(\"google gemini\" OR \"gemini app\" OR @GeminiApp OR url:gemini.google.com) -is:retweet",
-   "mentions24h": 2941,
-   "mentions7d": 19869,
-   "priorDailyAvg": 2821.4,
-   "velocity": 1.04,
+   "mentions24h": 2965,
+   "mentions7d": 19784,
+   "priorDailyAvg": 2814.9,
+   "velocity": 1.05,
    "daily": [
-    2859,
-    3884,
-    3394,
-    2632,
-    2042,
-    2117,
-    2941
+    3518,
+    3558,
+    3302,
+    2082,
+    1988,
+    2371,
+    2965
    ],
-   "peakDay": 3884,
+   "peakDay": 3558,
    "peakDaysAgo": 5,
    "sample": {
-    "posts": 25,
-    "likes": 489,
-    "reposts": 13,
-    "replies": 55
+    "posts": 49,
+    "likes": 52476,
+    "reposts": 3726,
+    "replies": 2390
    },
    "parts": {
     "volume": 43,
-    "velocity": 0.7,
-    "engagement": 14
+    "velocity": 0.9,
+    "engagement": 24.2
    },
-   "score": 58,
+   "score": 68,
    "label": "steady",
    "viral": false,
-   "topPosts": [],
-   "sampleAsOf": "2026-11-11T01:25:06.913Z",
-   "computedAt": "2026-11-25T01:30:49.503Z"
+   "topPosts": [
+    {
+     "id": "2123513203745538423",
+     "url": "https://x.com/GeminiApp/status/2123513203745538423",
+     "author": "GeminiApp",
+     "text": "With computer use in the Gemini app for Mac, you can now hand off tasks across your folders, apps, and the web, while your screen and cursor stay yours.\n\nWatch Gemini click, scroll, and type in a live background window,…",
+     "created_at": "2026-11-19T20:26:15.000Z",
+     "likes": 2613,
+     "reposts": 234,
+     "replies": 246,
+     "views": 799616,
+     "quotes": 315
+    },
+    {
+     "id": "2123263761570300229",
+     "url": "https://x.com/vikaskansalHQ/status/2123263761570300229",
+     "author": "vikaskansalHQ",
+     "text": "The math on the $100 Google AI Ultra plan is honestly not mathing 🤯\n\nFor $100/mo, you get:\n✨ Gemini Carbon access for Antigravity & the Gemini app\n☁️ $40/mo in Google Cloud credits\n📺 YouTube Premium Family plan ($27…",
+     "created_at": "2026-11-19T03:55:03.000Z",
+     "likes": 3235,
+     "reposts": 103,
+     "replies": 320,
+     "views": 700529,
+     "quotes": 80
+    },
+    {
+     "id": "2123808751178109290",
+     "url": "https://x.com/Arsenal/status/2123808751178109290",
+     "author": "Arsenal",
+     "text": "How sharp is your memory of our season so far? 🤔\n\n🤝 @GeminiApp https://t.co/2dzyXL4S75",
+     "created_at": "2026-11-20T16:00:39.000Z",
+     "likes": 4595,
+     "reposts": 372,
+     "replies": 97,
+     "views": 299285,
+     "quotes": 24
+    }
+   ],
+   "sampleAsOf": "2026-11-25T13:55:41.319Z",
+   "computedAt": "2026-11-25T13:55:41.319Z"
   },
   "grok": {
    "status": "live",
    "query": "(grok OR url:grok.com) -is:retweet -\"@grok is this true\" -is:reply",
-   "mentions24h": 60534,
-   "mentions7d": 365719,
-   "priorDailyAvg": 50865,
-   "velocity": 1.19,
+   "mentions24h": 59732,
+   "mentions7d": 368770,
+   "priorDailyAvg": 51721.8,
+   "velocity": 1.15,
    "daily": [
-    45993,
-    52453,
-    50304,
-    51374,
-    49376,
-    55685,
-    60534
+    50393,
+    50599,
+    51139,
+    49756,
+    51319,
+    55832,
+    59732
    ],
-   "peakDay": 60534,
+   "peakDay": 59732,
    "peakDaysAgo": 0,
    "sample": {
-    "posts": 25,
-    "likes": 26,
-    "reposts": 12,
-    "replies": 16
+    "posts": 48,
+    "likes": 62392,
+    "reposts": 8282,
+    "replies": 3266
    },
    "parts": {
     "volume": 50,
-    "velocity": 3.1,
-    "engagement": 9.9
+    "velocity": 2.5,
+    "engagement": 24.9
    },
-   "score": 63,
-   "label": "steady",
-   "viral": false,
-   "topPosts": [],
-   "sampleAsOf": "2026-11-17T01:28:28.794Z",
-   "computedAt": "2026-11-25T01:30:49.503Z"
+   "score": 77,
+   "label": "hype",
+   "viral": true,
+   "topPosts": [
+    {
+     "id": "2123417350234136746",
+     "url": "https://x.com/Texas_Twins_Dad/status/2123417350234136746",
+     "author": "Texas_Twins_Dad",
+     "text": "I wake up in the morning, and Grok Bot has already opened multiple PRs, run the tests, and merged them. Having Grok Bot is like hiring a team that never sleeps.",
+     "created_at": "2026-11-19T14:05:22.000Z",
+     "likes": 1136,
+     "reposts": 73,
+     "replies": 138,
+     "views": 4768486,
+     "quotes": 19
+    },
+    {
+     "id": "2123827993382687217",
+     "url": "https://x.com/elonmusk/status/2123827993382687217",
+     "author": "elonmusk",
+     "text": "Made with Grok @Bot\nhttps://t.co/b1rXfw9h4K",
+     "created_at": "2026-11-20T17:17:07.000Z",
+     "likes": 4821,
+     "reposts": 1234,
+     "replies": 1028,
+     "views": 2627097,
+     "quotes": 212
+    },
+    {
+     "id": "2125418528513892403",
+     "url": "https://x.com/stepfanie/status/2125418528513892403",
+     "author": "stepfanie",
+     "text": "My dad and stepmom got a Model Y Performance last week and called me from the road today asking how to create a free X account so they could get more Grok credits in the car\n\nI’m like, what?? You don’t need an X account…",
+     "created_at": "2026-11-25T02:37:20.000Z",
+     "likes": 6231,
+     "reposts": 301,
+     "replies": 142,
+     "views": 1290127,
+     "quotes": 33
+    }
+   ],
+   "sampleAsOf": "2026-11-25T13:55:41.319Z",
+   "computedAt": "2026-11-25T13:55:41.319Z"
   },
   "perplexity": {
    "status": "live",
@@ -1337,38 +1522,51 @@
   "cursor": {
    "status": "live",
    "query": "(\"cursor ai\" OR @cursor_ai OR url:cursor.com OR \"cursor ide\" OR \"cursor agent\") -is:retweet",
-   "mentions24h": 628,
-   "mentions7d": 4392,
-   "priorDailyAvg": 627.3,
-   "velocity": 1,
+   "mentions24h": 600,
+   "mentions7d": 4265,
+   "priorDailyAvg": 613.4,
+   "velocity": 0.98,
    "daily": [
-    722,
-    788,
-    841,
-    671,
-    344,
-    398,
-    628
+    818,
+    747,
+    752,
+    513,
+    332,
+    503,
+    600
    ],
-   "peakDay": 841,
-   "peakDaysAgo": 4,
+   "peakDay": 818,
+   "peakDaysAgo": 6,
    "sample": {
-    "posts": 25,
-    "likes": 8,
-    "reposts": 0,
-    "replies": 12
+    "posts": 29,
+    "likes": 6504,
+    "reposts": 1173,
+    "replies": 428
    },
    "parts": {
-    "volume": 36.4,
+    "volume": 36.3,
     "velocity": 0,
-    "engagement": 7.6
+    "engagement": 20.2
    },
-   "score": 44,
+   "score": 56,
    "label": "steady",
    "viral": false,
-   "topPosts": [],
-   "sampleAsOf": "2026-11-11T01:25:06.913Z",
-   "computedAt": "2026-11-25T01:30:49.503Z"
+   "topPosts": [
+    {
+     "id": "2123581429128774079",
+     "url": "https://x.com/GrokInsider/status/2123581429128774079",
+     "author": "GrokInsider",
+     "text": "Big changes coming soon to @spacexai\n\n@Grok and @Cursor_ai 👀",
+     "created_at": "2026-11-20T00:57:21.000Z",
+     "likes": 1102,
+     "reposts": 34,
+     "replies": 103,
+     "views": 91493,
+     "quotes": 17
+    }
+   ],
+   "sampleAsOf": "2026-11-25T13:55:41.319Z",
+   "computedAt": "2026-11-25T13:55:41.319Z"
   },
   "github-copilot": {
    "status": "live",
@@ -1445,38 +1643,75 @@
   "claude-code": {
    "status": "live",
    "query": "(\"claude code\" OR claudecode) -is:retweet",
-   "mentions24h": 11937,
-   "mentions7d": 71159,
-   "priorDailyAvg": 9870.5,
-   "velocity": 1.21,
+   "mentions24h": 11788,
+   "mentions7d": 70839,
+   "priorDailyAvg": 9883,
+   "velocity": 1.19,
    "daily": [
-    10566,
-    11103,
-    9897,
-    8685,
-    8800,
-    10171,
-    11937
+    10015,
+    11048,
+    9082,
+    8843,
+    9520,
+    10543,
+    11788
    ],
-   "peakDay": 11937,
+   "peakDay": 11788,
    "peakDaysAgo": 0,
    "sample": {
-    "posts": 25,
-    "likes": 121,
-    "reposts": 74,
-    "replies": 19
+    "posts": 50,
+    "likes": 87460,
+    "reposts": 6892,
+    "replies": 1962
    },
    "parts": {
     "volume": 48.5,
-    "velocity": 3.4,
-    "engagement": 12.9
+    "velocity": 3.1,
+    "engagement": 25
    },
-   "score": 65,
-   "label": "steady",
-   "viral": false,
-   "topPosts": [],
-   "sampleAsOf": "2026-11-12T01:17:09.804Z",
-   "computedAt": "2026-11-25T01:30:49.503Z"
+   "score": 77,
+   "label": "hype",
+   "viral": true,
+   "topPosts": [
+    {
+     "id": "2124196649060737275",
+     "url": "https://x.com/999toba/status/2124196649060737275",
+     "author": "999toba",
+     "text": "🚨 CLAUDE CODE HA ROTO LA ECONOMÍA DE GTA 6 EN 40 MINUTOS Y HA GENERADO 89 MILLONES MIENTRAS YO DORMÍA\n\nLe di a Claude Code acceso a la pantalla y le pedí que encontrara la forma más rápida de hacer dinero.\n\nA la mañana…",
+     "created_at": "2026-11-21T17:42:01.000Z",
+     "likes": 8980,
+     "reposts": 412,
+     "replies": 427,
+     "views": 3677058,
+     "quotes": 149
+    },
+    {
+     "id": "2124564542856282271",
+     "url": "https://x.com/999toba/status/2124564542856282271",
+     "author": "999toba",
+     "text": "Dos ingenieros de Anthropic pasaron 24 minutos exponiendo cada función de Claude Code que no sabías que existía y gratis.\n\nLa mayoría de las personas pasarán de largo este contenido\n\nGuarda esto para no perderlo 🏷️…",
+     "created_at": "2026-11-22T18:03:54.000Z",
+     "likes": 10858,
+     "reposts": 988,
+     "replies": 92,
+     "views": 1689725,
+     "quotes": 34
+    },
+    {
+     "id": "2124569368482730083",
+     "url": "https://x.com/txbrraa/status/2124569368482730083",
+     "author": "txbrraa",
+     "text": "yo viendo a dos ingenieros de Anthropic durante 24 minutos y dándome cuenta de que he estado usando Claude Code como un mono https://t.co/F29CImWOIK https://t.co/UCUGtbMDtu",
+     "created_at": "2026-11-22T18:23:04.000Z",
+     "likes": 12691,
+     "reposts": 557,
+     "replies": 34,
+     "views": 1258195,
+     "quotes": 8
+    }
+   ],
+   "sampleAsOf": "2026-11-25T13:55:41.319Z",
+   "computedAt": "2026-11-25T13:55:41.319Z"
   },
   "aider": {
    "status": "live",
@@ -1841,38 +2076,75 @@
   "midjourney": {
    "status": "live",
    "query": "(midjourney OR url:midjourney.com) -is:retweet",
-   "mentions24h": 1071,
-   "mentions7d": 5626,
-   "priorDailyAvg": 759.2,
-   "velocity": 1.41,
+   "mentions24h": 1435,
+   "mentions7d": 5933,
+   "priorDailyAvg": 752.8,
+   "velocity": 1.91,
    "daily": [
-    796,
-    723,
-    842,
-    726,
-    717,
-    751,
-    1071
+    677,
+    839,
+    743,
+    690,
+    777,
+    772,
+    1435
    ],
-   "peakDay": 1071,
+   "peakDay": 1435,
    "peakDaysAgo": 0,
    "sample": {
-    "posts": 25,
-    "likes": 19,
-    "reposts": 1,
-    "replies": 7
+    "posts": 30,
+    "likes": 10992,
+    "reposts": 2169,
+    "replies": 260
    },
    "parts": {
-    "volume": 37.5,
-    "velocity": 6.2,
-    "engagement": 7.8
+    "volume": 37.7,
+    "velocity": 11.7,
+    "engagement": 21.3
    },
-   "score": 52,
+   "score": 71,
    "label": "rising",
    "viral": false,
-   "topPosts": [],
-   "sampleAsOf": "2026-11-06T01:20:03.932Z",
-   "computedAt": "2026-11-25T01:30:49.503Z"
+   "topPosts": [
+    {
+     "id": "2123859657747812733",
+     "url": "https://x.com/Elochoaa__/status/2123859657747812733",
+     "author": "Elochoaa__",
+     "text": "30 SITIOS WEB DE IA QUE PARECEN ILEGALES PERO SON TOTALMENTE LEGALES, TODOS TE AYUDAN A AHORRAR DINERO.\n\n1. https://t.co/HBmLg8nAYU — Generación de imágenes ilimitada y gratuita, calidad cercana a Midjourney\n\n2.…",
+     "created_at": "2026-11-20T19:22:56.000Z",
+     "likes": 4001,
+     "reposts": 753,
+     "replies": 31,
+     "views": 337929,
+     "quotes": 22
+    },
+    {
+     "id": "2124146499986878531",
+     "url": "https://x.com/ChantoziQ/status/2124146499986878531",
+     "author": "ChantoziQ",
+     "text": "20 个看起来像开挂的 AI 网站，其实全合法，而且全免费。\n\n1.  https://t.co/gTkhu5eyQF——免费无限生图，质量接近 Midjourney\n\n2.  https://t.co/bkg7BG29aY——实时生图，画出来立刻就能看到\n\n3.  https://t.co/7OaDM9E7lP——图片无损放大，细节自动补全\n\n4.  https://t.co/dpgqN06vla——一键抠图、修光、擦除\n\n5.…",
+     "created_at": "2026-11-21T14:22:44.000Z",
+     "likes": 1809,
+     "reposts": 272,
+     "replies": 61,
+     "views": 103946,
+     "quotes": 12
+    },
+    {
+     "id": "2123418183348695197",
+     "url": "https://x.com/G_Eskeles/status/2123418183348695197",
+     "author": "G_Eskeles",
+     "text": "Midjourney V8.2 https://t.co/Rbht5aNP2d",
+     "created_at": "2026-11-19T14:08:40.000Z",
+     "likes": 1275,
+     "reposts": 52,
+     "replies": 3,
+     "views": 13049,
+     "quotes": 0
+    }
+   ],
+   "sampleAsOf": "2026-11-25T13:55:41.319Z",
+   "computedAt": "2026-11-25T13:55:41.319Z"
   },
   "ideogram": {
    "status": "live",
@@ -1913,38 +2185,75 @@
   "canva": {
    "status": "live",
    "query": "(canva OR url:canva.com) -is:retweet",
-   "mentions24h": 6726,
-   "mentions7d": 42850,
-   "priorDailyAvg": 6175.2,
-   "velocity": 1.09,
+   "mentions24h": 6336,
+   "mentions7d": 43419,
+   "priorDailyAvg": 6206.4,
+   "velocity": 1.02,
    "daily": [
-    5051,
-    6886,
-    7346,
-    6343,
-    4718,
-    5780,
-    6726
+    6346,
+    7510,
+    6683,
+    4889,
+    5444,
+    6211,
+    6336
    ],
-   "peakDay": 7346,
-   "peakDaysAgo": 4,
+   "peakDay": 7510,
+   "peakDaysAgo": 5,
    "sample": {
-    "posts": 25,
-    "likes": 5,
-    "reposts": 1,
-    "replies": 13
+    "posts": 50,
+    "likes": 268700,
+    "reposts": 57883,
+    "replies": 1190
    },
    "parts": {
-    "volume": 46.3,
-    "velocity": 1.6,
-    "engagement": 7.7
+    "volume": 46.4,
+    "velocity": 0.4,
+    "engagement": 25
    },
-   "score": 56,
-   "label": "steady",
-   "viral": false,
-   "topPosts": [],
-   "sampleAsOf": "2026-11-11T01:25:06.913Z",
-   "computedAt": "2026-11-25T01:30:49.503Z"
+   "score": 72,
+   "label": "hype",
+   "viral": true,
+   "topPosts": [
+    {
+     "id": "2124506532457164988",
+     "url": "https://x.com/juxpov/status/2124506532457164988",
+     "author": "juxpov",
+     "text": "\"eles são a geração da tecnologia\"\neu tentando mexer no canva: https://t.co/pUrEV4KWeA",
+     "created_at": "2026-11-22T14:13:23.000Z",
+     "likes": 142783,
+     "reposts": 33458,
+     "replies": 426,
+     "views": 1743427,
+     "quotes": 1173
+    },
+    {
+     "id": "2124134559025631405",
+     "url": "https://x.com/itstinks_/status/2124134559025631405",
+     "author": "itstinks_",
+     "text": "Kumpulan canva template story instagram ᵕ̈ ୨୧\nꔛ https://t.co/k1YdoMIRt7\n—— Free to use ︴help rt & like 🤍 https://t.co/xvt4umS7G8",
+     "created_at": "2026-11-21T13:35:18.000Z",
+     "likes": 25206,
+     "reposts": 4182,
+     "replies": 9,
+     "views": 635849,
+     "quotes": 66
+    },
+    {
+     "id": "2125278077039350157",
+     "url": "https://x.com/notj3ng/status/2125278077039350157",
+     "author": "notj3ng",
+     "text": "“นายเจนเอไอ นายจะไปรู้อะไร” งานทุกงานเราสามารถทำผ่าน canva ได้นะ ไม่ต้องเจนไปทุกอย่าง 😭😭",
+     "created_at": "2026-11-24T17:19:13.000Z",
+     "likes": 6156,
+     "reposts": 5745,
+     "replies": 2,
+     "views": 161886,
+     "quotes": 38
+    }
+   ],
+   "sampleAsOf": "2026-11-25T13:55:41.319Z",
+   "computedAt": "2026-11-25T13:55:41.319Z"
   },
   "figma": {
    "status": "live",
@@ -2057,38 +2366,63 @@
   "heygen": {
    "status": "live",
    "query": "(heygen OR url:heygen.com) -is:retweet",
-   "mentions24h": 1297,
-   "mentions7d": 4225,
-   "priorDailyAvg": 500.5,
-   "velocity": 2.59,
+   "mentions24h": 1326,
+   "mentions7d": 4131,
+   "priorDailyAvg": 469.5,
+   "velocity": 2.82,
    "daily": [
-    573,
-    673,
-    660,
-    484,
-    207,
-    331,
-    1297
+    571,
+    654,
+    665,
+    240,
+    325,
+    350,
+    1326
    ],
-   "peakDay": 1297,
+   "peakDay": 1326,
    "peakDaysAgo": 0,
    "sample": {
-    "posts": 25,
-    "likes": 14,
-    "reposts": 3,
-    "replies": 5
+    "posts": 28,
+    "likes": 7785,
+    "reposts": 1957,
+    "replies": 1611
    },
    "parts": {
-    "volume": 36.3,
-    "velocity": 17.2,
-    "engagement": 7.7
+    "volume": 36.2,
+    "velocity": 18.7,
+    "engagement": 21.1
    },
-   "score": 61,
+   "score": 76,
    "label": "hype",
    "viral": false,
-   "topPosts": [],
-   "sampleAsOf": "2026-11-06T01:20:03.932Z",
-   "computedAt": "2026-11-25T01:30:49.503Z"
+   "topPosts": [
+    {
+     "id": "2125276863077695574",
+     "url": "https://x.com/HeyGen/status/2125276863077695574",
+     "author": "HeyGen",
+     "text": "Gary Vaynerchuk gets thousands of questions a week, more than he could ever answer himself\n\nnow his personal Avatar, made with HeyGen, answers one of those questions every day for the next 365 days, in any language…",
+     "created_at": "2026-11-24T17:14:24.000Z",
+     "likes": 1211,
+     "reposts": 660,
+     "replies": 888,
+     "views": 351243,
+     "quotes": 21
+    },
+    {
+     "id": "2124558276851347846",
+     "url": "https://x.com/Stonic_AI/status/2124558276851347846",
+     "author": "Stonic_AI",
+     "text": "I've been testing Avatar 6 by HeyGen , and the natural movements genuinely caught my attention.\n\nThe way gestures match the words and expressions feel more realistic makes the whole experience feel less robotic.\n\nAI…",
+     "created_at": "2026-11-22T17:39:00.000Z",
+     "likes": 1103,
+     "reposts": 144,
+     "replies": 84,
+     "views": 215493,
+     "quotes": 0
+    }
+   ],
+   "sampleAsOf": "2026-11-25T13:55:41.319Z",
+   "computedAt": "2026-11-25T13:55:41.319Z"
   },
   "synthesia": {
    "status": "live",
@@ -2165,38 +2499,75 @@
   "capcut": {
    "status": "live",
    "query": "(capcut OR url:capcut.com) -is:retweet",
-   "mentions24h": 6015,
-   "mentions7d": 39384,
-   "priorDailyAvg": 5704.2,
-   "velocity": 1.05,
+   "mentions24h": 5989,
+   "mentions7d": 39823,
+   "priorDailyAvg": 5662.6,
+   "velocity": 1.06,
    "daily": [
-    5090,
-    7029,
-    5789,
-    5401,
-    4916,
-    5144,
-    6015
+    6575,
+    6452,
+    5346,
+    5212,
+    5081,
+    5168,
+    5989
    ],
-   "peakDay": 7029,
-   "peakDaysAgo": 5,
+   "peakDay": 6575,
+   "peakDaysAgo": 6,
    "sample": {
-    "posts": 24,
-    "likes": 77,
-    "reposts": 4,
-    "replies": 54
+    "posts": 49,
+    "likes": 158001,
+    "reposts": 15095,
+    "replies": 850
    },
    "parts": {
     "volume": 46,
-    "velocity": 0.9,
-    "engagement": 11.5
+    "velocity": 1.1,
+    "engagement": 25
    },
-   "score": 58,
-   "label": "steady",
-   "viral": false,
-   "topPosts": [],
-   "sampleAsOf": "2026-11-11T01:25:06.913Z",
-   "computedAt": "2026-11-25T01:30:49.503Z"
+   "score": 72,
+   "label": "hype",
+   "viral": true,
+   "topPosts": [
+    {
+     "id": "2124119521036259581",
+     "url": "https://x.com/n0tisma/status/2124119521036259581",
+     "author": "n0tisma",
+     "text": "El CEO de CapCut viendo como un desarrollador lo clona en el navegador, gratis, open source, sin marca de agua y no puede hacer nada al respecto ya que no hizo nada ilegal https://t.co/XjAHUpLOci https://t.co/StB0flAzRr",
+     "created_at": "2026-11-21T12:35:32.000Z",
+     "likes": 57831,
+     "reposts": 4031,
+     "replies": 75,
+     "views": 1346937,
+     "quotes": 49
+    },
+    {
+     "id": "2124114351854428181",
+     "url": "https://x.com/silvanrec/status/2124114351854428181",
+     "author": "silvanrec",
+     "text": "🚨 DEJA DE PAGAR CAPCUT PRO... ESTA ALTERNATIVA ES GRATIS, SIN MARCA DE AGUA Y FUNCIONA EN EL NAVEGADOR\n\nUn desarrollador creó su propia alternativa a CapCut y la publicó gratis.\n\nEs open source: la abres en el…",
+     "created_at": "2026-11-21T12:15:00.000Z",
+     "likes": 18897,
+     "reposts": 1814,
+     "replies": 104,
+     "views": 1594639,
+     "quotes": 149
+    },
+    {
+     "id": "2123477142151602483",
+     "url": "https://x.com/Airxpunged/status/2123477142151602483",
+     "author": "Airxpunged",
+     "text": "WHAT DO PEOPLE USE WHEN MAKING ANIMATICS IM SO TIRED OF MAKING IMAGES EXPORTING THEM AND PUTTING THEM IN CAPCUT. SURELY THERED AN EASIER WAY FOR THIS",
+     "created_at": "2026-11-19T18:02:57.000Z",
+     "likes": 17310,
+     "reposts": 743,
+     "replies": 195,
+     "views": 775051,
+     "quotes": 190
+    }
+   ],
+   "sampleAsOf": "2026-11-25T13:55:41.319Z",
+   "computedAt": "2026-11-25T13:55:41.319Z"
   },
   "elevenlabs": {
    "status": "live",
@@ -2237,38 +2608,75 @@
   "suno": {
    "status": "live",
    "query": "(\"suno ai\" OR @suno OR url:suno.com OR (suno song)) -is:retweet",
-   "mentions24h": 2893,
-   "mentions7d": 19480,
-   "priorDailyAvg": 2835.4,
-   "velocity": 1.02,
+   "mentions24h": 2920,
+   "mentions7d": 19794,
+   "priorDailyAvg": 2824.1,
+   "velocity": 1.03,
    "daily": [
-    2428,
-    2952,
-    2540,
-    3008,
-    2945,
-    2714,
-    2893
+    2943,
+    2685,
+    2843,
+    3020,
+    2760,
+    2623,
+    2920
    ],
-   "peakDay": 3008,
+   "peakDay": 3020,
    "peakDaysAgo": 3,
    "sample": {
-    "posts": 25,
-    "likes": 528,
-    "reposts": 128,
-    "replies": 52
+    "posts": 30,
+    "likes": 11662,
+    "reposts": 1442,
+    "replies": 167
    },
    "parts": {
-    "volume": 42.9,
-    "velocity": 0.4,
-    "engagement": 15
+    "volume": 43,
+    "velocity": 0.5,
+    "engagement": 21.1
    },
-   "score": 58,
+   "score": 65,
    "label": "steady",
    "viral": false,
-   "topPosts": [],
-   "sampleAsOf": "2026-11-11T01:25:06.913Z",
-   "computedAt": "2026-11-25T01:30:49.503Z"
+   "topPosts": [
+    {
+     "id": "2124982064260788295",
+     "url": "https://x.com/delachimes/status/2124982064260788295",
+     "author": "delachimes",
+     "text": "Omo all these 40+ artistes wan kpai us with Suno AI https://t.co/SLdkWuMqUO",
+     "created_at": "2026-11-23T21:42:59.000Z",
+     "likes": 4926,
+     "reposts": 524,
+     "replies": 79,
+     "views": 289882,
+     "quotes": 27
+    },
+    {
+     "id": "2124084935355175340",
+     "url": "https://x.com/NULL_IX/status/2124084935355175340",
+     "author": "NULL_IX",
+     "text": "GEMAがSuno AIに全面勝訴 – 音楽AIの無断学習に法的ストップ | リアルワークスDTM\nhttps://t.co/T7XXbyzrhC\n\n『まず、権利者の許諾を得ることなく著作物を学習データとして取り込み、AIモデル内部に再構成可能な形で保持する行為については、著作権法上の「複製権」の侵害にあたると判断されました。』 https://t.co/rblhLQLujT https://t.co/dMmpPkN4dt",
+     "created_at": "2026-11-21T10:18:06.000Z",
+     "likes": 1555,
+     "reposts": 533,
+     "replies": 12,
+     "views": 45730,
+     "quotes": 24
+    },
+    {
+     "id": "2123121945416007764",
+     "url": "https://x.com/lowhanmoxro/status/2123121945416007764",
+     "author": "lowhanmoxro",
+     "text": "okay so I'm almost absolutely certain a little jingle that plays in one of the advertisements on one of the radio stations in this gta6 was made by Suno AI. i'm quite literally ear trained for this. it literally took me…",
+     "created_at": "2026-11-18T18:31:32.000Z",
+     "likes": 2456,
+     "reposts": 105,
+     "replies": 1,
+     "views": 41774,
+     "quotes": 8
+    }
+   ],
+   "sampleAsOf": "2026-11-25T13:55:41.319Z",
+   "computedAt": "2026-11-25T13:55:41.319Z"
   },
   "notion": {
    "status": "live",
@@ -2489,38 +2897,63 @@
   "codex": {
    "status": "live",
    "query": "(\"openai codex\" OR \"codex cli\" OR \"codex app\" OR @OpenAIDevs codex OR url:chatgpt.com/codex) -is:retweet",
-   "mentions24h": 433,
-   "mentions7d": 2768,
-   "priorDailyAvg": 399.2,
-   "velocity": 1.08,
+   "mentions24h": 469,
+   "mentions7d": 2779,
+   "priorDailyAvg": 386.6,
+   "velocity": 1.21,
    "daily": [
-    464,
-    403,
-    432,
-    304,
+    457,
+    419,
+    366,
+    339,
     353,
-    379,
-    433
+    376,
+    469
    ],
-   "peakDay": 464,
-   "peakDaysAgo": 6,
+   "peakDay": 469,
+   "peakDaysAgo": 0,
    "sample": {
-    "posts": 25,
-    "likes": 25,
-    "reposts": 1,
-    "replies": 16
+    "posts": 27,
+    "likes": 5140,
+    "reposts": 620,
+    "replies": 192
    },
    "parts": {
     "volume": 34.4,
-    "velocity": 1.4,
-    "engagement": 8.9
+    "velocity": 3.4,
+    "engagement": 19.4
    },
-   "score": 45,
+   "score": 57,
    "label": "steady",
    "viral": false,
-   "topPosts": [],
-   "sampleAsOf": "2026-11-06T01:20:03.932Z",
-   "computedAt": "2026-11-25T01:30:49.503Z"
+   "topPosts": [
+    {
+     "id": "2124909840791453948",
+     "url": "https://x.com/nigelhartmanxr/status/2124909840791453948",
+     "author": "nigelhartmanxr",
+     "text": "OpenAI Codex just made my IKEA furniture assembly 5 times faster!\n\nScan the box, and IKEA's little paper man steps out of the manual to walk you through the build, right in your room.\n\nThe best part: every 3D model in…",
+     "created_at": "2026-11-23T16:55:59.000Z",
+     "likes": 1103,
+     "reposts": 112,
+     "replies": 70,
+     "views": 97760,
+     "quotes": 16
+    },
+    {
+     "id": "2123974688258875789",
+     "url": "https://x.com/aburacadabra_/status/2123974688258875789",
+     "author": "aburacadabra_",
+     "text": "Codex CLI 0.171로 업데이트하면 터미널 화면이 확 바뀌어 있음ㄷㄷ\n\nOpenAI가 11/20 아침 Codex CLI 0.171.0을 냈음\n원래 설정에서 켜야 보이던 옆 화면이 이제 기본으로 켜져 있음\n대화 옆에 문서랑 이미지 미리보기, 서브에이전트가 하고 있는 일까지 같이 보임\n\n나머지 바뀐 건 이거\n1) 모델 https://t.co/gnVwUP0WGF",
+     "created_at": "2026-11-21T03:00:01.000Z",
+     "likes": 22,
+     "reposts": 3,
+     "replies": 5,
+     "views": 23668,
+     "quotes": 0
+    }
+   ],
+   "sampleAsOf": "2026-11-25T13:55:41.319Z",
+   "computedAt": "2026-11-25T13:55:41.319Z"
   },
   "mirror-mirror-ai": {
    "status": "live",
@@ -2885,74 +3318,111 @@
   "higgsfield": {
    "status": "live",
    "query": "(higgsfield OR @higgsfield_ai OR url:higgsfield.ai) -is:retweet",
-   "mentions24h": 2063,
-   "mentions7d": 10903,
-   "priorDailyAvg": 1511.1,
-   "velocity": 1.37,
+   "mentions24h": 3212,
+   "mentions7d": 11896,
+   "priorDailyAvg": 1453.4,
+   "velocity": 2.21,
    "daily": [
-    1689,
-    1628,
-    1530,
-    1277,
-    1300,
-    1416,
-    2063
+    1460,
+    1754,
+    1272,
+    1369,
+    1337,
+    1492,
+    3212
    ],
-   "peakDay": 2063,
+   "peakDay": 3212,
    "peakDaysAgo": 0,
    "sample": {
-    "posts": 25,
-    "likes": 10,
-    "reposts": 1,
-    "replies": 4
+    "posts": 41,
+    "likes": 34542,
+    "reposts": 4450,
+    "replies": 2160
    },
    "parts": {
-    "volume": 40.4,
-    "velocity": 5.7,
-    "engagement": 6.7
+    "volume": 40.8,
+    "velocity": 14.3,
+    "engagement": 23.6
    },
-   "score": 53,
-   "label": "rising",
+   "score": 79,
+   "label": "hype",
    "viral": false,
-   "topPosts": [],
-   "sampleAsOf": "2026-11-06T01:20:03.932Z",
-   "computedAt": "2026-11-25T01:30:49.503Z"
+   "topPosts": [
+    {
+     "id": "2123099102913470481",
+     "url": "https://x.com/ChoyRb/status/2123099102913470481",
+     "author": "ChoyRb",
+     "text": "We're launching Adside today, a swarm of agents that finds the most profitable paid strategies for you and runs them across Batch Meta, Google, LinkedIn and more.\n\nThis isn't yet another Higgsfield killer or AI ad…",
+     "created_at": "2026-11-18T17:00:46.000Z",
+     "likes": 1447,
+     "reposts": 118,
+     "replies": 555,
+     "views": 1937590,
+     "quotes": 41
+    },
+    {
+     "id": "2125290656692085164",
+     "url": "https://x.com/higgsfield/status/2125290656692085164",
+     "author": "higgsfield",
+     "text": "Introducing MAGI-2, exclusively on Higgsfield.\n\nUp to 30 seconds of frontier 1080p quality, with 0.08$ per second of generation.\n\nOpen weights video model with 400B parameters coming soon.\n\nNow available exclusively on…",
+     "created_at": "2026-11-24T18:09:13.000Z",
+     "likes": 1895,
+     "reposts": 378,
+     "replies": 127,
+     "views": 1838722,
+     "quotes": 218
+    },
+    {
+     "id": "2123519417610825890",
+     "url": "https://x.com/higgsfield/status/2123519417610825890",
+     "author": "higgsfield",
+     "text": "Introducing Higgsfield GPU Harness.\n\nRent on-demand GPUs in Claude and ChatGPT to render, run open-weight models and train LoRAs.\n\nLet several AI agents work on your professional apps in the cloud at once, from any…",
+     "created_at": "2026-11-19T20:50:56.000Z",
+     "likes": 1659,
+     "reposts": 414,
+     "replies": 131,
+     "views": 1138435,
+     "quotes": 75
+    }
+   ],
+   "sampleAsOf": "2026-11-25T13:55:41.319Z",
+   "computedAt": "2026-11-25T13:55:41.319Z"
   },
   "base44": {
    "status": "live",
    "query": "(base44 OR @base44 OR url:base44.com) -is:retweet",
-   "mentions24h": 387,
-   "mentions7d": 1681,
-   "priorDailyAvg": 221.2,
-   "velocity": 1.75,
+   "mentions24h": 483,
+   "mentions7d": 1669,
+   "priorDailyAvg": 198.5,
+   "velocity": 2.43,
    "daily": [
-    296,
-    246,
-    182,
-    176,
-    172,
-    222,
-    387
+    233,
+    179,
+    190,
+    174,
+    209,
+    201,
+    483
    ],
-   "peakDay": 387,
+   "peakDay": 483,
    "peakDaysAgo": 0,
    "sample": {
-    "posts": 25,
-    "likes": 223,
-    "reposts": 48,
-    "replies": 130
+    "posts": 24,
+    "likes": 70,
+    "reposts": 0,
+    "replies": 14
    },
    "parts": {
-    "volume": 32.3,
-    "velocity": 10.1,
-    "engagement": 14
+    "volume": 32.2,
+    "velocity": 16,
+    "engagement": 10
    },
-   "score": 56,
-   "label": "rising",
+   "score": 58,
+   "label": "hype",
    "viral": false,
    "topPosts": [],
-   "sampleAsOf": "2026-11-09T01:12:43.408Z",
-   "computedAt": "2026-11-25T01:30:49.503Z"
+   "sampleAsOf": "2026-11-25T13:55:41.319Z",
+   "computedAt": "2026-11-25T13:55:41.319Z"
   },
   "kling-ai": {
    "status": "live",
@@ -4325,38 +4795,51 @@
   "claude-duet": {
    "status": "live",
    "query": "(\"Claude Duet\" OR ClaudeDuet OR url:claude.com/product/claude-duet) -is:retweet",
-   "mentions24h": 554,
-   "mentions7d": 1560,
-   "priorDailyAvg": 172,
-   "velocity": 3.22,
+   "mentions24h": 505,
+   "mentions7d": 1659,
+   "priorDailyAvg": 193.1,
+   "velocity": 2.61,
    "daily": [
-    184,
-    204,
-    156,
-    156,
+    197,
+    194,
     143,
-    163,
-    554
+    151,
+    134,
+    335,
+    505
    ],
-   "peakDay": 554,
+   "peakDay": 505,
    "peakDaysAgo": 0,
    "sample": {
-    "posts": 25,
-    "likes": 36,
-    "reposts": 1,
-    "replies": 36
+    "posts": 26,
+    "likes": 1147,
+    "reposts": 65,
+    "replies": 73
    },
    "parts": {
-    "volume": 31.9,
-    "velocity": 21.1,
-    "engagement": 10.2
+    "volume": 32.2,
+    "velocity": 17.3,
+    "engagement": 15.9
    },
-   "score": 63,
+   "score": 65,
    "label": "hype",
    "viral": false,
-   "topPosts": [],
-   "sampleAsOf": "2026-11-06T01:20:03.932Z",
-   "computedAt": "2026-11-25T01:30:49.503Z"
+   "topPosts": [
+    {
+     "id": "2123776233259626862",
+     "url": "https://x.com/Hank_agli/status/2123776233259626862",
+     "author": "Hank_agli",
+     "text": "まじorca botやばい\nGrok botより、museより、今後くるであろうclaude duet よりもやばい\n\n触ってない人絶対触った方がいい\n間違いなく最先端",
+     "created_at": "2026-11-20T13:51:26.000Z",
+     "likes": 1095,
+     "reposts": 60,
+     "replies": 32,
+     "views": 189789,
+     "quotes": 18
+    }
+   ],
+   "sampleAsOf": "2026-11-25T13:55:41.319Z",
+   "computedAt": "2026-11-25T13:55:41.319Z"
   },
   "heal": {
    "status": "live",
@@ -4973,38 +5456,75 @@
   "gemini-api-cli": {
    "status": "live",
    "query": "(\"Gemini API CLI\" OR \"gemini-api-cli\" OR \"gemini-api cli\") -is:retweet",
-   "mentions24h": 146,
-   "mentions7d": 220,
-   "priorDailyAvg": 12.6,
-   "velocity": 11.54,
+   "mentions24h": 148,
+   "mentions7d": 302,
+   "priorDailyAvg": 25.8,
+   "velocity": 5.74,
    "daily": [
-    0,
-    5,
-    5,
+    3,
     4,
     7,
-    53,
-    146
+    1,
+    29,
+    110,
+    148
    ],
-   "peakDay": 146,
+   "peakDay": 148,
    "peakDaysAgo": 0,
    "sample": {
-    "posts": 25,
-    "likes": 52,
-    "reposts": 1,
-    "replies": 28
+    "posts": 28,
+    "likes": 10459,
+    "reposts": 933,
+    "replies": 417
    },
    "parts": {
-    "volume": 23.4,
+    "volume": 24.8,
     "velocity": 25,
-    "engagement": 10.2
+    "engagement": 20.8
    },
-   "score": 59,
+   "score": 71,
    "label": "hype",
    "viral": false,
-   "topPosts": [],
-   "sampleAsOf": "2026-11-06T01:20:03.932Z",
-   "computedAt": "2026-11-25T01:30:49.503Z"
+   "topPosts": [
+    {
+     "id": "2125129105603719203",
+     "url": "https://x.com/lbang_2580/status/2125129105603719203",
+     "author": "lbang_2580",
+     "text": "再见了Antigravity ！！！😱😱\n\n谷歌刚刚开源了 gemini-api-cli：纯 Go、零依赖、单文件。\n\n作用就一句：让你手上的 Claude Code、Codex 能顺手调 Gemini。\n\n生图、啃 PDF、后台跑调研，都是一行命令的事。\n\n不切窗口、不换客户端、不用把上下文重讲一遍。工具终于开始适应人了😤",
+     "created_at": "2026-11-24T07:27:16.000Z",
+     "likes": 4115,
+     "reposts": 398,
+     "replies": 200,
+     "views": 426348,
+     "quotes": 35
+    },
+    {
+     "id": "2124630542738202805",
+     "url": "https://x.com/don_tech1/status/2124630542738202805",
+     "author": "don_tech1",
+     "text": "如果你正用 Gemini 4 Neon，强烈建议给你的 Agent 装一个 Google 官方刚开源的小工具：gemini-api-cli。\n\n这个新出的 google-gemini/gemini-api-cli（命令叫 gemini-api）是一个零依赖的 Go 单文件，专门给你的 AI Agent 当“多模态外挂”用的。\n\n装上它、配个 API Key、再装上官方的 gemini-api-cli…",
+     "created_at": "2026-11-22T22:26:09.000Z",
+     "likes": 3334,
+     "reposts": 267,
+     "replies": 85,
+     "views": 208017,
+     "quotes": 11
+    },
+    {
+     "id": "2124772967938916443",
+     "url": "https://x.com/mingzi206/status/2124772967938916443",
+     "author": "mingzi206",
+     "text": "卧槽！Gemini 4 Neon 封神还不够，Google 居然偷偷把全套多模态物理外挂给开源了！\n\n官方刚刚上线核弹级终端神器：gemini-api-cli。\n简单粗暴到离谱：你在终端敲一行命令，就能直接把 Gemini 逆天的视频理解、OCR 和音视频生成全部白嫖光！\n\n玩法极其野蛮：\n· 视听生图全家桶：敲 `image` https://t.co/eGz7iM1Bil",
+     "created_at": "2026-11-23T07:52:06.000Z",
+     "likes": 2311,
+     "reposts": 215,
+     "replies": 91,
+     "views": 162226,
+     "quotes": 9
+    }
+   ],
+   "sampleAsOf": "2026-11-25T13:55:41.319Z",
+   "computedAt": "2026-11-25T13:55:41.319Z"
   },
   "agent-s4": {
    "status": "live",
@@ -5693,38 +6213,38 @@
   "openbot": {
    "status": "live",
    "query": "(@OpenBot_ OR url:openbot.run OR \"openbot.run\" OR \"nightly-labs/openbot\" OR (openbot (agents OR codex OR \"claude code\" OR desktop OR grok))) -is:retweet",
-   "mentions24h": 968,
-   "mentions7d": 3930,
-   "priorDailyAvg": 506.3,
-   "velocity": 1.91,
+   "mentions24h": 929,
+   "mentions7d": 3934,
+   "priorDailyAvg": 502.9,
+   "velocity": 1.85,
    "daily": [
-    504,
-    532,
     498,
-    443,
-    429,
-    556,
-    968
+    510,
+    456,
+    455,
+    473,
+    613,
+    929
    ],
-   "peakDay": 968,
+   "peakDay": 929,
    "peakDaysAgo": 0,
    "sample": {
-    "posts": 25,
-    "likes": 34,
-    "reposts": 0,
-    "replies": 32
+    "posts": 24,
+    "likes": 52,
+    "reposts": 2,
+    "replies": 45
    },
    "parts": {
     "volume": 35.9,
-    "velocity": 11.7,
-    "engagement": 10
+    "velocity": 11.1,
+    "engagement": 10.9
    },
    "score": 58,
    "label": "rising",
    "viral": false,
    "topPosts": [],
-   "sampleAsOf": "2026-11-11T01:25:06.913Z",
-   "computedAt": "2026-11-25T01:30:49.503Z"
+   "sampleAsOf": "2026-11-25T13:55:41.319Z",
+   "computedAt": "2026-11-25T13:55:41.319Z"
   },
   "spacesheep": {
    "status": "live",
@@ -8285,38 +8805,75 @@
   "claude-fable-5-2": {
    "status": "live",
    "query": "(\"fable 5.2\" OR \"claude-fable-5-2\" OR \"claude fable\") -is:retweet",
-   "mentions24h": 2691,
-   "mentions7d": 23720,
-   "priorDailyAvg": 3594.7,
-   "velocity": 0.75,
+   "mentions24h": 2664,
+   "mentions7d": 22468,
+   "priorDailyAvg": 3314.5,
+   "velocity": 0.8,
    "daily": [
-    4918,
-    4651,
-    3325,
-    2742,
-    2828,
-    2565,
-    2691
+    5018,
+    3908,
+    2960,
+    2803,
+    2676,
+    2439,
+    2664
    ],
-   "peakDay": 4918,
+   "peakDay": 5018,
    "peakDaysAgo": 6,
    "sample": {
-    "posts": 25,
-    "likes": 194,
-    "reposts": 27,
-    "replies": 47
+    "posts": 49,
+    "likes": 59084,
+    "reposts": 4362,
+    "replies": 2399
    },
    "parts": {
-    "volume": 43.8,
+    "volume": 43.5,
     "velocity": 0,
-    "engagement": 12.8
+    "engagement": 24.4
    },
-   "score": 57,
-   "label": "steady",
-   "viral": false,
-   "topPosts": [],
-   "sampleAsOf": "2026-11-17T01:28:28.794Z",
-   "computedAt": "2026-11-25T01:30:49.503Z"
+   "score": 68,
+   "label": "hype",
+   "viral": true,
+   "topPosts": [
+    {
+     "id": "2123567247666905449",
+     "url": "https://x.com/xingzengji/status/2123567247666905449",
+     "author": "xingzengji",
+     "text": "昨天突然冒出一个碾压一切的神秘模型，榜单中超出目前模型王者 Claude Fable 5.2 足足 200 多分。\n\n然而，针对这个模型，中外 X 社区出现了诡异的一幕：\n\n中国网友猜这是国外模型，大概率是 Fable 5.5；\n英文网友猜这是中国模型，大概率是 GLM 5.5。\n\n这是强到不像自己人能搞出来的意思吗🤣🤣🤣",
+     "created_at": "2026-11-20T00:01:00.000Z",
+     "likes": 5115,
+     "reposts": 267,
+     "replies": 416,
+     "views": 922723,
+     "quotes": 76
+    },
+    {
+     "id": "2124120100538396799",
+     "url": "https://x.com/jiya_3063/status/2124120100538396799",
+     "author": "jiya_3063",
+     "text": "One of my greatest contributions to making Gemini Neon 4 better than Claude fable 5.2 https://t.co/IpwEuD19oD",
+     "created_at": "2026-11-21T12:37:50.000Z",
+     "likes": 10504,
+     "reposts": 227,
+     "replies": 118,
+     "views": 352741,
+     "quotes": 19
+    },
+    {
+     "id": "2125143321098264592",
+     "url": "https://x.com/Stefan_3D_AI/status/2125143321098264592",
+     "author": "Stefan_3D_AI",
+     "text": "This is what $6,528 of Claude Fable 5.2 tokens can create in ONE week.\n\nI had to run 5 Claude Ultra subscriptions plus a ChatGPT one on a cloud PC with 24GB VRAM to get it done.\n\nFrom scratch in the new Unreal Engine…",
+     "created_at": "2026-11-24T08:23:45.000Z",
+     "likes": 3537,
+     "reposts": 194,
+     "replies": 379,
+     "views": 763230,
+     "quotes": 85
+    }
+   ],
+   "sampleAsOf": "2026-11-25T13:55:41.319Z",
+   "computedAt": "2026-11-25T13:55:41.319Z"
   },
   "gemini-4-carbon": {
    "status": "live",
@@ -8825,38 +9382,51 @@
   "taan": {
    "status": "live",
    "query": "(url:taan.ai OR \"taan.ai\" OR @taan_ai OR \"taan v1\" OR \"taan v1-preview\") -is:retweet",
-   "mentions24h": 268,
-   "mentions7d": 277,
-   "priorDailyAvg": 1.5,
-   "velocity": 174.2,
+   "mentions24h": 452,
+   "mentions7d": 466,
+   "priorDailyAvg": 2.3,
+   "velocity": 192.91,
    "daily": [
     4,
     2,
     0,
     0,
     0,
-    3,
-    268
+    8,
+    452
    ],
-   "peakDay": 268,
+   "peakDay": 452,
    "peakDaysAgo": 0,
    "sample": {
-    "posts": 25,
-    "likes": 478,
-    "reposts": 103,
-    "replies": 164
+    "posts": 26,
+    "likes": 1543,
+    "reposts": 108,
+    "replies": 192
    },
    "parts": {
-    "volume": 24.4,
+    "volume": 26.7,
     "velocity": 25,
-    "engagement": 15.2
+    "engagement": 17
    },
-   "score": 65,
+   "score": 69,
    "label": "hype",
    "viral": false,
-   "topPosts": [],
-   "sampleAsOf": "2026-11-13T01:27:35.934Z",
-   "computedAt": "2026-11-25T01:30:49.503Z"
+   "topPosts": [
+    {
+     "id": "2125277353609932891",
+     "url": "https://x.com/mp3addi/status/2125277353609932891",
+     "author": "mp3addi",
+     "text": "Today we're launching Taan V1.\n\nA music model that follows instructions to the T.\n\nV1 has significant improvements in quality and genre support over V1-preview\n\nModels today aren't trained to be controllable. Terence…",
+     "created_at": "2026-11-24T17:16:21.000Z",
+     "likes": 1494,
+     "reposts": 105,
+     "replies": 186,
+     "views": 849696,
+     "quotes": 104
+    }
+   ],
+   "sampleAsOf": "2026-11-25T13:55:41.319Z",
+   "computedAt": "2026-11-25T13:55:41.319Z"
   },
   "plurai-simulation": {
    "status": "live",
@@ -9558,74 +10128,148 @@
   "gpt-6-2-astra": {
    "status": "live",
    "query": "(\"gpt-6.2 astra\" OR \"gpt-6.2-astra\" OR \"gpt 6.2 astra\" OR \"6.2 astra\") -is:retweet",
-   "mentions24h": 1804,
-   "mentions7d": 22250,
-   "priorDailyAvg": 3495.1,
-   "velocity": 0.52,
+   "mentions24h": 1902,
+   "mentions7d": 19425,
+   "priorDailyAvg": 2932.7,
+   "velocity": 0.65,
    "daily": [
-    6562,
-    4063,
-    2778,
-    2531,
-    2359,
-    2153,
-    1804
+    5073,
+    3271,
+    2734,
+    2166,
+    2440,
+    1839,
+    1902
    ],
-   "peakDay": 6562,
+   "peakDay": 5073,
    "peakDaysAgo": 6,
    "sample": {
-    "posts": 12,
-    "likes": 138,
-    "reposts": 8,
-    "replies": 110
+    "posts": 50,
+    "likes": 58447,
+    "reposts": 2494,
+    "replies": 2473
    },
    "parts": {
-    "volume": 43.5,
+    "volume": 42.9,
     "velocity": 0,
-    "engagement": 12.9
+    "engagement": 24.3
    },
-   "score": 56,
-   "label": "steady",
-   "viral": false,
-   "topPosts": [],
-   "sampleAsOf": "2026-11-23T01:17:35.752Z",
-   "computedAt": "2026-11-25T01:30:49.503Z"
+   "score": 67,
+   "label": "hype",
+   "viral": true,
+   "topPosts": [
+    {
+     "id": "2123612286309093415",
+     "url": "https://x.com/bei351009016/status/2123612286309093415",
+     "author": "bei351009016",
+     "text": "Gemini4 Neon简直是通人性了，我爱死这个模型了😋，\n\n我想我不需要Opus5.5了。\n\n我只使用了早上剩余的最后5%的5小时额度，就完成了GPT 6.2 Astra调试了好久的功能。 https://t.co/OJZ6KpGH1g",
+     "created_at": "2026-11-20T02:59:58.000Z",
+     "likes": 5467,
+     "reposts": 219,
+     "replies": 220,
+     "views": 526940,
+     "quotes": 58
+    },
+    {
+     "id": "2124507083165073805",
+     "url": "https://x.com/kamkmgamer/status/2124507083165073805",
+     "author": "kamkmgamer",
+     "text": "Gemini 4 Neon absolutely crushed GPT-6.2 Astra at chess. https://t.co/BjxOCwTpTX",
+     "created_at": "2026-11-22T14:15:34.000Z",
+     "likes": 2214,
+     "reposts": 61,
+     "replies": 37,
+     "views": 856171,
+     "quotes": 15
+    },
+    {
+     "id": "2124566498341794100",
+     "url": "https://x.com/bpthaber/status/2124566498341794100",
+     "author": "bpthaber",
+     "text": "Gemini 4 Neon ve GPT-6.2 Astra karşılıklı satranç oynadı. https://t.co/mpeS4DZdUz",
+     "created_at": "2026-11-22T18:11:40.000Z",
+     "likes": 3631,
+     "reposts": 43,
+     "replies": 68,
+     "views": 659822,
+     "quotes": 25
+    }
+   ],
+   "sampleAsOf": "2026-11-25T13:55:41.319Z",
+   "computedAt": "2026-11-25T13:55:41.319Z"
   },
   "gpt-6-2-sol": {
    "status": "live",
    "query": "(\"gpt-6.2 sol\" OR \"gpt-6.2-sol\" OR \"gpt 6.2 sol\" OR \"6.2 sol\") -is:retweet",
-   "mentions24h": 1935,
-   "mentions7d": 11607,
-   "priorDailyAvg": 1653.4,
-   "velocity": 1.17,
+   "mentions24h": 1442,
+   "mentions7d": 10386,
+   "priorDailyAvg": 1496.9,
+   "velocity": 0.96,
    "daily": [
-    3269,
-    2077,
-    1272,
+    2755,
+    1518,
+    1045,
+    948,
     929,
-    994,
-    1131,
-    1935
+    1749,
+    1442
    ],
-   "peakDay": 3269,
+   "peakDay": 2755,
    "peakDaysAgo": 6,
    "sample": {
-    "posts": 25,
-    "likes": 272,
-    "reposts": 8,
-    "replies": 233
+    "posts": 34,
+    "likes": 33528,
+    "reposts": 2074,
+    "replies": 5829
    },
    "parts": {
-    "volume": 40.6,
-    "velocity": 2.8,
-    "engagement": 14.4
+    "volume": 40.2,
+    "velocity": 0,
+    "engagement": 23.6
    },
-   "score": 58,
-   "label": "steady",
-   "viral": false,
-   "topPosts": [],
-   "sampleAsOf": "2026-11-19T01:39:01.133Z",
-   "computedAt": "2026-11-25T01:30:49.503Z"
+   "score": 64,
+   "label": "hype",
+   "viral": true,
+   "topPosts": [
+    {
+     "id": "2123113107048501273",
+     "url": "https://x.com/thsottiaux/status/2123113107048501273",
+     "author": "thsottiaux",
+     "text": "How is 6.2 Sol treating you today?",
+     "created_at": "2026-11-18T17:56:24.000Z",
+     "likes": 7449,
+     "reposts": 119,
+     "replies": 4063,
+     "views": 1242206,
+     "quotes": 158
+    },
+    {
+     "id": "2124942186425069836",
+     "url": "https://x.com/ChatGPT/status/2124942186425069836",
+     "author": "ChatGPT",
+     "text": "We’re rolling out a version of GPT-6.2 Sol in the Chat tab, optimized for everyday conversation.\n\nIt’s much better at handling complex requests, especially when you give it detailed instructions or ask it to find…",
+     "created_at": "2026-11-23T19:04:31.000Z",
+     "likes": 8130,
+     "reposts": 580,
+     "replies": 562,
+     "views": 1477116,
+     "quotes": 335
+    },
+    {
+     "id": "2123188195202617408",
+     "url": "https://x.com/OpenAIDevs/status/2123188195202617408",
+     "author": "OpenAIDevs",
+     "text": "Not every workflow requires an immediate response.\n\nFor single- or multi-turn workflows that can wait, save up to 40% per token than Standard on GPT-6.2 Astra or GPT-6.2 Sol.\n\nIn Responses API background mode, choose a…",
+     "created_at": "2026-11-18T22:54:47.000Z",
+     "likes": 2958,
+     "reposts": 128,
+     "replies": 207,
+     "views": 271558,
+     "quotes": 141
+    }
+   ],
+   "sampleAsOf": "2026-11-25T13:55:41.319Z",
+   "computedAt": "2026-11-25T13:55:41.319Z"
   },
   "kling-image-4": {
    "status": "live",
@@ -9954,33 +10598,33 @@
   "gemini-4-neon": {
    "status": "live",
    "query": "(\"gemini 4 neon\" OR \"gemini-4-neon\" OR \"gemini neon\") -is:retweet",
-   "mentions24h": 4058,
-   "mentions7d": 37427,
-   "priorDailyAvg": 5567.9,
+   "mentions24h": 4057,
+   "mentions7d": 37396,
+   "priorDailyAvg": 5579.7,
    "velocity": 0.73,
    "daily": [
-    8987,
+    8957,
     6728,
     4279,
     4398,
     4653,
     4324,
-    4058
+    4057
    ],
-   "peakDay": 8987,
+   "peakDay": 8957,
    "peakDaysAgo": 6,
    "sample": {
-    "posts": 30,
-    "likes": 33122,
-    "reposts": 1419,
-    "replies": 1299
+    "posts": 50,
+    "likes": 74241,
+    "reposts": 2826,
+    "replies": 3232
    },
    "parts": {
     "volume": 45.7,
     "velocity": 0,
-    "engagement": 23
+    "engagement": 24.8
    },
-   "score": 69,
+   "score": 70,
    "label": "hype",
    "viral": true,
    "topPosts": [
@@ -9997,32 +10641,32 @@
      "quotes": 118
     },
     {
-     "id": "2124949501534171477",
-     "url": "https://x.com/dhh/status/2124949501534171477",
-     "author": "dhh",
-     "text": "I don't know how long the largesse with Gemini 4 Neon is going to last, but I literally had it running across 6 computers today as I was optimizing for machines across Intel, AMD, and NVIDIA. I didn't exhaust the…",
-     "created_at": "2026-11-23T19:33:35.000Z",
-     "likes": 9041,
-     "reposts": 233,
-     "replies": 363,
-     "views": 417448,
-     "quotes": 79
+     "id": "2124593335578845356",
+     "url": "https://x.com/NyanpasuKA/status/2124593335578845356",
+     "author": "NyanpasuKA",
+     "text": "gemini 4 neon predictions https://t.co/Mhu3zr82b3 https://t.co/EMqWQusH3H",
+     "created_at": "2026-11-22T19:58:18.000Z",
+     "likes": 5859,
+     "reposts": 327,
+     "replies": 227,
+     "views": 1648331,
+     "quotes": 107
     },
     {
-     "id": "2123176067380711725",
-     "url": "https://x.com/antigravity/status/2123176067380711725",
-     "author": "antigravity",
-     "text": "Gemini 4 Neon is rolling out in Google Antigravity!\n\nBringing frontier-level intelligence and ranking #1 on the Artificial Analysis Coding Agent Index, Neon is rolling out today across the desktop app, CLI, and IDE…",
-     "created_at": "2026-11-18T22:06:35.000Z",
-     "likes": 3488,
-     "reposts": 268,
-     "replies": 160,
-     "views": 260648,
-     "quotes": 88
+     "id": "2123880652428988683",
+     "url": "https://x.com/theo/status/2123880652428988683",
+     "author": "theo",
+     "text": "Gemini 4 Neon is an incredible model. https://t.co/RjoIJlKV4m",
+     "created_at": "2026-11-20T20:46:21.000Z",
+     "likes": 7695,
+     "reposts": 283,
+     "replies": 259,
+     "views": 1054667,
+     "quotes": 115
     }
    ],
-   "sampleAsOf": "2026-11-25T13:30:31.781Z",
-   "computedAt": "2026-11-25T13:30:31.781Z"
+   "sampleAsOf": "2026-11-25T13:55:41.319Z",
+   "computedAt": "2026-11-25T13:55:41.319Z"
   },
   "genie-4": {
    "status": "live",
@@ -10675,103 +11319,140 @@
   "claude-ship": {
    "status": "live",
    "query": "(\"Claude Ship\" OR ClaudeShip OR url:claude.com/product/claude-ship) -is:retweet",
-   "mentions24h": 2735,
-   "mentions7d": 3246,
-   "priorDailyAvg": 87.4,
-   "velocity": 31.31,
+   "mentions24h": 1647,
+   "mentions7d": 3830,
+   "priorDailyAvg": 365.4,
+   "velocity": 4.51,
    "daily": [
-    5,
-    1,
-    5,
+    2,
     3,
-    0,
-    497,
-    2735
+    2,
+    3,
+    1,
+    2172,
+    1647
    ],
-   "peakDay": 2735,
-   "peakDaysAgo": 0,
+   "peakDay": 2172,
+   "peakDaysAgo": 1,
    "sample": {
-    "posts": 0,
-    "likes": 0,
-    "reposts": 0,
-    "replies": 0
+    "posts": 29,
+    "likes": 38333,
+    "reposts": 2121,
+    "replies": 1288
    },
    "parts": {
-    "volume": 35.1,
+    "volume": 35.8,
     "velocity": 25,
-    "engagement": 0
+    "engagement": 23.5
    },
-   "score": 60,
+   "score": 84,
    "label": "hype",
-   "viral": false,
-   "topPosts": [],
-   "sampleAsOf": "2026-11-25T01:30:49.503Z",
-   "computedAt": "2026-11-25T01:30:49.503Z"
+   "viral": true,
+   "topPosts": [
+    {
+     "id": "2124959436640858475",
+     "url": "https://x.com/ClaudeDevs/status/2124959436640858475",
+     "author": "ClaudeDevs",
+     "text": "Introducing Claude Ship (beta): Claude can review your pull requests, work on fixes, and approve the ones your team's policy allows.\n\nThe goal is to help you ship code as fast as you can write it. https://t.co/b9OBAhEBmr",
+     "created_at": "2026-11-23T20:13:04.000Z",
+     "likes": 26421,
+     "reposts": 1597,
+     "replies": 668,
+     "views": 3848125,
+     "quotes": 1063
+    },
+    {
+     "id": "2124961485801836573",
+     "url": "https://x.com/bcherny/status/2124961485801836573",
+     "author": "bcherny",
+     "text": "A year ago we launched Opus 4.5, the first model to write 100% of my code.\n\nShipping PRs hasn’t caught up, so today we’re launching Claude Ship in beta for Team and Enterprise. I use it all day every day and can’t…",
+     "created_at": "2026-11-23T20:21:12.000Z",
+     "likes": 7897,
+     "reposts": 258,
+     "replies": 344,
+     "views": 646576,
+     "quotes": 103
+    },
+    {
+     "id": "2125365668463993091",
+     "url": "https://x.com/ClaudeDevs/status/2125365668463993091",
+     "author": "ClaudeDevs",
+     "text": "A practical guide to shipping with Claude Code: how to hand off PR follow-up work to Claude Ship and stay in flow.\n\nhttps://t.co/Mw3qjuFQa3",
+     "created_at": "2026-11-24T23:07:17.000Z",
+     "likes": 2469,
+     "reposts": 171,
+     "replies": 109,
+     "views": 211203,
+     "quotes": 45
+    }
+   ],
+   "sampleAsOf": "2026-11-25T13:55:41.319Z",
+   "computedAt": "2026-11-25T13:55:41.319Z"
   },
   "magi-2": {
    "status": "live",
    "query": "((MAGI-2 OR \"MAGI 2\" OR Magi-2) (Sand OR \"sand.ai\" OR Higgsfield OR video OR 480B)) OR url:sand.ai -is:retweet",
-   "mentions24h": 1262,
-   "mentions7d": 1275,
-   "priorDailyAvg": 2.2,
-   "velocity": 567.89,
+   "mentions24h": 3250,
+   "mentions7d": 3265,
+   "priorDailyAvg": 2.5,
+   "velocity": 1294.58,
    "daily": [
-    1,
     2,
     2,
     1,
-    6,
-    1,
-    1262
+    5,
+    2,
+    3,
+    3250
    ],
-   "peakDay": 1262,
+   "peakDay": 3250,
    "peakDaysAgo": 0,
    "sample": {
-    "posts": 0,
-    "likes": 0,
-    "reposts": 0,
-    "replies": 0
+    "posts": 25,
+    "likes": 57,
+    "reposts": 1,
+    "replies": 20
    },
    "parts": {
-    "volume": 31.1,
+    "volume": 35.1,
     "velocity": 25,
-    "engagement": 0
+    "engagement": 10
    },
-   "score": 56,
+   "score": 70,
    "label": "hype",
    "viral": false,
    "topPosts": [],
-   "sampleAsOf": "2026-11-25T01:30:49.503Z",
-   "computedAt": "2026-11-25T01:30:49.503Z"
+   "sampleAsOf": "2026-11-25T13:55:41.319Z",
+   "computedAt": "2026-11-25T13:55:41.319Z"
   },
   "antigravity": {
    "status": "live",
    "query": "(@antigravity OR url:antigravity.google OR \"google antigravity\" OR (antigravity (agy OR gemini OR cli OR ide OR mcp OR quota OR windsurf))) -is:retweet",
-   "mentions24h": 5954,
-   "mentions7d": 27748,
-   "priorDailyAvg": 3636.5,
+   "mentions24h": 5953,
+   "mentions7d": 27704,
+   "priorDailyAvg": 3640.3,
    "velocity": 1.64,
    "daily": [
-    3596,
+    3553,
     3993,
     3697,
     3199,
     2850,
     4459,
-    5954
+    5953
    ],
-   "peakDay": 5954,
+   "peakDay": 5953,
    "peakDaysAgo": 0,
    "sample": {
-    "posts": 33,
-    "likes": 64654,
-    "reposts": 3357,
-    "replies": 4145
+    "posts": 49,
+    "likes": 92835,
+    "reposts": 5475,
+    "replies": 5357
    },
    "parts": {
     "volume": 44.4,
     "velocity": 8.9,
-    "engagement": 24.7
+    "engagement": 25
    },
    "score": 78,
    "label": "hype",
@@ -10802,20 +11483,20 @@
      "quotes": 942
     },
     {
-     "id": "2125337132021780867",
-     "url": "https://x.com/_mohansolo/status/2125337132021780867",
+     "id": "2124070033534161407",
+     "url": "https://x.com/_mohansolo/status/2124070033534161407",
      "author": "_mohansolo",
-     "text": "We've optimized the AGY harness even more in the new release.\n\nOn Neon, it now consumes 12% less quota per task and finishes tasks 17% faster!\n\nWe are relentlessly making Antigravity better, cheaper, and faster for our…",
-     "created_at": "2026-11-24T21:13:53.000Z",
-     "likes": 6853,
-     "reposts": 217,
-     "replies": 592,
-     "views": 266144,
-     "quotes": 119
+     "text": "Reset everyone’s Gemini quota on Antigravity.\n\nThe caching improvements have increased the amount you can get done in quota by 22%. Enjoy building with Neon over the weekend!",
+     "created_at": "2026-11-21T09:18:53.000Z",
+     "likes": 14864,
+     "reposts": 654,
+     "replies": 1240,
+     "views": 1363830,
+     "quotes": 636
     }
    ],
-   "sampleAsOf": "2026-11-25T13:30:31.781Z",
-   "computedAt": "2026-11-25T13:30:31.781Z"
+   "sampleAsOf": "2026-11-25T13:55:41.319Z",
+   "computedAt": "2026-11-25T13:55:41.319Z"
   },
   "macswarm": {
    "status": "pending",

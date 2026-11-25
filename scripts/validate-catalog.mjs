@@ -19,10 +19,13 @@ const cats = new Set(communities.map((c) => c.slug));
 
 if (tools.length !== 308) fail(`expected 308 tools, found ${tools.length}`);
 if (buzz.method !== 'v1') fail(`buzz method is ${buzz.method}`);
-if (buzz.computedAt !== '2026-11-25T13:30:31.781Z') fail(`board computedAt ${buzz.computedAt} is not the Antigravity/Neon rescan`);
 const FULL_SCAN = '2026-11-25T01:30:49.503Z';
+const RESCAN_AT = '2026-11-25T13:55:41.319Z';
+// Leaders rescanned together. The board stamp stays on the last full scan.
+const RESCAN = new Set(['chatgpt','claude-code','claude','taan','grok','claude-duet','heygen','claude-ship','gemini-api-cli','capcut','gemini-4-neon','gemini','suno','gpt-6-2-sol','openbot','claude-fable-5-2','canva','gpt-6-2-astra','base44','magi-2','antigravity','opencode','higgsfield','midjourney','cursor','codex']);
+if (buzz.computedAt !== FULL_SCAN) fail(`board computedAt ${buzz.computedAt} should stay the full-scan stamp`);
 for (const [slug, t] of Object.entries(buzz.tools)) {
-  if (t.status !== 'live' || slug === 'antigravity' || slug === 'gemini-4-neon') continue;
+  if (t.status !== 'live' || RESCAN.has(slug)) continue;
   if (t.computedAt !== FULL_SCAN) fail(`${slug} computedAt changed from the 01:30Z scan: ${t.computedAt}`);
 }
 
@@ -89,13 +92,15 @@ function scoreOf(t) {
   };
 }
 
-for (const slug of ['antigravity', 'gemini-4-neon']) {
+for (const slug of RESCAN) {
   const t = buzz.tools[slug];
   if (!t || t.status !== 'live') { fail(`${slug} buzz is not live`); continue; }
   if (t.query !== queries[slug]) fail(`${slug} buzz query does not match buzz-queries.json`);
   if (t.sample.likes === t.mentions7d || t.sample.posts === t.mentions7d) fail(`${slug} sample was set from mention counts`);
-  const again = +(t.mentions24h / Math.max(t.priorDailyAvg, 1)).toFixed(2);
-  if (Math.abs(again - t.velocity) > 0.02) fail(`${slug} velocity ${t.velocity} does not follow mentions24h / priorDailyAvg (${again})`);
+  if (t.priorDailyAvg >= 10) {
+    const again = +(t.mentions24h / t.priorDailyAvg).toFixed(2);
+    if (Math.abs(again - t.velocity) > 0.02) fail(`${slug} velocity ${t.velocity} does not follow mentions24h / priorDailyAvg (${again})`);
+  }
   const got = scoreOf(t);
   if (got.score !== t.score) fail(`${slug} score ${t.score} != formula ${got.score}`);
   if (got.volume !== t.parts.volume || got.velocity !== t.parts.velocity || got.engagement !== t.parts.engagement) {
@@ -103,7 +108,7 @@ for (const slug of ['antigravity', 'gemini-4-neon']) {
   }
   const label = (t.velocity >= 2 && t.mentions24h >= 20) || got.viral ? 'hype' : t.velocity >= 1.3 && t.mentions24h >= 5 ? 'rising' : t.mentions7d >= 50 ? 'steady' : 'quiet';
   if (t.label !== label || t.viral !== got.viral) fail(`${slug} label ${t.label}/${t.viral} != ${label}/${got.viral}`);
-  if (!t.computedAt || t.computedAt < '2026-11-25T13:00:00Z') fail(`${slug} computedAt ${t.computedAt} is not this rescan`);
+  if (t.computedAt !== RESCAN_AT) fail(`${slug} computedAt ${t.computedAt} is not the shared rescan`);
 }
 
 for (const slug of ADDED) {

@@ -53,7 +53,7 @@
   "midjourney": "(midjourney OR url:midjourney.com) -is:retweet",
   "ideogram": "(ideogram OR url:ideogram.ai) -is:retweet",
   "canva": "(canva OR url:canva.com) -is:retweet",
-  "figma": "(figma OR url:figma.com) -is:retweet -\u30d5\u30a3\u30ae\u30e5\u30a2 -figure -figures -\u306d\u3093\u3069\u308d\u3044\u3069 -\u4e88\u7d04 -fate",
+  "figma": "(figma OR url:figma.com) -is:retweet -フィギュア -figure -figures -ねんどろいど -予約 -fate",
   "runway": "(runwayml OR \"runway gen\" OR \"runway aleph\" OR @runwayml OR url:runwayml.com) -is:retweet",
   "pika": "(\"pika labs\" OR \"pika art\" OR @pika_labs OR url:pika.art) -is:retweet",
   "heygen": "(heygen OR url:heygen.com) -is:retweet",
@@ -70,7 +70,7 @@
   "magic-patterns": "(\"magic patterns\" OR magicpatterns OR MagicOS OR url:magicpatterns.com) -is:retweet",
   "codex": "(\"openai codex\" OR \"codex cli\" OR \"codex app\" OR @OpenAIDevs codex OR url:chatgpt.com/codex) -is:retweet",
   "mirror-mirror-ai": "(\"mirror mirror ai\" OR mirrormirrorai OR @mirrormirror_ai OR url:mirrormirrorai.com) -is:retweet",
-  "1in8b": "(\"1 in 8 billion\" OR 1in8b OR url:1in8b.life OR (\"80\u5104\u5206\u306e1\" (\u30b2\u30fc\u30e0 OR \u30ac\u30c1\u30e3 OR \u4eba\u751f OR \u914d\u4fe1 OR \u30d7\u30ec\u30a4))) -is:retweet",
+  "1in8b": "(\"1 in 8 billion\" OR 1in8b OR url:1in8b.life OR (\"80億分の1\" (ゲーム OR ガチャ OR 人生 OR 配信 OR プレイ))) -is:retweet",
   "rea": "(\"morluto/rea\" OR morluto OR url:\"github.com/morluto/rea\") -is:retweet",
   "nemotron": "nemotron -is:retweet",
   "krea": "(\"krea 3\" OR krea3 OR @krea_ai) -is:retweet",
@@ -306,5 +306,13 @@
   "reelsdk": "(reelsdk OR url:reelsdk.com OR \"bitgate/reelsdk-mcp\") -is:retweet",
   "queststudio": "(queststudio OR url:queststudio.io) -is:retweet",
   "tiquo": "(tiquo OR url:tiquo.co) -is:retweet",
-  "aicertmock": "(aicertmock OR url:aicertmock.com OR \"ai cert mock\") -is:retweet"
+  "aicertmock": "(aicertmock OR url:aicertmock.com OR \"ai cert mock\") -is:retweet",
+  "myclaw": "(myclaw OR \"my claw 3\" OR url:myclaw.ai) -is:retweet",
+  "airbot": "((airbot OR airbots) (airspeed OR whatsapp OR imessage OR crm OR \"chief of staff\") OR url:airbots.ai OR url:goairspeed.com/airbots) -is:retweet",
+  "hai": "(haicall OR url:haicall.in OR (\"hai\" mcp (call OR phone OR booking OR restaurant))) -is:retweet",
+  "koed": "(koed OR url:koed.ai) (agent OR memory OR \"claude code\" OR codex OR mcp) -is:retweet",
+  "canva-mcp": "(\"canva mcp\" OR \"canva ai connector\") -is:retweet",
+  "sandscale": "(sandscale OR url:sandscale.dev) -is:retweet",
+  "ai-text-watermark-checker": "(\"ai text watermark checker\" OR url:aitextwatermarkchecker.com) -is:retweet",
+  "mock-interview-practice": "(url:mockinterviewpractice.org OR \"mock interview practice\") -is:retweet"
 }

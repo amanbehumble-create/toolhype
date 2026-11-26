@@ -1722,10 +1722,11 @@
       "marketing"
     ],
     "pricing": "freemium",
-    "verdict": "Design for everyone with Magic Studio AI features.",
-    "useThisIf": "you need quick social graphics and decks.",
+    "verdict": "Design tool for social graphics, decks, docs and short video, with Magic Studio AI features. On Nov 25, 2026 Canva launched Canva MCP, an official remote MCP server so assistants can create and edit Canva designs and export them (PDF, PNG, JPG, PPTX, MP4 and others). Current plan names and prices are on canva.com/pricing; the public pricing page could not be read in a plain browser on Nov 26, 2026, so dollar amounts are not listed here.",
+    "useThisIf": "you need quick social graphics, decks or docs, and you may want an assistant to draft an editable Canva file through Canva MCP.",
     "alternatives": [
-      "figma"
+      "figma",
+      "canva-mcp"
     ],
     "source": "seed",
     "addedAt": "2013-08-26",
@@ -8657,5 +8658,188 @@
       "updatedAt": null
     },
     "logo": "/logos/aicertmock.png"
+  },
+  {
+    "slug": "myclaw",
+    "name": "MyClaw 3.0",
+    "url": "https://myclaw.ai/",
+    "affiliateUrl": null,
+    "category": "agents",
+    "useCases": [
+      "agents",
+      "coding",
+      "productivity"
+    ],
+    "pricing": "paid",
+    "verdict": "Managed cloud platform for always-on AI teammate teams, launched as MyClaw 3.0 on Product Hunt on Nov 25, 2026. You pick an agent engine (OpenClaw, Hermes Agent, Pi, Claude Code, Codex or DeepSeek Harness), assign a role, tools and skills, and run it on a cloud computer that keeps working after you close your laptop. Agents share one memory, and you can assign work from the web, Slack, Telegram or WhatsApp. The site lists 50+ models and a pay-as-you-go data router so you do not manage extra API keys for search and web data. Pro is $20/month or $17/month billed yearly ($200/year) for 4,000 credits, 4 vCPU, 8 GB RAM and 80 GB storage. Max is $40/month or $34/month yearly ($400/year) for 8,000 credits and 8 vCPU. ULTRA is $200/month or $167/month yearly ($2,000/year) for 40,000 credits and 16 vCPU. Enterprise is custom. No free plan was listed on the pricing page checked on Nov 26, 2026. Cancel anytime; contact is contact@myclaw.ai.",
+    "useThisIf": "you want a managed, always-on cloud computer for a mix of coding and work agents, with shared memory, and you are ready to pay from the Pro plan.",
+    "alternatives": [
+      "claude-code",
+      "codex",
+      "manyagents"
+    ],
+    "source": "producthunt",
+    "addedAt": "2026-11-26",
+    "featured": false,
+    "logo": "/logos/myclaw.png"
+  },
+  {
+    "slug": "airbot",
+    "name": "Airbot",
+    "url": "https://airbots.ai/",
+    "affiliateUrl": null,
+    "category": "productivity",
+    "useCases": [
+      "productivity",
+      "agents",
+      "marketing"
+    ],
+    "pricing": "pricing not published",
+    "verdict": "Airspeed's AI chief of staff, launched on Product Hunt on Nov 25, 2026. It watches CRM, email, calendar, Slack and call tools, then texts you first in WhatsApp or iMessage with a priority and a drafted next step for you to approve. The company site lists connections including Salesforce, HubSpot, Gong, Gmail, Outlook, Google Calendar, Slack and Granola. On the day of the Product Hunt launch the product site said doors were opening soon and that Product Hunt visitors could skip the waitlist. No public price was listed on airbots.ai or the Airspeed Airbot page when checked on Nov 26, 2026. Privacy and terms are on goairspeed.com.",
+    "useThisIf": "you already live in WhatsApp or iMessage and want a sales or pipeline assistant that brings you drafted follow-ups instead of another dashboard.",
+    "alternatives": [
+      "granola",
+      "claude",
+      "chatgpt"
+    ],
+    "source": "producthunt",
+    "addedAt": "2026-11-26",
+    "featured": false,
+    "logo": "/logos/airbot.png"
+  },
+  {
+    "slug": "hai",
+    "name": "Hai",
+    "url": "https://haicall.in/",
+    "affiliateUrl": null,
+    "category": "agents",
+    "useCases": [
+      "agents",
+      "productivity"
+    ],
+    "pricing": "pricing not published",
+    "verdict": "Independent AI phone-call assistant, launched on Product Hunt on Nov 25, 2026 by a maker in Japan. You ask your existing assistant to book a restaurant, clinic or salon; Hai shows a plan, waits for your yes, places the call in the local language, identifies itself as an AI, and reports back in your chat. Official setup is an MCP server at https://haicall.in/mcp for Muse, ChatGPT (Pro or Business, with a regional limit noted for the EEA, the UK and Switzerland), Grok Bot, Claude and Claude Code. Nothing to install. The site says it is in testing: new accounts are approved by hand, and until then your assistant will say you are on the waitlist. No public price was listed when checked on Nov 26, 2026. Privacy and terms are on the site.",
+    "useThisIf": "you need a real phone booking made for you from chat, and you are willing to wait for a manually approved account.",
+    "alternatives": [
+      "claude",
+      "chatgpt",
+      "grok"
+    ],
+    "source": "producthunt",
+    "addedAt": "2026-11-26",
+    "featured": false,
+    "logo": "/logos/hai.png"
+  },
+  {
+    "slug": "koed",
+    "name": "Koed",
+    "url": "https://koed.ai/",
+    "affiliateUrl": null,
+    "category": "coding",
+    "useCases": [
+      "coding",
+      "agents"
+    ],
+    "pricing": "open-source",
+    "verdict": "Free, Apache-2.0 local-first memory layer for coding agents, launched on Product Hunt on Nov 25, 2026. Koed captures useful context from agent sessions and recalls it later so Claude Code, Codex and Pi can reuse project decisions instead of rediscovering them. The desktop app is at v1.2.0 for macOS on Apple silicon and Linux as an x64 AppImage; Windows is listed as coming soon, with WSL pointed at the server install. You can also run curl -fsSL https://koed.ai/install | bash (Python 3) or build from https://github.com/koed-labs/koed. The site's Free tier is the self-hosted memory loop. Pro (hosted embeddings and recall on any device) and team sharing are listed as coming soon. The site quotes a 20-task Terminal-Bench 4 comparison on GPT-6 Luna; treat those figures as the vendor's own benchmark.",
+    "useThisIf": "you want an on-device, open-source memory layer for Claude Code, Codex or Pi, and you can run it on macOS Apple silicon or Linux.",
+    "alternatives": [
+      "selvedge",
+      "gbrain",
+      "context-mode"
+    ],
+    "source": "producthunt",
+    "addedAt": "2026-11-26",
+    "featured": false,
+    "logo": "/logos/koed.png"
+  },
+  {
+    "slug": "canva-mcp",
+    "name": "Canva MCP",
+    "url": "https://www.canva.dev/docs/apps/mcp/",
+    "affiliateUrl": null,
+    "category": "design",
+    "useCases": [
+      "design",
+      "agents"
+    ],
+    "pricing": "pricing not published",
+    "verdict": "Canva's official remote MCP server for AI assistants, launched on Product Hunt on Nov 25, 2026. Assistants can create and edit Canva designs, search the library, manage assets and brand kits, add comments, and export to formats including PDF, PNG, JPG, PPTX and MP4. The documented server is at https://api.canva.com/connect/v1/mcp, with per-user OAuth. Canva's developer docs are aimed at IT admins and teams building assistants; they also point personal users to Canva's AI Connector help. No separate MCP price was listed on the docs page checked on Nov 26, 2026, and access still depends on a Canva account and Canva's developer terms.",
+    "useThisIf": "you want Claude, ChatGPT or another assistant to make an editable Canva design you can open and finish in Canva, rather than a one-off image file.",
+    "alternatives": [
+      "canva",
+      "figma",
+      "gamma"
+    ],
+    "source": "producthunt",
+    "addedAt": "2026-11-26",
+    "featured": false,
+    "logo": "/logos/canva-mcp.png"
+  },
+  {
+    "slug": "sandscale",
+    "name": "Sandscale",
+    "url": "https://sandscale.dev/",
+    "affiliateUrl": null,
+    "category": "coding",
+    "useCases": [
+      "coding",
+      "agents"
+    ],
+    "pricing": "freemium",
+    "verdict": "Cloud sandboxes for AI coding agents: each run gets its own microVM (Firecracker), the network stays off until you allow it, and every step can go in an audit log. There is an SDK (@sandscale/sdk), an MCP server at https://mcp.sandscale.dev/mcp, workspaces, snapshots, and optional object storage. Paused and idle time does not count toward hours. Free is $0 for 100 awake vCPU-hours a month, 3 boxes at once, 5 GB storage and up to 2 vCPU per box, one Free account per person. Pro is $20/month billed yearly or $25/month, for 1,500 hours, up to 30 boxes and up to 16 vCPU, with usage beyond the plan at $0.05 per awake vCPU-hour or $10 per 500-hour pack. Team is $40 per member per month billed yearly or $48 monthly, for 2,000 pooled hours per member, plus SSO, roles and audit export. Enterprise can run in your AWS account. The sandscale.dev domain was registered 16 Nov 2026 (10 days old at review). Submitted by the maker; passed our read-only safety check (HTTPS, privacy, terms, contact, DPA and subprocessors, no wallet or impersonation).",
+    "useThisIf": "you want each coding-agent run in an isolated microVM, with the network off by default and an audit log, and you are comfortable using a newly launched host.",
+    "alternatives": [
+      "macswarm",
+      "claude-code",
+      "codex"
+    ],
+    "source": "submission",
+    "addedAt": "2026-11-26",
+    "featured": false,
+    "logo": "/logos/sandscale.png"
+  },
+  {
+    "slug": "ai-text-watermark-checker",
+    "name": "AI Text Watermark Checker",
+    "url": "https://aitextwatermarkchecker.com/",
+    "affiliateUrl": null,
+    "category": "productivity",
+    "useCases": [
+      "productivity",
+      "writing"
+    ],
+    "pricing": "freemium",
+    "verdict": "In-browser checker for hidden characters in pasted text: zero-width spaces, byte-order marks, unusual spaces and look-alike letters. Scan and Strip run in the tab and stay free; the site is explicit that this does not detect statistical watermarks such as textGrain, Claude's watermark or SynthID-Text, because those live in word choice. A paid Rewrite is listed separately and is not available yet as a working feature on the homepage, with Pro at $9.90/month for about 200,000 rewrite words, or $79/year, plus a $4.99 top-up of 50,000 words, and no detection guarantee. Privacy, terms, refund and contact pages are published. The domain was registered 8 Oct 2026. Submitted by the maker; passed our read-only safety check.",
+    "useThisIf": "you want to see and remove hidden Unicode characters in a passage, and you understand that this will not catch a statistical or SynthID-style watermark.",
+    "alternatives": [
+      "chatgpt",
+      "claude"
+    ],
+    "source": "submission",
+    "addedAt": "2026-11-26",
+    "featured": false,
+    "logo": "/logos/ai-text-watermark-checker.png"
+  },
+  {
+    "slug": "mock-interview-practice",
+    "name": "Mock Interview Practice",
+    "url": "https://mockinterviewpractice.org/",
+    "affiliateUrl": null,
+    "category": "productivity",
+    "useCases": [
+      "productivity"
+    ],
+    "pricing": "freemium",
+    "verdict": "Browser mock interviews for a target role: pick a listed job or paste a job description, answer by voice or text, then read feedback. Free is $0/month for 3 completed answers, with a 3-minute cap per response and no sign-in required. Pro is $9.99 USD per month for unlimited answers, a 5-minute option, and a resume review for the role. Pro is sold as 1-12 months in a one-time payment and does not auto-renew. The privacy policy says DeepSeek processes the job description, answers and transcripts to generate questions and feedback. The domain was registered 28 Oct 2026. Submitted by the maker; passed our read-only safety check (HTTPS, privacy policy, contact, honest free and paid limits, no wallet or impersonation).",
+    "useThisIf": "you want a short, low-cost practice interview against a job description, and you are comfortable with DeepSeek seeing your answers.",
+    "alternatives": [
+      "chatgpt",
+      "claude"
+    ],
+    "source": "submission",
+    "addedAt": "2026-11-26",
+    "featured": false,
+    "logo": "/logos/mock-interview-practice.png"
   }
 ]

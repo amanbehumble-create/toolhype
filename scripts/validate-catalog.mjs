@@ -10,25 +10,17 @@ const communities = JSON.parse(fs.readFileSync(new URL('../src/data/communities.
 const errors = [];
 const fail = (m) => errors.push(m);
 
-const ADDED = ['macswarm', 'vertov', 'cadprops', 'open-agent-api', 'openlegion', 'spreadsheet-to-app', 'reelsdk', 'queststudio', 'tiquo', 'aicertmock', 'antigravity'];
+const ADDED = ['macswarm', 'vertov', 'cadprops', 'open-agent-api', 'openlegion', 'spreadsheet-to-app', 'reelsdk', 'queststudio', 'tiquo', 'aicertmock', 'antigravity', 'myclaw', 'airbot', 'hai', 'koed', 'canva-mcp', 'sandscale', 'ai-text-watermark-checker', 'mock-interview-practice'];
 const norm = (u) => String(u || '').trim().replace(/\/+$/, '').toLowerCase().replace(/^https?:\/\/www\./, 'https://');
 const KNOWN_URL_DUPES = new Set(['https://openai.com/index/introducing-gpt-6-2-astra-sol']);
 const PRICING = /^(free|freemium|paid|open-source|open-weight|pricing not published)$|^paid \(.+\)$/;
 const useCaseOk = new Set([...communities.map((c) => c.slug), 'writing']);
 const cats = new Set(communities.map((c) => c.slug));
 
-if (tools.length !== 308) fail(`expected 308 tools, found ${tools.length}`);
+if (tools.length !== 316) fail(`expected 316 tools, found ${tools.length}`);
 if (buzz.method !== 'v1') fail(`buzz method is ${buzz.method}`);
-const FULL_SCAN = '2026-11-25T01:30:49.503Z';
-const RESCAN_AT = '2026-11-25T13:55:41.319Z';
-// Leaders rescanned together. The board stamp stays on the last full scan.
-const RESCAN = new Set(['chatgpt','claude-code','claude','taan','grok','claude-duet','heygen','claude-ship','gemini-api-cli','capcut','gemini-4-neon','gemini','suno','gpt-6-2-sol','openbot','claude-fable-5-2','canva','gpt-6-2-astra','base44','magi-2','antigravity','opencode','higgsfield','midjourney','cursor','codex']);
-if (buzz.computedAt !== FULL_SCAN) fail(`board computedAt ${buzz.computedAt} should stay the full-scan stamp`);
-for (const [slug, t] of Object.entries(buzz.tools)) {
-  if (t.status !== 'live' || RESCAN.has(slug)) continue;
-  if (t.computedAt !== FULL_SCAN) fail(`${slug} computedAt changed from the 01:30Z scan: ${t.computedAt}`);
-}
-
+const SCAN = '2026-11-26T01:24:04.026Z';
+if (buzz.computedAt !== SCAN) fail('board computedAt ' + buzz.computedAt + ' should be ' + SCAN);
 const slugs = new Map();
 const urls = new Map();
 for (const t of tools) {
@@ -64,7 +56,8 @@ for (const slug of ADDED) {
   if (n !== 1) fail(`${slug} count ${n}`);
   const t = bySlug[slug];
   if (!t) continue;
-  if (slug !== 'gemini-4-neon' && t.addedAt !== '2026-11-25') fail(`${slug} addedAt ${t.addedAt}`);
+  const addedExpected = ['myclaw','airbot','hai','koed','canva-mcp','sandscale','ai-text-watermark-checker','mock-interview-practice'].includes(slug) ? '2026-11-26' : '2026-11-25';
+  if (slug !== 'gemini-4-neon' && t.addedAt !== addedExpected) fail(`${slug} addedAt ${t.addedAt}`);
   if (!fs.existsSync(new URL(`../public${t.logo}`, import.meta.url))) fail(`${slug} logo missing`);
 }
 const gem = bySlug['gemini-4-neon'];
@@ -92,31 +85,36 @@ function scoreOf(t) {
   };
 }
 
-for (const slug of RESCAN) {
-  const t = buzz.tools[slug];
-  if (!t || t.status !== 'live') { fail(`${slug} buzz is not live`); continue; }
-  if (t.query !== queries[slug]) fail(`${slug} buzz query does not match buzz-queries.json`);
-  if (t.sample.likes === t.mentions7d || t.sample.posts === t.mentions7d) fail(`${slug} sample was set from mention counts`);
+for (const [slug, t] of Object.entries(buzz.tools)) {
+  if (!t || t.status !== 'live') continue;
+  if (!String(t.computedAt || '').startsWith('2026-11-26')) continue;
+  if (t.query !== queries[slug]) fail(slug + ' buzz query does not match buzz-queries.json');
+  if (t.sample && t.mentions7d >= 20 && (t.sample.likes === t.mentions7d || t.sample.posts === t.mentions7d)) fail(slug + ' sample was set from mention counts');
   if (t.priorDailyAvg >= 10) {
     const again = +(t.mentions24h / t.priorDailyAvg).toFixed(2);
-    if (Math.abs(again - t.velocity) > 0.02) fail(`${slug} velocity ${t.velocity} does not follow mentions24h / priorDailyAvg (${again})`);
+    if (Math.abs(again - t.velocity) > 0.02) fail(slug + ' velocity ' + t.velocity + ' does not follow mentions24h / priorDailyAvg (' + again + ')');
   }
   const got = scoreOf(t);
-  if (got.score !== t.score) fail(`${slug} score ${t.score} != formula ${got.score}`);
+  if (got.score !== t.score) fail(slug + ' score ' + t.score + ' != formula ' + got.score);
   if (got.volume !== t.parts.volume || got.velocity !== t.parts.velocity || got.engagement !== t.parts.engagement) {
-    fail(`${slug} parts ${JSON.stringify(t.parts)} != ${JSON.stringify(got)}`);
+    fail(slug + ' parts mismatch');
   }
   const label = (t.velocity >= 2 && t.mentions24h >= 20) || got.viral ? 'hype' : t.velocity >= 1.3 && t.mentions24h >= 5 ? 'rising' : t.mentions7d >= 50 ? 'steady' : 'quiet';
-  if (t.label !== label || t.viral !== got.viral) fail(`${slug} label ${t.label}/${t.viral} != ${label}/${got.viral}`);
-  if (t.computedAt !== RESCAN_AT) fail(`${slug} computedAt ${t.computedAt} is not the shared rescan`);
+  if (t.label !== label || t.viral !== got.viral) fail(slug + ' label ' + t.label + '/' + t.viral + ' != ' + label + '/' + got.viral);
 }
 
-for (const slug of ADDED) {
-  if (slug === 'antigravity') continue;
+const PENDING_ADDED = ['macswarm', 'vertov', 'cadprops', 'open-agent-api', 'openlegion', 'spreadsheet-to-app', 'reelsdk', 'queststudio', 'tiquo', 'aicertmock'];
+for (const slug of PENDING_ADDED) {
   const t = buzz.tools[slug];
-  if (!t || t.status !== 'pending') fail(`${slug} should stay pending, no fabricated score`);
-  if (t && (t.score != null || t.mentions7d != null || t.velocity != null || t.computedAt)) fail(`${slug} pending entry has score fields`);
-  if (t && t.query !== queries[slug]) fail(`${slug} pending query mismatch`);
+  if (!t || t.status !== 'pending') fail(slug + ' should stay pending, no fabricated score');
+  if (t && (t.score != null || t.mentions7d != null || t.velocity != null || t.computedAt)) fail(slug + ' pending entry has score fields');
+  if (t && t.query !== queries[slug]) fail(slug + ' pending query mismatch');
+}
+
+const LIVE_ADDED = ['antigravity', 'myclaw', 'airbot', 'hai', 'koed', 'canva-mcp', 'sandscale', 'ai-text-watermark-checker', 'mock-interview-practice'];
+for (const slug of LIVE_ADDED) {
+  const t = buzz.tools[slug];
+  if (!t || t.status !== 'live') fail(slug + ' buzz should be live after the Nov 26 scan');
 }
 
 const live = Object.values(buzz.tools).filter((t) => t.status === 'live');

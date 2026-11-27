@@ -1130,8 +1130,8 @@
       "coding"
     ],
     "pricing": "freemium",
-    "verdict": "The default general assistant; strong all-rounder with a huge plugin and GPT ecosystem.",
-    "useThisIf": "you want one assistant that does a bit of everything.",
+    "verdict": "OpenAI's general assistant at chatgpt.com, on the web and in official apps. Individual plans are Free, Go, Plus and Pro. Go is a lower-cost paid plan with higher limits than Free for image generation, file uploads and data analysis, plus access to projects, tasks, custom GPTs and Library; OpenAI's help center (checked Nov 27, 2026) points to its pricing page for the current local price, and notes that ads are being tested with some Go users in select regions. Plus is $20/month and, on OpenAI's pricing page the same day, includes advanced reasoning with GPT-6.2, expanded messages and uploads, image creation, deep research, memory, Projects, scheduled tasks, custom GPTs and expanded Codex usage. Pro is sold as three monthly tiers — Pro 100 at $100, Pro 200 at $200 and Pro 500 at $500 — with Pro reasoning powered by GPT-6 Astra, a 400K GPT Reasoning context window (256K on Go and Plus), Dot (an always-on agent), and higher Codex and ChatGPT Work limits. Model availability changes; use the model picker on your account. API usage is billed separately.",
+    "useThisIf": "you want one general assistant with a large GPT and app ecosystem, and you are comfortable staying in OpenAI's plans.",
     "alternatives": [
       "claude",
       "gemini",
@@ -8841,5 +8841,178 @@
     "addedAt": "2026-11-26",
     "featured": false,
     "logo": "/logos/mock-interview-practice.png"
+  },
+  {
+    "slug": "hub",
+    "name": "Hub",
+    "url": "https://usehub.dev/",
+    "affiliateUrl": null,
+    "category": "agents",
+    "useCases": [
+      "agents",
+      "coding"
+    ],
+    "pricing": "open-source",
+    "verdict": "Icons8's open-source dispatcher for Claude Code and Codex sessions, launched on Product Hunt on Nov 26, 2026 as the day's top launch. You write a goal in the browser or in Telegram; a coordinator hands work to agents and executors in their own git worktrees, and only the decisions come back. It is self-hosted on your computer or a server, Apache-2.0, and uses your own Claude or ChatGPT subscription, with a one-line install (curl -fsSL https://icons8.github.io/hub/install.sh | bash on macOS or Linux, or irm https://icons8.github.io/hub/install.ps1 | iex in PowerShell on Windows). The official site and GitHub repo (github.com/icons8/hub) warn it is experimental: sessions run without a permission prompt per action and are not sandboxed, so treat it like a shell on your machine. Not affiliated with Anthropic. Mac and iPhone apps are listed as coming soon. The software is free; you pay for the model subscriptions it uses.",
+    "useThisIf": "you want to run many Claude Code or Codex sessions in parallel on your own machine or server, and you accept that agents run without per-action approval.",
+    "alternatives": [
+      "manyagents",
+      "claude-code",
+      "macswarm"
+    ],
+    "source": "producthunt",
+    "addedAt": "2026-11-27",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/hub.png"
+  },
+  {
+    "slug": "pax",
+    "name": "Pax by Pydantic",
+    "url": "https://pydantic.dev/docs/ai/pax/",
+    "affiliateUrl": null,
+    "category": "coding",
+    "useCases": [
+      "coding",
+      "agents"
+    ],
+    "pricing": "free",
+    "verdict": "Pydantic's official terminal coding agent (pydantic-ai-pax), launched on Product Hunt on Nov 26, 2026, in beta alongside the Pydantic AI Harness on the road to 1.0. Install with uv tool install pydantic-ai-pax, then run pax in a project. It reads your code, edits files and runs commands in a TUI; you can sign in with a ChatGPT or GitHub Copilot subscription, or bring an API key for OpenAI, Anthropic or another provider Pydantic AI supports. Everything is a plugin, including the coding agent, sandboxes and workspaces, and you can point it at your own Pydantic AI agent with pax --agent. The docs say it runs commands and edits files as you, with no sandbox and no approval step unless you add one, so use it in a project you trust. Pax itself is free; you pay for the model or subscription you connect. Vendor Harness-Bench figures are on the Nov 25 launch post; treat those as the author's own benchmark.",
+    "useThisIf": "you want a terminal coding agent from the Pydantic AI team, and you already have a ChatGPT, Copilot or API account to drive it.",
+    "alternatives": [
+      "claude-code",
+      "codex",
+      "cursor"
+    ],
+    "source": "producthunt",
+    "addedAt": "2026-11-27",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/pax.png"
+  },
+  {
+    "slug": "extraorbital",
+    "name": "ExtraOrbital",
+    "url": "https://extraorbital.dev/",
+    "affiliateUrl": null,
+    "category": "agents",
+    "useCases": [
+      "agents",
+      "coding"
+    ],
+    "pricing": "freemium",
+    "verdict": "CLI that provisions databases, storage, auth and an AI gateway for coding agents, launched on Product Hunt on Nov 26, 2026. Run npx extraorbital provision . and it writes credentials to .env or .env.local. Free is $0 with a shared allowance on every resource and no card, plus $5 of small-model credit once per account; files in a free bucket are deleted after 30 days, there are no backups, and unused free projects are deleted after 30 days. Pay-as-you-go is $20 per member per month plus usage at supplier cost with no markup (usage is prepaid credit, $5 to start, then auto-reload); backups and restore are included, and machines do not take a paid seat. Enterprise is annual, via hello@extraorbital.dev. Rates may change while the service is in preview, per the pricing page checked Nov 27, 2026.",
+    "useThisIf": "you want an agent to spin up a database, bucket or model key without opening a provider console, and you are fine with a preview service.",
+    "alternatives": [
+      "sandscale",
+      "claude-code",
+      "cursor"
+    ],
+    "source": "producthunt",
+    "addedAt": "2026-11-27",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/extraorbital.png"
+  },
+  {
+    "slug": "bifura",
+    "name": "Bifura",
+    "url": "https://bifura.ai/",
+    "affiliateUrl": null,
+    "category": "marketing",
+    "useCases": [
+      "marketing",
+      "productivity"
+    ],
+    "pricing": "freemium",
+    "verdict": "Site audit that shows how AI agents and crawlers read your pages, launched on Product Hunt on Nov 26, 2026. A free agent-readiness score usually returns in under a minute with no account; a free account adds one saved scan a month. A full report is $14 one-time. Launch-week subscription prices, until Dec 3, 2026 and locked if you subscribe, are Starter at $14.99/month (regular $19) for 10 scans, weekly monitoring and AI visibility tracking for one brand; Pro at $49/month (regular $59) for unlimited scans, Fix Preview, Slack alerts and daily tracking; and Agency at $199/month (regular $249) plus $10.99 per client site. Prices are in USD plus local taxes, per Bifura's pricing page checked Nov 27, 2026.",
+    "useThisIf": "you want to see what AI assistants actually get from your site, and you are willing to start with a free score or a $14 report.",
+    "alternatives": [
+      "citedby",
+      "akii-seo-optimizer"
+    ],
+    "source": "producthunt",
+    "addedAt": "2026-11-27",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/bifura.png"
+  },
+  {
+    "slug": "gigachat-4",
+    "name": "GigaChat 4",
+    "url": "https://giga.chat/blog/en/posts/gigachat-4",
+    "affiliateUrl": null,
+    "category": "chat",
+    "useCases": [
+      "chat",
+      "coding",
+      "agents"
+    ],
+    "pricing": "pricing not published",
+    "verdict": "Sber's GigaChat 4 models, announced Nov 26, 2026: a 708B-parameter mixture-of-experts with 41B active parameters (GigaChat4-708B-A41B) and a smaller 37B model with 4B active (GigaChat4-37B-A4B). Both have a native 1,048,576-token context and Instant plus Reasoning modes in a single instruction-tuned checkpoint. The official technical report lists vendor Terminal-Bench 2.0 scores of 71.26% (Reasoning) and 60.47% (Instant) for the 708B model, versus 30.30% and 12.94% for GigaChat 3.5; treat those as the lab's own protocol. Instruction-tuned, base and GGUF checkpoints are on Hugging Face at huggingface.co/ai-sage/GigaChat4-708B-A41B and huggingface.co/ai-sage/GigaChat4-37B-A4B; check the model card for the license and hardware needs. The English announcement was still being translated on Nov 27, 2026. Hosted GigaChat assistant pricing was not clearly listed on the announcement pages that day.",
+    "useThisIf": "you want to try Sber's new long-context models, especially if you can run the published checkpoints or already use GigaChat.",
+    "alternatives": [
+      "chatgpt",
+      "claude",
+      "gemini"
+    ],
+    "source": "x",
+    "addedAt": "2026-11-27",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/gigachat-4.png"
+  },
+  {
+    "slug": "citedby",
+    "name": "CitedBy",
+    "url": "https://citedby.eu/",
+    "affiliateUrl": null,
+    "category": "marketing",
+    "useCases": [
+      "marketing",
+      "productivity"
+    ],
+    "pricing": "freemium",
+    "verdict": "Website audit for Google and AI-search crawlers. A free check covers up to 10 pages with no account or card and shows each issue with a fix; there is also a free AI-crawler check for GPTBot, OAI-SearchBot and others. A one-time audit of up to 500 pages is €49 with a 14-day money-back guarantee. An Agency Lifetime price of €299 including VAT was on sale until 30 Nov 2026, 23:59 Madrid time. The operator is in Spain, with a GDPR privacy policy updated 24 Nov 2026 and contact at hello@citedby.eu. It reports llms.txt as an optional notice, not an error. Submitted by the maker; passed our read-only safety check (HTTPS, privacy, contact, no wallet or impersonation).",
+    "useThisIf": "you want a free, no-account check of whether Google and ChatGPT crawlers can read your pages, with a paid audit if you need the whole site.",
+    "alternatives": [
+      "bifura",
+      "akii-seo-optimizer"
+    ],
+    "source": "submission",
+    "addedAt": "2026-11-27",
+    "featured": false,
+    "buzz": {
+      "score": null,
+      "status": "pending",
+      "mentions7d": null,
+      "updatedAt": null
+    },
+    "logo": "/logos/citedby.png"
   }
 ]

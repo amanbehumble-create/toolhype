@@ -10,16 +10,16 @@ const communities = JSON.parse(fs.readFileSync(new URL('../src/data/communities.
 const errors = [];
 const fail = (m) => errors.push(m);
 
-const ADDED = ['macswarm', 'vertov', 'cadprops', 'open-agent-api', 'openlegion', 'spreadsheet-to-app', 'reelsdk', 'queststudio', 'tiquo', 'aicertmock', 'antigravity', 'myclaw', 'airbot', 'hai', 'koed', 'canva-mcp', 'sandscale', 'ai-text-watermark-checker', 'mock-interview-practice'];
+const ADDED = ['macswarm', 'vertov', 'cadprops', 'open-agent-api', 'openlegion', 'spreadsheet-to-app', 'reelsdk', 'queststudio', 'tiquo', 'aicertmock', 'antigravity', 'myclaw', 'airbot', 'hai', 'koed', 'canva-mcp', 'sandscale', 'ai-text-watermark-checker', 'mock-interview-practice', 'hub', 'pax', 'extraorbital', 'bifura', 'gigachat-4', 'citedby'];
 const norm = (u) => String(u || '').trim().replace(/\/+$/, '').toLowerCase().replace(/^https?:\/\/www\./, 'https://');
 const KNOWN_URL_DUPES = new Set(['https://openai.com/index/introducing-gpt-6-2-astra-sol']);
 const PRICING = /^(free|freemium|paid|open-source|open-weight|pricing not published)$|^paid \(.+\)$/;
 const useCaseOk = new Set([...communities.map((c) => c.slug), 'writing']);
 const cats = new Set(communities.map((c) => c.slug));
 
-if (tools.length !== 316) fail(`expected 316 tools, found ${tools.length}`);
+if (tools.length !== 322) fail(`expected 322 tools, found ${tools.length}`);
 if (buzz.method !== 'v1') fail(`buzz method is ${buzz.method}`);
-const SCAN = '2026-11-26T01:24:04.026Z';
+const SCAN = '2026-11-27T01:39:13.484Z';
 if (buzz.computedAt !== SCAN) fail('board computedAt ' + buzz.computedAt + ' should be ' + SCAN);
 const slugs = new Map();
 const urls = new Map();
@@ -56,7 +56,7 @@ for (const slug of ADDED) {
   if (n !== 1) fail(`${slug} count ${n}`);
   const t = bySlug[slug];
   if (!t) continue;
-  const addedExpected = ['myclaw','airbot','hai','koed','canva-mcp','sandscale','ai-text-watermark-checker','mock-interview-practice'].includes(slug) ? '2026-11-26' : '2026-11-25';
+  const addedExpected = ['hub','pax','extraorbital','bifura','gigachat-4','citedby'].includes(slug) ? '2026-11-27' : ['myclaw','airbot','hai','koed','canva-mcp','sandscale','ai-text-watermark-checker','mock-interview-practice'].includes(slug) ? '2026-11-26' : '2026-11-25';
   if (slug !== 'gemini-4-neon' && t.addedAt !== addedExpected) fail(`${slug} addedAt ${t.addedAt}`);
   if (!fs.existsSync(new URL(`../public${t.logo}`, import.meta.url))) fail(`${slug} logo missing`);
 }

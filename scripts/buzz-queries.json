@@ -314,5 +314,11 @@
   "canva-mcp": "(\"canva mcp\" OR \"canva ai connector\") -is:retweet",
   "sandscale": "(sandscale OR url:sandscale.dev) -is:retweet",
   "ai-text-watermark-checker": "(\"ai text watermark checker\" OR url:aitextwatermarkchecker.com) -is:retweet",
-  "mock-interview-practice": "(url:mockinterviewpractice.org OR \"mock interview practice\") -is:retweet"
+  "mock-interview-practice": "(url:mockinterviewpractice.org OR \"mock interview practice\") -is:retweet",
+  "hub": "(url:usehub.dev OR \"icons8/hub\" OR usehub OR (\"icons8\" hub (claude OR codex OR dispatcher))) -is:retweet",
+  "pax": "(\"pydantic-ai-pax\" OR \"pax by pydantic\" OR (pax pydantic (agent OR harness OR tui OR \"coding agent\"))) -is:retweet",
+  "extraorbital": "(extraorbital OR url:extraorbital.dev) -is:retweet",
+  "bifura": "(bifura OR url:bifura.ai) -is:retweet",
+  "gigachat-4": "(\"GigaChat 4\" OR GigaChat4 OR \"GigaChat4-708B\" OR \"GigaChat4-37B\") -is:retweet",
+  "citedby": "(citedby OR url:citedby.eu) -is:retweet"
 }
